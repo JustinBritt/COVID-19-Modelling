@@ -24,7 +24,8 @@
             double controlReproductionNumber,
             double basicTransmissionCoefficient,
             double quarantineRateAsymptomaticIndividuals,
-            double isolationRateSymptomaticIndividuals)
+            double isolationRateSymptomaticIndividuals,
+            double transmissionCoefficientModificationFactorAsymptomaticIndividuals)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -43,6 +44,8 @@
             this.QuarantineRateAsymptomaticIndividuals = quarantineRateAsymptomaticIndividuals;
 
             this.IsolationRateSymptomaticIndividuals = isolationRateSymptomaticIndividuals;
+
+            this.TransmissionCoefficientModificationFactorAsymptomaticIndividuals = transmissionCoefficientModificationFactorAsymptomaticIndividuals;
         }
 
         /// <summary>
@@ -92,5 +95,11 @@
         /// Parameter: γ_2
         /// </summary>
         public double IsolationRateSymptomaticIndividuals { get; }
+
+        /// <summary>
+        /// Gets the transmission coefficient modification factor for asymptomatic individuals.
+        /// Parameter: ε_E
+        /// </summary>
+        public double TransmissionCoefficientModificationFactorAsymptomaticIndividuals { get; }
     }
 }

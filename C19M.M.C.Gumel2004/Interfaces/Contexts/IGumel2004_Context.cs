@@ -55,5 +55,11 @@
         /// Parameter: γ_2
         /// </summary>
         double IsolationRateSymptomaticIndividuals { get; }
+
+        /// <summary>
+        /// Gets the transmission coefficient modification factor for asymptomatic individuals.
+        /// Parameter: ε_E
+        /// </summary>
+        double TransmissionCoefficientModificationFactorAsymptomaticIndividuals { get; }
     }
 }
