@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C19M.M.C.Gumel2004", "C19M.M.C.Gumel2004\C19M.M.C.Gumel2004.csproj", "{4138762D-A11A-4F0B-A51B-17BFB983AE87}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oslo", "Oslo\Oslo.csproj", "{92589C2D-3833-496F-87E8-788FD511B162}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oslo.Tests", "Oslo.Tests\Oslo.Tests.csproj", "{BD2534FD-A6D8-42D5-AAE7-B90B96369BCE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{4138762D-A11A-4F0B-A51B-17BFB983AE87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4138762D-A11A-4F0B-A51B-17BFB983AE87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4138762D-A11A-4F0B-A51B-17BFB983AE87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92589C2D-3833-496F-87E8-788FD511B162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92589C2D-3833-496F-87E8-788FD511B162}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92589C2D-3833-496F-87E8-788FD511B162}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92589C2D-3833-496F-87E8-788FD511B162}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD2534FD-A6D8-42D5-AAE7-B90B96369BCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD2534FD-A6D8-42D5-AAE7-B90B96369BCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD2534FD-A6D8-42D5-AAE7-B90B96369BCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD2534FD-A6D8-42D5-AAE7-B90B96369BCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
