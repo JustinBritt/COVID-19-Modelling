@@ -64,6 +64,8 @@
 
             // β
 
+            // μ
+
             // Variables
 
             // E(t)
@@ -90,6 +92,8 @@
         public C19M.M.C.Gumel2004.Interfaces.Parameters.ControlReproductionNumber.Iℛ ℛ_c { get; }
 
         public Iβ β { get; }
+
+        public Iμ μ { get; }
 
         public IE E { get; }
 
