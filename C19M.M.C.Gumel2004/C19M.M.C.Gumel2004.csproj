@@ -47,7 +47,7 @@
     <Compile Include="Classes\Parameters\RecruitmentRateAsymptomaticIndividuals\p.cs" />
     <Compile Include="Classes\Parameters\NaturalDeathRate\μ.cs" />
     <Compile Include="Classes\Parameters\NetInflowRateSusceptibleIndividuals\Π.cs" />
-    <Compile Include="Classes\Parameters\TransmissionCoefficientInfectedIndividuals\β.cs" />
+    <Compile Include="Classes\Parameters\BasicTransmissionCoefficient\β.cs" />
     <Compile Include="Classes\Variables\AsymptomaticIndividuals\E.cs" />
     <Compile Include="Classes\Variables\IsolatedIndividuals\J.cs" />
     <Compile Include="Classes\Variables\QuarantinedIndividuals\Q.cs" />
@@ -57,7 +57,7 @@
     <Compile Include="Interfaces\Parameters\RecruitmentRateAsymptomaticIndividuals\Ip.cs" />
     <Compile Include="Interfaces\Parameters\NaturalDeathRate\Iμ.cs" />
     <Compile Include="Interfaces\Parameters\NetInflowRateSusceptibleIndividuals\IΠ.cs" />
-    <Compile Include="Interfaces\Parameters\TransmissionCoefficientInfectedIndividuals\Iβ.cs" />
+    <Compile Include="Interfaces\Parameters\BasicTransmissionCoefficient\Iβ.cs" />
     <Compile Include="Interfaces\Variables\AsymptomaticIndividuals\IE.cs" />
     <Compile Include="Interfaces\Variables\IsolatedIndividuals\IJ.cs" />
     <Compile Include="Interfaces\Variables\QuarantinedIndividuals\IQ.cs" />
