@@ -66,6 +66,7 @@
     <Compile Include="Classes\Variables\AsymptomaticIndividuals\E.cs" />
     <Compile Include="Classes\Variables\IsolatedIndividuals\J.cs" />
     <Compile Include="Classes\Variables\QuarantinedIndividuals\Q.cs" />
+    <Compile Include="Classes\Variables\RecoveredIndividuals\R.cs" />
     <Compile Include="Classes\Variables\SusceptibleIndividuals\S.cs" />
     <Compile Include="Classes\Variables\SymptomaticIndividuals\I.cs" />
     <Compile Include="Classes\Variables\TotalPopulationSize\N.cs" />
@@ -91,15 +92,14 @@
     <Compile Include="Interfaces\Variables\IsolatedIndividuals\IJ.cs" />
     <Compile Include="Interfaces\Parameters\QuarantineRateAsymptomaticIndividuals\Iγ.cs" />
     <Compile Include="Interfaces\Variables\QuarantinedIndividuals\IQ.cs" />
+    <Compile Include="Interfaces\Variables\RecoveredIndividuals\IR.cs" />
     <Compile Include="Interfaces\Variables\SusceptibleIndividuals\IS.cs" />
     <Compile Include="Interfaces\Variables\SymptomaticIndividuals\II.cs" />
     <Compile Include="Interfaces\Variables\TotalPopulationSize\IN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\Variables\RecoveredIndividuals\" />
     <Folder Include="Factories\" />
-    <Folder Include="Interfaces\Variables\RecoveredIndividuals\" />
     <Folder Include="Interfaces_Factories\" />
   </ItemGroup>
   <ItemGroup>
