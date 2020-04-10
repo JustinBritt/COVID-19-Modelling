@@ -59,8 +59,10 @@
   <ItemGroup>
     <Folder Include="Classes\Models\" />
     <Folder Include="Classes\Parameters\" />
+    <Folder Include="Classes\Variables\TotalPopulationSize\" />
     <Folder Include="Interfaces\Models\" />
     <Folder Include="Interfaces\Parameters\" />
+    <Folder Include="Interfaces\Variables\TotalPopulationSize\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Oslo\Oslo.csproj">
