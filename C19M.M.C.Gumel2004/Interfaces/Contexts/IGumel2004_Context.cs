@@ -19,5 +19,11 @@
         /// Parameter: d_2
         /// </summary>
         double DiseaseInducedDeathRateIsolatedIndividuals { get; }
+
+        /// <summary>
+        /// Gets the recruitment rate of asymptomatic individuals per day.
+        /// Parameter: p
+        /// </summary>
+        double RecruitmentRateAsymptomaticIndividuals { get; }
     }
 }
