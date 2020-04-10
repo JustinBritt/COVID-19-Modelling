@@ -49,5 +49,11 @@
         /// Parameter: γ_1
         /// </summary>
         double QuarantineRateAsymptomaticIndividuals { get; }
+
+        /// <summary>
+        /// Gets the isolation rate for symptomatic individuals.
+        /// Parameter: γ_2
+        /// </summary>
+        double IsolationRateSymptomaticIndividuals { get; }
     }
 }

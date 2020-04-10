@@ -23,7 +23,8 @@
             double basicReproductionNumber,
             double controlReproductionNumber,
             double basicTransmissionCoefficient,
-            double quarantineRateAsymptomaticIndividuals)
+            double quarantineRateAsymptomaticIndividuals,
+            double isolationRateSymptomaticIndividuals)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -40,6 +41,8 @@
             this.BasicTransmissionCoefficient = basicTransmissionCoefficient;
 
             this.QuarantineRateAsymptomaticIndividuals = quarantineRateAsymptomaticIndividuals;
+
+            this.IsolationRateSymptomaticIndividuals = isolationRateSymptomaticIndividuals;
         }
 
         /// <summary>
@@ -83,5 +86,11 @@
         /// Parameter: γ_1
         /// </summary>
         public double QuarantineRateAsymptomaticIndividuals { get; }
+
+        /// <summary>
+        /// Gets the isolation rate for symptomatic individuals.
+        /// Parameter: γ_2
+        /// </summary>
+        public double IsolationRateSymptomaticIndividuals { get; }
     }
 }
