@@ -82,7 +82,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Models\" />
+    <Folder Include="Classes\Parameters\DiseaseInducedDeathRateSymptomaticIndividuals\" />
     <Folder Include="Interfaces\Models\" />
+    <Folder Include="Interfaces\Parameters\DiseaseInducedDeathRateSymptomaticIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Oslo\Oslo.csproj">
