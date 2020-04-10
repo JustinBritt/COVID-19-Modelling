@@ -29,7 +29,8 @@
             double transmissionCoefficientModificationFactorIsolatedIndividuals,
             double transmissionCoefficientModificationFactorQuarantinedIndividuals,
             double developmentClinicalSymptomsRateAsymptomaticIndividuals,
-            double developmentClinicalSymptomsRateQuarantinedIndividuals)
+            double developmentClinicalSymptomsRateQuarantinedIndividuals,
+            double naturalDeathRate)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -58,6 +59,8 @@
             this.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals = developmentClinicalSymptomsRateAsymptomaticIndividuals;
 
             this.DevelopmentClinicalSymptomsRateQuarantinedIndividuals = developmentClinicalSymptomsRateQuarantinedIndividuals;
+
+            this.NaturalDeathRate = naturalDeathRate;
         }
 
         /// <summary>
@@ -137,5 +140,11 @@
         /// Parameter: κ_2
         /// </summary>
         public double DevelopmentClinicalSymptomsRateQuarantinedIndividuals { get; }
+
+        /// <summary>
+        /// Gets the natural death rate.
+        /// Parameter: μ
+        /// </summary>
+        public double NaturalDeathRate { get; }
     }
 }

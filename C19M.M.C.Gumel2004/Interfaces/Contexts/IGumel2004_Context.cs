@@ -85,5 +85,11 @@
         /// Parameter: κ_2
         /// </summary>
         double DevelopmentClinicalSymptomsRateQuarantinedIndividuals { get; }
+
+        /// <summary>
+        /// Gets the natural death rate.
+        /// Parameter: μ
+        /// </summary>
+        double NaturalDeathRate { get; }
     }
 }
