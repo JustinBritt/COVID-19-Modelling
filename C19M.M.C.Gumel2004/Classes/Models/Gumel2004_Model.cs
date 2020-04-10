@@ -34,7 +34,13 @@
     using C19M.M.C.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorIsolatedIndividuals;
     using C19M.M.C.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorQuarantinedIndividuals;
 
-    using C19M.M.C.Gumel2004.Interfaces.Variables;
+    using C19M.M.C.Gumel2004.Interfaces.Variables.AsymptomaticIndividuals;
+    using C19M.M.C.Gumel2004.Interfaces.Variables.IsolatedIndividuals;
+    using C19M.M.C.Gumel2004.Interfaces.Variables.QuarantinedIndividuals;
+    using C19M.M.C.Gumel2004.Interfaces.Variables.RecoveredIndividuals;
+    using C19M.M.C.Gumel2004.Interfaces.Variables.SusceptibleIndividuals;
+    using C19M.M.C.Gumel2004.Interfaces.Variables.SymptomaticIndividuals;
+    using C19M.M.C.Gumel2004.Interfaces.Variables.TotalPopulationSize;
 
     internal sealed class Gumel2004_Model : IGumel2004_Model
     {
