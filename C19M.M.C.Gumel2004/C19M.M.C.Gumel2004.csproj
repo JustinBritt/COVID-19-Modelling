@@ -69,9 +69,11 @@
   <ItemGroup>
     <Folder Include="Classes\Models\" />
     <Folder Include="Classes\Parameters\TransmissionCoefficientModificationFactorAsymptomaticIndividuals\" />
+    <Folder Include="Classes\Parameters\TransmissionCoefficientModificationFactorIsolatedIndividuals\" />
     <Folder Include="Classes\Parameters\TransmissionCoefficientModificationFactorQuarantinedIndividuals\" />
     <Folder Include="Interfaces\Models\" />
     <Folder Include="Interfaces\Parameters\TransmissionCoefficientModificationFactorAsymptomaticIndividuals\" />
+    <Folder Include="Interfaces\Parameters\TransmissionCoefficientModificationFactorIsolatedIndividuals\" />
     <Folder Include="Interfaces\Parameters\TransmissionCoefficientModificationFactorQuarantinedIndividuals\" />
   </ItemGroup>
   <ItemGroup>
