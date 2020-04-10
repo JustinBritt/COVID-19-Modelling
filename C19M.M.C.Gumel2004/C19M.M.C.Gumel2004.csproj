@@ -49,6 +49,7 @@
     <Compile Include="Classes\Parameters\NetInflowRateSusceptibleIndividuals\Π.cs" />
     <Compile Include="Classes\Parameters\BasicTransmissionCoefficient\β.cs" />
     <Compile Include="Classes\Parameters\TransmissionCoefficientModificationFactorAsymptomaticIndividuals\ε.cs" />
+    <Compile Include="Classes\Parameters\TransmissionCoefficientModificationFactorIsolatedIndividuals\ε.cs" />
     <Compile Include="Classes\Variables\AsymptomaticIndividuals\E.cs" />
     <Compile Include="Classes\Variables\IsolatedIndividuals\J.cs" />
     <Compile Include="Classes\Variables\QuarantinedIndividuals\Q.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="Interfaces\Parameters\NetInflowRateSusceptibleIndividuals\IΠ.cs" />
     <Compile Include="Interfaces\Parameters\BasicTransmissionCoefficient\Iβ.cs" />
     <Compile Include="Interfaces\Parameters\TransmissionCoefficientModificationFactorAsymptomaticIndividuals\Iε.cs" />
+    <Compile Include="Interfaces\Parameters\TransmissionCoefficientModificationFactorIsolatedIndividuals\Iε.cs" />
     <Compile Include="Interfaces\Variables\AsymptomaticIndividuals\IE.cs" />
     <Compile Include="Interfaces\Variables\IsolatedIndividuals\IJ.cs" />
     <Compile Include="Interfaces\Variables\QuarantinedIndividuals\IQ.cs" />
@@ -70,10 +72,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Models\" />
-    <Folder Include="Classes\Parameters\TransmissionCoefficientModificationFactorIsolatedIndividuals\" />
     <Folder Include="Classes\Parameters\TransmissionCoefficientModificationFactorQuarantinedIndividuals\" />
     <Folder Include="Interfaces\Models\" />
-    <Folder Include="Interfaces\Parameters\TransmissionCoefficientModificationFactorIsolatedIndividuals\" />
     <Folder Include="Interfaces\Parameters\TransmissionCoefficientModificationFactorQuarantinedIndividuals\" />
   </ItemGroup>
   <ItemGroup>
