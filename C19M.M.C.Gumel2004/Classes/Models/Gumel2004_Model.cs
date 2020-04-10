@@ -9,6 +9,9 @@
     // Logging
     using log4net;
 
+    // Oslo
+    using Microsoft.Research.Oslo;
+
     using C19M.M.C.Gumel2004.Interfaces.Models;
 
     internal sealed class Gumel2004_Model : IGumel2004_Model
