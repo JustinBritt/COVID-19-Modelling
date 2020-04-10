@@ -78,6 +78,10 @@
 
             // Π
 
+            // σ_1
+
+            // σ_2
+
             // Variables
 
             // E(t)
@@ -118,6 +122,10 @@
         public Iμ μ { get; }
 
         public IΠ Π { get; }
+
+        public C19M.M.C.Gumel2004.Interfaces.Parameters.RecoveryRateSymptomaticIndividuals.Iσ σ_1 { get; }
+
+        public C19M.M.C.Gumel2004.Interfaces.Parameters.RecoveryRateIsolatedIndividuals.Iσ σ_2 { get; }
 
         public IE E { get; }
 
