@@ -37,5 +37,11 @@
         /// Parameter: ℛ_c
         /// </summary>
         double ControlReproductionNumber { get; }
+
+        /// <summary>
+        /// Gets the basic transmission coefficient.
+        /// Parameter: β
+        /// </summary>
+        double BasicTransmissionCoefficient { get; }
     }
 }

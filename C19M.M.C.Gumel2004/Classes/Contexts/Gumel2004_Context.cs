@@ -21,7 +21,8 @@
             double diseaseInducedDeathRateIsolatedIndividuals,
             double recruitmentRateAsymptomaticIndividuals,
             double basicReproductionNumber,
-            double controlReproductionNumber)
+            double controlReproductionNumber,
+            double basicTransmissionCoefficient)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -34,6 +35,8 @@
             this.BasicReproductionNumber = basicReproductionNumber;
 
             this.ControlReproductionNumber = controlReproductionNumber;
+
+            this.BasicTransmissionCoefficient = basicTransmissionCoefficient;
         }
 
         /// <summary>
@@ -65,5 +68,11 @@
         /// Parameter: ℛ_c
         /// </summary>
         public double ControlReproductionNumber { get; }
+
+        /// <summary>
+        /// Gets the basic transmission coefficient.
+        /// Parameter: β
+        /// </summary>
+        public double BasicTransmissionCoefficient { get; }
     }
 }
