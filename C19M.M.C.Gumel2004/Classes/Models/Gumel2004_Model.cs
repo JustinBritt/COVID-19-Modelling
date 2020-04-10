@@ -76,6 +76,8 @@
 
             // μ
 
+            // Π
+
             // Variables
 
             // E(t)
@@ -114,6 +116,8 @@
         public C19M.M.C.Gumel2004.Interfaces.Parameters.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals.Iκ κ_2 { get; }
 
         public Iμ μ { get; }
+
+        public IΠ Π { get; }
 
         public IE E { get; }
 
