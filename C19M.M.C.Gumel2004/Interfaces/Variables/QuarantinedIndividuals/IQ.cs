@@ -11,5 +11,6 @@
 
     internal interface IQ
     {
+        Vector Value { get; }
     }
 }

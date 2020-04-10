@@ -11,5 +11,6 @@
 
     internal interface IS
     {
+        Vector Value { get; }
     }
 }
