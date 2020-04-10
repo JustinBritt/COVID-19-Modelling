@@ -8,5 +8,6 @@
 
     internal interface IGumel2004_Context
     {
+        double DiseaseInducedDeathRateSymptomaticIndividuals { get; }
     }
 }

@@ -16,9 +16,15 @@
         private ILog Log { get; }
 
         // Constructor
-        public Gumel2004_Context()
+        public Gumel2004_Context(
+            double diseaseInducedDeathRateSymptomaticIndividuals)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+            this.DiseaseInducedDeathRateSymptomaticIndividuals = diseaseInducedDeathRateSymptomaticIndividuals;
         }
+
+        // d_1
+        public double DiseaseInducedDeathRateSymptomaticIndividuals { get; }
     }
 }
