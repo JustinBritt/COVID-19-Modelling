@@ -20,7 +20,8 @@
             double diseaseInducedDeathRateSymptomaticIndividuals,
             double diseaseInducedDeathRateIsolatedIndividuals,
             double recruitmentRateAsymptomaticIndividuals,
-            double basicReproductionNumber)
+            double basicReproductionNumber,
+            double controlReproductionNumber)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -31,6 +32,8 @@
             this.RecruitmentRateAsymptomaticIndividuals = recruitmentRateAsymptomaticIndividuals;
 
             this.BasicReproductionNumber = basicReproductionNumber;
+
+            this.ControlReproductionNumber = controlReproductionNumber;
         }
 
         /// <summary>
@@ -56,5 +59,10 @@
         /// Parameter: ℛ_0
         /// </summary>
         public double BasicReproductionNumber { get; }
+
+        /// <summary>
+        /// Gets the control reproduction number.
+        /// </summary>
+        public double ControlReproductionNumber { get; }
     }
 }

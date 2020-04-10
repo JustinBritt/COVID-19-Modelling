@@ -31,5 +31,10 @@
         /// Parameter: ℛ_0
         /// </summary>
         double BasicReproductionNumber { get; }
+
+        /// <summary>
+        /// Gets the control reproduction number.
+        /// </summary>
+        double ControlReproductionNumber { get; }
     }
 }
