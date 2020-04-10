@@ -74,7 +74,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Models\" />
+    <Folder Include="Classes\Parameters\PopulationDiminishmentRateAsymptomaticIndividualsToQuarantinedIndividuals\" />
     <Folder Include="Interfaces\Models\" />
+    <Folder Include="Interfaces\Variables\PopulationDiminishmentRateAsymptomaticIndividualsToQuarantinedIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Oslo\Oslo.csproj">
