@@ -97,5 +97,11 @@
         /// Parameter: Π
         /// </summary>
         double NetInflowRateSusceptibleIndividuals { get; }
+
+        /// <summary>
+        /// Gets the recovery rate for symptomatic individuals.
+        /// Parameter: σ_1
+        /// </summary>
+        double RecoveryRateSymptomaticIndividuals { get; }
     }
 }
