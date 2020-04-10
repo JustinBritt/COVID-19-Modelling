@@ -42,7 +42,7 @@
 
         // Constructor
         public Gumel2004_Model(
-            double value)
+            IGumel2004_Context context)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
