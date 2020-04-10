@@ -58,6 +58,8 @@
 
             // d_2
 
+            // p
+
             // ℛ_0
 
             // ℛ_c
@@ -90,6 +92,8 @@
         public Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1 { get; }
 
         public Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals.Id d_2 { get; }
+
+        public Ip p { get; }
 
         public C19M.M.C.Gumel2004.Interfaces.Parameters.BasicReproductionNumber.Iℛ ℛ_0 { get; }
 
