@@ -34,6 +34,7 @@
 
         /// <summary>
         /// Gets the control reproduction number.
+        /// Parameter: ℛ_c
         /// </summary>
         double ControlReproductionNumber { get; }
     }

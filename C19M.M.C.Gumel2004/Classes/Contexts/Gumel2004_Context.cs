@@ -62,6 +62,7 @@
 
         /// <summary>
         /// Gets the control reproduction number.
+        /// Parameter: ℛ_c
         /// </summary>
         public double ControlReproductionNumber { get; }
     }
