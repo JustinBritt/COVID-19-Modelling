@@ -44,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Parameters\PopulationDiminishmentRateAsymptomaticIndividualsToQuarantinedIndividuals\γ.cs" />
+    <Compile Include="Classes\Parameters\QuarantineRateAsymptomaticIndividuals\γ.cs" />
     <Compile Include="Classes\Parameters\RecruitmentRateAsymptomaticIndividuals\p.cs" />
     <Compile Include="Classes\Parameters\NaturalDeathRate\μ.cs" />
     <Compile Include="Classes\Parameters\NetInflowRateSusceptibleIndividuals\Π.cs" />
@@ -67,7 +67,7 @@
     <Compile Include="Interfaces\Parameters\TransmissionCoefficientModificationFactorQuarantinedIndividuals\Iε.cs" />
     <Compile Include="Interfaces\Variables\AsymptomaticIndividuals\IE.cs" />
     <Compile Include="Interfaces\Variables\IsolatedIndividuals\IJ.cs" />
-    <Compile Include="Interfaces\Parameters\PopulationDiminishmentRateAsymptomaticIndividualsToQuarantinedIndividuals\Iγ.cs" />
+    <Compile Include="Interfaces\Parameters\QuarantineRateAsymptomaticIndividuals\Iγ.cs" />
     <Compile Include="Interfaces\Variables\QuarantinedIndividuals\IQ.cs" />
     <Compile Include="Interfaces\Variables\SusceptibleIndividuals\IS.cs" />
     <Compile Include="Interfaces\Variables\SymptomaticIndividuals\II.cs" />

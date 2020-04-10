@@ -1,4 +1,4 @@
-﻿namespace C19M.M.C.Gumel2004.Interfaces.Parameters.PopulationDiminishmentRateAsymptomaticIndividualsToQuarantinedIndividuals
+﻿namespace C19M.M.C.Gumel2004.Interfaces.Parameters.QuarantineRateAsymptomaticIndividuals
 {
     using System;
     using System.Collections.Generic;
@@ -9,7 +9,7 @@
     internal interface Iγ
     {
         /// <summary>
-        /// Gets the population diminishment rate (symptomatic individuals to quarantined individuals).
+        /// Gets the quarantine rate for asymptomatic individuals.
         /// </summary>
         double Value { get; }
     }

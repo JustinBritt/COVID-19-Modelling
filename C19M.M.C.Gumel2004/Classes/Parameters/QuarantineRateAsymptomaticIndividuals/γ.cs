@@ -1,4 +1,4 @@
-﻿namespace C19M.M.C.Gumel2004.Classes.Parameters.PopulationDiminishmentRateAsymptomaticIndividualsToQuarantinedIndividuals
+﻿namespace C19M.M.C.Gumel2004.Classes.Parameters.QuarantineRateAsymptomaticIndividuals
 {
     using System;
     using System.Collections.Generic;
@@ -9,7 +9,7 @@
     // Logging
     using log4net;
 
-    using C19M.M.C.Gumel2004.Interfaces.Parameters.PopulationDiminishmentRateAsymptomaticIndividualsToQuarantinedIndividuals;
+    using C19M.M.C.Gumel2004.Interfaces.Parameters.QuarantineRateAsymptomaticIndividuals;
 
     internal sealed class γ : Iγ
     {
@@ -25,7 +25,7 @@
         }
 
         /// <summary>
-        /// Gets the population diminishment rate (symptomatic individuals to quarantined individuals).
+        /// Gets the quarantine rate for asymptomatic individuals.
         /// </summary>
         public double Value { get; }
     }
