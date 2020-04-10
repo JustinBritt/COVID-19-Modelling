@@ -8,6 +8,10 @@
 
     internal interface IGumel2004_Context
     {
+        /// <summary>
+        /// Gets the disease-induced death rate for symptomatic individuals.
+        /// Parameter: d_1
+        /// </summary>
         double DiseaseInducedDeathRateSymptomaticIndividuals { get; }
     }
 }

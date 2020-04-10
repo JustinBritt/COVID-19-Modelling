@@ -24,7 +24,10 @@
             this.DiseaseInducedDeathRateSymptomaticIndividuals = diseaseInducedDeathRateSymptomaticIndividuals;
         }
 
-        // d_1
+        /// <summary>
+        /// Gets the disease-induced death rate for symptomatic individuals.
+        /// Parameter: d_1
+        /// </summary>
         public double DiseaseInducedDeathRateSymptomaticIndividuals { get; }
     }
 }
