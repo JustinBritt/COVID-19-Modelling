@@ -70,6 +70,10 @@
 
             // γ_2
 
+            // κ_1
+
+            // κ_2
+
             // μ
 
             // Variables
@@ -104,6 +108,10 @@
         public C19M.M.C.Gumel2004.Interfaces.Parameters.QuarantineRateAsymptomaticIndividuals.Iγ γ_1 { get; }
 
         public C19M.M.C.Gumel2004.Interfaces.Parameters.IsolationRateSymptomaticIndividuals.Iγ γ_2 { get; }
+
+        public C19M.M.C.Gumel2004.Interfaces.Parameters.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals.Iκ κ_1 { get; }
+
+        public C19M.M.C.Gumel2004.Interfaces.Parameters.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals.Iκ κ_2 { get; }
 
         public Iμ μ { get; }
 
