@@ -97,7 +97,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Classes\Variables\RecoveredIndividuals\" />
     <Folder Include="Factories\" />
+    <Folder Include="Interfaces\Variables\RecoveredIndividuals\" />
     <Folder Include="Interfaces_Factories\" />
   </ItemGroup>
   <ItemGroup>
