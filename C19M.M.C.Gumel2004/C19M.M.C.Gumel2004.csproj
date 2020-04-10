@@ -44,7 +44,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Classes\Models\" />
     <Folder Include="Classes\Variables\" />
+    <Folder Include="Interfaces\Models\" />
     <Folder Include="Interfaces\Variables\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
