@@ -67,5 +67,11 @@
         /// Parameter: ε_J
         /// </summary>
         double TransmissionCoefficientModificationFactorIsolatedIndividuals { get; }
+
+        /// <summary>
+        /// Gets the transmission coefficient modification factor for quarantined individuals.
+        /// Parameter: ε_Q
+        /// </summary>
+        double TransmissionCoefficientModificationFactorQuarantinedIndividuals { get; }
     }
 }

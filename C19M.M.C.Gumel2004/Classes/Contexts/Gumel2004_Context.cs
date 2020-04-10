@@ -26,7 +26,8 @@
             double quarantineRateAsymptomaticIndividuals,
             double isolationRateSymptomaticIndividuals,
             double transmissionCoefficientModificationFactorAsymptomaticIndividuals,
-            double transmissionCoefficientModificationFactorIsolatedIndividuals)
+            double transmissionCoefficientModificationFactorIsolatedIndividuals
+            double transmissionCoefficientModificationFactorQuarantinedIndividuals)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -49,6 +50,8 @@
             this.TransmissionCoefficientModificationFactorAsymptomaticIndividuals = transmissionCoefficientModificationFactorAsymptomaticIndividuals;
 
             this.TransmissionCoefficientModificationFactorIsolatedIndividuals = transmissionCoefficientModificationFactorIsolatedIndividuals;
+
+            this.TransmissionCoefficientModificationFactorQuarantinedIndividuals = transmissionCoefficientModificationFactorQuarantinedIndividuals;
         }
 
         /// <summary>
@@ -110,5 +113,11 @@
         /// Parameter: ε_J
         /// </summary>
         public double TransmissionCoefficientModificationFactorIsolatedIndividuals { get; }
+
+        /// <summary>
+        /// Gets the transmission coefficient modification factor for quarantined individuals.
+        /// Parameter: ε_Q
+        /// </summary>
+        public double TransmissionCoefficientModificationFactorQuarantinedIndividuals { get; }
     }
 }
