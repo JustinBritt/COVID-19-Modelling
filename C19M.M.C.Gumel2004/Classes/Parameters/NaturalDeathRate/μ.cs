@@ -25,7 +25,7 @@
         }
 
         /// <summary>
-        /// Gets the positive Value (i.e., μ > 0) of the natural death rate.
+        /// Gets the natural death rate. μ > 0.
         /// </summary>
         public double Value { get; }
     }
