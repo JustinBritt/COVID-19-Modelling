@@ -52,7 +52,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Models\" />
+    <Folder Include="Classes\Variables\QuarantinedIndividuals\" />
     <Folder Include="Interfaces\Models\" />
+    <Folder Include="Interfaces\Variables\QuarantinedIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Oslo\Oslo.csproj">
