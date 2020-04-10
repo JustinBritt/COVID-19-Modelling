@@ -17,11 +17,14 @@
 
         // Constructor
         public Gumel2004_Context(
-            double diseaseInducedDeathRateSymptomaticIndividuals)
+            double diseaseInducedDeathRateSymptomaticIndividuals,
+            double diseaseInducedDeathRateIsolatedIndividuals)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             this.DiseaseInducedDeathRateSymptomaticIndividuals = diseaseInducedDeathRateSymptomaticIndividuals;
+
+            this.DiseaseInducedDeathRateIsolatedIndividuals = diseaseInducedDeathRateIsolatedIndividuals;
         }
 
         /// <summary>
@@ -29,5 +32,11 @@
         /// Parameter: d_1
         /// </summary>
         public double DiseaseInducedDeathRateSymptomaticIndividuals { get; }
+
+        /// <summary>
+        /// Gets the disease-induced death rate for isolated individuals.
+        /// Parameter: d_2
+        /// </summary>
+        public double DiseaseInducedDeathRateIsolatedIndividuals { get; }
     }
 }

@@ -13,5 +13,11 @@
         /// Parameter: d_1
         /// </summary>
         double DiseaseInducedDeathRateSymptomaticIndividuals { get; }
+
+        /// <summary>
+        /// Gets the disease-induced death rate for isolated individuals.
+        /// Parameter: d_2
+        /// </summary>
+        double DiseaseInducedDeathRateIsolatedIndividuals { get; }
     }
 }
