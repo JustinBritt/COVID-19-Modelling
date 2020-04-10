@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Parameters\BasicReproductionNumber\ℛ.cs" />
+    <Compile Include="Classes\Parameters\ControlReproductionNumber\ℛ.cs" />
     <Compile Include="Classes\Parameters\DevelopmentClinicalSymptomsRateAsymptomaticIndividuals\κ.cs" />
     <Compile Include="Classes\Parameters\DevelopmentClinicalSymptomsRateQuarantinedIndividuals\κ.cs" />
     <Compile Include="Classes\Parameters\DiseaseInducedDeathRateIsolatedIndividuals\d.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="Classes\Variables\SymptomaticIndividuals\I.cs" />
     <Compile Include="Classes\Variables\TotalPopulationSize\N.cs" />
     <Compile Include="Interfaces\Parameters\BasicReproductionNumber\Iℛ.cs" />
+    <Compile Include="Interfaces\Parameters\ControlReproductionNumber\Iℛ.cs" />
     <Compile Include="Interfaces\Parameters\DevelopmentClinicalSymptomsRateAsymptomaticIndividuals\Iκ.cs" />
     <Compile Include="Interfaces\Parameters\DevelopmentClinicalSymptomsRateQuarantinedIndividuals\Iκ.cs" />
     <Compile Include="Interfaces\Parameters\DiseaseInducedDeathRateIsolatedIndividuals\Id.cs" />
@@ -92,9 +94,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Models\" />
-    <Folder Include="Classes\Parameters\ControlReproductionNumber\" />
     <Folder Include="Interfaces\Models\" />
-    <Folder Include="Interfaces\Parameters\ControlReproductionNumber\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Oslo\Oslo.csproj">
