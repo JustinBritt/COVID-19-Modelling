@@ -41,13 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Variables\SusceptibleIndividuals\S.cs" />
+    <Compile Include="Interfaces\Variables\SusceptibleIndividuals\IS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Models\" />
-    <Folder Include="Classes\Variables\SusceptibleIndividuals\" />
     <Folder Include="Interfaces\Models\" />
-    <Folder Include="Interfaces\Variables\SusceptibleIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Oslo\Oslo.csproj">
