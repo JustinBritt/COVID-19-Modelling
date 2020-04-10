@@ -54,10 +54,12 @@
 
             // Parameters
 
+            // β
+
             // Variables
 
             // E(t)
-            
+
             // I(t)
 
             // J(t)
