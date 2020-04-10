@@ -62,9 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Models\" />
-    <Folder Include="Classes\Parameters\NetInflowSusceptibleIndividuals\" />
+    <Folder Include="Classes\Parameters\NetInflowRateSusceptibleIndividuals\" />
     <Folder Include="Interfaces\Models\" />
-    <Folder Include="Interfaces\Parameters\NetInflowSusceptibleIndividuals\" />
+    <Folder Include="Interfaces\Parameters\NetInflowRateSusceptibleIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Oslo\Oslo.csproj">
