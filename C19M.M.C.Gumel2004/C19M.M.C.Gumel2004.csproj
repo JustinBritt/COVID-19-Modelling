@@ -99,8 +99,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Factories\" />
-    <Folder Include="Interfaces_Factories\" />
+    <Folder Include="Factories\Parameters\" />
+    <Folder Include="Interfaces_Factories\Parameters\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Oslo\Oslo.csproj">
