@@ -44,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Parameters\DailyRecruitmentRateAsymptomaticIndividuals\p.cs" />
+    <Compile Include="Classes\Parameters\RecruitmentRateAsymptomaticIndividuals\p.cs" />
     <Compile Include="Classes\Parameters\NaturalDeathRate\μ.cs" />
     <Compile Include="Classes\Parameters\NetInflowRateSusceptibleIndividuals\Π.cs" />
     <Compile Include="Classes\Variables\AsymptomaticIndividuals\E.cs" />
@@ -53,7 +53,7 @@
     <Compile Include="Classes\Variables\SusceptibleIndividuals\S.cs" />
     <Compile Include="Classes\Variables\SymptomaticIndividuals\I.cs" />
     <Compile Include="Classes\Variables\TotalPopulationSize\N.cs" />
-    <Compile Include="Interfaces\Parameters\DailyRecruitmentRateAsymptomaticIndividuals\Ip.cs" />
+    <Compile Include="Interfaces\Parameters\RecruitmentRateAsymptomaticIndividuals\Ip.cs" />
     <Compile Include="Interfaces\Parameters\NaturalDeathRate\Iμ.cs" />
     <Compile Include="Interfaces\Parameters\NetInflowRateSusceptibleIndividuals\IΠ.cs" />
     <Compile Include="Interfaces\Variables\AsymptomaticIndividuals\IE.cs" />
