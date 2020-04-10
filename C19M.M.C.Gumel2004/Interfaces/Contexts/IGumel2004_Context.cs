@@ -43,5 +43,11 @@
         /// Parameter: β
         /// </summary>
         double BasicTransmissionCoefficient { get; }
+
+        /// <summary>
+        /// Gets the quarantine rate for asymptomatic individuals.
+        /// Parameter: γ_1
+        /// </summary>
+        double QuarantineRateAsymptomaticIndividuals { get; }
     }
 }
