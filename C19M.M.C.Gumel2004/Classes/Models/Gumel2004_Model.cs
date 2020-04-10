@@ -73,6 +73,8 @@
             // S(t)
         }
 
+        public Iβ β { get; }
+
         public IE E { get; }
 
         public II I { get; }
