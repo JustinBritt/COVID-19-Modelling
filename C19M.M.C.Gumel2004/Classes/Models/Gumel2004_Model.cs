@@ -43,6 +43,10 @@
             double value)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+            // Parameters
+
+            // Variables
         }
     }
 }
