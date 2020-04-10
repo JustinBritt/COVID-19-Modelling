@@ -70,5 +70,19 @@
 
             // S(t)
         }
+
+        public IE E { get; }
+
+        public II I { get; }
+
+        public IJ J { get; }
+
+        public IN N { get; }
+
+        public IQ Q { get; }
+
+        public IR R { get; }
+
+        public IS S { get; }
     }
 }
