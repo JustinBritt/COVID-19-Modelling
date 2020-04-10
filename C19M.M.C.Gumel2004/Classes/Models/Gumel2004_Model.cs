@@ -56,6 +56,8 @@
 
             // ℛ_0
 
+            // ℛ_c
+
             // β
 
             // Variables
@@ -76,6 +78,8 @@
         }
 
         public C19M.M.C.Gumel2004.Interfaces.Parameters.BasicReproductionNumber.Iℛ ℛ_0 { get; }
+
+        public C19M.M.C.Gumel2004.Interfaces.Parameters.ControlReproductionNumber.Iℛ ℛ_c { get; }
 
         public Iβ β { get; }
 
