@@ -61,5 +61,11 @@
         /// Parameter: ε_E
         /// </summary>
         double TransmissionCoefficientModificationFactorAsymptomaticIndividuals { get; }
+
+        /// <summary>
+        /// Gets the transmission coefficient modification factor for isolated individuals.
+        /// Parameter: ε_J
+        /// </summary>
+        double TransmissionCoefficientModificationFactorIsolatedIndividuals { get; }
     }
 }
