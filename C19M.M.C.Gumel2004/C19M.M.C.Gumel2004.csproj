@@ -91,8 +91,10 @@
   <ItemGroup>
     <Folder Include="Classes\Models\" />
     <Folder Include="Classes\Parameters\BasicReproductionNumber\" />
+    <Folder Include="Classes\Parameters\ControlReproductionNumber\" />
     <Folder Include="Interfaces\Models\" />
     <Folder Include="Interfaces\Parameters\BasicReproductionNumber\" />
+    <Folder Include="Interfaces\Parameters\ControlReproductionNumber\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Oslo\Oslo.csproj">
