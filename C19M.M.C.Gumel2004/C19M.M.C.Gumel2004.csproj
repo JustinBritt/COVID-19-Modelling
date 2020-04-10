@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Models\Gumel2004_Model.cs" />
     <Compile Include="Classes\Parameters\BasicReproductionNumber\ℛ.cs" />
     <Compile Include="Classes\Parameters\ControlReproductionNumber\ℛ.cs" />
     <Compile Include="Classes\Parameters\DevelopmentClinicalSymptomsRateAsymptomaticIndividuals\κ.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="Classes\Variables\SusceptibleIndividuals\S.cs" />
     <Compile Include="Classes\Variables\SymptomaticIndividuals\I.cs" />
     <Compile Include="Classes\Variables\TotalPopulationSize\N.cs" />
+    <Compile Include="Interfaces\Models\IGumel2004_Model.cs" />
     <Compile Include="Interfaces\Parameters\BasicReproductionNumber\Iℛ.cs" />
     <Compile Include="Interfaces\Parameters\ControlReproductionNumber\Iℛ.cs" />
     <Compile Include="Interfaces\Parameters\DevelopmentClinicalSymptomsRateAsymptomaticIndividuals\Iκ.cs" />
@@ -92,10 +94,7 @@
     <Compile Include="Interfaces\Variables\TotalPopulationSize\IN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\Models\" />
-    <Folder Include="Interfaces\Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Oslo\Oslo.csproj">
       <Project>{92589c2d-3833-496f-87e8-788fd511b162}</Project>
