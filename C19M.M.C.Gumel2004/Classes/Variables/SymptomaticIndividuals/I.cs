@@ -9,6 +9,9 @@
     // Logging
     using log4net;
 
+    // Oslo
+    using Microsoft.Research.Oslo;
+
     using C19M.M.C.Gumel2004.Interfaces.Variables.SymptomaticIndividuals;
 
     internal sealed class I : II

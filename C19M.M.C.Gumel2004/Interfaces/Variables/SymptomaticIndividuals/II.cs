@@ -6,6 +6,9 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    // Oslo
+    using Microsoft.Research.Oslo;
+
     internal interface II
     {
     }
