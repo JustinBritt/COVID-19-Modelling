@@ -45,16 +45,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Variables\AsymptomaticIndividuals\E.cs" />
+    <Compile Include="Classes\Variables\QuarantinedIndividuals\Q.cs" />
     <Compile Include="Classes\Variables\SusceptibleIndividuals\S.cs" />
     <Compile Include="Interfaces\Variables\AsymptomaticIndividuals\IE.cs" />
+    <Compile Include="Interfaces\Variables\QuarantinedIndividuals\IQ.cs" />
     <Compile Include="Interfaces\Variables\SusceptibleIndividuals\IS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Models\" />
-    <Folder Include="Classes\Variables\QuarantinedIndividuals\" />
     <Folder Include="Interfaces\Models\" />
-    <Folder Include="Interfaces\Variables\QuarantinedIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Oslo\Oslo.csproj">
