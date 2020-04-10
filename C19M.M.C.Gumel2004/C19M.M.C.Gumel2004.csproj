@@ -95,7 +95,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Classes\Contexts\" />
     <Folder Include="Factories\" />
+    <Folder Include="Interfaces\Contexts\" />
     <Folder Include="Interfaces_Factories\" />
   </ItemGroup>
   <ItemGroup>
