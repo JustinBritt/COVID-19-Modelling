@@ -12,6 +12,8 @@
     // Oslo
     using Microsoft.Research.Oslo;
 
+    using C19M.M.C.Gumel2004.Interfaces.Contexts;
+
     using C19M.M.C.Gumel2004.Interfaces.Models;
 
     using C19M.M.C.Gumel2004.Interfaces.Parameters.BasicReproductionNumber;
