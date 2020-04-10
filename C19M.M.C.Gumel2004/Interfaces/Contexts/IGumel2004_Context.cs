@@ -91,5 +91,11 @@
         /// Parameter: μ
         /// </summary>
         double NaturalDeathRate { get; }
+
+        /// <summary>
+        /// Gets the net inflow rate of susceptible individuals per unit time.
+        /// Parameter: Π
+        /// </summary>
+        double NetInflowRateSusceptibleIndividuals { get; }
     }
 }

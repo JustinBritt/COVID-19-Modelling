@@ -30,7 +30,8 @@
             double transmissionCoefficientModificationFactorQuarantinedIndividuals,
             double developmentClinicalSymptomsRateAsymptomaticIndividuals,
             double developmentClinicalSymptomsRateQuarantinedIndividuals,
-            double naturalDeathRate)
+            double naturalDeathRate,
+            double netInflowRateSusceptibleIndividuals)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -61,6 +62,8 @@
             this.DevelopmentClinicalSymptomsRateQuarantinedIndividuals = developmentClinicalSymptomsRateQuarantinedIndividuals;
 
             this.NaturalDeathRate = naturalDeathRate;
+
+            this.NetInflowRateSusceptibleIndividuals = netInflowRateSusceptibleIndividuals;
         }
 
         /// <summary>
@@ -146,5 +149,11 @@
         /// Parameter: μ
         /// </summary>
         public double NaturalDeathRate { get; }
+
+        /// <summary>
+        /// Gets the net inflow rate of susceptible individuals per unit time.
+        /// Parameter: Π
+        /// </summary>
+        public double NetInflowRateSusceptibleIndividuals { get; }
     }
 }
