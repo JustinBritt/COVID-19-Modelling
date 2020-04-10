@@ -103,5 +103,11 @@
         /// Parameter: σ_1
         /// </summary>
         double RecoveryRateSymptomaticIndividuals { get; }
+
+        /// <summary>
+        /// Gets the recovery rate for isolated individuals.
+        /// Parameter: σ_2
+        /// </summary>
+        double RecoveryRateIsolatedIndividuals { get; }
     }
 }

@@ -32,7 +32,8 @@
             double developmentClinicalSymptomsRateQuarantinedIndividuals,
             double naturalDeathRate,
             double netInflowRateSusceptibleIndividuals,
-            double recoveryRateSymptomaticIndividuals)
+            double recoveryRateSymptomaticIndividuals,
+            double recoveryRateIsolatedIndividuals)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -67,6 +68,8 @@
             this.NetInflowRateSusceptibleIndividuals = netInflowRateSusceptibleIndividuals;
 
             this.RecoveryRateSymptomaticIndividuals = recoveryRateSymptomaticIndividuals;
+
+            this.RecoveryRateIsolatedIndividuals = recoveryRateIsolatedIndividuals;
         }
 
         /// <summary>
@@ -164,5 +167,11 @@
         /// Parameter: σ_1
         /// </summary>
         public double RecoveryRateSymptomaticIndividuals { get; }
+
+        /// <summary>
+        /// Gets the recovery rate for isolated individuals.
+        /// Parameter: σ_2
+        /// </summary>
+        public double RecoveryRateIsolatedIndividuals { get; }
     }
 }
