@@ -60,9 +60,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Models\" />
-    <Folder Include="Classes\Parameters\" />
+    <Folder Include="Classes\Parameters\NaturalDeathRate\" />
     <Folder Include="Interfaces\Models\" />
-    <Folder Include="Interfaces\Parameters\" />
+    <Folder Include="Interfaces\Parameters\NaturalDeathRate\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Oslo\Oslo.csproj">
