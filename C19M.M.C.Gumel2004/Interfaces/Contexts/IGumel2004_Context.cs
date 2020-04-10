@@ -6,7 +6,7 @@
     using System.Text;
     using System.Threading.Tasks;
 
-    internal interface IGumel2004_Context
+    public interface IGumel2004_Context
     {
         /// <summary>
         /// Gets the disease-induced death rate for symptomatic individuals.
