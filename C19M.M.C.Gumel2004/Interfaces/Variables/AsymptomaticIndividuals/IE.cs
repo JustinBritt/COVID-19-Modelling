@@ -6,7 +6,11 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    // Oslo
+    using Microsoft.Research.Oslo;
+
     internal interface IE
     {
+        Vector Value { get; }
     }
 }
