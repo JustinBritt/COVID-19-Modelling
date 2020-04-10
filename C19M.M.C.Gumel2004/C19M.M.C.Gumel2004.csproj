@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Parameters\PopulationDiminishmentRateAsymptomaticIndividualsToQuarantinedIndividuals\γ.cs" />
     <Compile Include="Classes\Parameters\RecruitmentRateAsymptomaticIndividuals\p.cs" />
     <Compile Include="Classes\Parameters\NaturalDeathRate\μ.cs" />
     <Compile Include="Classes\Parameters\NetInflowRateSusceptibleIndividuals\Π.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="Interfaces\Parameters\TransmissionCoefficientModificationFactorQuarantinedIndividuals\Iε.cs" />
     <Compile Include="Interfaces\Variables\AsymptomaticIndividuals\IE.cs" />
     <Compile Include="Interfaces\Variables\IsolatedIndividuals\IJ.cs" />
+    <Compile Include="Interfaces\Parameters\PopulationDiminishmentRateAsymptomaticIndividualsToQuarantinedIndividuals\Iγ.cs" />
     <Compile Include="Interfaces\Variables\QuarantinedIndividuals\IQ.cs" />
     <Compile Include="Interfaces\Variables\SusceptibleIndividuals\IS.cs" />
     <Compile Include="Interfaces\Variables\SymptomaticIndividuals\II.cs" />
@@ -74,9 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Models\" />
-    <Folder Include="Classes\Parameters\PopulationDiminishmentRateAsymptomaticIndividualsToQuarantinedIndividuals\" />
     <Folder Include="Interfaces\Models\" />
-    <Folder Include="Interfaces\Variables\PopulationDiminishmentRateAsymptomaticIndividualsToQuarantinedIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Oslo\Oslo.csproj">
