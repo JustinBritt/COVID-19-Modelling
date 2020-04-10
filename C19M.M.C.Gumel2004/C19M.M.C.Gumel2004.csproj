@@ -84,7 +84,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Models\" />
+    <Folder Include="Classes\Parameters\RecoveryRateSymptomaticIndividuals\" />
     <Folder Include="Interfaces\Models\" />
+    <Folder Include="Interfaces\Parameters\RecoveryRateSymptomaticIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Oslo\Oslo.csproj">
