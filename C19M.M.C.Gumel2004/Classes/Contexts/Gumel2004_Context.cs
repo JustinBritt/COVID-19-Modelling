@@ -19,7 +19,8 @@
         public Gumel2004_Context(
             double diseaseInducedDeathRateSymptomaticIndividuals,
             double diseaseInducedDeathRateIsolatedIndividuals,
-            double recruitmentRateAsymptomaticIndividuals)
+            double recruitmentRateAsymptomaticIndividuals,
+            double basicReproductionNumber)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -28,6 +29,8 @@
             this.DiseaseInducedDeathRateIsolatedIndividuals = diseaseInducedDeathRateIsolatedIndividuals;
 
             this.RecruitmentRateAsymptomaticIndividuals = recruitmentRateAsymptomaticIndividuals;
+
+            this.BasicReproductionNumber = basicReproductionNumber;
         }
 
         /// <summary>
@@ -47,5 +50,11 @@
         /// Parameter: p
         /// </summary>
         public double RecruitmentRateAsymptomaticIndividuals { get; }
+
+        /// <summary>
+        /// Gets the basic reproduction number.
+        /// Parameter: ℛ_0
+        /// </summary>
+        public double BasicReproductionNumber { get; }
     }
 }

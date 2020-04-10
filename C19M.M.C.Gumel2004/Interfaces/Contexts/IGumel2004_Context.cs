@@ -25,5 +25,11 @@
         /// Parameter: p
         /// </summary>
         double RecruitmentRateAsymptomaticIndividuals { get; }
+
+        /// <summary>
+        /// Gets the basic reproduction number.
+        /// Parameter: ℛ_0
+        /// </summary>
+        double BasicReproductionNumber { get; }
     }
 }
