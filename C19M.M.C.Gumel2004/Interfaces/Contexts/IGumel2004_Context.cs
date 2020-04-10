@@ -73,5 +73,11 @@
         /// Parameter: ε_Q
         /// </summary>
         double TransmissionCoefficientModificationFactorQuarantinedIndividuals { get; }
+
+        /// <summary>
+        /// Gets the rate at which asymptomatic individuals develop clinical symptoms.
+        /// Parameter: κ_1
+        /// </summary>
+        double DevelopmentClinicalSymptomsRateAsymptomaticIndividuals { get; }
     }
 }

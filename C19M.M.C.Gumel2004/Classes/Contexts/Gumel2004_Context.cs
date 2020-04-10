@@ -26,8 +26,9 @@
             double quarantineRateAsymptomaticIndividuals,
             double isolationRateSymptomaticIndividuals,
             double transmissionCoefficientModificationFactorAsymptomaticIndividuals,
-            double transmissionCoefficientModificationFactorIsolatedIndividuals
-            double transmissionCoefficientModificationFactorQuarantinedIndividuals)
+            double transmissionCoefficientModificationFactorIsolatedIndividuals,
+            double transmissionCoefficientModificationFactorQuarantinedIndividuals,
+            double developmentClinicalSymptomsRateAsymptomaticIndividuals)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -52,6 +53,8 @@
             this.TransmissionCoefficientModificationFactorIsolatedIndividuals = transmissionCoefficientModificationFactorIsolatedIndividuals;
 
             this.TransmissionCoefficientModificationFactorQuarantinedIndividuals = transmissionCoefficientModificationFactorQuarantinedIndividuals;
+
+            this.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals = developmentClinicalSymptomsRateAsymptomaticIndividuals;
         }
 
         /// <summary>
@@ -119,5 +122,11 @@
         /// Parameter: ε_Q
         /// </summary>
         public double TransmissionCoefficientModificationFactorQuarantinedIndividuals { get; }
+
+        /// <summary>
+        /// Gets the rate at which asymptomatic individuals develop clinical symptoms.
+        /// Parameter: κ_1
+        /// </summary>
+        public double DevelopmentClinicalSymptomsRateAsymptomaticIndividuals { get; }
     }
 }
