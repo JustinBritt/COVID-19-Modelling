@@ -79,5 +79,11 @@
         /// Parameter: κ_1
         /// </summary>
         double DevelopmentClinicalSymptomsRateAsymptomaticIndividuals { get; }
+
+        /// <summary>
+        /// Gets the rate at which quarantined individuals develop clinical symptoms.
+        /// Parameter: κ_2
+        /// </summary>
+        double DevelopmentClinicalSymptomsRateQuarantinedIndividuals { get; }
     }
 }
