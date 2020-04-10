@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Classes\Parameters\DevelopmentClinicalSymptomsRateAsymptomaticIndividuals\κ.cs" />
     <Compile Include="Classes\Parameters\DevelopmentClinicalSymptomsRateQuarantinedIndividuals\κ.cs" />
+    <Compile Include="Classes\Parameters\DiseaseInducedDeathRateSymptomaticIndividuals\d.cs" />
     <Compile Include="Classes\Parameters\IsolationRateSymptomaticIndividuals\γ.cs" />
     <Compile Include="Classes\Parameters\QuarantineRateAsymptomaticIndividuals\γ.cs" />
     <Compile Include="Classes\Parameters\RecruitmentRateAsymptomaticIndividuals\p.cs" />
@@ -63,6 +64,7 @@
     <Compile Include="Classes\Variables\TotalPopulationSize\N.cs" />
     <Compile Include="Interfaces\Parameters\DevelopmentClinicalSymptomsRateAsymptomaticIndividuals\Iκ.cs" />
     <Compile Include="Interfaces\Parameters\DevelopmentClinicalSymptomsRateQuarantinedIndividuals\Iκ.cs" />
+    <Compile Include="Interfaces\Parameters\DiseaseInducedDeathRateSymptomaticIndividuals\Id.cs" />
     <Compile Include="Interfaces\Parameters\IsolationRateSymptomaticIndividuals\Iγ.cs" />
     <Compile Include="Interfaces\Parameters\RecruitmentRateAsymptomaticIndividuals\Ip.cs" />
     <Compile Include="Interfaces\Parameters\NaturalDeathRate\Iμ.cs" />
@@ -82,9 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Models\" />
-    <Folder Include="Classes\Parameters\DiseaseInducedDeathRateSymptomaticIndividuals\" />
     <Folder Include="Interfaces\Models\" />
-    <Folder Include="Interfaces\Parameters\DiseaseInducedDeathRateSymptomaticIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Oslo\Oslo.csproj">
