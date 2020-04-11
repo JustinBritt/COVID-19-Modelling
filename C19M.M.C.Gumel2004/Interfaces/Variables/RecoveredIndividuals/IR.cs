@@ -20,7 +20,7 @@
         /// <param name="σ_1"></param>
         /// <param name="σ_2"></param>
         /// <returns></returns>
-        double getdRdt(
+        double GetdRdt(
             double I,
             double J,
             double R,

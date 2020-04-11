@@ -33,7 +33,7 @@
         /// <param name="σ_1"></param>
         /// <param name="σ_2"></param>
         /// <returns></returns>
-        public double getdRdt(
+        public double GetdRdt(
             double I,
             double J,
             double R,
