@@ -51,6 +51,12 @@
         double InitialValueQuarantinedIndividuals { get; }
 
         /// <summary>
+        /// Gets the initial value for recovered individuals.
+        /// Parameter: R(0)
+        /// </summary>
+        double InitialValueRecoveredIndividuals { get; }
+
+        /// <summary>
         /// Gets the basic reproduction number.
         /// Parameter: ℛ_0
         /// </summary>
