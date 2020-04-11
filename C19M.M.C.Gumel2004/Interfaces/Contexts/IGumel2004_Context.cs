@@ -27,6 +27,12 @@
         double InitialValueAsymptomaticIndividuals { get; }
 
         /// <summary>
+        /// Gets the initial value for symptomatic individuals.
+        /// Parameter: I(0)
+        /// </summary>
+        double InitialValueSymptomaticIndividuals { get; }
+
+        /// <summary>
         /// Gets the recruitment rate of asymptomatic individuals per day.
         /// Parameter: p
         /// </summary>
