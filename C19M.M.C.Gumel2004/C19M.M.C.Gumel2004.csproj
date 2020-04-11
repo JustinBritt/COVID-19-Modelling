@@ -56,6 +56,7 @@
     <Compile Include="Classes\Parameters\InitialValueIsolatedIndividuals\J.cs" />
     <Compile Include="Classes\Parameters\InitialValueQuarantinedIndividuals\Q.cs" />
     <Compile Include="Classes\Parameters\InitialValueRecoveredIndividuals\R.cs" />
+    <Compile Include="Classes\Parameters\InitialValueSusceptibleIndividuals\S.cs" />
     <Compile Include="Classes\Parameters\InitialValueSymptomaticIndividuals\I.cs" />
     <Compile Include="Classes\Parameters\IsolationRateSymptomaticIndividuals\γ.cs" />
     <Compile Include="Classes\Parameters\QuarantineRateAsymptomaticIndividuals\γ.cs" />
@@ -87,6 +88,7 @@
     <Compile Include="Interfaces\Parameters\InitialValueIsolatedIndividuals\IJ.cs" />
     <Compile Include="Interfaces\Parameters\InitialValueQuarantinedIndividuals\IQ.cs" />
     <Compile Include="Interfaces\Parameters\InitialValueRecoveredIndividuals\IR.cs" />
+    <Compile Include="Interfaces\Parameters\InitialValueSusceptibleIndividuals\IS.cs" />
     <Compile Include="Interfaces\Parameters\InitialValueSymptomaticIndividuals\II.cs" />
     <Compile Include="Interfaces\Parameters\IsolationRateSymptomaticIndividuals\Iγ.cs" />
     <Compile Include="Interfaces\Parameters\RecoveryRateIsolatedIndividuals\Iσ.cs" />
@@ -109,9 +111,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\Parameters\InitialValueSusceptibleIndividuals\" />
     <Folder Include="Factories\Parameters\BasicReproductionNumber\" />
-    <Folder Include="Interfaces\Parameters\InitialValueSusceptibleIndividuals\" />
     <Folder Include="Interfaces_Factories\Parameters\BasicReproductionNumber\" />
   </ItemGroup>
   <ItemGroup>
