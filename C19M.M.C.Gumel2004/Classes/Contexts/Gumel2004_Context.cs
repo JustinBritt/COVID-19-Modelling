@@ -27,6 +27,7 @@
             double initialValueRecoveredIndividuals,
             double basicReproductionNumber,
             double controlReproductionNumber,
+            double initialValueSusceptibleIndividuals,
             double basicTransmissionCoefficient,
             double quarantineRateAsymptomaticIndividuals,
             double isolationRateSymptomaticIndividuals,
@@ -61,6 +62,8 @@
             this.BasicReproductionNumber = basicReproductionNumber;
 
             this.ControlReproductionNumber = controlReproductionNumber;
+
+            this.InitialValueSusceptibleIndividuals = initialValueSusceptibleIndividuals;
 
             this.BasicTransmissionCoefficient = basicTransmissionCoefficient;
 
@@ -146,6 +149,12 @@
         /// Parameter: ℛ_c
         /// </summary>
         public double ControlReproductionNumber { get; }
+
+        /// <summary>
+        /// Gets the initial value for susceptible individuals.
+        /// Parameter: S(0)
+        /// </summary>
+        public double InitialValueSusceptibleIndividuals { get; }
 
         /// <summary>
         /// Gets the basic transmission coefficient.

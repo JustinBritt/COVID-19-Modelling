@@ -69,6 +69,12 @@
         double ControlReproductionNumber { get; }
 
         /// <summary>
+        /// Gets the initial value for susceptible individuals.
+        /// Parameter: S(0)
+        /// </summary>
+        double InitialValueSusceptibleIndividuals { get; }
+
+        /// <summary>
         /// Gets the basic transmission coefficient.
         /// Parameter: β
         /// </summary>
