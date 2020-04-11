@@ -21,6 +21,7 @@
             double diseaseInducedDeathRateIsolatedIndividuals,
             double initialValueAsymptomaticIndividuals,
             double initialValueSymptomaticIndividuals,
+            double initialValueIsolatedIndividuals,
             double recruitmentRateAsymptomaticIndividuals,
             double basicReproductionNumber,
             double controlReproductionNumber,
@@ -46,6 +47,8 @@
             this.InitialValueAsymptomaticIndividuals = initialValueAsymptomaticIndividuals;
 
             this.InitialValueSymptomaticIndividuals = initialValueSymptomaticIndividuals;
+
+            this.InitialValueIsolatedIndividuals = initialValueIsolatedIndividuals;
 
             this.RecruitmentRateAsymptomaticIndividuals = recruitmentRateAsymptomaticIndividuals;
 
@@ -101,6 +104,12 @@
         /// Parameter: I(0)
         /// </summary>
         public double InitialValueSymptomaticIndividuals { get; }
+
+        /// <summary>
+        /// Gets the initial value for isolated individuals.
+        /// Parameter: J(0)
+        /// </summary>
+        public double InitialValueIsolatedIndividuals { get; }
 
         /// <summary>
         /// Gets the recruitment rate of asymptomatic individuals per day.
