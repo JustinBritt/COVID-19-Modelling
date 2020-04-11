@@ -164,5 +164,96 @@
         public IR R { get; }
 
         public IS S { get; }
+
+        // https://stackoverflow.com/a/55004295
+        // TODO: Move
+        public Func<double, Vector, Vector> GetSystemRightPartsVectorFunction(
+            Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,
+            Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals.Id d_2,
+            Ip p,
+            Iβ β,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.QuarantineRateAsymptomaticIndividuals.Iγ γ_1,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.IsolationRateSymptomaticIndividuals.Iγ γ_2,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorAsymptomaticIndividuals.Iε ε_E,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorIsolatedIndividuals.Iε ε_J,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorQuarantinedIndividuals.Iε ε_Q,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals.Iκ κ_1,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.DevelopmentClinicalSymptomsRateQuarantinedIndividuals.Iκ κ_2,
+            Iμ μ,
+            IΠ Π,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.RecoveryRateSymptomaticIndividuals.Iσ σ_1,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.RecoveryRateIsolatedIndividuals.Iσ σ_2,
+            C19M.M.C.Gumel2004.Interfaces.Variables.AsymptomaticIndividuals.IE E,
+            C19M.M.C.Gumel2004.Interfaces.Variables.SymptomaticIndividuals.II I,
+            C19M.M.C.Gumel2004.Interfaces.Variables.IsolatedIndividuals.IJ J,
+            C19M.M.C.Gumel2004.Interfaces.Variables.QuarantinedIndividuals.IQ Q,
+            C19M.M.C.Gumel2004.Interfaces.Variables.RecoveredIndividuals.IR R,
+            C19M.M.C.Gumel2004.Interfaces.Variables.SusceptibleIndividuals.IS S)
+        {
+            // E: 0, I: 1, J: 2, Q: 3, R: 4, S: 5, N: sum
+            return (t, x) =>
+            {
+                return new Vector(
+                    E.GetdEdt(
+                        E: x[0],
+                        I: x[1],
+                        J: x[2],
+                        N: x.Sum,
+                        p,
+                        Q: x[3],
+                        S: x[5],
+                        β,
+                        γ_1,
+                        γ_2,
+                        ε_E,
+                        ε_J,
+                        ε_Q,
+                        κ_1,
+                        μ),
+                    I.GetdIdt(
+                        d_1,
+                        E: x[0],
+                        I: x[1],
+                        γ_2,
+                        κ_1,
+                        μ,
+                        σ_1),
+                    J.GetdJdt(
+                        d_2,
+                        I: x[1],
+                        J: x[2],
+                        Q: x[3],
+                        γ_2,
+                        κ_2,
+                        μ,
+                        σ_2),
+                    Q.GetdQdt(
+                        E: x[0],
+                        Q: x[3],
+                        γ_1,
+                        κ_2,
+                        μ),
+                    R.GetdRdt(
+                        I: x[1],
+                        J: x[2],
+                        R: x[4],
+                        μ,
+                        σ_1,
+                        σ_2),
+                    S.GetdSdt(
+                        E: x[0],
+                        I: x[1],
+                        J: x[2],
+                        N: x.Sum,
+                        Q: x[3],
+                        S: x[5],
+                        β,
+                        ε_E,
+                        ε_J,
+                        ε_Q,
+                        μ,
+                        Π));
+            };
+        }
     }
 }
