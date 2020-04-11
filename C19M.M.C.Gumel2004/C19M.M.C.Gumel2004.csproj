@@ -105,7 +105,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Classes\Parameters\InitialValueQuarantinedIndividuals\" />
     <Folder Include="Factories\Parameters\BasicReproductionNumber\" />
+    <Folder Include="Interfaces\Parameters\InitialValueQuarantinedIndividuals\" />
     <Folder Include="Interfaces_Factories\Parameters\BasicReproductionNumber\" />
   </ItemGroup>
   <ItemGroup>
