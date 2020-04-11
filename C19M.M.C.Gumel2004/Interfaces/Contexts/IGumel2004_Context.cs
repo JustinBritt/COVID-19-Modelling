@@ -45,6 +45,12 @@
         double RecruitmentRateAsymptomaticIndividuals { get; }
 
         /// <summary>
+        /// Gets the initial value for quarantined individuals.
+        /// Parameter: Q(0)
+        /// </summary>
+        double InitialValueQuarantinedIndividuals { get; }
+
+        /// <summary>
         /// Gets the basic reproduction number.
         /// Parameter: ℛ_0
         /// </summary>

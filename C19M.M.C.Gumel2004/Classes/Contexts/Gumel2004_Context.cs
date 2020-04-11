@@ -23,6 +23,7 @@
             double initialValueSymptomaticIndividuals,
             double initialValueIsolatedIndividuals,
             double recruitmentRateAsymptomaticIndividuals,
+            double initialValueQuarantinedIndividuals,
             double basicReproductionNumber,
             double controlReproductionNumber,
             double basicTransmissionCoefficient,
@@ -51,6 +52,8 @@
             this.InitialValueIsolatedIndividuals = initialValueIsolatedIndividuals;
 
             this.RecruitmentRateAsymptomaticIndividuals = recruitmentRateAsymptomaticIndividuals;
+
+            this.InitialValueQuarantinedIndividuals = initialValueQuarantinedIndividuals;
 
             this.BasicReproductionNumber = basicReproductionNumber;
 
@@ -116,6 +119,12 @@
         /// Parameter: p
         /// </summary>
         public double RecruitmentRateAsymptomaticIndividuals { get; }
+
+        /// <summary>
+        /// Gets the initial value for quarantined individuals.
+        /// Parameter: Q(0)
+        /// </summary>
+        public double InitialValueQuarantinedIndividuals { get; }
 
         /// <summary>
         /// Gets the basic reproduction number.
