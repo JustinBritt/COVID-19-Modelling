@@ -52,6 +52,7 @@
     <Compile Include="Classes\Parameters\DevelopmentClinicalSymptomsRateQuarantinedIndividuals\κ.cs" />
     <Compile Include="Classes\Parameters\DiseaseInducedDeathRateIsolatedIndividuals\d.cs" />
     <Compile Include="Classes\Parameters\DiseaseInducedDeathRateSymptomaticIndividuals\d.cs" />
+    <Compile Include="Classes\Parameters\InitialValueAsymptomaticIndividuals\E.cs" />
     <Compile Include="Classes\Parameters\IsolationRateSymptomaticIndividuals\γ.cs" />
     <Compile Include="Classes\Parameters\QuarantineRateAsymptomaticIndividuals\γ.cs" />
     <Compile Include="Classes\Parameters\RecoveryRateIsolatedIndividuals\σ.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="Interfaces\Parameters\DevelopmentClinicalSymptomsRateQuarantinedIndividuals\Iκ.cs" />
     <Compile Include="Interfaces\Parameters\DiseaseInducedDeathRateIsolatedIndividuals\Id.cs" />
     <Compile Include="Interfaces\Parameters\DiseaseInducedDeathRateSymptomaticIndividuals\Id.cs" />
+    <Compile Include="Interfaces\Parameters\InitialValueAsymptomaticIndividuals\IE.cs" />
     <Compile Include="Interfaces\Parameters\IsolationRateSymptomaticIndividuals\Iγ.cs" />
     <Compile Include="Interfaces\Parameters\RecoveryRateIsolatedIndividuals\Iσ.cs" />
     <Compile Include="Interfaces\Parameters\RecoveryRateSymptomaticIndividuals\Iσ.cs" />
@@ -99,9 +101,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\Parameters\InitialValueAsymptomaticIndividuals\" />
     <Folder Include="Factories\Parameters\BasicReproductionNumber\" />
-    <Folder Include="Interfaces\Parameters\InitialValueAsymptomaticIndividuals\" />
     <Folder Include="Interfaces_Factories\Parameters\BasicReproductionNumber\" />
   </ItemGroup>
   <ItemGroup>
