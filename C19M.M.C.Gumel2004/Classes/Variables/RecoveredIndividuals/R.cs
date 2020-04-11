@@ -12,6 +12,8 @@
     // Oslo
     using Microsoft.Research.Oslo;
 
+    using C19M.M.C.Gumel2004.Interfaces.Parameters.NaturalDeathRate;
+
     using C19M.M.C.Gumel2004.Interfaces.Variables.RecoveredIndividuals;
 
     internal sealed class R : IR
@@ -28,5 +30,31 @@
         }
 
         public Vector Value { get; }
+
+        /// <summary>
+        /// Gets dR/dt.
+        /// </summary>
+        /// <param name="I"></param>
+        /// <param name="J"></param>
+        /// <param name="R"></param>
+        /// <param name="μ"></param>
+        /// <param name="σ_1"></param>
+        /// <param name="σ_2"></param>
+        /// <returns></returns>
+        public double getdRdt(
+            double I,
+            double J,
+            double R,
+            Iμ μ,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.RecoveryRateSymptomaticIndividuals.Iσ σ_1,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.RecoveryRateIsolatedIndividuals.Iσ σ_2)
+        {
+            return
+                σ_1.Value * I
+                +
+                σ_2.Value * J
+                -
+                μ.Value * R;
+        }
     }
 }
