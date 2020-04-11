@@ -6,21 +6,14 @@
     using System.Text;
     using System.Threading.Tasks;
 
-    // Oslo
-    using Microsoft.Research.Oslo;
-
     using C19M.M.C.Gumel2004.Interfaces.Parameters.BasicTransmissionCoefficient;
 
     using C19M.M.C.Gumel2004.Interfaces.Parameters.NaturalDeathRate;
 
     using C19M.M.C.Gumel2004.Interfaces.Parameters.RecruitmentRateAsymptomaticIndividuals;
 
-    using C19M.M.C.Gumel2004.Interfaces.Variables.AsymptomaticIndividuals;
-
     internal interface IE
     {
-        Vector Value { get; }
-
         /// <summary>
         /// Gets dE/dt.
         /// </summary>

@@ -23,15 +23,10 @@
         private ILog Log { get; }
 
         // Constructor
-        public S(
-            Vector value)
+        public S()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
-            this.Value = value;
         }
-
-        public Vector Value { get; }
 
         /// <summary>
         /// Gets dS/dt.

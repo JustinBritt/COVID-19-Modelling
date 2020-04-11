@@ -19,14 +19,9 @@
         private ILog Log { get; }
 
         // Constructor
-        public N(
-            Vector value)
+        public N()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
-            this.Value = value;
         }
-
-        public Vector Value { get; }
     }
 }

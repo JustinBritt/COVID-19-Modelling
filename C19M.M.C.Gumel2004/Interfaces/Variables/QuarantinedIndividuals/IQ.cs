@@ -6,15 +6,10 @@
     using System.Text;
     using System.Threading.Tasks;
 
-    // Oslo
-    using Microsoft.Research.Oslo;
-
     using C19M.M.C.Gumel2004.Interfaces.Parameters.NaturalDeathRate;
 
     internal interface IQ
     {
-        Vector Value { get; }
-
         /// <summary>
         /// Gets dQ/dt.
         /// </summary>

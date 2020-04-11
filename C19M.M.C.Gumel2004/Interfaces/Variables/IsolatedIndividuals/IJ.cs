@@ -6,17 +6,10 @@
     using System.Text;
     using System.Threading.Tasks;
 
-    // Oslo
-    using Microsoft.Research.Oslo;
-
     using C19M.M.C.Gumel2004.Interfaces.Parameters.NaturalDeathRate;
-
-    using C19M.M.C.Gumel2004.Interfaces.Variables.IsolatedIndividuals;
 
     internal interface IJ
     {
-        Vector Value { get; }
-
         /// <summary>
         /// Gets dJ/dt.
         /// </summary>

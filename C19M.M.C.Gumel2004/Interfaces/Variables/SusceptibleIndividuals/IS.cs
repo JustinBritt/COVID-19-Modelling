@@ -6,17 +6,12 @@
     using System.Text;
     using System.Threading.Tasks;
 
-    // Oslo
-    using Microsoft.Research.Oslo;
-
     using C19M.M.C.Gumel2004.Interfaces.Parameters.BasicTransmissionCoefficient;
     using C19M.M.C.Gumel2004.Interfaces.Parameters.NaturalDeathRate;
     using C19M.M.C.Gumel2004.Interfaces.Parameters.NetInflowRateSusceptibleIndividuals;
 
     internal interface IS
     {
-        Vector Value { get; }
-
         /// <summary>
         /// Gets dS/dt.
         /// </summary>

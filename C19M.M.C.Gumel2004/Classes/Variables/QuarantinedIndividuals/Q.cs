@@ -9,9 +9,6 @@
     // Logging
     using log4net;
 
-    // Oslo
-    using Microsoft.Research.Oslo;
-
     using C19M.M.C.Gumel2004.Interfaces.Parameters.NaturalDeathRate;
 
     using C19M.M.C.Gumel2004.Interfaces.Variables.QuarantinedIndividuals;
@@ -21,15 +18,10 @@
         private ILog Log { get; }
 
         // Constructor
-        public Q(
-            Vector value)
+        public Q()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
-            this.Value = value;
         }
-
-        public Vector Value { get; }
 
         /// <summary>
         /// Gets dQ/dt.
