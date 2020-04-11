@@ -19,6 +19,7 @@
         public Gumel2004_Context(
             double diseaseInducedDeathRateSymptomaticIndividuals,
             double diseaseInducedDeathRateIsolatedIndividuals,
+            double initialValueAsymptomaticIndividuals,
             double recruitmentRateAsymptomaticIndividuals,
             double basicReproductionNumber,
             double controlReproductionNumber,
@@ -40,6 +41,8 @@
             this.DiseaseInducedDeathRateSymptomaticIndividuals = diseaseInducedDeathRateSymptomaticIndividuals;
 
             this.DiseaseInducedDeathRateIsolatedIndividuals = diseaseInducedDeathRateIsolatedIndividuals;
+
+            this.InitialValueAsymptomaticIndividuals = initialValueAsymptomaticIndividuals;
 
             this.RecruitmentRateAsymptomaticIndividuals = recruitmentRateAsymptomaticIndividuals;
 
@@ -83,6 +86,12 @@
         /// Parameter: d_2
         /// </summary>
         public double DiseaseInducedDeathRateIsolatedIndividuals { get; }
+
+        /// <summary>
+        /// Gets the initial value for asymptomatic individuals.
+        /// Parameter: E(0)
+        /// </summary>
+        public double InitialValueAsymptomaticIndividuals { get; }
 
         /// <summary>
         /// Gets the recruitment rate of asymptomatic individuals per day.

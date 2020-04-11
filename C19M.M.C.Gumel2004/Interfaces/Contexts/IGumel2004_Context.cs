@@ -21,6 +21,12 @@
         double DiseaseInducedDeathRateIsolatedIndividuals { get; }
 
         /// <summary>
+        /// Gets the initial value for asymptomatic individuals.
+        /// Parameter: E(0)
+        /// </summary>
+        double InitialValueAsymptomaticIndividuals { get; }
+
+        /// <summary>
         /// Gets the recruitment rate of asymptomatic individuals per day.
         /// Parameter: p
         /// </summary>
