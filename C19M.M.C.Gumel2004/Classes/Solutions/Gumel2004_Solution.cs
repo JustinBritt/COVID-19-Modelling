@@ -75,7 +75,7 @@
             C19M.M.C.Gumel2004.Interfaces.Variables.RecoveredIndividuals.IR R,
             C19M.M.C.Gumel2004.Interfaces.Variables.SusceptibleIndividuals.IS S)
         {
-            MathNet.Numerics.LinearAlgebra.Vector<double>[] solution = MathNet.Numerics.OdeSolvers.RungeKutta.FourthOrder(
+            return MathNet.Numerics.OdeSolvers.RungeKutta.FourthOrder(
                 new EIJQRS_Vector(
                     E.InitialValue,
                     I.InitialValue,
