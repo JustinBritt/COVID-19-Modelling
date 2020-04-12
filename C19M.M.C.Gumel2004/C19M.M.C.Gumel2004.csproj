@@ -126,12 +126,6 @@
     <Folder Include="Interfaces_Factories\Parameters\BasicReproductionNumber\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Oslo\Oslo.csproj">
-      <Project>{92589c2d-3833-496f-87e8-788fd511b162}</Project>
-      <Name>Oslo</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
