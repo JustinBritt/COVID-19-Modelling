@@ -66,12 +66,6 @@
                 model.R,
                 model.S);
 
-            System.Diagnostics.Debug.WriteLine("TEST?");
-
-            var www = results.Length;
-
-            System.Diagnostics.Debug.WriteLine("Length: " + results.Length);
-
             for (int i = 0; i <= results.Length - 1; i = i + 1)
             {
                 MathNet.Numerics.LinearAlgebra.Vector<double> w = results[i];
