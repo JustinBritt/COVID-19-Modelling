@@ -12,6 +12,8 @@
 
     internal interface IS
     {
+        double InitialValue { get; }
+
         /// <summary>
         /// Gets dS/dt.
         /// </summary>

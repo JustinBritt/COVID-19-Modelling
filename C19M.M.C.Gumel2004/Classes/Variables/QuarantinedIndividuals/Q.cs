@@ -18,10 +18,15 @@
         private ILog Log { get; }
 
         // Constructor
-        public Q()
+        public Q(
+            double initialValue)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+            this.InitialValue = initialValue;
         }
+
+        public double InitialValue { get; }
 
         /// <summary>
         /// Gets dQ/dt.

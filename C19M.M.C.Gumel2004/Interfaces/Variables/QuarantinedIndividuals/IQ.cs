@@ -10,6 +10,8 @@
 
     internal interface IQ
     {
+        double InitialValue { get; }
+
         /// <summary>
         /// Gets dQ/dt.
         /// </summary>

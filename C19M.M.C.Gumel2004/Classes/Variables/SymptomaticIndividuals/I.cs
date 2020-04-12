@@ -21,10 +21,15 @@
         private ILog Log { get; }
 
         // Constructor
-        public I()
+        public I(
+            double initialValue)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+            this.InitialValue = initialValue;
         }
+
+        public double InitialValue { get; }
 
         /// <summary>
         /// Gets dI/dt.

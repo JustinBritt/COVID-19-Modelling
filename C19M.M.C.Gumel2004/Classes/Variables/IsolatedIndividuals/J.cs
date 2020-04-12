@@ -18,10 +18,15 @@
         private ILog Log { get; }
 
         // Constructor
-        public J()
+        public J(
+            double initialValue)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+            this.InitialValue = initialValue;
         }
+
+        public double InitialValue { get; }
 
         /// <summary>
         /// Gets dJ/dt.

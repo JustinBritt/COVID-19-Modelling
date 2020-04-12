@@ -10,6 +10,8 @@
 
     internal interface IR
     {
+        double InitialValue { get; }
+
         // <summary>
         /// Gets dR/dt.
         /// </summary>

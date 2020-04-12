@@ -8,5 +8,6 @@
 
     internal interface IN
     {
+        double InitialValue { get; }
     }
 }

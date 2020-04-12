@@ -10,6 +10,8 @@
 
     internal interface IJ
     {
+        double InitialValue { get; }
+
         /// <summary>
         /// Gets dJ/dt.
         /// </summary>

@@ -10,6 +10,8 @@
 
     internal interface II
     {
+        double InitialValue { get; }
+
         /// <summary>
         /// Gets dI/dt.
         /// </summary>

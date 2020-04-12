@@ -14,6 +14,8 @@
 
     internal interface IE
     {
+        double InitialValue { get; }
+
         /// <summary>
         /// Gets dE/dt.
         /// </summary>
