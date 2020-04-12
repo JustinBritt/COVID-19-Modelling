@@ -52,7 +52,7 @@
         }
 
         // TODO: Finish
-        public void Solve(
+        public MathNet.Numerics.LinearAlgebra.Vector<double>[] Solve(
             Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,
             Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals.Id d_2,
             Ip p,
@@ -75,7 +75,7 @@
             C19M.M.C.Gumel2004.Interfaces.Variables.RecoveredIndividuals.IR R,
             C19M.M.C.Gumel2004.Interfaces.Variables.SusceptibleIndividuals.IS S)
         {
-            MathNet.Numerics.OdeSolvers.RungeKutta.FourthOrder(
+            MathNet.Numerics.LinearAlgebra.Vector<double>[] solution = MathNet.Numerics.OdeSolvers.RungeKutta.FourthOrder(
                 new EIJQRS_Vector(
                     E.InitialValue,
                     I.InitialValue,
