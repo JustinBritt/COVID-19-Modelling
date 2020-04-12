@@ -155,25 +155,32 @@
             // Variables
 
             // E(t)
-            this.E = new C19M.M.C.Gumel2004.Classes.Variables.AsymptomaticIndividuals.E();
+            this.E = new C19M.M.C.Gumel2004.Classes.Variables.AsymptomaticIndividuals.E(
+                1);
 
             // I(t)
-            this.I = new C19M.M.C.Gumel2004.Classes.Variables.SymptomaticIndividuals.I();
+            this.I = new C19M.M.C.Gumel2004.Classes.Variables.SymptomaticIndividuals.I(
+                1);
 
             // J(t)
-            this.J = new C19M.M.C.Gumel2004.Classes.Variables.IsolatedIndividuals.J();
+            this.J = new C19M.M.C.Gumel2004.Classes.Variables.IsolatedIndividuals.J(
+                1);
 
             // N(t)
-            this.N = new C19M.M.C.Gumel2004.Classes.Variables.TotalPopulationSize.N();
+            this.N = new C19M.M.C.Gumel2004.Classes.Variables.TotalPopulationSize.N(
+                1);
 
             // Q(t)
-            this.Q = new C19M.M.C.Gumel2004.Classes.Variables.QuarantinedIndividuals.Q();
+            this.Q = new C19M.M.C.Gumel2004.Classes.Variables.QuarantinedIndividuals.Q(
+                1);
 
             // R(t)
-            this.R = new C19M.M.C.Gumel2004.Classes.Variables.RecoveredIndividuals.R();
+            this.R = new C19M.M.C.Gumel2004.Classes.Variables.RecoveredIndividuals.R(
+                1);
 
             // S(t)
-            this.S = new C19M.M.C.Gumel2004.Classes.Variables.SusceptibleIndividuals.S();
+            this.S = new C19M.M.C.Gumel2004.Classes.Variables.SusceptibleIndividuals.S(
+                1);
         }
 
         public Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1 { get; }
