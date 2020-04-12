@@ -87,7 +87,7 @@
                 1,
                 5,
                 25,
-                (Func<double, MathNet.Numerics.LinearAlgebra.Vector<double>, MathNet.Numerics.LinearAlgebra.Vector<double>>)GetSystemRightPartsVectorFunction(
+                GetSystemRightPartsVectorFunction(
                     d_1,
                     d_2,
                     p,
@@ -112,7 +112,7 @@
         }
 
         // https://stackoverflow.com/a/55004295
-        private Func<double, IEIJQRS_Vector, IEIJQRS_Vector> GetSystemRightPartsVectorFunction(
+        private Func<double, MathNet.Numerics.LinearAlgebra.Vector<double>, MathNet.Numerics.LinearAlgebra.Vector<double>> GetSystemRightPartsVectorFunction(
             Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,
             Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals.Id d_2,
             Ip p,
@@ -137,15 +137,15 @@
         {
             return (t, x) =>
             {
-                return new EIJQRS_Vector(
+                return MathNet.Numerics.LinearAlgebra.Vector<double>.Build.Dense(new[] {
                     E.GetdEdt(
-                        E: x.E,
-                        I: x.I,
-                        J: x.J,
-                        N: x.N,
+                        E: x[0],
+                        I: x[1],
+                        J: x[2],
+                        N: x.Sum(),
                         p,
-                        Q: x.Q,
-                        S: x.S,
+                        Q: x[3],
+                        S: x[5],
                         β,
                         γ_1,
                         γ_2,
@@ -156,47 +156,48 @@
                         μ),
                     I.GetdIdt(
                         d_1,
-                        E: x.E,
-                        I: x.I,
+                        E: x[0],
+                        I: x[1],
                         γ_2,
                         κ_1,
                         μ,
                         σ_1),
                     J.GetdJdt(
                         d_2,
-                        I: x.I,
-                        J: x.J,
-                        Q: x.Q,
+                        I: x[1],
+                        J: x[2],
+                        Q: x[3],
                         γ_2,
                         κ_2,
                         μ,
                         σ_2),
                     Q.GetdQdt(
-                        E: x.E,
-                        Q: x.Q,
+                        E: x[0],
+                        Q: x[3],
                         γ_1,
                         κ_2,
                         μ),
                     R.GetdRdt(
-                        I: x.I,
-                        J: x.J,
-                        R: x.R,
+                        I: x[1],
+                        J: x[2],
+                        R: x[4],
                         μ,
                         σ_1,
                         σ_2),
                     S.GetdSdt(
-                        E: x.E,
-                        I: x.I,
-                        J: x.J,
-                        N: x.N,
-                        Q: x.Q,
-                        S: x.S,
+                        E: x[0],
+                        I: x[1],
+                        J: x[2],
+                        N: x.Sum(),
+                        Q: x[3],
+                        S: x[5],
                         β,
                         ε_E,
                         ε_J,
                         ε_Q,
                         μ,
-                        Π));
+                        Π)
+                });
             };
         }
     }
