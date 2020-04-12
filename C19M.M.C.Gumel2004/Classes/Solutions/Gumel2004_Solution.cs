@@ -84,9 +84,9 @@
                     R.InitialValue,
                     S.InitialValue)
                 .Vector,
-                1,
-                5,
-                25,
+                0,
+                179,
+                180,
                 GetSystemRightPartsVectorFunction(
                     d_1,
                     d_2,
