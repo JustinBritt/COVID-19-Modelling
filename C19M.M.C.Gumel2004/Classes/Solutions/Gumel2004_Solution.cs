@@ -76,7 +76,14 @@
             C19M.M.C.Gumel2004.Interfaces.Variables.SusceptibleIndividuals.IS S)
         {
             MathNet.Numerics.OdeSolvers.RungeKutta.FourthOrder(
-                new EIJQRS_Vector(1, 2, 3, 4, 5, 6).Vector,
+                new EIJQRS_Vector(
+                    E.InitialValue,
+                    I.InitialValue,
+                    J.InitialValue,
+                    Q.InitialValue,
+                    R.InitialValue,
+                    S.InitialValue)
+                .Vector,
                 1,
                 5,
                 25,
