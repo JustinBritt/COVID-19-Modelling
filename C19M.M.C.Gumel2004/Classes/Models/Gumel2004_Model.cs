@@ -75,11 +75,11 @@
 
             // d_1
             this.d_1 = new Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.d(
-                1);
+                context.DiseaseInducedDeathRateSymptomaticIndividuals);
 
             // d_2
             this.d_2 = new Parameters.DiseaseInducedDeathRateIsolatedIndividuals.d(
-                1);
+                context.DiseaseInducedDeathRateIsolatedIndividuals);
 
             // E(0)
 
@@ -89,7 +89,7 @@
 
             // p
             this.p = new p(
-                2);
+                context.RecruitmentRateAsymptomaticIndividuals);
 
             // Q(0)
 
@@ -103,81 +103,91 @@
 
             // β
             this.β = new β(
-                1);
+                context.BasicTransmissionCoefficient);
 
             // γ_1
             this.γ_1 = new Parameters.QuarantineRateAsymptomaticIndividuals.γ(
-                25);
+                context.QuarantineRateAsymptomaticIndividuals);
 
             // γ_2
             this.γ_2 = new Parameters.IsolationRateSymptomaticIndividuals.γ(
-                25);
+                context.IsolationRateSymptomaticIndividuals);
 
-            // 
+            // ε_E
             this.ε_E = new Parameters.TransmissionCoefficientModificationFactorAsymptomaticIndividuals.ε(
-                1);
+                context.TransmissionCoefficientModificationFactorAsymptomaticIndividuals);
 
             // ε_J
             this.ε_J = new Parameters.TransmissionCoefficientModificationFactorIsolatedIndividuals.ε(
-                1);
+                context.TransmissionCoefficientModificationFactorIsolatedIndividuals);
 
             // ε_Q
             this.ε_Q = new Parameters.TransmissionCoefficientModificationFactorQuarantinedIndividuals.ε(
-                1);
+                context.TransmissionCoefficientModificationFactorQuarantinedIndividuals);
 
             // κ_1
             this.κ_1 = new Parameters.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals.κ(
-                1);
+                context.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals);
 
             // κ_2
             this.κ_2 = new Parameters.DevelopmentClinicalSymptomsRateQuarantinedIndividuals.κ(
-                1);
+                context.DevelopmentClinicalSymptomsRateQuarantinedIndividuals);
 
             // μ
             this.μ = new μ(
-                35);
+                context.NaturalDeathRate);
 
             // Π
             this.Π = new Π(
-                25);
+                context.NetInflowRateSusceptibleIndividuals);
 
             // σ_1
             this.σ_1 = new Parameters.RecoveryRateSymptomaticIndividuals.σ(
-                1);
+                context.RecoveryRateSymptomaticIndividuals);
 
             // σ_2
             this.σ_2 = new Parameters.RecoveryRateIsolatedIndividuals.σ(
-               1);
+               context.RecoveryRateIsolatedIndividuals);
 
             // Variables
 
             // E(t)
             this.E = new C19M.M.C.Gumel2004.Classes.Variables.AsymptomaticIndividuals.E(
-                1);
+                context.InitialValueAsymptomaticIndividuals);
 
             // I(t)
             this.I = new C19M.M.C.Gumel2004.Classes.Variables.SymptomaticIndividuals.I(
-                1);
+                context.InitialValueSymptomaticIndividuals);
 
             // J(t)
             this.J = new C19M.M.C.Gumel2004.Classes.Variables.IsolatedIndividuals.J(
-                1);
+                context.InitialValueIsolatedIndividuals);
 
             // N(t)
             this.N = new C19M.M.C.Gumel2004.Classes.Variables.TotalPopulationSize.N(
-                1);
+                context.InitialValueAsymptomaticIndividuals // E(0)
+                +
+                context.InitialValueSymptomaticIndividuals // I(0)
+                +
+                context.InitialValueIsolatedIndividuals // J(0)
+                +
+                context.InitialValueQuarantinedIndividuals // Q(0)
+                +
+                context.InitialValueRecoveredIndividuals // R(0)
+                +
+                context.InitialValueSusceptibleIndividuals); // S(0)
 
             // Q(t)
             this.Q = new C19M.M.C.Gumel2004.Classes.Variables.QuarantinedIndividuals.Q(
-                1);
+                context.InitialValueQuarantinedIndividuals);
 
             // R(t)
             this.R = new C19M.M.C.Gumel2004.Classes.Variables.RecoveredIndividuals.R(
-                1);
+                context.InitialValueRecoveredIndividuals);
 
             // S(t)
             this.S = new C19M.M.C.Gumel2004.Classes.Variables.SusceptibleIndividuals.S(
-                1);
+                context.InitialValueSusceptibleIndividuals);
         }
 
         public Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1 { get; }
