@@ -9,9 +9,6 @@
     // Logging
     using log4net;
 
-    // Oslo
-    using Microsoft.Research.Oslo;
-
     using C19M.M.C.Gumel2004.Classes.Parameters.BasicReproductionNumber;
     using C19M.M.C.Gumel2004.Classes.Parameters.BasicTransmissionCoefficient;
     using C19M.M.C.Gumel2004.Classes.Parameters.ControlReproductionNumber;
