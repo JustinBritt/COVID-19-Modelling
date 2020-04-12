@@ -25,7 +25,6 @@
         public E()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
         }
 
         /// <summary>
