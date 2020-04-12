@@ -9,7 +9,37 @@
     // Logging
     using log4net;
 
+    using C19M.M.C.Gumel2004.Classes.Vectors;
+
+    using C19M.M.C.Gumel2004.Interfaces.Parameters.BasicReproductionNumber;
+    using C19M.M.C.Gumel2004.Interfaces.Parameters.BasicTransmissionCoefficient;
+    using C19M.M.C.Gumel2004.Interfaces.Parameters.ControlReproductionNumber;
+    using C19M.M.C.Gumel2004.Interfaces.Parameters.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals;
+    using C19M.M.C.Gumel2004.Interfaces.Parameters.DevelopmentClinicalSymptomsRateQuarantinedIndividuals;
+    using C19M.M.C.Gumel2004.Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals;
+    using C19M.M.C.Gumel2004.Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals;
+    using C19M.M.C.Gumel2004.Interfaces.Parameters.IsolationRateSymptomaticIndividuals;
+    using C19M.M.C.Gumel2004.Interfaces.Parameters.NaturalDeathRate;
+    using C19M.M.C.Gumel2004.Interfaces.Parameters.NetInflowRateSusceptibleIndividuals;
+    using C19M.M.C.Gumel2004.Interfaces.Parameters.QuarantineRateAsymptomaticIndividuals;
+    using C19M.M.C.Gumel2004.Interfaces.Parameters.RecoveryRateIsolatedIndividuals;
+    using C19M.M.C.Gumel2004.Interfaces.Parameters.RecoveryRateSymptomaticIndividuals;
+    using C19M.M.C.Gumel2004.Interfaces.Parameters.RecruitmentRateAsymptomaticIndividuals;
+    using C19M.M.C.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorAsymptomaticIndividuals;
+    using C19M.M.C.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorIsolatedIndividuals;
+    using C19M.M.C.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorQuarantinedIndividuals;
+
     using C19M.M.C.Gumel2004.Interfaces.Solutions;
+
+    using C19M.M.C.Gumel2004.Interfaces.Vectors;
+
+    using C19M.M.C.Gumel2004.Interfaces.Variables.AsymptomaticIndividuals;
+    using C19M.M.C.Gumel2004.Interfaces.Variables.IsolatedIndividuals;
+    using C19M.M.C.Gumel2004.Interfaces.Variables.QuarantinedIndividuals;
+    using C19M.M.C.Gumel2004.Interfaces.Variables.RecoveredIndividuals;
+    using C19M.M.C.Gumel2004.Interfaces.Variables.SusceptibleIndividuals;
+    using C19M.M.C.Gumel2004.Interfaces.Variables.SymptomaticIndividuals;
+    using C19M.M.C.Gumel2004.Interfaces.Variables.TotalPopulationSize;
 
     internal sealed class Gumel2004_Solution : IGumel2004_Solution
     {
@@ -19,6 +49,148 @@
         public Gumel2004_Solution()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        }
+
+        // TODO: Finish
+        public void Solve(
+            Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,
+            Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals.Id d_2,
+            Ip p,
+            Iβ β,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.QuarantineRateAsymptomaticIndividuals.Iγ γ_1,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.IsolationRateSymptomaticIndividuals.Iγ γ_2,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorAsymptomaticIndividuals.Iε ε_E,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorIsolatedIndividuals.Iε ε_J,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorQuarantinedIndividuals.Iε ε_Q,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals.Iκ κ_1,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.DevelopmentClinicalSymptomsRateQuarantinedIndividuals.Iκ κ_2,
+            Iμ μ,
+            IΠ Π,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.RecoveryRateSymptomaticIndividuals.Iσ σ_1,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.RecoveryRateIsolatedIndividuals.Iσ σ_2,
+            C19M.M.C.Gumel2004.Interfaces.Variables.AsymptomaticIndividuals.IE E,
+            C19M.M.C.Gumel2004.Interfaces.Variables.SymptomaticIndividuals.II I,
+            C19M.M.C.Gumel2004.Interfaces.Variables.IsolatedIndividuals.IJ J,
+            C19M.M.C.Gumel2004.Interfaces.Variables.QuarantinedIndividuals.IQ Q,
+            C19M.M.C.Gumel2004.Interfaces.Variables.RecoveredIndividuals.IR R,
+            C19M.M.C.Gumel2004.Interfaces.Variables.SusceptibleIndividuals.IS S)
+        {
+            MathNet.Numerics.OdeSolvers.RungeKutta.FourthOrder(
+                new EIJQRS_Vector(1, 2, 3, 4, 5, 6).Vector,
+                1,
+                5,
+                25,
+                (Func<double, MathNet.Numerics.LinearAlgebra.Vector<double>, MathNet.Numerics.LinearAlgebra.Vector<double>>)GetSystemRightPartsVectorFunction(
+                    d_1,
+                    d_2,
+                    p,
+                    β,
+                    γ_1,
+                    γ_2,
+                    ε_E,
+                    ε_J,
+                    ε_Q,
+                    κ_1,
+                    κ_2,
+                    μ,
+                    Π,
+                    σ_1,
+                    σ_2,
+                    E,
+                    I,
+                    J,
+                    Q,
+                    R,
+                    S));
+        }
+
+        // https://stackoverflow.com/a/55004295
+        private Func<double, IEIJQRS_Vector, IEIJQRS_Vector> GetSystemRightPartsVectorFunction(
+            Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,
+            Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals.Id d_2,
+            Ip p,
+            Iβ β,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.QuarantineRateAsymptomaticIndividuals.Iγ γ_1,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.IsolationRateSymptomaticIndividuals.Iγ γ_2,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorAsymptomaticIndividuals.Iε ε_E,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorIsolatedIndividuals.Iε ε_J,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorQuarantinedIndividuals.Iε ε_Q,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals.Iκ κ_1,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.DevelopmentClinicalSymptomsRateQuarantinedIndividuals.Iκ κ_2,
+            Iμ μ,
+            IΠ Π,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.RecoveryRateSymptomaticIndividuals.Iσ σ_1,
+            C19M.M.C.Gumel2004.Interfaces.Parameters.RecoveryRateIsolatedIndividuals.Iσ σ_2,
+            C19M.M.C.Gumel2004.Interfaces.Variables.AsymptomaticIndividuals.IE E,
+            C19M.M.C.Gumel2004.Interfaces.Variables.SymptomaticIndividuals.II I,
+            C19M.M.C.Gumel2004.Interfaces.Variables.IsolatedIndividuals.IJ J,
+            C19M.M.C.Gumel2004.Interfaces.Variables.QuarantinedIndividuals.IQ Q,
+            C19M.M.C.Gumel2004.Interfaces.Variables.RecoveredIndividuals.IR R,
+            C19M.M.C.Gumel2004.Interfaces.Variables.SusceptibleIndividuals.IS S)
+        {
+            return (t, x) =>
+            {
+                return new EIJQRS_Vector(
+                    E.GetdEdt(
+                        E: x.E,
+                        I: x.I,
+                        J: x.J,
+                        N: x.N,
+                        p,
+                        Q: x.Q,
+                        S: x.S,
+                        β,
+                        γ_1,
+                        γ_2,
+                        ε_E,
+                        ε_J,
+                        ε_Q,
+                        κ_1,
+                        μ),
+                    I.GetdIdt(
+                        d_1,
+                        E: x.E,
+                        I: x.I,
+                        γ_2,
+                        κ_1,
+                        μ,
+                        σ_1),
+                    J.GetdJdt(
+                        d_2,
+                        I: x.I,
+                        J: x.J,
+                        Q: x.Q,
+                        γ_2,
+                        κ_2,
+                        μ,
+                        σ_2),
+                    Q.GetdQdt(
+                        E: x.E,
+                        Q: x.Q,
+                        γ_1,
+                        κ_2,
+                        μ),
+                    R.GetdRdt(
+                        I: x.I,
+                        J: x.J,
+                        R: x.R,
+                        μ,
+                        σ_1,
+                        σ_2),
+                    S.GetdSdt(
+                        E: x.E,
+                        I: x.I,
+                        J: x.J,
+                        N: x.N,
+                        Q: x.Q,
+                        S: x.S,
+                        β,
+                        ε_E,
+                        ε_J,
+                        ε_Q,
+                        μ,
+                        Π));
+            };
         }
     }
 }
