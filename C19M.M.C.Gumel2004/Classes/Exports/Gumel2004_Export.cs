@@ -11,6 +11,10 @@
 
     using C19M.M.C.Gumel2004.Interfaces.Exports;
 
+    using C19M.M.C.Gumel2004.Interfaces.Models;
+
+    using C19M.M.C.Gumel2004.Interfaces.Solutions;
+
     public sealed class Gumel2004_Export : IGumel2004_Export
     {
         private ILog Log { get; }
