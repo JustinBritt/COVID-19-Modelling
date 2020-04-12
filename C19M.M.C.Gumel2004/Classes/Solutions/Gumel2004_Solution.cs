@@ -76,14 +76,13 @@
             C19M.M.C.Gumel2004.Interfaces.Variables.SusceptibleIndividuals.IS S)
         {
             return MathNet.Numerics.OdeSolvers.RungeKutta.FourthOrder(
-                new EIJQRS_Vector(
+                MathNet.Numerics.LinearAlgebra.Vector<double>.Build.Dense(new[] {
                     E.InitialValue,
                     I.InitialValue,
                     J.InitialValue,
                     Q.InitialValue,
                     R.InitialValue,
-                    S.InitialValue)
-                .Vector,
+                    S.InitialValue}),
                 0,
                 179,
                 180,
