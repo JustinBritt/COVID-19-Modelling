@@ -70,7 +70,7 @@
             {
                 MathNet.Numerics.LinearAlgebra.Vector<double> w = results[i];
 
-                System.Diagnostics.Debug.WriteLine(w[1] + w[2] + w[3]);
+                System.Diagnostics.Debug.WriteLine((double)(w[0] + w[1] + w[2] + w[3]) / (double)180);
             }
         }
     }
