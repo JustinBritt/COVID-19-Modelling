@@ -26,8 +26,6 @@
 
     using C19M.M.C.Gumel2004.Interfaces.Solutions;
 
-    using C19M.M.C.Gumel2004.Interfaces.Vectors;
-
     using C19M.M.C.Gumel2004.Interfaces.Variables.AsymptomaticIndividuals;
     using C19M.M.C.Gumel2004.Interfaces.Variables.IsolatedIndividuals;
     using C19M.M.C.Gumel2004.Interfaces.Variables.QuarantinedIndividuals;

@@ -9,8 +9,6 @@
     // Logging
     using log4net;
 
-    using C19M.M.C.Gumel2004.Classes.Vectors;
-
     using C19M.M.C.Gumel2004.Interfaces.Parameters.BasicReproductionNumber;
     using C19M.M.C.Gumel2004.Interfaces.Parameters.BasicTransmissionCoefficient;
     using C19M.M.C.Gumel2004.Interfaces.Parameters.ControlReproductionNumber;
@@ -30,8 +28,6 @@
     using C19M.M.C.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorQuarantinedIndividuals;
 
     using C19M.M.C.Gumel2004.Interfaces.Solutions;
-
-    using C19M.M.C.Gumel2004.Interfaces.Vectors;
 
     using C19M.M.C.Gumel2004.Interfaces.Variables.AsymptomaticIndividuals;
     using C19M.M.C.Gumel2004.Interfaces.Variables.IsolatedIndividuals;

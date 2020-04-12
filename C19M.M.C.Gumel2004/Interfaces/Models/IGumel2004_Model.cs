@@ -24,8 +24,6 @@
     using C19M.M.C.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorIsolatedIndividuals;
     using C19M.M.C.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorQuarantinedIndividuals;
 
-    using C19M.M.C.Gumel2004.Interfaces.Vectors;
-
     using C19M.M.C.Gumel2004.Interfaces.Variables.AsymptomaticIndividuals;
     using C19M.M.C.Gumel2004.Interfaces.Variables.IsolatedIndividuals;
     using C19M.M.C.Gumel2004.Interfaces.Variables.QuarantinedIndividuals;
