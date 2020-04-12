@@ -70,7 +70,9 @@
 
             for (int i = 0; i <= results.Length - 1; i = i + 1)
             {
-                System.Diagnostics.Debug.WriteLine(i.ToString() + ": " + results[i]);
+                MathNet.Numerics.LinearAlgebra.Vector<double> w = results[i];
+
+                System.Diagnostics.Debug.WriteLine(w[1]);
             }
         }
     }
