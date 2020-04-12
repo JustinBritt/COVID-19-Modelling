@@ -81,6 +81,7 @@
     <Compile Include="Classes\Variables\SusceptibleIndividuals\S.cs" />
     <Compile Include="Classes\Variables\SymptomaticIndividuals\I.cs" />
     <Compile Include="Classes\Variables\TotalPopulationSize\N.cs" />
+    <Compile Include="Classes\Vectors\EIJQRS_Vector.cs" />
     <Compile Include="Interfaces\Contexts\IGumel2004_Context.cs" />
     <Compile Include="Interfaces\Models\IGumel2004_Model.cs" />
     <Compile Include="Interfaces\Parameters\BasicReproductionNumber\Iℛ.cs" />
@@ -113,12 +114,13 @@
     <Compile Include="Interfaces\Variables\SusceptibleIndividuals\IS.cs" />
     <Compile Include="Interfaces\Variables\SymptomaticIndividuals\II.cs" />
     <Compile Include="Interfaces\Variables\TotalPopulationSize\IN.cs" />
+    <Compile Include="Interfaces\Vectors\IEIJQRS_Vector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\Vectors\" />
+    <Folder Include="Classes\Solutions\" />
     <Folder Include="Factories\Parameters\BasicReproductionNumber\" />
-    <Folder Include="Interfaces\Vectors\" />
+    <Folder Include="Interfaces\Solutions\" />
     <Folder Include="Interfaces_Factories\Parameters\BasicReproductionNumber\" />
   </ItemGroup>
   <ItemGroup>
