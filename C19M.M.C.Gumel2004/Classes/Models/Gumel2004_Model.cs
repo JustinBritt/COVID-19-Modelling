@@ -81,25 +81,13 @@
             this.d_2 = new Parameters.DiseaseInducedDeathRateIsolatedIndividuals.d(
                 context.DiseaseInducedDeathRateIsolatedIndividuals);
 
-            // E(0)
-
-            // I(0)
-
-            // J(0)
-
             // p
             this.p = new p(
                 context.RecruitmentRateAsymptomaticIndividuals);
 
-            // Q(0)
-
-            // R(0)
-
             // ℛ_0
 
             // ℛ_c
-
-            // S(0)
 
             // β
             this.β = new β(
