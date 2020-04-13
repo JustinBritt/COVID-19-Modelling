@@ -66,11 +66,15 @@
                 model.R,
                 model.S);
 
+            double d_1 = 0.0079;
+
+            double d_2 = 0.0068;
+
             for (int i = 0; i <= results.Length - 1; i = i + 1)
             {
                 MathNet.Numerics.LinearAlgebra.Vector<double> w = results[i];
 
-                System.Diagnostics.Debug.WriteLine((double)(w[0] + w[1] + w[2] + w[3]) / (double)180);
+                System.Diagnostics.Debug.WriteLine(w[5]);
             }
         }
     }
