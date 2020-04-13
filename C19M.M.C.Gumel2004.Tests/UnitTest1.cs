@@ -74,7 +74,10 @@
             {
                 MathNet.Numerics.LinearAlgebra.Vector<double> w = results[i];
 
-                System.Diagnostics.Debug.WriteLine(w[5]);
+                System.Diagnostics.Debug.WriteLine(w[1]);
+
+                // S(t)
+                //System.Diagnostics.Debug.WriteLine(w[5]);
             }
         }
     }
