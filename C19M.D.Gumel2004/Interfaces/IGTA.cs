@@ -12,6 +12,26 @@
     public interface IGTA
     {
         /// <summary>
+        /// Gets the start date.
+        /// </summary>
+        DateTime StartDate { get; }
+
+        /// <summary>
+        /// Gets the start date for isolation and quarantine programs.
+        /// </summary>
+        DateTime IsolationQuarantineStartDate { get; }
+
+        /// <summary>
+        /// Gets the start date for perfect isolation.
+        /// </summary>
+        DateTime PerfectIsolationStartDate { get; }
+
+        /// <summary>
+        /// Gets the end date.
+        /// </summary>
+        DateTime EndDate { get; }
+
+        /// <summary>
         /// Gets the disease-induced death rate for symptomatic individuals.
         /// Parameter: d_1
         /// </summary>

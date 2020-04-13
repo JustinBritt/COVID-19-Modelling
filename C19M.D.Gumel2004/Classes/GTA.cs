@@ -25,6 +25,26 @@
         }
 
         /// <summary>
+        /// Gets the start date.
+        /// </summary>
+        public DateTime StartDate => new DateTime(2003, 3, 1);
+
+        /// <summary>
+        /// Gets the start date for isolation and quarantine programs.
+        /// </summary>
+        public DateTime IsolationQuarantineStartDate => new DateTime(2003, 3, 30);
+
+        /// <summary>
+        /// Gets the start date for perfect isolation.
+        /// </summary>
+        public DateTime PerfectIsolationStartDate => new DateTime(2003, 4, 20);
+
+        /// <summary>
+        /// Gets the end date.
+        /// </summary>
+        public DateTime EndDate => new DateTime(2003, 9, 1);
+
+        /// <summary>
         /// Gets the disease-induced death rate for symptomatic individuals.
         /// Parameter: d_1
         /// </summary>
