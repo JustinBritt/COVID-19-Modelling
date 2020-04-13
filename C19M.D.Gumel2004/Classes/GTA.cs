@@ -76,7 +76,7 @@
         /// Gets the initial value for susceptible individuals.
         /// Parameter: S(0)
         /// </summary>
-        public double InitialValueSusceptibleIndividuals => 4;
+        public double InitialValueSusceptibleIndividuals => 4000000;
 
         /// <summary>
         /// Gets the basic transmission coefficient.
