@@ -122,7 +122,7 @@
         /// Gets the transmission coefficient modification factor for asymptomatic individuals.
         /// Parameter: ε_E
         /// </summary>
-        public double TransmissionCoefficientModificationFactorAsymptomaticIndividuals => 0; // ?
+        public double TransmissionCoefficientModificationFactorAsymptomaticIndividuals => 0;
 
         /// <summary>
         /// Gets the transmission coefficient modification factor for isolated individuals.
@@ -145,7 +145,7 @@
         /// Gets the transmission coefficient modification factor for quarantined individuals.
         /// Parameter: ε_Q
         /// </summary>
-        public double TransmissionCoefficientModificationFactorQuarantinedIndividuals => 0; // ?
+        public double TransmissionCoefficientModificationFactorQuarantinedIndividuals => 0;
 
         /// <summary>
         /// Gets the rate at which asymptomatic individuals develop clinical symptoms.
