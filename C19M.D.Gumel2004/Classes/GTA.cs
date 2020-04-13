@@ -106,7 +106,18 @@
         /// Gets the transmission coefficient modification factor for isolated individuals.
         /// Parameter: ε_J
         /// </summary>
-        public double TransmissionCoefficientModificationFactorIsolatedIndividuals => 0.36;
+        public Func<DateTime, double> TransmissionCoefficientModificationFactorIsolatedIndividuals => 
+            (x) =>
+            {
+                if (x.Date <= new DateTime(2003, 4, 20))
+                {
+                    return 0.36;
+                }
+                else
+                {
+                    return 0;
+                }
+            };
 
         /// <summary>
         /// Gets the transmission coefficient modification factor for quarantined individuals.

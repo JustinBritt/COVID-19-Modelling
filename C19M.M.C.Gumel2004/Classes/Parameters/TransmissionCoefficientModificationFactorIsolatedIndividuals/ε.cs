@@ -17,7 +17,7 @@
 
         // Constructor
         public ε(
-            double value)
+            Func<DateTime, double> value)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -27,6 +27,6 @@
         /// <summary>
         /// Gets the transmission coefficient modification factor for isolated individuals.
         /// </summary>
-        public double Value { get; }
+        public Func<DateTime, double> Value { get; }
     }
 }

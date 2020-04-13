@@ -93,7 +93,7 @@
         /// Gets the transmission coefficient modification factor for isolated individuals.
         /// Parameter: ε_J
         /// </summary>
-        double TransmissionCoefficientModificationFactorIsolatedIndividuals { get; }
+        Func<DateTime, double> TransmissionCoefficientModificationFactorIsolatedIndividuals { get; }
 
         /// <summary>
         /// Gets the transmission coefficient modification factor for quarantined individuals.

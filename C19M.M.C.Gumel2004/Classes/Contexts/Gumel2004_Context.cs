@@ -32,7 +32,7 @@
             double quarantineRateAsymptomaticIndividuals,
             double isolationRateSymptomaticIndividuals,
             double transmissionCoefficientModificationFactorAsymptomaticIndividuals,
-            double transmissionCoefficientModificationFactorIsolatedIndividuals,
+            Func<DateTime, double> transmissionCoefficientModificationFactorIsolatedIndividuals,
             double transmissionCoefficientModificationFactorQuarantinedIndividuals,
             double developmentClinicalSymptomsRateAsymptomaticIndividuals,
             double developmentClinicalSymptomsRateQuarantinedIndividuals,
@@ -184,7 +184,7 @@
         /// Gets the transmission coefficient modification factor for isolated individuals.
         /// Parameter: ε_J
         /// </summary>
-        public double TransmissionCoefficientModificationFactorIsolatedIndividuals { get; }
+        public Func<DateTime, double> TransmissionCoefficientModificationFactorIsolatedIndividuals { get; }
 
         /// <summary>
         /// Gets the transmission coefficient modification factor for quarantined individuals.
