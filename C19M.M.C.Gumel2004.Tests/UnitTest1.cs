@@ -74,6 +74,8 @@
             {
                 MathNet.Numerics.LinearAlgebra.Vector<double> w = results[i];
 
+                double deaths = d_1 * w[1] + d_2 * w[2];
+
                 System.Diagnostics.Debug.WriteLine(w[1]);
 
                 // S(t)
