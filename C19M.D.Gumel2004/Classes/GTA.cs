@@ -111,7 +111,7 @@
         public Func<DateTime, double> QuarantineRateAsymptomaticIndividuals =>
             (x) =>
             {
-                if (x.Date <= new DateTime(2003, 3, 30))
+                if (x.Date <= this.IsolationQuarantineStartDate)
                 {
                     return 0;
                 }
@@ -128,7 +128,7 @@
         public Func<DateTime, double> IsolationRateSymptomaticIndividuals =>
             (x) =>
             {
-                if (x.Date <= new DateTime(2003, 3, 30))
+                if (x.Date <= this.IsolationQuarantineStartDate)
                 {
                     return 0;
                 }
@@ -151,7 +151,7 @@
         public Func<DateTime, double> TransmissionCoefficientModificationFactorIsolatedIndividuals => 
             (x) =>
             {
-                if (x.Date <= new DateTime(2003, 4, 20))
+                if (x.Date <= this.PerfectIsolationStartDate)
                 {
                     return 0.36;
                 }
