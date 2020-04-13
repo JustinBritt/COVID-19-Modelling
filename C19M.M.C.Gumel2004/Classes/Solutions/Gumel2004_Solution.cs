@@ -134,6 +134,7 @@
             {
                 return MathNet.Numerics.LinearAlgebra.Vector<double>.Build.Dense(new[] {
                     E.GetdEdt(
+                        new DateTime(2003, 03, 01).AddDays(t),
                         E: x[0],
                         I: x[1],
                         J: x[2],
@@ -180,6 +181,7 @@
                         σ_1,
                         σ_2),
                     S.GetdSdt(
+                        new DateTime(2003, 03, 01).AddDays(t),
                         E: x[0],
                         I: x[1],
                         J: x[2],

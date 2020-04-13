@@ -35,6 +35,7 @@
         /// <summary>
         /// Gets dE/dt.
         /// </summary>
+        /// <param name="t_IndexElement"></param> 
         /// <param name="E"></param>
         /// <param name="I"></param>
         /// <param name="J"></param>
@@ -52,6 +53,7 @@
         /// <param name="μ"></param>
         /// <returns></returns>
         public double GetdEdt(
+            DateTime t_IndexElement,
             double E,
             double I,
             double J,
@@ -71,7 +73,7 @@
             return 
                 p.Value
                 +
-                (S / N) * (β.Value) * (I + ε_E.Value * E + ε_Q.Value * Q + ε_J.Value * J)
+                (S / N) * (β.Value) * (I + ε_E.Value * E + ε_Q.Value * Q + ε_J.Value.Invoke(t_IndexElement) * J)
                 -
                 (γ_1.Value + κ_1.Value + μ.Value) * E;
         }

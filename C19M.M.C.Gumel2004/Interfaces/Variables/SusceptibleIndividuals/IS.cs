@@ -17,6 +17,7 @@
         /// <summary>
         /// Gets dS/dt.
         /// </summary>
+        /// <param name="t_IndexElement"></param>
         /// <param name="E"></param>
         /// <param name="I"></param>
         /// <param name="J"></param>
@@ -31,6 +32,7 @@
         /// <param name="Π"></param>
         /// <returns></returns>
         double GetdSdt(
+            DateTime t_IndexElement,
             double E,
             double I,
             double J,
