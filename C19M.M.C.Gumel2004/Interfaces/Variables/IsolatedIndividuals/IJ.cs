@@ -12,19 +12,9 @@
     {
         double InitialValue { get; }
 
-        /// <summary>
-        /// Gets dJ/dt.
-        /// </summary>
-        /// <param name="d_2"></param>
-        /// <param name="I"></param>
-        /// <param name="J"></param>
-        /// <param name="Q"></param>
-        /// <param name="γ_2"></param>
-        /// <param name="κ_2"></param>
-        /// <param name="μ"></param>
-        /// <param name="σ_2"></param>
         /// <returns></returns>
         double GetdJdt(
+            DateTime t_IndexElement,
             Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals.Id d_2,
             double I,
             double J,

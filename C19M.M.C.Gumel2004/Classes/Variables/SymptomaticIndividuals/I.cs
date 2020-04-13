@@ -28,18 +28,8 @@
 
         public double InitialValue { get; }
 
-        /// <summary>
-        /// Gets dI/dt.
-        /// </summary>
-        /// <param name="d_1"></param>
-        /// <param name="E"></param>
-        /// <param name="I"></param>
-        /// <param name="γ_2"></param>
-        /// <param name="κ_1"></param>
-        /// <param name="μ"></param>
-        /// <param name="σ_1"></param>
-        /// <returns></returns>
         public double GetdIdt(
+            DateTime t_IndexElement,
             Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,
             double E,
             double I,
@@ -51,7 +41,7 @@
             return
                 κ_1.Value * E
                 -
-                (γ_2.Value + d_1.Value + σ_1.Value + μ.Value) * I;
+                (γ_2.Value.Invoke(t_IndexElement) + d_1.Value + σ_1.Value + μ.Value) * I;
         }
     }
 }

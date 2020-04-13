@@ -32,26 +32,6 @@
 
         public double InitialValue { get; }
 
-        /// <summary>
-        /// Gets dE/dt.
-        /// </summary>
-        /// <param name="t_IndexElement"></param> 
-        /// <param name="E"></param>
-        /// <param name="I"></param>
-        /// <param name="J"></param>
-        /// <param name="N"></param>
-        /// <param name="p"></param>
-        /// <param name="Q"></param>
-        /// <param name="S"></param>
-        /// <param name="β"></param>
-        /// <param name="γ_1"></param>
-        /// <param name="γ_2"></param>
-        /// <param name="ε_E"></param>
-        /// <param name="ε_J"></param>
-        /// <param name="ε_Q"></param>
-        /// <param name="κ_1"></param>
-        /// <param name="μ"></param>
-        /// <returns></returns>
         public double GetdEdt(
             DateTime t_IndexElement,
             double E,
@@ -75,7 +55,7 @@
                 +
                 (S / N) * (β.Value) * (I + ε_E.Value * E + ε_Q.Value * Q + ε_J.Value.Invoke(t_IndexElement) * J)
                 -
-                (γ_1.Value + κ_1.Value + μ.Value) * E;
+                (γ_1.Value.Invoke(t_IndexElement) + κ_1.Value + μ.Value) * E;
         }
     }
 }

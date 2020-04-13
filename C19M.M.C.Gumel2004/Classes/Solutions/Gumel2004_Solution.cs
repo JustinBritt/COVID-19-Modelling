@@ -151,6 +151,7 @@
                         κ_1,
                         μ),
                     I.GetdIdt(
+                        new DateTime(2003, 03, 01).AddDays(t),
                         d_1,
                         E: x[0],
                         I: x[1],
@@ -159,6 +160,7 @@
                         μ,
                         σ_1),
                     J.GetdJdt(
+                        new DateTime(2003, 03, 01).AddDays(t),
                         d_2,
                         I: x[1],
                         J: x[2],
@@ -168,6 +170,7 @@
                         μ,
                         σ_2),
                     Q.GetdQdt(
+                        new DateTime(2003, 03, 01).AddDays(t),
                         E: x[0],
                         Q: x[3],
                         γ_1,

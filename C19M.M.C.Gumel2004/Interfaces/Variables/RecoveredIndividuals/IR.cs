@@ -12,16 +12,6 @@
     {
         double InitialValue { get; }
 
-        // <summary>
-        /// Gets dR/dt.
-        /// </summary>
-        /// <param name="I"></param>
-        /// <param name="J"></param>
-        /// <param name="R"></param>
-        /// <param name="μ"></param>
-        /// <param name="σ_1"></param>
-        /// <param name="σ_2"></param>
-        /// <returns></returns>
         double GetdRdt(
             double I,
             double J,

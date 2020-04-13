@@ -11,6 +11,6 @@
         /// <summary>
         /// Gets the quarantine rate for asymptomatic individuals.
         /// </summary>
-        double Value { get; }
+        Func<DateTime, double> Value { get; }
     }
 }

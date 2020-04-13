@@ -28,16 +28,8 @@
 
         public double InitialValue { get; }
 
-        /// <summary>
-        /// Gets dQ/dt.
-        /// </summary>
-        /// <param name="E"></param>
-        /// <param name="Q"></param>
-        /// <param name="γ_1"></param>
-        /// <param name="κ_2"></param>
-        /// <param name="μ"></param>
-        /// <returns></returns>
         public double GetdQdt(
+            DateTime t_IndexElement,
             double E,
             double Q,
             C19M.M.C.Gumel2004.Interfaces.Parameters.QuarantineRateAsymptomaticIndividuals.Iγ γ_1,
@@ -45,7 +37,7 @@
             Iμ μ)
         {
             return
-                γ_1.Value * E
+                γ_1.Value.Invoke(t_IndexElement) * E
                 -
                 (κ_2.Value + μ.Value) * Q;
         }

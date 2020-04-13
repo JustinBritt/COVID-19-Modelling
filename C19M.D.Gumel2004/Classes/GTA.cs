@@ -88,13 +88,35 @@
         /// Gets the quarantine rate for asymptomatic individuals.
         /// Parameter: γ_1
         /// </summary>
-        public double QuarantineRateAsymptomaticIndividuals => 0; // Untul 30 March 2003
+        public Func<DateTime, double> QuarantineRateAsymptomaticIndividuals =>
+            (x) =>
+            {
+                if (x.Date <= new DateTime(2003, 3, 30))
+                {
+                    return 0;
+                }
+                else
+                {
+                    return 0.1;
+                }
+            };
 
         /// <summary>
         /// Gets the isolation rate for symptomatic individuals.
         /// Parameter: γ_2
         /// </summary>
-        public double IsolationRateSymptomaticIndividuals => 0; // Until 30 March 2003
+        public Func<DateTime, double> IsolationRateSymptomaticIndividuals =>
+            (x) =>
+            {
+                if (x.Date <= new DateTime(2003, 3, 30))
+                {
+                    return 0;
+                }
+                else
+                {
+                    return 0.5;
+                }
+            };
 
         /// <summary>
         /// Gets the transmission coefficient modification factor for asymptomatic individuals.

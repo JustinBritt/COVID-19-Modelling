@@ -29,8 +29,8 @@
             double controlReproductionNumber,
             double initialValueSusceptibleIndividuals,
             double basicTransmissionCoefficient,
-            double quarantineRateAsymptomaticIndividuals,
-            double isolationRateSymptomaticIndividuals,
+            Func<DateTime, double> quarantineRateAsymptomaticIndividuals,
+            Func<DateTime, double> isolationRateSymptomaticIndividuals,
             double transmissionCoefficientModificationFactorAsymptomaticIndividuals,
             Func<DateTime, double> transmissionCoefficientModificationFactorIsolatedIndividuals,
             double transmissionCoefficientModificationFactorQuarantinedIndividuals,
@@ -166,13 +166,13 @@
         /// Gets the quarantine rate for asymptomatic individuals.
         /// Parameter: γ_1
         /// </summary>
-        public double QuarantineRateAsymptomaticIndividuals { get; }
+        public Func<DateTime, double> QuarantineRateAsymptomaticIndividuals { get; }
 
         /// <summary>
         /// Gets the isolation rate for symptomatic individuals.
         /// Parameter: γ_2
         /// </summary>
-        public double IsolationRateSymptomaticIndividuals { get; }
+        public Func<DateTime, double> IsolationRateSymptomaticIndividuals { get; }
 
         /// <summary>
         /// Gets the transmission coefficient modification factor for asymptomatic individuals.

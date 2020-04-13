@@ -75,13 +75,13 @@
         /// Gets the quarantine rate for asymptomatic individuals.
         /// Parameter: γ_1
         /// </summary>
-        double QuarantineRateAsymptomaticIndividuals { get; }
+        Func<DateTime, double> QuarantineRateAsymptomaticIndividuals { get; }
 
         /// <summary>
         /// Gets the isolation rate for symptomatic individuals.
         /// Parameter: γ_2
         /// </summary>
-        double IsolationRateSymptomaticIndividuals { get; }
+        Func<DateTime, double> IsolationRateSymptomaticIndividuals { get; }
 
         /// <summary>
         /// Gets the transmission coefficient modification factor for asymptomatic individuals.

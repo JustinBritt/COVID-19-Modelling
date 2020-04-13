@@ -17,7 +17,7 @@
 
         // Constructor
         public γ(
-            double value)
+            Func<DateTime, double> value)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -27,6 +27,6 @@
         /// <summary>
         /// Gets the quarantine rate for asymptomatic individuals.
         /// </summary>
-        public double Value { get; }
+        public Func<DateTime, double> Value { get; }
     }
 }
