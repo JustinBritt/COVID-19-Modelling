@@ -64,7 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Contexts\" />
+    <Folder Include="Classes\Parameters\VaccineEfficacy\" />
     <Folder Include="Interfaces\Contexts\" />
+    <Folder Include="Interfaces\Parameters\VaccineEfficacy\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
