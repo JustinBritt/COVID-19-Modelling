@@ -60,9 +60,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Beijing.cs" />
     <Compile Include="Classes\GTA.cs" />
     <Compile Include="Classes\HongKong.cs" />
     <Compile Include="Classes\Singapore.cs" />
+    <Compile Include="Interfaces\IBeijing.cs" />
     <Compile Include="Interfaces\IGTA.cs" />
     <Compile Include="Interfaces\IHongKong.cs" />
     <Compile Include="Interfaces\ISingapore.cs" />
