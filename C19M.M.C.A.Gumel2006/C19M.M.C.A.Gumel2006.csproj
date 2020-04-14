@@ -66,9 +66,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Contexts\" />
-    <Folder Include="Classes\Variables\" />
+    <Folder Include="Classes\Variables\SusceptibleIndividuals\" />
     <Folder Include="Interfaces\Contexts\" />
-    <Folder Include="Interfaces\Variables\" />
+    <Folder Include="Interfaces\Variables\SusceptibleIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
