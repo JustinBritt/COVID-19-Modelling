@@ -139,7 +139,7 @@
             {
                 return MathNet.Numerics.LinearAlgebra.Vector<double>.Build.Dense(new[] {
                     E.GetdEdt(
-                        new DateTime(2003, 03, 01).AddDays(T),
+                        t.StartDate.AddDays(T),
                         E: x[0],
                         I: x[1],
                         J: x[2],
@@ -156,7 +156,7 @@
                         κ_1,
                         μ),
                     I.GetdIdt(
-                        new DateTime(2003, 03, 01).AddDays(T),
+                        t.StartDate.AddDays(T),
                         d_1,
                         E: x[0],
                         I: x[1],
@@ -165,7 +165,7 @@
                         μ,
                         σ_1),
                     J.GetdJdt(
-                        new DateTime(2003, 03, 01).AddDays(T),
+                        t.StartDate.AddDays(T),
                         d_2,
                         I: x[1],
                         J: x[2],
@@ -175,7 +175,7 @@
                         μ,
                         σ_2),
                     Q.GetdQdt(
-                        new DateTime(2003, 03, 01).AddDays(T),
+                        t.StartDate.AddDays(T),
                         E: x[0],
                         Q: x[3],
                         γ_1,
@@ -189,7 +189,7 @@
                         σ_1,
                         σ_2),
                     S.GetdSdt(
-                        new DateTime(2003, 03, 01).AddDays(T),
+                        t.StartDate.AddDays(T),
                         E: x[0],
                         I: x[1],
                         J: x[2],
