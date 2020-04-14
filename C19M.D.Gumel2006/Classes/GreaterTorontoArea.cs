@@ -29,7 +29,7 @@
         /// Parameter: d
         /// Units: Per day
         /// </summary>
-        public double DiseaseInducedDeathRate => 0.008;
+        public double DiseaseInducedMortalityRate => 0.008;
 
         /// <summary>
         /// Gets the equilibrium population (without disease).
