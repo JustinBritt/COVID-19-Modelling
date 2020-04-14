@@ -43,6 +43,12 @@
         public double RecoveryRate => 0.04;
 
         /// <summary>
+        /// Gets the vaccination coverage rate.
+        /// Parameter: ξ
+        /// </summary>
+        public double VaccinationCoverageRate => 0.14;
+
+        /// <summary>
         /// Gets the efficacy of the vaccine.
         /// Parameter: τ
         /// </summary>
