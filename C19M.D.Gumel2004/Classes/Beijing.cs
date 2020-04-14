@@ -14,7 +14,7 @@
     /// <summary>
     /// Represents data from Beijing.
     /// </summary>
-    internal sealed class Beijing : IBeijing
+    public sealed class Beijing : IBeijing
     {
         private ILog Log { get; }
 
