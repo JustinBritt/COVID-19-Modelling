@@ -31,6 +31,12 @@
         public double DiseaseInducedDeathRate => 0.008;
 
         /// <summary>
+        /// Gets the rate of development of clinical symptoms
+        /// Parameter: α
+        /// </summary>
+        public double DevelopmentClinicalSymptomsRateAsymptomaticIndividuals => 0.125;
+
+        /// <summary>
         /// Gets the recovery rate.
         /// Parameter: δ
         /// </summary>
