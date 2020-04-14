@@ -55,10 +55,24 @@
         public double RecoveryRate => 0.04;
 
         /// <summary>
+        /// Gets the natural mortality rate.
+        /// Parameter: μ
+        /// Units: Per day
+        /// </summary>
+        public double NaturalMortalityRate => 3.65e-5;
+
+        /// <summary>
         /// Gets the vaccination coverage rate.
         /// Parameter: ξ
         /// </summary>
         public double VaccinationCoverageRate => 0.14;
+
+        /// <summary>
+        /// Gets the recruitment rate of susceptible humans.
+        /// Parameter: Π
+        /// Units: Per day
+        /// </summary>
+        public double RecruitmentRateSusceptibleHumans => 146;
 
         /// <summary>
         /// Gets the efficacy of the vaccine.
