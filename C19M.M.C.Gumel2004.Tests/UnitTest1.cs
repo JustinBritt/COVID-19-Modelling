@@ -1,9 +1,6 @@
 ﻿namespace C19M.M.C.Gumel2004.Tests
 {
-    using System;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-    using C19M.M.C.Gumel2004;
 
     [TestClass]
     public class UnitTest1
@@ -14,6 +11,9 @@
             C19M.D.Gumel2004.Interfaces.IGTA GTA = new C19M.D.Gumel2004.Classes.GTA();
 
             C19M.M.C.Gumel2004.Interfaces.Contexts.IGumel2004_Context context = new C19M.M.C.Gumel2004.Classes.Contexts.Gumel2004_Context(
+                GTA.EndDate,
+                GTA.NumberDaysAfterStartDate,
+                GTA.StartDate,
                 GTA.DiseaseInducedDeathRateSymptomaticIndividuals,
                 GTA.DiseaseInducedDeathRateIsolatedIndividuals,
                 GTA.InitialValueAsymptomaticIndividuals,
@@ -44,6 +44,7 @@
             C19M.M.C.Gumel2004.Interfaces.Solutions.IGumel2004_Solution solution = new C19M.M.C.Gumel2004.Classes.Solutions.Gumel2004_Solution();
 
             MathNet.Numerics.LinearAlgebra.Vector<double>[] results = solution.Solve(
+                model.t,
                 model.d_1,
                 model.d_2,
                 model.p,
