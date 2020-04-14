@@ -8,35 +8,35 @@
         [TestMethod]
         public void TestMethod1()
         {
-            C19M.D.Gumel2004.Interfaces.IGTA GTA = new C19M.D.Gumel2004.Classes.GTA();
+            C19M.D.Gumel2004.Interfaces.IHongKong HK = new C19M.D.Gumel2004.Classes.HongKong();
 
             C19M.M.C.Gumel2004.Interfaces.Contexts.IGumel2004_Context context = new C19M.M.C.Gumel2004.Classes.Contexts.Gumel2004_Context(
-                GTA.EndDate,
-                GTA.NumberDaysAfterStartDate,
-                GTA.StartDate,
-                GTA.DiseaseInducedDeathRateSymptomaticIndividuals,
-                GTA.DiseaseInducedDeathRateIsolatedIndividuals,
-                GTA.InitialValueAsymptomaticIndividuals,
-                GTA.InitialValueSymptomaticIndividuals,
-                GTA.InitialValueIsolatedIndividuals,
-                GTA.RecruitmentRateAsymptomaticIndividuals,
-                GTA.InitialValueQuarantinedIndividuals,
-                GTA.InitialValueRecoveredIndividuals,
+                HK.EndDate,
+                HK.NumberDaysAfterStartDate,
+                HK.StartDate,
+                HK.DiseaseInducedDeathRateSymptomaticIndividuals,
+                HK.DiseaseInducedDeathRateIsolatedIndividuals,
+                HK.InitialValueAsymptomaticIndividuals,
+                HK.InitialValueSymptomaticIndividuals,
+                HK.InitialValueIsolatedIndividuals,
+                HK.RecruitmentRateAsymptomaticIndividuals,
+                HK.InitialValueQuarantinedIndividuals,
+                HK.InitialValueRecoveredIndividuals,
                 0, // GTA.BasicReproductionNumber,
                 0, // GTA.ControlReproductionNumber,
-                GTA.InitialValueSusceptibleIndividuals,
-                GTA.BasicTransmissionCoefficient,
-                GTA.QuarantineRateAsymptomaticIndividuals,
-                GTA.IsolationRateSymptomaticIndividuals,
-                GTA.TransmissionCoefficientModificationFactorAsymptomaticIndividuals,
-                GTA.TransmissionCoefficientModificationFactorIsolatedIndividuals,
-                GTA.TransmissionCoefficientModificationFactorQuarantinedIndividuals,
-                GTA.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals,
-                GTA.DevelopmentClinicalSymptomsRateQuarantinedIndividuals,
-                GTA.NaturalDeathRate,
-                GTA.NetInflowRateSusceptibleIndividuals,
-                GTA.RecoveryRateSymptomaticIndividuals,
-                GTA.RecoveryRateIsolatedIndividuals);
+                HK.InitialValueSusceptibleIndividuals,
+                HK.BasicTransmissionCoefficient,
+                HK.QuarantineRateAsymptomaticIndividuals,
+                HK.IsolationRateSymptomaticIndividuals,
+                HK.TransmissionCoefficientModificationFactorAsymptomaticIndividuals,
+                HK.TransmissionCoefficientModificationFactorIsolatedIndividuals,
+                HK.TransmissionCoefficientModificationFactorQuarantinedIndividuals,
+                HK.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals,
+                HK.DevelopmentClinicalSymptomsRateQuarantinedIndividuals,
+                HK.NaturalDeathRate,
+                HK.NetInflowRateSusceptibleIndividuals,
+                HK.RecoveryRateSymptomaticIndividuals,
+                HK.RecoveryRateIsolatedIndividuals);
 
             C19M.M.C.Gumel2004.Interfaces.Models.IGumel2004_Model model = new C19M.M.C.Gumel2004.Classes.Models.Gumel2004_Model(
                 context);
