@@ -85,7 +85,7 @@
                 t.NumberDaysAfterStartDate(t.StartDate),
                 t.NumberDaysAfterStartDate(t.EndDate),
                 t.NumberDaysAfterStartDate(t.EndDate) - t.NumberDaysAfterStartDate(t.StartDate) + 1,
-                GetSystemRightPartsVectorFunction(
+                this.f(
                     t,
                     d_1,
                     d_2,
@@ -111,7 +111,7 @@
         }
 
         // https://stackoverflow.com/a/55004295
-        private Func<double, MathNet.Numerics.LinearAlgebra.Vector<double>, MathNet.Numerics.LinearAlgebra.Vector<double>> GetSystemRightPartsVectorFunction(
+        private Func<double, MathNet.Numerics.LinearAlgebra.Vector<double>, MathNet.Numerics.LinearAlgebra.Vector<double>> f(
             It t,
             Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,
             Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals.Id d_2,
