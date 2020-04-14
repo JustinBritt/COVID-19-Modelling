@@ -32,6 +32,11 @@
         DateTime EndDate { get; }
 
         /// <summary>
+        /// Gets the number of days after the start date for some other date.
+        /// </summary>
+        Func<DateTime, int> NumberDaysAfterStartDate { get; }
+
+        /// <summary>
         /// Gets the disease-induced death rate for symptomatic individuals.
         /// Parameter: d_1
         /// </summary>
