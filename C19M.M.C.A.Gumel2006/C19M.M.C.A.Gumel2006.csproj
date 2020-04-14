@@ -44,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Parameters\DevelopmentClinicalSymptomsRateAsymptomaticIndividuals\α.cs" />
+    <Compile Include="Classes\Parameters\DevelopmentClinicalSymptomsRate\α.cs" />
     <Compile Include="Classes\Parameters\DiseaseInducedMortalityRate\d.cs" />
     <Compile Include="Classes\Parameters\EffectiveContactRate\β.cs" />
     <Compile Include="Classes\Parameters\EquilibriumPopulationWithoutDisease\N.cs" />
@@ -53,7 +53,7 @@
     <Compile Include="Classes\Parameters\RecruitmentRateSusceptibleHumans\Π.cs" />
     <Compile Include="Classes\Parameters\VaccinationCoverageRate\ξ.cs" />
     <Compile Include="Classes\Parameters\VaccineEfficacy\τ.cs" />
-    <Compile Include="Interfaces\Parameters\DevelopmentClinicalSymptomsRateAsymptomaticIndividuals\Iα.cs" />
+    <Compile Include="Interfaces\Parameters\DevelopmentClinicalSymptomsRate\Iα.cs" />
     <Compile Include="Interfaces\Parameters\DiseaseInducedMortalityRate\Id.cs" />
     <Compile Include="Interfaces\Parameters\EffectiveContactRate\Iβ.cs" />
     <Compile Include="Interfaces\Parameters\EquilibriumPopulationWithoutDisease\IN.cs" />

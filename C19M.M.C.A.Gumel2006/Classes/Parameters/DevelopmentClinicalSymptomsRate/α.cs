@@ -1,4 +1,4 @@
-﻿namespace C19M.M.C.A.Gumel2006.Classes.Parameters.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals
+﻿namespace C19M.M.C.A.Gumel2006.Classes.Parameters.DevelopmentClinicalSymptomsRate
 {
     using System;
     using System.Collections.Generic;
@@ -9,7 +9,7 @@
     // Logging
     using log4net;
 
-    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals;
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.DevelopmentClinicalSymptomsRate;
 
     internal sealed class α : Iα
     {

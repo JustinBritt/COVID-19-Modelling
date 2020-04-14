@@ -1,4 +1,4 @@
-﻿namespace C19M.M.C.A.Gumel2006.Interfaces.Parameters.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals
+﻿namespace C19M.M.C.A.Gumel2006.Interfaces.Parameters.DevelopmentClinicalSymptomsRate
 {
     using System;
     using System.Collections.Generic;
