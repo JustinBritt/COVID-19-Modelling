@@ -51,6 +51,7 @@
 
         // TODO: Finish
         public MathNet.Numerics.LinearAlgebra.Vector<double>[] Solve(
+            It t,
             Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,
             Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals.Id d_2,
             Ip p,
@@ -85,6 +86,7 @@
                 183,
                 183 - 0 + 1,
                 GetSystemRightPartsVectorFunction(
+                    t,
                     d_1,
                     d_2,
                     p,
@@ -110,6 +112,7 @@
 
         // https://stackoverflow.com/a/55004295
         private Func<double, MathNet.Numerics.LinearAlgebra.Vector<double>, MathNet.Numerics.LinearAlgebra.Vector<double>> GetSystemRightPartsVectorFunction(
+            It t,
             Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,
             Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals.Id d_2,
             Ip p,
@@ -132,11 +135,11 @@
             C19M.M.C.Gumel2004.Interfaces.Variables.RecoveredIndividuals.IR R,
             C19M.M.C.Gumel2004.Interfaces.Variables.SusceptibleIndividuals.IS S)
         {
-            return (t, x) =>
+            return (T, x) =>
             {
                 return MathNet.Numerics.LinearAlgebra.Vector<double>.Build.Dense(new[] {
                     E.GetdEdt(
-                        new DateTime(2003, 03, 01).AddDays(t),
+                        new DateTime(2003, 03, 01).AddDays(T),
                         E: x[0],
                         I: x[1],
                         J: x[2],
@@ -153,7 +156,7 @@
                         κ_1,
                         μ),
                     I.GetdIdt(
-                        new DateTime(2003, 03, 01).AddDays(t),
+                        new DateTime(2003, 03, 01).AddDays(T),
                         d_1,
                         E: x[0],
                         I: x[1],
@@ -162,7 +165,7 @@
                         μ,
                         σ_1),
                     J.GetdJdt(
-                        new DateTime(2003, 03, 01).AddDays(t),
+                        new DateTime(2003, 03, 01).AddDays(T),
                         d_2,
                         I: x[1],
                         J: x[2],
@@ -172,7 +175,7 @@
                         μ,
                         σ_2),
                     Q.GetdQdt(
-                        new DateTime(2003, 03, 01).AddDays(t),
+                        new DateTime(2003, 03, 01).AddDays(T),
                         E: x[0],
                         Q: x[3],
                         γ_1,
@@ -186,7 +189,7 @@
                         σ_1,
                         σ_2),
                     S.GetdSdt(
-                        new DateTime(2003, 03, 01).AddDays(t),
+                        new DateTime(2003, 03, 01).AddDays(T),
                         E: x[0],
                         I: x[1],
                         J: x[2],

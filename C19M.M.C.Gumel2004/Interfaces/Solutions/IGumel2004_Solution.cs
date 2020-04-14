@@ -6,6 +6,8 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    using C19M.M.C.Gumel2004.Interfaces.Indices;
+
     using C19M.M.C.Gumel2004.Interfaces.Parameters.BasicReproductionNumber;
     using C19M.M.C.Gumel2004.Interfaces.Parameters.BasicTransmissionCoefficient;
     using C19M.M.C.Gumel2004.Interfaces.Parameters.ControlReproductionNumber;
@@ -38,6 +40,7 @@
     {
         // TODO: Finish
         MathNet.Numerics.LinearAlgebra.Vector<double>[] Solve(
+            It t,
             Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,
             Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals.Id d_2,
             Ip p,
