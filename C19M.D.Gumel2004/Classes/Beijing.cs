@@ -191,19 +191,19 @@
         /// Gets the rate at which asymptomatic individuals develop clinical symptoms.
         /// Parameter: κ_1
         /// </summary>
-        public double DevelopmentClinicalSymptomsRateAsymptomaticIndividuals => 0.1; // Not clear if Beijing has the same value as the other three cities
+        public double DevelopmentClinicalSymptomsRateAsymptomaticIndividuals => 0.1;
 
         /// <summary>
         /// Gets the rate at which quarantined individuals develop clinical symptoms.
         /// Parameter: κ_2
         /// </summary>
-        public double DevelopmentClinicalSymptomsRateQuarantinedIndividuals => 0.125; // Not clear if Beijing has the same value as the other three cities
+        public double DevelopmentClinicalSymptomsRateQuarantinedIndividuals => 0.125;
 
         /// <summary>
         /// Gets the natural death rate.
         /// Parameter: μ
         /// </summary>
-        public double NaturalDeathRate => 0.000034; // Not clear if Beijing has the same value as the other three cities
+        public double NaturalDeathRate => 0.000034;
 
         /// <summary>
         /// Gets the net inflow rate of susceptible individuals per unit time.
