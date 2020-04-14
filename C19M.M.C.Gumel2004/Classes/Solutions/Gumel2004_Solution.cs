@@ -82,9 +82,9 @@
                     Q.InitialValue,
                     R.InitialValue,
                     S.InitialValue}),
-                0,
-                183,
-                183 - 0 + 1,
+                t.NumberDaysAfterStartDate(t.StartDate),
+                t.NumberDaysAfterStartDate(t.EndDate),
+                t.NumberDaysAfterStartDate(t.EndDate) - t.NumberDaysAfterStartDate(t.StartDate) + 1,
                 GetSystemRightPartsVectorFunction(
                     t,
                     d_1,
