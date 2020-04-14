@@ -29,5 +29,11 @@
         /// Parameter: d
         /// </summary>
         public double DiseaseInducedDeathRate => 0.008;
+
+        /// <summary>
+        /// Gets the recovery rate.
+        /// Parameter: δ
+        /// </summary>
+        public double RecoveryRate => 0.04;
     }
 }
