@@ -50,7 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Contexts\" />
+    <Folder Include="Classes\Parameters\EquilibriumPopulationWithoutDisease\" />
     <Folder Include="Interfaces\Contexts\" />
+    <Folder Include="Interfaces\Parameters\EquilibriumPopulationWithoutDisease\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
