@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C19M.M.C.Gumel2004", "C19M.M.C.Gumel2004\C19M.M.C.Gumel2004.csproj", "{4138762D-A11A-4F0B-A51B-17BFB983AE87}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C19M.M.C.A.Gumel2004", "C19M.M.C.A.Gumel2004\C19M.M.C.A.Gumel2004.csproj", "{4138762D-A11A-4F0B-A51B-17BFB983AE87}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{608BB1D6-766E-4411-B52C-CAB1CDB2194F}"
 	ProjectSection(SolutionItems) = preProject
@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C19M.D.Gumel2004", "C19M.D.Gumel2004\C19M.D.Gumel2004.csproj", "{1F404342-2AC9-4F8B-B5C6-3A19575EF776}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C19M.M.C.Gumel2004.Tests", "C19M.M.C.Gumel2004.Tests\C19M.M.C.Gumel2004.Tests.csproj", "{211C6134-9E87-462E-8CCE-509D9802277E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C19M.M.C.A.Gumel2004.Tests", "C19M.M.C.A.Gumel2004.Tests\C19M.M.C.A.Gumel2004.Tests.csproj", "{211C6134-9E87-462E-8CCE-509D9802277E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
