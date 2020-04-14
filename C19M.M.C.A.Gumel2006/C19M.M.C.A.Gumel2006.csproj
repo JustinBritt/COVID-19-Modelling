@@ -48,9 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Contexts\" />
-    <Folder Include="Classes\Parameters\" />
+    <Folder Include="Classes\Parameters\DiseaseInducedMortalityRate\" />
     <Folder Include="Interfaces\Contexts\" />
-    <Folder Include="Interfaces\Parameters\" />
+    <Folder Include="Interfaces\Parameters\DiseaseInducedMortalityRate\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
