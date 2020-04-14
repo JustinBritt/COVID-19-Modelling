@@ -44,13 +44,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Parameters\DiseaseInducedMortalityRate\d.cs" />
+    <Compile Include="Interfaces\Parameters\DiseaseInducedMortalityRate\Id.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Contexts\" />
-    <Folder Include="Classes\Parameters\DiseaseInducedMortalityRate\" />
     <Folder Include="Interfaces\Contexts\" />
-    <Folder Include="Interfaces\Parameters\DiseaseInducedMortalityRate\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
