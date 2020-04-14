@@ -16,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C19M.M.C.A.Gumel2004.Tests"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C19M.D.Gumel2006", "C19M.D.Gumel2006\C19M.D.Gumel2006.csproj", "{C6016813-2554-4BC4-97F5-A468B9D7B107}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C19M.M.C.A.Gumel2006", "C19M.M.C.A.Gumel2006\C19M.M.C.A.Gumel2006.csproj", "{9CE35B69-42AF-44C7-B755-C554B939B9EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,10 @@ Global
 		{C6016813-2554-4BC4-97F5-A468B9D7B107}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6016813-2554-4BC4-97F5-A468B9D7B107}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6016813-2554-4BC4-97F5-A468B9D7B107}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CE35B69-42AF-44C7-B755-C554B939B9EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CE35B69-42AF-44C7-B755-C554B939B9EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CE35B69-42AF-44C7-B755-C554B939B9EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CE35B69-42AF-44C7-B755-C554B939B9EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
