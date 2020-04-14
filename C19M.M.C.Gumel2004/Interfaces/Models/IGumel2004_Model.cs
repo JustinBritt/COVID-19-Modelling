@@ -6,6 +6,8 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    using C19M.M.C.Gumel2004.Interfaces.Indices;
+
     using C19M.M.C.Gumel2004.Interfaces.Parameters.BasicReproductionNumber;
     using C19M.M.C.Gumel2004.Interfaces.Parameters.BasicTransmissionCoefficient;
     using C19M.M.C.Gumel2004.Interfaces.Parameters.ControlReproductionNumber;
