@@ -52,7 +52,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Contexts\" />
+    <Folder Include="Classes\Parameters\DevelopmentClinicalSymptomsRateAsymptomaticIndividuals\" />
     <Folder Include="Interfaces\Contexts\" />
+    <Folder Include="Interfaces\Parameters\DevelopmentClinicalSymptomsRateAsymptomaticIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
