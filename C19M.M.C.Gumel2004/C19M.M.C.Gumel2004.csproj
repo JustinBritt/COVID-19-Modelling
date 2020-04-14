@@ -73,12 +73,6 @@
     <Compile Include="Classes\Parameters\DevelopmentClinicalSymptomsRateQuarantinedIndividuals\κ.cs" />
     <Compile Include="Classes\Parameters\DiseaseInducedDeathRateIsolatedIndividuals\d.cs" />
     <Compile Include="Classes\Parameters\DiseaseInducedDeathRateSymptomaticIndividuals\d.cs" />
-    <Compile Include="Classes\Parameters\InitialValueAsymptomaticIndividuals\E.cs" />
-    <Compile Include="Classes\Parameters\InitialValueIsolatedIndividuals\J.cs" />
-    <Compile Include="Classes\Parameters\InitialValueQuarantinedIndividuals\Q.cs" />
-    <Compile Include="Classes\Parameters\InitialValueRecoveredIndividuals\R.cs" />
-    <Compile Include="Classes\Parameters\InitialValueSusceptibleIndividuals\S.cs" />
-    <Compile Include="Classes\Parameters\InitialValueSymptomaticIndividuals\I.cs" />
     <Compile Include="Classes\Parameters\IsolationRateSymptomaticIndividuals\γ.cs" />
     <Compile Include="Classes\Parameters\QuarantineRateAsymptomaticIndividuals\γ.cs" />
     <Compile Include="Classes\Parameters\RecoveryRateIsolatedIndividuals\σ.cs" />
@@ -107,12 +101,6 @@
     <Compile Include="Interfaces\Parameters\DevelopmentClinicalSymptomsRateQuarantinedIndividuals\Iκ.cs" />
     <Compile Include="Interfaces\Parameters\DiseaseInducedDeathRateIsolatedIndividuals\Id.cs" />
     <Compile Include="Interfaces\Parameters\DiseaseInducedDeathRateSymptomaticIndividuals\Id.cs" />
-    <Compile Include="Interfaces\Parameters\InitialValueAsymptomaticIndividuals\IE.cs" />
-    <Compile Include="Interfaces\Parameters\InitialValueIsolatedIndividuals\IJ.cs" />
-    <Compile Include="Interfaces\Parameters\InitialValueQuarantinedIndividuals\IQ.cs" />
-    <Compile Include="Interfaces\Parameters\InitialValueRecoveredIndividuals\IR.cs" />
-    <Compile Include="Interfaces\Parameters\InitialValueSusceptibleIndividuals\IS.cs" />
-    <Compile Include="Interfaces\Parameters\InitialValueSymptomaticIndividuals\II.cs" />
     <Compile Include="Interfaces\Parameters\IsolationRateSymptomaticIndividuals\Iγ.cs" />
     <Compile Include="Interfaces\Parameters\RecoveryRateIsolatedIndividuals\Iσ.cs" />
     <Compile Include="Interfaces\Parameters\RecoveryRateSymptomaticIndividuals\Iσ.cs" />
