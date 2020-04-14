@@ -36,6 +36,8 @@
 
     internal interface IGumel2004_Model
     {
+        It t { get; }
+
         Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1 { get; }
 
         Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals.Id d_2 { get; }
