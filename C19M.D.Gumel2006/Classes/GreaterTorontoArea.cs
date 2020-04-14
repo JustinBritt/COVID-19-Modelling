@@ -23,5 +23,11 @@
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         }
+
+        /// <summary>
+        /// Gets the disease-induced mortality rate.
+        /// Parameter: d
+        /// </summary>
+        public double DiseaseInducedDeathRate => 0.008;
     }
 }
