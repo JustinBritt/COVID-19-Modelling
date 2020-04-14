@@ -50,19 +50,19 @@
     <Compile Include="Classes\Parameters\EquilibriumPopulationWithoutDisease\N.cs" />
     <Compile Include="Classes\Parameters\NaturalMortalityRate\μ.cs" />
     <Compile Include="Classes\Parameters\RecoveryRate\δ.cs" />
+    <Compile Include="Classes\Parameters\VaccinationCoverageRate\ξ.cs" />
     <Compile Include="Interfaces\Parameters\DevelopmentClinicalSymptomsRateAsymptomaticIndividuals\Iα.cs" />
     <Compile Include="Interfaces\Parameters\DiseaseInducedMortalityRate\Id.cs" />
     <Compile Include="Interfaces\Parameters\EffectiveContactRate\Iβ.cs" />
     <Compile Include="Interfaces\Parameters\EquilibriumPopulationWithoutDisease\IN.cs" />
     <Compile Include="Interfaces\Parameters\NaturalMortalityRate\Iμ.cs" />
     <Compile Include="Interfaces\Parameters\RecoveryRate\Iδ.cs" />
+    <Compile Include="Interfaces\Parameters\VaccinationCoverageRate\Iξ.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Contexts\" />
-    <Folder Include="Classes\Parameters\VaccinationCoverageRate\" />
     <Folder Include="Interfaces\Contexts\" />
-    <Folder Include="Interfaces\Parameters\VaccinationCoverageRate\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
