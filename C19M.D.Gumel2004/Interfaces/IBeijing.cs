@@ -9,7 +9,7 @@
     /// <summary>
     /// Represents data from Beijing.
     /// </summary>
-    internal interface IBeijing
+    public interface IBeijing
     {
         /// <summary>
         /// Gets the start date.
