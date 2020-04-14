@@ -48,7 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Contexts\" />
+    <Folder Include="Classes\Parameters\" />
     <Folder Include="Interfaces\Contexts\" />
+    <Folder Include="Interfaces\Parameters\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
