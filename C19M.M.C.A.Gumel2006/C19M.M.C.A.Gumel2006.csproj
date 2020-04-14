@@ -44,17 +44,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Parameters\DevelopmentClinicalSymptomsRateAsymptomaticIndividuals\α.cs" />
     <Compile Include="Classes\Parameters\DiseaseInducedMortalityRate\d.cs" />
     <Compile Include="Classes\Parameters\EquilibriumPopulationWithoutDisease\N.cs" />
+    <Compile Include="Interfaces\Parameters\DevelopmentClinicalSymptomsRateAsymptomaticIndividuals\Iα.cs" />
     <Compile Include="Interfaces\Parameters\DiseaseInducedMortalityRate\Id.cs" />
     <Compile Include="Interfaces\Parameters\EquilibriumPopulationWithoutDisease\IN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Contexts\" />
-    <Folder Include="Classes\Parameters\DevelopmentClinicalSymptomsRateAsymptomaticIndividuals\" />
     <Folder Include="Interfaces\Contexts\" />
-    <Folder Include="Interfaces\Parameters\DevelopmentClinicalSymptomsRateAsymptomaticIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
