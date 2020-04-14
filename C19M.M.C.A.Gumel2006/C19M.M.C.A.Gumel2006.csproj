@@ -54,7 +54,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Contexts\" />
+    <Folder Include="Classes\Parameters\EffectiveContactRate\" />
     <Folder Include="Interfaces\Contexts\" />
+    <Folder Include="Interfaces\Parameters\EffectiveContactRate\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
