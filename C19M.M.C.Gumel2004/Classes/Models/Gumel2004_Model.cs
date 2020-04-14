@@ -174,6 +174,8 @@
                 context.InitialValueSusceptibleIndividuals);
         }
 
+        public It t { get; }
+
         public Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1 { get; }
 
         public Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals.Id d_2 { get; }
