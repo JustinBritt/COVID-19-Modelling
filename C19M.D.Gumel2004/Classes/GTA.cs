@@ -45,6 +45,22 @@
         public DateTime EndDate => new DateTime(2003, 9, 1);
 
         /// <summary>
+        /// Gets the number of days after the start date for some other date.
+        /// </summary>
+        public Func<DateTime, int> NumberDaysAfterStartDate =>
+            (x) =>
+            {
+                if (x.Date >= this.StartDate)
+                {
+                    return (int)Math.Abs(Math.Round((x - this.StartDate).TotalDays));
+                }
+                else
+                {
+                    return 0;
+                }
+            };
+
+        /// <summary>
         /// Gets the disease-induced death rate for symptomatic individuals.
         /// Parameter: d_1
         /// </summary>
