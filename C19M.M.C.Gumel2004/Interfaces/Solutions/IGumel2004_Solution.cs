@@ -38,7 +38,6 @@
 
     internal interface IGumel2004_Solution
     {
-        // TODO: Finish
         MathNet.Numerics.LinearAlgebra.Vector<double>[] Solve(
             It t,
             Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,

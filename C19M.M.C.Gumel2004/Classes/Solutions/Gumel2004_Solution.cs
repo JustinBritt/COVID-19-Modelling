@@ -49,7 +49,6 @@
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         }
 
-        // TODO: Finish
         public MathNet.Numerics.LinearAlgebra.Vector<double>[] Solve(
             It t,
             Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,
