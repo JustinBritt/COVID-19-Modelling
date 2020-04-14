@@ -27,7 +27,7 @@
         /// <summary>
         /// Gets the start date.
         /// </summary>
-        public DateTime StartDate => new DateTime(2003, 3, 1);
+        public DateTime StartDate => new DateTime(2003, 2, 23);
 
         /// <summary>
         /// Gets the start date for isolation and quarantine programs.
