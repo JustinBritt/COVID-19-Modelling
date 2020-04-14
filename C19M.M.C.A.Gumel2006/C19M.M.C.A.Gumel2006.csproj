@@ -45,14 +45,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Parameters\DiseaseInducedMortalityRate\d.cs" />
+    <Compile Include="Classes\Parameters\EquilibriumPopulationWithoutDisease\N.cs" />
     <Compile Include="Interfaces\Parameters\DiseaseInducedMortalityRate\Id.cs" />
+    <Compile Include="Interfaces\Parameters\EquilibriumPopulationWithoutDisease\IN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Contexts\" />
-    <Folder Include="Classes\Parameters\EquilibriumPopulationWithoutDisease\" />
     <Folder Include="Interfaces\Contexts\" />
-    <Folder Include="Interfaces\Parameters\EquilibriumPopulationWithoutDisease\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
