@@ -62,7 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Contexts\" />
+    <Folder Include="Classes\Parameters\RecruitmentRateSusceptibleHumans\" />
     <Folder Include="Interfaces\Contexts\" />
+    <Folder Include="Interfaces\Parameters\RecruitmentRateSusceptibleHumans\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
