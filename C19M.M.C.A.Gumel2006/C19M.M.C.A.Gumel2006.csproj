@@ -52,6 +52,7 @@
     <Compile Include="Classes\Parameters\RecoveryRate\δ.cs" />
     <Compile Include="Classes\Parameters\RecruitmentRateSusceptibleHumans\Π.cs" />
     <Compile Include="Classes\Parameters\VaccinationCoverageRate\ξ.cs" />
+    <Compile Include="Classes\Parameters\VaccineEfficacy\τ.cs" />
     <Compile Include="Interfaces\Parameters\DevelopmentClinicalSymptomsRateAsymptomaticIndividuals\Iα.cs" />
     <Compile Include="Interfaces\Parameters\DiseaseInducedMortalityRate\Id.cs" />
     <Compile Include="Interfaces\Parameters\EffectiveContactRate\Iβ.cs" />
@@ -60,13 +61,12 @@
     <Compile Include="Interfaces\Parameters\RecoveryRate\Iδ.cs" />
     <Compile Include="Interfaces\Parameters\RecruitmentRateSusceptibleHumans\IΠ.cs" />
     <Compile Include="Interfaces\Parameters\VaccinationCoverageRate\Iξ.cs" />
+    <Compile Include="Interfaces\Parameters\VaccineEfficacy\Iτ.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Contexts\" />
-    <Folder Include="Classes\Parameters\VaccineEfficacy\" />
     <Folder Include="Interfaces\Contexts\" />
-    <Folder Include="Interfaces\Parameters\VaccineEfficacy\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
