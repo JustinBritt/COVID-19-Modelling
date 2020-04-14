@@ -60,7 +60,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Contexts\" />
+    <Folder Include="Classes\Parameters\VaccinationCoverageRate\" />
     <Folder Include="Interfaces\Contexts\" />
+    <Folder Include="Interfaces\Parameters\VaccinationCoverageRate\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
