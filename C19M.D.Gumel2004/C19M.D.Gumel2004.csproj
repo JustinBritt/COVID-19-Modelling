@@ -62,8 +62,10 @@
   <ItemGroup>
     <Compile Include="Classes\GTA.cs" />
     <Compile Include="Classes\HongKong.cs" />
+    <Compile Include="Classes\Singapore.cs" />
     <Compile Include="Interfaces\IGTA.cs" />
     <Compile Include="Interfaces\IHongKong.cs" />
+    <Compile Include="Interfaces\ISingapore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
