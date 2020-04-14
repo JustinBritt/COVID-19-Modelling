@@ -31,10 +31,22 @@
         public double DiseaseInducedDeathRate => 0.008;
 
         /// <summary>
-        /// Gets the rate of development of clinical symptoms
+        /// Gets the equilibrium population (without disease).
+        /// Parameter: N_o
+        /// </summary>
+        public double EquilibriumPopulationWithoutDisease => 4000000;
+
+        /// <summary>
+        /// Gets the rate of development of clinical symptoms.
         /// Parameter: α
         /// </summary>
         public double DevelopmentClinicalSymptomsRateAsymptomaticIndividuals => 0.125;
+
+        /// <summary>
+        /// Gets the effective contact rate.
+        /// Parameter: β
+        /// </summary>
+        public double EffectiveContactRate => 7.2e-8;
 
         /// <summary>
         /// Gets the recovery rate.
