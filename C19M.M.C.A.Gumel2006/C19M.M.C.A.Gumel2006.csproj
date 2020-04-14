@@ -56,7 +56,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Contexts\" />
+    <Folder Include="Classes\Parameters\RecoveryRate\" />
     <Folder Include="Interfaces\Contexts\" />
+    <Folder Include="Interfaces\Parameters\RecoveryRate\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
