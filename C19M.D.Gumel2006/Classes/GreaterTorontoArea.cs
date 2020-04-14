@@ -41,5 +41,11 @@
         /// Parameter: δ
         /// </summary>
         public double RecoveryRate => 0.04;
+
+        /// <summary>
+        /// Gets the efficacy of the vaccine.
+        /// Parameter: τ
+        /// </summary>
+        public double VaccineEfficacy => 0.8;
     }
 }
