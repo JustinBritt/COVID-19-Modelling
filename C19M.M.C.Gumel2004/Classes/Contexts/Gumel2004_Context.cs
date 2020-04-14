@@ -33,7 +33,7 @@
             Func<DateTime, double> isolationRateSymptomaticIndividuals,
             double transmissionCoefficientModificationFactorAsymptomaticIndividuals,
             Func<DateTime, double> transmissionCoefficientModificationFactorIsolatedIndividuals,
-            double transmissionCoefficientModificationFactorQuarantinedIndividuals,
+            Func<DateTime, double> transmissionCoefficientModificationFactorQuarantinedIndividuals,
             double developmentClinicalSymptomsRateAsymptomaticIndividuals,
             double developmentClinicalSymptomsRateQuarantinedIndividuals,
             double naturalDeathRate,
@@ -190,7 +190,7 @@
         /// Gets the transmission coefficient modification factor for quarantined individuals.
         /// Parameter: ε_Q
         /// </summary>
-        public double TransmissionCoefficientModificationFactorQuarantinedIndividuals { get; }
+        public Func<DateTime, double> TransmissionCoefficientModificationFactorQuarantinedIndividuals { get; }
 
         /// <summary>
         /// Gets the rate at which asymptomatic individuals develop clinical symptoms.

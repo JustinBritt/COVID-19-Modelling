@@ -108,7 +108,7 @@
         /// Gets the transmission coefficient modification factor for quarantined individuals.
         /// Parameter: ε_Q
         /// </summary>
-        double TransmissionCoefficientModificationFactorQuarantinedIndividuals { get; }
+        Func<DateTime, double> TransmissionCoefficientModificationFactorQuarantinedIndividuals { get; }
 
         /// <summary>
         /// Gets the rate at which asymptomatic individuals develop clinical symptoms.

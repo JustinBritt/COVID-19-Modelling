@@ -48,7 +48,7 @@
             return
                 Π.Value
                 -
-                (S / N) * (β.Value) * (I + ε_E.Value * E + ε_Q.Value * Q + ε_J.Value.Invoke(t_IndexElement) * J)
+                (S / N) * (β.Value) * (I + ε_E.Value * E + ε_Q.Value.Invoke(t_IndexElement) * Q + ε_J.Value.Invoke(t_IndexElement) * J)
                 -
                 μ.Value * S;
         }
