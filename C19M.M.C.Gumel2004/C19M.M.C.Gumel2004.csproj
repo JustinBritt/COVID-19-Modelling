@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Classes\Contexts\Gumel2004_Context.cs" />
     <Compile Include="Classes\Exports\Gumel2004_Export.cs" />
+    <Compile Include="Classes\Indices\t.cs" />
     <Compile Include="Classes\Models\Gumel2004_Model.cs" />
     <Compile Include="Classes\Parameters\BasicReproductionNumber\ℛ.cs" />
     <Compile Include="Classes\Parameters\ControlReproductionNumber\ℛ.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="Classes\Variables\TotalPopulationSize\N.cs" />
     <Compile Include="Interfaces\Contexts\IGumel2004_Context.cs" />
     <Compile Include="Interfaces\Exports\IGumel2004_Export.cs" />
+    <Compile Include="Interfaces\Indices\It.cs" />
     <Compile Include="Interfaces\Models\IGumel2004_Model.cs" />
     <Compile Include="Interfaces\Parameters\BasicReproductionNumber\Iℛ.cs" />
     <Compile Include="Interfaces\Parameters\ControlReproductionNumber\Iℛ.cs" />
@@ -123,9 +125,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\Indices\" />
     <Folder Include="Factories\Parameters\BasicReproductionNumber\" />
-    <Folder Include="Interfaces\Indices\" />
     <Folder Include="Interfaces_Factories\Parameters\BasicReproductionNumber\" />
   </ItemGroup>
   <ItemGroup>
