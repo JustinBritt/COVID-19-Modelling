@@ -17,6 +17,9 @@
 
         // Constructor
         public Gumel2004_Context(
+            DateTime endDate,
+            Func<DateTime, int> numberDaysAfterStartDate,
+            DateTime startDate,
             double diseaseInducedDeathRateSymptomaticIndividuals,
             double diseaseInducedDeathRateIsolatedIndividuals,
             double initialValueAsymptomaticIndividuals,
@@ -42,6 +45,12 @@
             double recoveryRateIsolatedIndividuals)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+            this.EndDate = endDate;
+
+            this.NumberDaysAfterStartDate = numberDaysAfterStartDate;
+
+            this.StartDate = startDate;
 
             this.DiseaseInducedDeathRateSymptomaticIndividuals = diseaseInducedDeathRateSymptomaticIndividuals;
 
@@ -89,6 +98,24 @@
 
             this.RecoveryRateIsolatedIndividuals = recoveryRateIsolatedIndividuals;
         }
+
+        /// <summary>
+        /// Gets the end date.
+        /// Index: t
+        /// </summary>
+        public DateTime EndDate { get; }
+
+        /// <summary>
+        /// Gets the number of days after the start date.
+        /// Index: t
+        /// </summary>
+        public Func<DateTime, int> NumberDaysAfterStartDate { get; }
+
+        /// <summary>
+        /// Gets the start date.
+        /// Index: t
+        /// </summary>
+        public DateTime StartDate { get; }
 
         /// <summary>
         /// Gets the disease-induced death rate for symptomatic individuals.

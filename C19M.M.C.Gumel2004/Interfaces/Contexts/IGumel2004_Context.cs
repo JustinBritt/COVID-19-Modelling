@@ -9,6 +9,24 @@
     public interface IGumel2004_Context
     {
         /// <summary>
+        /// Gets the end date.
+        /// Index: t
+        /// </summary>
+        DateTime EndDate { get; }
+
+        /// <summary>
+        /// Gets the number of days after the start date.
+        /// Index: t
+        /// </summary>
+        Func<DateTime, int> NumberDaysAfterStartDate { get; }
+
+        /// <summary>
+        /// Gets the start date.
+        /// Index: t
+        /// </summary>
+        DateTime StartDate { get; }
+
+        /// <summary>
         /// Gets the disease-induced death rate for symptomatic individuals.
         /// Parameter: d_1
         /// </summary>
