@@ -1,4 +1,4 @@
-﻿namespace C19M.D.Gumel2004.Interfaces
+﻿namespace C19M.D.Gumel2004.Classes
 {
     using System;
     using System.Collections.Generic;
@@ -6,160 +6,221 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    // Logging
+    using log4net;
+
+    using C19M.D.Gumel2004.Interfaces;
+
     /// <summary>
     /// Represents data from the Greater Toronto Area (GTA).
     /// </summary>
-    public interface IGTA
+    public sealed class GreaterTorontoArea : IGreaterTorontoArea
     {
+        private ILog Log { get; }
+
+        // Constructor
+        public GreaterTorontoArea()
+        {
+            this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        }
+
         /// <summary>
         /// Gets the start date.
         /// </summary>
-        DateTime StartDate { get; }
+        public DateTime StartDate => new DateTime(2003, 2, 23);
 
         /// <summary>
         /// Gets the start date for isolation and quarantine programs.
         /// </summary>
-        DateTime IsolationQuarantineStartDate { get; }
+        public DateTime IsolationQuarantineStartDate => new DateTime(2003, 3, 30);
 
         /// <summary>
         /// Gets the start date for perfect isolation.
         /// </summary>
-        DateTime PerfectIsolationStartDate { get; }
+        public DateTime PerfectIsolationStartDate => new DateTime(2003, 4, 20);
 
         /// <summary>
         /// Gets the end date.
         /// </summary>
-        DateTime EndDate { get; }
+        public DateTime EndDate => new DateTime(2003, 9, 1);
 
         /// <summary>
         /// Gets the number of days after the start date for some other date.
         /// </summary>
-        Func<DateTime, int> NumberDaysAfterStartDate { get; }
+        public Func<DateTime, int> NumberDaysAfterStartDate =>
+            (x) =>
+            {
+                if (x.Date >= this.StartDate)
+                {
+                    return (int)Math.Abs(Math.Round((x - this.StartDate).TotalDays));
+                }
+                else
+                {
+                    return 0;
+                }
+            };
 
         /// <summary>
         /// Gets the disease-induced death rate for symptomatic individuals.
         /// Parameter: d_1
         /// </summary>
-        double DiseaseInducedDeathRateSymptomaticIndividuals { get; }
+        public double DiseaseInducedDeathRateSymptomaticIndividuals => 0.0079;
 
         /// <summary>
         /// Gets the disease-induced death rate for isolated individuals.
         /// Parameter: d_2
         /// </summary>
-        double DiseaseInducedDeathRateIsolatedIndividuals { get; }
+        public double DiseaseInducedDeathRateIsolatedIndividuals => 0.0068;
 
         /// <summary>
         /// Gets the initial value for asymptomatic individuals.
         /// Parameter: E(0)
         /// </summary>
-        double InitialValueAsymptomaticIndividuals { get; }
+        public double InitialValueAsymptomaticIndividuals => 6;
 
         /// <summary>
         /// Gets the initial value for symptomatic individuals.
         /// Parameter: I(0)
         /// </summary>
-        double InitialValueSymptomaticIndividuals { get; }
+        public double InitialValueSymptomaticIndividuals => 1;
 
         /// <summary>
         /// Gets the initial value for isolated individuals.
         /// Parameter: J(0)
         /// </summary>
-        double InitialValueIsolatedIndividuals { get; }
+        public double InitialValueIsolatedIndividuals => 0;
 
         /// <summary>
         /// Gets the recruitment rate of asymptomatic individuals per day.
         /// Parameter: p
         /// </summary>
-        double RecruitmentRateAsymptomaticIndividuals { get; }
+        public double RecruitmentRateAsymptomaticIndividuals => 0.06;
 
         /// <summary>
         /// Gets the initial value for quarantined individuals.
         /// Parameter: Q(0)
         /// </summary>
-        double InitialValueQuarantinedIndividuals { get; }
+        public double InitialValueQuarantinedIndividuals => 0;
 
         /// <summary>
         /// Gets the initial value for recovered individuals.
         /// Parameter: R(0)
         /// </summary>
-        double InitialValueRecoveredIndividuals { get; }
+        public double InitialValueRecoveredIndividuals => 0;
 
         /// <summary>
         /// Gets the initial value for susceptible individuals.
         /// Parameter: S(0)
         /// </summary>
-        double InitialValueSusceptibleIndividuals { get; }
+        public double InitialValueSusceptibleIndividuals => 4000000;
 
         /// <summary>
         /// Gets the basic transmission coefficient.
         /// Parameter: β
         /// </summary>
-        double BasicTransmissionCoefficient { get; }
+        public double BasicTransmissionCoefficient => 0.2;
 
         /// <summary>
         /// Gets the quarantine rate for asymptomatic individuals.
         /// Parameter: γ_1
         /// </summary>
-        Func<DateTime, double> QuarantineRateAsymptomaticIndividuals { get; }
+        public Func<DateTime, double> QuarantineRateAsymptomaticIndividuals =>
+            (x) =>
+            {
+                if (x.Date <= this.IsolationQuarantineStartDate)
+                {
+                    return 0;
+                }
+                else
+                {
+                    return 0.1;
+                }
+            };
 
         /// <summary>
         /// Gets the isolation rate for symptomatic individuals.
         /// Parameter: γ_2
         /// </summary>
-        Func<DateTime, double> IsolationRateSymptomaticIndividuals { get; }
+        public Func<DateTime, double> IsolationRateSymptomaticIndividuals =>
+            (x) =>
+            {
+                if (x.Date <= this.IsolationQuarantineStartDate)
+                {
+                    return 0;
+                }
+                else
+                {
+                    return 0.5;
+                }
+            };
 
         /// <summary>
         /// Gets the transmission coefficient modification factor for asymptomatic individuals.
         /// Parameter: ε_E
         /// </summary>
-        double TransmissionCoefficientModificationFactorAsymptomaticIndividuals { get; }
+        public double TransmissionCoefficientModificationFactorAsymptomaticIndividuals => 0;
 
         /// <summary>
         /// Gets the transmission coefficient modification factor for isolated individuals.
         /// Parameter: ε_J
         /// </summary>
-        Func<DateTime, double> TransmissionCoefficientModificationFactorIsolatedIndividuals { get; }
+        public Func<DateTime, double> TransmissionCoefficientModificationFactorIsolatedIndividuals => 
+            (x) =>
+            {
+                if (x.Date <= this.PerfectIsolationStartDate)
+                {
+                    return 0.36;
+                }
+                else
+                {
+                    return 0;
+                }
+            };
 
         /// <summary>
         /// Gets the transmission coefficient modification factor for quarantined individuals.
         /// Parameter: ε_Q
         /// </summary>
-        Func<DateTime, double> TransmissionCoefficientModificationFactorQuarantinedIndividuals { get; }
+        public Func<DateTime, double> TransmissionCoefficientModificationFactorQuarantinedIndividuals =>
+            (x) =>
+            {
+                return 0;
+            };
 
         /// <summary>
         /// Gets the rate at which asymptomatic individuals develop clinical symptoms.
         /// Parameter: κ_1
         /// </summary>
-        double DevelopmentClinicalSymptomsRateAsymptomaticIndividuals { get; }
+        public double DevelopmentClinicalSymptomsRateAsymptomaticIndividuals => 0.1;
 
         /// <summary>
         /// Gets the rate at which quarantined individuals develop clinical symptoms.
         /// Parameter: κ_2
         /// </summary>
-        double DevelopmentClinicalSymptomsRateQuarantinedIndividuals { get; }
+        public double DevelopmentClinicalSymptomsRateQuarantinedIndividuals => 0.125;
 
         /// <summary>
         /// Gets the natural death rate.
         /// Parameter: μ
         /// </summary>
-        double NaturalDeathRate { get; }
+        public double NaturalDeathRate => 0.000034;
 
         /// <summary>
         /// Gets the net inflow rate of susceptible individuals per unit time.
         /// Parameter: Π
         /// </summary>
-        double NetInflowRateSusceptibleIndividuals { get; }
+        public double NetInflowRateSusceptibleIndividuals => 136;
 
         /// <summary>
         /// Gets the recovery rate for symptomatic individuals.
         /// Parameter: σ_1
         /// </summary>
-        double RecoveryRateSymptomaticIndividuals { get; }
+        public double RecoveryRateSymptomaticIndividuals => 0.0337;
 
         /// <summary>
         /// Gets the recovery rate for isolated individuals.
         /// Parameter: σ_2
         /// </summary>
-        double RecoveryRateIsolatedIndividuals { get; }
+        public double RecoveryRateIsolatedIndividuals => 0.0386;
     }
 }
