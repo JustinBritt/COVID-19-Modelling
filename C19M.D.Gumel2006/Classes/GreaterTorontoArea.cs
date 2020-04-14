@@ -42,7 +42,7 @@
         /// Parameter: α
         /// Units: Per day
         /// </summary>
-        public double DevelopmentClinicalSymptomsRateAsymptomaticIndividuals => 0.125;
+        public double DevelopmentClinicalSymptomsRate => 0.125;
 
         /// <summary>
         /// Gets the effective contact rate.
