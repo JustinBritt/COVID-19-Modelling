@@ -81,10 +81,6 @@
             this.p = new p(
                 context.RecruitmentRateAsymptomaticIndividuals);
 
-            // ℛ_0
-
-            // ℛ_c
-
             // β
             this.β = new β(
                 context.BasicTransmissionCoefficient);
