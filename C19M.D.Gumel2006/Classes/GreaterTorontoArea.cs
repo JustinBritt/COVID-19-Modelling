@@ -27,6 +27,7 @@
         /// <summary>
         /// Gets the disease-induced mortality rate.
         /// Parameter: d
+        /// Units: Per day
         /// </summary>
         public double DiseaseInducedDeathRate => 0.008;
 
@@ -39,18 +40,21 @@
         /// <summary>
         /// Gets the rate of development of clinical symptoms.
         /// Parameter: α
+        /// Units: Per day
         /// </summary>
         public double DevelopmentClinicalSymptomsRateAsymptomaticIndividuals => 0.125;
 
         /// <summary>
         /// Gets the effective contact rate.
         /// Parameter: β
+        /// Units: Per day
         /// </summary>
         public double EffectiveContactRate => 7.2e-8;
 
         /// <summary>
         /// Gets the recovery rate.
         /// Parameter: δ
+        /// Units: Per day
         /// </summary>
         public double RecoveryRate => 0.04;
 
@@ -64,6 +68,7 @@
         /// <summary>
         /// Gets the vaccination coverage rate.
         /// Parameter: ξ
+        /// Units: Per day
         /// </summary>
         public double VaccinationCoverageRate => 0.14;
 
