@@ -70,7 +70,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Contexts\" />
+    <Folder Include="Classes\Variables\LatentIndividuals\" />
     <Folder Include="Interfaces\Contexts\" />
+    <Folder Include="Interfaces\Variables\LatentIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
