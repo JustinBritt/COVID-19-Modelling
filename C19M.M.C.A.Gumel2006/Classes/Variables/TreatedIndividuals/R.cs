@@ -9,6 +9,9 @@
     // Logging
     using log4net;
 
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate;
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.RecoveryRate;
+
     using C19M.M.C.A.Gumel2006.Interfaces.Variables.TreatedIndividuals;
 
     internal sealed class R : IR
@@ -25,5 +28,17 @@
         }
 
         public double InitialValue { get; }
+
+        public double GetdRdt(
+            Iδ δ,
+            Iμ μ,
+            double I,
+            double R)
+        {
+            return
+                δ.Value * I
+                -
+                μ.Value * R;
+        }
     }
 }
