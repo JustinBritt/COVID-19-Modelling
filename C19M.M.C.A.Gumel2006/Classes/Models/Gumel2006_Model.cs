@@ -32,6 +32,16 @@
             // Parameters
 
             // Variables
+
+            // E(t)
+
+            // I(t)
+
+            // R(t)
+            
+            // S(t)
+
+            // V(t)
         }
 
         public IE E { get; }
