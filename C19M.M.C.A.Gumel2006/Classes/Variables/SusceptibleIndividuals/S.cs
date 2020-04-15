@@ -9,6 +9,11 @@
     // Logging
     using log4net;
 
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.EffectiveContactRate;
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate;
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.RecruitmentRateSusceptibleHumans;
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccinationCoverageRate;
+
     using C19M.M.C.A.Gumel2006.Interfaces.Variables.SusceptibleIndividuals;
 
     internal sealed class S : IS
@@ -25,5 +30,23 @@
         }
 
         public double InitialValue { get; }
+        
+        public double GetdSdt(
+            Iβ β,
+            Iμ μ,
+            Iξ ξ,
+            IΠ Π,
+            double I,
+            double S)
+        {
+            return
+                Π.Value
+                -
+                β.Value * S * I
+                -
+                ξ.Value * S
+                -
+                μ.Value * S;
+        }
     }
 }
