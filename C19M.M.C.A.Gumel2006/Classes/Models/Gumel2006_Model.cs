@@ -33,5 +33,15 @@
 
             // Variables
         }
+
+        public IE E { get; }
+
+        public II I { get; }
+
+        public IR R { get; }
+
+        public IS S { get; }
+
+        public IV V { get; }
     }
 }
