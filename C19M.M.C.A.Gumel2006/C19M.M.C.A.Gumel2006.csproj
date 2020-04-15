@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Models\Gumel2006_Model.cs" />
     <Compile Include="Classes\Parameters\DevelopmentClinicalSymptomsRate\α.cs" />
     <Compile Include="Classes\Parameters\DiseaseInducedMortalityRate\d.cs" />
     <Compile Include="Classes\Parameters\EffectiveContactRate\β.cs" />
@@ -58,6 +59,7 @@
     <Compile Include="Classes\Variables\SusceptibleIndividuals\S.cs" />
     <Compile Include="Classes\Variables\TreatedIndividuals\R.cs" />
     <Compile Include="Classes\Variables\VaccinatedIndividuals\V.cs" />
+    <Compile Include="Interfaces\Models\IGumel2006_Model.cs" />
     <Compile Include="Interfaces\Parameters\DevelopmentClinicalSymptomsRate\Iα.cs" />
     <Compile Include="Interfaces\Parameters\DiseaseInducedMortalityRate\Id.cs" />
     <Compile Include="Interfaces\Parameters\EffectiveContactRate\Iβ.cs" />
@@ -77,11 +79,9 @@
   <ItemGroup>
     <Folder Include="Classes\Contexts\" />
     <Folder Include="Classes\Exports\" />
-    <Folder Include="Classes\Models\" />
     <Folder Include="Classes\Solutions\" />
     <Folder Include="Interfaces\Contexts\" />
     <Folder Include="Interfaces\Exports\" />
-    <Folder Include="Interfaces\Models\" />
     <Folder Include="Interfaces\Solutions\" />
   </ItemGroup>
   <ItemGroup>
