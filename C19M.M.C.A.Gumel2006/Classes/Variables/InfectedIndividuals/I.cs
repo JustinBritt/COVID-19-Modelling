@@ -9,6 +9,11 @@
     // Logging
     using log4net;
 
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.DevelopmentClinicalSymptomsRate;
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.DiseaseInducedMortalityRate;
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate;
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.RecoveryRate;
+
     using C19M.M.C.A.Gumel2006.Interfaces.Variables.InfectedIndividuals;
 
     internal sealed class I : II
@@ -25,5 +30,23 @@
         }
 
         public double InitialValue { get; }
+
+        public double GetdIdt(
+            Id d,
+            Iα α,
+            Iδ δ,
+            Iμ μ,
+            double E,
+            double I)
+        {
+            return
+                α.Value * E
+                -
+                δ.Value * I
+                -
+                d.Value * I
+                -
+                μ.Value * I;
+        }
     }
 }
