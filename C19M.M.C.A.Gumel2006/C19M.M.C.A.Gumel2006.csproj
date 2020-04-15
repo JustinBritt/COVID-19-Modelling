@@ -72,7 +72,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Contexts\" />
+    <Folder Include="Classes\Variables\InfectedIndividuals\" />
     <Folder Include="Interfaces\Contexts\" />
+    <Folder Include="Interfaces\Variables\InfectedIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
