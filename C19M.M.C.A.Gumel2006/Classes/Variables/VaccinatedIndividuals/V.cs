@@ -9,6 +9,11 @@
     // Logging
     using log4net;
 
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.EffectiveContactRate;
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate;
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccinationCoverageRate;
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccineEfficacy;
+
     using C19M.M.C.A.Gumel2006.Interfaces.Variables.VaccinatedIndividuals;
 
     internal sealed class V : IV
@@ -25,5 +30,22 @@
         }
 
         public double InitialValue { get; }
+
+        public double GetdVdt(
+            Iβ β,
+            Iμ μ,
+            Iξ ξ,
+            Iτ τ,
+            double I,
+            double S,
+            double V)
+        {
+            return
+                ξ.Value * S
+                -
+                (1 - τ.Value) * β.Value * V * I
+                -
+                μ.Value * V;
+        }
     }
 }
