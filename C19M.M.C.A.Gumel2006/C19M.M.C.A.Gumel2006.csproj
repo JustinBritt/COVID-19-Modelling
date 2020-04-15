@@ -77,8 +77,10 @@
   <ItemGroup>
     <Folder Include="Classes\Contexts\" />
     <Folder Include="Classes\Exports\" />
+    <Folder Include="Classes\Models\" />
     <Folder Include="Interfaces\Contexts\" />
     <Folder Include="Interfaces\Exports\" />
+    <Folder Include="Interfaces\Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
