@@ -76,7 +76,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Contexts\" />
+    <Folder Include="Classes\Exports\" />
     <Folder Include="Interfaces\Contexts\" />
+    <Folder Include="Interfaces\Exports\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
