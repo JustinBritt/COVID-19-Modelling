@@ -14,10 +14,7 @@
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate;
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccineEfficacy;
 
-    using C19M.M.C.A.Gumel2006.Interfaces.Variables.InfectedIndividuals;
     using C19M.M.C.A.Gumel2006.Interfaces.Variables.LatentIndividuals;
-    using C19M.M.C.A.Gumel2006.Interfaces.Variables.SusceptibleIndividuals;
-    using C19M.M.C.A.Gumel2006.Interfaces.Variables.VaccinatedIndividuals;
 
     internal sealed class E : IE
     {
@@ -34,17 +31,24 @@
 
         public double InitialValue { get; }
 
-        // TODO: Finish
-        public double dEdt(
+        public double GetdEdt(
             Iα α,
             Iβ β,
             Iμ μ,
             Iτ τ,
+            double E,
             double I,
             double S,
             double V)
         {
-            return 0;
+            return
+                β.Value * S * I
+                +
+                (1 - τ.Value) * β.Value * V * I
+                -
+                α.Value * E
+                -
+                μ.Value * E;
         }
     }
 }
