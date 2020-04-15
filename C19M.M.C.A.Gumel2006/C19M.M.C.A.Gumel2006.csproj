@@ -74,7 +74,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Contexts\" />
+    <Folder Include="Classes\Variables\TreatedIndividuals\" />
     <Folder Include="Interfaces\Contexts\" />
+    <Folder Include="Interfaces\Variables\TreatedIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
