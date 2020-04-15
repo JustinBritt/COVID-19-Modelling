@@ -22,6 +22,10 @@
             IGumel2006_Context context)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+            // Parameters
+
+            // Variables
         }
     }
 }
