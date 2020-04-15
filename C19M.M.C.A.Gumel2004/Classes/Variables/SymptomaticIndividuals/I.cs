@@ -31,12 +31,12 @@
         public double GetdIdt(
             DateTime t_IndexElement,
             Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,
-            double E,
-            double I,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.IsolationRateSymptomaticIndividuals.Iγ γ_2,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals.Iκ κ_1,
             Iμ μ,
-            C19M.M.C.A.Gumel2004.Interfaces.Parameters.RecoveryRateSymptomaticIndividuals.Iσ σ_1)
+            C19M.M.C.A.Gumel2004.Interfaces.Parameters.RecoveryRateSymptomaticIndividuals.Iσ σ_1,
+            double E,
+            double I)
         {
             return
                 κ_1.Value * E

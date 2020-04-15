@@ -34,13 +34,7 @@
 
         public double GetdEdt(
             DateTime t_IndexElement,
-            double E,
-            double I,
-            double J,
-            double N,
             Ip p,
-            double Q,
-            double S,
             Iβ β,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.QuarantineRateAsymptomaticIndividuals.Iγ γ_1,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.IsolationRateSymptomaticIndividuals.Iγ γ_2,
@@ -48,7 +42,13 @@
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorIsolatedIndividuals.Iε ε_J,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorQuarantinedIndividuals.Iε ε_Q,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals.Iκ κ_1,
-            Iμ μ)
+            Iμ μ,
+            double E,
+            double I,
+            double J,
+            double N,
+            double Q,
+            double S)
         {
             return 
                 p.Value

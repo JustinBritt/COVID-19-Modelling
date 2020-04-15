@@ -14,10 +14,10 @@
 
         double GetdQdt(
             DateTime t_IndexElement,
-            double E,
-            double Q,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.QuarantineRateAsymptomaticIndividuals.Iγ γ_1,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.DevelopmentClinicalSymptomsRateQuarantinedIndividuals.Iκ κ_2,
-            Iμ μ);
+            Iμ μ,
+            double E,
+            double Q);
     }
 }

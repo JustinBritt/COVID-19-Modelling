@@ -13,11 +13,11 @@
         double InitialValue { get; }
 
         double GetdRdt(
-            double I,
-            double J,
-            double R,
             Iμ μ,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.RecoveryRateSymptomaticIndividuals.Iσ σ_1,
-            C19M.M.C.A.Gumel2004.Interfaces.Parameters.RecoveryRateIsolatedIndividuals.Iσ σ_2);
+            C19M.M.C.A.Gumel2004.Interfaces.Parameters.RecoveryRateIsolatedIndividuals.Iσ σ_2,
+            double I,
+            double J,
+            double R);
     }
 }
