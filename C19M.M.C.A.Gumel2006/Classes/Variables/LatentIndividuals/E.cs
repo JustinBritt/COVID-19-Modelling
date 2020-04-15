@@ -9,7 +9,15 @@
     // Logging
     using log4net;
 
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.DevelopmentClinicalSymptomsRate;
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.EffectiveContactRate;
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate;
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccineEfficacy;
+
+    using C19M.M.C.A.Gumel2006.Interfaces.Variables.InfectedIndividuals;
     using C19M.M.C.A.Gumel2006.Interfaces.Variables.LatentIndividuals;
+    using C19M.M.C.A.Gumel2006.Interfaces.Variables.SusceptibleIndividuals;
+    using C19M.M.C.A.Gumel2006.Interfaces.Variables.VaccinatedIndividuals;
 
     internal sealed class E : IE
     {
@@ -25,5 +33,18 @@
         }
 
         public double InitialValue { get; }
+
+        // TODO: Finish
+        public double dEdt(
+            Iα α,
+            Iβ β,
+            Iμ μ,
+            Iτ τ,
+            double I,
+            double S,
+            double V)
+        {
+            return 0;
+        }
     }
 }
