@@ -20,7 +20,8 @@
             double diseaseInducedMortalityRate,
             double developmentClinicalSymptomsRate,
             double effectiveContactRate,
-            double recoveryRate)
+            double recoveryRate,
+            double naturalMortalityRate)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -31,6 +32,8 @@
             this.EffectiveContactRate = effectiveContactRate;
 
             this.RecoveryRate = recoveryRate;
+
+            this.NaturalMortalityRate = naturalMortalityRate;
         }
 
         /// <summary>
@@ -60,5 +63,12 @@
         /// Units: Per day
         /// </summary>
         public double RecoveryRate { get; }
+
+        /// <summary>
+        /// Gets the natural mortality rate.
+        /// Parameter: μ
+        /// Units: Per day
+        /// </summary>
+        public double NaturalMortalityRate { get; }
     }
 }
