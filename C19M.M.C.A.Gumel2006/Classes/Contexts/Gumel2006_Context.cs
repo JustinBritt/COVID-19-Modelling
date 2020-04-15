@@ -21,7 +21,8 @@
             double developmentClinicalSymptomsRate,
             double effectiveContactRate,
             double recoveryRate,
-            double naturalMortalityRate)
+            double naturalMortalityRate,
+            double vaccinationCoverageRate)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -34,6 +35,8 @@
             this.RecoveryRate = recoveryRate;
 
             this.NaturalMortalityRate = naturalMortalityRate;
+
+            this.VaccinationCoverageRate = vaccinationCoverageRate;
         }
 
         /// <summary>
@@ -70,5 +73,12 @@
         /// Units: Per day
         /// </summary>
         public double NaturalMortalityRate { get; }
+
+        /// <summary>
+        /// Gets the vaccination coverage rate.
+        /// Parameter: ξ
+        /// Units: Per day
+        /// </summary>
+        public double VaccinationCoverageRate { get; }
     }
 }
