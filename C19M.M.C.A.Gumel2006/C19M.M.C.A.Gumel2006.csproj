@@ -68,7 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Contexts\" />
+    <Folder Include="Classes\Variables\VaccinatedIndividuals\" />
     <Folder Include="Interfaces\Contexts\" />
+    <Folder Include="Interfaces\Variables\VaccinatedIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
