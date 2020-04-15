@@ -19,7 +19,8 @@
         public Gumel2006_Context(
             double diseaseInducedMortalityRate,
             double developmentClinicalSymptomsRate,
-            double effectiveContactRate)
+            double effectiveContactRate,
+            double recoveryRate)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -28,6 +29,8 @@
             this.DevelopmentClinicalSymptomsRate = developmentClinicalSymptomsRate;
 
             this.EffectiveContactRate = effectiveContactRate;
+
+            this.RecoveryRate = recoveryRate;
         }
 
         /// <summary>
@@ -50,5 +53,12 @@
         /// Units: Per day
         /// </summary>
         public double EffectiveContactRate { get; }
+
+        /// <summary>
+        /// Gets the recovery rate.
+        /// Parameter: δ
+        /// Units: Per day
+        /// </summary>
+        public double RecoveryRate { get; }
     }
 }
