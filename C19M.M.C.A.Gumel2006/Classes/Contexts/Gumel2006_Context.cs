@@ -22,7 +22,8 @@
             double effectiveContactRate,
             double recoveryRate,
             double naturalMortalityRate,
-            double vaccinationCoverageRate)
+            double vaccinationCoverageRate,
+            double recruitmentRateSusceptibleHumans)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -37,6 +38,8 @@
             this.NaturalMortalityRate = naturalMortalityRate;
 
             this.VaccinationCoverageRate = vaccinationCoverageRate;
+
+            this.RecruitmentRateSusceptibleHumans = recruitmentRateSusceptibleHumans;
         }
 
         /// <summary>
@@ -80,5 +83,12 @@
         /// Units: Per day
         /// </summary>
         public double VaccinationCoverageRate { get; }
+
+        /// <summary>
+        /// Gets the recruitment rate of susceptible humans.
+        /// Parameter: Π
+        /// Units: Per day
+        /// </summary>
+        public double RecruitmentRateSusceptibleHumans { get; }
     }
 }
