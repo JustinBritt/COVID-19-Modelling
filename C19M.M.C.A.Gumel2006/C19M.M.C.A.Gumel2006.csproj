@@ -54,6 +54,7 @@
     <Compile Include="Classes\Parameters\VaccinationCoverageRate\ξ.cs" />
     <Compile Include="Classes\Parameters\VaccineEfficacy\τ.cs" />
     <Compile Include="Classes\Variables\SusceptibleIndividuals\S.cs" />
+    <Compile Include="Classes\Variables\VaccinatedIndividuals\V.cs" />
     <Compile Include="Interfaces\Parameters\DevelopmentClinicalSymptomsRate\Iα.cs" />
     <Compile Include="Interfaces\Parameters\DiseaseInducedMortalityRate\Id.cs" />
     <Compile Include="Interfaces\Parameters\EffectiveContactRate\Iβ.cs" />
@@ -64,13 +65,12 @@
     <Compile Include="Interfaces\Parameters\VaccinationCoverageRate\Iξ.cs" />
     <Compile Include="Interfaces\Parameters\VaccineEfficacy\Iτ.cs" />
     <Compile Include="Interfaces\Variables\SusceptibleIndividuals\IS.cs" />
+    <Compile Include="Interfaces\Variables\VaccinatedIndividuals\IV.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Contexts\" />
-    <Folder Include="Classes\Variables\VaccinatedIndividuals\" />
     <Folder Include="Interfaces\Contexts\" />
-    <Folder Include="Interfaces\Variables\VaccinatedIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
