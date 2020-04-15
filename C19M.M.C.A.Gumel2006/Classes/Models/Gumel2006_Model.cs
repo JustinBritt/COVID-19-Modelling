@@ -72,6 +72,22 @@
             // V(t)
         }
 
+        public Id d { get; }
+
+        public Iα α { get; }
+
+        public Iβ β { get; }
+
+        public Iδ δ { get; }
+
+        public Iμ μ { get; }
+
+        public Iξ ξ { get; }
+
+        public IΠ Π { get; }
+
+        public Iτ τ { get; }
+
         public IE E { get; }
 
         public II I { get; }
