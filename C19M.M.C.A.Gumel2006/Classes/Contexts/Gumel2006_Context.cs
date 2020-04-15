@@ -17,11 +17,14 @@
 
         // Constructor
         public Gumel2006_Context(
-            double diseaseInducedMortalityRate)
+            double diseaseInducedMortalityRate,
+            double developmentClinicalSymptomsRate)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             this.DiseaseInducedMortalityRate = diseaseInducedMortalityRate;
+
+            this.DevelopmentClinicalSymptomsRate = developmentClinicalSymptomsRate;
         }
 
         /// <summary>
@@ -30,5 +33,12 @@
         /// Units: Per day
         /// </summary>
         public double DiseaseInducedMortalityRate { get; }
+
+        /// <summary>
+        /// Gets the rate of development of clinical symptoms.
+        /// Parameter: α
+        /// Units: Per day
+        /// </summary>
+        public double DevelopmentClinicalSymptomsRate { get; }
     }
 }
