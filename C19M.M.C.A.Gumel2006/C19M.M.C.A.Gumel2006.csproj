@@ -56,6 +56,7 @@
     <Compile Include="Classes\Variables\InfectedIndividuals\I.cs" />
     <Compile Include="Classes\Variables\LatentIndividuals\E.cs" />
     <Compile Include="Classes\Variables\SusceptibleIndividuals\S.cs" />
+    <Compile Include="Classes\Variables\TreatedIndividuals\R.cs" />
     <Compile Include="Classes\Variables\VaccinatedIndividuals\V.cs" />
     <Compile Include="Interfaces\Parameters\DevelopmentClinicalSymptomsRate\Iα.cs" />
     <Compile Include="Interfaces\Parameters\DiseaseInducedMortalityRate\Id.cs" />
@@ -69,14 +70,13 @@
     <Compile Include="Interfaces\Variables\InfectedIndividuals\II.cs" />
     <Compile Include="Interfaces\Variables\LatentIndividuals\IE.cs" />
     <Compile Include="Interfaces\Variables\SusceptibleIndividuals\IS.cs" />
+    <Compile Include="Interfaces\Variables\TreatedIndividuals\IR.cs" />
     <Compile Include="Interfaces\Variables\VaccinatedIndividuals\IV.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Contexts\" />
-    <Folder Include="Classes\Variables\TreatedIndividuals\" />
     <Folder Include="Interfaces\Contexts\" />
-    <Folder Include="Interfaces\Variables\TreatedIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
