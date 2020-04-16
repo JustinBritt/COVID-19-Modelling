@@ -58,6 +58,7 @@
     <Compile Include="Classes\Variables\InfectedIndividuals\I.cs" />
     <Compile Include="Classes\Variables\LatentIndividuals\E.cs" />
     <Compile Include="Classes\Variables\SusceptibleIndividuals\S.cs" />
+    <Compile Include="Classes\Variables\TotalPopulationSize\N.cs" />
     <Compile Include="Classes\Variables\TreatedIndividuals\R.cs" />
     <Compile Include="Classes\Variables\VaccinatedIndividuals\V.cs" />
     <Compile Include="Interfaces\Contexts\IGumel2006_Context.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Interfaces\Variables\InfectedIndividuals\II.cs" />
     <Compile Include="Interfaces\Variables\LatentIndividuals\IE.cs" />
     <Compile Include="Interfaces\Variables\SusceptibleIndividuals\IS.cs" />
+    <Compile Include="Interfaces\Variables\TotalPopulationSize\IN.cs" />
     <Compile Include="Interfaces\Variables\TreatedIndividuals\IR.cs" />
     <Compile Include="Interfaces\Variables\VaccinatedIndividuals\IV.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -81,10 +83,8 @@
   <ItemGroup>
     <Folder Include="Classes\Exports\" />
     <Folder Include="Classes\Solutions\" />
-    <Folder Include="Classes\Variables\TotalPopulationSize\" />
     <Folder Include="Interfaces\Exports\" />
     <Folder Include="Interfaces\Solutions\" />
-    <Folder Include="Interfaces\Variables\TotalPopulationSize\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
