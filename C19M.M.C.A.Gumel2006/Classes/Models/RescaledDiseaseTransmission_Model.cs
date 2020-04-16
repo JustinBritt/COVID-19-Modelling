@@ -47,6 +47,16 @@
         public RescaledDiseaseTransmission_Model()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+            // Variables
+
+            // E(t)
+
+            // I(t)
+
+            // S(t)
+
+            // V(t)
         }
 
         public IE E { get; }
