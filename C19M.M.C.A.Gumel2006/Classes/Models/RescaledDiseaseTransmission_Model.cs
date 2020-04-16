@@ -65,6 +65,11 @@
                 context.VaccinationCoverageRate);
 
             // β
+            this.β = new C19M.M.C.A.Gumel2006.Classes.Parameters.Rescaled.β(
+                context.DiseaseInducedMortalityRate,
+                context.EffectiveContactRate,
+                context.RecoveryRate,
+                context.NaturalMortalityRate);
 
             // γ
 
