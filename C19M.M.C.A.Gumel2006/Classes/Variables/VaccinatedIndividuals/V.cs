@@ -9,12 +9,6 @@
     // Logging
     using log4net;
 
-    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.EffectiveContactRate;
-    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate;
-    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled;
-    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccinationCoverageRate;
-    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccineEfficacy;
-
     using C19M.M.C.A.Gumel2006.Interfaces.Variables.VaccinatedIndividuals;
 
     internal sealed class V : IV
@@ -34,9 +28,9 @@
 
         public double GetdVdt(
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.EffectiveContactRate.Iβ β,
-            Iμ μ,
-            Iξ ξ,
-            Iτ τ,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate.Iμ μ,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccinationCoverageRate.Iξ ξ,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccineEfficacy.Iτ τ,
             double I,
             double S,
             double V)
@@ -51,10 +45,10 @@
 
         // TODO: Finish
         public double GetdVdt(
-            Ip p,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Ip p,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iβ β,
-            Iτ τ,
-            Iε ε,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccineEfficacy.Iτ τ,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iε ε,
             double I,
             double S,
             double V)
