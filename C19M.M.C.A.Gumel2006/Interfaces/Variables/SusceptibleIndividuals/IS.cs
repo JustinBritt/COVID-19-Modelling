@@ -8,7 +8,6 @@
 
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate;
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.RecruitmentRateSusceptibleHumans;
-    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled;
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccinationCoverageRate;
 
     internal interface IS
