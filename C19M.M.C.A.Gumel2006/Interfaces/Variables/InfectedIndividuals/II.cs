@@ -22,5 +22,11 @@
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate.Iμ μ,
             double E,
             double I);
+
+        double GetdIdt(
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iγ γ,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iε ε,
+            double E,
+            double I);
     }
 }

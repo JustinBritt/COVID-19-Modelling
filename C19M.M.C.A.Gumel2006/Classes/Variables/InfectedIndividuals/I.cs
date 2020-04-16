@@ -48,5 +48,17 @@
                 -
                 μ.Value * I;
         }
+
+        public double GetdIdt(
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iγ γ,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iε ε,
+            double E,
+            double I)
+        {
+            return
+                γ.Value * E
+                -
+                (1 + ε.Value) * I;
+        }
     }
 }
