@@ -26,6 +26,18 @@
             // Parameters
 
             // Variables
+
+            // E(t)
+
+            // I(t)
+
+            // N(t)
+
+            // R(t)
+
+            // S(t)
+
+            // V(t)
         }
     }
 }
