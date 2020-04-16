@@ -50,6 +50,8 @@
             // Parameters
 
             // τ
+            this.τ = new C19M.M.C.A.Gumel2006.Classes.Parameters.VaccineEfficacy.τ(
+                context.VaccineEfficacy);
 
             // N
 
