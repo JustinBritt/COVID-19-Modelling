@@ -57,6 +57,7 @@
     <Compile Include="Classes\Parameters\Rescaled\N.cs" />
     <Compile Include="Classes\Parameters\Rescaled\p.cs" />
     <Compile Include="Classes\Parameters\Rescaled\β.cs" />
+    <Compile Include="Classes\Parameters\Rescaled\γ.cs" />
     <Compile Include="Classes\Parameters\Rescaled\ε.cs" />
     <Compile Include="Classes\Parameters\VaccinationCoverageRate\ξ.cs" />
     <Compile Include="Classes\Parameters\VaccineEfficacy\τ.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="Interfaces\Parameters\Rescaled\IN.cs" />
     <Compile Include="Interfaces\Parameters\Rescaled\Ip.cs" />
     <Compile Include="Interfaces\Parameters\Rescaled\Iβ.cs" />
+    <Compile Include="Interfaces\Parameters\Rescaled\Iγ.cs" />
     <Compile Include="Interfaces\Parameters\Rescaled\Iε.cs" />
     <Compile Include="Interfaces\Parameters\VaccinationCoverageRate\Iξ.cs" />
     <Compile Include="Interfaces\Parameters\VaccineEfficacy\Iτ.cs" />
