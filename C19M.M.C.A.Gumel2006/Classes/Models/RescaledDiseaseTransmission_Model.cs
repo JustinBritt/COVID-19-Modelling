@@ -48,5 +48,13 @@
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         }
+
+        public IE E { get; }
+
+        public II I { get; }
+
+        public IS S { get; }
+
+        public IV V { get; }
     }
 }
