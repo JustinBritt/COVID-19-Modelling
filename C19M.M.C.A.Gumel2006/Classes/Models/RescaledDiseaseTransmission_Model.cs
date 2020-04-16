@@ -60,6 +60,9 @@
                 context.RecruitmentRateSusceptibleHumans);
 
             // p
+            this.p = new C19M.M.C.A.Gumel2006.Classes.Parameters.Rescaled.p(
+                context.NaturalMortalityRate,
+                context.VaccinationCoverageRate);
 
             // β
 
