@@ -28,6 +28,12 @@
         double InitialValueInfectedIndividuals { get; }
 
         /// <summary>
+        /// Gets the initial value for treated individuals.
+        /// Parameter: R(0)
+        /// </summary>
+        double InitialValueTreatedIndividuals { get; }
+
+        /// <summary>
         /// Gets the rate of development of clinical symptoms.
         /// Parameter: α
         /// Units: Per day
