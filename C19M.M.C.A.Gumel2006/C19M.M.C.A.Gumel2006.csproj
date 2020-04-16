@@ -81,8 +81,10 @@
   <ItemGroup>
     <Folder Include="Classes\Exports\" />
     <Folder Include="Classes\Solutions\" />
+    <Folder Include="Classes\Variables\TotalPopulationSize\" />
     <Folder Include="Interfaces\Exports\" />
     <Folder Include="Interfaces\Solutions\" />
+    <Folder Include="Interfaces\Variables\TotalPopulationSize\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
