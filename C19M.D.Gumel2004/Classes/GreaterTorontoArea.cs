@@ -63,12 +63,14 @@
         /// <summary>
         /// Gets the disease-induced death rate for symptomatic individuals.
         /// Parameter: d_1
+        /// Units: Per day
         /// </summary>
         public double DiseaseInducedDeathRateSymptomaticIndividuals => 0.0079;
 
         /// <summary>
         /// Gets the disease-induced death rate for isolated individuals.
         /// Parameter: d_2
+        /// Units: Per day
         /// </summary>
         public double DiseaseInducedDeathRateIsolatedIndividuals => 0.0068;
 
@@ -93,6 +95,7 @@
         /// <summary>
         /// Gets the recruitment rate of asymptomatic individuals per day.
         /// Parameter: p
+        /// Units: Per day
         /// </summary>
         public double RecruitmentRateAsymptomaticIndividuals => 0.06;
 
@@ -123,6 +126,7 @@
         /// <summary>
         /// Gets the quarantine rate for asymptomatic individuals.
         /// Parameter: γ_1
+        /// Units: Per day
         /// </summary>
         public Func<DateTime, double> QuarantineRateAsymptomaticIndividuals =>
             (x) =>
@@ -140,6 +144,7 @@
         /// <summary>
         /// Gets the isolation rate for symptomatic individuals.
         /// Parameter: γ_2
+        /// Units: Per day
         /// </summary>
         public Func<DateTime, double> IsolationRateSymptomaticIndividuals =>
             (x) =>
@@ -190,36 +195,42 @@
         /// <summary>
         /// Gets the rate at which asymptomatic individuals develop clinical symptoms.
         /// Parameter: κ_1
+        /// Units: Per day
         /// </summary>
         public double DevelopmentClinicalSymptomsRateAsymptomaticIndividuals => 0.1;
 
         /// <summary>
         /// Gets the rate at which quarantined individuals develop clinical symptoms.
         /// Parameter: κ_2
+        /// Units: Per day
         /// </summary>
         public double DevelopmentClinicalSymptomsRateQuarantinedIndividuals => 0.125;
 
         /// <summary>
         /// Gets the natural death rate.
         /// Parameter: μ
+        /// Units: Per day
         /// </summary>
         public double NaturalDeathRate => 0.000034;
 
         /// <summary>
         /// Gets the net inflow rate of susceptible individuals per unit time.
         /// Parameter: Π
+        /// Units: Per day
         /// </summary>
         public double NetInflowRateSusceptibleIndividuals => 136;
 
         /// <summary>
         /// Gets the recovery rate for symptomatic individuals.
         /// Parameter: σ_1
+        /// Units: Per day
         /// </summary>
         public double RecoveryRateSymptomaticIndividuals => 0.0337;
 
         /// <summary>
         /// Gets the recovery rate for isolated individuals.
         /// Parameter: σ_2
+        /// Units: Per day
         /// </summary>
         public double RecoveryRateIsolatedIndividuals => 0.0386;
     }
