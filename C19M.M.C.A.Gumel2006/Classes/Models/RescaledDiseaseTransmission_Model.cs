@@ -43,7 +43,8 @@
         private ILog Log { get; }
 
         // Constructor
-        public RescaledDiseaseTransmission_Model()
+        public RescaledDiseaseTransmission_Model(
+            IGumel2006_Context context)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
