@@ -13,6 +13,12 @@
 
     using C19M.M.C.A.Gumel2006.Interfaces.Models;
 
+    using C19M.M.C.A.Gumel2006.Interfaces.Variables.InfectedIndividuals;
+    using C19M.M.C.A.Gumel2006.Interfaces.Variables.LatentIndividuals;
+    using C19M.M.C.A.Gumel2006.Interfaces.Variables.SusceptibleIndividuals;
+    using C19M.M.C.A.Gumel2006.Interfaces.Variables.TreatedIndividuals;
+    using C19M.M.C.A.Gumel2006.Interfaces.Variables.VaccinatedIndividuals;
+
     internal sealed class EpidemicOutbreak_Model : IEpidemicOutbreak_Model
     {
         private ILog Log { get; }
