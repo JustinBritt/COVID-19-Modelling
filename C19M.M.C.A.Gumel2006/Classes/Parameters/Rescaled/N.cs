@@ -17,11 +17,15 @@
 
         // Constructor
         public N(
-            double value)
+            double μ,
+            double Π)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            this.Value = value;
+            this.Value =
+                μ
+                /
+                Π;
         }
 
         public double Value { get; }
