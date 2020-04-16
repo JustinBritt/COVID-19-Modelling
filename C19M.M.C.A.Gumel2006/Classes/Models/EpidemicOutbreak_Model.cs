@@ -75,10 +75,7 @@
                 context.NaturalMortalityRate);
 
             // ε
-            // TODO: Update
             this.ε = new C19M.M.C.A.Gumel2006.Classes.Parameters.Rescaled.ε(
-                1,
-                1,
                 0);
 
             // τ
