@@ -84,8 +84,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Exports\" />
+    <Folder Include="Classes\Parameters\Rescaled\" />
     <Folder Include="Classes\Solutions\" />
     <Folder Include="Interfaces\Exports\" />
+    <Folder Include="Interfaces\Parameters\Rescaled\" />
     <Folder Include="Interfaces\Solutions\" />
   </ItemGroup>
   <ItemGroup>
