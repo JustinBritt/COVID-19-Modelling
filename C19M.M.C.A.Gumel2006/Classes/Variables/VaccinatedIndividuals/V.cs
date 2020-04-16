@@ -43,7 +43,6 @@
                 μ.Value * V;
         }
 
-        // TODO: Finish
         public double GetdVdt(
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Ip p,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iβ β,
@@ -53,7 +52,10 @@
             double S,
             double V)
         {
-            return 0;
+            return
+                -(1 - τ.Value) * β.Value * V * I
+                +
+                ε.Value * (((p.Value * S) / (1 - p.Value)) - V);
         }
     }
 }

@@ -18,5 +18,14 @@
             double I,
             double S,
             double V);
+
+        double GetdVdt(
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Ip p,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iβ β,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccineEfficacy.Iτ τ,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iε ε,
+            double I,
+            double S,
+            double V);
     }
 }
