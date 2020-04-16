@@ -9,6 +9,10 @@
     // Logging
     using log4net;
 
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.DiseaseInducedMortalityRate;
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate;
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.RecruitmentRateSusceptibleHumans;
+
     using C19M.M.C.A.Gumel2006.Interfaces.Variables.TotalPopulationSize;
 
     internal sealed class N : IN
@@ -25,5 +29,20 @@
         }
 
         public double InitialValue { get; }
+
+        public double GetdNdt(
+            Id d,
+            Iμ μ,
+            IΠ Π,
+            double I,
+            double N)
+        {
+            return
+                Π.Value
+                -
+                μ.Value * N
+                -
+                d.Value * I;
+        }
     }
 }
