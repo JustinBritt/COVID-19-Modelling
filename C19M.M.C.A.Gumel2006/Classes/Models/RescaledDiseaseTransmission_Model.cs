@@ -55,6 +55,9 @@
                 context.VaccineEfficacy);
 
             // N
+            this.N = new C19M.M.C.A.Gumel2006.Classes.Parameters.Rescaled.N(
+                context.NaturalMortalityRate,
+                context.RecruitmentRateSusceptibleHumans);
 
             // p
 
