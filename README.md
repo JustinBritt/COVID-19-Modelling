@@ -11,7 +11,7 @@ C19M.D.Gumel2006 | .NET Framework 4.8 | C# | Data from Gumel *et al.* (2006)
 
 ## Models - Compartmental Models - Approximate Solution Methods (C19M.M.CM.A.*) Projects
 
-In these projects, approximate solutions are obtained using the [fourth-order Runge-Kutta method in MathNet.Numerics.](https://numerics.mathdotnet.com/api/MathNet.Numerics.OdeSolvers/RungeKutta.htm#FourthOrder)
+In these projects, approximate solutions are obtained using the [ordinary differential equation solvers in MathNet.Numerics.](https://numerics.mathdotnet.com/api/MathNet.Numerics.OdeSolvers/)
 
 Folder | Target Framework | Language | Description
 ------------ | ------------- | ------------- | ------------
