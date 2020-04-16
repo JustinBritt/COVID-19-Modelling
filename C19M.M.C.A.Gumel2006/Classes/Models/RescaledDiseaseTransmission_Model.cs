@@ -79,6 +79,10 @@
                 context.NaturalMortalityRate);
 
             // ε
+            this.ε = new C19M.M.C.A.Gumel2006.Classes.Parameters.Rescaled.ε(
+                context.DiseaseInducedMortalityRate,
+                context.RecoveryRate,
+                context.NaturalMortalityRate);
 
             // Variables
 
