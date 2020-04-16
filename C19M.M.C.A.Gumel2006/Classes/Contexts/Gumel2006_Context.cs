@@ -21,6 +21,7 @@
             double initialValueLatentIndividuals,
             double initialValueInfectedIndividuals,
             double initialValueTreatedIndividuals,
+            double initialValueSusceptibleIndividuals,
             double developmentClinicalSymptomsRate,
             double effectiveContactRate,
             double recoveryRate,
@@ -38,6 +39,8 @@
             this.InitialValueInfectedIndividuals = initialValueInfectedIndividuals;
 
             this.InitialValueTreatedIndividuals = initialValueTreatedIndividuals;
+
+            this.InitialValueSusceptibleIndividuals = initialValueSusceptibleIndividuals;
 
             this.DevelopmentClinicalSymptomsRate = developmentClinicalSymptomsRate;
 
@@ -78,6 +81,12 @@
         /// Parameter: R(0)
         /// </summary>
         public double InitialValueTreatedIndividuals { get; }
+
+        /// <summary>
+        /// Gets the initial value for susceptible individuals.
+        /// Parameter: S(0)
+        /// </summary>
+        public double InitialValueSusceptibleIndividuals { get; }
 
         /// <summary>
         /// Gets the rate of development of clinical symptoms.
