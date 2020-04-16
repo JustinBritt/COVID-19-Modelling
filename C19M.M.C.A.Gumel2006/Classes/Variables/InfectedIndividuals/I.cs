@@ -9,11 +9,6 @@
     // Logging
     using log4net;
 
-    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.DevelopmentClinicalSymptomsRate;
-    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.DiseaseInducedMortalityRate;
-    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate;
-    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.RecoveryRate;
-
     using C19M.M.C.A.Gumel2006.Interfaces.Variables.InfectedIndividuals;
 
     internal sealed class I : II
