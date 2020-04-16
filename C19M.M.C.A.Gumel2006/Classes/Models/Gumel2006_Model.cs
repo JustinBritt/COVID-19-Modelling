@@ -52,6 +52,8 @@
             // Parameters
 
             // d
+            this.d = new d(
+                context.DiseaseInducedMortalityRate);
 
             // α
 
