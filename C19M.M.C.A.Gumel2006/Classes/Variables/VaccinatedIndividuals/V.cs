@@ -33,7 +33,7 @@
         public double InitialValue { get; }
 
         public double GetdVdt(
-            Iβ β,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.EffectiveContactRate.Iβ β,
             Iμ μ,
             Iξ ξ,
             Iτ τ,
