@@ -39,7 +39,7 @@
     using C19M.M.C.A.Gumel2006.Interfaces.Variables.TreatedIndividuals;
     using C19M.M.C.A.Gumel2006.Interfaces.Variables.VaccinatedIndividuals;
 
-    internal sealed class Gumel2006_Model : IGumel2006_Model
+    internal sealed class DiseaseTransmission_Model : IDiseaseTransmission_Model
     {
         private ILog Log { get; }
 

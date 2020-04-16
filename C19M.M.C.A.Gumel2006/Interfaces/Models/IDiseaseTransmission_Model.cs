@@ -6,7 +6,7 @@
     using System.Text;
     using System.Threading.Tasks;
 
-    internal interface IGumel2006_Model
+    internal interface IDiseaseTransmission_Model
     {
     }
 }
