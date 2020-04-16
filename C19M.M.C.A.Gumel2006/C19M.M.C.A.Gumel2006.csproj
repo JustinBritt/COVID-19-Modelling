@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Classes\Contexts\Gumel2006_Context.cs" />
     <Compile Include="Classes\Models\DiseaseTransmission_Model.cs" />
+    <Compile Include="Classes\Models\EpidemicOutbreak_Model.cs" />
     <Compile Include="Classes\Models\RescaledDiseaseTransmission_Model.cs" />
     <Compile Include="Classes\Parameters\DevelopmentClinicalSymptomsRate\α.cs" />
     <Compile Include="Classes\Parameters\DiseaseInducedMortalityRate\d.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="Classes\Variables\VaccinatedIndividuals\V.cs" />
     <Compile Include="Interfaces\Contexts\IGumel2006_Context.cs" />
     <Compile Include="Interfaces\Models\IDiseaseTransmission_Model.cs" />
+    <Compile Include="Interfaces\Models\IEpidemicOutbreak_Model.cs" />
     <Compile Include="Interfaces\Models\IRescaledDiseaseTransmission_Model.cs" />
     <Compile Include="Interfaces\Parameters\DevelopmentClinicalSymptomsRate\Iα.cs" />
     <Compile Include="Interfaces\Parameters\DiseaseInducedMortalityRate\Id.cs" />
