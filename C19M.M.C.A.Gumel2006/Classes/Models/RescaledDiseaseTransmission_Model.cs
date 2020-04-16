@@ -50,10 +50,6 @@
 
             // Parameters
 
-            // τ
-            this.τ = new C19M.M.C.A.Gumel2006.Classes.Parameters.VaccineEfficacy.τ(
-                context.VaccineEfficacy);
-
             // N
             this.N = new C19M.M.C.A.Gumel2006.Classes.Parameters.Rescaled.N(
                 context.NaturalMortalityRate,
@@ -83,6 +79,10 @@
                 context.DiseaseInducedMortalityRate,
                 context.RecoveryRate,
                 context.NaturalMortalityRate);
+
+            // τ
+            this.τ = new C19M.M.C.A.Gumel2006.Classes.Parameters.VaccineEfficacy.τ(
+                context.VaccineEfficacy);
 
             // Variables
 
