@@ -68,6 +68,8 @@
                 context.RecoveryRate);
 
             // μ
+            this.μ = new C19M.M.C.A.Gumel2006.Classes.Parameters.NaturalMortalityRate.μ(
+                context.NaturalMortalityRate);
 
             // ξ
 
