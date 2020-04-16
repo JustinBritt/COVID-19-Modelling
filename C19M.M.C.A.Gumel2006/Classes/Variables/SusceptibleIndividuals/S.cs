@@ -11,7 +11,6 @@
 
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate;
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.RecruitmentRateSusceptibleHumans;
-    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled;
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccinationCoverageRate;
 
     using C19M.M.C.A.Gumel2006.Interfaces.Variables.SusceptibleIndividuals;
@@ -50,10 +49,10 @@
         }
 
         public double GetdSdt(
-            IN N,
-            Ip p,
-            Iβ β,
-            Iε ε,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.IN N,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Ip p,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iβ β,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iε ε,
             double I,
             double S)
         {
