@@ -60,6 +60,8 @@
                 context.DevelopmentClinicalSymptomsRate);
 
             // β
+            this.β = new C19M.M.C.A.Gumel2006.Classes.Parameters.EffectiveContactRate.β(
+                context.EffectiveContactRate);
 
             // δ
 
