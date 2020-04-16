@@ -64,6 +64,8 @@
                 context.EffectiveContactRate);
 
             // δ
+            this.δ = new C19M.M.C.A.Gumel2006.Classes.Parameters.RecoveryRate.δ(
+                context.RecoveryRate);
 
             // μ
 
