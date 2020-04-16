@@ -40,6 +40,12 @@
         double InitialValueSusceptibleIndividuals { get; }
 
         /// <summary>
+        /// Gets the initial value for vaccinated individuals
+        /// Parameter: V(0)
+        /// </summary>
+        double InitialValueVaccinatedIndividuals { get; }
+
+        /// <summary>
         /// Gets the rate of development of clinical symptoms.
         /// Parameter: α
         /// Units: Per day
