@@ -16,6 +16,12 @@
         double DiseaseInducedMortalityRate { get; }
 
         /// <summary>
+        /// Gets the initial value for latent individuals.
+        /// Parameter: E(0)
+        /// </summary>
+        double InitialValueLatentIndividuals { get; }
+
+        /// <summary>
         /// Gets the rate of development of clinical symptoms.
         /// Parameter: α
         /// Units: Per day

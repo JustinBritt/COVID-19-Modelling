@@ -18,6 +18,7 @@
         // Constructor
         public Gumel2006_Context(
             double diseaseInducedMortalityRate,
+            double initialValueLatentIndividuals,
             double developmentClinicalSymptomsRate,
             double effectiveContactRate,
             double recoveryRate,
@@ -29,6 +30,8 @@
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             this.DiseaseInducedMortalityRate = diseaseInducedMortalityRate;
+
+            this.InitialValueLatentIndividuals = initialValueLatentIndividuals;
 
             this.DevelopmentClinicalSymptomsRate = developmentClinicalSymptomsRate;
 
@@ -51,6 +54,12 @@
         /// Units: Per day
         /// </summary>
         public double DiseaseInducedMortalityRate { get; }
+
+        /// <summary>
+        /// Gets the initial value for latent individuals.
+        /// Parameter: E(0)
+        /// </summary>
+        public double InitialValueLatentIndividuals { get; }
 
         /// <summary>
         /// Gets the rate of development of clinical symptoms.
