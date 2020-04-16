@@ -6,20 +6,15 @@
     using System.Text;
     using System.Threading.Tasks;
 
-    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.DevelopmentClinicalSymptomsRate;
-    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.EffectiveContactRate;
-    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate;
-    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccineEfficacy;
-
     internal interface IE
     {
         double InitialValue { get; }
 
         double GetdEdt(
-            Iα α,
-            Iβ β,
-            Iμ μ,
-            Iτ τ,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.DevelopmentClinicalSymptomsRate.Iα α,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.EffectiveContactRate.Iβ β,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate.Iμ μ,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccineEfficacy.Iτ τ,
             double E,
             double I,
             double S,
