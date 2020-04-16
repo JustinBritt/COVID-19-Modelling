@@ -60,7 +60,7 @@
             return
                 -β.Value * S * I
                 +
-                ε.Value * (N.Value - S * Math.Pow(1.0d - p.Value, -1.0));
+                ε.Value * (N.Value - (S / (1 - p.Value)));
         }
     }
 }
