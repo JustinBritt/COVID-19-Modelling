@@ -45,5 +45,25 @@
 
             // V(t)
         }
+
+        public IN N { get; }
+
+        public Ip p { get; }
+
+        public Iβ β { get; }
+
+        public Iγ γ { get; }
+
+        public Iε ε { get; }
+
+        public Iτ τ { get; }
+
+        public IE E { get; }
+
+        public II I { get; }
+
+        public IS S { get; }
+
+        public IV V { get; }
     }
 }
