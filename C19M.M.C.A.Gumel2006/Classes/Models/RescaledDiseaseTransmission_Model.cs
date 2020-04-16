@@ -72,6 +72,11 @@
                 context.NaturalMortalityRate);
 
             // γ
+            this.γ = new C19M.M.C.A.Gumel2006.Classes.Parameters.Rescaled.γ(
+                context.DiseaseInducedMortalityRate,
+                context.DevelopmentClinicalSymptomsRate,
+                context.RecoveryRate,
+                context.NaturalMortalityRate);
 
             // ε
 
