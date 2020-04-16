@@ -11,6 +11,7 @@
 
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.EffectiveContactRate;
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate;
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled;
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccinationCoverageRate;
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccineEfficacy;
 
@@ -46,6 +47,19 @@
                 (1 - τ.Value) * β.Value * V * I
                 -
                 μ.Value * V;
+        }
+
+        // TODO: Finish
+        public double GetdVdt(
+            Ip p,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iβ β,
+            Iτ τ,
+            Iε ε,
+            double I,
+            double S,
+            double V)
+        {
+            return 0;
         }
     }
 }
