@@ -56,6 +56,8 @@
                 context.DiseaseInducedMortalityRate);
 
             // α
+            this.α = new Parameters.DevelopmentClinicalSymptomsRate.α(
+                context.DevelopmentClinicalSymptomsRate);
 
             // β
 
