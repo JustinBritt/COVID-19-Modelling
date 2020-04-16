@@ -24,10 +24,10 @@
             double S);
 
         double GetdSdt(
-            IN N,
-            Ip p,
-            Iβ β,
-            Iε ε,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.IN N,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Ip p,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iβ β,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iε ε,
             double I,
             double S);
     }
