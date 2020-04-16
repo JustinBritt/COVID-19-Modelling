@@ -32,10 +32,10 @@
         public double InitialValue { get; }
 
         public double GetdIdt(
-            Id d,
-            Iα α,
-            Iδ δ,
-            Iμ μ,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.DiseaseInducedMortalityRate.Id d,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.DevelopmentClinicalSymptomsRate.Iα α,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.RecoveryRate.Iδ δ,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate.Iμ μ,
             double E,
             double I)
         {
