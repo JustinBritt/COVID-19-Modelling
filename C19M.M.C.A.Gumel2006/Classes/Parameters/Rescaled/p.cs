@@ -17,11 +17,16 @@
 
         // Constructor
         public p(
-            double value)
+            double naturalMortalityRate,
+            double vaccinationCoverageRate)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            this.Value = value;
+            this.Value =
+                vaccinationCoverageRate
+                /
+                (vaccinationCoverageRate + naturalMortalityRate);
+
         }
 
         public double Value { get; }
