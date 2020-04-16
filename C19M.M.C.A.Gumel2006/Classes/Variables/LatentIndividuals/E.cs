@@ -45,5 +45,21 @@
                 -
                 μ.Value * E;
         }
+
+        public double GetdEdt(
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iβ β,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iγ γ,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iε ε,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccineEfficacy.Iτ τ,
+            double E,
+            double I,
+            double S,
+            double V)
+        {
+            return
+                β.Value * (S + (1 - τ.Value) * V) * I
+                -
+                (γ.Value + ε.Value) * E;
+        }
     }
 }
