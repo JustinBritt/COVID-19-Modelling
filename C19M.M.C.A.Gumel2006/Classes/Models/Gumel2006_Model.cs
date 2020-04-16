@@ -76,6 +76,8 @@
                 context.VaccinationCoverageRate);
 
             // Π
+            this.Π = new C19M.M.C.A.Gumel2006.Classes.Parameters.RecruitmentRateSusceptibleHumans.Π(
+                context.RecruitmentRateSusceptibleHumans);
 
             // τ
 
