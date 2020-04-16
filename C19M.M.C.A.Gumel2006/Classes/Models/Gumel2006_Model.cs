@@ -52,11 +52,11 @@
             // Parameters
 
             // d
-            this.d = new d(
+            this.d = new C19M.M.C.A.Gumel2006.Classes.Parameters.DiseaseInducedMortalityRate.d(
                 context.DiseaseInducedMortalityRate);
 
             // α
-            this.α = new Parameters.DevelopmentClinicalSymptomsRate.α(
+            this.α = new C19M.M.C.A.Gumel2006.Classes.Parameters.DevelopmentClinicalSymptomsRate.α(
                 context.DevelopmentClinicalSymptomsRate);
 
             // β
