@@ -29,6 +29,15 @@
                 (diseaseInducedMortalityRate + recoveryRate + naturalMortalityRate);
         }
 
+        // Constructor
+        public ε(
+            double value)
+        {
+            this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+            this.Value = value;
+        }
+
         public double Value { get; }
     }
 }
