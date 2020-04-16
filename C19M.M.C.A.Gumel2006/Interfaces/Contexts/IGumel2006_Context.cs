@@ -22,6 +22,12 @@
         double InitialValueLatentIndividuals { get; }
 
         /// <summary>
+        /// Gets the initial value for infected individuals.
+        /// Parameter: I(0)
+        /// </summary>
+        double InitialValueInfectedIndividuals { get; }
+
+        /// <summary>
         /// Gets the rate of development of clinical symptoms.
         /// Parameter: α
         /// Units: Per day

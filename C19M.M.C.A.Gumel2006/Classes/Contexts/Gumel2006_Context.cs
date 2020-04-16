@@ -19,6 +19,7 @@
         public Gumel2006_Context(
             double diseaseInducedMortalityRate,
             double initialValueLatentIndividuals,
+            double initialValueInfectedIndividuals,
             double developmentClinicalSymptomsRate,
             double effectiveContactRate,
             double recoveryRate,
@@ -32,6 +33,8 @@
             this.DiseaseInducedMortalityRate = diseaseInducedMortalityRate;
 
             this.InitialValueLatentIndividuals = initialValueLatentIndividuals;
+
+            this.InitialValueInfectedIndividuals = initialValueInfectedIndividuals;
 
             this.DevelopmentClinicalSymptomsRate = developmentClinicalSymptomsRate;
 
@@ -60,6 +63,12 @@
         /// Parameter: E(0)
         /// </summary>
         public double InitialValueLatentIndividuals { get; }
+
+        /// <summary>
+        /// Gets the initial value for infected individuals.
+        /// Parameter: I(0)
+        /// </summary>
+        public double InitialValueInfectedIndividuals { get; }
 
         /// <summary>
         /// Gets the rate of development of clinical symptoms.
