@@ -72,6 +72,8 @@
                 context.NaturalMortalityRate);
 
             // ξ
+            this.ξ = new C19M.M.C.A.Gumel2006.Classes.Parameters.VaccinationCoverageRate.ξ(
+                context.VaccinationCoverageRate);
 
             // Π
 
