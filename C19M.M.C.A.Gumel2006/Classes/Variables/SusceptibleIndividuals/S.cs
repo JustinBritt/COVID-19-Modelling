@@ -48,5 +48,19 @@
                 -
                 μ.Value * S;
         }
+
+        public double GetdSdt(
+            IN N,
+            Ip p,
+            Iβ β,
+            Iε ε,
+            double I,
+            double S)
+        {
+            return
+                -β.Value * S * I
+                +
+                ε.Value * (N.Value - S * Math.Pow(1.0d - p.Value, -1.0));
+        }
     }
 }

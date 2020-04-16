@@ -21,5 +21,13 @@
             IΠ Π,
             double I,
             double S);
+
+        double GetdSdt(
+            IN N,
+            Ip p,
+            Iβ β,
+            Iε ε,
+            double I,
+            double S);
     }
 }
