@@ -17,11 +17,17 @@
 
         // Constructor
         public β(
-            double value)
+            double diseaseInducedMortalityRate,
+            double effectiveContactRate,
+            double recoveryRate,
+            double naturalMortalityRate)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            this.Value = value;
+            this.Value =
+                effectiveContactRate
+                /
+                (diseaseInducedMortalityRate + recoveryRate + naturalMortalityRate);
         }
 
         public double Value { get; }
