@@ -95,27 +95,15 @@
             // V(t)
         }
 
-        // public Id d { get; }
-
         public IN N { get; }
 
         public Ip p { get; }
-
-        // public Iα α { get; }
 
         public Iβ β { get; }
 
         public Iγ γ { get; }
 
-        // public Iδ δ { get; }
-
         public Iε ε { get; }
-
-        // public Iμ μ { get; }
-
-        // public Iξ ξ { get; }
-
-        // public IΠ Π { get; }
 
         public Iτ τ { get; }
 
