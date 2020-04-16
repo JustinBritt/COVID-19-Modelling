@@ -50,6 +50,41 @@
 
             // Parameters
 
+            // N
+            this.N = new C19M.M.C.A.Gumel2006.Classes.Parameters.Rescaled.N(
+                context.NaturalMortalityRate,
+                context.RecruitmentRateSusceptibleHumans);
+
+            // p
+            this.p = new C19M.M.C.A.Gumel2006.Classes.Parameters.Rescaled.p(
+                context.NaturalMortalityRate,
+                context.VaccinationCoverageRate);
+
+            // β
+            this.β = new C19M.M.C.A.Gumel2006.Classes.Parameters.Rescaled.β(
+                context.DiseaseInducedMortalityRate,
+                context.EffectiveContactRate,
+                context.RecoveryRate,
+                context.NaturalMortalityRate);
+
+            // γ
+            this.γ = new C19M.M.C.A.Gumel2006.Classes.Parameters.Rescaled.γ(
+                context.DiseaseInducedMortalityRate,
+                context.DevelopmentClinicalSymptomsRate,
+                context.RecoveryRate,
+                context.NaturalMortalityRate);
+
+            // ε
+            // TODO: Update
+            this.ε = new C19M.M.C.A.Gumel2006.Classes.Parameters.Rescaled.ε(
+                1,
+                1,
+                0);
+
+            // τ
+            this.τ = new C19M.M.C.A.Gumel2006.Classes.Parameters.VaccineEfficacy.τ(
+                context.VaccineEfficacy);
+
             // Variables
 
             // E(t)
