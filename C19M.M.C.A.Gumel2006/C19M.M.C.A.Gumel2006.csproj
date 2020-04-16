@@ -54,6 +54,7 @@
     <Compile Include="Classes\Parameters\NaturalMortalityRate\μ.cs" />
     <Compile Include="Classes\Parameters\RecoveryRate\δ.cs" />
     <Compile Include="Classes\Parameters\RecruitmentRateSusceptibleHumans\Π.cs" />
+    <Compile Include="Classes\Parameters\Rescaled\N.cs" />
     <Compile Include="Classes\Parameters\VaccinationCoverageRate\ξ.cs" />
     <Compile Include="Classes\Parameters\VaccineEfficacy\τ.cs" />
     <Compile Include="Classes\Variables\InfectedIndividuals\I.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="Interfaces\Parameters\NaturalMortalityRate\Iμ.cs" />
     <Compile Include="Interfaces\Parameters\RecoveryRate\Iδ.cs" />
     <Compile Include="Interfaces\Parameters\RecruitmentRateSusceptibleHumans\IΠ.cs" />
+    <Compile Include="Interfaces\Parameters\Rescaled\IN.cs" />
     <Compile Include="Interfaces\Parameters\VaccinationCoverageRate\Iξ.cs" />
     <Compile Include="Interfaces\Parameters\VaccineEfficacy\Iτ.cs" />
     <Compile Include="Interfaces\Variables\InfectedIndividuals\II.cs" />
@@ -84,10 +86,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Exports\" />
-    <Folder Include="Classes\Parameters\Rescaled\" />
     <Folder Include="Classes\Solutions\" />
     <Folder Include="Interfaces\Exports\" />
-    <Folder Include="Interfaces\Parameters\Rescaled\" />
     <Folder Include="Interfaces\Solutions\" />
   </ItemGroup>
   <ItemGroup>
