@@ -25,11 +25,10 @@
 
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.DevelopmentClinicalSymptomsRate;
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.DiseaseInducedMortalityRate;
-    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.EffectiveContactRate;
-    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.EquilibriumPopulationWithoutDisease;
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate;
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.RecoveryRate;
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.RecruitmentRateSusceptibleHumans;
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled;
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccinationCoverageRate;
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccineEfficacy;
 
@@ -60,6 +59,30 @@
 
             // V(t)
         }
+
+        public Id d { get; }
+
+        public IN N { get; }
+
+        public Ip p { get; }
+
+        public Iα α { get; }
+
+        public Iβ β { get; }
+
+        public Iγ γ { get; }
+
+        public Iδ δ { get; }
+
+        public Iε ε { get; }
+
+        public Iμ μ { get; }
+
+        public Iξ ξ { get; }
+
+        public IΠ Π { get; }
+
+        public Iτ τ { get; }
 
         public IE E { get; }
 
