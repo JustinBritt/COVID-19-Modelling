@@ -44,7 +44,7 @@
         private ILog Log { get; }
 
         // Constructor
-        public Gumel2006_Model(
+        public DiseaseTransmission_Model(
             IGumel2006_Context context)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
