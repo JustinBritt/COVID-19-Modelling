@@ -11,6 +11,8 @@ C19M.D.Gumel2006 | .NET Framework 4.8 | C# | Data from Gumel *et al.* (2006)
 
 ## Models - Compartmental Models - Approximate Solution Methods (C19M.M.CM.A.*) Projects
 
+In these projects, approximate solutions are obtained using the [fourth-order Runge-Kutta method in MathNet.Numerics.](https://numerics.mathdotnet.com/api/MathNet.Numerics.OdeSolvers/RungeKutta.htm#FourthOrder)
+
 Folder | Target Framework | Language | Description
 ------------ | ------------- | ------------- | ------------
 C19M.M.C.A.Gumel2004 | .NET Framework 4.8 | C# | [Compartmental model for SARS-CoV developed by Gumel *et al.* (2004)](https://royalsocietypublishing.org/doi/10.1098/rspb.2004.2800) 
