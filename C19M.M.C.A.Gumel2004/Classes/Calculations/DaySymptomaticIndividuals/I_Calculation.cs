@@ -21,5 +21,11 @@
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         }
+
+        // TODO: Finish
+        public II Calculate()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
