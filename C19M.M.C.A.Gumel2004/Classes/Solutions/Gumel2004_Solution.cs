@@ -197,6 +197,8 @@
                 Q_res.ToImmutableList());
 
             // R
+            this.R = new C19M.M.C.A.Gumel2004.Classes.Results.DayRecoveredIndividuals.R(
+                R_res.ToImmutableList());
 
             // S
 
