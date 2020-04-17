@@ -68,6 +68,7 @@
     <Compile Include="Classes\Calculations\DayAsymptomaticIndividuals\E_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayDiseaseInducedDeaths\DayDiseaseInducedDeaths_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayDiseaseInducedDeaths\DayDiseaseInducedDeaths_ResultElement_Calculation.cs" />
+    <Compile Include="Classes\Calculations\DayIsolatedIndividuals\J_Calculation.cs" />
     <Compile Include="Classes\Calculations\DaySymptomaticIndividuals\I_Calculation.cs" />
     <Compile Include="Classes\Calculations\DaySymptomaticIndividuals\I_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Contexts\Gumel2004_Context.cs" />
@@ -119,6 +120,7 @@
     <Compile Include="Interfaces\Calculations\DayAsymptomaticIndividuals\IE_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths_ResultElement_Calculation.cs" />
+    <Compile Include="Interfaces\Calculations\DayIsolatedIndividuals\IJ_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DaySymptomaticIndividuals\II_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DaySymptomaticIndividuals\II_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Contexts\IGumel2004_Context.cs" />
@@ -169,9 +171,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\Calculations\DayIsolatedIndividuals\" />
     <Folder Include="Factories\Parameters\BasicReproductionNumber\" />
-    <Folder Include="Interfaces\Calculations\DayIsolatedIndividuals\" />
     <Folder Include="Interfaces_Factories\Parameters\BasicReproductionNumber\" />
   </ItemGroup>
   <ItemGroup>
