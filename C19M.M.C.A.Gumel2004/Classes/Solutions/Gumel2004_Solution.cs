@@ -144,7 +144,7 @@
 
             List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayRecoveredIndividuals.IR_ResultElement> R_res = new List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayRecoveredIndividuals.IR_ResultElement>();
 
-            List<Tuple<DateTime, double>> S_res = new List<Tuple<DateTime, double>>();
+            List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DaySusceptibleIndividuals.IS_ResultElement> S_res = new List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DaySusceptibleIndividuals.IS_ResultElement>();
 
             for (DateTime i = t.StartDate; i <= t.EndDate; i = i.AddDays(1))
             {
@@ -174,7 +174,7 @@
                         results[t.NumberDaysAfterStartDate.Invoke(i)][4]));
 
                 S_res.Add(
-                    new Tuple<DateTime, double>(
+                    new C19M.M.C.A.Gumel2004.Classes.ResultElements.DaySusceptibleIndividuals.S_ResultElement(
                         i,
                         results[t.NumberDaysAfterStartDate.Invoke(i)][5]));
             }
