@@ -20,5 +20,11 @@
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         }
+
+        // TODO: Finish
+        public MathNet.Numerics.LinearAlgebra.Vector<double>[] Solve()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
