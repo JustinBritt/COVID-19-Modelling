@@ -89,6 +89,7 @@
     <Compile Include="Classes\Parameters\TransmissionCoefficientModificationFactorQuarantinedIndividuals\ε.cs" />
     <Compile Include="Classes\ResultElements\DayCumulativeDiseaseInducedDeaths\DayCumulativeDiseaseInducedDeaths_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DayDiseaseInducedDeaths\DayDiseaseInducedDeaths_ResultElement.cs" />
+    <Compile Include="Classes\Results\DayCumulativeDiseaseInducedDeaths\DayCumulativeDiseaseInducedDeaths.cs" />
     <Compile Include="Classes\Results\DayDiseaseInducedDeaths\DayDiseaseInducedDeaths.cs" />
     <Compile Include="Classes\Solutions\Gumel2004_Solution.cs" />
     <Compile Include="Classes\Variables\AsymptomaticIndividuals\E.cs" />
@@ -122,6 +123,7 @@
     <Compile Include="Interfaces\Parameters\TransmissionCoefficientModificationFactorQuarantinedIndividuals\Iε.cs" />
     <Compile Include="Interfaces\ResultElements\DayCumulativeDiseaseInducedDeaths\IDayCumulativeDiseaseInducedDeaths_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths_ResultElement.cs" />
+    <Compile Include="Interfaces\Results\DayCumulativeDiseaseInducedDeaths\IDayCumulativeDiseaseInducedDeaths.cs" />
     <Compile Include="Interfaces\Results\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths.cs" />
     <Compile Include="Interfaces\Solutions\IGumel2004_Solution.cs" />
     <Compile Include="Interfaces\Variables\AsymptomaticIndividuals\IE.cs" />
@@ -135,9 +137,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\Results\DayCumulativeDiseaseInducedDeaths\" />
     <Folder Include="Factories\Parameters\BasicReproductionNumber\" />
-    <Folder Include="Interfaces\Results\DayCumulativeDiseaseInducedDeaths\" />
     <Folder Include="Interfaces_Factories\Parameters\BasicReproductionNumber\" />
   </ItemGroup>
   <ItemGroup>
