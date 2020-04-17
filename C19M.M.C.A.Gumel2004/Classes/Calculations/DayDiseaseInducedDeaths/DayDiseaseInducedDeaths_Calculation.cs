@@ -29,7 +29,9 @@
 
         // TODO: Finish
         public IDayDiseaseInducedDeaths Calculate(
-            It t)
+            It t,
+            II I,
+            IJ J)
         {
             throw new NotImplementedException();
         }
