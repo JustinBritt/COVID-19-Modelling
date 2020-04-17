@@ -180,6 +180,8 @@
                         results[t.NumberDaysAfterStartDate.Invoke(i)][5]));
             }
 
+            // E
+
             // I
             this.I = new C19M.M.C.A.Gumel2004.Classes.Results.DaySymptomaticIndividuals.I(
                 I_res.ToImmutableList());
@@ -187,6 +189,12 @@
             // J
             this.J = new C19M.M.C.A.Gumel2004.Classes.Results.DayIsolatedIndividuals.J(
                 J_res.ToImmutableList());
+
+            // Q
+
+            // R
+
+            // S
 
             // DayDiseaseInducedDeaths
             this.DayDiseaseInducedDeaths = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayDiseaseInducedDeaths.DayDiseaseInducedDeaths_Calculation().Calculate(
