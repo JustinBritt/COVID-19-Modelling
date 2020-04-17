@@ -12,5 +12,8 @@
     internal interface IJ
     {
         ImmutableList<IJ_ResultElement> Value { get; }
+
+        double GetElementAt(
+            DateTime t_IndexElement);
     }
 }
