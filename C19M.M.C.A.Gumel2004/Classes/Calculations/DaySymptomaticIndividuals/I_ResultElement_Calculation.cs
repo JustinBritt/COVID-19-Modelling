@@ -11,6 +11,8 @@
 
     using C19M.M.C.A.Gumel2004.Interfaces.Calculations.DaySymptomaticIndividuals;
 
+    using C19M.M.C.A.Gumel2004.Interfaces.Indices;
+
     using C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DaySymptomaticIndividuals;
 
     internal sealed class I_ResultElement_Calculation : II_ResultElement_Calculation
@@ -23,12 +25,14 @@
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         }
 
-        // TODO: Finish
         public II_ResultElement Calculate(
             DateTime t_IndexElement,
+            It t,
             MathNet.Numerics.LinearAlgebra.Vector<double>[] RungeKuttaResults)
         {
-            throw new NotImplementedException();
+            return new C19M.M.C.A.Gumel2004.Classes.ResultElements.DaySymptomaticIndividuals.I_ResultElement(
+                t_IndexElement,
+                RungeKuttaResults[t.NumberDaysAfterStartDate.Invoke(t_IndexElement)][1]);
         }
     }
 }
