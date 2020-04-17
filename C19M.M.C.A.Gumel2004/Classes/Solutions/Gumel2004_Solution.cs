@@ -68,6 +68,8 @@
 
         public C19M.M.C.A.Gumel2004.Interfaces.Results.DayIsolatedIndividuals.IJ J { get; private set; }
 
+        public C19M.M.C.A.Gumel2004.Interfaces.Results.DayQuarantinedIndividuals.IQ Q { get; private set; }
+
         public double Solve(
             It t,
             Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,
