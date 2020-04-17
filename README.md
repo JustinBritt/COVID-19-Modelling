@@ -8,6 +8,7 @@ Folder | Target Framework | Language | Description
 ------------ | ------------- | ------------- | ------------
 C19M.D.Gumel2004 | .NET Framework 4.8 | C# | Data from Gumel *et al.* (2004)
 C19M.D.Gumel2006 | .NET Framework 4.8 | C# | Data from Gumel *et al.* (2006)
+C19M.D.Safi2010 | .NET Framework 4.8 | C# | Data from Safi *et al.* (2010)
 
 ## Models - Compartmental Models - Approximate Solution Methods (C19M.M.CM.A.*) Projects
 
