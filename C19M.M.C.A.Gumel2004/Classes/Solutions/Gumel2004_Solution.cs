@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Collections.Immutable;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
@@ -179,17 +180,14 @@
                         results[t.NumberDaysAfterStartDate.Invoke(i)][5]));
             }
 
-            List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayDiseaseInducedDeaths.IDayDiseaseInducedDeaths_ResultElement> did = new List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayDiseaseInducedDeaths.IDayDiseaseInducedDeaths_ResultElement>();
+            var did = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayDiseaseInducedDeaths.DayDiseaseInducedDeaths_Calculation().Calculate(
+                t,
+                d_1,
+                d_2,
+                new C19M.M.C.A.Gumel2004.Classes.Results.DaySymptomaticIndividuals.I(I_res.ToImmutableList()),
+                new C19M.M.C.A.Gumel2004.Classes.Results.DayIsolatedIndividuals.J(J_res.ToImmutableList()));
 
-            for(DateTime i = t.StartDate; i <= t.EndDate; i = i.AddDays(1))
-            {
-                did.Add(
-                    new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayDiseaseInducedDeaths.DayDiseaseInducedDeaths_ResultElement(
-                        i,
-                        d_1.Value * I_res.Where(w => w.t_IndexElement == i).Select(w => w.Value).SingleOrDefault() + d_2.Value * J_res.Where(w => w.t_IndexElement == i).Select(w => w.Value).SingleOrDefault()));
-            }
-
-            double diseaseInducedDeaths = did.Select(w => w.Value).Sum();
+            double diseaseInducedDeaths = did.Value.Select(w => w.Value).Sum();
 
             return diseaseInducedDeaths;
         }
