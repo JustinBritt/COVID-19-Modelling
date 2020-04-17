@@ -191,6 +191,8 @@
                 J_res.ToImmutableList());
 
             // Q
+            this.Q = new C19M.M.C.A.Gumel2004.Classes.Results.DayQuarantinedIndividuals.Q(
+                Q_res.ToImmutableList());
 
             // R
 
