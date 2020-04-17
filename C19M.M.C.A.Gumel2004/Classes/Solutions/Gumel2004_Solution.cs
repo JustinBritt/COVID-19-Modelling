@@ -115,15 +115,20 @@
 
             double diseaseInducedDeaths = 0;
 
-            for (int i = t.NumberDaysAfterStartDate.Invoke(t.StartDate); i <= t.NumberDaysAfterStartDate.Invoke(t.EndDate); i = i + 1)
+            for(DateTime i = t.StartDate; i <= t.EndDate; i = i.AddDays(1))
             {
-                //MathNet.Numerics.LinearAlgebra.Vector<double> w = results[i];
-
-                diseaseInducedDeaths += d_1.Value * results[i][1] + d_2.Value * results[i][2];
-
-                // S(t)
-                //System.Diagnostics.Debug.WriteLine(w[5]);
+                diseaseInducedDeaths += d_1.Value * results[t.NumberDaysAfterStartDate.Invoke(i)][1] + d_2.Value * results[t.NumberDaysAfterStartDate.Invoke(i)][2];
             }
+
+            //for (int i = t.NumberDaysAfterStartDate.Invoke(t.StartDate); i <= t.NumberDaysAfterStartDate(t.EndDate) - t.NumberDaysAfterStartDate(t.StartDate) + 1; i = i + 1)
+            //{
+            //    //MathNet.Numerics.LinearAlgebra.Vector<double> w = results[i];
+
+            //    diseaseInducedDeaths += d_1.Value * results[i][1] + d_2.Value * results[i][2];
+
+            //    // S(t)
+            //    //System.Diagnostics.Debug.WriteLine(w[5]);
+            //}
 
             return diseaseInducedDeaths;
         }
