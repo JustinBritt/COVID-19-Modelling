@@ -64,8 +64,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Calculations\DiseaseInducedDeaths\DiseaseInducedDeaths_Calculation.cs" />
-    <Compile Include="Classes\Calculations\DiseaseInducedDeaths\DiseaseInducedDeaths_ResultElement_Calculation.cs" />
+    <Compile Include="Classes\Calculations\DayDiseaseInducedDeaths\DayDiseaseInducedDeaths_Calculation.cs" />
+    <Compile Include="Classes\Calculations\DayDiseaseInducedDeaths\DayDiseaseInducedDeaths_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Contexts\Gumel2004_Context.cs" />
     <Compile Include="Classes\Exports\Gumel2004_Export.cs" />
     <Compile Include="Classes\Indices\t.cs" />
@@ -87,8 +87,8 @@
     <Compile Include="Classes\Parameters\TransmissionCoefficientModificationFactorAsymptomaticIndividuals\ε.cs" />
     <Compile Include="Classes\Parameters\TransmissionCoefficientModificationFactorIsolatedIndividuals\ε.cs" />
     <Compile Include="Classes\Parameters\TransmissionCoefficientModificationFactorQuarantinedIndividuals\ε.cs" />
-    <Compile Include="Classes\ResultElements\DiseaseInducedDeaths\DiseaseInducedDeaths_ResultElement.cs" />
-    <Compile Include="Classes\Results\DiseaseInducedDeaths\DiseaseInducedDeaths.cs" />
+    <Compile Include="Classes\ResultElements\DayDiseaseInducedDeaths\DayDiseaseInducedDeaths_ResultElement.cs" />
+    <Compile Include="Classes\Results\DayDiseaseInducedDeaths\DayDiseaseInducedDeaths.cs" />
     <Compile Include="Classes\Solutions\Gumel2004_Solution.cs" />
     <Compile Include="Classes\Variables\AsymptomaticIndividuals\E.cs" />
     <Compile Include="Classes\Variables\IsolatedIndividuals\J.cs" />
@@ -97,8 +97,8 @@
     <Compile Include="Classes\Variables\SusceptibleIndividuals\S.cs" />
     <Compile Include="Classes\Variables\SymptomaticIndividuals\I.cs" />
     <Compile Include="Classes\Variables\TotalPopulationSize\N.cs" />
-    <Compile Include="Interfaces\Calculations\DiseaseInducedDeaths\IDiseaseInducedDeaths_Calculation.cs" />
-    <Compile Include="Interfaces\Calculations\DiseaseInducedDeaths\IDiseaseInducedDeaths_ResultElement_Calculation.cs" />
+    <Compile Include="Interfaces\Calculations\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths_Calculation.cs" />
+    <Compile Include="Interfaces\Calculations\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Contexts\IGumel2004_Context.cs" />
     <Compile Include="Interfaces\Exports\IGumel2004_Export.cs" />
     <Compile Include="Interfaces\Indices\It.cs" />
@@ -119,8 +119,8 @@
     <Compile Include="Interfaces\Parameters\TransmissionCoefficientModificationFactorAsymptomaticIndividuals\Iε.cs" />
     <Compile Include="Interfaces\Parameters\TransmissionCoefficientModificationFactorIsolatedIndividuals\Iε.cs" />
     <Compile Include="Interfaces\Parameters\TransmissionCoefficientModificationFactorQuarantinedIndividuals\Iε.cs" />
-    <Compile Include="Interfaces\ResultElements\DiseaseInducedDeaths\IDiseaseInducedDeaths_ResultElement.cs" />
-    <Compile Include="Interfaces\Results\DiseaseInducedDeaths\IDiseaseInducedDeaths.cs" />
+    <Compile Include="Interfaces\ResultElements\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths_ResultElement.cs" />
+    <Compile Include="Interfaces\Results\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths.cs" />
     <Compile Include="Interfaces\Solutions\IGumel2004_Solution.cs" />
     <Compile Include="Interfaces\Variables\AsymptomaticIndividuals\IE.cs" />
     <Compile Include="Interfaces\Variables\IsolatedIndividuals\IJ.cs" />

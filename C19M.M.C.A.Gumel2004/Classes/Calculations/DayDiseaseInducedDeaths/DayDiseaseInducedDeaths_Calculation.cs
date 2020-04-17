@@ -1,4 +1,4 @@
-﻿namespace C19M.M.C.A.Gumel2004.Classes.Calculations.DiseaseInducedDeaths
+﻿namespace C19M.M.C.A.Gumel2004.Classes.Calculations.DayDiseaseInducedDeaths
 {
     using System;
     using System.Collections.Generic;
@@ -9,22 +9,22 @@
     // Logging
     using log4net;
 
-    using C19M.M.C.A.Gumel2004.Interfaces.Calculations.DiseaseInducedDeaths;
+    using C19M.M.C.A.Gumel2004.Interfaces.Calculations.DayDiseaseInducedDeaths;
 
-    using C19M.M.C.A.Gumel2004.Interfaces.Results.DiseaseInducedDeaths;
+    using C19M.M.C.A.Gumel2004.Interfaces.Results.DayDiseaseInducedDeaths;
 
-    internal sealed class DiseaseInducedDeaths_Calculation : IDiseaseInducedDeaths_Calculation
+    internal sealed class DayDiseaseInducedDeaths_Calculation : IDayDiseaseInducedDeaths_Calculation
     {
         private ILog Log { get; }
 
         // Constructor
-        public DiseaseInducedDeaths_Calculation()
+        public DayDiseaseInducedDeaths_Calculation()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         }
 
         // TODO: Finish
-        public IDiseaseInducedDeaths Calculate()
+        public IDayDiseaseInducedDeaths Calculate()
         {
             throw new NotImplementedException();
         }

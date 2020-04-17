@@ -1,4 +1,4 @@
-﻿namespace C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DiseaseInducedDeaths
+﻿namespace C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayDiseaseInducedDeaths
 {
     using System;
     using System.Collections.Generic;
@@ -6,7 +6,7 @@
     using System.Text;
     using System.Threading.Tasks;
 
-    internal interface IDiseaseInducedDeaths_ResultElement
+    internal interface IDayDiseaseInducedDeaths_ResultElement
     {
         DateTime t_IndexElement { get; }
 

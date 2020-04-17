@@ -1,4 +1,4 @@
-﻿namespace C19M.M.C.A.Gumel2004.Interfaces.Calculations.DiseaseInducedDeaths
+﻿namespace C19M.M.C.A.Gumel2004.Interfaces.Calculations.DayDiseaseInducedDeaths
 {
     using System;
     using System.Collections.Generic;
@@ -6,7 +6,7 @@
     using System.Text;
     using System.Threading.Tasks;
 
-    internal interface IDiseaseInducedDeaths_ResultElement_Calculation
+    internal interface IDayDiseaseInducedDeaths_Calculation
     {
     }
 }
