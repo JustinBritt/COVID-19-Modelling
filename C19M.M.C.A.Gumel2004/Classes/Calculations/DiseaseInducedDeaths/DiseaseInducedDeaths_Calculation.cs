@@ -11,6 +11,8 @@
 
     using C19M.M.C.A.Gumel2004.Interfaces.Calculations.DiseaseInducedDeaths;
 
+    using C19M.M.C.A.Gumel2004.Interfaces.Results.DiseaseInducedDeaths;
+
     internal sealed class DiseaseInducedDeaths_Calculation : IDiseaseInducedDeaths_Calculation
     {
         private ILog Log { get; }
