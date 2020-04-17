@@ -66,6 +66,9 @@
                 model.Q,
                 model.R,
                 model.S);
+
+            System.Diagnostics.Debug.WriteLine(
+                diseaseInducedDeaths);
         }
     }
 }
