@@ -6,7 +6,7 @@
     using System.Text;
     using System.Threading.Tasks;
 
-    internal interface IDayAsymptomaticIndividuals_ResultElement
+    internal interface IE_ResultElement
     {
         DateTime t_IndexElement { get; }
 

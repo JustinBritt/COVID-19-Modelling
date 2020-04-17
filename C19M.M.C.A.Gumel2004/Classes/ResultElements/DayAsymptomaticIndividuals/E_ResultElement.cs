@@ -11,12 +11,12 @@
 
     using C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayAsymptomaticIndividuals;
 
-    internal sealed class DayAsymptomaticIndividuals_ResultElement : IDayAsymptomaticIndividuals_ResultElement
+    internal sealed class E_ResultElement : IE_ResultElement
     {
         private ILog Log { get; }
 
         // Constructor
-        public DayAsymptomaticIndividuals_ResultElement(
+        public E_ResultElement(
             DateTime t_IndexElement,
             double value)
         {
