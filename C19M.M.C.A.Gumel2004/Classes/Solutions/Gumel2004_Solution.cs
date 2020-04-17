@@ -72,6 +72,8 @@
 
         public C19M.M.C.A.Gumel2004.Interfaces.Results.DayRecoveredIndividuals.IR R { get; private set; }
 
+        public C19M.M.C.A.Gumel2004.Interfaces.Results.DaySusceptibleIndividuals.IS S { get; private set; }
+
         public double Solve(
             It t,
             Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,
