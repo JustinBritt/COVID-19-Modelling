@@ -141,7 +141,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Classes\ResultElements\DaySymptomaticIndividuals\" />
+    <Folder Include="Classes\Results\DaySymptomaticIndividuals\" />
     <Folder Include="Factories\Parameters\BasicReproductionNumber\" />
+    <Folder Include="Interfaces\ResultElements\DaySymptomaticIndividuals\" />
+    <Folder Include="Interfaces\Results\DaySymptomaticIndividuals\" />
     <Folder Include="Interfaces_Factories\Parameters\BasicReproductionNumber\" />
   </ItemGroup>
   <ItemGroup>
