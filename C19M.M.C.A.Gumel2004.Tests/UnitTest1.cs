@@ -66,24 +66,6 @@
             //    model.Q,
             //    model.R,
             //    model.S);
-
-            //double d_1 = 0.0079;
-
-            //double d_2 = 0.0068;
-
-            //double deaths = 0;
-
-            //for (int i = 0; i <= results.Length - 1; i = i + 1)
-            //{
-            //    MathNet.Numerics.LinearAlgebra.Vector<double> w = results[i];
-
-            //    deaths += d_1 * w[1] + d_2 * w[2];
-
-            //    System.Diagnostics.Debug.WriteLine(deaths);
-
-            //    // S(t)
-            //    //System.Diagnostics.Debug.WriteLine(w[5]);
-            //}
         }
     }
 }
