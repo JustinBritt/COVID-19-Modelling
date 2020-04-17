@@ -112,6 +112,18 @@
                         Q,
                         R,
                         S));
+
+            double diseaseInducedDeaths = 0;
+
+            for (int i = 0; i <= results.Length - 1; i = i + 1)
+            {
+                MathNet.Numerics.LinearAlgebra.Vector<double> w = results[i];
+
+                diseaseInducedDeaths += d_1.Value * w[1] + d_2.Value * w[2];
+
+                // S(t)
+                //System.Diagnostics.Debug.WriteLine(w[5]);
+            }
         }
 
         // https://stackoverflow.com/a/55004295
