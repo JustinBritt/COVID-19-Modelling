@@ -26,16 +26,16 @@
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         }
 
-        // TODO: Finish
         public II Calculate(
             It t,
             MathNet.Numerics.LinearAlgebra.Vector<double>[] RungeKuttaResults)
         {
             return new C19M.M.C.A.Gumel2004.Classes.Results.DaySymptomaticIndividuals.I(
                 t.Value.Select(
-                    w => (C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DaySymptomaticIndividuals.II_ResultElement)new C19M.M.C.A.Gumel2004.Classes.ResultElements.DaySymptomaticIndividuals.I_ResultElement(
+                    w => new C19M.M.C.A.Gumel2004.Classes.Calculations.DaySymptomaticIndividuals.I_ResultElement_Calculation().Calculate(
                         w,
-                        RungeKuttaResults[t.NumberDaysAfterStartDate.Invoke(w)][1]))
+                        t,
+                        RungeKuttaResults))
                 .ToImmutableList());
         }
     }
