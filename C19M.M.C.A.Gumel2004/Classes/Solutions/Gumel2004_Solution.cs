@@ -51,6 +51,8 @@
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         }
 
+        public IDiseaseInducedDeaths DiseaseInducedDeaths { get; private set; }
+
         public MathNet.Numerics.LinearAlgebra.Vector<double>[] Solve(
             It t,
             Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,
