@@ -156,10 +156,12 @@
     <Folder Include="Classes\Results\DayIsolatedIndividuals\" />
     <Folder Include="Classes\Results\DayQuarantinedIndividuals\" />
     <Folder Include="Classes\Results\DayRecoveredIndividuals\" />
+    <Folder Include="Classes\Results\DaySusceptibleIndividuals\" />
     <Folder Include="Factories\Parameters\BasicReproductionNumber\" />
     <Folder Include="Interfaces\Results\DayIsolatedIndividuals\" />
     <Folder Include="Interfaces\Results\DayQuarantinedIndividuals\" />
     <Folder Include="Interfaces\Results\DayRecoveredIndividuals\" />
+    <Folder Include="Interfaces\Results\DaySusceptibleIndividuals\" />
     <Folder Include="Interfaces_Factories\Parameters\BasicReproductionNumber\" />
   </ItemGroup>
   <ItemGroup>
