@@ -52,6 +52,8 @@
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         }
 
+        public IDayCumulativeDiseaseInducedDeaths DayCumulativeDiseaseInducedDeaths { get; private set; }
+
         public IDayDiseaseInducedDeaths DayDiseaseInducedDeaths { get; private set; }
 
         public double Solve(
