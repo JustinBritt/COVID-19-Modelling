@@ -86,6 +86,8 @@
             // Variables
 
             // E(t)
+            this.E = new C19M.M.C.A.Gumel2006.Classes.Variables.LatentIndividuals.E(
+                context.InitialValueLatentIndividuals);
 
             // I(t)
 
