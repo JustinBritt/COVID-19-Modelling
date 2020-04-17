@@ -116,6 +116,51 @@
                         R,
                         S));
 
+            List<Tuple<DateTime, double>> E_res = new List<Tuple<DateTime, double>>();
+
+            List<Tuple<DateTime, double>> I_res = new List<Tuple<DateTime, double>>();
+
+            List<Tuple<DateTime, double>> J_res = new List<Tuple<DateTime, double>>();
+
+            List<Tuple<DateTime, double>> Q_res = new List<Tuple<DateTime, double>>();
+
+            List<Tuple<DateTime, double>> R_res = new List<Tuple<DateTime, double>>();
+
+            List<Tuple<DateTime, double>> S_res = new List<Tuple<DateTime, double>>();
+
+            for (DateTime i = t.StartDate; i <= t.EndDate; i = i.AddDays(1))
+            {
+                E_res.Add(
+                    new Tuple<DateTime, double>(
+                        i,
+                        results[t.NumberDaysAfterStartDate.Invoke(i)][0]));
+
+                I_res.Add(
+                    new Tuple<DateTime, double>(
+                        i,
+                        results[t.NumberDaysAfterStartDate.Invoke(i)][1]));
+
+                J_res.Add(
+                    new Tuple<DateTime, double>(
+                        i,
+                        results[t.NumberDaysAfterStartDate.Invoke(i)][2]));
+
+                Q_res.Add(
+                    new Tuple<DateTime, double>(
+                        i,
+                        results[t.NumberDaysAfterStartDate.Invoke(i)][3]));
+            
+                R_res.Add(
+                    new Tuple<DateTime, double>(
+                        i,
+                        results[t.NumberDaysAfterStartDate.Invoke(i)][4]));
+
+                S_res.Add(
+                    new Tuple<DateTime, double>(
+                        i,
+                        results[t.NumberDaysAfterStartDate.Invoke(i)][5]));
+            }
+
             List<Tuple<DateTime, double>> did = new List<Tuple<DateTime, double>>();
 
             for(DateTime i = t.StartDate; i <= t.EndDate; i = i.AddDays(1))
@@ -123,7 +168,7 @@
                 did.Add(
                     new Tuple<DateTime, double>(
                         i,
-                        d_1.Value * results[t.NumberDaysAfterStartDate.Invoke(i)][1] + d_2.Value * results[t.NumberDaysAfterStartDate.Invoke(i)][2]));
+                        d_1.Value * I_res.Where(w => w.Item1 == i).Select(w => w.Item2).SingleOrDefault() + d_2.Value * J_res.Where(w => w.Item1 == i).Select(w => w.Item2).SingleOrDefault()));
             }
 
             double diseaseInducedDeaths = did.Select(w => w.Item2).Sum();
