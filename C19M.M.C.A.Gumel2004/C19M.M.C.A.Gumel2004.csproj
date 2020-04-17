@@ -133,7 +133,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Classes\ResultElements\DayCumulativeDiseaseInducedDeaths\" />
+    <Folder Include="Classes\Results\DayCumulativeDiseaseInducedDeaths\" />
     <Folder Include="Factories\Parameters\BasicReproductionNumber\" />
+    <Folder Include="Interfaces\ResultElements\DayCumulativeDiseaseInducedDeaths\" />
+    <Folder Include="Interfaces\Results\DayCumulativeDiseaseInducedDeaths\" />
     <Folder Include="Interfaces_Factories\Parameters\BasicReproductionNumber\" />
   </ItemGroup>
   <ItemGroup>
