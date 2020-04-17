@@ -31,7 +31,12 @@
             It t,
             MathNet.Numerics.LinearAlgebra.Vector<double>[] RungeKuttaResults)
         {
-            throw new NotImplementedException();
+            return new C19M.M.C.A.Gumel2004.Classes.Results.DaySymptomaticIndividuals.I(
+                t.Value.Select(
+                    w => (C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DaySymptomaticIndividuals.II_ResultElement)new C19M.M.C.A.Gumel2004.Classes.ResultElements.DaySymptomaticIndividuals.I_ResultElement(
+                        w,
+                        RungeKuttaResults[t.NumberDaysAfterStartDate.Invoke(w)][1]))
+                .ToImmutableList());
         }
     }
 }
