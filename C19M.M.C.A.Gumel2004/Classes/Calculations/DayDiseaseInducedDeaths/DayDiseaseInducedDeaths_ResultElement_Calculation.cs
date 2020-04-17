@@ -34,7 +34,6 @@
         // TODO: Finish
         public IDayDiseaseInducedDeaths_ResultElement Calculate(
             DateTime t_IndexElement,
-            It t,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals.Id d_2,
             II I,
