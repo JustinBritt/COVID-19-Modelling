@@ -30,11 +30,14 @@
 
         // TODO: Finish
         public IDayDiseaseInducedDeaths_ResultElement Calculate(
+            DateTime t_IndexElement,
             It t,
             II I,
             IJ J)
         {
-            throw new NotImplementedException();
+            return new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayDiseaseInducedDeaths.DayDiseaseInducedDeaths_ResultElement(
+                t_IndexElement,
+                d_1.Value * I.Value.Where(w => w.t_IndexElement == t_IndexElement).Select(w => w.Value).SingleOrDefault() + d_2.Value * J.Value.Where(w => w.t_IndexElement == t_IndexElement).Select(w => w.Value).SingleOrDefault());
         }
     }
 }
