@@ -11,6 +11,8 @@
 
     using C19M.M.C.A.Gumel2004.Interfaces.Calculations.DayDiseaseInducedDeaths;
 
+    using C19M.M.C.A.Gumel2004.Interfaces.Indices;
+
     using C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayDiseaseInducedDeaths;
 
     internal sealed class DayDiseaseInducedDeaths_ResultElement_Calculation : IDayDiseaseInducedDeaths_ResultElement_Calculation
