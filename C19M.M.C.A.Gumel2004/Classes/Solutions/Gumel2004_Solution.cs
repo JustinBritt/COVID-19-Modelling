@@ -53,7 +53,7 @@
 
         public IDiseaseInducedDeaths DiseaseInducedDeaths { get; private set; }
 
-        public MathNet.Numerics.LinearAlgebra.Vector<double>[] Solve(
+        public void Solve(
             It t,
             Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,
             Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals.Id d_2,
@@ -77,40 +77,41 @@
             C19M.M.C.A.Gumel2004.Interfaces.Variables.RecoveredIndividuals.IR R,
             C19M.M.C.A.Gumel2004.Interfaces.Variables.SusceptibleIndividuals.IS S)
         {
-            return MathNet.Numerics.OdeSolvers.RungeKutta.FourthOrder(
-                MathNet.Numerics.LinearAlgebra.Vector<double>.Build.Dense(new[] {
-                    E.InitialValue,
-                    I.InitialValue,
-                    J.InitialValue,
-                    Q.InitialValue,
-                    R.InitialValue,
-                    S.InitialValue}),
-                t.NumberDaysAfterStartDate(t.StartDate),
-                t.NumberDaysAfterStartDate(t.EndDate),
-                t.NumberDaysAfterStartDate(t.EndDate) - t.NumberDaysAfterStartDate(t.StartDate) + 1,
-                this.f(
-                    t,
-                    d_1,
-                    d_2,
-                    p,
-                    β,
-                    γ_1,
-                    γ_2,
-                    ε_E,
-                    ε_J,
-                    ε_Q,
-                    κ_1,
-                    κ_2,
-                    μ,
-                    Π,
-                    σ_1,
-                    σ_2,
-                    E,
-                    I,
-                    J,
-                    Q,
-                    R,
-                    S));
+            MathNet.Numerics.LinearAlgebra.Vector<double>[] results = 
+                MathNet.Numerics.OdeSolvers.RungeKutta.FourthOrder(
+                    MathNet.Numerics.LinearAlgebra.Vector<double>.Build.Dense(new[] {
+                        E.InitialValue,
+                        I.InitialValue,
+                        J.InitialValue,
+                        Q.InitialValue,
+                        R.InitialValue,
+                        S.InitialValue}),
+                    t.NumberDaysAfterStartDate(t.StartDate),
+                    t.NumberDaysAfterStartDate(t.EndDate),
+                    t.NumberDaysAfterStartDate(t.EndDate) - t.NumberDaysAfterStartDate(t.StartDate) + 1,
+                    this.f(
+                        t,
+                        d_1,
+                        d_2,
+                        p,
+                        β,
+                        γ_1,
+                        γ_2,
+                        ε_E,
+                        ε_J,
+                        ε_Q,
+                        κ_1,
+                        κ_2,
+                        μ,
+                        Π,
+                        σ_1,
+                        σ_2,
+                        E,
+                        I,
+                        J,
+                        Q,
+                        R,
+                        S));
         }
 
         // https://stackoverflow.com/a/55004295
