@@ -90,14 +90,20 @@
                 context.InitialValueLatentIndividuals);
 
             // I(t)
-
-            // N(t)
+            this.I = new C19M.M.C.A.Gumel2006.Classes.Variables.InfectedIndividuals.I(
+                context.InitialValueInfectedIndividuals);
 
             // R(t)
+            this.R = new C19M.M.C.A.Gumel2006.Classes.Variables.TreatedIndividuals.R(
+                context.InitialValueTreatedIndividuals);
 
             // S(t)
+            this.S = new C19M.M.C.A.Gumel2006.Classes.Variables.SusceptibleIndividuals.S(
+                context.InitialValueSusceptibleIndividuals);
 
             // V(t)
+            this.V = new C19M.M.C.A.Gumel2006.Classes.Variables.VaccinatedIndividuals.V(
+                context.InitialValueVaccinatedIndividuals);
         }
 
         public Id d { get; }
