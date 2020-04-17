@@ -24,7 +24,8 @@
         }
 
         // TODO: Finish
-        public II_ResultElement Calculate()
+        public II_ResultElement Calculate(
+            DateTime t_IndexElement)
         {
             throw new NotImplementedException();
         }
