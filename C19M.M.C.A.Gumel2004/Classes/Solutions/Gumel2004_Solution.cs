@@ -29,6 +29,7 @@
     using C19M.M.C.A.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorIsolatedIndividuals;
     using C19M.M.C.A.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorQuarantinedIndividuals;
 
+    using C19M.M.C.A.Gumel2004.Interfaces.Results.DayCumulativeDiseaseInducedDeaths;
     using C19M.M.C.A.Gumel2004.Interfaces.Results.DayDiseaseInducedDeaths;
 
     using C19M.M.C.A.Gumel2004.Interfaces.Solutions;
