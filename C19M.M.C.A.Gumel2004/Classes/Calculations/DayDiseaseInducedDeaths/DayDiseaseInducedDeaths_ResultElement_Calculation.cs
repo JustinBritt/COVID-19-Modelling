@@ -13,6 +13,9 @@
 
     using C19M.M.C.A.Gumel2004.Interfaces.Indices;
 
+    using C19M.M.C.A.Gumel2004.Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals;
+    using C19M.M.C.A.Gumel2004.Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals;
+
     using C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayDiseaseInducedDeaths;
 
     using C19M.M.C.A.Gumel2004.Interfaces.Results.DayIsolatedIndividuals;
@@ -32,12 +35,20 @@
         public IDayDiseaseInducedDeaths_ResultElement Calculate(
             DateTime t_IndexElement,
             It t,
+            C19M.M.C.A.Gumel2004.Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,
+            C19M.M.C.A.Gumel2004.Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals.Id d_2,
             II I,
             IJ J)
         {
             return new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayDiseaseInducedDeaths.DayDiseaseInducedDeaths_ResultElement(
                 t_IndexElement,
-                d_1.Value * I.Value.Where(w => w.t_IndexElement == t_IndexElement).Select(w => w.Value).SingleOrDefault() + d_2.Value * J.Value.Where(w => w.t_IndexElement == t_IndexElement).Select(w => w.Value).SingleOrDefault());
+                d_1.Value 
+                * 
+                I.Value.Where(w => w.t_IndexElement == t_IndexElement).Select(w => w.Value).SingleOrDefault() 
+                + 
+                d_2.Value 
+                * 
+                J.Value.Where(w => w.t_IndexElement == t_IndexElement).Select(w => w.Value).SingleOrDefault());
         }
     }
 }
