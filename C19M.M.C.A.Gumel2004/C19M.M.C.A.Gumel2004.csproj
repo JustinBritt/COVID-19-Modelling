@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Calculations\DiseaseInducedDeaths\DiseaseInducedDeaths_Calculation.cs" />
+    <Compile Include="Classes\Calculations\DiseaseInducedDeaths\DiseaseInducedDeaths_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Contexts\Gumel2004_Context.cs" />
     <Compile Include="Classes\Exports\Gumel2004_Export.cs" />
     <Compile Include="Classes\Indices\t.cs" />
@@ -97,6 +98,7 @@
     <Compile Include="Classes\Variables\SymptomaticIndividuals\I.cs" />
     <Compile Include="Classes\Variables\TotalPopulationSize\N.cs" />
     <Compile Include="Interfaces\Calculations\DiseaseInducedDeaths\IDiseaseInducedDeaths_Calculation.cs" />
+    <Compile Include="Interfaces\Calculations\DiseaseInducedDeaths\IDiseaseInducedDeaths_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Contexts\IGumel2004_Context.cs" />
     <Compile Include="Interfaces\Exports\IGumel2004_Export.cs" />
     <Compile Include="Interfaces\Indices\It.cs" />
