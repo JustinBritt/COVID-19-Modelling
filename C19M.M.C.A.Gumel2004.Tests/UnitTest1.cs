@@ -43,47 +43,47 @@
 
             C19M.M.C.A.Gumel2004.Interfaces.Solutions.IGumel2004_Solution solution = new C19M.M.C.A.Gumel2004.Classes.Solutions.Gumel2004_Solution();
 
-            MathNet.Numerics.LinearAlgebra.Vector<double>[] results = solution.Solve(
-                model.t,
-                model.d_1,
-                model.d_2,
-                model.p,
-                model.β,
-                model.γ_1,
-                model.γ_2,
-                model.ε_E,
-                model.ε_J,
-                model.ε_Q,
-                model.κ_1,
-                model.κ_2,
-                model.μ,
-                model.Π,
-                model.σ_1,
-                model.σ_2,
-                model.E,
-                model.I,
-                model.J,
-                model.Q,
-                model.R,
-                model.S);
+            //MathNet.Numerics.LinearAlgebra.Vector<double>[] results = solution.Solve(
+            //    model.t,
+            //    model.d_1,
+            //    model.d_2,
+            //    model.p,
+            //    model.β,
+            //    model.γ_1,
+            //    model.γ_2,
+            //    model.ε_E,
+            //    model.ε_J,
+            //    model.ε_Q,
+            //    model.κ_1,
+            //    model.κ_2,
+            //    model.μ,
+            //    model.Π,
+            //    model.σ_1,
+            //    model.σ_2,
+            //    model.E,
+            //    model.I,
+            //    model.J,
+            //    model.Q,
+            //    model.R,
+            //    model.S);
 
-            double d_1 = 0.0079;
+            //double d_1 = 0.0079;
 
-            double d_2 = 0.0068;
+            //double d_2 = 0.0068;
 
-            double deaths = 0;
+            //double deaths = 0;
 
-            for (int i = 0; i <= results.Length - 1; i = i + 1)
-            {
-                MathNet.Numerics.LinearAlgebra.Vector<double> w = results[i];
+            //for (int i = 0; i <= results.Length - 1; i = i + 1)
+            //{
+            //    MathNet.Numerics.LinearAlgebra.Vector<double> w = results[i];
 
-                deaths += d_1 * w[1] + d_2 * w[2];
+            //    deaths += d_1 * w[1] + d_2 * w[2];
 
-                System.Diagnostics.Debug.WriteLine(deaths);
+            //    System.Diagnostics.Debug.WriteLine(deaths);
 
-                // S(t)
-                //System.Diagnostics.Debug.WriteLine(w[5]);
-            }
+            //    // S(t)
+            //    //System.Diagnostics.Debug.WriteLine(w[5]);
+            //}
         }
     }
 }
