@@ -15,6 +15,9 @@
 
     using C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayDiseaseInducedDeaths;
 
+    using C19M.M.C.A.Gumel2004.Interfaces.Results.DayIsolatedIndividuals;
+    using C19M.M.C.A.Gumel2004.Interfaces.Results.DaySymptomaticIndividuals;
+
     internal sealed class DayDiseaseInducedDeaths_ResultElement_Calculation : IDayDiseaseInducedDeaths_ResultElement_Calculation
     {
         private ILog Log { get; }
