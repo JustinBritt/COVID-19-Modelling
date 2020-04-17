@@ -30,6 +30,8 @@
         // TODO: Finish
         public IDayDiseaseInducedDeaths Calculate(
             It t,
+            C19M.M.C.A.Gumel2004.Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,
+            C19M.M.C.A.Gumel2004.Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals.Id d_2,
             II I,
             IJ J)
         {
