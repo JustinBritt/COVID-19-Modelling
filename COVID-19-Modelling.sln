@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C19M.M.C.A.Gumel2006.Tests"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C19M.M.C.A.Safi2010", "C19M.M.C.A.Safi2010\C19M.M.C.A.Safi2010.csproj", "{6EE456E0-6879-4659-A869-413C654A8A03}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C19M.D.Safi2010", "C19M.D.Safi2010\C19M.D.Safi2010.csproj", "{3C501F2E-4D47-42E3-B6DC-B11F5CC3B052}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +58,10 @@ Global
 		{6EE456E0-6879-4659-A869-413C654A8A03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EE456E0-6879-4659-A869-413C654A8A03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EE456E0-6879-4659-A869-413C654A8A03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C501F2E-4D47-42E3-B6DC-B11F5CC3B052}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C501F2E-4D47-42E3-B6DC-B11F5CC3B052}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C501F2E-4D47-42E3-B6DC-B11F5CC3B052}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C501F2E-4D47-42E3-B6DC-B11F5CC3B052}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
