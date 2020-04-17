@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Collections.Immutable;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
@@ -19,13 +20,13 @@
 
         // Constructor
         public DiseaseInducedDeaths(
-            double value)
+            ImmutableList<IDiseaseInducedDeaths_ResultElement> value)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             this.Value = value;
         }
 
-        public double Value { get; }
+        public ImmutableList<IDiseaseInducedDeaths_ResultElement> Value { get; }
     }
 }
