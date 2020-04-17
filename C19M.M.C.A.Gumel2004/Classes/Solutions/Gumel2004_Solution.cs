@@ -180,12 +180,20 @@
                         results[t.NumberDaysAfterStartDate.Invoke(i)][5]));
             }
 
+            // I
+            this.I = new C19M.M.C.A.Gumel2004.Classes.Results.DaySymptomaticIndividuals.I(
+                I_res.ToImmutableList());
+
+            // J
+            this.J = new C19M.M.C.A.Gumel2004.Classes.Results.DayIsolatedIndividuals.J(
+                J_res.ToImmutableList());
+
             this.DayDiseaseInducedDeaths = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayDiseaseInducedDeaths.DayDiseaseInducedDeaths_Calculation().Calculate(
                 t,
                 d_1,
                 d_2,
-                new C19M.M.C.A.Gumel2004.Classes.Results.DaySymptomaticIndividuals.I(I_res.ToImmutableList()),
-                new C19M.M.C.A.Gumel2004.Classes.Results.DayIsolatedIndividuals.J(J_res.ToImmutableList()));
+                this.I,
+                this.J);
 
             return this.DayDiseaseInducedDeaths.Value.Select(w => w.Value).Sum();
         }
