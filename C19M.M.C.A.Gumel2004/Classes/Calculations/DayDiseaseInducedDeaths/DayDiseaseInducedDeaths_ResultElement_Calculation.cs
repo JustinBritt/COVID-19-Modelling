@@ -38,7 +38,8 @@
                 t_IndexElement,
                 d_1.Value 
                 * 
-                I.Value.Where(w => w.t_IndexElement == t_IndexElement).Select(w => w.Value).SingleOrDefault() 
+                I.GetElementAt(
+                    t_IndexElement)
                 + 
                 d_2.Value 
                 * 
