@@ -53,7 +53,7 @@
 
         public IDiseaseInducedDeaths DiseaseInducedDeaths { get; private set; }
 
-        public void Solve(
+        public double Solve(
             It t,
             Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,
             Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals.Id d_2,
@@ -124,6 +124,8 @@
                 // S(t)
                 //System.Diagnostics.Debug.WriteLine(w[5]);
             }
+
+            return diseaseInducedDeaths;
         }
 
         // https://stackoverflow.com/a/55004295

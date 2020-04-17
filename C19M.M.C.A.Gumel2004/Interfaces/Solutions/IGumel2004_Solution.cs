@@ -38,7 +38,7 @@
 
     internal interface IGumel2004_Solution
     {
-        void Solve(
+        double Solve(
             It t,
             Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,
             Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals.Id d_2,
