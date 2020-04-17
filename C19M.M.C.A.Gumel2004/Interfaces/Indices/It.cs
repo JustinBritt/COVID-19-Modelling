@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Collections.Immutable;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
@@ -13,5 +14,7 @@
         Func<DateTime, int> NumberDaysAfterStartDate { get; }
 
         DateTime StartDate { get; }
+
+        ImmutableList<DateTime> Value { get; }
     }
 }

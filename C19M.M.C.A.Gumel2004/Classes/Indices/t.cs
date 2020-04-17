@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Collections.Immutable;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
@@ -28,6 +29,16 @@
             this.NumberDaysAfterStartDate = numberDaysAfterStartDate;
 
             this.StartDate = startDate;
+
+            ImmutableList<DateTime>.Builder builder = ImmutableList.CreateBuilder<DateTime>();
+
+            for (DateTime i = startDate; i <= endDate; i = i.AddDays(1))
+            {
+                builder.Add(
+                    i);
+            }
+
+            this.Value = builder.ToImmutableList();
         }
 
         public DateTime EndDate { get; }
@@ -35,5 +46,7 @@
         public Func<DateTime, int> NumberDaysAfterStartDate { get; }
 
         public DateTime StartDate { get; }
+
+        public ImmutableList<DateTime> Value { get; }
     }
 }
