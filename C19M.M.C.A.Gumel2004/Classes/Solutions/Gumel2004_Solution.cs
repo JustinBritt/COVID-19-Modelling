@@ -29,7 +29,7 @@
     using C19M.M.C.A.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorIsolatedIndividuals;
     using C19M.M.C.A.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorQuarantinedIndividuals;
 
-    using C19M.M.C.A.Gumel2004.Interfaces.Results.DiseaseInducedDeaths;
+    using C19M.M.C.A.Gumel2004.Interfaces.Results.DayDiseaseInducedDeaths;
 
     using C19M.M.C.A.Gumel2004.Interfaces.Solutions;
 
@@ -51,7 +51,7 @@
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         }
 
-        public IDiseaseInducedDeaths DiseaseInducedDeaths { get; private set; }
+        public IDayDiseaseInducedDeaths DayDiseaseInducedDeaths { get; private set; }
 
         public double Solve(
             It t,
