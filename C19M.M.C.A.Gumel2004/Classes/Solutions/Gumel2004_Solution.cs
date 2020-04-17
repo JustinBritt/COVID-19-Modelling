@@ -115,7 +115,7 @@
 
             double diseaseInducedDeaths = 0;
 
-            for (int i = 0; i <= results.Length - 1; i = i + 1)
+            for (int i = t.NumberDaysAfterStartDate.Invoke(t.StartDate); i <= t.NumberDaysAfterStartDate.Invoke(t.EndDate); i = i + 1)
             {
                 //MathNet.Numerics.LinearAlgebra.Vector<double> w = results[i];
 
