@@ -117,9 +117,9 @@
 
             for (int i = 0; i <= results.Length - 1; i = i + 1)
             {
-                MathNet.Numerics.LinearAlgebra.Vector<double> w = results[i];
+                //MathNet.Numerics.LinearAlgebra.Vector<double> w = results[i];
 
-                diseaseInducedDeaths += d_1.Value * w[1] + d_2.Value * w[2];
+                diseaseInducedDeaths += d_1.Value * results[i][1] + d_2.Value * results[i][2];
 
                 // S(t)
                 //System.Diagnostics.Debug.WriteLine(w[5]);
