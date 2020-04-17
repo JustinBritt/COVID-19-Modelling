@@ -36,14 +36,15 @@
         {
             return new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayDiseaseInducedDeaths.DayDiseaseInducedDeaths_ResultElement(
                 t_IndexElement,
-                d_1.Value 
-                * 
+                d_1.Value
+                *
                 I.GetElementAt(
                     t_IndexElement)
-                + 
-                d_2.Value 
-                * 
-                J.Value.Where(w => w.t_IndexElement == t_IndexElement).Select(w => w.Value).SingleOrDefault());
+                +
+                d_2.Value
+                *
+                J.GetElementAt(
+                    t_IndexElement));
         }
     }
 }
