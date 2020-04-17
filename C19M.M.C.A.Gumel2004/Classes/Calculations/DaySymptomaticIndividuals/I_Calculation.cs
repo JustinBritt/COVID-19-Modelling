@@ -28,7 +28,8 @@
 
         // TODO: Finish
         public II Calculate(
-            It t)
+            It t,
+            MathNet.Numerics.LinearAlgebra.Vector<double>[] RungeKuttaResults)
         {
             throw new NotImplementedException();
         }
