@@ -122,7 +122,7 @@
                         R,
                         S));
 
-            List<Tuple<DateTime, double>> E_res = new List<Tuple<DateTime, double>>();
+            List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayAsymptomaticIndividuals.IE_ResultElement> E_res = new List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayAsymptomaticIndividuals.IE_ResultElement>();
 
             List<Tuple<DateTime, double>> I_res = new List<Tuple<DateTime, double>>();
 
@@ -137,7 +137,7 @@
             for (DateTime i = t.StartDate; i <= t.EndDate; i = i.AddDays(1))
             {
                 E_res.Add(
-                    new Tuple<DateTime, double>(
+                    new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayAsymptomaticIndividuals.E_ResultElement(
                         i,
                         results[t.NumberDaysAfterStartDate.Invoke(i)][0]));
 
