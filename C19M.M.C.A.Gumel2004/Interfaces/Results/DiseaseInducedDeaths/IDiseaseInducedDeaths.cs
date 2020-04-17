@@ -8,9 +8,6 @@
 
     internal interface IDiseaseInducedDeaths
     {
-        /// <summary>
-        /// Gets the number of disease-induced deaths.
-        /// </summary>
         double Value { get; }
     }
 }

@@ -26,9 +26,6 @@
             this.Value = value;
         }
 
-        /// <summary>
-        /// Gets the number of disease-induced deaths.
-        /// </summary>
         public double Value { get; }
     }
 }
