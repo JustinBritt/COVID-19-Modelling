@@ -201,6 +201,8 @@
                 R_res.ToImmutableList());
 
             // S
+            this.S = new C19M.M.C.A.Gumel2004.Classes.Results.DaySusceptibleIndividuals.S(
+                S_res.ToImmutableList());
 
             // DayDiseaseInducedDeaths
             this.DayDiseaseInducedDeaths = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayDiseaseInducedDeaths.DayDiseaseInducedDeaths_Calculation().Calculate(
