@@ -27,7 +27,8 @@
         }
 
         // TODO: Finish
-        public II Calculate()
+        public II Calculate(
+            It t)
         {
             throw new NotImplementedException();
         }
