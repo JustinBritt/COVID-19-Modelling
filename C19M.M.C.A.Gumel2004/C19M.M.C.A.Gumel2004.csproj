@@ -169,7 +169,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Classes\Calculations\DayIsolatedIndividuals\" />
     <Folder Include="Factories\Parameters\BasicReproductionNumber\" />
+    <Folder Include="Interfaces\Calculations\DayIsolatedIndividuals\" />
     <Folder Include="Interfaces_Factories\Parameters\BasicReproductionNumber\" />
   </ItemGroup>
   <ItemGroup>
