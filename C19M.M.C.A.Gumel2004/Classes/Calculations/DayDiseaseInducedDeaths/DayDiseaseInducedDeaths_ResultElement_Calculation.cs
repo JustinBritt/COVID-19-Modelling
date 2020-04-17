@@ -26,7 +26,6 @@
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         }
 
-        // TODO: Finish
         public IDayDiseaseInducedDeaths_ResultElement Calculate(
             DateTime t_IndexElement,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,
