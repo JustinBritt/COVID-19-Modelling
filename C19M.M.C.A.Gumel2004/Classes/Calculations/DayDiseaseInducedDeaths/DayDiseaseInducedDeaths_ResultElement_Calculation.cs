@@ -11,11 +11,6 @@
 
     using C19M.M.C.A.Gumel2004.Interfaces.Calculations.DayDiseaseInducedDeaths;
 
-    using C19M.M.C.A.Gumel2004.Interfaces.Indices;
-
-    using C19M.M.C.A.Gumel2004.Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals;
-    using C19M.M.C.A.Gumel2004.Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals;
-
     using C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayDiseaseInducedDeaths;
 
     using C19M.M.C.A.Gumel2004.Interfaces.Results.DayIsolatedIndividuals;
