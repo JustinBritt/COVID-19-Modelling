@@ -28,5 +28,14 @@
         }
 
         public ImmutableList<II_ResultElement> Value { get; }
+
+        public double GetElementAt(
+            DateTime t_IndexElement)
+        {
+            return this.Value
+                .Where(x => x.t_IndexElement == t_IndexElement)
+                .Select(x => x.Value)
+                .SingleOrDefault();
+        }
     }
 }

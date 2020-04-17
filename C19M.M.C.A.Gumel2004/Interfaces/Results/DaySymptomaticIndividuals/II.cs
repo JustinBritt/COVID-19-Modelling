@@ -12,5 +12,8 @@
     internal interface II
     {
         ImmutableList<II_ResultElement> Value { get; }
+
+        double GetElementAt(
+            DateTime t_IndexElement);
     }
 }
