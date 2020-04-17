@@ -137,8 +137,6 @@
 
             List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayAsymptomaticIndividuals.IE_ResultElement> E_res = new List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayAsymptomaticIndividuals.IE_ResultElement>();
 
-            //List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DaySymptomaticIndividuals.II_ResultElement> I_res = new List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DaySymptomaticIndividuals.II_ResultElement>();
-
             List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayIsolatedIndividuals.IJ_ResultElement> J_res = new List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayIsolatedIndividuals.IJ_ResultElement>();
 
             List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayQuarantinedIndividuals.IQ_ResultElement> Q_res = new List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayQuarantinedIndividuals.IQ_ResultElement>();
@@ -153,11 +151,6 @@
                     new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayAsymptomaticIndividuals.E_ResultElement(
                         i,
                         results[t.NumberDaysAfterStartDate.Invoke(i)][0]));
-
-                //I_res.Add(
-                //    new C19M.M.C.A.Gumel2004.Classes.ResultElements.DaySymptomaticIndividuals.I_ResultElement(
-                //        i,
-                //        results[t.NumberDaysAfterStartDate.Invoke(i)][1]));
 
                 J_res.Add(
                     new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayIsolatedIndividuals.J_ResultElement(
