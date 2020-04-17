@@ -25,7 +25,8 @@
 
         // TODO: Finish
         public II_ResultElement Calculate(
-            DateTime t_IndexElement)
+            DateTime t_IndexElement,
+            MathNet.Numerics.LinearAlgebra.Vector<double>[] RungeKuttaResults)
         {
             throw new NotImplementedException();
         }
