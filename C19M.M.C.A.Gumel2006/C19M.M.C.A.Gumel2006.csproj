@@ -62,6 +62,7 @@
     <Compile Include="Classes\Parameters\Rescaled\ε.cs" />
     <Compile Include="Classes\Parameters\VaccinationCoverageRate\ξ.cs" />
     <Compile Include="Classes\Parameters\VaccineEfficacy\τ.cs" />
+    <Compile Include="Classes\Solutions\DiseaseTransmission_Solution.cs" />
     <Compile Include="Classes\Variables\InfectedIndividuals\I.cs" />
     <Compile Include="Classes\Variables\LatentIndividuals\E.cs" />
     <Compile Include="Classes\Variables\SusceptibleIndividuals\S.cs" />
@@ -86,6 +87,7 @@
     <Compile Include="Interfaces\Parameters\Rescaled\Iε.cs" />
     <Compile Include="Interfaces\Parameters\VaccinationCoverageRate\Iξ.cs" />
     <Compile Include="Interfaces\Parameters\VaccineEfficacy\Iτ.cs" />
+    <Compile Include="Interfaces\Solutions\IDiseaseTransmission_Solution.cs" />
     <Compile Include="Interfaces\Variables\InfectedIndividuals\II.cs" />
     <Compile Include="Interfaces\Variables\LatentIndividuals\IE.cs" />
     <Compile Include="Interfaces\Variables\SusceptibleIndividuals\IS.cs" />
@@ -96,9 +98,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Exports\" />
-    <Folder Include="Classes\Solutions\" />
     <Folder Include="Interfaces\Exports\" />
-    <Folder Include="Interfaces\Solutions\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
