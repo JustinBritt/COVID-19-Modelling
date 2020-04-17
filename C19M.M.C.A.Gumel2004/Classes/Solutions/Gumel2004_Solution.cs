@@ -137,7 +137,7 @@
 
             List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayAsymptomaticIndividuals.IE_ResultElement> E_res = new List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayAsymptomaticIndividuals.IE_ResultElement>();
 
-            List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DaySymptomaticIndividuals.II_ResultElement> I_res = new List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DaySymptomaticIndividuals.II_ResultElement>();
+            //List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DaySymptomaticIndividuals.II_ResultElement> I_res = new List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DaySymptomaticIndividuals.II_ResultElement>();
 
             List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayIsolatedIndividuals.IJ_ResultElement> J_res = new List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayIsolatedIndividuals.IJ_ResultElement>();
 
@@ -154,10 +154,10 @@
                         i,
                         results[t.NumberDaysAfterStartDate.Invoke(i)][0]));
 
-                I_res.Add(
-                    new C19M.M.C.A.Gumel2004.Classes.ResultElements.DaySymptomaticIndividuals.I_ResultElement(
-                        i,
-                        results[t.NumberDaysAfterStartDate.Invoke(i)][1]));
+                //I_res.Add(
+                //    new C19M.M.C.A.Gumel2004.Classes.ResultElements.DaySymptomaticIndividuals.I_ResultElement(
+                //        i,
+                //        results[t.NumberDaysAfterStartDate.Invoke(i)][1]));
 
                 J_res.Add(
                     new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayIsolatedIndividuals.J_ResultElement(
@@ -185,8 +185,9 @@
                 E_res.ToImmutableList());
 
             // I
-            this.I = new C19M.M.C.A.Gumel2004.Classes.Results.DaySymptomaticIndividuals.I(
-                I_res.ToImmutableList());
+            this.I = new C19M.M.C.A.Gumel2004.Classes.Calculations.DaySymptomaticIndividuals.I_Calculation().Calculate(
+                t,
+                results);
 
             // J
             this.J = new C19M.M.C.A.Gumel2004.Classes.Results.DayIsolatedIndividuals.J(
