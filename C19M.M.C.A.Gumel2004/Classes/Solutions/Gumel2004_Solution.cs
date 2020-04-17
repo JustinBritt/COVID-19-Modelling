@@ -140,7 +140,7 @@
 
             List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayIsolatedIndividuals.IJ_ResultElement> J_res = new List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayIsolatedIndividuals.IJ_ResultElement>();
 
-            List<Tuple<DateTime, double>> Q_res = new List<Tuple<DateTime, double>>();
+            List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayQuarantinedIndividuals.IQ_ResultElement> Q_res = new List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayQuarantinedIndividuals.IQ_ResultElement>>();
 
             List<Tuple<DateTime, double>> R_res = new List<Tuple<DateTime, double>>();
 
@@ -164,10 +164,10 @@
                         results[t.NumberDaysAfterStartDate.Invoke(i)][2]));
 
                 Q_res.Add(
-                    new Tuple<DateTime, double>(
+                    new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayQuarantinedIndividuals.Q_ResultElement(
                         i,
                         results[t.NumberDaysAfterStartDate.Invoke(i)][3]));
-            
+
                 R_res.Add(
                     new Tuple<DateTime, double>(
                         i,
