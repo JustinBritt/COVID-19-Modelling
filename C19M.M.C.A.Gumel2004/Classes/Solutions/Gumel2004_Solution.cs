@@ -181,6 +181,8 @@
             }
 
             // E
+            this.E = new C19M.M.C.A.Gumel2004.Classes.Results.DayAsymptomaticIndividuals.E(
+                E_res.ToImmutableList());
 
             // I
             this.I = new C19M.M.C.A.Gumel2004.Classes.Results.DaySymptomaticIndividuals.I(
