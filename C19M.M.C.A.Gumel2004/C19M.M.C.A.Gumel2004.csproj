@@ -91,6 +91,7 @@
     <Compile Include="Classes\ResultElements\DayCumulativeDiseaseInducedDeaths\DayCumulativeDiseaseInducedDeaths_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DayDiseaseInducedDeaths\DayDiseaseInducedDeaths_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DayIsolatedIndividuals\J_ResultElement.cs" />
+    <Compile Include="Classes\ResultElements\DayQuarantinedIndividuals\Q_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DaySymptomaticIndividuals\I_ResultElement.cs" />
     <Compile Include="Classes\Results\DayAsymptomaticIndividuals\E.cs" />
     <Compile Include="Classes\Results\DayCumulativeDiseaseInducedDeaths\DayCumulativeDiseaseInducedDeaths.cs" />
@@ -130,6 +131,7 @@
     <Compile Include="Interfaces\ResultElements\DayCumulativeDiseaseInducedDeaths\IDayCumulativeDiseaseInducedDeaths_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DayIsolatedIndividuals\IJ_ResultElement.cs" />
+    <Compile Include="Interfaces\ResultElements\DayQuarantinedIndividuals\IQ_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DaySymptomaticIndividuals\II_ResultElement.cs" />
     <Compile Include="Interfaces\Results\DayAsymptomaticIndividuals\IE.cs" />
     <Compile Include="Interfaces\Results\DayCumulativeDiseaseInducedDeaths\IDayCumulativeDiseaseInducedDeaths.cs" />
@@ -147,10 +149,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\ResultElements\DayQuarantinedIndividuals\" />
     <Folder Include="Classes\Results\DayIsolatedIndividuals\" />
     <Folder Include="Factories\Parameters\BasicReproductionNumber\" />
-    <Folder Include="Interfaces\ResultElements\DayQuarantinedIndividuals\" />
     <Folder Include="Interfaces\Results\DayIsolatedIndividuals\" />
     <Folder Include="Interfaces_Factories\Parameters\BasicReproductionNumber\" />
   </ItemGroup>
