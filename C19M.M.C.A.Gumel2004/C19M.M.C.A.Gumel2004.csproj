@@ -147,8 +147,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Classes\ResultElements\DayQuarantinedIndividuals\" />
     <Folder Include="Classes\Results\DayIsolatedIndividuals\" />
     <Folder Include="Factories\Parameters\BasicReproductionNumber\" />
+    <Folder Include="Interfaces\ResultElements\DayQuarantinedIndividuals\" />
     <Folder Include="Interfaces\Results\DayIsolatedIndividuals\" />
     <Folder Include="Interfaces_Factories\Parameters\BasicReproductionNumber\" />
   </ItemGroup>
