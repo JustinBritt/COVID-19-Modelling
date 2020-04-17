@@ -180,16 +180,14 @@
                         results[t.NumberDaysAfterStartDate.Invoke(i)][5]));
             }
 
-            var did = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayDiseaseInducedDeaths.DayDiseaseInducedDeaths_Calculation().Calculate(
+            this.DayDiseaseInducedDeaths = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayDiseaseInducedDeaths.DayDiseaseInducedDeaths_Calculation().Calculate(
                 t,
                 d_1,
                 d_2,
                 new C19M.M.C.A.Gumel2004.Classes.Results.DaySymptomaticIndividuals.I(I_res.ToImmutableList()),
                 new C19M.M.C.A.Gumel2004.Classes.Results.DayIsolatedIndividuals.J(J_res.ToImmutableList()));
 
-            double diseaseInducedDeaths = did.Value.Select(w => w.Value).Sum();
-
-            return diseaseInducedDeaths;
+            return this.DayDiseaseInducedDeaths.Value.Select(w => w.Value).Sum();
         }
 
         // https://stackoverflow.com/a/55004295
