@@ -11,6 +11,8 @@
 
     using C19M.M.C.A.Gumel2004.Interfaces.Calculations.DaySymptomaticIndividuals;
 
+    using C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DaySymptomaticIndividuals;
+
     internal sealed class I_ResultElement_Calculation : II_ResultElement_Calculation
     {
         private ILog Log { get; }
@@ -19,6 +21,12 @@
         public I_ResultElement_Calculation()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        }
+
+        // TODO: Finish
+        public II_ResultElement Calculate()
+        {
+            throw new NotImplementedException();
         }
     }
 }
