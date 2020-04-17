@@ -129,9 +129,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\ResultElements\" />
+    <Folder Include="Classes\ResultElements\DiseaseInducedDeaths\" />
     <Folder Include="Factories\Parameters\BasicReproductionNumber\" />
-    <Folder Include="Interfaces\ResultElements\" />
+    <Folder Include="Interfaces\ResultElements\DiseaseInducedDeaths\" />
     <Folder Include="Interfaces_Factories\Parameters\BasicReproductionNumber\" />
   </ItemGroup>
   <ItemGroup>
