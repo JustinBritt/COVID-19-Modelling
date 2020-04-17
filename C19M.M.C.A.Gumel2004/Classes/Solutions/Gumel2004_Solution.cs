@@ -113,12 +113,17 @@
                         R,
                         S));
 
-            double diseaseInducedDeaths = 0;
+            List<Tuple<DateTime, double>> did = new List<Tuple<DateTime, double>>();
 
             for(DateTime i = t.StartDate; i <= t.EndDate; i = i.AddDays(1))
             {
-                diseaseInducedDeaths += d_1.Value * results[t.NumberDaysAfterStartDate.Invoke(i)][1] + d_2.Value * results[t.NumberDaysAfterStartDate.Invoke(i)][2];
+                did.Add(
+                    new Tuple<DateTime, double>(
+                        i,
+                        d_1.Value * results[t.NumberDaysAfterStartDate.Invoke(i)][1] + d_2.Value * results[t.NumberDaysAfterStartDate.Invoke(i)][2]));
             }
+
+            double diseaseInducedDeaths = did.Select(w => w.Item2).Sum();
 
             //for (int i = t.NumberDaysAfterStartDate.Invoke(t.StartDate); i <= t.NumberDaysAfterStartDate(t.EndDate) - t.NumberDaysAfterStartDate(t.StartDate) + 1; i = i + 1)
             //{
