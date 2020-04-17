@@ -127,7 +127,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Classes\Calculations\" />
     <Folder Include="Factories\Parameters\BasicReproductionNumber\" />
+    <Folder Include="Interfaces\Calculations\" />
     <Folder Include="Interfaces_Factories\Parameters\BasicReproductionNumber\" />
   </ItemGroup>
   <ItemGroup>
