@@ -12,6 +12,8 @@
 
     using C19M.M.C.A.Gumel2004.Interfaces.Calculations.DaySymptomaticIndividuals;
 
+    using C19M.M.C.A.Gumel2004.Interfaces.Indices;
+
     using C19M.M.C.A.Gumel2004.Interfaces.Results.DaySymptomaticIndividuals;
 
     internal sealed class I_Calculation : II_Calculation
