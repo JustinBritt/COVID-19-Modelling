@@ -17,6 +17,7 @@ Folder | Target Framework | Language | Description
 ------------ | ------------- | ------------- | ------------
 C19M.M.C.A.Gumel2004 | .NET Framework 4.8 | C# | [Compartmental model for SARS-CoV developed by Gumel *et al.* (2004)](https://royalsocietypublishing.org/doi/10.1098/rspb.2004.2800) 
 C19M.M.C.A.Gumel2006 | .NET Framework 4.8 | C# | [Compartmental model for SARS-CoV developed by Gumel *et al.* (2006)](https://www.aimspress.com/article/10.3934/mbe.2006.3.485) 
+C19M.M.C.A.Safi2010 | .NET Framework 4.8 | C# | [Compartmental model for a communicable disease, such as SARS-CoV, developed by Safi *et al.* (2010)](http://www.aimsciences.org/article/doi/10.3934/dcdsb.2010.14.209)
 
 ## Models - Compartmental Models - System Dynamics (C19M.M.CM.SD.*) Projects
 Folder | Description
