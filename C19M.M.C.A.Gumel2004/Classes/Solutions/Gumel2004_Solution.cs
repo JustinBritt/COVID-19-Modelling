@@ -66,6 +66,8 @@
 
         public C19M.M.C.A.Gumel2004.Interfaces.Results.DaySymptomaticIndividuals.II I { get; }
 
+        public C19M.M.C.A.Gumel2004.Interfaces.Results.DayIsolatedIndividuals.IJ J { get; }
+
         public double Solve(
             It t,
             Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,
