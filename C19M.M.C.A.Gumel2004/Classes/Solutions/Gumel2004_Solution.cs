@@ -138,7 +138,7 @@
 
             List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DaySymptomaticIndividuals.II_ResultElement> I_res = new List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DaySymptomaticIndividuals.II_ResultElement>();
 
-            List<Tuple<DateTime, double>> J_res = new List<Tuple<DateTime, double>>();
+            List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayIsolatedIndividuals.IJ_ResultElement> J_res = new List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayIsolatedIndividuals.IJ_ResultElement>();
 
             List<Tuple<DateTime, double>> Q_res = new List<Tuple<DateTime, double>>();
 
@@ -159,7 +159,7 @@
                         results[t.NumberDaysAfterStartDate.Invoke(i)][1]));
 
                 J_res.Add(
-                    new Tuple<DateTime, double>(
+                    new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayIsolatedIndividuals.J_ResultElement(
                         i,
                         results[t.NumberDaysAfterStartDate.Invoke(i)][2]));
 
@@ -186,7 +186,7 @@
                 did.Add(
                     new Tuple<DateTime, double>(
                         i,
-                        d_1.Value * I_res.Where(w => w.t_IndexElement == i).Select(w => w.Value).SingleOrDefault() + d_2.Value * J_res.Where(w => w.Item1 == i).Select(w => w.Item2).SingleOrDefault()));
+                        d_1.Value * I_res.Where(w => w.t_IndexElement == i).Select(w => w.Value).SingleOrDefault() + d_2.Value * J_res.Where(w => w.t_IndexElement == i).Select(w => w.Value).SingleOrDefault()));
             }
 
             double diseaseInducedDeaths = did.Select(w => w.Item2).Sum();
