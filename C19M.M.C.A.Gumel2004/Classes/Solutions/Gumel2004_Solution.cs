@@ -179,17 +179,17 @@
                         results[t.NumberDaysAfterStartDate.Invoke(i)][5]));
             }
 
-            List<Tuple<DateTime, double>> did = new List<Tuple<DateTime, double>>();
+            List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayDiseaseInducedDeaths.IDayDiseaseInducedDeaths_ResultElement> did = new List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayDiseaseInducedDeaths.IDayDiseaseInducedDeaths_ResultElement>();
 
             for(DateTime i = t.StartDate; i <= t.EndDate; i = i.AddDays(1))
             {
                 did.Add(
-                    new Tuple<DateTime, double>(
+                    new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayDiseaseInducedDeaths.DayDiseaseInducedDeaths_ResultElement(
                         i,
                         d_1.Value * I_res.Where(w => w.t_IndexElement == i).Select(w => w.Value).SingleOrDefault() + d_2.Value * J_res.Where(w => w.t_IndexElement == i).Select(w => w.Value).SingleOrDefault()));
             }
 
-            double diseaseInducedDeaths = did.Select(w => w.Item2).Sum();
+            double diseaseInducedDeaths = did.Select(w => w.Value).Sum();
 
             return diseaseInducedDeaths;
         }
