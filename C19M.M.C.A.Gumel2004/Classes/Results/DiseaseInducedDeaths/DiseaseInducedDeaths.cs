@@ -9,6 +9,8 @@
     // Logging
     using log4net;
 
+    using C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DiseaseInducedDeaths;
+
     using C19M.M.C.A.Gumel2004.Interfaces.Results.DiseaseInducedDeaths;
 
     internal sealed class DiseaseInducedDeaths : IDiseaseInducedDeaths
