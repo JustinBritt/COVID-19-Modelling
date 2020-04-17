@@ -26,7 +26,8 @@
         }
 
         // TODO: Finish
-        public IDayDiseaseInducedDeaths_ResultElement Calculate()
+        public IDayDiseaseInducedDeaths_ResultElement Calculate(
+            It t)
         {
             throw new NotImplementedException();
         }
