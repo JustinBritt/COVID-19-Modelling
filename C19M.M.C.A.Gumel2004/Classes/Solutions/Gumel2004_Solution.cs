@@ -212,6 +212,8 @@
                 this.I,
                 this.J);
 
+            // DayCumulativeDiseaseInducedDeaths
+
             return this.DayDiseaseInducedDeaths.Value.Select(w => w.Value).Sum();
         }
 
