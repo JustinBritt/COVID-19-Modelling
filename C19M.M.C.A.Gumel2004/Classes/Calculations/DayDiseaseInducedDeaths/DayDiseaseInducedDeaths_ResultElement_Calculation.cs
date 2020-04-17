@@ -30,7 +30,9 @@
 
         // TODO: Finish
         public IDayDiseaseInducedDeaths_ResultElement Calculate(
-            It t)
+            It t,
+            II I,
+            IJ J)
         {
             throw new NotImplementedException();
         }
