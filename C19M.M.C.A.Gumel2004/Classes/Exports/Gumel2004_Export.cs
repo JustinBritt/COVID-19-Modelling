@@ -83,7 +83,8 @@
                 // DayCumulativeProbableCases
                 if (this.Gumel2004_Solution.DayCumulativeProbableCases != null)
                 {
-
+                    this.DayCumulativeProbableCases = this.Convert_DayCumulativeProbableCases(
+                        this.Gumel2004_Solution.DayCumulativeProbableCases);
                 }
 
                 // DayDiseaseInducedDeaths
