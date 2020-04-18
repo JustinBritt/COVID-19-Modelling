@@ -14,7 +14,7 @@
 
     using C19M.M.C.A.Gumel2004.Interfaces.Exports;
 
-    using C19M.M.C.A.Gumel2004.Interfaces.Models;
+    using C19M.M.C.A.Gumel2004.Interfaces.Results.DayCumulativeDiseaseInducedDeaths;
 
     using C19M.M.C.A.Gumel2004.Interfaces.Solutions;
 
@@ -60,6 +60,17 @@
                 this.Gumel2004_Solution.Solve(
                     this.Gumel2004_Context);
             }
+        }
+
+        private ImmutableList<Tuple<DateTime, double>> Convert_DayCumulativeDiseaseInducedDeaths(
+            IDayCumulativeDiseaseInducedDeaths value)
+        {
+            return value.Value
+                .Select(
+                i => new Tuple<DateTime, double>(
+                    i.t_IndexElement,
+                    i.Value))
+                .ToImmutableList();
         }
     }
 }
