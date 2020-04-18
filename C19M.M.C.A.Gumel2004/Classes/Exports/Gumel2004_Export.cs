@@ -93,17 +93,17 @@
                         this.Gumel2004_Solution.DayDiseaseInducedDeaths);
                 }
 
+                // DayProbableCases
+                if (this.Gumel2004_Solution.DayProbableCases != null)
+                {
+
+                }
+
                 // DayAsymptomaticIndividuals
                 if (this.Gumel2004_Solution.E != null)
                 {
                     this.DayAsymptomaticIndividuals = this.Convert_E(
                         this.Gumel2004_Solution.E);
-                }
-
-                // DayProbableCases
-                if (this.Gumel2004_Solution.DayProbableCases != null)
-                {
-
                 }
 
                 // DaySymptomaticIndividuals
