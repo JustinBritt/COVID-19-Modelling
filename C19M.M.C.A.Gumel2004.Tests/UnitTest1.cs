@@ -60,10 +60,13 @@
 
             ImmutableList<System.Tuple<System.DateTime, double>> S = export.S;
 
-            var cases = E.Last().Item2 + I.Last().Item2 + J.Last().Item2 + Q.Last().Item2 + R.Last().Item2 + S.Last().Item2;
+            // var cases = E.Last().Item2 + I.Last().Item2 + J.Last().Item2 + Q.Last().Item2 + R.Last().Item2;
 
-            System.Diagnostics.Debug.WriteLine(
-                cases);
+            for (DateTime i = HK.StartDate; i <= HK.EndDate; i = i.AddDays(1))
+            {
+                System.Diagnostics.Debug.WriteLine(
+                    E.Where(w => w.Item1 == i).Select(w => w.Item2).SingleOrDefault());
+            }
         }
     }
 }
