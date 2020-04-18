@@ -178,8 +178,9 @@
                 results);
 
             // S
-            this.S = new C19M.M.C.A.Gumel2004.Classes.Results.DaySusceptibleIndividuals.S(
-                S_res.ToImmutableList());
+            this.S = new C19M.M.C.A.Gumel2004.Classes.Calculations.DaySusceptibleIndividuals.S_Calculation().Calculate(
+                t,
+                results);
 
             // DayDiseaseInducedDeaths
             this.DayDiseaseInducedDeaths = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayDiseaseInducedDeaths.DayDiseaseInducedDeaths_Calculation().Calculate(
