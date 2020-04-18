@@ -45,7 +45,7 @@
                 +
                 d_2.Value
                 *
-                J.GetElementAt(
+                (double)J.GetElementAtAsdecimal(
                     t_IndexElement));
         }
     }

@@ -13,7 +13,7 @@
     {
         ImmutableList<IJ_ResultElement> Value { get; }
 
-        double GetElementAt(
-            DateTime t_IndexElement);
+        decimal GetElementAtAsdecimal(
+           DateTime t_IndexElement);
     }
 }

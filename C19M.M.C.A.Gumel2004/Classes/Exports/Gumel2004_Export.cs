@@ -225,8 +225,7 @@
                 .Select(
                 i => new Tuple<DateTime, FhirDecimal>(
                     i.t_IndexElement,
-                    new FhirDecimal(
-                        (decimal)i.Value)))
+                    i.Value))
                 .ToImmutableList();
         }
 

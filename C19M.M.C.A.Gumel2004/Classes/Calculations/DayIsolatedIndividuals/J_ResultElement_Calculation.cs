@@ -35,7 +35,8 @@
         {
             return new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayIsolatedIndividuals.J_ResultElement(
                 t_IndexElement,
-                RungeKuttaResults[t.NumberDaysAfterStartDate.Invoke(t_IndexElement)][2]);
+                new FhirDecimal(
+                    (decimal)RungeKuttaResults[t.NumberDaysAfterStartDate.Invoke(t_IndexElement)][2]));
         }
     }
 }
