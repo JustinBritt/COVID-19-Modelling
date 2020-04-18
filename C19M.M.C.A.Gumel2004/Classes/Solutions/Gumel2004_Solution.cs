@@ -176,6 +176,9 @@
                 this.DayDiseaseInducedDeaths);
 
             // DayCumulativeProbableCases
+            this.DayCumulativeProbableCases = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayCumulativeProbableCases.DayCumulativeProbableCases_Calculation().Calculate(
+                Gumel2004_Model.t,
+                this.DayProbableCases);
 
             return this.DayCumulativeDiseaseInducedDeaths.Value.Where(w => w.t_IndexElement == Gumel2004_Model.t.EndDate).Select(w => w.Value).SingleOrDefault();
         }
