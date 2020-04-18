@@ -11,6 +11,8 @@
     {
         ImmutableList<Tuple<DateTime, double>> DayCumulativeDiseaseInducedDeaths { get; }
 
+        ImmutableList<Tuple<DateTime, double>> DayCumulativeProbableCases { get; }
+
         ImmutableList<Tuple<DateTime, double>> DayDiseaseInducedDeaths { get; }
 
         ImmutableList<Tuple<DateTime, double>> DayAsymptomaticIndividuals { get; }

@@ -42,6 +42,8 @@
 
         public ImmutableList<Tuple<DateTime, double>> DayCumulativeDiseaseInducedDeaths { get; private set; }
 
+        public ImmutableList<Tuple<DateTime, double>> DayCumulativeProbableCases { get; private set; }
+
         public ImmutableList<Tuple<DateTime, double>> DayDiseaseInducedDeaths { get; private set; }
 
         public ImmutableList<Tuple<DateTime, double>> DayAsymptomaticIndividuals { get; private set; }
