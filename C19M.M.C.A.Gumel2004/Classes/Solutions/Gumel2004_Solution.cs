@@ -14,9 +14,7 @@
 
     using C19M.M.C.A.Gumel2004.Interfaces.Models;
 
-    using C19M.M.C.A.Gumel2004.Interfaces.Parameters.BasicReproductionNumber;
     using C19M.M.C.A.Gumel2004.Interfaces.Parameters.BasicTransmissionCoefficient;
-    using C19M.M.C.A.Gumel2004.Interfaces.Parameters.ControlReproductionNumber;
     using C19M.M.C.A.Gumel2004.Interfaces.Parameters.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals;
     using C19M.M.C.A.Gumel2004.Interfaces.Parameters.DevelopmentClinicalSymptomsRateQuarantinedIndividuals;
     using C19M.M.C.A.Gumel2004.Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals;
