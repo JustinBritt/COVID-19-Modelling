@@ -52,7 +52,7 @@
 
         public ImmutableList<Tuple<DateTime, double>> DayQuarantinedIndividuals { get; private set; }
 
-        public ImmutableList<Tuple<DateTime, double>> R { get; private set; }
+        public ImmutableList<Tuple<DateTime, double>> DayRecoveredIndividuals { get; private set; }
 
         public ImmutableList<Tuple<DateTime, double>> S { get; private set; }
 
@@ -112,7 +112,7 @@
                 // R
                 if (this.Gumel2004_Solution.R != null)
                 {
-                    this.R = this.Convert_R(
+                    this.DayRecoveredIndividuals = this.Convert_R(
                         this.Gumel2004_Solution.R);
                 }
 
