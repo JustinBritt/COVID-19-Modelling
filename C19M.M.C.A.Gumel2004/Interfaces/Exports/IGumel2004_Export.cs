@@ -7,6 +7,9 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     public interface IGumel2004_Export
     {
         ImmutableList<Tuple<DateTime, double>> DayCumulativeDiseaseInducedDeaths { get; }
