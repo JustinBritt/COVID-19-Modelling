@@ -13,7 +13,7 @@
 
         ImmutableList<Tuple<DateTime, double>> DayDiseaseInducedDeaths { get; }
 
-        ImmutableList<Tuple<DateTime, double>> E { get; }
+        ImmutableList<Tuple<DateTime, double>> DayAsymptomaticIndividuals { get; }
 
         ImmutableList<Tuple<DateTime, double>> I { get; }
 
