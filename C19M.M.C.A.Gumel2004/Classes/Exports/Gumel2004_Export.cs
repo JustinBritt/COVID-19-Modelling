@@ -60,8 +60,11 @@
                 this.Gumel2004_Solution.Solve(
                     this.Gumel2004_Context);
 
-                this.DayCumulativeDiseaseInducedDeaths = this.Convert_DayCumulativeDiseaseInducedDeaths(
-                    this.Gumel2004_Solution.DayCumulativeDiseaseInducedDeaths);
+                if (this.Gumel2004_Solution.DayCumulativeDiseaseInducedDeaths != null)
+                {
+                    this.DayCumulativeDiseaseInducedDeaths = this.Convert_DayCumulativeDiseaseInducedDeaths(
+                        this.Gumel2004_Solution.DayCumulativeDiseaseInducedDeaths);
+                }
             }
         }
 
