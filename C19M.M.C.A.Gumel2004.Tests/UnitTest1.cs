@@ -65,7 +65,7 @@
             for (DateTime i = HK.StartDate; i <= HK.EndDate; i = i.AddDays(1))
             {
                 System.Diagnostics.Debug.WriteLine(
-                    dayCumulativeProbableCases.Where(w => w.Item1 == i).Select(w => w.Item2).SingleOrDefault());
+                    dayCumulativeProbableCases.Where(w => w.Item1 == i).Select(w => w.Item2.Value.Value).SingleOrDefault());
             }
         }
     }
