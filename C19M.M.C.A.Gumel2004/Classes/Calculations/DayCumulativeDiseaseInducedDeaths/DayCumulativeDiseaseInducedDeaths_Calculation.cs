@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Collections.Immutable;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
@@ -28,11 +29,17 @@
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         }
 
-        // TODO: Finish
         public IDayCumulativeDiseaseInducedDeaths Calculate(
-            It t)
+            It t,
+            IDayDiseaseInducedDeaths dayDiseaseInducedDeaths)
         {
-            throw new NotImplementedException();
+            return new C19M.M.C.A.Gumel2004.Classes.Results.DayCumulativeDiseaseInducedDeaths.DayCumulativeDiseaseInducedDeaths(
+                t.Value.Select(
+                    w => new C19M.M.C.A.Gumel2004.Classes.Calculations.DayCumulativeDiseaseInducedDeaths.DayCumulativeDiseaseInducedDeaths_ResultElement_Calculation().Calculate(
+                        w,
+                        t,
+                        dayDiseaseInducedDeaths))
+                .ToImmutableList());
         }
     }
 }
