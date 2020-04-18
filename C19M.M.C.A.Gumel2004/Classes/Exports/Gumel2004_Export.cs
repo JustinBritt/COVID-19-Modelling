@@ -47,7 +47,7 @@
 
         public ImmutableList<Tuple<DateTime, double>> DayCumulativeDiseaseInducedDeaths { get; private set; }
 
-        public ImmutableList<Tuple<DateTime, double>> DayCumulativeProbableCases { get; private set; }
+        public ImmutableList<Tuple<DateTime, FhirDecimal>> DayCumulativeProbableCases { get; private set; }
 
         public ImmutableList<Tuple<DateTime, double>> DayDiseaseInducedDeaths { get; private set; }
 
@@ -159,14 +159,15 @@
                 .ToImmutableList();
         }
 
-        private ImmutableList<Tuple<DateTime, double>> Convert_DayCumulativeProbableCases(
+        private ImmutableList<Tuple<DateTime, FhirDecimal>> Convert_DayCumulativeProbableCases(
             IDayCumulativeProbableCases value)
         {
             return value.Value
                 .Select(
-                i => new Tuple<DateTime, double>(
+                i => new Tuple<DateTime, FhirDecimal>(
                     i.t_IndexElement,
-                    i.Value))
+                    new FhirDecimal(
+                        (decimal)i.Value)))
                 .ToImmutableList();
         }
 
