@@ -74,6 +74,7 @@
     <Compile Include="Classes\Calculations\DayQuarantinedIndividuals\Q_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayRecoveredIndividuals\R_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayRecoveredIndividuals\R_ResultElement_Calculation.cs" />
+    <Compile Include="Classes\Calculations\DaySusceptibleIndividuals\S_Calculation.cs" />
     <Compile Include="Classes\Calculations\DaySusceptibleIndividuals\S_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Calculations\DaySymptomaticIndividuals\I_Calculation.cs" />
     <Compile Include="Classes\Calculations\DaySymptomaticIndividuals\I_ResultElement_Calculation.cs" />
@@ -132,6 +133,7 @@
     <Compile Include="Interfaces\Calculations\DayQuarantinedIndividuals\IQ_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayRecoveredIndividuals\IR_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayRecoveredIndividuals\IR_ResultElement_Calculation.cs" />
+    <Compile Include="Interfaces\Calculations\DaySusceptibleIndividuals\IS_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DaySusceptibleIndividuals\IS_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DaySymptomaticIndividuals\II_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DaySymptomaticIndividuals\II_ResultElement_Calculation.cs" />
