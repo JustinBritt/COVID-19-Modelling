@@ -60,12 +60,14 @@
 
             ImmutableList<System.Tuple<System.DateTime, double>> S = export.DaySusceptibleIndividuals;
 
+            var dayCumulativeProbableCases = export.DayCumulativeProbableCases;
+
             // var cases = E.Last().Item2 + I.Last().Item2 + J.Last().Item2 + Q.Last().Item2 + R.Last().Item2;
 
             for (DateTime i = HK.StartDate; i <= HK.EndDate; i = i.AddDays(1))
             {
                 System.Diagnostics.Debug.WriteLine(
-                    E.Where(w => w.Item1 == i).Select(w => w.Item2).SingleOrDefault());
+                    dayCumulativeProbableCases.Where(w => w.Item1 == i).Select(w => w.Item2).SingleOrDefault());
             }
         }
     }
