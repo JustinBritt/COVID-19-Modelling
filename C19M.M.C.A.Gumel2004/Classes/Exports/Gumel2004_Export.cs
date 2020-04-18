@@ -84,5 +84,16 @@
                     i.Value))
                 .ToImmutableList();
         }
+
+        private ImmutableList<Tuple<DateTime, double>> Convert_DayDiseaseInducedDeaths(
+            IDayDiseaseInducedDeaths value)
+        {
+            return value.Value
+                .Select(
+                i => new Tuple<DateTime, double>(
+                    i.t_IndexElement,
+                    i.Value))
+                .ToImmutableList();
+        }
     }
 }
