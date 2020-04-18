@@ -29,6 +29,7 @@
 
         // TODO: Finish
         public IDayCumulativeDiseaseInducedDeaths_ResultElement Calculate(
+            DateTime t_IndexElement,
             It t)
         {
             throw new NotImplementedException();
