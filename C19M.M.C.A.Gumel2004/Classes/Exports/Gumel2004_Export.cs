@@ -35,5 +35,7 @@
         public ImmutableList<Tuple<DateTime, double>> I { get; private set; }
 
         public ImmutableList<Tuple<DateTime, double>> J { get; private set; }
+
+        public ImmutableList<Tuple<DateTime, double>> Q { get; private set; }
     }
 }
