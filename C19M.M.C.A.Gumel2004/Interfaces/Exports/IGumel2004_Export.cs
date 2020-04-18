@@ -8,5 +8,20 @@
 
     public interface IGumel2004_Export
     {
+        ImmutableList<Tuple<DateTime, double>> DayCumulativeDiseaseInducedDeaths { get; }
+
+        ImmutableList<Tuple<DateTime, double>> DayDiseaseInducedDeaths { get; }
+
+        ImmutableList<Tuple<DateTime, double>> E { get; }
+
+        ImmutableList<Tuple<DateTime, double>> I { get; }
+
+        ImmutableList<Tuple<DateTime, double>> J { get; }
+
+        ImmutableList<Tuple<DateTime, double>> Q { get; }
+
+        ImmutableList<Tuple<DateTime, double>> R { get; }
+
+        ImmutableList<Tuple<DateTime, double>> S { get; }
     }
 }
