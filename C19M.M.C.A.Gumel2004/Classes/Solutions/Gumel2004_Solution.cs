@@ -174,6 +174,9 @@
                 this.J);
 
             // DayCumulativeDiseaseInducedDeaths
+            this.DayCumulativeDiseaseInducedDeaths = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayCumulativeDiseaseInducedDeaths.DayCumulativeDiseaseInducedDeaths_Calculation().Calculate(
+                t,
+                this.DayDiseaseInducedDeaths);
 
             return this.DayDiseaseInducedDeaths.Value.Select(w => w.Value).Sum();
         }
