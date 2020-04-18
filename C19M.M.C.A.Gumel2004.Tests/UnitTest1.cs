@@ -48,17 +48,17 @@
 
             export.Solve();
 
-            ImmutableList<System.Tuple<System.DateTime, double>> E = export.E;
+            ImmutableList<System.Tuple<System.DateTime, double>> E = export.DayAsymptomaticIndividuals;
 
-            ImmutableList<System.Tuple<System.DateTime, double>> I = export.I;
+            ImmutableList<System.Tuple<System.DateTime, double>> I = export.DaySymptomaticIndividuals;
 
-            ImmutableList<System.Tuple<System.DateTime, double>> J = export.J;
+            ImmutableList<System.Tuple<System.DateTime, double>> J = export.DayIsolatedIndividuals;
 
-            ImmutableList<System.Tuple<System.DateTime, double>> Q = export.Q;
+            ImmutableList<System.Tuple<System.DateTime, double>> Q = export.DayQuarantinedIndividuals;
 
-            ImmutableList<System.Tuple<System.DateTime, double>> R = export.R;
+            ImmutableList<System.Tuple<System.DateTime, double>> R = export.DayRecoveredIndividuals;
 
-            ImmutableList<System.Tuple<System.DateTime, double>> S = export.S;
+            ImmutableList<System.Tuple<System.DateTime, double>> S = export.DaySusceptibleIndividuals;
 
             // var cases = E.Last().Item2 + I.Last().Item2 + J.Last().Item2 + Q.Last().Item2 + R.Last().Item2;
 
