@@ -205,8 +205,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Factories\Parameters\BasicReproductionNumber\" />
-    <Folder Include="Interfaces_Factories\Parameters\BasicReproductionNumber\" />
+    <Folder Include="Factories\Parameters\" />
+    <Folder Include="Interfaces_Factories\Parameters\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
