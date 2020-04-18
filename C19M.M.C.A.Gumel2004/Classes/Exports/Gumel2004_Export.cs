@@ -14,8 +14,14 @@
 
     using C19M.M.C.A.Gumel2004.Interfaces.Exports;
 
+    using C19M.M.C.A.Gumel2004.Interfaces.Results.DayAsymptomaticIndividuals;
     using C19M.M.C.A.Gumel2004.Interfaces.Results.DayCumulativeDiseaseInducedDeaths;
     using C19M.M.C.A.Gumel2004.Interfaces.Results.DayDiseaseInducedDeaths;
+    using C19M.M.C.A.Gumel2004.Interfaces.Results.DayIsolatedIndividuals;
+    using C19M.M.C.A.Gumel2004.Interfaces.Results.DayQuarantinedIndividuals;
+    using C19M.M.C.A.Gumel2004.Interfaces.Results.DayRecoveredIndividuals;
+    using C19M.M.C.A.Gumel2004.Interfaces.Results.DaySusceptibleIndividuals;
+    using C19M.M.C.A.Gumel2004.Interfaces.Results.DaySymptomaticIndividuals;
 
     using C19M.M.C.A.Gumel2004.Interfaces.Solutions;
 
