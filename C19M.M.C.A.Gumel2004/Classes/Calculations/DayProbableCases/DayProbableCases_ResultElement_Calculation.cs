@@ -15,6 +15,8 @@
     using C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayProbableCases;
 
     using C19M.M.C.A.Gumel2004.Interfaces.Results.DayIsolatedIndividuals;
+    using C19M.M.C.A.Gumel2004.Interfaces.Results.DayQuarantinedIndividuals;
+    using C19M.M.C.A.Gumel2004.Interfaces.Results.DayRecoveredIndividuals;
     using C19M.M.C.A.Gumel2004.Interfaces.Results.DaySymptomaticIndividuals;
 
     internal sealed class DayProbableCases_ResultElement_Calculation : IDayProbableCases_ResultElement_Calculation
@@ -25,6 +27,28 @@
         public DayProbableCases_ResultElement_Calculation()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        }
+
+        public IDayProbableCases_ResultElement Calculate(
+            DateTime t_IndexElement,
+            II I,
+            IJ J,
+            IQ Q,
+            IR R)
+        {
+            return new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayProbableCases.DayProbableCases_ResultElement(
+                t_IndexElement,
+                I.GetElementAt(
+                    t_IndexElement)
+                +
+                J.GetElementAt(
+                    t_IndexElement)
+                +
+                Q.GetElementAt(
+                    t_IndexElement)
+                +
+                R.GetElementAt(
+                    t_IndexElement));
         }
     }
 }
