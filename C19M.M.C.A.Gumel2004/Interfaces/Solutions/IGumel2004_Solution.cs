@@ -38,6 +38,22 @@
 
     internal interface IGumel2004_Solution
     {
+        C19M.M.C.A.Gumel2004.Interfaces.Results.DayCumulativeDiseaseInducedDeaths.IDayCumulativeDiseaseInducedDeaths DayCumulativeDiseaseInducedDeaths { get; }
+
+        C19M.M.C.A.Gumel2004.Interfaces.Results.DayDiseaseInducedDeaths.IDayDiseaseInducedDeaths DayDiseaseInducedDeaths { get; }
+
+        C19M.M.C.A.Gumel2004.Interfaces.Results.DayAsymptomaticIndividuals.IE E { get; }
+
+        C19M.M.C.A.Gumel2004.Interfaces.Results.DaySymptomaticIndividuals.II I { get; }
+
+        C19M.M.C.A.Gumel2004.Interfaces.Results.DayIsolatedIndividuals.IJ J { get; }
+
+        C19M.M.C.A.Gumel2004.Interfaces.Results.DayQuarantinedIndividuals.IQ Q { get; }
+
+        C19M.M.C.A.Gumel2004.Interfaces.Results.DayRecoveredIndividuals.IR R { get; }
+
+        C19M.M.C.A.Gumel2004.Interfaces.Results.DaySusceptibleIndividuals.IS S { get; }
+
         double Solve(
             IGumel2004_Context Gumel2004_Context);
     }
