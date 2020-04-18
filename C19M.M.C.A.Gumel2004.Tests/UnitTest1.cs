@@ -1,6 +1,9 @@
 ﻿namespace C19M.M.C.A.Gumel2004.Tests
 {
+    using System;
+    using System.Collections.Generic;
     using System.Collections.Immutable;
+    using System.Linq;
 
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -45,11 +48,22 @@
 
             export.Solve();
 
-            foreach (var item in export.DayCumulativeDiseaseInducedDeaths)
-            {
-                System.Diagnostics.Debug.WriteLine(
-                    item.Item2);
-            }
+            ImmutableList<System.Tuple<System.DateTime, double>> E = export.E;
+
+            ImmutableList<System.Tuple<System.DateTime, double>> I = export.I;
+
+            ImmutableList<System.Tuple<System.DateTime, double>> J = export.J;
+
+            ImmutableList<System.Tuple<System.DateTime, double>> Q = export.Q;
+
+            ImmutableList<System.Tuple<System.DateTime, double>> R = export.R;
+
+            ImmutableList<System.Tuple<System.DateTime, double>> S = export.S;
+
+            var cases = E.Last().Item2 + I.Last().Item2 + J.Last().Item2 + Q.Last().Item2 + R.Last().Item2 + S.Last().Item2;
+
+            System.Diagnostics.Debug.WriteLine(
+                cases);
         }
     }
 }
