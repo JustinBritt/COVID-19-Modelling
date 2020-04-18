@@ -49,7 +49,7 @@
 
         public ImmutableList<Tuple<DateTime, double>> S { get; private set; }
 
-        public IGumel2004_Context Gumel2004_Context { get; }
+        private IGumel2004_Context Gumel2004_Context { get; }
 
         private IGumel2004_Solution Gumel2004_Solution { get; }
 
