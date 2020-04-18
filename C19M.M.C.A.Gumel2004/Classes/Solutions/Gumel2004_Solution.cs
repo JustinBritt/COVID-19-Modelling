@@ -173,6 +173,8 @@
                 Gumel2004_Model.t,
                 this.DayDiseaseInducedDeaths);
 
+            // DayCumulativeProbableCases
+
             return this.DayCumulativeDiseaseInducedDeaths.Value.Where(w => w.t_IndexElement == Gumel2004_Model.t.EndDate).Select(w => w.Value).SingleOrDefault();
         }
 
