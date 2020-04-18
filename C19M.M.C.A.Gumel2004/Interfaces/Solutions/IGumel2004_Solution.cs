@@ -42,6 +42,8 @@
 
         C19M.M.C.A.Gumel2004.Interfaces.Results.DayDiseaseInducedDeaths.IDayDiseaseInducedDeaths DayDiseaseInducedDeaths { get; }
 
+        C19M.M.C.A.Gumel2004.Interfaces.Results.DayProbableCases.IDayProbableCases DayProbableCases { get; }
+
         C19M.M.C.A.Gumel2004.Interfaces.Results.DayAsymptomaticIndividuals.IE E { get; }
 
         C19M.M.C.A.Gumel2004.Interfaces.Results.DaySymptomaticIndividuals.II I { get; }
