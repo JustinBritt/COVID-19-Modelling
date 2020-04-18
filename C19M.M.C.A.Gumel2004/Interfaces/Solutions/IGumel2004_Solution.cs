@@ -40,6 +40,8 @@
     {
         C19M.M.C.A.Gumel2004.Interfaces.Results.DayCumulativeDiseaseInducedDeaths.IDayCumulativeDiseaseInducedDeaths DayCumulativeDiseaseInducedDeaths { get; }
 
+        C19M.M.C.A.Gumel2004.Interfaces.Results.DayCumulativeProbableCases.IDayCumulativeProbableCases DayCumulativeProbableCases { get; }
+
         C19M.M.C.A.Gumel2004.Interfaces.Results.DayDiseaseInducedDeaths.IDayDiseaseInducedDeaths DayDiseaseInducedDeaths { get; }
 
         C19M.M.C.A.Gumel2004.Interfaces.Results.DayProbableCases.IDayProbableCases DayProbableCases { get; }
