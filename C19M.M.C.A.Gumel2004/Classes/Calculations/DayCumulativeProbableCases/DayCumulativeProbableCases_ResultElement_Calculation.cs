@@ -32,12 +32,15 @@
             It t,
             IDayProbableCases dayProbableCases)
         {
+            double val1 = dayProbableCases.GetElementAt(t_IndexElement);
+
+            double minVal = dayProbableCases.Value.Where(w => w.t_IndexElement <= t_IndexElement).Select(w => w.Value).Max();
+
+            double val2 = Math.Max(val1, minVal);
+
             return new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayCumulativeProbableCases.DayCumulativeProbableCases_ResultElement(
                 t_IndexElement,
-                t.Value
-                .Where(w => w >= t.StartDate && w <= t_IndexElement)
-                .Select(w => dayProbableCases.GetElementAt(w))
-                .Sum());
+                val2);
         }
     }
 }
