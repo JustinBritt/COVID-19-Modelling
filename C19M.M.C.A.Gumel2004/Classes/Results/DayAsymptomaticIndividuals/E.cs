@@ -10,6 +10,9 @@
     // Logging
     using log4net;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     using C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayAsymptomaticIndividuals;
 
     using C19M.M.C.A.Gumel2004.Interfaces.Results.DayAsymptomaticIndividuals;

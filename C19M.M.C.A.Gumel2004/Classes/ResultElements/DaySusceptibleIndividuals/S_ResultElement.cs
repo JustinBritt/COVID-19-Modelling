@@ -9,6 +9,9 @@
     // Logging
     using log4net;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     using C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DaySusceptibleIndividuals;
 
     internal sealed class S_ResultElement : IS_ResultElement
