@@ -10,6 +10,8 @@
     // Logging
     using log4net;
 
+    using C19M.M.C.A.Gumel2004.Interfaces.Contexts;
+
     using C19M.M.C.A.Gumel2004.Interfaces.Indices;
 
     using C19M.M.C.A.Gumel2004.Interfaces.Models;
