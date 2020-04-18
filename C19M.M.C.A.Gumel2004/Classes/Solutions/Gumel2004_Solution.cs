@@ -99,6 +99,8 @@
             C19M.M.C.A.Gumel2004.Interfaces.Variables.RecoveredIndividuals.IR R,
             C19M.M.C.A.Gumel2004.Interfaces.Variables.SusceptibleIndividuals.IS S)
         {
+            // IGumel2004_Model model = new C19M.M.C.A.Gumel2004.Classes.Models.Gumel2004_Model();
+
             MathNet.Numerics.LinearAlgebra.Vector<double>[] results = 
                 MathNet.Numerics.OdeSolvers.RungeKutta.FourthOrder(
                     MathNet.Numerics.LinearAlgebra.Vector<double>.Build.Dense(new[] {
