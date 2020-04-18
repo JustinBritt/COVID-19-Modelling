@@ -54,7 +54,7 @@
 
         public ImmutableList<Tuple<DateTime, double>> DayRecoveredIndividuals { get; private set; }
 
-        public ImmutableList<Tuple<DateTime, double>> S { get; private set; }
+        public ImmutableList<Tuple<DateTime, double>> DaySusceptibleIndividuals { get; private set; }
 
         private IGumel2004_Context Gumel2004_Context { get; }
 
@@ -119,7 +119,7 @@
                 // S
                 if (this.Gumel2004_Solution.S != null)
                 {
-                    this.S = this.Convert_S(
+                    this.DaySusceptibleIndividuals = this.Convert_S(
                         this.Gumel2004_Solution.S);
                 }
             }

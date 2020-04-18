@@ -23,7 +23,7 @@
 
         ImmutableList<Tuple<DateTime, double>> DayRecoveredIndividuals { get; }
 
-        ImmutableList<Tuple<DateTime, double>> S { get; }
+        ImmutableList<Tuple<DateTime, double>> DaySusceptibleIndividuals { get; }
 
         void Solve();
     }
