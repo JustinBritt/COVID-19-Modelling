@@ -173,8 +173,9 @@
                 results);
 
             // R
-            this.R = new C19M.M.C.A.Gumel2004.Classes.Results.DayRecoveredIndividuals.R(
-                R_res.ToImmutableList());
+            this.R = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayRecoveredIndividuals.R_Calculation().Calculate(
+                t,
+                results);
 
             // S
             this.S = new C19M.M.C.A.Gumel2004.Classes.Results.DaySusceptibleIndividuals.S(
