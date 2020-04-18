@@ -86,83 +86,83 @@
             MathNet.Numerics.LinearAlgebra.Vector<double>[] results = 
                 MathNet.Numerics.OdeSolvers.RungeKutta.FourthOrder(
                     MathNet.Numerics.LinearAlgebra.Vector<double>.Build.Dense(new[] {
-                        E.InitialValue,
-                        I.InitialValue,
-                        J.InitialValue,
-                        Q.InitialValue,
-                        R.InitialValue,
-                        S.InitialValue}),
-                    t.NumberDaysAfterStartDate(t.StartDate),
-                    t.NumberDaysAfterStartDate(t.EndDate),
-                    t.NumberDaysAfterStartDate(t.EndDate) - t.NumberDaysAfterStartDate(t.StartDate) + 1,
+                        model.E.InitialValue,
+                        model.I.InitialValue,
+                        model.J.InitialValue,
+                        model.Q.InitialValue,
+                        model.R.InitialValue,
+                        model.S.InitialValue}),
+                    model.t.NumberDaysAfterStartDate(model.t.StartDate),
+                    model.t.NumberDaysAfterStartDate(model.t.EndDate),
+                    model.t.NumberDaysAfterStartDate(model.t.EndDate) - model.t.NumberDaysAfterStartDate(model.t.StartDate) + 1,
                     this.f(
-                        t,
-                        d_1,
-                        d_2,
-                        p,
-                        β,
-                        γ_1,
-                        γ_2,
-                        ε_E,
-                        ε_J,
-                        ε_Q,
-                        κ_1,
-                        κ_2,
-                        μ,
-                        Π,
-                        σ_1,
-                        σ_2,
-                        E,
-                        I,
-                        J,
-                        Q,
-                        R,
-                        S));
+                        model.t,
+                        model.d_1,
+                        model.d_2,
+                        model.p,
+                        model.β,
+                        model.γ_1,
+                        model.γ_2,
+                        model.ε_E,
+                        model.ε_J,
+                        model.ε_Q,
+                        model.κ_1,
+                        model.κ_2,
+                        model.μ,
+                        model.Π,
+                        model.σ_1,
+                        model.σ_2,
+                        model.E,
+                        model.I,
+                        model.J,
+                        model.Q,
+                        model.R,
+                        model.S));
 
             // E
             this.E = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayAsymptomaticIndividuals.E_Calculation().Calculate(
-                t,
+                model.t,
                 results);
 
             // I
             this.I = new C19M.M.C.A.Gumel2004.Classes.Calculations.DaySymptomaticIndividuals.I_Calculation().Calculate(
-                t,
+                model.t,
                 results);
 
             // J
             this.J = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayIsolatedIndividuals.J_Calculation().Calculate(
-                t,
+                model.t,
                 results);
 
             // Q
             this.Q = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayQuarantinedIndividuals.Q_Calculation().Calculate(
-                t,
+                model.t,
                 results);
 
             // R
             this.R = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayRecoveredIndividuals.R_Calculation().Calculate(
-                t,
+                model.t,
                 results);
 
             // S
             this.S = new C19M.M.C.A.Gumel2004.Classes.Calculations.DaySusceptibleIndividuals.S_Calculation().Calculate(
-                t,
+                model.t,
                 results);
 
             // DayDiseaseInducedDeaths
             this.DayDiseaseInducedDeaths = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayDiseaseInducedDeaths.DayDiseaseInducedDeaths_Calculation().Calculate(
-                t,
-                d_1,
-                d_2,
+                model.t,
+                model.d_1,
+                model.d_2,
                 this.I,
                 this.J);
 
             // DayCumulativeDiseaseInducedDeaths
             this.DayCumulativeDiseaseInducedDeaths = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayCumulativeDiseaseInducedDeaths.DayCumulativeDiseaseInducedDeaths_Calculation().Calculate(
-                t,
+                model.t,
                 this.DayDiseaseInducedDeaths);
 
-            return this.DayCumulativeDiseaseInducedDeaths.Value.Where(w => w.t_IndexElement == t.EndDate).Select(w => w.Value).SingleOrDefault();
+            return this.DayCumulativeDiseaseInducedDeaths.Value.Where(w => w.t_IndexElement == model.t.EndDate).Select(w => w.Value).SingleOrDefault();
         }
 
         // https://stackoverflow.com/a/55004295
