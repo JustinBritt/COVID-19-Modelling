@@ -46,7 +46,7 @@
 
         public ImmutableList<Tuple<DateTime, double>> DayAsymptomaticIndividuals { get; private set; }
 
-        public ImmutableList<Tuple<DateTime, double>> I { get; private set; }
+        public ImmutableList<Tuple<DateTime, double>> DaySymptomaticIndividuals { get; private set; }
 
         public ImmutableList<Tuple<DateTime, double>> J { get; private set; }
 
@@ -91,7 +91,7 @@
                 // I
                 if (this.Gumel2004_Solution.I != null)
                 {
-                    this.I = this.Convert_I(
+                    this.DaySymptomaticIndividuals = this.Convert_I(
                         this.Gumel2004_Solution.I);
                 }
 
