@@ -37,14 +37,19 @@
                 HK.NetInflowRateSusceptibleIndividuals,
                 HK.RecoveryRateSymptomaticIndividuals,
                 HK.RecoveryRateIsolatedIndividuals);
-            
-            C19M.M.C.A.Gumel2004.Interfaces.Solutions.IGumel2004_Solution solution = new C19M.M.C.A.Gumel2004.Classes.Solutions.Gumel2004_Solution();
 
-            double diseaseInducedDeaths = solution.Solve(
+            C19M.M.C.A.Gumel2004.Interfaces.Exports.IGumel2004_Export export = new C19M.M.C.A.Gumel2004.Classes.Exports.Gumel2004_Export(
                 context);
 
-            System.Diagnostics.Debug.WriteLine(
-                diseaseInducedDeaths);
+            // C19M.M.C.A.Gumel2004.Interfaces.Solutions.IGumel2004_Solution solution = new C19M.M.C.A.Gumel2004.Classes.Solutions.Gumel2004_Solution();
+
+            export.Solve();
+
+            foreach (var item in export.DayCumulativeDiseaseInducedDeaths)
+            {
+                System.Diagnostics.Debug.WriteLine(
+                    item.Item2);
+            }
         }
     }
 }
