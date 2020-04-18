@@ -97,7 +97,8 @@
                 // DayProbableCases
                 if (this.Gumel2004_Solution.DayProbableCases != null)
                 {
-
+                    this.DayProbableCases = this.Convert_DayProbableCases(
+                        this.Gumel2004_Solution.DayProbableCases);
                 }
 
                 // DayAsymptomaticIndividuals
