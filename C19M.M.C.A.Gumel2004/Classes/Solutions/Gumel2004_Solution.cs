@@ -160,6 +160,8 @@
                 this.I,
                 this.J);
 
+            // DayProbableCases
+
             // DayCumulativeDiseaseInducedDeaths
             this.DayCumulativeDiseaseInducedDeaths = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayCumulativeDiseaseInducedDeaths.DayCumulativeDiseaseInducedDeaths_Calculation().Calculate(
                 Gumel2004_Model.t,
