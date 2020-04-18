@@ -7,6 +7,9 @@
 
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     [TestClass]
     public class UnitTest1
     {
@@ -48,17 +51,17 @@
 
             export.Solve();
 
-            ImmutableList<System.Tuple<System.DateTime, double>> E = export.DayAsymptomaticIndividuals;
+            ImmutableList<System.Tuple<System.DateTime, FhirDecimal>> E = export.DayAsymptomaticIndividuals;
 
-            ImmutableList<System.Tuple<System.DateTime, double>> I = export.DaySymptomaticIndividuals;
+            ImmutableList<System.Tuple<System.DateTime, FhirDecimal>> I = export.DaySymptomaticIndividuals;
 
-            ImmutableList<System.Tuple<System.DateTime, double>> J = export.DayIsolatedIndividuals;
+            ImmutableList<System.Tuple<System.DateTime, FhirDecimal>> J = export.DayIsolatedIndividuals;
 
-            ImmutableList<System.Tuple<System.DateTime, double>> Q = export.DayQuarantinedIndividuals;
+            ImmutableList<System.Tuple<System.DateTime, FhirDecimal>> Q = export.DayQuarantinedIndividuals;
 
-            ImmutableList<System.Tuple<System.DateTime, double>> R = export.DayRecoveredIndividuals;
+            ImmutableList<System.Tuple<System.DateTime, FhirDecimal>> R = export.DayRecoveredIndividuals;
 
-            ImmutableList<System.Tuple<System.DateTime, double>> S = export.DaySusceptibleIndividuals;
+            ImmutableList<System.Tuple<System.DateTime, FhirDecimal>> S = export.DaySusceptibleIndividuals;
 
             var dayCumulativeProbableCases = export.DayCumulativeProbableCases;
 

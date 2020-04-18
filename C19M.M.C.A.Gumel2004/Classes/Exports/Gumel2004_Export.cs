@@ -45,25 +45,25 @@
             this.Gumel2004_Solution = new C19M.M.C.A.Gumel2004.Classes.Solutions.Gumel2004_Solution();
         }
 
-        public ImmutableList<Tuple<DateTime, double>> DayCumulativeDiseaseInducedDeaths { get; private set; }
+        public ImmutableList<Tuple<DateTime, FhirDecimal>> DayCumulativeDiseaseInducedDeaths { get; private set; }
 
         public ImmutableList<Tuple<DateTime, FhirDecimal>> DayCumulativeProbableCases { get; private set; }
 
-        public ImmutableList<Tuple<DateTime, double>> DayDiseaseInducedDeaths { get; private set; }
+        public ImmutableList<Tuple<DateTime, FhirDecimal>> DayDiseaseInducedDeaths { get; private set; }
 
-        public ImmutableList<Tuple<DateTime, double>> DayProbableCases { get; private set; }
+        public ImmutableList<Tuple<DateTime, FhirDecimal>> DayProbableCases { get; private set; }
 
-        public ImmutableList<Tuple<DateTime, double>> DayAsymptomaticIndividuals { get; private set; }
+        public ImmutableList<Tuple<DateTime, FhirDecimal>> DayAsymptomaticIndividuals { get; private set; }
 
-        public ImmutableList<Tuple<DateTime, double>> DaySymptomaticIndividuals { get; private set; }
+        public ImmutableList<Tuple<DateTime, FhirDecimal>> DaySymptomaticIndividuals { get; private set; }
 
-        public ImmutableList<Tuple<DateTime, double>> DayIsolatedIndividuals { get; private set; }
+        public ImmutableList<Tuple<DateTime, FhirDecimal>> DayIsolatedIndividuals { get; private set; }
 
-        public ImmutableList<Tuple<DateTime, double>> DayQuarantinedIndividuals { get; private set; }
+        public ImmutableList<Tuple<DateTime, FhirDecimal>> DayQuarantinedIndividuals { get; private set; }
 
-        public ImmutableList<Tuple<DateTime, double>> DayRecoveredIndividuals { get; private set; }
+        public ImmutableList<Tuple<DateTime, FhirDecimal>> DayRecoveredIndividuals { get; private set; }
 
-        public ImmutableList<Tuple<DateTime, double>> DaySusceptibleIndividuals { get; private set; }
+        public ImmutableList<Tuple<DateTime, FhirDecimal>> DaySusceptibleIndividuals { get; private set; }
 
         private IGumel2004_Context Gumel2004_Context { get; }
 
@@ -148,14 +148,15 @@
             }
         }
 
-        private ImmutableList<Tuple<DateTime, double>> Convert_DayCumulativeDiseaseInducedDeaths(
+        private ImmutableList<Tuple<DateTime, FhirDecimal>> Convert_DayCumulativeDiseaseInducedDeaths(
             IDayCumulativeDiseaseInducedDeaths value)
         {
             return value.Value
                 .Select(
-                i => new Tuple<DateTime, double>(
+                i => new Tuple<DateTime, FhirDecimal>(
                     i.t_IndexElement,
-                    i.Value))
+                    new FhirDecimal(
+                        (decimal)i.Value)))
                 .ToImmutableList();
         }
 
@@ -171,91 +172,99 @@
                 .ToImmutableList();
         }
 
-        private ImmutableList<Tuple<DateTime, double>> Convert_DayDiseaseInducedDeaths(
+        private ImmutableList<Tuple<DateTime, FhirDecimal>> Convert_DayDiseaseInducedDeaths(
             IDayDiseaseInducedDeaths value)
         {
             return value.Value
                 .Select(
-                i => new Tuple<DateTime, double>(
+                i => new Tuple<DateTime, FhirDecimal>(
                     i.t_IndexElement,
-                    i.Value))
+                    new FhirDecimal(
+                        (decimal)i.Value)))
                 .ToImmutableList();
         }
 
-        private ImmutableList<Tuple<DateTime, double>> Convert_DayProbableCases(
+        private ImmutableList<Tuple<DateTime, FhirDecimal>> Convert_DayProbableCases(
             IDayProbableCases value)
         {
             return value.Value
                 .Select(
-                i => new Tuple<DateTime, double>(
+                i => new Tuple<DateTime, FhirDecimal>(
                     i.t_IndexElement,
-                    i.Value))
+                    new FhirDecimal(
+                        (decimal)i.Value)))
                 .ToImmutableList();
         }
 
-        private ImmutableList<Tuple<DateTime, double>> Convert_E(
+        private ImmutableList<Tuple<DateTime, FhirDecimal>> Convert_E(
             IE value)
         {
             return value.Value
                 .Select(
-                i => new Tuple<DateTime, double>(
+                i => new Tuple<DateTime, FhirDecimal>(
                     i.t_IndexElement,
-                    i.Value))
+                    new FhirDecimal(
+                        (decimal)i.Value)))
                 .ToImmutableList();
         }
 
-        private ImmutableList<Tuple<DateTime, double>> Convert_I(
+        private ImmutableList<Tuple<DateTime, FhirDecimal>> Convert_I(
             II value)
         {
             return value.Value
                 .Select(
-                i => new Tuple<DateTime, double>(
+                i => new Tuple<DateTime, FhirDecimal>(
                     i.t_IndexElement,
-                    i.Value))
+                    new FhirDecimal(
+                        (decimal)i.Value)))
                 .ToImmutableList();
         }
 
-        private ImmutableList<Tuple<DateTime, double>> Convert_J(
+        private ImmutableList<Tuple<DateTime, FhirDecimal>> Convert_J(
             IJ value)
         {
             return value.Value
                 .Select(
-                i => new Tuple<DateTime, double>(
+                i => new Tuple<DateTime, FhirDecimal>(
                     i.t_IndexElement,
-                    i.Value))
+                    new FhirDecimal(
+                        (decimal)i.Value)))
                 .ToImmutableList();
         }
 
-        private ImmutableList<Tuple<DateTime, double>> Convert_Q(
+        private ImmutableList<Tuple<DateTime, FhirDecimal>> Convert_Q(
             IQ value)
         {
             return value.Value
                 .Select(
-                i => new Tuple<DateTime, double>(
+                i => new Tuple<DateTime, FhirDecimal>(
                     i.t_IndexElement,
-                    i.Value))
+                    new FhirDecimal(
+                        (decimal)i.Value)))
                 .ToImmutableList();
         }
 
-        private ImmutableList<Tuple<DateTime, double>> Convert_R(
+        private ImmutableList<Tuple<DateTime, FhirDecimal>> Convert_R(
             IR value)
         {
             return value.Value
                 .Select(
-                i => new Tuple<DateTime, double>(
+                i => new Tuple<DateTime, FhirDecimal>(
                     i.t_IndexElement,
-                    i.Value))
+                    new FhirDecimal(
+                        (decimal)i.Value)))
                 .ToImmutableList();
         }
 
-        private ImmutableList<Tuple<DateTime, double>> Convert_S(
+        private ImmutableList<Tuple<DateTime, FhirDecimal>> Convert_S(
             IS value)
         {
             return value.Value
                 .Select(
-                i => new Tuple<DateTime, double>(
+                i => new Tuple<DateTime, FhirDecimal>(
                     i.t_IndexElement,
-                    i.Value))
+                    new FhirDecimal(
+                        (decimal)i.Value)))
                 .ToImmutableList();
         }
     }
