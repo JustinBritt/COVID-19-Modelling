@@ -61,9 +61,9 @@
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         }
 
-        public IDayCumulativeDiseaseInducedDeaths DayCumulativeDiseaseInducedDeaths { get; private set; }
+        public C19M.M.C.A.Gumel2004.Interfaces.Results.DayCumulativeDiseaseInducedDeaths.IDayCumulativeDiseaseInducedDeaths DayCumulativeDiseaseInducedDeaths { get; private set; }
 
-        public IDayDiseaseInducedDeaths DayDiseaseInducedDeaths { get; private set; }
+        public C19M.M.C.A.Gumel2004.Interfaces.Results.DayDiseaseInducedDeaths.IDayDiseaseInducedDeaths DayDiseaseInducedDeaths { get; private set; }
 
         public C19M.M.C.A.Gumel2004.Interfaces.Results.DayAsymptomaticIndividuals.IE E { get; private set; }
 
