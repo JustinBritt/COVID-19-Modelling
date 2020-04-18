@@ -41,5 +41,10 @@
         public ImmutableList<Tuple<DateTime, double>> R { get; private set; }
 
         public ImmutableList<Tuple<DateTime, double>> S { get; private set; }
+
+        public void Solve()
+        {
+
+        }
     }
 }
