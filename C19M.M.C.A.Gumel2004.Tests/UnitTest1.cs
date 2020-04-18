@@ -41,8 +41,6 @@
             C19M.M.C.A.Gumel2004.Interfaces.Exports.IGumel2004_Export export = new C19M.M.C.A.Gumel2004.Classes.Exports.Gumel2004_Export(
                 context);
 
-            // C19M.M.C.A.Gumel2004.Interfaces.Solutions.IGumel2004_Solution solution = new C19M.M.C.A.Gumel2004.Classes.Solutions.Gumel2004_Solution();
-
             export.Solve();
 
             foreach (var item in export.DayCumulativeDiseaseInducedDeaths)
