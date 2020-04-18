@@ -135,8 +135,6 @@
                         R,
                         S));
 
-            List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayIsolatedIndividuals.IJ_ResultElement> J_res = new List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayIsolatedIndividuals.IJ_ResultElement>();
-
             List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayQuarantinedIndividuals.IQ_ResultElement> Q_res = new List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayQuarantinedIndividuals.IQ_ResultElement>();
 
             List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayRecoveredIndividuals.IR_ResultElement> R_res = new List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayRecoveredIndividuals.IR_ResultElement>();
@@ -145,11 +143,6 @@
 
             for (DateTime i = t.StartDate; i <= t.EndDate; i = i.AddDays(1))
             {
-                J_res.Add(
-                    new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayIsolatedIndividuals.J_ResultElement(
-                        i,
-                        results[t.NumberDaysAfterStartDate.Invoke(i)][2]));
-
                 Q_res.Add(
                     new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayQuarantinedIndividuals.Q_ResultElement(
                         i,
@@ -177,8 +170,9 @@
                 results);
 
             // J
-            this.J = new C19M.M.C.A.Gumel2004.Classes.Results.DayIsolatedIndividuals.J(
-                J_res.ToImmutableList());
+            this.J = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayIsolatedIndividuals.J_Calculation().Calculate(
+                t,
+                results);
 
             // Q
             this.Q = new C19M.M.C.A.Gumel2004.Classes.Results.DayQuarantinedIndividuals.Q(
