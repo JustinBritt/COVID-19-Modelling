@@ -21,7 +21,7 @@
         // Constructor
         public I_ResultElement(
             DateTime t_IndexElement,
-            double value)
+            FhirDecimal value)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -32,6 +32,6 @@
 
         public DateTime t_IndexElement { get; }
 
-        public double Value { get; }
+        public FhirDecimal Value { get; }
     }
 }

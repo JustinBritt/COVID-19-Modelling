@@ -40,7 +40,7 @@
         {
             return new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayProbableCases.DayProbableCases_ResultElement(
                 t_IndexElement,
-                I.GetElementAt(
+                (double)I.GetElementAtAsdecimal(
                     t_IndexElement)
                 +
                 J.GetElementAt(

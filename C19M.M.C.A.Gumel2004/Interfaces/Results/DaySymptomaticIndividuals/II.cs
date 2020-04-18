@@ -13,7 +13,7 @@
     {
         ImmutableList<II_ResultElement> Value { get; }
 
-        double GetElementAt(
+        decimal GetElementAtAsdecimal(
             DateTime t_IndexElement);
     }
 }

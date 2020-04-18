@@ -40,7 +40,7 @@
                 t_IndexElement,
                 d_1.Value
                 *
-                I.GetElementAt(
+                (double)I.GetElementAtAsdecimal(
                     t_IndexElement)
                 +
                 d_2.Value

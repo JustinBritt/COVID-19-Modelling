@@ -6,10 +6,13 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     internal interface II_ResultElement
     {
         DateTime t_IndexElement { get; }
 
-        double Value { get; }
+        FhirDecimal Value { get; }
     }
 }
