@@ -37,10 +37,11 @@
         {
             return new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayCumulativeProbableCases.DayCumulativeProbableCases_ResultElement(
                 t_IndexElement,
-                (double)t.Value
-                .Where(w => w >= t.StartDate && w <= t_IndexElement)
-                .Select(w => dayProbableCases.GetElementAtAsdecimal(w))
-                .Max());
+                new FhirDecimal(
+                    t.Value
+                    .Where(w => w >= t.StartDate && w <= t_IndexElement)
+                    .Select(w => dayProbableCases.GetElementAtAsdecimal(w))
+                    .Max()));
         }
     }
 }

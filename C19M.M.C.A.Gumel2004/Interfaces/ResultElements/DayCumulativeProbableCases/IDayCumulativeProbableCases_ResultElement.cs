@@ -6,6 +6,9 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     internal interface IDayCumulativeProbableCases_ResultElement
     {
         DateTime t_IndexElement { get; }
@@ -13,6 +16,6 @@
         /// <summary>
         /// Gets the cumulative number of probable cases.
         /// </summary>
-        double Value { get; }
+        FhirDecimal Value { get; }
     }
 }
