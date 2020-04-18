@@ -65,6 +65,12 @@
                     this.DayCumulativeDiseaseInducedDeaths = this.Convert_DayCumulativeDiseaseInducedDeaths(
                         this.Gumel2004_Solution.DayCumulativeDiseaseInducedDeaths);
                 }
+
+                if (this.Gumel2004_Solution.DayDiseaseInducedDeaths != null)
+                {
+                    this.DayDiseaseInducedDeaths = this.Convert_DayDiseaseInducedDeaths(
+                        this.Gumel2004_Solution.DayDiseaseInducedDeaths);
+                }
             }
         }
 
