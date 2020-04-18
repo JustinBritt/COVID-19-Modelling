@@ -82,16 +82,46 @@
                 }
 
                 // E
+                if (this.Gumel2004_Solution.E != null)
+                {
+                    this.E = this.Convert_E(
+                        this.Gumel2004_Solution.E);
+                }
 
                 // I
+                if (this.Gumel2004_Solution.I != null)
+                {
+                    this.I = this.Convert_I(
+                        this.Gumel2004_Solution.I);
+                }
 
                 // J
+                if (this.Gumel2004_Solution.J != null)
+                {
+                    this.J = this.Convert_J(
+                        this.Gumel2004_Solution.J);
+                }
 
                 // Q
+                if (this.Gumel2004_Solution.Q != null)
+                {
+                    this.Q = this.Convert_Q(
+                        this.Gumel2004_Solution.Q);
+                }
 
                 // R
+                if (this.Gumel2004_Solution.R != null)
+                {
+                    this.R = this.Convert_R(
+                        this.Gumel2004_Solution.R);
+                }
 
                 // S
+                if (this.Gumel2004_Solution.S != null)
+                {
+                    this.S = this.Convert_S(
+                        this.Gumel2004_Solution.S);
+                }
             }
         }
 
