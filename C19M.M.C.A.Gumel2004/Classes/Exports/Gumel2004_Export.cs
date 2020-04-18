@@ -110,5 +110,71 @@
                     i.Value))
                 .ToImmutableList();
         }
+
+        private ImmutableList<Tuple<DateTime, double>> Convert_E(
+            IE value)
+        {
+            return value.Value
+                .Select(
+                i => new Tuple<DateTime, double>(
+                    i.t_IndexElement,
+                    i.Value))
+                .ToImmutableList();
+        }
+
+        private ImmutableList<Tuple<DateTime, double>> Convert_I(
+            II value)
+        {
+            return value.Value
+                .Select(
+                i => new Tuple<DateTime, double>(
+                    i.t_IndexElement,
+                    i.Value))
+                .ToImmutableList();
+        }
+
+        private ImmutableList<Tuple<DateTime, double>> Convert_J(
+            IJ value)
+        {
+            return value.Value
+                .Select(
+                i => new Tuple<DateTime, double>(
+                    i.t_IndexElement,
+                    i.Value))
+                .ToImmutableList();
+        }
+
+        private ImmutableList<Tuple<DateTime, double>> Convert_Q(
+            IQ value)
+        {
+            return value.Value
+                .Select(
+                i => new Tuple<DateTime, double>(
+                    i.t_IndexElement,
+                    i.Value))
+                .ToImmutableList();
+        }
+
+        private ImmutableList<Tuple<DateTime, double>> Convert_R(
+            IR value)
+        {
+            return value.Value
+                .Select(
+                i => new Tuple<DateTime, double>(
+                    i.t_IndexElement,
+                    i.Value))
+                .ToImmutableList();
+        }
+
+        private ImmutableList<Tuple<DateTime, double>> Convert_S(
+            IS value)
+        {
+            return value.Value
+                .Select(
+                i => new Tuple<DateTime, double>(
+                    i.t_IndexElement,
+                    i.Value))
+                .ToImmutableList();
+        }
     }
 }
