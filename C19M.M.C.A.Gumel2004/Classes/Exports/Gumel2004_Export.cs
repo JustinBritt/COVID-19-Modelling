@@ -50,7 +50,7 @@
 
         public ImmutableList<Tuple<DateTime, double>> DayIsolatedIndividuals { get; private set; }
 
-        public ImmutableList<Tuple<DateTime, double>> Q { get; private set; }
+        public ImmutableList<Tuple<DateTime, double>> DayQuarantinedIndividuals { get; private set; }
 
         public ImmutableList<Tuple<DateTime, double>> R { get; private set; }
 
@@ -105,7 +105,7 @@
                 // Q
                 if (this.Gumel2004_Solution.Q != null)
                 {
-                    this.Q = this.Convert_Q(
+                    this.DayQuarantinedIndividuals = this.Convert_Q(
                         this.Gumel2004_Solution.Q);
                 }
 
