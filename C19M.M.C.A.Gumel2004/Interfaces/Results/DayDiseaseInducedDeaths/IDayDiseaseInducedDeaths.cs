@@ -12,5 +12,8 @@
     internal interface IDayDiseaseInducedDeaths
     {
         ImmutableList<IDayDiseaseInducedDeaths_ResultElement> Value { get; }
+
+        double GetElementAt(
+            DateTime t_IndexElement);
     }
 }
