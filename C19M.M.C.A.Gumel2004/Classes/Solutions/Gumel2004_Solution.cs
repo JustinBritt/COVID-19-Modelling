@@ -178,7 +178,7 @@
                 t,
                 this.DayDiseaseInducedDeaths);
 
-            return this.DayDiseaseInducedDeaths.Value.Select(w => w.Value).Sum();
+            return this.DayCumulativeDiseaseInducedDeaths.Value.Where(w => w.t_IndexElement == t.EndDate).Select(w => w.Value).SingleOrDefault();
         }
 
         // https://stackoverflow.com/a/55004295
