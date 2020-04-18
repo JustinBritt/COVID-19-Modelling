@@ -40,17 +40,18 @@
         {
             return new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayProbableCases.DayProbableCases_ResultElement(
                 t_IndexElement,
-                (double)I.GetElementAtAsdecimal(
-                    t_IndexElement)
-                +
-                (double)J.GetElementAtAsdecimal(
-                    t_IndexElement)
-                +
-                (double)Q.GetElementAtAsdecimal(
-                    t_IndexElement)
-                +
-                (double)R.GetElementAtAsdecimal(
-                    t_IndexElement));
+                new FhirDecimal(
+                    I.GetElementAtAsdecimal(
+                        t_IndexElement)
+                    +
+                    J.GetElementAtAsdecimal(
+                        t_IndexElement)
+                    +
+                    Q.GetElementAtAsdecimal(
+                        t_IndexElement)
+                    +
+                    R.GetElementAtAsdecimal(
+                        t_IndexElement)));
         }
     }
 }
