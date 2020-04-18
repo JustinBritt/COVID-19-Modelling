@@ -11,8 +11,11 @@
 
     using C19M.M.C.A.Gumel2004.Interfaces.Calculations.DayCumulativeDiseaseInducedDeaths;
 
+    using C19M.M.C.A.Gumel2004.Interfaces.Indices;
+
     using C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayCumulativeDiseaseInducedDeaths;
 
+    using C19M.M.C.A.Gumel2004.Interfaces.Results.DayCumulativeDiseaseInducedDeaths;
     using C19M.M.C.A.Gumel2004.Interfaces.Results.DayDiseaseInducedDeaths;
 
     internal sealed class DayCumulativeDiseaseInducedDeaths_Calculation : IDayCumulativeDiseaseInducedDeaths_Calculation
