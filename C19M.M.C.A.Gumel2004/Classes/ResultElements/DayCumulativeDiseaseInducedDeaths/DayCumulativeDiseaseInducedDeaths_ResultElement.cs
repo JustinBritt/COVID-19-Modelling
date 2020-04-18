@@ -21,7 +21,7 @@
         // Constructor
         public DayCumulativeDiseaseInducedDeaths_ResultElement(
             DateTime t_IndexElement,
-            double value)
+            FhirDecimal value)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -35,6 +35,6 @@
         /// <summary>
         /// Gets the cumulative number of disease-induced deaths.
         /// </summary>
-        public double Value { get; }
+        public FhirDecimal Value { get; }
     }
 }
