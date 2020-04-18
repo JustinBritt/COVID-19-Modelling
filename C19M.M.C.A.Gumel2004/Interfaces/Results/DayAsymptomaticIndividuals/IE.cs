@@ -12,5 +12,8 @@
     internal interface IE
     {
         ImmutableList<IE_ResultElement> Value { get; }
+
+        double GetElementAt(
+            DateTime t_IndexElement);
     }
 }
