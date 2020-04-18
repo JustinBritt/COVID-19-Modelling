@@ -23,9 +23,12 @@
         private ILog Log { get; }
 
         // Constructor
-        public Gumel2004_Export()
+        public Gumel2004_Export(
+            IGumel2004_Context Gumel2004_Context)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+            this.Gumel2004_Context = Gumel2004_Context;
 
             this.Gumel2004_Solution = new C19M.M.C.A.Gumel2004.Classes.Solutions.Gumel2004_Solution();
         }
