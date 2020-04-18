@@ -46,7 +46,7 @@
                 (double)J.GetElementAtAsdecimal(
                     t_IndexElement)
                 +
-                Q.GetElementAt(
+                (double)Q.GetElementAtAsdecimal(
                     t_IndexElement)
                 +
                 R.GetElementAt(

@@ -32,12 +32,12 @@
 
         public ImmutableList<IQ_ResultElement> Value { get; }
 
-        public double GetElementAt(
+        public decimal GetElementAtAsdecimal(
             DateTime t_IndexElement)
         {
             return this.Value
                 .Where(x => x.t_IndexElement == t_IndexElement)
-                .Select(x => x.Value)
+                .Select(x => x.Value.Value.Value)
                 .SingleOrDefault();
         }
     }
