@@ -24,5 +24,11 @@
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         }
+
+        // TODO: Finish
+        public IDayCumulativeDiseaseInducedDeaths Calculate()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
