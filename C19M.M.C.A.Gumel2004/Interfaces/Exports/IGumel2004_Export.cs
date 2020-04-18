@@ -23,5 +23,7 @@
         ImmutableList<Tuple<DateTime, double>> R { get; }
 
         ImmutableList<Tuple<DateTime, double>> S { get; }
+
+        void Solve();
     }
 }
