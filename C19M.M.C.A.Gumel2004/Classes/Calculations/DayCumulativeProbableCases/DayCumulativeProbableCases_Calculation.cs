@@ -14,8 +14,6 @@
 
     using C19M.M.C.A.Gumel2004.Interfaces.Indices;
 
-    using C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayCumulativeProbableCases;
-
     using C19M.M.C.A.Gumel2004.Interfaces.Results.DayCumulativeProbableCases;
     using C19M.M.C.A.Gumel2004.Interfaces.Results.DayProbableCases;
 
