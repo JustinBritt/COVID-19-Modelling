@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Classes\Calculations\DayAsymptomaticIndividuals\E_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayAsymptomaticIndividuals\E_ResultElement_Calculation.cs" />
+    <Compile Include="Classes\Calculations\DayCumulativeDiseaseInducedDeaths\DayCumulativeDiseaseInducedDeaths_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayCumulativeDiseaseInducedDeaths\DayCumulativeDiseaseInducedDeaths_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayDiseaseInducedDeaths\DayDiseaseInducedDeaths_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayDiseaseInducedDeaths\DayDiseaseInducedDeaths_ResultElement_Calculation.cs" />
@@ -126,6 +127,7 @@
     <Compile Include="Classes\Variables\TotalPopulationSize\N.cs" />
     <Compile Include="Interfaces\Calculations\DayAsymptomaticIndividuals\IE_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayAsymptomaticIndividuals\IE_ResultElement_Calculation.cs" />
+    <Compile Include="Interfaces\Calculations\DayCumulativeDiseaseInducedDeaths\IDayCumulativeDiseaseInducedDeaths_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayCumulativeDiseaseInducedDeaths\IDayCumulativeDiseaseInducedDeaths_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths_ResultElement_Calculation.cs" />
