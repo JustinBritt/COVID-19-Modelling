@@ -80,89 +80,89 @@
         public double Solve(
             IGumel2004_Context context)
         {
-            IGumel2004_Model model = new C19M.M.C.A.Gumel2004.Classes.Models.Gumel2004_Model(
+            IGumel2004_Model Gumel2004_Model = new C19M.M.C.A.Gumel2004.Classes.Models.Gumel2004_Model(
                 context);
 
             MathNet.Numerics.LinearAlgebra.Vector<double>[] results = 
                 MathNet.Numerics.OdeSolvers.RungeKutta.FourthOrder(
                     MathNet.Numerics.LinearAlgebra.Vector<double>.Build.Dense(new[] {
-                        model.E.InitialValue,
-                        model.I.InitialValue,
-                        model.J.InitialValue,
-                        model.Q.InitialValue,
-                        model.R.InitialValue,
-                        model.S.InitialValue}),
-                    model.t.NumberDaysAfterStartDate(model.t.StartDate),
-                    model.t.NumberDaysAfterStartDate(model.t.EndDate),
-                    model.t.NumberDaysAfterStartDate(model.t.EndDate) - model.t.NumberDaysAfterStartDate(model.t.StartDate) + 1,
+                        Gumel2004_Model.E.InitialValue,
+                        Gumel2004_Model.I.InitialValue,
+                        Gumel2004_Model.J.InitialValue,
+                        Gumel2004_Model.Q.InitialValue,
+                        Gumel2004_Model.R.InitialValue,
+                        Gumel2004_Model.S.InitialValue}),
+                    Gumel2004_Model.t.NumberDaysAfterStartDate(Gumel2004_Model.t.StartDate),
+                    Gumel2004_Model.t.NumberDaysAfterStartDate(Gumel2004_Model.t.EndDate),
+                    Gumel2004_Model.t.NumberDaysAfterStartDate(Gumel2004_Model.t.EndDate) - Gumel2004_Model.t.NumberDaysAfterStartDate(Gumel2004_Model.t.StartDate) + 1,
                     this.f(
-                        model.t,
-                        model.d_1,
-                        model.d_2,
-                        model.p,
-                        model.β,
-                        model.γ_1,
-                        model.γ_2,
-                        model.ε_E,
-                        model.ε_J,
-                        model.ε_Q,
-                        model.κ_1,
-                        model.κ_2,
-                        model.μ,
-                        model.Π,
-                        model.σ_1,
-                        model.σ_2,
-                        model.E,
-                        model.I,
-                        model.J,
-                        model.Q,
-                        model.R,
-                        model.S));
+                        Gumel2004_Model.t,
+                        Gumel2004_Model.d_1,
+                        Gumel2004_Model.d_2,
+                        Gumel2004_Model.p,
+                        Gumel2004_Model.β,
+                        Gumel2004_Model.γ_1,
+                        Gumel2004_Model.γ_2,
+                        Gumel2004_Model.ε_E,
+                        Gumel2004_Model.ε_J,
+                        Gumel2004_Model.ε_Q,
+                        Gumel2004_Model.κ_1,
+                        Gumel2004_Model.κ_2,
+                        Gumel2004_Model.μ,
+                        Gumel2004_Model.Π,
+                        Gumel2004_Model.σ_1,
+                        Gumel2004_Model.σ_2,
+                        Gumel2004_Model.E,
+                        Gumel2004_Model.I,
+                        Gumel2004_Model.J,
+                        Gumel2004_Model.Q,
+                        Gumel2004_Model.R,
+                        Gumel2004_Model.S));
 
             // E
             this.E = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayAsymptomaticIndividuals.E_Calculation().Calculate(
-                model.t,
+                Gumel2004_Model.t,
                 results);
 
             // I
             this.I = new C19M.M.C.A.Gumel2004.Classes.Calculations.DaySymptomaticIndividuals.I_Calculation().Calculate(
-                model.t,
+                Gumel2004_Model.t,
                 results);
 
             // J
             this.J = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayIsolatedIndividuals.J_Calculation().Calculate(
-                model.t,
+                Gumel2004_Model.t,
                 results);
 
             // Q
             this.Q = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayQuarantinedIndividuals.Q_Calculation().Calculate(
-                model.t,
+                Gumel2004_Model.t,
                 results);
 
             // R
             this.R = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayRecoveredIndividuals.R_Calculation().Calculate(
-                model.t,
+                Gumel2004_Model.t,
                 results);
 
             // S
             this.S = new C19M.M.C.A.Gumel2004.Classes.Calculations.DaySusceptibleIndividuals.S_Calculation().Calculate(
-                model.t,
+                Gumel2004_Model.t,
                 results);
 
             // DayDiseaseInducedDeaths
             this.DayDiseaseInducedDeaths = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayDiseaseInducedDeaths.DayDiseaseInducedDeaths_Calculation().Calculate(
-                model.t,
-                model.d_1,
-                model.d_2,
+                Gumel2004_Model.t,
+                Gumel2004_Model.d_1,
+                Gumel2004_Model.d_2,
                 this.I,
                 this.J);
 
             // DayCumulativeDiseaseInducedDeaths
             this.DayCumulativeDiseaseInducedDeaths = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayCumulativeDiseaseInducedDeaths.DayCumulativeDiseaseInducedDeaths_Calculation().Calculate(
-                model.t,
+                Gumel2004_Model.t,
                 this.DayDiseaseInducedDeaths);
 
-            return this.DayCumulativeDiseaseInducedDeaths.Value.Where(w => w.t_IndexElement == model.t.EndDate).Select(w => w.Value).SingleOrDefault();
+            return this.DayCumulativeDiseaseInducedDeaths.Value.Where(w => w.t_IndexElement == Gumel2004_Model.t.EndDate).Select(w => w.Value).SingleOrDefault();
         }
 
         // https://stackoverflow.com/a/55004295
