@@ -38,15 +38,16 @@
         {
             return new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayDiseaseInducedDeaths.DayDiseaseInducedDeaths_ResultElement(
                 t_IndexElement,
-                d_1.Value
-                *
-                (double)I.GetElementAtAsdecimal(
-                    t_IndexElement)
-                +
-                d_2.Value
-                *
-                (double)J.GetElementAtAsdecimal(
-                    t_IndexElement));
+                new FhirDecimal(
+                    (decimal)d_1.Value
+                    *
+                    (decimal)I.GetElementAtAsdecimal(
+                        t_IndexElement)
+                    +
+                    (decimal)d_2.Value
+                    *
+                    (decimal)J.GetElementAtAsdecimal(
+                        t_IndexElement)));
         }
     }
 }

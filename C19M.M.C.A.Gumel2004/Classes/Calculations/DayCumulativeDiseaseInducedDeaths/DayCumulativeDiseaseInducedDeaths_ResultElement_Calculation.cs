@@ -37,9 +37,9 @@
         {
             return new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayCumulativeDiseaseInducedDeaths.DayCumulativeDiseaseInducedDeaths_ResultElement(
                 t_IndexElement,
-                t.Value
+                (double)t.Value
                 .Where(w => w >= t.StartDate && w <= t_IndexElement)
-                .Select(w => dayDiseaseInducedDeaths.GetElementAt(w))
+                .Select(w => dayDiseaseInducedDeaths.GetElementAtAsdecimal(w))
                 .Sum());
         }
     }
