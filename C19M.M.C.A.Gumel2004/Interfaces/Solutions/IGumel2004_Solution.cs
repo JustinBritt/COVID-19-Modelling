@@ -58,7 +58,7 @@
 
         C19M.M.C.A.Gumel2004.Interfaces.Results.DaySusceptibleIndividuals.IS S { get; }
 
-        double Solve(
+        void Solve(
             IGumel2004_Context Gumel2004_Context);
     }
 }
