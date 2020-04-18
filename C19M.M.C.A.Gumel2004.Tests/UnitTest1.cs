@@ -1,5 +1,7 @@
 ﻿namespace C19M.M.C.A.Gumel2004.Tests
 {
+    using System.Collections.Immutable;
+
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     [TestClass]
