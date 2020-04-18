@@ -15,7 +15,7 @@
 
     using C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayCumulativeProbableCases;
 
-    using C19M.M.C.A.Gumel2004.Interfaces.Results.DayCumulativeProbableCases;
+    using C19M.M.C.A.Gumel2004.Interfaces.Results.DayProbableCases;
 
     internal sealed class DayCumulativeProbableCases_ResultElement_Calculation : IDayCumulativeProbableCases_ResultElement_Calculation
     {
@@ -25,6 +25,19 @@
         public DayCumulativeProbableCases_ResultElement_Calculation()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        }
+
+        public IDayCumulativeProbableCases_ResultElement Calculate(
+            DateTime t_IndexElement,
+            It t,
+            IDayProbableCases dayProbableCases)
+        {
+            return new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayCumulativeProbableCases.DayCumulativeProbableCases_ResultElement(
+                t_IndexElement,
+                t.Value
+                .Where(w => w >= t.StartDate && w <= t_IndexElement)
+                .Select(w => dayProbableCases.GetElementAt(w))
+                .Sum());
         }
     }
 }
