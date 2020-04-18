@@ -37,35 +37,11 @@
                 HK.NetInflowRateSusceptibleIndividuals,
                 HK.RecoveryRateSymptomaticIndividuals,
                 HK.RecoveryRateIsolatedIndividuals);
-
-            C19M.M.C.A.Gumel2004.Interfaces.Models.IGumel2004_Model model = new C19M.M.C.A.Gumel2004.Classes.Models.Gumel2004_Model(
-                context);
-
+            
             C19M.M.C.A.Gumel2004.Interfaces.Solutions.IGumel2004_Solution solution = new C19M.M.C.A.Gumel2004.Classes.Solutions.Gumel2004_Solution();
 
             double diseaseInducedDeaths = solution.Solve(
-                model.t,
-                model.d_1,
-                model.d_2,
-                model.p,
-                model.β,
-                model.γ_1,
-                model.γ_2,
-                model.ε_E,
-                model.ε_J,
-                model.ε_Q,
-                model.κ_1,
-                model.κ_2,
-                model.μ,
-                model.Π,
-                model.σ_1,
-                model.σ_2,
-                model.E,
-                model.I,
-                model.J,
-                model.Q,
-                model.R,
-                model.S);
+                context);
 
             System.Diagnostics.Debug.WriteLine(
                 diseaseInducedDeaths);
