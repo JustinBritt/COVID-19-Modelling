@@ -72,6 +72,7 @@
     <Compile Include="Classes\Calculations\DayDiseaseInducedDeaths\DayDiseaseInducedDeaths_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayIsolatedIndividuals\J_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayIsolatedIndividuals\J_ResultElement_Calculation.cs" />
+    <Compile Include="Classes\Calculations\DayProbableCases\DayProbableCases_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayQuarantinedIndividuals\Q_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayQuarantinedIndividuals\Q_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayRecoveredIndividuals\R_Calculation.cs" />
@@ -133,6 +134,7 @@
     <Compile Include="Interfaces\Calculations\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayIsolatedIndividuals\IJ_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayIsolatedIndividuals\IJ_ResultElement_Calculation.cs" />
+    <Compile Include="Interfaces\Calculations\DayProbableCases\IDayProbableCases_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayQuarantinedIndividuals\IQ_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayQuarantinedIndividuals\IQ_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayRecoveredIndividuals\IR_Calculation.cs" />
@@ -190,10 +192,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Calculations\DayCumulativeProbableCases\" />
-    <Folder Include="Classes\Calculations\DayProbableCases\" />
     <Folder Include="Factories\Parameters\BasicReproductionNumber\" />
     <Folder Include="Interfaces\Calculations\DayCumulativeProbableCases\" />
-    <Folder Include="Interfaces\Calculations\DayProbableCases\" />
     <Folder Include="Interfaces_Factories\Parameters\BasicReproductionNumber\" />
   </ItemGroup>
   <ItemGroup>
