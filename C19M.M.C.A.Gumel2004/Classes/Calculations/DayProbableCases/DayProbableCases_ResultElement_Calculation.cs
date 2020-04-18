@@ -49,7 +49,7 @@
                 (double)Q.GetElementAtAsdecimal(
                     t_IndexElement)
                 +
-                R.GetElementAt(
+                (double)R.GetElementAtAsdecimal(
                     t_IndexElement));
         }
     }
