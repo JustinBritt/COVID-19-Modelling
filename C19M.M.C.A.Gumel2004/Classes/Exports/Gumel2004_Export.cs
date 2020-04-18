@@ -31,5 +31,7 @@
         public ImmutableList<Tuple<DateTime, double>> DayDiseaseInducedDeaths { get; private set; }
 
         public ImmutableList<Tuple<DateTime, double>> E { get; private set; }
+
+        public ImmutableList<Tuple<DateTime, double>> I { get; private set; }
     }
 }
