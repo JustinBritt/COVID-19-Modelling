@@ -27,23 +27,17 @@
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         }
 
-        // TODO: Finish
         public IDayCumulativeDiseaseInducedDeaths_ResultElement Calculate(
             DateTime t_IndexElement,
             It t,
             IDayDiseaseInducedDeaths dayDiseaseInducedDeaths)
         {
-            double value = 0;
-
-            for (DateTime i = t.StartDate; i <= t_IndexElement; i = i.AddDays(1))
-            {
-                value += dayDiseaseInducedDeaths.GetElementAt(
-                    i);
-            }
-
             return new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayCumulativeDiseaseInducedDeaths.DayCumulativeDiseaseInducedDeaths_ResultElement(
                 t_IndexElement,
-                value);
+                t.Value
+                .Where(w => w >= t.StartDate && w <= t_IndexElement)
+                .Select(w => dayDiseaseInducedDeaths.GetElementAt(w))
+                .Sum());
         }
     }
 }
