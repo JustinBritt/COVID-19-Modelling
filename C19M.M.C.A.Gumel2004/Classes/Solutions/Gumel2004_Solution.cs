@@ -82,7 +82,7 @@
 
         public C19M.M.C.A.Gumel2004.Interfaces.Results.DaySusceptibleIndividuals.IS S { get; private set; }
 
-        public double Solve(
+        public void Solve(
             IGumel2004_Context Gumel2004_Context)
         {
             IGumel2004_Model Gumel2004_Model = new C19M.M.C.A.Gumel2004.Classes.Models.Gumel2004_Model(
@@ -179,8 +179,6 @@
             this.DayCumulativeProbableCases = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayCumulativeProbableCases.DayCumulativeProbableCases_Calculation().Calculate(
                 Gumel2004_Model.t,
                 this.DayProbableCases);
-
-            return this.DayCumulativeDiseaseInducedDeaths.Value.Where(w => w.t_IndexElement == Gumel2004_Model.t.EndDate).Select(w => w.Value).SingleOrDefault();
         }
 
         // https://stackoverflow.com/a/55004295
