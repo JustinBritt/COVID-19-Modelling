@@ -81,42 +81,42 @@
                         this.Gumel2004_Solution.DayDiseaseInducedDeaths);
                 }
 
-                // E
+                // DayAsymptomaticIndividuals
                 if (this.Gumel2004_Solution.E != null)
                 {
                     this.DayAsymptomaticIndividuals = this.Convert_E(
                         this.Gumel2004_Solution.E);
                 }
 
-                // I
+                // DaySymptomaticIndividuals
                 if (this.Gumel2004_Solution.I != null)
                 {
                     this.DaySymptomaticIndividuals = this.Convert_I(
                         this.Gumel2004_Solution.I);
                 }
 
-                // J
+                // DayIsolatedIndividuals
                 if (this.Gumel2004_Solution.J != null)
                 {
                     this.DayIsolatedIndividuals = this.Convert_J(
                         this.Gumel2004_Solution.J);
                 }
 
-                // Q
+                // DayQuarantinedIndividuals
                 if (this.Gumel2004_Solution.Q != null)
                 {
                     this.DayQuarantinedIndividuals = this.Convert_Q(
                         this.Gumel2004_Solution.Q);
                 }
 
-                // R
+                // DayRecoveredIndividuals
                 if (this.Gumel2004_Solution.R != null)
                 {
                     this.DayRecoveredIndividuals = this.Convert_R(
                         this.Gumel2004_Solution.R);
                 }
 
-                // S
+                // DaySusceptibleIndividuals
                 if (this.Gumel2004_Solution.S != null)
                 {
                     this.DaySusceptibleIndividuals = this.Convert_S(
