@@ -72,6 +72,7 @@
     <Compile Include="Classes\Calculations\DayDiseaseInducedDeaths\DayDiseaseInducedDeaths_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayIsolatedIndividuals\J_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayIsolatedIndividuals\J_ResultElement_Calculation.cs" />
+    <Compile Include="Classes\Calculations\DayProbableCases\DayProbableCases_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayProbableCases\DayProbableCases_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayQuarantinedIndividuals\Q_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayQuarantinedIndividuals\Q_ResultElement_Calculation.cs" />
@@ -134,6 +135,7 @@
     <Compile Include="Interfaces\Calculations\DayAsymptomaticIndividuals\IE_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayCumulativeDiseaseInducedDeaths\IDayCumulativeDiseaseInducedDeaths_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayCumulativeDiseaseInducedDeaths\IDayCumulativeDiseaseInducedDeaths_ResultElement_Calculation.cs" />
+    <Compile Include="Interfaces\Calculations\DayProbableCases\IDayProbableCases_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayIsolatedIndividuals\IJ_Calculation.cs" />
