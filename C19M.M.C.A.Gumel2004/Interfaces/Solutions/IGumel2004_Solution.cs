@@ -39,6 +39,6 @@
     internal interface IGumel2004_Solution
     {
         double Solve(
-            IGumel2004_Context context);
+            IGumel2004_Context Gumel2004_Context);
     }
 }

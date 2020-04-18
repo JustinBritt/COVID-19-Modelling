@@ -78,10 +78,10 @@
         public C19M.M.C.A.Gumel2004.Interfaces.Results.DaySusceptibleIndividuals.IS S { get; private set; }
 
         public double Solve(
-            IGumel2004_Context context)
+            IGumel2004_Context Gumel2004_Context)
         {
             IGumel2004_Model Gumel2004_Model = new C19M.M.C.A.Gumel2004.Classes.Models.Gumel2004_Model(
-                context);
+                Gumel2004_Context);
 
             MathNet.Numerics.LinearAlgebra.Vector<double>[] results = 
                 MathNet.Numerics.OdeSolvers.RungeKutta.FourthOrder(
