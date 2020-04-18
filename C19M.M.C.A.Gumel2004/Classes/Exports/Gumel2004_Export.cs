@@ -42,6 +42,8 @@
 
         public ImmutableList<Tuple<DateTime, double>> S { get; private set; }
 
+        private IGumel2004_Solution Gumel2004_Solution { get; }
+
         public void Solve()
         {
 
