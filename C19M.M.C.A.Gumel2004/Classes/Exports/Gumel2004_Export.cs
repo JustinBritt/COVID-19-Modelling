@@ -79,6 +79,10 @@
                 }
 
                 // DayCumulativeProbableCases
+                if (this.Gumel2004_Solution.DayCumulativeProbableCases != null)
+                {
+
+                }
 
                 // DayDiseaseInducedDeaths
                 if (this.Gumel2004_Solution.DayDiseaseInducedDeaths != null)
@@ -95,6 +99,10 @@
                 }
 
                 // DayProbableCases
+                if (this.Gumel2004_Solution.DayProbableCases != null)
+                {
+
+                }
 
                 // DaySymptomaticIndividuals
                 if (this.Gumel2004_Solution.I != null)
