@@ -61,17 +61,31 @@
                 this.Gumel2004_Solution.Solve(
                     this.Gumel2004_Context);
 
+                // DayCumulativeDiseaseInducedDeaths
                 if (this.Gumel2004_Solution.DayCumulativeDiseaseInducedDeaths != null)
                 {
                     this.DayCumulativeDiseaseInducedDeaths = this.Convert_DayCumulativeDiseaseInducedDeaths(
                         this.Gumel2004_Solution.DayCumulativeDiseaseInducedDeaths);
                 }
 
+                // DayDiseaseInducedDeaths
                 if (this.Gumel2004_Solution.DayDiseaseInducedDeaths != null)
                 {
                     this.DayDiseaseInducedDeaths = this.Convert_DayDiseaseInducedDeaths(
                         this.Gumel2004_Solution.DayDiseaseInducedDeaths);
                 }
+
+                // E
+
+                // I
+
+                // J
+
+                // Q
+
+                // R
+
+                // S
             }
         }
 
