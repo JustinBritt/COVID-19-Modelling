@@ -78,6 +78,8 @@
                         this.Gumel2004_Solution.DayCumulativeDiseaseInducedDeaths);
                 }
 
+                // DayCumulativeProbableCases
+
                 // DayDiseaseInducedDeaths
                 if (this.Gumel2004_Solution.DayDiseaseInducedDeaths != null)
                 {
@@ -91,6 +93,8 @@
                     this.DayAsymptomaticIndividuals = this.Convert_E(
                         this.Gumel2004_Solution.E);
                 }
+
+                // DayProbableCases
 
                 // DaySymptomaticIndividuals
                 if (this.Gumel2004_Solution.I != null)
