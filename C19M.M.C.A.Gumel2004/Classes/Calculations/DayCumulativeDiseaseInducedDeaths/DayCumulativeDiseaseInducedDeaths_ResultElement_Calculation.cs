@@ -37,7 +37,8 @@
 
             for (DateTime i = t.StartDate; i <= t_IndexElement; i = i.AddDays(1))
             {
-                value += dayDiseaseInducedDeaths.Value.Where(w => w.t_IndexElement == i).Select(w => w.Value).SingleOrDefault();
+                value += dayDiseaseInducedDeaths.GetElementAt(
+                    i);
             }
 
             return new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayCumulativeDiseaseInducedDeaths.DayCumulativeDiseaseInducedDeaths_ResultElement(
