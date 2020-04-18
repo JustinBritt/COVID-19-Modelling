@@ -55,8 +55,11 @@
 
         public void Solve()
         {
-            this.Gumel2004_Solution.Solve(
-                this.Gumel2004_Context);
+            if (this.Gumel2004_Context != null && this.Gumel2004_Solution != null)
+            {
+                this.Gumel2004_Solution.Solve(
+                    this.Gumel2004_Context);
+            }
         }
     }
 }
