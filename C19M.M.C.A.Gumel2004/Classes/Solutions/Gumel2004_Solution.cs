@@ -135,23 +135,6 @@
                         R,
                         S));
 
-            List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayRecoveredIndividuals.IR_ResultElement> R_res = new List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayRecoveredIndividuals.IR_ResultElement>();
-
-            List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DaySusceptibleIndividuals.IS_ResultElement> S_res = new List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DaySusceptibleIndividuals.IS_ResultElement>();
-
-            for (DateTime i = t.StartDate; i <= t.EndDate; i = i.AddDays(1))
-            {
-                R_res.Add(
-                    new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayRecoveredIndividuals.R_ResultElement(
-                        i,
-                        results[t.NumberDaysAfterStartDate.Invoke(i)][4]));
-
-                S_res.Add(
-                    new C19M.M.C.A.Gumel2004.Classes.ResultElements.DaySusceptibleIndividuals.S_ResultElement(
-                        i,
-                        results[t.NumberDaysAfterStartDate.Invoke(i)][5]));
-            }
-
             // E
             this.E = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayAsymptomaticIndividuals.E_Calculation().Calculate(
                 t,
