@@ -135,19 +135,12 @@
                         R,
                         S));
 
-            List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayQuarantinedIndividuals.IQ_ResultElement> Q_res = new List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayQuarantinedIndividuals.IQ_ResultElement>();
-
             List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayRecoveredIndividuals.IR_ResultElement> R_res = new List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DayRecoveredIndividuals.IR_ResultElement>();
 
             List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DaySusceptibleIndividuals.IS_ResultElement> S_res = new List<C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DaySusceptibleIndividuals.IS_ResultElement>();
 
             for (DateTime i = t.StartDate; i <= t.EndDate; i = i.AddDays(1))
             {
-                Q_res.Add(
-                    new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayQuarantinedIndividuals.Q_ResultElement(
-                        i,
-                        results[t.NumberDaysAfterStartDate.Invoke(i)][3]));
-
                 R_res.Add(
                     new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayRecoveredIndividuals.R_ResultElement(
                         i,
@@ -175,8 +168,9 @@
                 results);
 
             // Q
-            this.Q = new C19M.M.C.A.Gumel2004.Classes.Results.DayQuarantinedIndividuals.Q(
-                Q_res.ToImmutableList());
+            this.Q = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayQuarantinedIndividuals.Q_Calculation().Calculate(
+                t,
+                results);
 
             // R
             this.R = new C19M.M.C.A.Gumel2004.Classes.Results.DayRecoveredIndividuals.R(
