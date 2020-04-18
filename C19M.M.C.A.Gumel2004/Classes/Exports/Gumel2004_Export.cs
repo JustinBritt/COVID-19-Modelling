@@ -46,10 +46,10 @@
 
         private IGumel2004_Solution Gumel2004_Solution { get; }
 
-        // TODO: Finish
         public void Solve()
         {
-            throw new NotImplementedException();
+            this.Gumel2004_Solution.Solve(
+                this.Gumel2004_Context);
         }
     }
 }
