@@ -104,6 +104,7 @@
     <Compile Include="Classes\Parameters\TransmissionCoefficientModificationFactorQuarantinedIndividuals\ε.cs" />
     <Compile Include="Classes\ResultElements\DayAsymptomaticIndividuals\E_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DayCumulativeDiseaseInducedDeaths\DayCumulativeDiseaseInducedDeaths_ResultElement.cs" />
+    <Compile Include="Classes\ResultElements\DayCumulativeProbableCases\DayCumulativeProbableCases_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DayDiseaseInducedDeaths\DayDiseaseInducedDeaths_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DayIsolatedIndividuals\J_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DayProbableCases\DayProbableCases_ResultElement.cs" />
@@ -167,6 +168,7 @@
     <Compile Include="Interfaces\Parameters\TransmissionCoefficientModificationFactorQuarantinedIndividuals\Iε.cs" />
     <Compile Include="Interfaces\ResultElements\DayAsymptomaticIndividuals\IE_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DayCumulativeDiseaseInducedDeaths\IDayCumulativeDiseaseInducedDeaths_ResultElement.cs" />
+    <Compile Include="Interfaces\ResultElements\DayCumulativeProbableCases\IDayCumulativeProbableCases_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DayIsolatedIndividuals\IJ_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DayProbableCases\IDayProbableCases_ResultElement.cs" />
@@ -196,10 +198,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Calculations\DayCumulativeProbableCases\" />
-    <Folder Include="Classes\ResultElements\DayCumulativeProbableCases\" />
     <Folder Include="Factories\Parameters\BasicReproductionNumber\" />
     <Folder Include="Interfaces\Calculations\DayCumulativeProbableCases\" />
-    <Folder Include="Interfaces\ResultElements\DayCumulativeProbableCases\" />
     <Folder Include="Interfaces_Factories\Parameters\BasicReproductionNumber\" />
   </ItemGroup>
   <ItemGroup>
