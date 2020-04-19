@@ -6,6 +6,9 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     public interface IGumel2004_Context
     {
         /// <summary>
@@ -30,13 +33,13 @@
         /// Gets the disease-induced death rate for symptomatic individuals.
         /// Parameter: d_1
         /// </summary>
-        double DiseaseInducedDeathRateSymptomaticIndividuals { get; }
+        FhirDecimal DiseaseInducedDeathRateSymptomaticIndividuals { get; }
 
         /// <summary>
         /// Gets the disease-induced death rate for isolated individuals.
         /// Parameter: d_2
         /// </summary>
-        double DiseaseInducedDeathRateIsolatedIndividuals { get; }
+        FhirDecimal DiseaseInducedDeathRateIsolatedIndividuals { get; }
 
         /// <summary>
         /// Gets the initial value for asymptomatic individuals.

@@ -41,7 +41,7 @@
             return
                 κ_1.Value * E
                 -
-                (γ_2.Value.Invoke(t_IndexElement) + d_1.Value + σ_1.Value + μ.Value) * I;
+                (γ_2.Value.Invoke(t_IndexElement) + (double)d_1.Value.Value.Value + σ_1.Value + μ.Value) * I;
         }
     }
 }

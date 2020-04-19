@@ -9,15 +9,18 @@
     // Logging
     using log4net;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     using C19M.M.C.A.Gumel2004.Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals;
 
-    internal sealed class d : Id
+    internal sealed class d : C19M.M.C.A.Gumel2004.Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals.Id
     {
         private ILog Log { get; }
 
         // Constructor
         public d(
-            double value)
+            FhirDecimal value)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -27,6 +30,6 @@
         /// <summary>
         /// Gets the disease-induced death rate for isolated individuals.
         /// </summary>
-        public double Value { get; }
+        public FhirDecimal Value { get; }
     }
 }

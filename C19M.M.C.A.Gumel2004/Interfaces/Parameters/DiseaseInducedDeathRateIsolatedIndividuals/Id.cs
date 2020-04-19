@@ -6,11 +6,14 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     internal interface Id
     {
         /// <summary>
         /// Gets the disease-induced death rate for isolated individuals.
         /// </summary>
-        double Value { get; }
+        FhirDecimal Value { get; }
     }
 }

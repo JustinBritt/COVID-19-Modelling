@@ -9,6 +9,9 @@
     // Logging
     using log4net;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     using C19M.M.C.A.Gumel2004.Interfaces.Contexts;
 
     public sealed class Gumel2004_Context : IGumel2004_Context
@@ -20,8 +23,8 @@
             DateTime endDate,
             Func<DateTime, int> numberDaysAfterStartDate,
             DateTime startDate,
-            double diseaseInducedDeathRateSymptomaticIndividuals,
-            double diseaseInducedDeathRateIsolatedIndividuals,
+            FhirDecimal diseaseInducedDeathRateSymptomaticIndividuals,
+            FhirDecimal diseaseInducedDeathRateIsolatedIndividuals,
             double initialValueAsymptomaticIndividuals,
             double initialValueSymptomaticIndividuals,
             double initialValueIsolatedIndividuals,
@@ -121,13 +124,13 @@
         /// Gets the disease-induced death rate for symptomatic individuals.
         /// Parameter: d_1
         /// </summary>
-        public double DiseaseInducedDeathRateSymptomaticIndividuals { get; }
+        public FhirDecimal DiseaseInducedDeathRateSymptomaticIndividuals { get; }
 
         /// <summary>
         /// Gets the disease-induced death rate for isolated individuals.
         /// Parameter: d_2
         /// </summary>
-        public double DiseaseInducedDeathRateIsolatedIndividuals { get; }
+        public FhirDecimal DiseaseInducedDeathRateIsolatedIndividuals { get; }
 
         /// <summary>
         /// Gets the initial value for asymptomatic individuals.

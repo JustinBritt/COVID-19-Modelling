@@ -44,7 +44,7 @@
                 +
                 κ_2.Value * Q
                 -
-                (σ_2.Value + d_2.Value + μ.Value) * J;
+                (σ_2.Value + (double)d_2.Value.Value.Value + μ.Value) * J;
         }
     }
 }

@@ -39,12 +39,12 @@
             return new C19M.M.C.A.Gumel2004.Classes.ResultElements.DayDiseaseInducedDeaths.DayDiseaseInducedDeaths_ResultElement(
                 t_IndexElement,
                 new FhirDecimal(
-                    (decimal)d_1.Value
+                    d_1.Value.Value.Value
                     *
                     I.GetElementAtAsdecimal(
                         t_IndexElement)
                     +
-                    (decimal)d_2.Value
+                    d_2.Value.Value.Value
                     *
                     J.GetElementAtAsdecimal(
                         t_IndexElement)));
