@@ -72,7 +72,11 @@
                         Π,
                         I: x[1],
                         N: x[2]),
-                    (double)R.GetdRdt(),
+                    (double)R.GetdRdt(
+                        δ,
+                        μ,
+                        I: x[1],
+                        R: x[3]),
                     (double)S.GetdSdt(),
                     (double)V.GetdVdt()
                 });
