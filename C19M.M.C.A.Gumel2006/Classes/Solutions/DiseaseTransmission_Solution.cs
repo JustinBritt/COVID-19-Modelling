@@ -39,6 +39,7 @@
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate.Iμ μ,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccinationCoverageRate.Iξ ξ,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.RecruitmentRateSusceptibleHumans.IΠ Π,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccineEfficacy.Iτ τ,
             C19M.M.C.A.Gumel2006.Interfaces.Variables.LatentIndividuals.IE E,
             C19M.M.C.A.Gumel2006.Interfaces.Variables.InfectedIndividuals.II I,
             C19M.M.C.A.Gumel2006.Interfaces.Variables.TotalPopulationSize.IN N,
