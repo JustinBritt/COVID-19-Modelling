@@ -110,6 +110,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Contexts\Gumel2006_Context.cs" />
+    <Compile Include="Classes\Indices\t.cs" />
     <Compile Include="Classes\Models\DiseaseTransmission_Model.cs" />
     <Compile Include="Classes\Models\EpidemicOutbreak_Model.cs" />
     <Compile Include="Classes\Models\RescaledDiseaseTransmission_Model.cs" />
@@ -135,6 +136,7 @@
     <Compile Include="Classes\Variables\TreatedIndividuals\R.cs" />
     <Compile Include="Classes\Variables\VaccinatedIndividuals\V.cs" />
     <Compile Include="Interfaces\Contexts\IGumel2006_Context.cs" />
+    <Compile Include="Interfaces\Indices\It.cs" />
     <Compile Include="Interfaces\Models\IDiseaseTransmission_Model.cs" />
     <Compile Include="Interfaces\Models\IEpidemicOutbreak_Model.cs" />
     <Compile Include="Interfaces\Models\IRescaledDiseaseTransmission_Model.cs" />
@@ -163,9 +165,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Exports\" />
-    <Folder Include="Classes\Indices\" />
     <Folder Include="Interfaces\Exports\" />
-    <Folder Include="Interfaces\Indices\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
