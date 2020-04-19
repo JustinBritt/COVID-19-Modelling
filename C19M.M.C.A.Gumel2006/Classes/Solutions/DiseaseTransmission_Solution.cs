@@ -29,5 +29,11 @@
         {
             throw new NotImplementedException();
         }
+
+        // TODO: Finish
+        private Func<double, MathNet.Numerics.LinearAlgebra.Vector<double>, MathNet.Numerics.LinearAlgebra.Vector<double>> f()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
