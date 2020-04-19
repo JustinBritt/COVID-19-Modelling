@@ -41,12 +41,12 @@
                 new FhirDecimal(
                     (decimal)d_1.Value
                     *
-                    (decimal)I.GetElementAtAsdecimal(
+                    I.GetElementAtAsdecimal(
                         t_IndexElement)
                     +
                     (decimal)d_2.Value
                     *
-                    (decimal)J.GetElementAtAsdecimal(
+                    J.GetElementAtAsdecimal(
                         t_IndexElement)));
         }
     }
