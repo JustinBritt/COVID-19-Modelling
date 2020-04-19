@@ -14,6 +14,6 @@
         /// <summary>
         /// Gets the control reproduction number.
         /// </summary>
-        double Value { get; }
+        FhirDecimal Value { get; }
     }
 }

@@ -20,7 +20,7 @@
 
         // Constructor
         public p(
-            double value)
+            FhirDecimal value)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -30,6 +30,6 @@
         /// <summary>
         /// Gets the recruitment rate of asymptomatic individuals per day.
         /// </summary>
-        public double Value { get; }
+        public FhirDecimal Value { get; }
     }
 }

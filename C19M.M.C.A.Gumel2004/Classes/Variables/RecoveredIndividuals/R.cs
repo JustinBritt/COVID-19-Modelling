@@ -9,6 +9,9 @@
     // Logging
     using log4net;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     using C19M.M.C.A.Gumel2004.Interfaces.Parameters.NaturalDeathRate;
 
     using C19M.M.C.A.Gumel2004.Interfaces.Variables.RecoveredIndividuals;
@@ -19,16 +22,16 @@
 
         // Constructor
         public R(
-            double initialValue)
+            FhirDecimal initialValue)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             this.InitialValue = initialValue;
         }
 
-        public double InitialValue { get; }
+        public FhirDecimal InitialValue { get; }
 
-        public double GetdRdt(
+        public decimal GetdRdt(
             Iμ μ,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.RecoveryRateSymptomaticIndividuals.Iσ σ_1,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.RecoveryRateIsolatedIndividuals.Iσ σ_2,
@@ -37,11 +40,11 @@
             double R)
         {
             return
-                σ_1.Value * I
+                σ_1.Value.Value.Value * (decimal)I
                 +
-                σ_2.Value * J
+                σ_2.Value.Value.Value * (decimal)J
                 -
-                μ.Value * R;
+                μ.Value.Value.Value * (decimal)R;
         }
     }
 }

@@ -14,6 +14,6 @@
         /// <summary>
         /// Gets the natural death rate. μ > 0.
         /// </summary>
-        double Value { get; }
+        FhirDecimal Value { get; }
     }
 }

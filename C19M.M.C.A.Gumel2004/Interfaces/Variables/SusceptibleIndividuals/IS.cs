@@ -6,15 +6,18 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     using C19M.M.C.A.Gumel2004.Interfaces.Parameters.BasicTransmissionCoefficient;
     using C19M.M.C.A.Gumel2004.Interfaces.Parameters.NaturalDeathRate;
     using C19M.M.C.A.Gumel2004.Interfaces.Parameters.NetInflowRateSusceptibleIndividuals;
 
     internal interface IS
     {
-        double InitialValue { get; }
+        FhirDecimal InitialValue { get; }
 
-        double GetdSdt(
+        decimal GetdSdt(
             DateTime t_IndexElement,
             Iβ β,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorAsymptomaticIndividuals.Iε ε_E,

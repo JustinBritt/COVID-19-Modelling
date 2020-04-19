@@ -14,6 +14,6 @@
         /// <summary>
         /// Gets the transmission coefficient modification factor for asymptomatic individuals.
         /// </summary>
-        double Value { get; }
+        FhirDecimal Value { get; }
     }
 }

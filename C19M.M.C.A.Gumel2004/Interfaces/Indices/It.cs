@@ -7,11 +7,14 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     internal interface It
     {
         DateTime EndDate { get; }
 
-        Func<DateTime, int> NumberDaysAfterStartDate { get; }
+        Func<DateTime, PositiveInt> NumberDaysAfterStartDate { get; }
 
         DateTime StartDate { get; }
 

@@ -6,13 +6,16 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     using C19M.M.C.A.Gumel2004.Interfaces.Parameters.NaturalDeathRate;
 
     internal interface II
     {
-        double InitialValue { get; }
+        FhirDecimal InitialValue { get; }
 
-        double GetdIdt(
+        decimal GetdIdt(
             DateTime t_IndexElement,
             Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.IsolationRateSymptomaticIndividuals.Iγ γ_2,

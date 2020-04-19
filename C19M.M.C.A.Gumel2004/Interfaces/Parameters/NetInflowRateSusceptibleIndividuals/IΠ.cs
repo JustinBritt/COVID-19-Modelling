@@ -14,6 +14,6 @@
         /// <summary>
         /// Gets the net inflow rate of susceptible individuals per unit time.
         /// </summary>
-        double Value { get; }
+        FhirDecimal Value { get; }
     }
 }

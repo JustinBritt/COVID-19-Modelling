@@ -14,6 +14,6 @@
         /// <summary>
         /// Gets the basic transmission coefficient.
         /// </summary>
-        double Value { get; }
+        FhirDecimal Value { get; }
     }
 }

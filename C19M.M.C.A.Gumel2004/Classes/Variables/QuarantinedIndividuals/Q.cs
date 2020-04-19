@@ -9,6 +9,9 @@
     // Logging
     using log4net;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     using C19M.M.C.A.Gumel2004.Interfaces.Parameters.NaturalDeathRate;
 
     using C19M.M.C.A.Gumel2004.Interfaces.Variables.QuarantinedIndividuals;
@@ -19,16 +22,16 @@
 
         // Constructor
         public Q(
-            double initialValue)
+            FhirDecimal initialValue)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             this.InitialValue = initialValue;
         }
 
-        public double InitialValue { get; }
+        public FhirDecimal InitialValue { get; }
 
-        public double GetdQdt(
+        public decimal GetdQdt(
             DateTime t_IndexElement,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.QuarantineRateAsymptomaticIndividuals.Iγ γ_1,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.DevelopmentClinicalSymptomsRateQuarantinedIndividuals.Iκ κ_2,
@@ -37,9 +40,9 @@
             double Q)
         {
             return
-                γ_1.Value.Invoke(t_IndexElement) * E
+                γ_1.Value.Invoke(t_IndexElement).Value.Value * (decimal)E
                 -
-                (κ_2.Value + μ.Value) * Q;
+                (κ_2.Value.Value.Value + μ.Value.Value.Value) * (decimal)Q;
         }
     }
 }

@@ -36,7 +36,7 @@
             return new C19M.M.C.A.Gumel2004.Classes.ResultElements.DaySymptomaticIndividuals.I_ResultElement(
                 t_IndexElement,
                 new FhirDecimal(
-                    (decimal)RungeKuttaResults[t.NumberDaysAfterStartDate.Invoke(t_IndexElement)][1]));
+                    (decimal)RungeKuttaResults[t.NumberDaysAfterStartDate.Invoke(t_IndexElement).Value.Value][1]));
         }
     }
 }

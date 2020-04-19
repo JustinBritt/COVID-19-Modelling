@@ -6,6 +6,9 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     using C19M.M.C.A.Gumel2004.Interfaces.Parameters.BasicTransmissionCoefficient;
 
     using C19M.M.C.A.Gumel2004.Interfaces.Parameters.NaturalDeathRate;
@@ -14,9 +17,9 @@
 
     internal interface IE
     {
-        double InitialValue { get; }
+        FhirDecimal InitialValue { get; }
 
-        double GetdEdt(
+        decimal GetdEdt(
             DateTime t_IndexElement,
             Ip p,
             Iβ β,

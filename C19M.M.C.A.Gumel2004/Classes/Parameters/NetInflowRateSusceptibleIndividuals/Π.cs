@@ -20,7 +20,7 @@
 
         // Constructor
         public Π(
-            double value)
+            FhirDecimal value)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -30,6 +30,6 @@
         /// <summary>
         /// Gets the net inflow rate of susceptible individuals per unit time.
         /// </summary>
-        public double Value { get; }
+        public FhirDecimal Value { get; }
     }
 }

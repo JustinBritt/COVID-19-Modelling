@@ -14,6 +14,6 @@
         /// <summary>
         /// Gets the basic reproduction number.
         /// </summary>
-        double Value { get; }
+        FhirDecimal Value { get; }
     }
 }

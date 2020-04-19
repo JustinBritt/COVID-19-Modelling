@@ -14,6 +14,6 @@
         // <summary>
         /// Gets the rate at which asymptomatic individuals develop clinical symptoms.
         /// </summary>
-        double Value { get; }
+        FhirDecimal Value { get; }
     }
 }

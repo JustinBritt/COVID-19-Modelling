@@ -20,7 +20,7 @@
 
         // Constructor
         public μ(
-            double value)
+            FhirDecimal value)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -30,6 +30,6 @@
         /// <summary>
         /// Gets the natural death rate. μ > 0.
         /// </summary>
-        public double Value { get; }
+        public FhirDecimal Value { get; }
     }
 }

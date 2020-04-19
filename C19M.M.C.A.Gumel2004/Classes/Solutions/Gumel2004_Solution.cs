@@ -91,15 +91,15 @@
             MathNet.Numerics.LinearAlgebra.Vector<double>[] results = 
                 MathNet.Numerics.OdeSolvers.RungeKutta.FourthOrder(
                     MathNet.Numerics.LinearAlgebra.Vector<double>.Build.Dense(new[] {
-                        Gumel2004_Model.E.InitialValue,
-                        Gumel2004_Model.I.InitialValue,
-                        Gumel2004_Model.J.InitialValue,
-                        Gumel2004_Model.Q.InitialValue,
-                        Gumel2004_Model.R.InitialValue,
-                        Gumel2004_Model.S.InitialValue}),
-                    Gumel2004_Model.t.NumberDaysAfterStartDate(Gumel2004_Model.t.StartDate),
-                    Gumel2004_Model.t.NumberDaysAfterStartDate(Gumel2004_Model.t.EndDate),
-                    Gumel2004_Model.t.NumberDaysAfterStartDate(Gumel2004_Model.t.EndDate) - Gumel2004_Model.t.NumberDaysAfterStartDate(Gumel2004_Model.t.StartDate) + 1,
+                        (double)Gumel2004_Model.E.InitialValue.Value.Value,
+                        (double)Gumel2004_Model.I.InitialValue.Value.Value,
+                        (double)Gumel2004_Model.J.InitialValue.Value.Value,
+                        (double)Gumel2004_Model.Q.InitialValue.Value.Value,
+                        (double)Gumel2004_Model.R.InitialValue.Value.Value,
+                        (double)Gumel2004_Model.S.InitialValue.Value.Value}),
+                    Gumel2004_Model.t.NumberDaysAfterStartDate(Gumel2004_Model.t.StartDate).Value.Value,
+                    Gumel2004_Model.t.NumberDaysAfterStartDate(Gumel2004_Model.t.EndDate).Value.Value,
+                    Gumel2004_Model.t.NumberDaysAfterStartDate(Gumel2004_Model.t.EndDate).Value.Value - Gumel2004_Model.t.NumberDaysAfterStartDate(Gumel2004_Model.t.StartDate).Value.Value + 1,
                     this.f(
                         Gumel2004_Model.t,
                         Gumel2004_Model.d_1,
@@ -209,7 +209,7 @@
             return (T, x) =>
             {
                 return MathNet.Numerics.LinearAlgebra.Vector<double>.Build.Dense(new[] {
-                    E.GetdEdt(
+                    (double)E.GetdEdt(
                         t.StartDate.AddDays(T),
                         p,
                         β,
@@ -226,7 +226,7 @@
                         N: x.Sum(),
                         Q: x[3],
                         S: x[5]),
-                    I.GetdIdt(
+                    (double)I.GetdIdt(
                         t.StartDate.AddDays(T),
                         d_1,
                         γ_2,
@@ -235,7 +235,7 @@
                         σ_1,
                         E: x[0],
                         I: x[1]),
-                    J.GetdJdt(
+                    (double)J.GetdJdt(
                         t.StartDate.AddDays(T),
                         d_2,
                         γ_2,
@@ -245,21 +245,21 @@
                         I: x[1],
                         J: x[2],
                         Q: x[3]),
-                    Q.GetdQdt(
+                    (double)Q.GetdQdt(
                         t.StartDate.AddDays(T),
                         γ_1,
                         κ_2,
                         μ,
                         E: x[0],
                         Q: x[3]),
-                    R.GetdRdt(
+                    (double)R.GetdRdt(
                         μ,
                         σ_1,
                         σ_2,
                         I: x[1],
                         J: x[2],
                         R: x[4]),
-                    S.GetdSdt(
+                    (double)S.GetdSdt(
                         t.StartDate.AddDays(T),
                         β,
                         ε_E,

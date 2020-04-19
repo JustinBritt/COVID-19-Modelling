@@ -10,6 +10,9 @@
     // Logging
     using log4net;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     using C19M.M.C.A.Gumel2004.Interfaces.Indices;
 
     internal sealed class t : It
@@ -19,7 +22,7 @@
         // Constructor
         public t(
             DateTime endDate,
-            Func<DateTime, int> numberDaysAfterStartDate,
+            Func<DateTime, PositiveInt> numberDaysAfterStartDate,
             DateTime startDate)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
@@ -43,7 +46,7 @@
 
         public DateTime EndDate { get; }
 
-        public Func<DateTime, int> NumberDaysAfterStartDate { get; }
+        public Func<DateTime, PositiveInt> NumberDaysAfterStartDate { get; }
 
         public DateTime StartDate { get; }
 

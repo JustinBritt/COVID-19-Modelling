@@ -9,6 +9,9 @@
     // Logging
     using log4net;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     using C19M.M.C.A.Gumel2004.Interfaces.Parameters.BasicTransmissionCoefficient;
     using C19M.M.C.A.Gumel2004.Interfaces.Parameters.NaturalDeathRate;
     using C19M.M.C.A.Gumel2004.Interfaces.Parameters.NetInflowRateSusceptibleIndividuals;
@@ -21,16 +24,16 @@
 
         // Constructor
         public S(
-            double initialValue)
+            FhirDecimal initialValue)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             this.InitialValue = initialValue;
         }
 
-        public double InitialValue { get; }
+        public FhirDecimal InitialValue { get; }
 
-        public double GetdSdt(
+        public decimal GetdSdt(
             DateTime t_IndexElement,
             Iβ β,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorAsymptomaticIndividuals.Iε ε_E,
@@ -46,11 +49,11 @@
             double S)
         {
             return
-                Π.Value
+                Π.Value.Value.Value
                 -
-                (S / N) * (β.Value) * (I + ε_E.Value * E + ε_Q.Value.Invoke(t_IndexElement) * Q + ε_J.Value.Invoke(t_IndexElement) * J)
+                (decimal)(S / N) * (β.Value.Value.Value) * ((decimal)I + ε_E.Value.Value.Value * (decimal)E + ε_Q.Value.Invoke(t_IndexElement).Value.Value * (decimal)Q + ε_J.Value.Invoke(t_IndexElement).Value.Value * (decimal)J)
                 -
-                μ.Value * S;
+                μ.Value.Value.Value * (decimal)S;
         }
     }
 }

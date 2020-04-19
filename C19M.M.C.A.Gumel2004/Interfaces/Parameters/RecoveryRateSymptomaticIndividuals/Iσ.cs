@@ -14,6 +14,6 @@
         /// <summary>
         /// Gets the recovery rate for symptomatic individuals.
         /// </summary>
-        double Value { get; }
+        FhirDecimal Value { get; }
     }
 }

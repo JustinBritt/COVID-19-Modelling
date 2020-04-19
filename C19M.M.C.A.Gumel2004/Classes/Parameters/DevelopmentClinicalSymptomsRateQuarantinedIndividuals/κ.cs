@@ -20,7 +20,7 @@
 
         // Constructor
         public κ(
-            double value)
+            FhirDecimal value)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -30,6 +30,6 @@
         /// <summary>
         /// Gets the rate at which quarantined individuals develop clinical symptoms.
         /// </summary>
-        public double Value { get; }
+        public FhirDecimal Value { get; }
     }
 }

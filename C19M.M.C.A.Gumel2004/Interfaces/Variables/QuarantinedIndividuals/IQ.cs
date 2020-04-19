@@ -6,13 +6,16 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     using C19M.M.C.A.Gumel2004.Interfaces.Parameters.NaturalDeathRate;
 
     internal interface IQ
     {
-        double InitialValue { get; }
+        FhirDecimal InitialValue { get; }
 
-        double GetdQdt(
+        decimal GetdQdt(
             DateTime t_IndexElement,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.QuarantineRateAsymptomaticIndividuals.Iγ γ_1,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.DevelopmentClinicalSymptomsRateQuarantinedIndividuals.Iκ κ_2,

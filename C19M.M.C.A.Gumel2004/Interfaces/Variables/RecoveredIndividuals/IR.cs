@@ -6,13 +6,16 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     using C19M.M.C.A.Gumel2004.Interfaces.Parameters.NaturalDeathRate;
 
     internal interface IR
     {
-        double InitialValue { get; }
+        FhirDecimal InitialValue { get; }
 
-        double GetdRdt(
+        decimal GetdRdt(
             Iμ μ,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.RecoveryRateSymptomaticIndividuals.Iσ σ_1,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.RecoveryRateIsolatedIndividuals.Iσ σ_2,

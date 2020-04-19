@@ -14,6 +14,6 @@
         /// <summary>
         /// Gets the recruitment rate of asymptomatic individuals per day.
         /// </summary>
-        double Value { get; }
+        FhirDecimal Value { get; }
     }
 }
