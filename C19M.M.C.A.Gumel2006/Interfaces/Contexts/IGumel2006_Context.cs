@@ -16,84 +16,84 @@
         /// Parameter: d
         /// Units: Per day
         /// </summary>
-        double DiseaseInducedMortalityRate { get; }
+        FhirDecimal DiseaseInducedMortalityRate { get; }
 
         /// <summary>
         /// Gets the initial value for latent individuals.
         /// Parameter: E(0)
         /// </summary>
-        double InitialValueLatentIndividuals { get; }
+        FhirDecimal InitialValueLatentIndividuals { get; }
 
         /// <summary>
         /// Gets the initial value for infected individuals.
         /// Parameter: I(0)
         /// </summary>
-        double InitialValueInfectedIndividuals { get; }
+        FhirDecimal InitialValueInfectedIndividuals { get; }
 
         /// <summary>
         /// Gets the initial value for treated individuals.
         /// Parameter: R(0)
         /// </summary>
-        double InitialValueTreatedIndividuals { get; }
+        FhirDecimal InitialValueTreatedIndividuals { get; }
 
         /// <summary>
         /// Gets the initial value for susceptible individuals.
         /// Parameter: S(0)
         /// </summary>
-        double InitialValueSusceptibleIndividuals { get; }
+        FhirDecimal InitialValueSusceptibleIndividuals { get; }
 
         /// <summary>
         /// Gets the initial value for vaccinated individuals
         /// Parameter: V(0)
         /// </summary>
-        double InitialValueVaccinatedIndividuals { get; }
+        FhirDecimal InitialValueVaccinatedIndividuals { get; }
 
         /// <summary>
         /// Gets the rate of development of clinical symptoms.
         /// Parameter: α
         /// Units: Per day
         /// </summary>
-        double DevelopmentClinicalSymptomsRate { get; }
+        FhirDecimal DevelopmentClinicalSymptomsRate { get; }
 
         /// <summary>
         /// Gets the effective contact rate.
         /// Parameter: β
         /// Units: Per day
         /// </summary>
-        double EffectiveContactRate { get; }
+        FhirDecimal EffectiveContactRate { get; }
 
         /// <summary>
         /// Gets the recovery rate.
         /// Parameter: δ
         /// Units: Per day
         /// </summary>
-        double RecoveryRate { get; }
+        FhirDecimal RecoveryRate { get; }
 
         /// <summary>
         /// Gets the natural mortality rate.
         /// Parameter: μ
         /// Units: Per day
         /// </summary>
-        double NaturalMortalityRate { get; }
+        FhirDecimal NaturalMortalityRate { get; }
 
         /// <summary>
         /// Gets the vaccination coverage rate.
         /// Parameter: ξ
         /// Units: Per day
         /// </summary>
-        double VaccinationCoverageRate { get; }
+        FhirDecimal VaccinationCoverageRate { get; }
 
         /// <summary>
         /// Gets the recruitment rate of susceptible humans.
         /// Parameter: Π
         /// Units: Per day
         /// </summary>
-        double RecruitmentRateSusceptibleHumans { get; }
+        FhirDecimal RecruitmentRateSusceptibleHumans { get; }
 
         /// <summary>
         /// Gets the efficacy of the vaccine.
         /// Parameter: τ
         /// </summary>
-        double VaccineEfficacy { get; }
+        FhirDecimal VaccineEfficacy { get; }
     }
 }

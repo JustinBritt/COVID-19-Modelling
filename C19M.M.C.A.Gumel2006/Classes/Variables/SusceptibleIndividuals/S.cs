@@ -20,16 +20,16 @@
 
         // Constructor
         public S(
-            double initialValue)
+            FhirDecimal initialValue)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             this.InitialValue = initialValue;
         }
 
-        public double InitialValue { get; }
+        public FhirDecimal InitialValue { get; }
         
-        public double GetdSdt(
+        public decimal GetdSdt(
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.EffectiveContactRate.Iβ β,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate.Iμ μ,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccinationCoverageRate.Iξ ξ,
@@ -38,16 +38,16 @@
             double S)
         {
             return
-                Π.Value
+                Π.Value.Value.Value
                 -
-                β.Value * S * I
+                β.Value.Value.Value * (decimal)S * (decimal)I
                 -
-                ξ.Value * S
+                ξ.Value.Value.Value * (decimal)S
                 -
-                μ.Value * S;
+                μ.Value.Value.Value * (decimal)S;
         }
 
-        public double GetdSdt(
+        public decimal GetdSdt(
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.IN N,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Ip p,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iβ β,
@@ -56,9 +56,9 @@
             double S)
         {
             return
-                -β.Value * S * I
+                -β.Value.Value.Value * (decimal)S * (decimal)I
                 +
-                ε.Value * (N.Value - (S / (1 - p.Value)));
+                ε.Value.Value.Value * (N.Value.Value.Value - ((decimal)S / (1m - p.Value.Value.Value)));
         }
     }
 }

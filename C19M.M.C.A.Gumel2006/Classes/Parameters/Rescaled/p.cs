@@ -20,18 +20,17 @@
 
         // Constructor
         public p(
-            double naturalMortalityRate,
-            double vaccinationCoverageRate)
+            FhirDecimal naturalMortalityRate,
+            FhirDecimal vaccinationCoverageRate)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            this.Value =
-                vaccinationCoverageRate
+            this.Value = new FhirDecimal(
+                vaccinationCoverageRate.Value.Value
                 /
-                (vaccinationCoverageRate + naturalMortalityRate);
-
+                (vaccinationCoverageRate.Value.Value + naturalMortalityRate.Value.Value));
         }
 
-        public double Value { get; }
+        public FhirDecimal Value { get; }
     }
 }

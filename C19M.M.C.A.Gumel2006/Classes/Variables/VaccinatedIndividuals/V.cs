@@ -20,16 +20,16 @@
 
         // Constructor
         public V(
-            double initialValue)
+            FhirDecimal initialValue)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             this.InitialValue = initialValue;
         }
 
-        public double InitialValue { get; }
+        public FhirDecimal InitialValue { get; }
 
-        public double GetdVdt(
+        public decimal GetdVdt(
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.EffectiveContactRate.Iβ β,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate.Iμ μ,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccinationCoverageRate.Iξ ξ,
@@ -39,14 +39,14 @@
             double V)
         {
             return
-                ξ.Value * S
+                ξ.Value.Value.Value * (decimal)S
                 -
-                (1 - τ.Value) * β.Value * V * I
+                (1m - τ.Value.Value.Value) * β.Value.Value.Value * (decimal)V * (decimal)I
                 -
-                μ.Value * V;
+                μ.Value.Value.Value * (decimal)V;
         }
 
-        public double GetdVdt(
+        public decimal GetdVdt(
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Ip p,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iβ β,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccineEfficacy.Iτ τ,
@@ -56,9 +56,9 @@
             double V)
         {
             return
-                -(1 - τ.Value) * β.Value * V * I
+                -(1m - τ.Value.Value.Value) * β.Value.Value.Value * (decimal)V * (decimal)I
                 +
-                ε.Value * (((p.Value * S) / (1 - p.Value)) - V);
+                ε.Value.Value.Value * (((p.Value.Value.Value * (decimal)S) / (1m - p.Value.Value.Value)) - (decimal)V);
         }
     }
 }

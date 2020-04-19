@@ -20,17 +20,17 @@
 
         // Constructor
         public N(
-            double μ,
-            double Π)
+            FhirDecimal μ,
+            FhirDecimal Π)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            this.Value =
-                μ
+            this.Value = new FhirDecimal(
+                μ.Value.Value
                 /
-                Π;
+                Π.Value.Value);
         }
 
-        public double Value { get; }
+        public FhirDecimal Value { get; }
     }
 }

@@ -6,16 +6,19 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.DiseaseInducedMortalityRate;
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate;
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.RecruitmentRateSusceptibleHumans;
 
     internal interface IN
     {
-        double InitialValue { get; }
+        FhirDecimal InitialValue { get; }
 
-        double GetdNdt(
-            Id d,
+        decimal GetdNdt(
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.DiseaseInducedMortalityRate.Id d,
             Iμ μ,
             IΠ Π,
             double I,

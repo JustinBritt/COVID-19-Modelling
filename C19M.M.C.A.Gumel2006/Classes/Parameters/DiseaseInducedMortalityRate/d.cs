@@ -14,13 +14,13 @@
 
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.DiseaseInducedMortalityRate;
 
-    internal sealed class d : Id
+    internal sealed class d : C19M.M.C.A.Gumel2006.Interfaces.Parameters.DiseaseInducedMortalityRate.Id
     {
         private ILog Log { get; }
 
         // Constructor
         public d(
-            double value)
+            FhirDecimal value)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -30,6 +30,6 @@
         /// <summary>
         /// Gets the disease-induced mortality rate.
         /// </summary>
-        public double Value { get; }
+        public FhirDecimal Value { get; }
     }
 }

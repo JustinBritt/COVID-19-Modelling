@@ -6,15 +6,18 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate;
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.RecruitmentRateSusceptibleHumans;
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccinationCoverageRate;
 
     internal interface IS
     {
-        double InitialValue { get; }
+        FhirDecimal InitialValue { get; }
 
-        double GetdSdt(
+        decimal GetdSdt(
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.EffectiveContactRate.Iβ β,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate.Iμ μ,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccinationCoverageRate.Iξ ξ,
@@ -22,7 +25,7 @@
             double I,
             double S);
 
-        double GetdSdt(
+        decimal GetdSdt(
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.IN N,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Ip p,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iβ β,

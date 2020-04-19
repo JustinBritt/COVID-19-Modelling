@@ -79,7 +79,7 @@
 
             // ε
             this.ε = new C19M.M.C.A.Gumel2006.Classes.Parameters.Rescaled.ε(
-                0);
+                new FhirDecimal(0m));
 
             // τ
             this.τ = new C19M.M.C.A.Gumel2006.Classes.Parameters.VaccineEfficacy.τ(

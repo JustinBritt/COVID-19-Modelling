@@ -20,19 +20,19 @@
 
         // Constructor
         public β(
-            double diseaseInducedMortalityRate,
-            double effectiveContactRate,
-            double recoveryRate,
-            double naturalMortalityRate)
+            FhirDecimal diseaseInducedMortalityRate,
+            FhirDecimal effectiveContactRate,
+            FhirDecimal recoveryRate,
+            FhirDecimal naturalMortalityRate)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            this.Value =
-                effectiveContactRate
+            this.Value = new FhirDecimal(
+                effectiveContactRate.Value.Value
                 /
-                (diseaseInducedMortalityRate + recoveryRate + naturalMortalityRate);
+                (diseaseInducedMortalityRate.Value.Value + recoveryRate.Value.Value + naturalMortalityRate.Value.Value));
         }
 
-        public double Value { get; }
+        public FhirDecimal Value { get; }
     }
 }

@@ -6,11 +6,14 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     internal interface Iτ
     {
         /// <summary>
         /// Gets the efficacy of the vaccine.
         /// </summary>
-        double Value { get; }
+        FhirDecimal Value { get; }
     }
 }

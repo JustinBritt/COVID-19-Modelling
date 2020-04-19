@@ -20,7 +20,7 @@
 
         // Constructor
         public N(
-            double value)
+            FhirDecimal value)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -30,6 +30,6 @@
         /// <summary>
         /// Gets the equilibrium population (without disease).
         /// </summary>
-        public double Value { get; }
+        public FhirDecimal Value { get; }
     }
 }

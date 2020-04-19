@@ -23,25 +23,25 @@
 
         // Constructor
         public R(
-            double initialValue)
+            FhirDecimal initialValue)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             this.InitialValue = initialValue;
         }
 
-        public double InitialValue { get; }
+        public FhirDecimal InitialValue { get; }
 
-        public double GetdRdt(
+        public decimal GetdRdt(
             Iδ δ,
             Iμ μ,
             double I,
             double R)
         {
             return
-                δ.Value * I
+                δ.Value.Value.Value * (decimal)I
                 -
-                μ.Value * R;
+                μ.Value.Value.Value * (decimal)R;
         }
     }
 }

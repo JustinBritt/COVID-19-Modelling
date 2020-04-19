@@ -20,16 +20,16 @@
 
         // Constructor
         public I(
-            double initialValue)
+            FhirDecimal initialValue)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             this.InitialValue = initialValue;
         }
 
-        public double InitialValue { get; }
+        public FhirDecimal InitialValue { get; }
 
-        public double GetdIdt(
+        public decimal GetdIdt(
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.DiseaseInducedMortalityRate.Id d,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.DevelopmentClinicalSymptomsRate.Iα α,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.RecoveryRate.Iδ δ,
@@ -38,25 +38,25 @@
             double I)
         {
             return
-                α.Value * E
+                α.Value.Value.Value * (decimal)E
                 -
-                δ.Value * I
+                δ.Value.Value.Value * (decimal)I
                 -
-                d.Value * I
+                d.Value.Value.Value * (decimal)I
                 -
-                μ.Value * I;
+                μ.Value.Value.Value * (decimal)I;
         }
 
-        public double GetdIdt(
+        public decimal GetdIdt(
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iγ γ,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iε ε,
             double E,
             double I)
         {
             return
-                γ.Value * E
+                γ.Value.Value.Value * (decimal)E
                 -
-                (1 + ε.Value) * I;
+                (1m + ε.Value.Value.Value) * (decimal)I;
         }
     }
 }

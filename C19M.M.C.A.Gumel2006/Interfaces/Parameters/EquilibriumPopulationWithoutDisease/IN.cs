@@ -6,11 +6,14 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     internal interface IN
     {
         /// <summary>
         /// Gets the equilibrium population (without disease).
         /// </summary>
-        double Value { get; }
+        FhirDecimal Value { get; }
     }
 }

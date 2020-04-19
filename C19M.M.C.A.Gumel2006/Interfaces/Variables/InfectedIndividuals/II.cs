@@ -6,11 +6,14 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     internal interface II
     {
-        double InitialValue { get; }
+        FhirDecimal InitialValue { get; }
 
-        double GetdIdt(
+        decimal GetdIdt(
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.DiseaseInducedMortalityRate.Id d,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.DevelopmentClinicalSymptomsRate.Iα α,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.RecoveryRate.Iδ δ,
@@ -18,7 +21,7 @@
             double E,
             double I);
 
-        double GetdIdt(
+        decimal GetdIdt(
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iγ γ,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iε ε,
             double E,

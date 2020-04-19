@@ -24,28 +24,28 @@
 
         // Constructor
         public N(
-            double initialValue)
+            FhirDecimal initialValue)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             this.InitialValue = initialValue;
         }
 
-        public double InitialValue { get; }
+        public FhirDecimal InitialValue { get; }
 
-        public double GetdNdt(
-            Id d,
+        public decimal GetdNdt(
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.DiseaseInducedMortalityRate.Id d,
             Iμ μ,
             IΠ Π,
             double I,
             double N)
         {
             return
-                Π.Value
+                Π.Value.Value.Value
                 -
-                μ.Value * N
+                μ.Value.Value.Value * (decimal)N
                 -
-                d.Value * I;
+                d.Value.Value.Value * (decimal)I;
         }
     }
 }

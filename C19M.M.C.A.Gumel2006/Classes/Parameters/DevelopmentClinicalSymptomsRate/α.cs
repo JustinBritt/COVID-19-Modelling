@@ -20,7 +20,7 @@
 
         // Constructor
         public α(
-            double value)
+            FhirDecimal value)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -30,6 +30,6 @@
         /// <summary>
         /// Gets the rate of development of clinical symptoms.
         /// </summary>
-        public double Value { get; }
+        public FhirDecimal Value { get; }
     }
 }

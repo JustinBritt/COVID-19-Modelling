@@ -20,16 +20,16 @@
 
         // Constructor
         public E(
-            double initialValue)
+            FhirDecimal initialValue)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             this.InitialValue = initialValue;
         }
 
-        public double InitialValue { get; }
+        public FhirDecimal InitialValue { get; }
 
-        public double GetdEdt(
+        public decimal GetdEdt(
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.DevelopmentClinicalSymptomsRate.Iα α,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.EffectiveContactRate.Iβ β,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate.Iμ μ,
@@ -40,16 +40,16 @@
             double V)
         {
             return
-                β.Value * S * I
+                β.Value.Value.Value * (decimal)S * (decimal)I
                 +
-                (1 - τ.Value) * β.Value * V * I
+                (1m - τ.Value.Value.Value) * β.Value.Value.Value * (decimal)V * (decimal)I
                 -
-                α.Value * E
+                α.Value.Value.Value * (decimal)E
                 -
-                μ.Value * E;
+                μ.Value.Value.Value * (decimal)E;
         }
 
-        public double GetdEdt(
+        public decimal GetdEdt(
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iβ β,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iγ γ,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iε ε,
@@ -60,9 +60,9 @@
             double V)
         {
             return
-                β.Value * (S + (1 - τ.Value) * V) * I
+                β.Value.Value.Value * ((decimal)S + (1m - τ.Value.Value.Value) * (decimal)V) * (decimal)I
                 -
-                (γ.Value + ε.Value) * E;
+                (γ.Value.Value.Value + ε.Value.Value.Value) * (decimal)E;
         }
     }
 }
