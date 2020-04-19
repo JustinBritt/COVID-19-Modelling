@@ -19,10 +19,10 @@ Unless otherwise noted, these projects are programmed in C# and use the .NET Fra
 
 Paper | Folder | Virus
 ------------ | ------------- | ------------- 
-[Gumel *et al.* (2004)](https://royalsocietypublishing.org/doi/10.1098/rspb.2004.2800) | C19M.M.C.A.Gumel2004 | SARS-CoV
-[Gumel *et al.* (2006)](https://www.aimspress.com/article/10.3934/mbe.2006.3.485)      | C19M.M.C.A.Gumel2006 | SARS-CoV
-[Safi *et al.* (2010)](http://www.aimsciences.org/article/doi/10.3934/dcdsb.2010.14.209) C19M.M.C.A.Safi2010 | Communicable disease, such as SARS-CoV
-[Lee *et al.* (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7094115/)   | C19M.M.C.A.Lee2016 |  MERS-CoV 
+[Gumel *et al.* (2004)](https://royalsocietypublishing.org/doi/10.1098/rspb.2004.2800)   | C19M.M.C.A.Gumel2004 | SARS-CoV
+[Gumel *et al.* (2006)](https://www.aimspress.com/article/10.3934/mbe.2006.3.485)        | C19M.M.C.A.Gumel2006 | SARS-CoV
+[Safi *et al.* (2010)](http://www.aimsciences.org/article/doi/10.3934/dcdsb.2010.14.209) | C19M.M.C.A.Safi2010  | Communicable disease, such as SARS-CoV
+[Lee *et al.* (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7094115/)             | C19M.M.C.A.Lee2016   | MERS-CoV 
 
 ## Models - Compartmental Models - System Dynamics (C19M.M.CM.SD.*) Projects
 Folder | Description
