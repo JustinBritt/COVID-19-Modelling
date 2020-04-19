@@ -47,7 +47,25 @@
             C19M.M.C.A.Gumel2006.Interfaces.Variables.SusceptibleIndividuals.IS S,
             C19M.M.C.A.Gumel2006.Interfaces.Variables.VaccinatedIndividuals.IV V)
         {
-            throw new NotImplementedException();
+            return (T, x) =>
+            {
+                return MathNet.Numerics.LinearAlgebra.Vector<double>.Build.Dense(new[] {
+                    (double)E.GetdEdt(
+                        α,
+                        β,
+                        μ,
+                        τ,
+                        E: x[0],
+                        I: x[1],
+                        S: x[4],
+                        V: x[5]),
+                    (double)I.GetdIdt(),
+                    (double)N.GetdJdt(),
+                    (double)R.GetdQdt(),
+                    (double)S.GetdRdt(),
+                    (double)V.GetdSdt()
+                });
+            };
         }
     }
 }
