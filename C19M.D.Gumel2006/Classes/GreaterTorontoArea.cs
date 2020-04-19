@@ -32,60 +32,60 @@
         /// Parameter: d
         /// Units: Per day
         /// </summary>
-        public double DiseaseInducedMortalityRate => 0.008;
+        public FhirDecimal DiseaseInducedMortalityRate => new FhirDecimal(0.008m);
 
         /// <summary>
         /// Gets the equilibrium population (without disease).
         /// Parameter: N_o
         /// </summary>
-        public double EquilibriumPopulationWithoutDisease => 4000000;
+        public FhirDecimal EquilibriumPopulationWithoutDisease => new FhirDecimal(4000000m);
 
         /// <summary>
         /// Gets the rate of development of clinical symptoms.
         /// Parameter: α
         /// Units: Per day
         /// </summary>
-        public double DevelopmentClinicalSymptomsRate => 0.125;
+        public FhirDecimal DevelopmentClinicalSymptomsRate => new FhirDecimal(0.125m);
 
         /// <summary>
         /// Gets the effective contact rate.
         /// Parameter: β
         /// Units: Per day
         /// </summary>
-        public double EffectiveContactRate => 7.2e-8;
+        public FhirDecimal EffectiveContactRate => new FhirDecimal(7.2e-8m);
 
         /// <summary>
         /// Gets the recovery rate.
         /// Parameter: δ
         /// Units: Per day
         /// </summary>
-        public double RecoveryRate => 0.04;
+        public FhirDecimal RecoveryRate => new FhirDecimal(0.04m);
 
         /// <summary>
         /// Gets the natural mortality rate.
         /// Parameter: μ
         /// Units: Per day
         /// </summary>
-        public double NaturalMortalityRate => 3.65e-5;
+        public FhirDecimal NaturalMortalityRate => new FhirDecimal(3.65e-5m);
 
         /// <summary>
         /// Gets the vaccination coverage rate.
         /// Parameter: ξ
         /// Units: Per day
         /// </summary>
-        public double VaccinationCoverageRate => 0.14;
+        public FhirDecimal VaccinationCoverageRate => new FhirDecimal(0.14m);
 
         /// <summary>
         /// Gets the recruitment rate of susceptible humans.
         /// Parameter: Π
         /// Units: Per day
         /// </summary>
-        public double RecruitmentRateSusceptibleHumans => 146;
+        public FhirDecimal RecruitmentRateSusceptibleHumans => new FhirDecimal(146m);
 
         /// <summary>
         /// Gets the efficacy of the vaccine.
         /// Parameter: τ
         /// </summary>
-        public double VaccineEfficacy => 0.8;
+        public FhirDecimal VaccineEfficacy => new FhirDecimal(0.8m);
     }
 }
