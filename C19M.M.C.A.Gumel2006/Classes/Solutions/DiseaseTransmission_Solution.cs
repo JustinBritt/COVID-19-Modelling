@@ -33,6 +33,7 @@
         // TODO: Finish
         private Func<double, MathNet.Numerics.LinearAlgebra.Vector<double>, MathNet.Numerics.LinearAlgebra.Vector<double>> f(
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.DiseaseInducedMortalityRate.Id d,
+            C19M.M.C.A.Gumel2006.Interfaces.Parameters.DevelopmentClinicalSymptomsRate.Iα α,
             C19M.M.C.A.Gumel2006.Interfaces.Variables.LatentIndividuals.IE E,
             C19M.M.C.A.Gumel2006.Interfaces.Variables.InfectedIndividuals.II I,
             C19M.M.C.A.Gumel2006.Interfaces.Variables.TotalPopulationSize.IN N,
