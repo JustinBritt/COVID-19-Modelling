@@ -6,6 +6,9 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     /// <summary>
     /// Represents data from Hong Kong.
     /// </summary>
