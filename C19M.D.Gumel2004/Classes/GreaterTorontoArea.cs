@@ -68,14 +68,14 @@
         /// Parameter: d_1
         /// Units: Per day
         /// </summary>
-        public double DiseaseInducedDeathRateSymptomaticIndividuals => 0.0079;
+        public FhirDecimal DiseaseInducedDeathRateSymptomaticIndividuals => new FhirDecimal(0.0079m);
 
         /// <summary>
         /// Gets the disease-induced death rate for isolated individuals.
         /// Parameter: d_2
         /// Units: Per day
         /// </summary>
-        public double DiseaseInducedDeathRateIsolatedIndividuals => 0.0068;
+        public FhirDecimal DiseaseInducedDeathRateIsolatedIndividuals => new FhirDecimal(0.0068m);
 
         /// <summary>
         /// Gets the initial value for asymptomatic individuals.
