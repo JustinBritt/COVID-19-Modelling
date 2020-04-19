@@ -14,6 +14,8 @@
 
     using C19M.M.C.A.Gumel2006.Interfaces.Contexts;
 
+    using C19M.M.C.A.Gumel2006.Interfaces.Models;
+
     using C19M.M.C.A.Gumel2006.Interfaces.Solutions;
 
     internal sealed class DiseaseTransmission_Solution : IDiseaseTransmission_Solution
