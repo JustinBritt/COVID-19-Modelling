@@ -66,10 +66,10 @@
                         μ,
                         E: x[0],
                         I: x[1]),
-                    (double)N.GetdJdt(),
-                    (double)R.GetdQdt(),
-                    (double)S.GetdRdt(),
-                    (double)V.GetdSdt()
+                    (double)N.GetdNdt(),
+                    (double)R.GetdRdt(),
+                    (double)S.GetdSdt(),
+                    (double)V.GetdVdt()
                 });
             };
         }
