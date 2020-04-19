@@ -84,7 +84,14 @@
                         Π,
                         I: x[1],
                         S: x[4]),
-                    (double)V.GetdVdt()
+                    (double)V.GetdVdt(
+                        β,
+                        μ,
+                        ξ,
+                        τ,
+                        I: x[1],
+                        S: x[4],
+                        V: x[5])
                 });
             };
         }
