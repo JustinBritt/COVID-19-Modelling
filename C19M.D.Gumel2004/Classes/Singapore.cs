@@ -30,36 +30,36 @@
         /// <summary>
         /// Gets the start date.
         /// </summary>
-        public DateTime StartDate => new DateTime(2003, 2, 23);
+        public FhirDateTime StartDate => new FhirDateTime(new DateTimeOffset(new DateTime(2003, 2, 23)));
 
         /// <summary>
         /// Gets the start date for isolation and quarantine programs.
         /// </summary>
-        public DateTime IsolationQuarantineStartDate => new DateTime(2003, 3, 30);
+        public FhirDateTime IsolationQuarantineStartDate => new FhirDateTime(new DateTimeOffset(new DateTime(2003, 3, 30)));
 
         /// <summary>
         /// Gets the start date for perfect isolation.
         /// </summary>
-        public DateTime PerfectIsolationStartDate => new DateTime(2003, 4, 20);
+        public FhirDateTime PerfectIsolationStartDate => new FhirDateTime(new DateTimeOffset(new DateTime(2003, 4, 20)));
 
         /// <summary>
         /// Gets the end date.
         /// </summary>
-        public DateTime EndDate => new DateTime(2003, 9, 1);
+        public FhirDateTime EndDate => new FhirDateTime(new DateTimeOffset(new DateTime(2003, 9, 1)));
 
         /// <summary>
         /// Gets the number of days after the start date for some other date.
         /// </summary>
-        public Func<DateTime, int> NumberDaysAfterStartDate =>
+        public Func<FhirDateTime, PositiveInt> NumberDaysAfterStartDate =>
             (x) =>
             {
-                if (x.Date >= this.StartDate)
+                if (x.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date >= this.StartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date)
                 {
-                    return (int)Math.Abs(Math.Round((x - this.StartDate).TotalDays));
+                    return new PositiveInt((int)Math.Abs(Math.Round((x.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date - this.StartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date).TotalDays)));
                 }
                 else
                 {
-                    return 0;
+                    return new PositiveInt(0);
                 }
             };
 
@@ -81,66 +81,66 @@
         /// Gets the initial value for asymptomatic individuals.
         /// Parameter: E(0)
         /// </summary>
-        public double InitialValueAsymptomaticIndividuals => 6;
+        public FhirDecimal InitialValueAsymptomaticIndividuals => new FhirDecimal(6m);
 
         /// <summary>
         /// Gets the initial value for symptomatic individuals.
         /// Parameter: I(0)
         /// </summary>
-        public double InitialValueSymptomaticIndividuals => 1;
+        public FhirDecimal InitialValueSymptomaticIndividuals => new FhirDecimal(1m);
 
         /// <summary>
         /// Gets the initial value for isolated individuals.
         /// Parameter: J(0)
         /// </summary>
-        public double InitialValueIsolatedIndividuals => 0;
+        public FhirDecimal InitialValueIsolatedIndividuals => new FhirDecimal(0m);
 
         /// <summary>
         /// Gets the recruitment rate of asymptomatic individuals per day.
         /// Parameter: p
         /// Units: Per day
         /// </summary>
-        public double RecruitmentRateAsymptomaticIndividuals => 0.06;
+        public FhirDecimal RecruitmentRateAsymptomaticIndividuals => new FhirDecimal(0.06m);
 
         /// <summary>
         /// Gets the initial value for quarantined individuals.
         /// Parameter: Q(0)
         /// </summary>
-        public double InitialValueQuarantinedIndividuals => 0;
+        public FhirDecimal InitialValueQuarantinedIndividuals => new FhirDecimal(0m);
 
         /// <summary>
         /// Gets the initial value for recovered individuals.
         /// Parameter: R(0)
         /// </summary>
-        public double InitialValueRecoveredIndividuals => 0;
+        public FhirDecimal InitialValueRecoveredIndividuals => new FhirDecimal(0m);
 
         /// <summary>
         /// Gets the initial value for susceptible individuals.
         /// Parameter: S(0)
         /// </summary>
-        public double InitialValueSusceptibleIndividuals => 4000000;
+        public FhirDecimal InitialValueSusceptibleIndividuals => new FhirDecimal(4000000);
 
         /// <summary>
         /// Gets the basic transmission coefficient.
         /// Parameter: β
         /// </summary>
-        public double BasicTransmissionCoefficient => 0.21;
+        public FhirDecimal BasicTransmissionCoefficient => new FhirDecimal(0.21m);
 
         /// <summary>
         /// Gets the quarantine rate for asymptomatic individuals.
         /// Parameter: γ_1
         /// Units: Per day
         /// </summary>
-        public Func<DateTime, double> QuarantineRateAsymptomaticIndividuals =>
+        public Func<FhirDateTime, FhirDecimal> QuarantineRateAsymptomaticIndividuals =>
             (x) =>
             {
-                if (x.Date <= this.IsolationQuarantineStartDate)
+                if (x.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date <= this.IsolationQuarantineStartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date)
                 {
-                    return 0;
+                    return new FhirDecimal(0m);
                 }
                 else
                 {
-                    return 0.1;
+                    return new FhirDecimal(0.1m);
                 }
             };
 
@@ -149,16 +149,16 @@
         /// Parameter: γ_2
         /// Units: Per day
         /// </summary>
-        public Func<DateTime, double> IsolationRateSymptomaticIndividuals =>
+        public Func<FhirDateTime, FhirDecimal> IsolationRateSymptomaticIndividuals =>
             (x) =>
             {
-                if (x.Date <= this.IsolationQuarantineStartDate)
+                if (x.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date <= this.IsolationQuarantineStartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date)
                 {
-                    return 0;
+                    return new FhirDecimal(0m);
                 }
                 else
                 {
-                    return 0.5;
+                    return new FhirDecimal(0.5m);
                 }
             };
 
@@ -166,22 +166,22 @@
         /// Gets the transmission coefficient modification factor for asymptomatic individuals.
         /// Parameter: ε_E
         /// </summary>
-        public double TransmissionCoefficientModificationFactorAsymptomaticIndividuals => 0;
+        public FhirDecimal TransmissionCoefficientModificationFactorAsymptomaticIndividuals => new FhirDecimal(0m);
 
         /// <summary>
         /// Gets the transmission coefficient modification factor for isolated individuals.
         /// Parameter: ε_J
         /// </summary>
-        public Func<DateTime, double> TransmissionCoefficientModificationFactorIsolatedIndividuals =>
+        public Func<FhirDateTime, FhirDecimal> TransmissionCoefficientModificationFactorIsolatedIndividuals =>
             (x) =>
             {
-                if (x.Date <= this.PerfectIsolationStartDate)
+                if (x.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date <= this.PerfectIsolationStartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date)
                 {
-                    return 0.2;
+                    return new FhirDecimal(0.2m);
                 }
                 else
                 {
-                    return 0;
+                    return new FhirDecimal(0m);
                 }
             };
 
@@ -189,10 +189,10 @@
         /// Gets the transmission coefficient modification factor for quarantined individuals.
         /// Parameter: ε_Q
         /// </summary>
-        public Func<DateTime, double> TransmissionCoefficientModificationFactorQuarantinedIndividuals =>
+        public Func<FhirDateTime, FhirDecimal> TransmissionCoefficientModificationFactorQuarantinedIndividuals =>
             (x) =>
             {
-                return 0;
+                return new FhirDecimal(0m);
             };
 
         /// <summary>
@@ -200,41 +200,41 @@
         /// Parameter: κ_1
         /// Units: Per day
         /// </summary>
-        public double DevelopmentClinicalSymptomsRateAsymptomaticIndividuals => 0.1;
+        public FhirDecimal DevelopmentClinicalSymptomsRateAsymptomaticIndividuals => new FhirDecimal(0.1m);
 
         /// <summary>
         /// Gets the rate at which quarantined individuals develop clinical symptoms.
         /// Parameter: κ_2
         /// Units: Per day
         /// </summary>
-        public double DevelopmentClinicalSymptomsRateQuarantinedIndividuals => 0.125;
+        public FhirDecimal DevelopmentClinicalSymptomsRateQuarantinedIndividuals => new FhirDecimal(0.125m);
 
         /// <summary>
         /// Gets the natural death rate.
         /// Parameter: μ
         /// Units: Per day
         /// </summary>
-        public double NaturalDeathRate => 0.000034;
+        public FhirDecimal NaturalDeathRate => new FhirDecimal(0.000034m);
 
         /// <summary>
         /// Gets the net inflow rate of susceptible individuals per unit time.
         /// Parameter: Π
         /// Units: Per day
         /// </summary>
-        public double NetInflowRateSusceptibleIndividuals => 136;
+        public FhirDecimal NetInflowRateSusceptibleIndividuals => new FhirDecimal(136m);
 
         /// <summary>
         /// Gets the recovery rate for symptomatic individuals.
         /// Parameter: σ_1
         /// Units: Per day
         /// </summary>
-        public double RecoveryRateSymptomaticIndividuals => 0.0337;
+        public FhirDecimal RecoveryRateSymptomaticIndividuals => new FhirDecimal(0.0337m);
 
         /// <summary>
         /// Gets the recovery rate for isolated individuals.
         /// Parameter: σ_2
         /// Units: Per day
         /// </summary>
-        public double RecoveryRateIsolatedIndividuals => 0.0386;
+        public FhirDecimal RecoveryRateIsolatedIndividuals => new FhirDecimal(0.0386m);
     }
 }
