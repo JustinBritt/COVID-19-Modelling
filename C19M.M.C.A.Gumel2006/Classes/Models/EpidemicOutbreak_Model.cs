@@ -9,6 +9,9 @@
     // Logging
     using log4net;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     using C19M.M.C.A.Gumel2006.Classes.Parameters.DevelopmentClinicalSymptomsRate;
     using C19M.M.C.A.Gumel2006.Classes.Parameters.DiseaseInducedMortalityRate;
     using C19M.M.C.A.Gumel2006.Classes.Parameters.EffectiveContactRate;
