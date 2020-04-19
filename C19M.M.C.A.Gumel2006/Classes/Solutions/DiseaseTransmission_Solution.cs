@@ -77,7 +77,13 @@
                         μ,
                         I: x[1],
                         R: x[3]),
-                    (double)S.GetdSdt(),
+                    (double)S.GetdSdt(
+                        β,
+                        μ,
+                        ξ,
+                        Π,
+                        I: x[1],
+                        S: x[4]),
                     (double)V.GetdVdt()
                 });
             };
