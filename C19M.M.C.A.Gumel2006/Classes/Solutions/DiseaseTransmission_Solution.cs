@@ -27,7 +27,8 @@
         }
 
         // TODO: Finish
-        public MathNet.Numerics.LinearAlgebra.Vector<double>[] Solve()
+        public MathNet.Numerics.LinearAlgebra.Vector<double>[] Solve(
+            IGumel2006_Context Gumel2006_Context)
         {
             throw new NotImplementedException();
         }
