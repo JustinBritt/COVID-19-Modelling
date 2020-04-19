@@ -12,6 +12,8 @@
     // Hl7
     using Hl7.Fhir.Model;
 
+    using C19M.M.C.A.Gumel2006.Interfaces.Contexts;
+
     using C19M.M.C.A.Gumel2006.Interfaces.Solutions;
 
     internal sealed class DiseaseTransmission_Solution : IDiseaseTransmission_Solution
