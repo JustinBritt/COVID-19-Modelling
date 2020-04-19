@@ -30,7 +30,8 @@
         public MathNet.Numerics.LinearAlgebra.Vector<double>[] Solve(
             IGumel2006_Context Gumel2006_Context)
         {
-            throw new NotImplementedException();
+            IDiseaseTransmission_Model DiseaseTransmission_Model = new C19M.M.C.A.Gumel2006.Classes.Models.DiseaseTransmission_Model(
+                Gumel2006_Context);
         }
 
         private Func<double, MathNet.Numerics.LinearAlgebra.Vector<double>, MathNet.Numerics.LinearAlgebra.Vector<double>> f(
