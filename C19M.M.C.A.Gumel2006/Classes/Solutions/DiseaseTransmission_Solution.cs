@@ -66,7 +66,12 @@
                         μ,
                         E: x[0],
                         I: x[1]),
-                    (double)N.GetdNdt(),
+                    (double)N.GetdNdt(
+                        d,
+                        μ,
+                        Π,
+                        I: x[1],
+                        N: x[2]),
                     (double)R.GetdRdt(),
                     (double)S.GetdSdt(),
                     (double)V.GetdVdt()
