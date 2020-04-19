@@ -51,24 +51,24 @@
 
             export.Solve();
 
-            ImmutableList<System.Tuple<System.DateTime, FhirDecimal>> E = export.DayAsymptomaticIndividuals;
+            ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> E = export.DayAsymptomaticIndividuals;
 
-            ImmutableList<System.Tuple<System.DateTime, FhirDecimal>> I = export.DaySymptomaticIndividuals;
+            ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> I = export.DaySymptomaticIndividuals;
 
-            ImmutableList<System.Tuple<System.DateTime, FhirDecimal>> J = export.DayIsolatedIndividuals;
+            ImmutableList<System.Tuple<FhirDateTime, FhirDecimal >> J = export.DayIsolatedIndividuals;
 
-            ImmutableList<System.Tuple<System.DateTime, FhirDecimal>> Q = export.DayQuarantinedIndividuals;
+            ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Q = export.DayQuarantinedIndividuals;
 
-            ImmutableList<System.Tuple<System.DateTime, FhirDecimal>> R = export.DayRecoveredIndividuals;
+            ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> R = export.DayRecoveredIndividuals;
 
-            ImmutableList<System.Tuple<System.DateTime, FhirDecimal>> S = export.DaySusceptibleIndividuals;
+            ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> S = export.DaySusceptibleIndividuals;
 
             var dayCumulativeProbableCases = export.DayCumulativeProbableCases;
 
-            for (DateTime i = HK.StartDate; i <= HK.EndDate; i = i.AddDays(1))
+            for (DateTime i = HK.StartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date; i <= HK.EndDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date; i = i.AddDays(1))
             {
                 System.Diagnostics.Debug.WriteLine(
-                    dayCumulativeProbableCases.Where(w => w.Item1 == i).Select(w => w.Item2.Value.Value).SingleOrDefault());
+                    dayCumulativeProbableCases.Where(w => w.Item1.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date == i).Select(w => w.Item2.Value.Value).SingleOrDefault());
             }
         }
     }

@@ -11,7 +11,7 @@
 
     internal interface IDayDiseaseInducedDeaths_ResultElement
     {
-        DateTime t_IndexElement { get; }
+        FhirDateTime t_IndexElement { get; }
 
         /// <summary>
         /// Gets the number of disease-induced deaths.

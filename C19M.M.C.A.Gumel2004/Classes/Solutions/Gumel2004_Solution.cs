@@ -10,6 +10,9 @@
     // Logging
     using log4net;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     using C19M.M.C.A.Gumel2004.Interfaces.Contexts;
 
     using C19M.M.C.A.Gumel2004.Interfaces.Indices;
@@ -210,7 +213,9 @@
             {
                 return MathNet.Numerics.LinearAlgebra.Vector<double>.Build.Dense(new[] {
                     (double)E.GetdEdt(
-                        t.StartDate.AddDays(T),
+                        new FhirDateTime(
+                            new DateTimeOffset(
+                                t.StartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date.AddDays(T))),
                         p,
                         β,
                         γ_1,
@@ -227,7 +232,9 @@
                         Q: x[3],
                         S: x[5]),
                     (double)I.GetdIdt(
-                        t.StartDate.AddDays(T),
+                        new FhirDateTime(
+                            new DateTimeOffset(
+                                t.StartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date.AddDays(T))),
                         d_1,
                         γ_2,
                         κ_1,
@@ -236,7 +243,9 @@
                         E: x[0],
                         I: x[1]),
                     (double)J.GetdJdt(
-                        t.StartDate.AddDays(T),
+                        new FhirDateTime(
+                            new DateTimeOffset(
+                                t.StartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date.AddDays(T))),
                         d_2,
                         γ_2,
                         κ_2,
@@ -246,7 +255,9 @@
                         J: x[2],
                         Q: x[3]),
                     (double)Q.GetdQdt(
-                        t.StartDate.AddDays(T),
+                        new FhirDateTime(
+                            new DateTimeOffset(
+                                t.StartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date.AddDays(T))),
                         γ_1,
                         κ_2,
                         μ,
@@ -260,7 +271,9 @@
                         J: x[2],
                         R: x[4]),
                     (double)S.GetdSdt(
-                        t.StartDate.AddDays(T),
+                        new FhirDateTime(
+                            new DateTimeOffset(
+                                t.StartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date.AddDays(T))),
                         β,
                         ε_E,
                         ε_J,

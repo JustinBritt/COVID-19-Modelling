@@ -7,6 +7,9 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     using C19M.M.C.A.Gumel2004.Interfaces.ResultElements.DaySymptomaticIndividuals;
 
     internal interface II
@@ -14,6 +17,6 @@
         ImmutableList<II_ResultElement> Value { get; }
 
         decimal GetElementAtAsdecimal(
-            DateTime t_IndexElement);
+            FhirDateTime t_IndexElement);
     }
 }

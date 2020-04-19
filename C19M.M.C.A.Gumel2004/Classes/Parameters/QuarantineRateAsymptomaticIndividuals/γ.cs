@@ -20,7 +20,7 @@
 
         // Constructor
         public γ(
-            Func<DateTime, FhirDecimal> value)
+            Func<FhirDateTime, FhirDecimal> value)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -30,6 +30,6 @@
         /// <summary>
         /// Gets the quarantine rate for asymptomatic individuals.
         /// </summary>
-        public Func<DateTime, FhirDecimal> Value { get; }
+        public Func<FhirDateTime, FhirDecimal> Value { get; }
     }
 }

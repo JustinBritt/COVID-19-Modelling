@@ -31,7 +31,7 @@
         }
 
         public IDayCumulativeProbableCases_ResultElement Calculate(
-            DateTime t_IndexElement,
+            FhirDateTime t_IndexElement,
             It t,
             IDayProbableCases dayProbableCases)
         {
@@ -39,7 +39,7 @@
                 t_IndexElement,
                 new FhirDecimal(
                     t.Value
-                    .Where(w => w >= t.StartDate && w <= t_IndexElement)
+                    .Where(w => w.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date >= t.StartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date && w.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date <= t_IndexElement.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date)
                     .Select(w => dayProbableCases.GetElementAtAsdecimal(w))
                     .Max()));
         }

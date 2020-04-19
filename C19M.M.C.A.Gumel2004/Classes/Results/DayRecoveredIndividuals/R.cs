@@ -33,10 +33,10 @@
         public ImmutableList<IR_ResultElement> Value { get; }
 
         public decimal GetElementAtAsdecimal(
-            DateTime t_IndexElement)
+            FhirDateTime t_IndexElement)
         {
             return this.Value
-                .Where(x => x.t_IndexElement == t_IndexElement)
+                .Where(x => x.t_IndexElement.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date == t_IndexElement.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date)
                 .Select(x => x.Value.Value.Value)
                 .SingleOrDefault();
         }

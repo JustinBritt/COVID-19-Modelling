@@ -32,7 +32,7 @@
         public FhirDecimal InitialValue { get; }
 
         public decimal GetdJdt(
-            DateTime t_IndexElement,
+            FhirDateTime t_IndexElement,
             Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals.Id d_2,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.IsolationRateSymptomaticIndividuals.Iγ γ_2,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.DevelopmentClinicalSymptomsRateQuarantinedIndividuals.Iκ κ_2,

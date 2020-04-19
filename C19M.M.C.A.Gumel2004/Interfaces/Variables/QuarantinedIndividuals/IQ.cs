@@ -16,7 +16,7 @@
         FhirDecimal InitialValue { get; }
 
         decimal GetdQdt(
-            DateTime t_IndexElement,
+            FhirDateTime t_IndexElement,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.QuarantineRateAsymptomaticIndividuals.Iγ γ_1,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.DevelopmentClinicalSymptomsRateQuarantinedIndividuals.Iκ κ_2,
             Iμ μ,

@@ -29,7 +29,7 @@
         }
 
         public II_ResultElement Calculate(
-            DateTime t_IndexElement,
+            FhirDateTime t_IndexElement,
             It t,
             MathNet.Numerics.LinearAlgebra.Vector<double>[] RungeKuttaResults)
         {

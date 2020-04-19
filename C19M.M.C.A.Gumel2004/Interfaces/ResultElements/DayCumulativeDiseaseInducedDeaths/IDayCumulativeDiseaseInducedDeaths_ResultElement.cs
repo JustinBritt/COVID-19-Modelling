@@ -11,7 +11,7 @@
 
     internal interface IDayCumulativeDiseaseInducedDeaths_ResultElement
     {
-        DateTime t_IndexElement { get; }
+        FhirDateTime t_IndexElement { get; }
 
         /// <summary>
         /// Gets the cumulative number of disease-induced deaths.

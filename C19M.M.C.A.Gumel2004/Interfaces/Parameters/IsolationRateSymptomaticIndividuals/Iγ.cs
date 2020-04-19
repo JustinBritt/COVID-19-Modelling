@@ -14,6 +14,6 @@
         /// <summary>
         /// Gets the isolation rate for symptomatic individuals.
         /// </summary>
-        Func<DateTime, FhirDecimal> Value { get; }
+        Func<FhirDateTime, FhirDecimal> Value { get; }
     }
 }

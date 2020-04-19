@@ -14,6 +14,6 @@
         /// <summary>
         /// Gets the transmission coefficient modification factor for quarantined individuals.
         /// </summary>
-        Func<DateTime, FhirDecimal> Value { get; }
+        Func<FhirDateTime, FhirDecimal> Value { get; }
     }
 }

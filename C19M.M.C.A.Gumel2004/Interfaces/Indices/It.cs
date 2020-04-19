@@ -12,12 +12,12 @@
 
     internal interface It
     {
-        DateTime EndDate { get; }
+        FhirDateTime EndDate { get; }
 
-        Func<DateTime, PositiveInt> NumberDaysAfterStartDate { get; }
+        Func<FhirDateTime, PositiveInt> NumberDaysAfterStartDate { get; }
 
-        DateTime StartDate { get; }
+        FhirDateTime StartDate { get; }
 
-        ImmutableList<DateTime> Value { get; }
+        ImmutableList<FhirDateTime> Value { get; }
     }
 }

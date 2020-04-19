@@ -30,7 +30,7 @@
         }
 
         public IDayDiseaseInducedDeaths_ResultElement Calculate(
-            DateTime t_IndexElement,
+            FhirDateTime t_IndexElement,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals.Id d_2,
             II I,

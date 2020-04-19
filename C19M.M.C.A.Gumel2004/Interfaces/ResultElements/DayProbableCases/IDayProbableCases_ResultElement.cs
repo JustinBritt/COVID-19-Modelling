@@ -11,7 +11,7 @@
 
     internal interface IDayProbableCases_ResultElement
     {
-        DateTime t_IndexElement { get; }
+        FhirDateTime t_IndexElement { get; }
 
         /// <summary>
         /// Gets the number of probable cases.

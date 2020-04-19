@@ -12,25 +12,25 @@
 
     public interface IGumel2004_Export
     {
-        ImmutableList<Tuple<DateTime, FhirDecimal>> DayCumulativeDiseaseInducedDeaths { get; }
+        ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayCumulativeDiseaseInducedDeaths { get; }
 
-        ImmutableList<Tuple<DateTime, FhirDecimal>> DayCumulativeProbableCases { get; }
+        ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayCumulativeProbableCases { get; }
 
-        ImmutableList<Tuple<DateTime, FhirDecimal>> DayDiseaseInducedDeaths { get; }
+        ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayDiseaseInducedDeaths { get; }
 
-        ImmutableList<Tuple<DateTime, FhirDecimal>> DayProbableCases { get; }
+        ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayProbableCases { get; }
 
-        ImmutableList<Tuple<DateTime, FhirDecimal>> DayAsymptomaticIndividuals { get; }
+        ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayAsymptomaticIndividuals { get; }
 
-        ImmutableList<Tuple<DateTime, FhirDecimal>> DaySymptomaticIndividuals { get; }
+        ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DaySymptomaticIndividuals { get; }
 
-        ImmutableList<Tuple<DateTime, FhirDecimal>> DayIsolatedIndividuals { get; }
+        ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayIsolatedIndividuals { get; }
 
-        ImmutableList<Tuple<DateTime, FhirDecimal>> DayQuarantinedIndividuals { get; }
+        ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayQuarantinedIndividuals { get; }
 
-        ImmutableList<Tuple<DateTime, FhirDecimal>> DayRecoveredIndividuals { get; }
+        ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayRecoveredIndividuals { get; }
 
-        ImmutableList<Tuple<DateTime, FhirDecimal>> DaySusceptibleIndividuals { get; }
+        ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DaySusceptibleIndividuals { get; }
 
         void Solve();
     }

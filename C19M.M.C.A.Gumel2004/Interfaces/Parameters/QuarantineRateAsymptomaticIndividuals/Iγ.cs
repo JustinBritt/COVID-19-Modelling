@@ -14,6 +14,6 @@
         /// <summary>
         /// Gets the quarantine rate for asymptomatic individuals.
         /// </summary>
-        Func<DateTime, FhirDecimal> Value { get; }
+        Func<FhirDateTime, FhirDecimal> Value { get; }
     }
 }

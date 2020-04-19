@@ -20,9 +20,9 @@
 
         // Constructor
         public Gumel2004_Context(
-            DateTime endDate,
-            Func<DateTime, PositiveInt> numberDaysAfterStartDate,
-            DateTime startDate,
+            FhirDateTime endDate,
+            Func<FhirDateTime, PositiveInt> numberDaysAfterStartDate,
+            FhirDateTime startDate,
             FhirDecimal diseaseInducedDeathRateSymptomaticIndividuals,
             FhirDecimal diseaseInducedDeathRateIsolatedIndividuals,
             FhirDecimal initialValueAsymptomaticIndividuals,
@@ -35,11 +35,11 @@
             FhirDecimal controlReproductionNumber,
             FhirDecimal initialValueSusceptibleIndividuals,
             FhirDecimal basicTransmissionCoefficient,
-            Func<DateTime, FhirDecimal> quarantineRateAsymptomaticIndividuals,
-            Func<DateTime, FhirDecimal> isolationRateSymptomaticIndividuals,
+            Func<FhirDateTime, FhirDecimal> quarantineRateAsymptomaticIndividuals,
+            Func<FhirDateTime, FhirDecimal> isolationRateSymptomaticIndividuals,
             FhirDecimal transmissionCoefficientModificationFactorAsymptomaticIndividuals,
-            Func<DateTime, FhirDecimal> transmissionCoefficientModificationFactorIsolatedIndividuals,
-            Func<DateTime, FhirDecimal> transmissionCoefficientModificationFactorQuarantinedIndividuals,
+            Func<FhirDateTime, FhirDecimal> transmissionCoefficientModificationFactorIsolatedIndividuals,
+            Func<FhirDateTime, FhirDecimal> transmissionCoefficientModificationFactorQuarantinedIndividuals,
             FhirDecimal developmentClinicalSymptomsRateAsymptomaticIndividuals,
             FhirDecimal developmentClinicalSymptomsRateQuarantinedIndividuals,
             FhirDecimal naturalDeathRate,
@@ -106,19 +106,19 @@
         /// Gets the end date.
         /// Index: t
         /// </summary>
-        public DateTime EndDate { get; }
+        public FhirDateTime EndDate { get; }
 
         /// <summary>
         /// Gets the number of days after the start date.
         /// Index: t
         /// </summary>
-        public Func<DateTime, PositiveInt> NumberDaysAfterStartDate { get; }
+        public Func<FhirDateTime, PositiveInt> NumberDaysAfterStartDate { get; }
 
         /// <summary>
         /// Gets the start date.
         /// Index: t
         /// </summary>
-        public DateTime StartDate { get; }
+        public FhirDateTime StartDate { get; }
 
         /// <summary>
         /// Gets the disease-induced death rate for symptomatic individuals.
@@ -196,13 +196,13 @@
         /// Gets the quarantine rate for asymptomatic individuals.
         /// Parameter: γ_1
         /// </summary>
-        public Func<DateTime, FhirDecimal> QuarantineRateAsymptomaticIndividuals { get; }
+        public Func<FhirDateTime, FhirDecimal> QuarantineRateAsymptomaticIndividuals { get; }
 
         /// <summary>
         /// Gets the isolation rate for symptomatic individuals.
         /// Parameter: γ_2
         /// </summary>
-        public Func<DateTime, FhirDecimal> IsolationRateSymptomaticIndividuals { get; }
+        public Func<FhirDateTime, FhirDecimal> IsolationRateSymptomaticIndividuals { get; }
 
         /// <summary>
         /// Gets the transmission coefficient modification factor for asymptomatic individuals.
@@ -214,13 +214,13 @@
         /// Gets the transmission coefficient modification factor for isolated individuals.
         /// Parameter: ε_J
         /// </summary>
-        public Func<DateTime, FhirDecimal> TransmissionCoefficientModificationFactorIsolatedIndividuals { get; }
+        public Func<FhirDateTime, FhirDecimal> TransmissionCoefficientModificationFactorIsolatedIndividuals { get; }
 
         /// <summary>
         /// Gets the transmission coefficient modification factor for quarantined individuals.
         /// Parameter: ε_Q
         /// </summary>
-        public Func<DateTime, FhirDecimal> TransmissionCoefficientModificationFactorQuarantinedIndividuals { get; }
+        public Func<FhirDateTime, FhirDecimal> TransmissionCoefficientModificationFactorQuarantinedIndividuals { get; }
 
         /// <summary>
         /// Gets the rate at which asymptomatic individuals develop clinical symptoms.

@@ -20,7 +20,7 @@
         FhirDecimal InitialValue { get; }
 
         decimal GetdEdt(
-            DateTime t_IndexElement,
+            FhirDateTime t_IndexElement,
             Ip p,
             Iβ β,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.QuarantineRateAsymptomaticIndividuals.Iγ γ_1,

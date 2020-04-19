@@ -20,7 +20,7 @@
 
         // Constructor
         public I_ResultElement(
-            DateTime t_IndexElement,
+            FhirDateTime t_IndexElement,
             FhirDecimal value)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
@@ -30,7 +30,7 @@
             this.Value = value;
         }
 
-        public DateTime t_IndexElement { get; }
+        public FhirDateTime t_IndexElement { get; }
 
         public FhirDecimal Value { get; }
     }

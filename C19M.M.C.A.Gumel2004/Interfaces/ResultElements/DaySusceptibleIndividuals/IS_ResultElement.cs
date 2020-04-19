@@ -11,7 +11,7 @@
 
     internal interface IS_ResultElement
     {
-        DateTime t_IndexElement { get; }
+        FhirDateTime t_IndexElement { get; }
 
         FhirDecimal Value { get; }
     }

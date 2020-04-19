@@ -31,7 +31,7 @@
         }
 
         public IDayCumulativeDiseaseInducedDeaths_ResultElement Calculate(
-            DateTime t_IndexElement,
+            FhirDateTime t_IndexElement,
             It t,
             IDayDiseaseInducedDeaths dayDiseaseInducedDeaths)
         {

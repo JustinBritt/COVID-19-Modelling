@@ -34,7 +34,7 @@
         public FhirDecimal InitialValue { get; }
 
         public decimal GetdSdt(
-            DateTime t_IndexElement,
+            FhirDateTime t_IndexElement,
             Iβ β,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorAsymptomaticIndividuals.Iε ε_E,
             C19M.M.C.A.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorIsolatedIndividuals.Iε ε_J,

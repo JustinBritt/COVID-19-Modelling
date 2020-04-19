@@ -30,32 +30,32 @@
         /// <summary>
         /// Gets the start date.
         /// </summary>
-        public DateTime StartDate => new DateTime(2003, 3, 1);
+        public FhirDateTime StartDate => new FhirDateTime(new DateTimeOffset(new DateTime(2003, 3, 1)));
 
         /// <summary>
         /// Gets the start date for isolation and quarantine programs.
         /// </summary>
-        public DateTime IsolationQuarantineStartDate => new DateTime(2003, 3, 30);
+        public FhirDateTime IsolationQuarantineStartDate => new FhirDateTime(new DateTimeOffset(new DateTime(2003, 3, 30)));
 
         /// <summary>
         /// Gets the start date for perfect isolation.
         /// </summary>
-        public DateTime PerfectIsolationStartDate => new DateTime(2003, 4, 20);
+        public FhirDateTime PerfectIsolationStartDate => new FhirDateTime(new DateTimeOffset(new DateTime(2003, 4, 20)));
 
         /// <summary>
         /// Gets the end date.
         /// </summary>
-        public DateTime EndDate => new DateTime(2003, 9, 1);
+        public FhirDateTime EndDate => new FhirDateTime(new DateTimeOffset(new DateTime(2003, 9, 1)));
 
         /// <summary>
         /// Gets the number of days after the start date for some other date.
         /// </summary>
-        public Func<DateTime, PositiveInt> NumberDaysAfterStartDate =>
+        public Func<FhirDateTime, PositiveInt> NumberDaysAfterStartDate =>
             (x) =>
             {
-                if (x.Date >= this.StartDate)
+                if (x.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date >= this.StartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date)
                 {
-                    return new PositiveInt((int)Math.Abs(Math.Round((x - this.StartDate).TotalDays)));
+                    return new PositiveInt((int)Math.Abs(Math.Round((x.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date - this.StartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date).TotalDays)));
                 }
                 else
                 {
@@ -131,10 +131,10 @@
         /// Parameter: γ_1
         /// Units: Per day
         /// </summary>
-        public Func<DateTime, FhirDecimal> QuarantineRateAsymptomaticIndividuals =>
+        public Func<FhirDateTime, FhirDecimal> QuarantineRateAsymptomaticIndividuals =>
             (x) =>
             {
-                if (x.Date <= this.IsolationQuarantineStartDate)
+                if (x.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date <= this.IsolationQuarantineStartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date)
                 {
                     return new FhirDecimal(0m);
                 }
@@ -149,10 +149,10 @@
         /// Parameter: γ_2
         /// Units: Per day
         /// </summary>
-        public Func<DateTime, FhirDecimal> IsolationRateSymptomaticIndividuals =>
+        public Func<FhirDateTime, FhirDecimal> IsolationRateSymptomaticIndividuals =>
             (x) =>
             {
-                if (x.Date <= this.IsolationQuarantineStartDate)
+                if (x.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date <= this.IsolationQuarantineStartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date)
                 {
                     return new FhirDecimal(0m);
                 }
@@ -172,10 +172,10 @@
         /// Gets the transmission coefficient modification factor for isolated individuals.
         /// Parameter: ε_J
         /// </summary>
-        public Func<DateTime, FhirDecimal> TransmissionCoefficientModificationFactorIsolatedIndividuals =>
+        public Func<FhirDateTime, FhirDecimal> TransmissionCoefficientModificationFactorIsolatedIndividuals =>
             (x) =>
             {
-                if (x.Date <= this.PerfectIsolationStartDate)
+                if (x.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date <= this.PerfectIsolationStartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date)
                 {
                     return new FhirDecimal(0.84m);
                 }
@@ -189,7 +189,7 @@
         /// Gets the transmission coefficient modification factor for quarantined individuals.
         /// Parameter: ε_Q
         /// </summary>
-        public Func<DateTime, FhirDecimal> TransmissionCoefficientModificationFactorQuarantinedIndividuals =>
+        public Func<FhirDateTime, FhirDecimal> TransmissionCoefficientModificationFactorQuarantinedIndividuals =>
             (x) =>
             {
                 return new FhirDecimal(0m);

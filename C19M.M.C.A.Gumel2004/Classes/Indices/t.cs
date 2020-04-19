@@ -21,9 +21,9 @@
 
         // Constructor
         public t(
-            DateTime endDate,
-            Func<DateTime, PositiveInt> numberDaysAfterStartDate,
-            DateTime startDate)
+            FhirDateTime endDate,
+            Func<FhirDateTime, PositiveInt> numberDaysAfterStartDate,
+            FhirDateTime startDate)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -33,23 +33,25 @@
 
             this.StartDate = startDate;
 
-            ImmutableList<DateTime>.Builder builder = ImmutableList.CreateBuilder<DateTime>();
+            ImmutableList<FhirDateTime>.Builder builder = ImmutableList.CreateBuilder<FhirDateTime>();
 
-            for (DateTime i = startDate; i <= endDate; i = i.AddDays(1))
+            for (DateTime i = startDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date; i <= endDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date; i = i.AddDays(1))
             {
                 builder.Add(
-                    i);
+                    new FhirDateTime(
+                        new DateTimeOffset(
+                            i)));
             }
 
             this.Value = builder.ToImmutableList();
         }
 
-        public DateTime EndDate { get; }
+        public FhirDateTime EndDate { get; }
 
-        public Func<DateTime, PositiveInt> NumberDaysAfterStartDate { get; }
+        public Func<FhirDateTime, PositiveInt> NumberDaysAfterStartDate { get; }
 
-        public DateTime StartDate { get; }
+        public FhirDateTime StartDate { get; }
 
-        public ImmutableList<DateTime> Value { get; }
+        public ImmutableList<FhirDateTime> Value { get; }
     }
 }

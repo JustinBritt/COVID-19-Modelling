@@ -32,7 +32,7 @@
         }
 
         public IDayProbableCases_ResultElement Calculate(
-            DateTime t_IndexElement,
+            FhirDateTime t_IndexElement,
             II I,
             IJ J,
             IQ Q,
