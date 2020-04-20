@@ -55,7 +55,7 @@
 
             ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> I = export.DaySymptomaticIndividuals;
 
-            ImmutableList<System.Tuple<FhirDateTime, FhirDecimal >> J = export.DayIsolatedIndividuals;
+            ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> J = export.DayIsolatedIndividuals;
 
             ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Q = export.DayQuarantinedIndividuals;
 
