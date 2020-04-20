@@ -29,7 +29,7 @@
         }
 
         // TODO: Finish
-        public MathNet.Numerics.LinearAlgebra.Vector<double>[] Solve(
+        public void Solve(
             IGumel2006_Context Gumel2006_Context)
         {
             IDiseaseTransmission_Model diseaseTransmission_Model = new C19M.M.C.A.Gumel2006.Classes.Models.DiseaseTransmission_Model(
