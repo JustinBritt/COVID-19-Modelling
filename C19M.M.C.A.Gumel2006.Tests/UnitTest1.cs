@@ -1,6 +1,10 @@
 ﻿namespace C19M.M.C.A.Gumel2006.Tests
 {
     using System;
+    using System.Collections.Generic;
+    using System.Collections.Immutable;
+    using System.Linq;
+
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     [TestClass]
