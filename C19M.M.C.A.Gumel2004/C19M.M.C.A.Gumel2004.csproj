@@ -269,6 +269,7 @@
     <Folder Include="Interfaces_Factories\Parameters\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="log4net.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
