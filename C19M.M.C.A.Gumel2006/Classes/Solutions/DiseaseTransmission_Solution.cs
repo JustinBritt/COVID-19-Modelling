@@ -35,7 +35,33 @@
             IDiseaseTransmission_Model diseaseTransmission_Model = new C19M.M.C.A.Gumel2006.Classes.Models.DiseaseTransmission_Model(
                 Gumel2006_Context);
 
-            throw new NotImplementedException();
+            MathNet.Numerics.LinearAlgebra.Vector<double>[] results =
+                MathNet.Numerics.OdeSolvers.RungeKutta.FourthOrder(
+                    MathNet.Numerics.LinearAlgebra.Vector<double>.Build.Dense(new[] {
+                        (double)diseaseTransmission_Model.E.InitialValue.Value.Value,
+                        (double)diseaseTransmission_Model.I.InitialValue.Value.Value,
+                        (double)diseaseTransmission_Model.N.InitialValue.Value.Value,
+                        (double)diseaseTransmission_Model.R.InitialValue.Value.Value,
+                        (double)diseaseTransmission_Model.S.InitialValue.Value.Value,
+                        (double)diseaseTransmission_Model.V.InitialValue.Value.Value,}),
+                    diseaseTransmission_Model.t.NumberDaysAfterStartDate(diseaseTransmission_Model.t.StartDate).Value.Value,
+                    diseaseTransmission_Model.t.NumberDaysAfterStartDate(diseaseTransmission_Model.t.EndDate).Value.Value,
+                    diseaseTransmission_Model.t.NumberDaysAfterStartDate(diseaseTransmission_Model.t.EndDate).Value.Value - diseaseTransmission_Model.t.NumberDaysAfterStartDate(diseaseTransmission_Model.t.StartDate).Value.Value + 1,
+                    this.f(
+                        diseaseTransmission_Model.d,
+                        diseaseTransmission_Model.α,
+                        diseaseTransmission_Model.β,
+                        diseaseTransmission_Model.δ,
+                        diseaseTransmission_Model.μ,
+                        diseaseTransmission_Model.ξ,
+                        diseaseTransmission_Model.Π,
+                        diseaseTransmission_Model.τ,
+                        diseaseTransmission_Model.E,
+                        diseaseTransmission_Model.I,
+                        diseaseTransmission_Model.N,
+                        diseaseTransmission_Model.R,
+                        diseaseTransmission_Model.S,
+                        diseaseTransmission_Model.V));
         }
 
         private Func<double, MathNet.Numerics.LinearAlgebra.Vector<double>, MathNet.Numerics.LinearAlgebra.Vector<double>> f(
