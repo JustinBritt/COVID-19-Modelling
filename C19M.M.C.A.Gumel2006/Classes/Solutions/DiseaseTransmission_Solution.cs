@@ -40,7 +40,6 @@
                     MathNet.Numerics.LinearAlgebra.Vector<double>.Build.Dense(new[] {
                         (double)diseaseTransmission_Model.E.InitialValue.Value.Value,
                         (double)diseaseTransmission_Model.I.InitialValue.Value.Value,
-                        (double)diseaseTransmission_Model.N.InitialValue.Value.Value,
                         (double)diseaseTransmission_Model.R.InitialValue.Value.Value,
                         (double)diseaseTransmission_Model.S.InitialValue.Value.Value,
                         (double)diseaseTransmission_Model.V.InitialValue.Value.Value,}),
@@ -58,7 +57,6 @@
                         diseaseTransmission_Model.τ,
                         diseaseTransmission_Model.E,
                         diseaseTransmission_Model.I,
-                        diseaseTransmission_Model.N,
                         diseaseTransmission_Model.R,
                         diseaseTransmission_Model.S,
                         diseaseTransmission_Model.V));
