@@ -91,7 +91,7 @@
             IGumel2004_Model Gumel2004_Model = new C19M.M.C.A.Gumel2004.Classes.Models.Gumel2004_Model(
                 Gumel2004_Context);
 
-            MathNet.Numerics.LinearAlgebra.Vector<double>[] results = 
+            MathNet.Numerics.LinearAlgebra.Vector<double>[] RungeKuttaResults = 
                 MathNet.Numerics.OdeSolvers.RungeKutta.FourthOrder(
                     MathNet.Numerics.LinearAlgebra.Vector<double>.Build.Dense(new[] {
                         (double)Gumel2004_Model.E.InitialValue.Value.Value,
@@ -130,32 +130,32 @@
             // E
             this.E = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayAsymptomaticIndividuals.E_Calculation().Calculate(
                 Gumel2004_Model.t,
-                results);
+                RungeKuttaResults);
 
             // I
             this.I = new C19M.M.C.A.Gumel2004.Classes.Calculations.DaySymptomaticIndividuals.I_Calculation().Calculate(
                 Gumel2004_Model.t,
-                results);
+                RungeKuttaResults);
 
             // J
             this.J = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayIsolatedIndividuals.J_Calculation().Calculate(
                 Gumel2004_Model.t,
-                results);
+                RungeKuttaResults);
 
             // Q
             this.Q = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayQuarantinedIndividuals.Q_Calculation().Calculate(
                 Gumel2004_Model.t,
-                results);
+                RungeKuttaResults);
 
             // R
             this.R = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayRecoveredIndividuals.R_Calculation().Calculate(
                 Gumel2004_Model.t,
-                results);
+                RungeKuttaResults);
 
             // S
             this.S = new C19M.M.C.A.Gumel2004.Classes.Calculations.DaySusceptibleIndividuals.S_Calculation().Calculate(
                 Gumel2004_Model.t,
-                results);
+                RungeKuttaResults);
 
             // DayDiseaseInducedDeaths
             this.DayDiseaseInducedDeaths = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayDiseaseInducedDeaths.DayDiseaseInducedDeaths_Calculation().Calculate(
