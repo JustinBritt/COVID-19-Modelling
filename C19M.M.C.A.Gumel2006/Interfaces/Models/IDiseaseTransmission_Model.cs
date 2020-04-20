@@ -6,6 +6,8 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    using C19M.M.C.A.Gumel2006.Interfaces.Indices;
+
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.DevelopmentClinicalSymptomsRate;
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.EffectiveContactRate;
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate;
