@@ -109,6 +109,8 @@
                 context.InitialValueVaccinatedIndividuals);
         }
 
+        public It t { get; }
+
         public C19M.M.C.A.Gumel2006.Interfaces.Parameters.DiseaseInducedMortalityRate.Id d { get; }
 
         public Iα α { get; }
