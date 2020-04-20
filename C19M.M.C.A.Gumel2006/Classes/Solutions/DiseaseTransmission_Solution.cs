@@ -73,7 +73,6 @@
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccineEfficacy.Iτ τ,
             C19M.M.C.A.Gumel2006.Interfaces.Variables.LatentIndividuals.IE E,
             C19M.M.C.A.Gumel2006.Interfaces.Variables.InfectedIndividuals.II I,
-            C19M.M.C.A.Gumel2006.Interfaces.Variables.TotalPopulationSize.IN N,
             C19M.M.C.A.Gumel2006.Interfaces.Variables.TreatedIndividuals.IR R,
             C19M.M.C.A.Gumel2006.Interfaces.Variables.SusceptibleIndividuals.IS S,
             C19M.M.C.A.Gumel2006.Interfaces.Variables.VaccinatedIndividuals.IV V)
