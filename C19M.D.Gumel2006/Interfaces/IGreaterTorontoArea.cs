@@ -9,7 +9,7 @@
     // Hl7
     using Hl7.Fhir.Model;
 
-    internal interface IGreaterTorontoArea
+    public interface IGreaterTorontoArea
     {
     }
 }
