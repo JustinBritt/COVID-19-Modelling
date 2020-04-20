@@ -24,6 +24,8 @@
 
     internal interface IDiseaseTransmission_Model
     {
+        It t { get; }
+
         C19M.M.C.A.Gumel2006.Interfaces.Parameters.DiseaseInducedMortalityRate.Id d { get; }
 
         Iα α { get; }
