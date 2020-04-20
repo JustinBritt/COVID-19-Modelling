@@ -87,8 +87,8 @@
                         τ,
                         E: x[0],
                         I: x[1],
-                        S: x[4],
-                        V: x[5]),
+                        S: x[3],
+                        V: x[4]),
                     (double)I.GetdIdt(
                         d,
                         α,
@@ -96,32 +96,26 @@
                         μ,
                         E: x[0],
                         I: x[1]),
-                    (double)N.GetdNdt(
-                        d,
-                        μ,
-                        Π,
-                        I: x[1],
-                        N: x[2]),
                     (double)R.GetdRdt(
                         δ,
                         μ,
                         I: x[1],
-                        R: x[3]),
+                        R: x[2]),
                     (double)S.GetdSdt(
                         β,
                         μ,
                         ξ,
                         Π,
                         I: x[1],
-                        S: x[4]),
+                        S: x[3]),
                     (double)V.GetdVdt(
                         β,
                         μ,
                         ξ,
                         τ,
                         I: x[1],
-                        S: x[4],
-                        V: x[5])
+                        S: x[3],
+                        V: x[4])
                 });
             };
         }
