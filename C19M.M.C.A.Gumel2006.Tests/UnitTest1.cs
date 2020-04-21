@@ -32,6 +32,10 @@
                 GreaterTorontoArea.VaccineEfficacy);
 
             // Export
+            C19M.M.C.A.Gumel2006.Interfaces.Exports.IDiseaseTransmission_Export export = new C19M.M.C.A.Gumel2006.Classes.Exports.DiseaseTransmission_Export(
+                context);
+
+            export.Solve();
         }
     }
 }
