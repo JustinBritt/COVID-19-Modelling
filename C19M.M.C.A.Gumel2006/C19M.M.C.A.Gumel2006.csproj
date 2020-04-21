@@ -154,6 +154,7 @@
     <Compile Include="Classes\Parameters\Rescaled\ε.cs" />
     <Compile Include="Classes\Parameters\VaccinationCoverageRate\ξ.cs" />
     <Compile Include="Classes\Parameters\VaccineEfficacy\τ.cs" />
+    <Compile Include="Classes\ResultElements\DayDiseaseInducedDeaths\DayDiseaseInducedDeaths_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DayInfectedIndividuals\I_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DayLatentIndividuals\E_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DaySusceptibleIndividuals\S_ResultElement.cs" />
@@ -201,6 +202,7 @@
     <Compile Include="Interfaces\Parameters\Rescaled\Iε.cs" />
     <Compile Include="Interfaces\Parameters\VaccinationCoverageRate\Iξ.cs" />
     <Compile Include="Interfaces\Parameters\VaccineEfficacy\Iτ.cs" />
+    <Compile Include="Interfaces\ResultElements\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DayInfectedIndividuals\II_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DayLatentIndividuals\IE_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DaySusceptibleIndividuals\IS_ResultElement.cs" />
@@ -220,10 +222,7 @@
     <Compile Include="Interfaces\Variables\VaccinatedIndividuals\IV.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\ResultElements\DayDiseaseInducedDeaths\" />
-    <Folder Include="Interfaces\ResultElements\DayDiseaseInducedDeaths\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="log4net.config" />
     <None Include="packages.config" />
