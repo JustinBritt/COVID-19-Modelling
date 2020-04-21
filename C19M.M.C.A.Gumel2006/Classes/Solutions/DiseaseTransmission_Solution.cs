@@ -16,6 +16,12 @@
 
     using C19M.M.C.A.Gumel2006.Interfaces.Models;
 
+    using C19M.M.C.A.Gumel2006.Interfaces.Results.DayInfectedIndividuals;
+    using C19M.M.C.A.Gumel2006.Interfaces.Results.DayLatentIndividuals;
+    using C19M.M.C.A.Gumel2006.Interfaces.Results.DaySusceptibleIndividuals;
+    using C19M.M.C.A.Gumel2006.Interfaces.Results.DayTreatedIndividuals;
+    using C19M.M.C.A.Gumel2006.Interfaces.Results.DayVaccinatedIndividuals;
+
     using C19M.M.C.A.Gumel2006.Interfaces.Solutions;
 
     internal sealed class DiseaseTransmission_Solution : IDiseaseTransmission_Solution
