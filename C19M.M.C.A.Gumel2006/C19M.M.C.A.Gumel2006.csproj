@@ -124,6 +124,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Calculations\DayInfectedIndividuals\I_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Contexts\Gumel2006_Context.cs" />
     <Compile Include="Classes\Exports\DiseaseTransmission_Export.cs" />
     <Compile Include="Classes\Indices\t.cs" />
@@ -161,6 +162,7 @@
     <Compile Include="Classes\Variables\TotalPopulationSize\N.cs" />
     <Compile Include="Classes\Variables\TreatedIndividuals\R.cs" />
     <Compile Include="Classes\Variables\VaccinatedIndividuals\V.cs" />
+    <Compile Include="Interfaces\Calculations\DayInfectedIndividuals\II_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Contexts\IGumel2006_Context.cs" />
     <Compile Include="Interfaces\Exports\IDiseaseTransmission_Export.cs" />
     <Compile Include="Interfaces\Indices\It.cs" />
@@ -200,10 +202,7 @@
     <Compile Include="Interfaces\Variables\VaccinatedIndividuals\IV.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\Calculations\DayInfectedIndividuals\" />
-    <Folder Include="Interfaces\Calculations\DayInfectedIndividuals\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="log4net.config" />
     <None Include="packages.config" />
