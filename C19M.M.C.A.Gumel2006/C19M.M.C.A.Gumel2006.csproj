@@ -186,8 +186,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Calculations\" />
+    <Folder Include="Classes\ResultElements\DaySusceptibleIndividuals\" />
     <Folder Include="Classes\Results\" />
     <Folder Include="Interfaces\Calculations\" />
+    <Folder Include="Interfaces\ResultElements\DaySusceptibleIndividuals\" />
     <Folder Include="Interfaces\Results\" />
   </ItemGroup>
   <ItemGroup>
