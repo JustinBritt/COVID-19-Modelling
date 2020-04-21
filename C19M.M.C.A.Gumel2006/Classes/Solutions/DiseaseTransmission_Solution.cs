@@ -105,6 +105,10 @@
                 RungeKuttaResults);
 
             // DayDiseaseInducedDeaths
+            this.DayDiseaseInducedDeaths = new C19M.M.C.A.Gumel2006.Classes.Calculations.DayDiseaseInducedDeaths.DayDiseaseInducedDeaths_Calculation().Calculate(
+                diseaseTransmission_Model.t,
+                diseaseTransmission_Model.d,
+                this.I);
         }
 
         private Func<double, MathNet.Numerics.LinearAlgebra.Vector<double>, MathNet.Numerics.LinearAlgebra.Vector<double>> f(
