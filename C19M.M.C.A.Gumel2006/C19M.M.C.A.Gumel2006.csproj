@@ -168,6 +168,7 @@
     <Compile Include="Classes\ResultElements\DayTreatedIndividuals\R_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DayVaccinatedIndividuals\V_ResultElement.cs" />
     <Compile Include="Classes\Results\DayCumulativeDiseaseInducedDeaths\DayCumulativeDiseaseInducedDeaths.cs" />
+    <Compile Include="Classes\Results\DayCumulativeProbableCases\DayCumulativeProbableCases.cs" />
     <Compile Include="Classes\Results\DayDiseaseInducedDeaths\DayDiseaseInducedDeaths.cs" />
     <Compile Include="Classes\Results\DayInfectedIndividuals\I.cs" />
     <Compile Include="Classes\Results\DayLatentIndividuals\E.cs" />
@@ -226,6 +227,7 @@
     <Compile Include="Interfaces\ResultElements\DayTreatedIndividuals\IR_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DayVaccinatedIndividuals\IV_ResultElement.cs" />
     <Compile Include="Interfaces\Results\DayCumulativeDiseaseInducedDeaths\IDayCumulativeDiseaseInducedDeaths.cs" />
+    <Compile Include="Interfaces\Results\DayCumulativeProbableCases\IDayCumulativeProbableCases.cs" />
     <Compile Include="Interfaces\Results\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths.cs" />
     <Compile Include="Interfaces\Results\DayInfectedIndividuals\II.cs" />
     <Compile Include="Interfaces\Results\DayLatentIndividuals\IE.cs" />
@@ -245,10 +247,8 @@
   <ItemGroup>
     <Folder Include="Classes\Calculations\DayCumulativeProbableCases\" />
     <Folder Include="Classes\Calculations\DayProbableCases\" />
-    <Folder Include="Classes\Results\DayCumulativeProbableCases\" />
     <Folder Include="Interfaces\Calculations\DayCumulativeProbableCases\" />
     <Folder Include="Interfaces\Calculations\DayProbableCases\" />
-    <Folder Include="Interfaces\Results\DayCumulativeProbableCases\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
