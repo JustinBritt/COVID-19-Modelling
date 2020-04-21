@@ -124,6 +124,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Calculations\DayDiseaseInducedDeaths\DayDiseaseInducedDeaths_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayDiseaseInducedDeaths\DayDiseaseInducedDeaths_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayInfectedIndividuals\I_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayInfectedIndividuals\I_ResultElement_Calculation.cs" />
@@ -174,6 +175,7 @@
     <Compile Include="Classes\Variables\TotalPopulationSize\N.cs" />
     <Compile Include="Classes\Variables\TreatedIndividuals\R.cs" />
     <Compile Include="Classes\Variables\VaccinatedIndividuals\V.cs" />
+    <Compile Include="Interfaces\Calculations\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayInfectedIndividuals\II_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayInfectedIndividuals\II_ResultElement_Calculation.cs" />
