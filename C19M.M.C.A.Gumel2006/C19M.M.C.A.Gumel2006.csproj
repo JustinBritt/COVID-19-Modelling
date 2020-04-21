@@ -162,6 +162,7 @@
     <Compile Include="Classes\ResultElements\DayDiseaseInducedDeaths\DayDiseaseInducedDeaths_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DayInfectedIndividuals\I_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DayLatentIndividuals\E_ResultElement.cs" />
+    <Compile Include="Classes\ResultElements\DayProbableCases\DayProbableCases_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DaySusceptibleIndividuals\S_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DayTreatedIndividuals\R_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DayVaccinatedIndividuals\V_ResultElement.cs" />
@@ -217,6 +218,7 @@
     <Compile Include="Interfaces\ResultElements\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DayInfectedIndividuals\II_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DayLatentIndividuals\IE_ResultElement.cs" />
+    <Compile Include="Interfaces\ResultElements\DayProbableCases\IDayProbableCases_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DaySusceptibleIndividuals\IS_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DayTreatedIndividuals\IR_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DayVaccinatedIndividuals\IV_ResultElement.cs" />
@@ -238,10 +240,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Calculations\DayProbableCases\" />
-    <Folder Include="Classes\ResultElements\DayProbableCases\" />
     <Folder Include="Classes\Results\DayProbableCases\" />
     <Folder Include="Interfaces\Calculations\DayProbableCases\" />
-    <Folder Include="Interfaces\ResultElements\DayProbableCases\" />
     <Folder Include="Interfaces\Results\DayProbableCases\" />
   </ItemGroup>
   <ItemGroup>
