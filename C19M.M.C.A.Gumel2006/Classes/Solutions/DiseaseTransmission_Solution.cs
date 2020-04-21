@@ -35,7 +35,7 @@
             IDiseaseTransmission_Model diseaseTransmission_Model = new C19M.M.C.A.Gumel2006.Classes.Models.DiseaseTransmission_Model(
                 Gumel2006_Context);
 
-            MathNet.Numerics.LinearAlgebra.Vector<double>[] results =
+            MathNet.Numerics.LinearAlgebra.Vector<double>[] RungeKuttaResults =
                 MathNet.Numerics.OdeSolvers.RungeKutta.FourthOrder(
                     MathNet.Numerics.LinearAlgebra.Vector<double>.Build.Dense(new[] {
                         (double)diseaseTransmission_Model.E.InitialValue.Value.Value,
