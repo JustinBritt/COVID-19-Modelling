@@ -241,8 +241,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Classes\Calculations\DayCumulativeProbableCases\" />
     <Folder Include="Classes\Calculations\DayProbableCases\" />
+    <Folder Include="Classes\ResultElements\DayCumulativeProbableCases\" />
+    <Folder Include="Classes\Results\DayCumulativeProbableCases\" />
+    <Folder Include="Interfaces\Calculations\DayCumulativeProbableCases\" />
     <Folder Include="Interfaces\Calculations\DayProbableCases\" />
+    <Folder Include="Interfaces\ResultElements\DayCumulativeProbableCases\" />
+    <Folder Include="Interfaces\Results\DayCumulativeProbableCases\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
