@@ -16,20 +16,20 @@
             C19M.D.Gumel2006.Interfaces.IGreaterTorontoArea GreaterTorontoArea = new C19M.D.Gumel2006.Classes.GreaterTorontoArea();
 
             // Context
-            //C19M.M.C.A.Gumel2006.Interfaces.Contexts.IGumel2006_Context context = new C19M.M.C.A.Gumel2006.Classes.Contexts.Gumel2006_Context(
-            //    GreaterTorontoArea.DiseaseInducedMortalityRate,
-            //    0,
-            //    0,
-            //    0,
-            //    0,
-            //    0,
-            //    GreaterTorontoArea.DevelopmentClinicalSymptomsRate,
-            //    GreaterTorontoArea.EffectiveContactRate,
-            //    GreaterTorontoArea.RecoveryRate,
-            //    GreaterTorontoArea.NaturalMortalityRate,
-            //    GreaterTorontoArea.VaccinationCoverageRate,
-            //    GreaterTorontoArea.RecruitmentRateSusceptibleHumans,
-            //    GreaterTorontoArea.VaccineEfficacy);
+            C19M.M.C.A.Gumel2006.Interfaces.Contexts.IGumel2006_Context context = new C19M.M.C.A.Gumel2006.Classes.Contexts.Gumel2006_Context(
+                GreaterTorontoArea.DiseaseInducedMortalityRate,
+                new Hl7.Fhir.Model.FhirDecimal(0), // TODO: Change
+                new Hl7.Fhir.Model.FhirDecimal(0), // TODO: Change
+                new Hl7.Fhir.Model.FhirDecimal(0), // TODO: Change
+                new Hl7.Fhir.Model.FhirDecimal(0), // TODO: Change
+                new Hl7.Fhir.Model.FhirDecimal(0), // TODO: Change
+                GreaterTorontoArea.DevelopmentClinicalSymptomsRate,
+                GreaterTorontoArea.EffectiveContactRate,
+                GreaterTorontoArea.RecoveryRate,
+                GreaterTorontoArea.NaturalMortalityRate,
+                GreaterTorontoArea.VaccinationCoverageRate,
+                GreaterTorontoArea.RecruitmentRateSusceptibleHumans,
+                GreaterTorontoArea.VaccineEfficacy);
 
             // Export
         }
