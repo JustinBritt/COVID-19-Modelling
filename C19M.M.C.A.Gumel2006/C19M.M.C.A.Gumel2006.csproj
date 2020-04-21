@@ -232,7 +232,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Calculations\DayCumulativeDiseaseInducedDeaths\" />
+    <Folder Include="Classes\Results\DayCumulativeDiseaseInducedDeaths\" />
     <Folder Include="Interfaces\Calculations\DayCumulativeDiseaseInducedDeaths\" />
+    <Folder Include="Interfaces\Results\DayCumulativeDiseaseInducedDeaths\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
