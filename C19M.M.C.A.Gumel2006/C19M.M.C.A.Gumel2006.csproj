@@ -204,7 +204,10 @@
     <Compile Include="Interfaces\Variables\VaccinatedIndividuals\IV.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Classes\Calculations\DayLatentIndividuals\" />
+    <Folder Include="Interfaces\Calculations\DayLatentIndividuals\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
     <None Include="packages.config" />
