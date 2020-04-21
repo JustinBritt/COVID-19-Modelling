@@ -27,3 +27,7 @@ Paper | Folder | Virus
 ## Models - Compartmental Models - System Dynamics (C19M.M.CM.SD.*) Projects
 Folder | Description
 ------------ | ------------
+
+## References
+
+Gumel, A. B., Ruan, S., Day, T., Watmough, J., Brauer, F., Van den Driessche, P., ... & Wu, J. (2004). Modelling strategies for controlling SARS outbreaks. Proceedings of the Royal Society of London. Series B: Biological Sciences, 271(1554), 2223-2232.
