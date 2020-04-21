@@ -124,6 +124,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Calculations\DayDiseaseInducedDeaths\DayDiseaseInducedDeaths_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayInfectedIndividuals\I_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayInfectedIndividuals\I_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayLatentIndividuals\E_Calculation.cs" />
@@ -173,6 +174,7 @@
     <Compile Include="Classes\Variables\TotalPopulationSize\N.cs" />
     <Compile Include="Classes\Variables\TreatedIndividuals\R.cs" />
     <Compile Include="Classes\Variables\VaccinatedIndividuals\V.cs" />
+    <Compile Include="Interfaces\Calculations\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayInfectedIndividuals\II_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayInfectedIndividuals\II_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayLatentIndividuals\IE_Calculation.cs" />
@@ -224,10 +226,7 @@
     <Compile Include="Interfaces\Variables\VaccinatedIndividuals\IV.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\Calculations\DayDiseaseInducedDeaths\" />
-    <Folder Include="Interfaces\Calculations\DayDiseaseInducedDeaths\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="log4net.config" />
     <None Include="packages.config" />
