@@ -14,6 +14,8 @@
 
     using C19M.M.C.A.Gumel2006.Interfaces.Exports;
 
+    using C19M.M.C.A.Gumel2006.Interfaces.Solutions;
+
     public sealed class DiseaseTransmission_Export : IDiseaseTransmission_Export
     {
         private ILog Log { get; }
