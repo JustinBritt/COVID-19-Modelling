@@ -28,5 +28,9 @@
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         }
+
+        private IGumel2006_Context Gumel2006_Context { get; }
+
+        private IDiseaseTransmission_Solution DiseaseTransmission_Solution { get; }
     }
 }
