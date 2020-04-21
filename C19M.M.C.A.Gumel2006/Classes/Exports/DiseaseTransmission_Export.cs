@@ -27,6 +27,10 @@
             IGumel2006_Context Gumel2006_Context)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+            this.Gumel2006_Context = Gumel2006_Context;
+
+            this.DiseaseTransmission_Solution = new C19M.M.C.A.Gumel2006.Classes.Solutions.DiseaseTransmission_Solution();
         }
 
         private IGumel2006_Context Gumel2006_Context { get; }
