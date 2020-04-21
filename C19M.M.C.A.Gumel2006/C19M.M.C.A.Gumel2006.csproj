@@ -200,7 +200,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Calculations\" />
+    <Folder Include="Classes\Results\DayVaccinatedIndividuals\" />
     <Folder Include="Interfaces\Calculations\" />
+    <Folder Include="Interfaces\Results\DayVaccinatedIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
