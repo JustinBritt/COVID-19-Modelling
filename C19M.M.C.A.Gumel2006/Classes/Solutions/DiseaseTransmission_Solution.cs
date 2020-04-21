@@ -101,6 +101,8 @@
             this.V = new C19M.M.C.A.Gumel2006.Classes.Calculations.DayVaccinatedIndividuals.V_Calculation().Calculate(
                 diseaseTransmission_Model.t,
                 RungeKuttaResults);
+
+            // DayDiseaseInducedDeaths
         }
 
         private Func<double, MathNet.Numerics.LinearAlgebra.Vector<double>, MathNet.Numerics.LinearAlgebra.Vector<double>> f(
