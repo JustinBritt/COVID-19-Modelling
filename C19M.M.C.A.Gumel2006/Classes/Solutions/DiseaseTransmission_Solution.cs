@@ -88,6 +88,9 @@
                 RungeKuttaResults);
 
             // R
+            this.R = new C19M.M.C.A.Gumel2006.Classes.Calculations.DayTreatedIndividuals.R_Calculation().Calculate(
+                diseaseTransmission_Model.t,
+                RungeKuttaResults);
 
             // S
 
