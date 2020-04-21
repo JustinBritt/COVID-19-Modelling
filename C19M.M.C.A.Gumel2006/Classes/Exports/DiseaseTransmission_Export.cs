@@ -23,7 +23,8 @@
         private ILog Log { get; }
 
         // Constructor
-        public DiseaseTransmission_Export()
+        public DiseaseTransmission_Export(
+            IGumel2006_Context Gumel2006_Context)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         }
