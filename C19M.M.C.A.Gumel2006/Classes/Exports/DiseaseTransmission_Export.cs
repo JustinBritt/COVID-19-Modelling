@@ -16,6 +16,16 @@
 
     using C19M.M.C.A.Gumel2006.Interfaces.Exports;
 
+    using C19M.M.C.A.Gumel2006.Interfaces.Results.DayCumulativeDiseaseInducedDeaths;
+    using C19M.M.C.A.Gumel2006.Interfaces.Results.DayCumulativeProbableCases;
+    using C19M.M.C.A.Gumel2006.Interfaces.Results.DayDiseaseInducedDeaths;
+    using C19M.M.C.A.Gumel2006.Interfaces.Results.DayInfectedIndividuals;
+    using C19M.M.C.A.Gumel2006.Interfaces.Results.DayLatentIndividuals;
+    using C19M.M.C.A.Gumel2006.Interfaces.Results.DayProbableCases;
+    using C19M.M.C.A.Gumel2006.Interfaces.Results.DaySusceptibleIndividuals;
+    using C19M.M.C.A.Gumel2006.Interfaces.Results.DayTreatedIndividuals;
+    using C19M.M.C.A.Gumel2006.Interfaces.Results.DayVaccinatedIndividuals;
+
     using C19M.M.C.A.Gumel2006.Interfaces.Solutions;
 
     public sealed class DiseaseTransmission_Export : IDiseaseTransmission_Export
