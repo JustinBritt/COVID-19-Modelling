@@ -220,7 +220,10 @@
     <Compile Include="Interfaces\Variables\VaccinatedIndividuals\IV.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Classes\ResultElements\DayDiseaseInducedDeaths\" />
+    <Folder Include="Interfaces\ResultElements\DayDiseaseInducedDeaths\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
     <None Include="packages.config" />
