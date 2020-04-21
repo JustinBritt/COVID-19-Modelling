@@ -36,7 +36,11 @@
 
         public C19M.M.C.A.Gumel2006.Interfaces.Results.DayCumulativeDiseaseInducedDeaths.IDayCumulativeDiseaseInducedDeaths DayCumulativeDiseaseInducedDeaths { get; private set; }
 
+        public C19M.M.C.A.Gumel2006.Interfaces.Results.DayCumulativeProbableCases.IDayCumulativeProbableCases DayCumulativeProbableCases { get; private set; }
+
         public C19M.M.C.A.Gumel2006.Interfaces.Results.DayDiseaseInducedDeaths.IDayDiseaseInducedDeaths DayDiseaseInducedDeaths { get; private set; }
+
+        public C19M.M.C.A.Gumel2006.Interfaces.Results.DayProbableCases.IDayProbableCases DayProbableCases { get; private set; }
 
         public C19M.M.C.A.Gumel2006.Interfaces.Results.DayLatentIndividuals.IE E { get; private set; }
 
