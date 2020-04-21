@@ -109,6 +109,8 @@
                 diseaseTransmission_Model.t,
                 diseaseTransmission_Model.d,
                 this.I);
+
+            // DayCumulativeDiseaseInducedDeaths
         }
 
         private Func<double, MathNet.Numerics.LinearAlgebra.Vector<double>, MathNet.Numerics.LinearAlgebra.Vector<double>> f(
