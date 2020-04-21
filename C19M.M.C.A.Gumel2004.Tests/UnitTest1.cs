@@ -18,6 +18,7 @@
         {
             C19M.D.Gumel2004.Interfaces.IHongKong HK = new C19M.D.Gumel2004.Classes.HongKong();
 
+            // Context
             C19M.M.C.A.Gumel2004.Interfaces.Contexts.IGumel2004_Context context = new C19M.M.C.A.Gumel2004.Classes.Contexts.Gumel2004_Context(
                 HK.EndDate,
                 HK.NumberDaysAfterStartDate,
