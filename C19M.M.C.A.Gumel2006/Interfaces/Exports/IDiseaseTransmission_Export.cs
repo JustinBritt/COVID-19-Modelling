@@ -2,11 +2,24 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Collections.Immutable;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     public interface IDiseaseTransmission_Export
     {
+        ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayCumulativeDiseaseInducedDeaths { get; }
+
+        ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayCumulativeProbableCases { get; }
+
+        ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayDiseaseInducedDeaths { get; }
+
+        ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayProbableCases { get; }
+
+        void Solve();
     }
 }
