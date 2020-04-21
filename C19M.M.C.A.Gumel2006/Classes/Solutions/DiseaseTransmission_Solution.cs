@@ -60,6 +60,16 @@
                         diseaseTransmission_Model.R,
                         diseaseTransmission_Model.S,
                         diseaseTransmission_Model.V));
+
+            // E
+
+            // I
+
+            // R
+
+            // S
+
+            // V
         }
 
         private Func<double, MathNet.Numerics.LinearAlgebra.Vector<double>, MathNet.Numerics.LinearAlgebra.Vector<double>> f(
