@@ -201,8 +201,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\Calculations\" />
-    <Folder Include="Interfaces\Calculations\" />
+    <Folder Include="Classes\Calculations\DayInfectedIndividuals\" />
+    <Folder Include="Interfaces\Calculations\DayInfectedIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
