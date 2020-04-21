@@ -83,6 +83,9 @@
                 RungeKuttaResults);
 
             // I
+            this.I = new C19M.M.C.A.Gumel2006.Classes.Calculations.DayInfectedIndividuals.I_Calculation().Calculate(
+                diseaseTransmission_Model.t,
+                RungeKuttaResults);
 
             // R
 
