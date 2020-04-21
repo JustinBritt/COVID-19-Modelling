@@ -34,6 +34,16 @@
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         }
 
+        public C19M.M.C.A.Gumel2006.Interfaces.Results.DayLatentIndividuals.IE E { get; private set; }
+
+        public C19M.M.C.A.Gumel2006.Interfaces.Results.DayInfectedIndividuals.II I { get; private set; }
+
+        public C19M.M.C.A.Gumel2006.Interfaces.Results.DayTreatedIndividuals.IR R { get; private set; }
+
+        public C19M.M.C.A.Gumel2006.Interfaces.Results.DaySusceptibleIndividuals.IS S { get; private set; }
+
+        public C19M.M.C.A.Gumel2006.Interfaces.Results.DayVaccinatedIndividuals.IV V { get; private set; }
+
         // TODO: Finish
         public void Solve(
             IGumel2006_Context Gumel2006_Context)
