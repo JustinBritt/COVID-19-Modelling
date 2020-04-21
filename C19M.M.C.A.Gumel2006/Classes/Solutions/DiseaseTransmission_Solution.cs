@@ -78,6 +78,9 @@
                         diseaseTransmission_Model.V));
 
             // E
+            this.E = new C19M.M.C.A.Gumel2006.Classes.Calculations.DayLatentIndividuals.E_Calculation().Calculate(
+                diseaseTransmission_Model.t,
+                RungeKuttaResults);
 
             // I
 
