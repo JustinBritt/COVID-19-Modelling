@@ -130,6 +130,7 @@
     <Compile Include="Classes\Calculations\DayLatentIndividuals\E_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Calculations\DaySusceptibleIndividuals\S_Calculation.cs" />
     <Compile Include="Classes\Calculations\DaySusceptibleIndividuals\S_ResultElement_Calculation.cs" />
+    <Compile Include="Classes\Calculations\DayTreatedIndividuals\R_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Contexts\Gumel2006_Context.cs" />
     <Compile Include="Classes\Exports\DiseaseTransmission_Export.cs" />
     <Compile Include="Classes\Indices\t.cs" />
@@ -173,6 +174,7 @@
     <Compile Include="Interfaces\Calculations\DayLatentIndividuals\IE_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DaySusceptibleIndividuals\IS_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DaySusceptibleIndividuals\IS_Calculation.cs" />
+    <Compile Include="Interfaces\Calculations\DayTreatedIndividuals\IR_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Contexts\IGumel2006_Context.cs" />
     <Compile Include="Interfaces\Exports\IDiseaseTransmission_Export.cs" />
     <Compile Include="Interfaces\Indices\It.cs" />
@@ -212,10 +214,7 @@
     <Compile Include="Interfaces\Variables\VaccinatedIndividuals\IV.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\Calculations\DayTreatedIndividuals\" />
-    <Folder Include="Interfaces\Calculations\DayTreatedIndividuals\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="log4net.config" />
     <None Include="packages.config" />
