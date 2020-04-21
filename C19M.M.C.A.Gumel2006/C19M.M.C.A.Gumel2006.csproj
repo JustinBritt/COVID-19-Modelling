@@ -160,6 +160,7 @@
     <Compile Include="Classes\ResultElements\DaySusceptibleIndividuals\S_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DayTreatedIndividuals\R_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DayVaccinatedIndividuals\V_ResultElement.cs" />
+    <Compile Include="Classes\Results\DayDiseaseInducedDeaths\DayDiseaseInducedDeaths.cs" />
     <Compile Include="Classes\Results\DayInfectedIndividuals\I.cs" />
     <Compile Include="Classes\Results\DayLatentIndividuals\E.cs" />
     <Compile Include="Classes\Results\DaySusceptibleIndividuals\S.cs" />
@@ -208,6 +209,7 @@
     <Compile Include="Interfaces\ResultElements\DaySusceptibleIndividuals\IS_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DayTreatedIndividuals\IR_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DayVaccinatedIndividuals\IV_ResultElement.cs" />
+    <Compile Include="Interfaces\Results\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths.cs" />
     <Compile Include="Interfaces\Results\DayInfectedIndividuals\II.cs" />
     <Compile Include="Interfaces\Results\DayLatentIndividuals\IE.cs" />
     <Compile Include="Interfaces\Results\DaySusceptibleIndividuals\IS.cs" />
@@ -222,10 +224,7 @@
     <Compile Include="Interfaces\Variables\VaccinatedIndividuals\IV.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\Results\DayDiseaseInducedDeaths\" />
-    <Folder Include="Interfaces\Results\DayDiseaseInducedDeaths\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="log4net.config" />
     <None Include="packages.config" />
