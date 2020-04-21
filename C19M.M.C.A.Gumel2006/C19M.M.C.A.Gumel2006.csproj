@@ -149,6 +149,7 @@
     <Compile Include="Classes\ResultElements\DaySusceptibleIndividuals\S_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DayTreatedIndividuals\R_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DayVaccinatedIndividuals\V_ResultElement.cs" />
+    <Compile Include="Classes\Results\DayInfectedIndividuals\I.cs" />
     <Compile Include="Classes\Solutions\DiseaseTransmission_Solution.cs" />
     <Compile Include="Classes\Variables\InfectedIndividuals\I.cs" />
     <Compile Include="Classes\Variables\LatentIndividuals\E.cs" />
@@ -181,6 +182,7 @@
     <Compile Include="Interfaces\ResultElements\DaySusceptibleIndividuals\IS_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DayTreatedIndividuals\IR_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DayVaccinatedIndividuals\IV_ResultElement.cs" />
+    <Compile Include="Interfaces\Results\DayInfectedIndividuals\II.cs" />
     <Compile Include="Interfaces\Solutions\IDiseaseTransmission_Solution.cs" />
     <Compile Include="Interfaces\Variables\InfectedIndividuals\II.cs" />
     <Compile Include="Interfaces\Variables\LatentIndividuals\IE.cs" />
@@ -192,9 +194,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Calculations\" />
-    <Folder Include="Classes\Results\DayInfectedIndividuals\" />
     <Folder Include="Interfaces\Calculations\" />
-    <Folder Include="Interfaces\Results\DayInfectedIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
