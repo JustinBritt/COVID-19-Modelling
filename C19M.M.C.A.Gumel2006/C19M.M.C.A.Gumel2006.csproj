@@ -128,6 +128,7 @@
     <Compile Include="Classes\Calculations\DayInfectedIndividuals\I_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayLatentIndividuals\E_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayLatentIndividuals\E_ResultElement_Calculation.cs" />
+    <Compile Include="Classes\Calculations\DaySusceptibleIndividuals\S_Calculation.cs" />
     <Compile Include="Classes\Calculations\DaySusceptibleIndividuals\S_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Contexts\Gumel2006_Context.cs" />
     <Compile Include="Classes\Exports\DiseaseTransmission_Export.cs" />
@@ -171,6 +172,7 @@
     <Compile Include="Interfaces\Calculations\DayLatentIndividuals\IE_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayLatentIndividuals\IE_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DaySusceptibleIndividuals\IS_ResultElement_Calculation.cs" />
+    <Compile Include="Interfaces\Calculations\DaySusceptibleIndividuals\IS_Calculation.cs" />
     <Compile Include="Interfaces\Contexts\IGumel2006_Context.cs" />
     <Compile Include="Interfaces\Exports\IDiseaseTransmission_Export.cs" />
     <Compile Include="Interfaces\Indices\It.cs" />
