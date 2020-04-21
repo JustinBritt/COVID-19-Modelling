@@ -6,7 +6,7 @@ COVID-19-Modelling
 
 ## Data (C19M.D.*) Projects
 
-Data are provided in the Data (C19M.D.*) namespace. [Release 4 (R4) of the Health Level 7 Fast Healthcare Interoperability Resources (HL7 FHIR)](http://hl7.org/fhir/R4/index.html) is used.
+Data are provided in the Data (C19M.D.*) namespace. [Release 4 (R4) of the Health Level 7 Fast Healthcare Interoperability Resources (HL7 FHIR)](https://hl7.org/fhir/R4/index.html) is used.
 
 ## Models - Compartmental Models - Approximate Solution Methods (C19M.M.CM.A.*) Projects
 
