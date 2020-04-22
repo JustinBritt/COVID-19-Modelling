@@ -59,19 +59,14 @@
             C19M.M.C.A.Gumel2006.Interfaces.Exports.IDiseaseTransmission_Export export = new C19M.M.C.A.Gumel2006.Classes.Exports.DiseaseTransmission_Export(
                 context);
 
-            C19M.M.C.A.Gumel2006.Interfaces.Solutions.IDiseaseTransmission_Solution solution = new C19M.M.C.A.Gumel2006.Classes.Solutions.DiseaseTransmission_Solution();
+            export.Solve();
 
-            solution.Solve(
-                context);
+            var dayCumulativeDiseaseInducedDeaths = export.DayCumulativeDiseaseInducedDeaths;
 
-            var I = solution.I;
-
-            var dayCumulativeDiseaseInducedDeaths = solution.DayCumulativeDiseaseInducedDeaths;
-
-            foreach (var item in dayCumulativeDiseaseInducedDeaths.Value)
+            foreach (var item in dayCumulativeDiseaseInducedDeaths)
             {
                 System.Diagnostics.Debug.WriteLine(
-                    item.Value.Value.Value);
+                    item.Item2.Value.Value);
             }
         }
     }
