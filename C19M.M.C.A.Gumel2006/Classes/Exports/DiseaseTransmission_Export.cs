@@ -52,6 +52,16 @@
 
         public ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayProbableCases { get; private set; }
 
+        public ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayLatentIndividuals { get; private set; }
+
+        public ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayInfectedIndividuals { get; private set; }
+
+        public ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayTreatedIndividuals { get; private set; }
+
+        public ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DaySusceptibleIndividuals { get; private set; }
+
+        public ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayVaccinatedIndividuals { get; private set; }
+
         private IGumel2006_Context Gumel2006_Context { get; }
 
         private IDiseaseTransmission_Solution DiseaseTransmission_Solution { get; }

@@ -20,6 +20,16 @@
 
         ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayProbableCases { get; }
 
+        ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayLatentIndividuals { get; }
+
+        ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayInfectedIndividuals { get; }
+
+        ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayTreatedIndividuals { get; }
+
+        ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DaySusceptibleIndividuals { get; }
+
+        ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayVaccinatedIndividuals { get; }
+
         void Solve();
     }
 }
