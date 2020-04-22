@@ -6,6 +6,8 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    using C19M.M.C.A.Gumel2006.Interfaces.Indices;
+
     internal interface IRescaledDiseaseTransmission_Model
     {
         It t { get; }
