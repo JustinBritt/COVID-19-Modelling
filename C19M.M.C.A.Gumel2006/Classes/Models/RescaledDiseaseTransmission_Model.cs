@@ -55,6 +55,12 @@
 
             // Indices
 
+            // t
+            this.t = new Classes.Indices.t(
+                context.EndDate,
+                context.NumberDaysAfterStartDate,
+                context.StartDate);
+
             // Parameters
 
             // N
