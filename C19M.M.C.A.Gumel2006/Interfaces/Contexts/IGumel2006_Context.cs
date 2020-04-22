@@ -12,6 +12,24 @@
     public interface IGumel2006_Context
     {
         /// <summary>
+        /// Gets the end date.
+        /// Index: t
+        /// </summary>
+        FhirDateTime EndDate { get; }
+
+        /// <summary>
+        /// Gets the number of days after the start date.
+        /// Index: t
+        /// </summary>
+        Func<FhirDateTime, PositiveInt> NumberDaysAfterStartDate { get; }
+
+        /// <summary>
+        /// Gets the start date.
+        /// Index: t
+        /// </summary>
+        FhirDateTime StartDate { get; }
+
+        /// <summary>
         /// Gets the disease-induced mortality rate.
         /// Parameter: d
         /// Units: Per day

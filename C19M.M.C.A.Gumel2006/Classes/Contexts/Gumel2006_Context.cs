@@ -20,6 +20,9 @@
 
         // Constructor
         public Gumel2006_Context(
+            FhirDateTime endDate,
+            Func<FhirDateTime, PositiveInt> numberDaysAfterStartDate,
+            FhirDateTime startDate,
             FhirDecimal diseaseInducedMortalityRate,
             FhirDecimal initialValueLatentIndividuals,
             FhirDecimal initialValueInfectedIndividuals,
@@ -35,6 +38,12 @@
             FhirDecimal vaccineEfficacy)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+            this.EndDate = endDate;
+
+            this.NumberDaysAfterStartDate = numberDaysAfterStartDate;
+
+            this.StartDate = startDate;
 
             this.DiseaseInducedMortalityRate = diseaseInducedMortalityRate;
 
@@ -62,6 +71,24 @@
 
             this.VaccineEfficacy = vaccineEfficacy;
         }
+
+        /// <summary>
+        /// Gets the end date.
+        /// Index: t
+        /// </summary>
+        public FhirDateTime EndDate { get; }
+
+        /// <summary>
+        /// Gets the number of days after the start date.
+        /// Index: t
+        /// </summary>
+        public Func<FhirDateTime, PositiveInt> NumberDaysAfterStartDate { get; }
+
+        /// <summary>
+        /// Gets the start date.
+        /// Index: t
+        /// </summary>
+        public FhirDateTime StartDate { get; }
 
         /// <summary>
         /// Gets the disease-induced mortality rate.
