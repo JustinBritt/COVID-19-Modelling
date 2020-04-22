@@ -106,6 +106,8 @@
                 context.InitialValueVaccinatedIndividuals);
         }
 
+        public It t { get; }
+
         public IN N { get; }
 
         public Ip p { get; }
