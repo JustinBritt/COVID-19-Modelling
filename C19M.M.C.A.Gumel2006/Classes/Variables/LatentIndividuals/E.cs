@@ -29,6 +29,7 @@
 
         public FhirDecimal InitialValue { get; }
 
+        // Equation (3)
         public decimal GetdEdt(
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.DevelopmentClinicalSymptomsRate.Iα α,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.EffectiveContactRate.Iβ β,
