@@ -8,5 +8,6 @@
 
     internal interface IEpidemicOutbreak_Model
     {
+        It t { get; }
     }
 }

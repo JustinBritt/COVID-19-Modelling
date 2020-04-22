@@ -8,5 +8,6 @@
 
     internal interface IRescaledDiseaseTransmission_Model
     {
+        It t { get; }
     }
 }
