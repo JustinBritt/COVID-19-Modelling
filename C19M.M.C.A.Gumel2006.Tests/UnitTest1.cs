@@ -42,8 +42,8 @@
                 numberDaysAfterStartDate,
                 startDate,
                 GreaterTorontoArea.DiseaseInducedMortalityRate,
-                new Hl7.Fhir.Model.FhirDecimal(6), // TODO: Change
-                new Hl7.Fhir.Model.FhirDecimal(1), // TODO: Change
+                new Hl7.Fhir.Model.FhirDecimal(0), // TODO: Change
+                new Hl7.Fhir.Model.FhirDecimal(10), // TODO: Change
                 new Hl7.Fhir.Model.FhirDecimal(0), // TODO: Change
                 new Hl7.Fhir.Model.FhirDecimal(4000000), // TODO: Change
                 new Hl7.Fhir.Model.FhirDecimal(0), // TODO: Change
@@ -67,7 +67,7 @@
 
             var dayCumulativeDiseaseInducedDeaths = export.DayCumulativeDiseaseInducedDeaths;
 
-            foreach (var item in dayCumulativeDiseaseInducedDeaths)
+            foreach (var item in I)
             {
                 System.Diagnostics.Debug.WriteLine(
                     item.Item2.Value.Value);
