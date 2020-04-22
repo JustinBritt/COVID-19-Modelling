@@ -181,6 +181,7 @@
     <Compile Include="Classes\Results\DayTreatedIndividuals\R.cs" />
     <Compile Include="Classes\Results\DayVaccinatedIndividuals\V.cs" />
     <Compile Include="Classes\Solutions\DiseaseTransmission_Solution.cs" />
+    <Compile Include="Classes\Solutions\RescaledDiseaseTransmission_Solution.cs" />
     <Compile Include="Classes\Variables\InfectedIndividuals\I.cs" />
     <Compile Include="Classes\Variables\LatentIndividuals\E.cs" />
     <Compile Include="Classes\Variables\SusceptibleIndividuals\S.cs" />
@@ -244,6 +245,7 @@
     <Compile Include="Interfaces\Results\DayTreatedIndividuals\IR.cs" />
     <Compile Include="Interfaces\Results\DayVaccinatedIndividuals\IV.cs" />
     <Compile Include="Interfaces\Solutions\IDiseaseTransmission_Solution.cs" />
+    <Compile Include="Interfaces\Solutions\IRescaledDiseaseTransmission_Solution.cs" />
     <Compile Include="Interfaces\Variables\InfectedIndividuals\II.cs" />
     <Compile Include="Interfaces\Variables\LatentIndividuals\IE.cs" />
     <Compile Include="Interfaces\Variables\SusceptibleIndividuals\IS.cs" />
