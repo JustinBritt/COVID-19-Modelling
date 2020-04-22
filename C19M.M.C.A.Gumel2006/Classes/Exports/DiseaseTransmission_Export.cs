@@ -136,5 +136,60 @@
                     i.Value))
                 .ToImmutableList();
         }
+
+        private ImmutableList<Tuple<FhirDateTime, FhirDecimal>> Convert_E(
+            IE value)
+        {
+            return value.Value
+                .Select(
+                i => new Tuple<FhirDateTime, FhirDecimal>(
+                    i.t_IndexElement,
+                    i.Value))
+                .ToImmutableList();
+        }
+
+        private ImmutableList<Tuple<FhirDateTime, FhirDecimal>> Convert_I(
+            II value)
+        {
+            return value.Value
+                .Select(
+                i => new Tuple<FhirDateTime, FhirDecimal>(
+                    i.t_IndexElement,
+                    i.Value))
+                .ToImmutableList();
+        }
+
+        private ImmutableList<Tuple<FhirDateTime, FhirDecimal>> Convert_R(
+            IR value)
+        {
+            return value.Value
+                .Select(
+                i => new Tuple<FhirDateTime, FhirDecimal>(
+                    i.t_IndexElement,
+                    i.Value))
+                .ToImmutableList();
+        }
+
+        private ImmutableList<Tuple<FhirDateTime, FhirDecimal>> Convert_S(
+            IS value)
+        {
+            return value.Value
+                .Select(
+                i => new Tuple<FhirDateTime, FhirDecimal>(
+                    i.t_IndexElement,
+                    i.Value))
+                .ToImmutableList();
+        }
+
+        private ImmutableList<Tuple<FhirDateTime, FhirDecimal>> Convert_V(
+            IV value)
+        {
+            return value.Value
+                .Select(
+                i => new Tuple<FhirDateTime, FhirDecimal>(
+                    i.t_IndexElement,
+                    i.Value))
+                .ToImmutableList();
+        }
     }
 }
