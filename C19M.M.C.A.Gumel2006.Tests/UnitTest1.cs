@@ -21,10 +21,10 @@
             // Context
             C19M.M.C.A.Gumel2006.Interfaces.Contexts.IGumel2006_Context context = new C19M.M.C.A.Gumel2006.Classes.Contexts.Gumel2006_Context(
                 GreaterTorontoArea.DiseaseInducedMortalityRate,
+                new Hl7.Fhir.Model.FhirDecimal(6), // TODO: Change
+                new Hl7.Fhir.Model.FhirDecimal(1), // TODO: Change
                 new Hl7.Fhir.Model.FhirDecimal(0), // TODO: Change
-                new Hl7.Fhir.Model.FhirDecimal(0), // TODO: Change
-                new Hl7.Fhir.Model.FhirDecimal(0), // TODO: Change
-                new Hl7.Fhir.Model.FhirDecimal(0), // TODO: Change
+                new Hl7.Fhir.Model.FhirDecimal(4000000), // TODO: Change
                 new Hl7.Fhir.Model.FhirDecimal(0), // TODO: Change
                 GreaterTorontoArea.DevelopmentClinicalSymptomsRate,
                 GreaterTorontoArea.EffectiveContactRate,
@@ -38,14 +38,19 @@
             C19M.M.C.A.Gumel2006.Interfaces.Exports.IDiseaseTransmission_Export export = new C19M.M.C.A.Gumel2006.Classes.Exports.DiseaseTransmission_Export(
                 context);
 
-            export.Solve();
+            C19M.M.C.A.Gumel2006.Interfaces.Solutions.IDiseaseTransmission_Solution solution = new C19M.M.C.A.Gumel2006.Classes.Solutions.DiseaseTransmission_Solution();
 
-            var dayCumulativeDiseaseInducedDeaths = export.DayCumulativeDiseaseInducedDeaths;
+            solution.Solve(
+                context);
 
-            foreach (var item in dayCumulativeDiseaseInducedDeaths)
+            var I = solution.I;
+
+            var dayCumulativeDiseaseInducedDeaths = solution.DayCumulativeDiseaseInducedDeaths;
+
+            foreach (var item in dayCumulativeDiseaseInducedDeaths.Value)
             {
                 System.Diagnostics.Debug.WriteLine(
-                    item.Item2.Value.Value);
+                    item.Value.Value.Value);
             }
         }
     }
