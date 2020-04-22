@@ -66,7 +66,6 @@
 
         private IDiseaseTransmission_Solution DiseaseTransmission_Solution { get; }
 
-        // TODO: Finish
         public void Solve()
         {
             if (this.Gumel2006_Context != null && this.DiseaseTransmission_Solution != null)
