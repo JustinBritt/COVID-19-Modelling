@@ -12,8 +12,6 @@ Data are provided in the Data (C19M.D.*) namespace. [Release 4 (R4) of the Healt
 
 In these projects, approximate solutions for compartmental models are obtained using the [ordinary differential equation (ODE) solvers in MathNet.Numerics.](https://numerics.mathdotnet.com/api/MathNet.Numerics.OdeSolvers/) 
 
-
-
 Unless otherwise noted, these projects are programmed in C# and use the .NET Framework 4.8.
 
 Paper                                                                                    | Data Folder      | Approximate Solution Methods Folder | Virus
