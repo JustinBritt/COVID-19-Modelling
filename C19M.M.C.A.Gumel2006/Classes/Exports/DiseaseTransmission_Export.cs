@@ -82,14 +82,39 @@
                 }
 
                 // DayLatentIndividuals
+                if (this.DiseaseTransmission_Solution.E != null)
+                {
+                    this.DayLatentIndividuals = this.Convert_E(
+                        this.DiseaseTransmission_Solution.E);
+                }
 
                 // DayInfectedIndividuals
+                if (this.DiseaseTransmission_Solution.I != null)
+                {
+                    this.DayInfectedIndividuals = this.Convert_I(
+                        this.DiseaseTransmission_Solution.I);
+                }
 
                 // DayTreatedIndividuals
+                if (this.DiseaseTransmission_Solution.R != null)
+                {
+                    this.DayTreatedIndividuals = this.Convert_R(
+                        this.DiseaseTransmission_Solution.R);
+                }
 
                 // DaySusceptibleIndividuals
+                if (this.DiseaseTransmission_Solution.S != null)
+                {
+                    this.DaySusceptibleIndividuals = this.Convert_S(
+                        this.DiseaseTransmission_Solution.S);
+                }
 
                 // DayVaccinatedIndividuals
+                if (this.DiseaseTransmission_Solution.V != null)
+                {
+                    this.DayVaccinatedIndividuals = this.Convert_V(
+                        this.DiseaseTransmission_Solution.V);
+                }
             }
         }
 
