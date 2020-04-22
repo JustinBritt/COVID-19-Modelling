@@ -61,6 +61,8 @@
 
             export.Solve();
 
+            var I = export.DayInfectedIndividuals;
+
             var dayCumulativeDiseaseInducedDeaths = export.DayCumulativeDiseaseInducedDeaths;
 
             foreach (var item in dayCumulativeDiseaseInducedDeaths)
