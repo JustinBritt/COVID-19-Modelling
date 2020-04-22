@@ -129,6 +129,9 @@
                 this.DayDiseaseInducedDeaths);
 
             // DayCumulativeProbableCases
+            this.DayCumulativeProbableCases = new C19M.M.C.A.Gumel2006.Classes.Calculations.DayCumulativeProbableCases.DayCumulativeProbableCases_Calculation().Calculate(
+                diseaseTransmission_Model.t,
+                this.DayProbableCases);
         }
 
         private Func<double, MathNet.Numerics.LinearAlgebra.Vector<double>, MathNet.Numerics.LinearAlgebra.Vector<double>> f(
