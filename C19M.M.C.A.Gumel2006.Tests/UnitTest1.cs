@@ -7,6 +7,9 @@
 
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     [TestClass]
     public class UnitTest1
     {
@@ -36,6 +39,14 @@
                 context);
 
             export.Solve();
+
+            var dayCumulativeDiseaseInducedDeaths = export.DayCumulativeDiseaseInducedDeaths;
+
+            foreach (var item in dayCumulativeDiseaseInducedDeaths)
+            {
+                System.Diagnostics.Debug.WriteLine(
+                    item.Item2.Value.Value);
+            }
         }
     }
 }
