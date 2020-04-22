@@ -52,7 +52,6 @@
 
         public C19M.M.C.A.Gumel2006.Interfaces.Results.DayVaccinatedIndividuals.IV V { get; private set; }
 
-        // TODO: Finish
         public void Solve(
             IGumel2006_Context Gumel2006_Context)
         {
