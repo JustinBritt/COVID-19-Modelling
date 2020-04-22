@@ -80,6 +80,16 @@
                     this.DayCumulativeDiseaseInducedDeaths = this.Convert_DayCumulativeDiseaseInducedDeaths(
                         this.DiseaseTransmission_Solution.DayCumulativeDiseaseInducedDeaths);
                 }
+
+                // DayLatentIndividuals
+
+                // DayInfectedIndividuals
+
+                // DayTreatedIndividuals
+
+                // DaySusceptibleIndividuals
+
+                // DayVaccinatedIndividuals
             }
         }
 
