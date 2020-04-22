@@ -24,6 +24,8 @@
 
     using C19M.M.C.A.Gumel2006.Interfaces.Contexts;
 
+    using C19M.M.C.A.Gumel2006.Interfaces.Indices;
+
     using C19M.M.C.A.Gumel2006.Interfaces.Models;
 
     using C19M.M.C.A.Gumel2006.Interfaces.Parameters.DevelopmentClinicalSymptomsRate;
