@@ -32,6 +32,7 @@
 
         public FhirDecimal InitialValue { get; }
 
+        // Equation (5)
         public decimal GetdRdt(
             Iδ δ,
             Iμ μ,
