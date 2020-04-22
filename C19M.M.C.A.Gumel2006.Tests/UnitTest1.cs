@@ -63,6 +63,8 @@
 
             var I = export.DayInfectedIndividuals;
 
+            var S = export.DaySusceptibleIndividuals;
+
             var dayCumulativeDiseaseInducedDeaths = export.DayCumulativeDiseaseInducedDeaths;
 
             foreach (var item in dayCumulativeDiseaseInducedDeaths)
