@@ -132,6 +132,7 @@
     <Compile Include="Classes\Calculations\DayInfectedIndividuals\I_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayLatentIndividuals\E_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayLatentIndividuals\E_ResultElement_Calculation.cs" />
+    <Compile Include="Classes\Calculations\DayProbableCases\DayProbableCases_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayProbableCases\DayProbableCases_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Calculations\DaySusceptibleIndividuals\S_Calculation.cs" />
     <Compile Include="Classes\Calculations\DaySusceptibleIndividuals\S_ResultElement_Calculation.cs" />
@@ -192,6 +193,7 @@
     <Compile Include="Interfaces\Calculations\DayInfectedIndividuals\II_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayLatentIndividuals\IE_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayLatentIndividuals\IE_ResultElement_Calculation.cs" />
+    <Compile Include="Interfaces\Calculations\DayProbableCases\IDayProbableCases_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayProbableCases\IDayProbableCases_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DaySusceptibleIndividuals\IS_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DaySusceptibleIndividuals\IS_Calculation.cs" />
