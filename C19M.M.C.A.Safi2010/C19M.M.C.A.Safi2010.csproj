@@ -47,11 +47,11 @@
     <Folder Include="Classes\Contexts\" />
     <Folder Include="Classes\Exports\" />
     <Folder Include="Classes\Models\" />
-    <Folder Include="Classes\Variables\" />
+    <Folder Include="Classes\Variables\SusceptibleIndividuals\" />
     <Folder Include="Interfaces\Contexts\" />
     <Folder Include="Interfaces\Exports\" />
     <Folder Include="Interfaces\Models\" />
-    <Folder Include="Interfaces\Variables\" />
+    <Folder Include="Interfaces\Variables\SusceptibleIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
