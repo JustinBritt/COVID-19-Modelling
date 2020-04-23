@@ -118,9 +118,11 @@
     <Folder Include="Classes\Contexts\" />
     <Folder Include="Classes\Exports\" />
     <Folder Include="Classes\Models\" />
+    <Folder Include="Classes\Variables\HospitalizedIndividuals\" />
     <Folder Include="Interfaces\Contexts\" />
     <Folder Include="Interfaces\Exports\" />
     <Folder Include="Interfaces\Models\" />
+    <Folder Include="Interfaces\Variables\HospitalizedIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
