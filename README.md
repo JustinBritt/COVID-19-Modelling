@@ -8,7 +8,9 @@ The goal of this project is to develop a user interface that can help public hea
 
 ## Literature
 
-[Gumel *et al.* (2004)](https://royalsocietypublishing.org/doi/10.1098/rspb.2004.2800) present a compartmental model for SARS-CoV that considers six sub-populations: susceptible, asymptomatic, quarantined, symptomatic, isolated, and recovered.
+Paper | Sub-populations
+------------ | -------------
+[Gumel *et al.* (2004)](https://royalsocietypublishing.org/doi/10.1098/rspb.2004.2800) | Susceptible, Asymptomatic, Quarantined, Symptomatic, Isolated, and Recovered
 
 ### Projects
 
