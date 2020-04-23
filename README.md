@@ -8,14 +8,15 @@ The goal of this project is to develop a user interface that can help public hea
 
 ## Literature
 
-Paper                                                                                    | Virus / Disease   | Sub-populations
+Paper                                                                                    | Virus / Disease                        | Sub-populations
 ------------ | ------------- | -------------
-[Gumel *et al.* (2004)](https://royalsocietypublishing.org/doi/10.1098/rspb.2004.2800)   | SARS-CoV                               | Susceptible, Asymptomatic, Quarantined, Symptomatic, Isolated, and Recovered
-[Gumel *et al.* (2006)](https://www.aimspress.com/article/10.3934/mbe.2006.3.485)        | SARS-CoV                               | Susceptible, Vaccinated, Latent, Infected, and Treated
+[Gumel *et al.* (2004)](https://royalsocietypublishing.org/doi/10.1098/rspb.2004.2800)   | SARS-CoV                               | SEQIJR
+[Gumel *et al.* (2006)](https://www.aimspress.com/article/10.3934/mbe.2006.3.485)        | SARS-CoV                               | SVEIR
+[McLeod *et al.* (2006)](http://www.aimspress.com/article/10.3934/mbe.2006.3.527)        | SARS-CoV                               | SEQIJR
 [Safi *et al.* (2010)](http://www.aimsciences.org/article/doi/10.3934/dcdsb.2010.14.209) | Communicable disease, such as SARS-CoV |
-[Lee *et al.* (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7094115/)             | MERS-CoV                               | Susceptible, Exposed, Infectious, Isolated, and Removed
-[Khan *et al.* (2018)](https://onlinelibrary.wiley.com/doi/full/10.1002/oca.2437)        | Infectious disease                     | Susceptible, Exposed, Infectious, and Recovered
-[Thäter *et al.* (2018](https://www.aimsciences.org/article/doi/10.3934/mbe.2018022)     | Infectious disease                     | Susceptible, Exposed, Infected, and Recovered
+[Lee *et al.* (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7094115/)             | MERS-CoV                               | SEIJR
+[Khan *et al.* (2018)](https://onlinelibrary.wiley.com/doi/full/10.1002/oca.2437)        | Infectious disease                     | SEIR
+[Thäter *et al.* (2018](https://www.aimsciences.org/article/doi/10.3934/mbe.2018022)     | Infectious disease                     | SEIR
 ### Projects
 
 #### Data Projects
@@ -44,6 +45,8 @@ Gumel, A. B., McCluskey, C. C., & Watmough, J. (2006). An SVEIR model for assess
 Khan, A., & Zaman, G. (2018). Optimal control strategy of SEIR endemic model with continuous age‐structure in the exposed and infectious classes. Optimal Control Applications and Methods, 39(5), 1716-1727.
 
 Lee, J., Chowell, G., & Jung, E. (2016). A dynamic compartmental model for the Middle East respiratory syndrome outbreak in the Republic of Korea: a retrospective analysis on control interventions and superspreading events. Journal of theoretical biology, 408, 118-126.
+
+McLeod, R. G., Brewster, J. F., Gumel, A. B., & Slonowsky, D. A. (2006). Sensitivity and uncertainty analyses for a SARS model with time-varying inputs and outputs. Mathematical Biosciences & Engineering, 3(3), 527.
 
 Safi, M. A., & Gumel, A. B. (2010). Global asymptotic dynamics of a model for quarantine and isolation. Discrete & Continuous Dynamical Systems-B, 14(1), 209.
 
