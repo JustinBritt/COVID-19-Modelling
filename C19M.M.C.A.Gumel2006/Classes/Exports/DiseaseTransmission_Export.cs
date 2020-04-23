@@ -80,6 +80,27 @@
                         this.DiseaseTransmission_Solution.DayCumulativeDiseaseInducedDeaths);
                 }
 
+                // DayCumulativeProbableCases
+                if (this.DiseaseTransmission_Solution.DayCumulativeProbableCases != null)
+                {
+                    this.DayCumulativeProbableCases = this.Convert_DayCumulativeProbableCases(
+                        this.DiseaseTransmission_Solution.DayCumulativeProbableCases);
+                }
+
+                // DayDiseaseInducedDeaths
+                if (this.DiseaseTransmission_Solution.DayDiseaseInducedDeaths != null)
+                {
+                    this.DayDiseaseInducedDeaths = this.Convert_DayDiseaseInducedDeaths(
+                        this.DiseaseTransmission_Solution.DayDiseaseInducedDeaths);
+                }
+
+                // DayProbableCases
+                if (this.DiseaseTransmission_Solution.DayProbableCases != null)
+                {
+                    this.DayProbableCases = this.Convert_DayProbableCases(
+                        this.DiseaseTransmission_Solution.DayProbableCases);
+                }
+
                 // DayLatentIndividuals
                 if (this.DiseaseTransmission_Solution.E != null)
                 {
