@@ -12,6 +12,7 @@ Paper                                                                           
 ------------ | ------------- | -------------
 [Hethcote (2000)](https://epubs.siam.org/doi/abs/10.1137/s0036144500371907)                    | Several                                | SIR, SEIR, MSEIR
 [Chowell *et al.* (2003)](https://www.sciencedirect.com/science/article/pii/S0022519303002285) | SARS-CoV                               | SEIJR
+[Alexander *et al.* (2004)](https://epubs.siam.org/doi/abs/10.1137/030600370)                  | Influenza                              | SVIRS
 [Gumel *et al.* (2004)](https://royalsocietypublishing.org/doi/10.1098/rspb.2004.2800)         | SARS-CoV                               | SEQIJR
 [Arino *et al.* (2006)](https://royalsocietypublishing.org/doi/full/10.1098/rsif.2006.0112)    | Influenza                              | SLIAR, SLIAS<sub>T</sub>L<sub>T</sub>I<sub>T</sub>A<sub>T</sub>R
 [Gumel *et al.* (2006)](https://www.aimspress.com/article/10.3934/mbe.2006.3.485)              | SARS-CoV                               | SVEIR
@@ -43,6 +44,8 @@ Paper                                                                           
 [Lee *et al.* (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7094115/)             | C19M.D.Lee2016   | C19M.M.C.A.Lee2016         |        
 
 ## References
+
+[Alexander, M. E., Bowman, C., Moghadas, S. M., Summers, R., Gumel, A. B., & Sahai, B. M. (2004). A vaccination model for transmission dynamics of influenza. SIAM Journal on Applied Dynamical Systems, 3(4), 503-524.](https://epubs.siam.org/doi/abs/10.1137/030600370)
 
 [Arino, J., Brauer, F., van den Driessche, P., Watmough, J., & Wu, J. (2006). Simple models for containment of a pandemic. Journal of the Royal Society Interface, 3(8), 453-457.](https://royalsocietypublishing.org/doi/full/10.1098/rsif.2006.0112)
 
