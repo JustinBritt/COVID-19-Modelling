@@ -1,20 +1,20 @@
 # COVID-19-Modelling
 
-# Introduction
+## Introduction
 
 TODO
 
-# Literature
+## Literature
 
 TODO
 
-## Projects
+### Projects
 
-## Data (C19M.D.*) Projects
+#### Data (C19M.D.*) Projects
 
 Data are provided in the Data (C19M.D.*) namespace. [Release 4 (R4) of the Health Level 7 Fast Healthcare Interoperability Resources (HL7 FHIR)](https://hl7.org/fhir/R4/index.html) is used.
 
-## Models - Compartmental Models - Approximate Solution Methods (C19M.M.CM.A.*) Projects
+#### Models - Compartmental Models - Approximate Solution Methods (C19M.M.CM.A.*) Projects
 
 In these projects, approximate solutions for compartmental models are obtained using the [ordinary differential equation (ODE) solvers in MathNet.Numerics.](https://numerics.mathdotnet.com/api/MathNet.Numerics.OdeSolvers/) 
 
@@ -27,7 +27,7 @@ Paper                                                                           
 [Safi *et al.* (2010)](http://www.aimsciences.org/article/doi/10.3934/dcdsb.2010.14.209) | C19M.D.Safi2010  | C19M.M.C.A.Safi2010                 | Communicable disease, such as SARS-CoV
 [Lee *et al.* (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7094115/)             | C19M.D.Lee2016   | C19M.M.C.A.Lee2016                  | MERS-CoV 
 
-## Models - Compartmental Models - System Dynamics (C19M.M.CM.SD.*) Projects
+#### Models - Compartmental Models - System Dynamics (C19M.M.CM.SD.*) Projects
 Folder | Description
 ------------ | ------------
 
