@@ -144,6 +144,7 @@
     <Compile Include="Classes\Calculations\DayVaccinatedIndividuals\V_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Contexts\Gumel2006_Context.cs" />
     <Compile Include="Classes\Exports\DiseaseTransmission_Export.cs" />
+    <Compile Include="Classes\Exports\EpidemicOutbreak_Export.cs" />
     <Compile Include="Classes\Exports\RescaledDiseaseTransmission_Export.cs" />
     <Compile Include="Classes\Indices\t.cs" />
     <Compile Include="Classes\Models\DiseaseTransmission_Model.cs" />
@@ -210,6 +211,7 @@
     <Compile Include="Interfaces\Calculations\DayVaccinatedIndividuals\IV_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Contexts\IGumel2006_Context.cs" />
     <Compile Include="Interfaces\Exports\IDiseaseTransmission_Export.cs" />
+    <Compile Include="Interfaces\Exports\IEpidemicOutbreak_Export.cs" />
     <Compile Include="Interfaces\Exports\IRescaledDiseaseTransmission_Export.cs" />
     <Compile Include="Interfaces\Indices\It.cs" />
     <Compile Include="Interfaces\Models\IDiseaseTransmission_Model.cs" />
