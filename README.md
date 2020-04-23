@@ -10,6 +10,7 @@ The goal of this project is to develop a user interface that can help public hea
 
 Paper                                                                                    | Virus / Disease                        | Sub-populations
 ------------ | ------------- | -------------
+[Hethcote (2000)](https://epubs.siam.org/doi/abs/10.1137/s0036144500371907)              | Several                                | SIR, SEIR, MSEIR
 [Gumel *et al.* (2004)](https://royalsocietypublishing.org/doi/10.1098/rspb.2004.2800)   | SARS-CoV                               | SEQIJR
 [Gumel *et al.* (2006)](https://www.aimspress.com/article/10.3934/mbe.2006.3.485)        | SARS-CoV                               | SVEIR
 [McLeod *et al.* (2006)](http://www.aimspress.com/article/10.3934/mbe.2006.3.527)        | SARS-CoV                               | SEQIJR
@@ -41,6 +42,8 @@ Paper                                                                           
 Gumel, A. B., Ruan, S., Day, T., Watmough, J., Brauer, F., Van den Driessche, P., ... & Wu, J. (2004). Modelling strategies for controlling SARS outbreaks. Proceedings of the Royal Society of London. Series B: Biological Sciences, 271(1554), 2223-2232.
 
 Gumel, A. B., McCluskey, C. C., & Watmough, J. (2006). An SVEIR model for assessing potential impact of an imperfect anti-SARS vaccine.
+
+Hethcote, H. W. (2000). The mathematics of infectious diseases. SIAM review, 42(4), 599-653.
 
 Khan, A., & Zaman, G. (2018). Optimal control strategy of SEIR endemic model with continuous age‐structure in the exposed and infectious classes. Optimal Control Applications and Methods, 39(5), 1716-1727.
 
