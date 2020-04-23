@@ -10,17 +10,18 @@ The goal of this project is to develop a user interface that can help public hea
 
 Paper                                                                                     | Virus / Disease                         | Sub-populations
 ------------ | ------------- | -------------
-[Hethcote (2000)](https://epubs.siam.org/doi/abs/10.1137/s0036144500371907)               | Several                                | SIR, SEIR, MSEIR
-[Gumel *et al.* (2004)](https://royalsocietypublishing.org/doi/10.1098/rspb.2004.2800)    | SARS-CoV                               | SEQIJR
-[Gumel *et al.* (2006)](https://www.aimspress.com/article/10.3934/mbe.2006.3.485)         | SARS-CoV                               | SVEIR
-[McLeod *et al.* (2006)](http://www.aimspress.com/article/10.3934/mbe.2006.3.527)         | SARS-CoV                               | SEQIJR
-[Ruan *et al.* (2006)](https://www.aimspress.com/article/10.3934/mbe.2006.3.205)          | SARS-CoV                               | SEIQR
-[Yan and Zou (2008)](https://www.sciencedirect.com/science/article/pii/S0895717707001628) | SARS-CoV                               | SEQIJR
-[Safi *et al.* (2010)](http://www.aimsciences.org/article/doi/10.3934/dcdsb.2010.14.209)  | Communicable disease, such as SARS-CoV | SEIQHRS
-[Lee *et al.* (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7094115/)              | MERS-CoV                               | SEIJR
-[Khan and Zaman (2018)](https://onlinelibrary.wiley.com/doi/full/10.1002/oca.2437)        | Infectious disease                     | SEIR
-[Thäter *et al.* (2018)](https://www.aimsciences.org/article/doi/10.3934/mbe.2018022)     | Infectious disease                     | SEIR
-[Tang *et al.* (2020)](https://www.mdpi.com/2077-0383/9/2/462)                            | SARS-CoV-2                             | SEIAS<sub>q</sub>E<sub>q</sub>HR
+[Hethcote (2000)](https://epubs.siam.org/doi/abs/10.1137/s0036144500371907)                    | Several                                | SIR, SEIR, MSEIR
+[Chowell *et al.* (2003)](https://www.sciencedirect.com/science/article/pii/S0022519303002285) | SARS-CoV                               | SEIJR
+[Gumel *et al.* (2004)](https://royalsocietypublishing.org/doi/10.1098/rspb.2004.2800)         | SARS-CoV                               | SEQIJR
+[Gumel *et al.* (2006)](https://www.aimspress.com/article/10.3934/mbe.2006.3.485)              | SARS-CoV                               | SVEIR
+[McLeod *et al.* (2006)](http://www.aimspress.com/article/10.3934/mbe.2006.3.527)              | SARS-CoV                               | SEQIJR
+[Ruan *et al.* (2006)](https://www.aimspress.com/article/10.3934/mbe.2006.3.205)               | SARS-CoV                               | SEIQR
+[Yan and Zou (2008)](https://www.sciencedirect.com/science/article/pii/S0895717707001628)      | SARS-CoV                               | SEQIJR
+[Safi *et al.* (2010)](http://www.aimsciences.org/article/doi/10.3934/dcdsb.2010.14.209)       | Communicable disease, such as SARS-CoV | SEIQHRS
+[Lee *et al.* (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7094115/)                   | MERS-CoV                               | SEIJR
+[Khan and Zaman (2018)](https://onlinelibrary.wiley.com/doi/full/10.1002/oca.2437)             | Infectious disease                     | SEIR
+[Thäter *et al.* (2018)](https://www.aimsciences.org/article/doi/10.3934/mbe.2018022)          | Infectious disease                     | SEIR
+[Tang *et al.* (2020)](https://www.mdpi.com/2077-0383/9/2/462)                                 | SARS-CoV-2                             | SEIAS<sub>q</sub>E<sub>q</sub>HR
 ### Projects
 
 #### Data Projects
@@ -41,6 +42,8 @@ Paper                                                                           
 [Lee *et al.* (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7094115/)             | C19M.D.Lee2016   | C19M.M.C.A.Lee2016         |        
 
 ## References
+
+[Chowell, G., Fenimore, P. W., Castillo-Garsow, M. A., & Castillo-Chavez, C. (2003). SARS outbreaks in Ontario, Hong Kong and Singapore: the role of diagnosis and isolation as a control mechanism. Journal of theoretical biology, 224(1), 1-8.](https://www.sciencedirect.com/science/article/pii/S0022519303002285)
 
 [Gumel, A. B., Ruan, S., Day, T., Watmough, J., Brauer, F., Van den Driessche, P., ... & Wu, J. (2004). Modelling strategies for controlling SARS outbreaks. Proceedings of the Royal Society of London. Series B: Biological Sciences, 271(1554), 2223-2232.](https://royalsocietypublishing.org/doi/10.1098/rspb.2004.2800)
 
