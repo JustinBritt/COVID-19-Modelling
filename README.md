@@ -8,12 +8,13 @@ The goal of this project is to develop a user interface that can help public hea
 
 ## Literature
 
-Paper                                                                                    | Virus / Disease                        | Sub-populations
+Paper                                                                                     | Virus / Disease                         | Sub-populations
 ------------ | ------------- | -------------
 [Hethcote (2000)](https://epubs.siam.org/doi/abs/10.1137/s0036144500371907)               | Several                                | SIR, SEIR, MSEIR
 [Gumel *et al.* (2004)](https://royalsocietypublishing.org/doi/10.1098/rspb.2004.2800)    | SARS-CoV                               | SEQIJR
 [Gumel *et al.* (2006)](https://www.aimspress.com/article/10.3934/mbe.2006.3.485)         | SARS-CoV                               | SVEIR
 [McLeod *et al.* (2006)](http://www.aimspress.com/article/10.3934/mbe.2006.3.527)         | SARS-CoV                               | SEQIJR
+[Ruan *et al.* (2006)](https://www.aimspress.com/article/10.3934/mbe.2006.3.205)          | SARS-CoV                               | SEIQR
 [Yan and Zou (2008)](https://www.sciencedirect.com/science/article/pii/S0895717707001628) | SARS-CoV                               | SEQIJR
 [Safi *et al.* (2010)](http://www.aimsciences.org/article/doi/10.3934/dcdsb.2010.14.209)  | Communicable disease, such as SARS-CoV | SEIQHRS
 [Lee *et al.* (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7094115/)              | MERS-CoV                               | SEIJR
@@ -52,6 +53,8 @@ Paper                                                                           
 [Lee, J., Chowell, G., & Jung, E. (2016). A dynamic compartmental model for the Middle East respiratory syndrome outbreak in the Republic of Korea: a retrospective analysis on control interventions and superspreading events. Journal of theoretical biology, 408, 118-126.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7094115/) 
 
 [McLeod, R. G., Brewster, J. F., Gumel, A. B., & Slonowsky, D. A. (2006). Sensitivity and uncertainty analyses for a SARS model with time-varying inputs and outputs. Mathematical Biosciences & Engineering, 3(3), 527.](http://www.aimspress.com/article/10.3934/mbe.2006.3.527) 
+
+[Ruan, S., Wang, W., & Levin, S. A. (2006). The effect of global travel on the spread of SARS. Mathematical Biosciences & Engineering, 3(1), 205.](https://www.aimspress.com/article/10.3934/mbe.2006.3.205)
 
 [Safi, M. A., & Gumel, A. B. (2010). Global asymptotic dynamics of a model for quarantine and isolation. Discrete & Continuous Dynamical Systems-B, 14(1), 209.](http://www.aimsciences.org/article/doi/10.3934/dcdsb.2010.14.209)
 
