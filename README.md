@@ -13,7 +13,7 @@ Paper                                                                           
 [Hethcote (2000)](https://epubs.siam.org/doi/abs/10.1137/s0036144500371907)                    | Several                                | SIR, SEIR, MSEIR
 [Chowell *et al.* (2003)](https://www.sciencedirect.com/science/article/pii/S0022519303002285) | SARS-CoV                               | SEIJR
 [Gumel *et al.* (2004)](https://royalsocietypublishing.org/doi/10.1098/rspb.2004.2800)         | SARS-CoV                               | SEQIJR
-[Arino *et al.* (2006)](https://royalsocietypublishing.org/doi/full/10.1098/rsif.2006.0112)    | Influenza                              | SLIAR, SLIAS<sub>t</sub>L<sub>t</sub>I<sub>t</sub>A<sub>t</sub>R
+[Arino *et al.* (2006)](https://royalsocietypublishing.org/doi/full/10.1098/rsif.2006.0112)    | Influenza                              | SLIAR, SLIAS<sub>T</sub>L<sub>T</sub>I<sub>T</sub>A<sub>T</sub>R
 [Gumel *et al.* (2006)](https://www.aimspress.com/article/10.3934/mbe.2006.3.485)              | SARS-CoV                               | SVEIR
 [McLeod *et al.* (2006)](http://www.aimspress.com/article/10.3934/mbe.2006.3.527)              | SARS-CoV                               | SEQIJR
 [Ruan *et al.* (2006)](https://www.aimspress.com/article/10.3934/mbe.2006.3.205)               | SARS-CoV                               | SEIQR
