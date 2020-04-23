@@ -9,5 +9,14 @@
     <Import_RootNamespace>C19M.M.C.SD.Gumel2004</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)GreaterTorontoArea\database\db.tmp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)GreaterTorontoArea\database\db.data" />
+    <None Include="$(MSBuildThisFileDirectory)GreaterTorontoArea\database\db.lck" />
+    <None Include="$(MSBuildThisFileDirectory)GreaterTorontoArea\database\db.log" />
+    <None Include="$(MSBuildThisFileDirectory)GreaterTorontoArea\database\db.properties" />
+    <None Include="$(MSBuildThisFileDirectory)GreaterTorontoArea\database\db.script" />
+    <None Include="$(MSBuildThisFileDirectory)GreaterTorontoArea\GreaterTorontoArea.alp" />
   </ItemGroup>
 </Project>
