@@ -13,6 +13,7 @@ Paper                                                                           
 [Hethcote (2000)](https://epubs.siam.org/doi/abs/10.1137/s0036144500371907)                    | Several                                | SIR, SEIR, MSEIR
 [Chowell *et al.* (2003)](https://www.sciencedirect.com/science/article/pii/S0022519303002285) | SARS-CoV                               | SEIJR
 [Gumel *et al.* (2004)](https://royalsocietypublishing.org/doi/10.1098/rspb.2004.2800)         | SARS-CoV                               | SEQIJR
+[Arino *et al.* (2006)](https://royalsocietypublishing.org/doi/full/10.1098/rsif.2006.0112)    | Influenza                              | SLIAR, SLIAS<sub>t</sub>L<sub>t</sub>I<sub>t</sub>A<sub>t</sub>R
 [Gumel *et al.* (2006)](https://www.aimspress.com/article/10.3934/mbe.2006.3.485)              | SARS-CoV                               | SVEIR
 [McLeod *et al.* (2006)](http://www.aimspress.com/article/10.3934/mbe.2006.3.527)              | SARS-CoV                               | SEQIJR
 [Ruan *et al.* (2006)](https://www.aimspress.com/article/10.3934/mbe.2006.3.205)               | SARS-CoV                               | SEIQR
@@ -42,6 +43,8 @@ Paper                                                                           
 [Lee *et al.* (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7094115/)             | C19M.D.Lee2016   | C19M.M.C.A.Lee2016         |        
 
 ## References
+
+[Arino, J., Brauer, F., van den Driessche, P., Watmough, J., & Wu, J. (2006). Simple models for containment of a pandemic. Journal of the Royal Society Interface, 3(8), 453-457.](https://royalsocietypublishing.org/doi/full/10.1098/rsif.2006.0112)
 
 [Chowell, G., Fenimore, P. W., Castillo-Garsow, M. A., & Castillo-Chavez, C. (2003). SARS outbreaks in Ontario, Hong Kong and Singapore: the role of diagnosis and isolation as a control mechanism. Journal of theoretical biology, 224(1), 1-8.](https://www.sciencedirect.com/science/article/pii/S0022519303002285)
 
