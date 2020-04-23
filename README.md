@@ -13,7 +13,7 @@ Paper                                                                           
 [Gumel *et al.* (2004)](https://royalsocietypublishing.org/doi/10.1098/rspb.2004.2800)   | SARS-CoV                               | SEQIJR
 [Gumel *et al.* (2006)](https://www.aimspress.com/article/10.3934/mbe.2006.3.485)        | SARS-CoV                               | SVEIR
 [McLeod *et al.* (2006)](http://www.aimspress.com/article/10.3934/mbe.2006.3.527)        | SARS-CoV                               | SEQIJR
-[Safi *et al.* (2010)](http://www.aimsciences.org/article/doi/10.3934/dcdsb.2010.14.209) | Communicable disease, such as SARS-CoV |
+[Safi *et al.* (2010)](http://www.aimsciences.org/article/doi/10.3934/dcdsb.2010.14.209) | Communicable disease, such as SARS-CoV | SEIQHRS
 [Lee *et al.* (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7094115/)             | MERS-CoV                               | SEIJR
 [Khan *et al.* (2018)](https://onlinelibrary.wiley.com/doi/full/10.1002/oca.2437)        | Infectious disease                     | SEIR
 [Thäter *et al.* (2018](https://www.aimsciences.org/article/doi/10.3934/mbe.2018022)     | Infectious disease                     | SEIR
