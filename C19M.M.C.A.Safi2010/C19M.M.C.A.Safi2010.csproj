@@ -105,9 +105,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Variables\ExposedIndividuals\E.cs" />
+    <Compile Include="Classes\Variables\InfectiousIndividuals\I.cs" />
     <Compile Include="Classes\Variables\QuarantinedIndividuals\Q.cs" />
     <Compile Include="Classes\Variables\SusceptibleIndividuals\S.cs" />
     <Compile Include="Interfaces\Variables\ExposedIndividuals\IE.cs" />
+    <Compile Include="Interfaces\Variables\InfectiousIndividuals\II.cs" />
     <Compile Include="Interfaces\Variables\QuarantinedIndividuals\IQ.cs" />
     <Compile Include="Interfaces\Variables\SusceptibleIndividuals\IS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -116,11 +118,9 @@
     <Folder Include="Classes\Contexts\" />
     <Folder Include="Classes\Exports\" />
     <Folder Include="Classes\Models\" />
-    <Folder Include="Classes\Variables\InfectiousIndividuals\" />
     <Folder Include="Interfaces\Contexts\" />
     <Folder Include="Interfaces\Exports\" />
     <Folder Include="Interfaces\Models\" />
-    <Folder Include="Interfaces\Variables\InfectiousIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
