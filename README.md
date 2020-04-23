@@ -18,6 +18,7 @@ Paper                                                                           
 [Lee *et al.* (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7094115/)             | MERS-CoV                               | SEIJR
 [Khan *et al.* (2018)](https://onlinelibrary.wiley.com/doi/full/10.1002/oca.2437)        | Infectious disease                     | SEIR
 [Thäter *et al.* (2018](https://www.aimsciences.org/article/doi/10.3934/mbe.2018022)     | Infectious disease                     | SEIR
+
 ### Projects
 
 #### Data Projects
