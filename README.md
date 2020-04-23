@@ -14,7 +14,7 @@ Paper                                                                           
 [Gumel *et al.* (2006)](https://www.aimspress.com/article/10.3934/mbe.2006.3.485)        | SARS-CoV                               | Susceptible, Vaccinated, Latent, Infected, and Treated
 [Safi *et al.* (2010)](http://www.aimsciences.org/article/doi/10.3934/dcdsb.2010.14.209) | Communicable disease, such as SARS-CoV |
 [Lee *et al.* (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7094115/)             | MERS-CoV                               |
-[Khan *et al.* (2018)](https://onlinelibrary.wiley.com/doi/full/10.1002/oca.2437)   | |
+[Khan *et al.* (2018)](https://onlinelibrary.wiley.com/doi/full/10.1002/oca.2437)        | Infectious disease                     | Susceptible, Exposed, Infectious, Recovered
 
 ### Projects
 
