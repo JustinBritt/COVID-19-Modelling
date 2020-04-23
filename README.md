@@ -14,8 +14,8 @@ Paper                                                                           
 [Gumel *et al.* (2006)](https://www.aimspress.com/article/10.3934/mbe.2006.3.485)        | SARS-CoV                               | Susceptible, Vaccinated, Latent, Infected, and Treated
 [Safi *et al.* (2010)](http://www.aimsciences.org/article/doi/10.3934/dcdsb.2010.14.209) | Communicable disease, such as SARS-CoV |
 [Lee *et al.* (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7094115/)             | MERS-CoV                               |
-[Khan *et al.* (2018)](https://onlinelibrary.wiley.com/doi/full/10.1002/oca.2437)        | Infectious disease                     | Susceptible, Exposed, Infectious, Recovered
-
+[Khan *et al.* (2018)](https://onlinelibrary.wiley.com/doi/full/10.1002/oca.2437)        | Infectious disease                     | Susceptible, Exposed, Infectious, and Recovered
+[Thäter *et al.* (2018](https://www.aimsciences.org/article/doi/10.3934/mbe.2018022)     | Infectious disease                     | Susceptible, Exposed, Infected, and Recovered
 ### Projects
 
 #### Data Projects
@@ -34,7 +34,6 @@ Paper                                                                           
 [Gumel *et al.* (2006)](https://www.aimspress.com/article/10.3934/mbe.2006.3.485)        | C19M.D.Gumel2006 | C19M.M.C.A.Gumel2006       |          
 [Safi *et al.* (2010)](http://www.aimsciences.org/article/doi/10.3934/dcdsb.2010.14.209) | C19M.D.Safi2010  | C19M.M.C.A.Safi2010        |     
 [Lee *et al.* (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7094115/)             | C19M.D.Lee2016   | C19M.M.C.A.Lee2016         |        
-[Khan *et al.* (2018)](https://onlinelibrary.wiley.com/doi/full/10.1002/oca.2437)        | | |
 
 ## References
 
