@@ -6,6 +6,8 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    using C19M.M.C.A.Gumel2006.Interfaces.Contexts;
+
     internal interface IRescaledDiseaseTransmission_Solution
     {
         C19M.M.C.A.Gumel2006.Interfaces.Results.DayLatentIndividuals.IE E { get; }
