@@ -47,16 +47,16 @@ Paper                                                                           
 
 [Hethcote, H. W. (2000). The mathematics of infectious diseases. SIAM review, 42(4), 599-653.](https://epubs.siam.org/doi/abs/10.1137/s0036144500371907)
 
-Khan, A., & Zaman, G. (2018). Optimal control strategy of SEIR endemic model with continuous age‐structure in the exposed and infectious classes. Optimal Control Applications and Methods, 39(5), 1716-1727.
+[Khan, A., & Zaman, G. (2018). Optimal control strategy of SEIR endemic model with continuous age‐structure in the exposed and infectious classes. Optimal Control Applications and Methods, 39(5), 1716-1727.](https://onlinelibrary.wiley.com/doi/full/10.1002/oca.2437) 
 
-Lee, J., Chowell, G., & Jung, E. (2016). A dynamic compartmental model for the Middle East respiratory syndrome outbreak in the Republic of Korea: a retrospective analysis on control interventions and superspreading events. Journal of theoretical biology, 408, 118-126.
+[Lee, J., Chowell, G., & Jung, E. (2016). A dynamic compartmental model for the Middle East respiratory syndrome outbreak in the Republic of Korea: a retrospective analysis on control interventions and superspreading events. Journal of theoretical biology, 408, 118-126.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7094115/) 
 
-McLeod, R. G., Brewster, J. F., Gumel, A. B., & Slonowsky, D. A. (2006). Sensitivity and uncertainty analyses for a SARS model with time-varying inputs and outputs. Mathematical Biosciences & Engineering, 3(3), 527.
+[McLeod, R. G., Brewster, J. F., Gumel, A. B., & Slonowsky, D. A. (2006). Sensitivity and uncertainty analyses for a SARS model with time-varying inputs and outputs. Mathematical Biosciences & Engineering, 3(3), 527.](http://www.aimspress.com/article/10.3934/mbe.2006.3.527) 
 
-Safi, M. A., & Gumel, A. B. (2010). Global asymptotic dynamics of a model for quarantine and isolation. Discrete & Continuous Dynamical Systems-B, 14(1), 209.
+[Safi, M. A., & Gumel, A. B. (2010). Global asymptotic dynamics of a model for quarantine and isolation. Discrete & Continuous Dynamical Systems-B, 14(1), 209.](http://www.aimsciences.org/article/doi/10.3934/dcdsb.2010.14.209)
 
-Tang, B., Wang, X., Li, Q., Bragazzi, N. L., Tang, S., Xiao, Y., & Wu, J. (2020). Estimation of the transmission risk of the 2019-nCoV and its implication for public health interventions. Journal of Clinical Medicine, 9(2), 462.
+[Tang, B., Wang, X., Li, Q., Bragazzi, N. L., Tang, S., Xiao, Y., & Wu, J. (2020). Estimation of the transmission risk of the 2019-nCoV and its implication for public health interventions. Journal of Clinical Medicine, 9(2), 462.](https://www.mdpi.com/2077-0383/9/2/462)    
 
-Thäter, M., Chudej, K., & Pesch, H. J. (2018). Optimal vaccination strategies for an SEIR model of infectious diseases with logistic growth. Mathematical Biosciences & Engineering, 15(2), 485.
+[Thäter, M., Chudej, K., & Pesch, H. J. (2018). Optimal vaccination strategies for an SEIR model of infectious diseases with logistic growth. Mathematical Biosciences & Engineering, 15(2), 485.](https://www.aimsciences.org/article/doi/10.3934/mbe.2018022) 
 
-Yan, X., & Zou, Y. (2008). Optimal and sub-optimal quarantine and isolation control in SARS epidemics. Mathematical and Computer Modelling, 47(1-2), 235-245.
+[Yan, X., & Zou, Y. (2008). Optimal and sub-optimal quarantine and isolation control in SARS epidemics. Mathematical and Computer Modelling, 47(1-2), 235-245.](https://www.sciencedirect.com/science/article/pii/S0895717707001628)
