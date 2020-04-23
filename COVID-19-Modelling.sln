@@ -32,11 +32,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C19M.UI", "C19M.UI\C19M.UI.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C19M.UI.Tests", "C19M.UI.Tests\C19M.UI.Tests.csproj", "{9E17E133-9B28-4967-84F9-224B57EDE5C6}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "C19M.M.C.SD.Gumel2004", "C19M.M.C.SD.Gumel2004\C19M.M.C.SD.Gumel2004.shproj", "{3D6A7A4C-5B49-43C0-830F-DDDC461F0D9B}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "C19M.M.C.SD.Gumel2004", "C19M.M.C.SD.Gumel2004\C19M.M.C.SD.Gumel2004.shproj", "{2A22D5A0-C483-4A72-9E19-3AE9392FCA03}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		C19M.M.C.SD.Gumel2004\C19M.M.C.SD.Gumel2004.projitems*{3d6a7a4c-5b49-43c0-830f-dddc461f0d9b}*SharedItemsImports = 13
+		C19M.M.C.SD.Gumel2004\C19M.M.C.SD.Gumel2004.projitems*{2a22d5a0-c483-4a72-9e19-3ae9392fca03}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
