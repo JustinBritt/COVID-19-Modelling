@@ -32,9 +32,9 @@ Data are provided in the Data namespace (C19M.D.*). [Release 4 (R4) of the Healt
 
 #### Models - Compartmental Models Projects
 
-In projects in the Models - Compartmental Models - Approximate Solution Methods namespace (C19M.M.CM.A.*), approximate solutions for compartmental models are obtained using the [ordinary differential equation (ODE) solvers in MathNet.Numerics.](https://numerics.mathdotnet.com/api/MathNet.Numerics.OdeSolvers/)  Unless otherwise noted, these projects are programmed in C# and use the .NET Framework 4.8.
+In projects in the Models - Compartmental Models - Approximate Solution Methods namespace (C19M.M.C.A.*), approximate solutions for compartmental models are obtained using the [ordinary differential equation (ODE) solvers in MathNet.Numerics.](https://numerics.mathdotnet.com/api/MathNet.Numerics.OdeSolvers/)  Unless otherwise noted, these projects are programmed in C# and use the .NET Framework 4.8.
 
-In projects in the Models - Compartmental Models - System Dynamics namespace (C19M.M.CM.SD.*), AnyLogic is used to simulate compartmental models.
+In projects in the Models - Compartmental Models - System Dynamics namespace (C19M.M.C.SD.*), AnyLogic is used to simulate compartmental models.
 
 Paper                                                                                    | Data Folder      | Approximate Solution Methods Folder | System Dynamics Folder
 ------------ | ------------- | ------------- | ------------- 
