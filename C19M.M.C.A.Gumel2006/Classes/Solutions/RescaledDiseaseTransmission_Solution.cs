@@ -25,14 +25,6 @@
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         }
 
-        public C19M.M.C.A.Gumel2006.Interfaces.Results.DayCumulativeDiseaseInducedDeaths.IDayCumulativeDiseaseInducedDeaths DayCumulativeDiseaseInducedDeaths { get; private set; }
-
-        public C19M.M.C.A.Gumel2006.Interfaces.Results.DayCumulativeProbableCases.IDayCumulativeProbableCases DayCumulativeProbableCases { get; private set; }
-
-        public C19M.M.C.A.Gumel2006.Interfaces.Results.DayDiseaseInducedDeaths.IDayDiseaseInducedDeaths DayDiseaseInducedDeaths { get; private set; }
-
-        public C19M.M.C.A.Gumel2006.Interfaces.Results.DayProbableCases.IDayProbableCases DayProbableCases { get; private set; }
-
         public C19M.M.C.A.Gumel2006.Interfaces.Results.DayLatentIndividuals.IE E { get; private set; }
 
         public C19M.M.C.A.Gumel2006.Interfaces.Results.DayInfectedIndividuals.II I { get; private set; }
@@ -61,7 +53,6 @@
                     rescaledDiseaseTransmission_Model.t.NumberDaysAfterStartDate(rescaledDiseaseTransmission_Model.t.EndDate).Value.Value,
                     rescaledDiseaseTransmission_Model.t.NumberDaysAfterStartDate(rescaledDiseaseTransmission_Model.t.EndDate).Value.Value - rescaledDiseaseTransmission_Model.t.NumberDaysAfterStartDate(rescaledDiseaseTransmission_Model.t.StartDate).Value.Value + 1,
                     this.f(
-                        rescaledDiseaseTransmission_Model.d,
                         rescaledDiseaseTransmission_Model.N,
                         rescaledDiseaseTransmission_Model.p,
                         rescaledDiseaseTransmission_Model.β,
@@ -100,33 +91,9 @@
             this.V = new C19M.M.C.A.Gumel2006.Classes.Calculations.DayVaccinatedIndividuals.V_Calculation().Calculate(
                 rescaledDiseaseTransmission_Model.t,
                 RungeKuttaResults);
-
-            // DayDiseaseInducedDeaths
-            this.DayDiseaseInducedDeaths = new C19M.M.C.A.Gumel2006.Classes.Calculations.DayDiseaseInducedDeaths.DayDiseaseInducedDeaths_Calculation().Calculate(
-                rescaledDiseaseTransmission_Model.t,
-                rescaledDiseaseTransmission_Model.d,
-                this.I);
-
-            // DayProbableCases
-            this.DayProbableCases = new C19M.M.C.A.Gumel2006.Classes.Calculations.DayProbableCases.DayProbableCases_Calculation().Calculate(
-                rescaledDiseaseTransmission_Model.t,
-                this.E,
-                this.I,
-                this.R);
-
-            // DayCumulativeDiseaseInducedDeaths
-            this.DayCumulativeDiseaseInducedDeaths = new C19M.M.C.A.Gumel2006.Classes.Calculations.DayCumulativeDiseaseInducedDeaths.DayCumulativeDiseaseInducedDeaths_Calculation().Calculate(
-                rescaledDiseaseTransmission_Model.t,
-                this.DayDiseaseInducedDeaths);
-
-            // DayCumulativeProbableCases
-            this.DayCumulativeProbableCases = new C19M.M.C.A.Gumel2006.Classes.Calculations.DayCumulativeProbableCases.DayCumulativeProbableCases_Calculation().Calculate(
-                rescaledDiseaseTransmission_Model.t,
-                this.DayProbableCases);
         }
 
         private Func<double, MathNet.Numerics.LinearAlgebra.Vector<double>, MathNet.Numerics.LinearAlgebra.Vector<double>> f(
-            C19M.M.C.A.Gumel2006.Interfaces.Parameters.DiseaseInducedMortalityRate.Id d,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.IN N,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Ip p,
             C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled.Iβ β,

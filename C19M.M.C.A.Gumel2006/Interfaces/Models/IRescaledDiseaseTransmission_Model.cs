@@ -27,8 +27,6 @@
     {
         It t { get; }
 
-        C19M.M.C.A.Gumel2006.Interfaces.Parameters.DiseaseInducedMortalityRate.Id d { get; }
-
         IN N { get; }
 
         Ip p { get; }

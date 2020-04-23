@@ -63,10 +63,6 @@
 
             // Parameters
 
-            // d
-            this.d = new C19M.M.C.A.Gumel2006.Classes.Parameters.DiseaseInducedMortalityRate.d(
-                context.DiseaseInducedMortalityRate);
-
             // N
             this.N = new C19M.M.C.A.Gumel2006.Classes.Parameters.Rescaled.N(
                 context.NaturalMortalityRate,
@@ -133,8 +129,6 @@
         }
 
         public It t { get; }
-
-        public C19M.M.C.A.Gumel2006.Interfaces.Parameters.DiseaseInducedMortalityRate.Id d { get; }
 
         public IN N { get; }
 
