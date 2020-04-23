@@ -87,9 +87,17 @@
                 context.RecoveryRate,
                 context.NaturalMortalityRate);
 
+            // δ
+            this.δ = new C19M.M.C.A.Gumel2006.Classes.Parameters.RecoveryRate.δ(
+                context.RecoveryRate);
+
             // ε
             this.ε = new C19M.M.C.A.Gumel2006.Classes.Parameters.Rescaled.ε(
                 new FhirDecimal(0m));
+
+            // μ
+            this.μ = new C19M.M.C.A.Gumel2006.Classes.Parameters.NaturalMortalityRate.μ(
+                context.NaturalMortalityRate);
 
             // τ
             this.τ = new C19M.M.C.A.Gumel2006.Classes.Parameters.VaccineEfficacy.τ(
@@ -104,6 +112,10 @@
             // I(t)
             this.I = new C19M.M.C.A.Gumel2006.Classes.Variables.InfectedIndividuals.I(
                 context.InitialValueInfectedIndividuals);
+
+            // R(t)
+            this.R = new C19M.M.C.A.Gumel2006.Classes.Variables.TreatedIndividuals.R(
+                context.InitialValueTreatedIndividuals);
 
             // S(t)
             this.S = new C19M.M.C.A.Gumel2006.Classes.Variables.SusceptibleIndividuals.S(
@@ -124,13 +136,19 @@
 
         public Iγ γ { get; }
 
+        public Iδ δ { get; }
+
         public Iε ε { get; }
+
+        public Iμ μ { get; }
 
         public Iτ τ { get; }
 
         public IE E { get; }
 
         public II I { get; }
+
+        public IR R { get; }
 
         public IS S { get; }
 
