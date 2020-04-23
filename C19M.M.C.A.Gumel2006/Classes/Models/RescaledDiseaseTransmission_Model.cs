@@ -63,6 +63,10 @@
 
             // Parameters
 
+            // d
+            this.d = new C19M.M.C.A.Gumel2006.Classes.Parameters.DiseaseInducedMortalityRate.d(
+                context.DiseaseInducedMortalityRate);
+
             // N
             this.N = new C19M.M.C.A.Gumel2006.Classes.Parameters.Rescaled.N(
                 context.NaturalMortalityRate,
@@ -87,10 +91,18 @@
                 context.RecoveryRate,
                 context.NaturalMortalityRate);
 
+            // δ
+            this.δ = new C19M.M.C.A.Gumel2006.Classes.Parameters.RecoveryRate.δ(
+                context.RecoveryRate);
+
             // ε
             this.ε = new C19M.M.C.A.Gumel2006.Classes.Parameters.Rescaled.ε(
                 context.DiseaseInducedMortalityRate,
                 context.RecoveryRate,
+                context.NaturalMortalityRate);
+
+            // μ
+            this.μ = new C19M.M.C.A.Gumel2006.Classes.Parameters.NaturalMortalityRate.μ(
                 context.NaturalMortalityRate);
 
             // τ
@@ -122,6 +134,8 @@
 
         public It t { get; }
 
+        public C19M.M.C.A.Gumel2006.Interfaces.Parameters.DiseaseInducedMortalityRate.Id d { get; }
+
         public IN N { get; }
 
         public Ip p { get; }
@@ -130,7 +144,11 @@
 
         public Iγ γ { get; }
 
+        public Iδ δ { get; }
+
         public Iε ε { get; }
+
+        public Iμ μ { get; }
 
         public Iτ τ { get; }
 
