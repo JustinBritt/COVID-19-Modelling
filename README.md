@@ -41,11 +41,11 @@ Paper                                                                           
 
 ## References
 
-Gumel, A. B., Ruan, S., Day, T., Watmough, J., Brauer, F., Van den Driessche, P., ... & Wu, J. (2004). Modelling strategies for controlling SARS outbreaks. Proceedings of the Royal Society of London. Series B: Biological Sciences, 271(1554), 2223-2232.
+[Gumel, A. B., Ruan, S., Day, T., Watmough, J., Brauer, F., Van den Driessche, P., ... & Wu, J. (2004). Modelling strategies for controlling SARS outbreaks. Proceedings of the Royal Society of London. Series B: Biological Sciences, 271(1554), 2223-2232.](https://royalsocietypublishing.org/doi/10.1098/rspb.2004.2800)
 
-Gumel, A. B., McCluskey, C. C., & Watmough, J. (2006). An SVEIR model for assessing potential impact of an imperfect anti-SARS vaccine.
+[Gumel, A. B., McCluskey, C. C., & Watmough, J. (2006). An SVEIR model for assessing potential impact of an imperfect anti-SARS vaccine.](https://www.aimspress.com/article/10.3934/mbe.2006.3.485) 
 
-Hethcote, H. W. (2000). The mathematics of infectious diseases. SIAM review, 42(4), 599-653.
+[Hethcote, H. W. (2000). The mathematics of infectious diseases. SIAM review, 42(4), 599-653.](https://epubs.siam.org/doi/abs/10.1137/s0036144500371907)
 
 Khan, A., & Zaman, G. (2018). Optimal control strategy of SEIR endemic model with continuous age‐structure in the exposed and infectious classes. Optimal Control Applications and Methods, 39(5), 1716-1727.
 
