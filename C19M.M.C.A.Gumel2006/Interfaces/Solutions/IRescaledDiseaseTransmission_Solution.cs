@@ -17,5 +17,8 @@
         C19M.M.C.A.Gumel2006.Interfaces.Results.DaySusceptibleIndividuals.IS S { get; }
 
         C19M.M.C.A.Gumel2006.Interfaces.Results.DayVaccinatedIndividuals.IV V { get; }
+
+        void Solve(
+            IGumel2006_Context Gumel2006_Context);
     }
 }
