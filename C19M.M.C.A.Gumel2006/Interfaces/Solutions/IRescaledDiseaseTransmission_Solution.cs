@@ -8,5 +8,14 @@
 
     internal interface IRescaledDiseaseTransmission_Solution
     {
+        C19M.M.C.A.Gumel2006.Interfaces.Results.DayLatentIndividuals.IE E { get; }
+
+        C19M.M.C.A.Gumel2006.Interfaces.Results.DayInfectedIndividuals.II I { get; }
+
+        C19M.M.C.A.Gumel2006.Interfaces.Results.DayTreatedIndividuals.IR R { get; }
+
+        C19M.M.C.A.Gumel2006.Interfaces.Results.DaySusceptibleIndividuals.IS S { get; }
+
+        C19M.M.C.A.Gumel2006.Interfaces.Results.DayVaccinatedIndividuals.IV V { get; }
     }
 }
