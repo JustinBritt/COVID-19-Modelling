@@ -21,5 +21,7 @@
         ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DaySusceptibleIndividuals { get; }
 
         ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayVaccinatedIndividuals { get; }
+
+        void Solve();
     }
 }
