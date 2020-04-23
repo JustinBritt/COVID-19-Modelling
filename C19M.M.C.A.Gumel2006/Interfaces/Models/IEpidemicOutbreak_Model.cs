@@ -26,5 +26,31 @@
     internal interface IEpidemicOutbreak_Model
     {
         It t { get; }
+
+        IN N { get; }
+
+        Ip p { get; }
+
+        Iβ β { get; }
+
+        Iγ γ { get; }
+
+        Iδ δ { get; }
+
+        Iε ε { get; }
+
+        Iμ μ { get; }
+
+        Iτ τ { get; }
+
+        IE E { get; }
+
+        II I { get; }
+
+        IR R { get; }
+
+        IS S { get; }
+
+        IV V { get; }
     }
 }
