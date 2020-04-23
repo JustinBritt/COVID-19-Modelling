@@ -8,6 +8,21 @@
 
     using C19M.M.C.A.Gumel2006.Interfaces.Indices;
 
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.DevelopmentClinicalSymptomsRate;
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.DiseaseInducedMortalityRate;
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.NaturalMortalityRate;
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.RecoveryRate;
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.RecruitmentRateSusceptibleHumans;
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.Rescaled;
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccinationCoverageRate;
+    using C19M.M.C.A.Gumel2006.Interfaces.Parameters.VaccineEfficacy;
+
+    using C19M.M.C.A.Gumel2006.Interfaces.Variables.InfectedIndividuals;
+    using C19M.M.C.A.Gumel2006.Interfaces.Variables.LatentIndividuals;
+    using C19M.M.C.A.Gumel2006.Interfaces.Variables.SusceptibleIndividuals;
+    using C19M.M.C.A.Gumel2006.Interfaces.Variables.TreatedIndividuals;
+    using C19M.M.C.A.Gumel2006.Interfaces.Variables.VaccinatedIndividuals;
+
     internal interface IEpidemicOutbreak_Model
     {
         It t { get; }
