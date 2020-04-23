@@ -6,7 +6,7 @@ TODO
 
 ## Literature
 
-TODO
+[Gumel *et al.* (2004)](https://royalsocietypublishing.org/doi/10.1098/rspb.2004.2800) present a compartmental model for SARS-CoV that considers six sub-populations: susceptible, asymptomatic, quarantined, symptomatic, isolated, and recovered.
 
 ### Projects
 
