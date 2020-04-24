@@ -142,9 +142,11 @@
     <Folder Include="Classes\Contexts\" />
     <Folder Include="Classes\Exports\" />
     <Folder Include="Classes\Models\" />
+    <Folder Include="Classes\Parameters\HospitalizationRateInfectiousIndividuals\" />
     <Folder Include="Interfaces\Contexts\" />
     <Folder Include="Interfaces\Exports\" />
     <Folder Include="Interfaces\Models\" />
+    <Folder Include="Interfaces\Parameters\HospitalizationRateInfectiousIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
