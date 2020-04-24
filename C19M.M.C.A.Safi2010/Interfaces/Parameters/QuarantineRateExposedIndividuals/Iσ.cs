@@ -12,7 +12,7 @@
     internal interface Iσ
     {
         /// <summary>
-        /// Gets the quarantine rate for exposed individuals;
+        /// Gets the quarantine rate for exposed individuals.
         /// </summary>
         FhirDecimal Value { get; }
     }

@@ -28,7 +28,7 @@
         }
 
         /// <summary>
-        /// Gets the quarantine rate for exposed individuals;
+        /// Gets the quarantine rate for exposed individuals.
         /// </summary>
         public FhirDecimal Value { get; }
     }
