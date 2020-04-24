@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Over the past few decades, there have been several outbreaks of zoonotic diseases, including influenza, Ebola, SARS/SARS-CoV, MERS-CoV, and COVID-19/SARS-CoV-2. 
+Over the past few decades, there have been several outbreaks of zoonotic diseases, including influenza, Ebola Virus Disease, SARS/SARS-CoV, MERS-CoV, and COVID-19/SARS-CoV-2. 
 As shown in the Literature section, many researchers have already developed mathematical models that describe the spread of these diseases.
 The goal of this project is to develop a user interface that can help public health officials and researchers use these models to make decisions on how to control the spread of these diseases.
 
