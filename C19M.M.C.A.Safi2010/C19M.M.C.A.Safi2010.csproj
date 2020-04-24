@@ -110,23 +110,23 @@
     <Compile Include="Classes\Variables\QuarantinedIndividuals\Q.cs" />
     <Compile Include="Classes\Variables\RecoveredIndividuals\R.cs" />
     <Compile Include="Classes\Variables\SusceptibleIndividuals\S.cs" />
+    <Compile Include="Classes\Variables\TotalPopulationSize\N.cs" />
     <Compile Include="Interfaces\Variables\ExposedIndividuals\IE.cs" />
     <Compile Include="Interfaces\Variables\HospitalizedIndividuals\IH.cs" />
     <Compile Include="Interfaces\Variables\InfectiousIndividuals\II.cs" />
     <Compile Include="Interfaces\Variables\QuarantinedIndividuals\IQ.cs" />
     <Compile Include="Interfaces\Variables\RecoveredIndividuals\IR.cs" />
     <Compile Include="Interfaces\Variables\SusceptibleIndividuals\IS.cs" />
+    <Compile Include="Interfaces\Variables\TotalPopulationSize\IN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Contexts\" />
     <Folder Include="Classes\Exports\" />
     <Folder Include="Classes\Models\" />
-    <Folder Include="Classes\Variables\TotalPopulationSize\" />
     <Folder Include="Interfaces\Contexts\" />
     <Folder Include="Interfaces\Exports\" />
     <Folder Include="Interfaces\Models\" />
-    <Folder Include="Interfaces\Variables\TotalPopulationSize\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
