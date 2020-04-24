@@ -42,5 +42,7 @@
         public C19M.M.C.A.Safi2010.Interfaces.Parameters.HospitalizationRateQuarantinedIndividuals.Iα α { get; }
 
         public C19M.M.C.A.Safi2010.Interfaces.Parameters.EffectiveContactRate.Iβ β { get; }
+
+        public C19M.M.C.A.Safi2010.Interfaces.Parameters.NaturalRecoveryRateInfectiousIndividuals.Iγ γ_1 { get; }
     }
 }
