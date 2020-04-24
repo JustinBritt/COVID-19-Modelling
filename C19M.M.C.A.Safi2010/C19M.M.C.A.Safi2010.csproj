@@ -106,6 +106,7 @@
   <ItemGroup>
     <Compile Include="Classes\Parameters\AcquireInfectionRateSusceptibleIndividuals\λ.cs" />
     <Compile Include="Classes\Parameters\DevelopmentDiseaseSymptomsRateExposedIndividuals\κ.cs" />
+    <Compile Include="Classes\Parameters\DiseaseInducedDeathRateHospitalizedIndividuals\δ.cs" />
     <Compile Include="Classes\Parameters\DiseaseInducedDeathRateInfectiousIndividuals\δ.cs" />
     <Compile Include="Classes\Parameters\EffectiveContactRate\β.cs" />
     <Compile Include="Classes\Parameters\EfficacyIsolationTreatmentHospitalizedIndividuals\η.cs" />
@@ -126,6 +127,7 @@
     <Compile Include="Classes\Variables\TotalPopulationSize\N.cs" />
     <Compile Include="Interfaces\Parameters\AcquireInfectionRateSusceptibleIndividuals\Iλ.cs" />
     <Compile Include="Interfaces\Parameters\DevelopmentDiseaseSymptomsRateExposedIndividuals\Iκ.cs" />
+    <Compile Include="Interfaces\Parameters\DiseaseInducedDeathRateHospitalizedIndividuals\Iδ.cs" />
     <Compile Include="Interfaces\Parameters\DiseaseInducedDeathRateInfectiousIndividuals\Iδ.cs" />
     <Compile Include="Interfaces\Parameters\EffectiveContactRate\Iβ.cs" />
     <Compile Include="Interfaces\Parameters\EfficacyIsolationTreatmentHospitalizedIndividuals\Iη.cs" />
@@ -150,11 +152,9 @@
     <Folder Include="Classes\Contexts\" />
     <Folder Include="Classes\Exports\" />
     <Folder Include="Classes\Models\" />
-    <Folder Include="Classes\Parameters\DiseaseInducedDeathRateHospitalizedIndividuals\" />
     <Folder Include="Interfaces\Contexts\" />
     <Folder Include="Interfaces\Exports\" />
     <Folder Include="Interfaces\Models\" />
-    <Folder Include="Interfaces\Parameters\DiseaseInducedDeathRateHospitalizedIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
