@@ -110,6 +110,7 @@
     <Compile Include="Classes\Parameters\EfficacyIsolationTreatmentHospitalizedIndividuals\η.cs" />
     <Compile Include="Classes\Parameters\InfectionAcquiredImmunityLossRateRecoveredIndividuals\ψ.cs" />
     <Compile Include="Classes\Parameters\NaturalDeathRate\μ.cs" />
+    <Compile Include="Classes\Parameters\NaturalRecoveryRateInfectiousIndividuals\γ.cs" />
     <Compile Include="Classes\Parameters\QuarantineRateExposedIndividuals\σ.cs" />
     <Compile Include="Classes\Parameters\RecruitmentRateSusceptibleIndividuals\Π.cs" />
     <Compile Include="Classes\Variables\ExposedIndividuals\E.cs" />
@@ -125,6 +126,7 @@
     <Compile Include="Interfaces\Parameters\EfficacyIsolationTreatmentHospitalizedIndividuals\Iη.cs" />
     <Compile Include="Interfaces\Parameters\InfectionAcquiredImmunityLossRateRecoveredIndividuals\Iψ.cs" />
     <Compile Include="Interfaces\Parameters\NaturalDeathRate\Iμ.cs" />
+    <Compile Include="Interfaces\Parameters\NaturalRecoveryRateInfectiousIndividuals\Iγ.cs" />
     <Compile Include="Interfaces\Parameters\QuarantineRateExposedIndividuals\Iσ.cs" />
     <Compile Include="Interfaces\Parameters\RecruitmentRateSusceptibleIndividuals\IΠ.cs" />
     <Compile Include="Interfaces\Variables\ExposedIndividuals\IE.cs" />
@@ -140,11 +142,9 @@
     <Folder Include="Classes\Contexts\" />
     <Folder Include="Classes\Exports\" />
     <Folder Include="Classes\Models\" />
-    <Folder Include="Classes\Parameters\NaturalRecoveryRateInfectiousIndividuals\" />
     <Folder Include="Interfaces\Contexts\" />
     <Folder Include="Interfaces\Exports\" />
     <Folder Include="Interfaces\Models\" />
-    <Folder Include="Interfaces\Parameters\NaturalRecoveryRateInfectiousIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
