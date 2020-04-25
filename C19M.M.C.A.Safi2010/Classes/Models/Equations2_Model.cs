@@ -12,6 +12,8 @@
     // Hl7
     using Hl7.Fhir.Model;
 
+    using C19M.M.C.A.Safi2010.Interfaces.Contexts;
+
     using C19M.M.C.A.Safi2010.Interfaces.Models;
 
     using C19M.M.C.A.Safi2010.Interfaces.Parameters.AcquireInfectionRateSusceptibleIndividuals;
