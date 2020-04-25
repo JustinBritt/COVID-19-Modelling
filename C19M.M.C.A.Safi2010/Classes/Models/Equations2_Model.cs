@@ -37,6 +37,8 @@
         public Equations2_Model()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+            // Parameters
         }
 
         public C19M.M.C.A.Safi2010.Interfaces.Parameters.HospitalizationRateQuarantinedIndividuals.Iα α { get; }
