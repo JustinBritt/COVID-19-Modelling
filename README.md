@@ -8,7 +8,8 @@ As shown in the Literature section, many researchers have already developed math
 
 Canada and the United States (US) are major trading partners. The border between Windsor, Ontario and Detroit, Michigan accounts for a significant amount of trade and travel between Canada and the US.
 
-The goal of this project is to develop a model and user interface that can help public health officials and researchers to make decisions on how to control the spread of these diseases.
+One goal of this project is to present a model for Windsor that accounts for decisions made by city, provincial, and federal governments. 
+Another goal is to develop a user interface that can help public health officials and researchers to make decisions on how to control the spread of these diseases.
 
 ## Literature
 
