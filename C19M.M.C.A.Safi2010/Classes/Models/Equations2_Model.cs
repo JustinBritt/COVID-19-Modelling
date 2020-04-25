@@ -120,5 +120,19 @@
         public C19M.M.C.A.Safi2010.Interfaces.Parameters.HospitalizationRateInfectiousIndividuals.Iϕ ϕ { get; }
 
         public C19M.M.C.A.Safi2010.Interfaces.Parameters.InfectionAcquiredImmunityLossRateRecoveredIndividuals.Iψ ψ { get; }
+
+        public IE E { get; }
+
+        public IH H { get; }
+
+        public II I { get; }
+
+        public IN N { get; }
+
+        public IQ Q { get; }
+
+        public IR R { get; }
+
+        public IS S { get; }
     }
 }
