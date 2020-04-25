@@ -26,7 +26,8 @@
             FhirDecimal naturalRecoveryRateInfectiousIndividuals,
             FhirDecimal recoveryRateHospitalizedIndividuals,
             FhirDecimal diseaseInducedDeathRateInfectiousIndividuals,
-            FhirDecimal diseaseInducedDeathRateHospitalizedIndividuals)
+            FhirDecimal diseaseInducedDeathRateHospitalizedIndividuals,
+            FhirDecimal efficacyIsolationTreatmentHospitalizedIndividuals)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -41,6 +42,8 @@
             this.DiseaseInducedDeathRateInfectiousIndividuals = diseaseInducedDeathRateInfectiousIndividuals;
 
             this.DiseaseInducedDeathRateHospitalizedIndividuals = diseaseInducedDeathRateHospitalizedIndividuals;
+
+            this.EfficacyIsolationTreatmentHospitalizedIndividuals = efficacyIsolationTreatmentHospitalizedIndividuals;
         }
 
         /// <summary>
@@ -78,5 +81,11 @@
         /// Parameter: δ_2
         /// </summary>
         public FhirDecimal DiseaseInducedDeathRateHospitalizedIndividuals { get; }
+
+        /// <summary>
+        /// Gets the efficacy of isolation or treatment given to hospitalized individuals.
+        /// Parameter: η
+        /// </summary>
+        public FhirDecimal EfficacyIsolationTreatmentHospitalizedIndividuals { get; }
     }
 }
