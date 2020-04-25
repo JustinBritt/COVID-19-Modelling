@@ -23,7 +23,8 @@
         public Safi2010_Context(
             FhirDecimal hospitalizationRateQuarantinedIndividuals,
             FhirDecimal effectiveContactRate,
-            FhirDecimal naturalRecoveryRateInfectiousIndividuals)
+            FhirDecimal naturalRecoveryRateInfectiousIndividuals,
+            FhirDecimal recoveryRateHospitalizedIndividuals)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -32,6 +33,8 @@
             this.EffectiveContactRate = effectiveContactRate;
 
             this.NaturalRecoveryRateInfectiousIndividuals = naturalRecoveryRateInfectiousIndividuals;
+
+            this.RecoveryRateHospitalizedIndividuals = recoveryRateHospitalizedIndividuals;
         }
 
         /// <summary>
@@ -51,5 +54,11 @@
         /// Parameter: γ_1
         /// </summary>
         public FhirDecimal NaturalRecoveryRateInfectiousIndividuals { get; }
+
+        /// <summary>
+        /// Gets the recovery rate for hospitalized individuals.
+        /// Parameter: γ_2
+        /// </summary>
+        public FhirDecimal RecoveryRateHospitalizedIndividuals { get; }
     }
 }

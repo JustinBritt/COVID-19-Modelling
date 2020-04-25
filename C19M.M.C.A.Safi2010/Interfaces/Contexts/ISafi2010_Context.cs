@@ -28,5 +28,11 @@
         /// Parameter: γ_1
         /// </summary>
         FhirDecimal NaturalRecoveryRateInfectiousIndividuals { get; }
+
+        /// <summary>
+        /// Gets the recovery rate for hospitalized individuals.
+        /// Parameter: γ_2
+        /// </summary>
+        FhirDecimal RecoveryRateHospitalizedIndividuals { get; }
     }
 }
