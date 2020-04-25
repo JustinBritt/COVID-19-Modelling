@@ -21,13 +21,18 @@
 
         // Constructor
         public Safi2010_Context(
-            FhirDecimal quarantineRateExposedIndividuals)
+            FhirDecimal quarantineRateExposedIndividuals,
+            FhirDecimal effectiveContactRate)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             this.QuarantineRateExposedIndividuals = quarantineRateExposedIndividuals;
+
+            this.EffectiveContactRate = effectiveContactRate;
         }
 
         public FhirDecimal QuarantineRateExposedIndividuals { get; }
+
+        public FhirDecimal EffectiveContactRate { get; }
     }
 }

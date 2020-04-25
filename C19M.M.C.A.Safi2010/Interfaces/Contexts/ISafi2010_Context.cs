@@ -12,5 +12,7 @@
     public interface ISafi2010_Context
     {
         FhirDecimal QuarantineRateExposedIndividuals { get; }
+
+        FhirDecimal EffectiveContactRate { get; }
     }
 }
