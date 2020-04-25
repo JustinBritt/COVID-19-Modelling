@@ -34,6 +34,7 @@ Paper                                                                           
 
 Parameter    | Description
 ------------ | ------------- 
+μ            | Natural death rate
 
 ## Projects
 
