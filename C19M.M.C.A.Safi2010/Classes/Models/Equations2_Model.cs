@@ -81,6 +81,8 @@
                 Safi2010_Context.EfficacyIsolationTreatmentHospitalizedIndividuals);
 
             // κ
+            this.κ = new C19M.M.C.A.Safi2010.Classes.Parameters.DevelopmentDiseaseSymptomsRateExposedIndividuals.κ(
+                Safi2010_Context.DevelopmentDiseaseSymptomsRateExposedIndividuals);
 
             // λ
 
