@@ -64,6 +64,8 @@ March 26, 2020 - ["City of Windsor suspends transit operations starting March 29
 
 April 2, 2020 - ["Windsor Regional Hospital to convert St. Clair College SportsPlex into COVID-19 field hospital"](https://www.cbc.ca/news/canada/windsor/windsor-regional-hospital-st-clair-college-sportsplex-covid19-field-hospital-1.5519673)
 
+April 5, 2020 - ["Detroit-Windsor border officers handing out kits and support as health-care workers travel back and forth"](https://www.cbc.ca/news/canada/windsor/covid-19-border-kits-healthcare-workers-1.5522636)
+
 April 6, 2020 - ["Fishing industry in Windsor-Essex shut down during peak season due to COVID-19"](https://www.cbc.ca/news/canada/windsor/fishing-impacts-covid-19-windsor-essex-county-1.5522574)
 
 April 21, 2020 - ["Air Canada to temporarily suspend flights to U.S."](https://www.cbc.ca/news/business/air-canada-to-temporarily-suspend-flights-to-u-s-1.5539796)
