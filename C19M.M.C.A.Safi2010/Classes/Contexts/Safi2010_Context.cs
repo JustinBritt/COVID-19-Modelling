@@ -31,7 +31,8 @@
             FhirDecimal developmentDiseaseSymptomsRateExposedIndividuals,
             FhirDecimal acquireInfectionRateSusceptibleIndividuals,
             FhirDecimal naturalDeathRate,
-            FhirDecimal recruitmentRateSusceptibleIndividuals)
+            FhirDecimal recruitmentRateSusceptibleIndividuals,
+            FhirDecimal quarantineRateExposedIndividuals)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -56,6 +57,8 @@
             this.NaturalDeathRate = naturalDeathRate;
 
             this.RecruitmentRateSusceptibleIndividuals = recruitmentRateSusceptibleIndividuals;
+
+            this.QuarantineRateExposedIndividuals = quarantineRateExposedIndividuals;
         }
 
         /// <summary>
@@ -123,5 +126,11 @@
         /// Parameter: Π
         /// </summary>
         public FhirDecimal RecruitmentRateSusceptibleIndividuals { get; }
+
+        /// <summary>
+        /// Gets the quarantine rate for exposed individuals.
+        /// Parameter: σ
+        /// </summary>
+        public FhirDecimal QuarantineRateExposedIndividuals { get; }
     }
 }
