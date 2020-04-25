@@ -31,8 +31,16 @@
             this.EffectiveContactRate = effectiveContactRate;
         }
 
+        /// <summary>
+        /// Gets the hospitalization rate for quarantined individuals.
+        /// Parameter: α
+        /// </summary>
         public FhirDecimal QuarantineRateExposedIndividuals { get; }
 
+        /// <summary>
+        /// Gets the effective contact rate.
+        /// Parameter: β
+        /// </summary>
         public FhirDecimal EffectiveContactRate { get; }
     }
 }

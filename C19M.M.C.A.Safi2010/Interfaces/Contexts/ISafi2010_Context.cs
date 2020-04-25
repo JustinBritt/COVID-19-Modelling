@@ -11,8 +11,16 @@
 
     public interface ISafi2010_Context
     {
+        /// <summary>
+        /// Gets the hospitalization rate for quarantined individuals.
+        /// Parameter: α
+        /// </summary>
         FhirDecimal QuarantineRateExposedIndividuals { get; }
 
+        /// <summary>
+        /// Gets the effective contact rate.
+        /// Parameter: β
+        /// </summary>
         FhirDecimal EffectiveContactRate { get; }
     }
 }
