@@ -54,7 +54,7 @@ Paper                                                                           
 [Lee *et al.* (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7094115/)             | C19M.D.Lee2016   | C19M.M.C.A.Lee2016         |        
 
 ## News Stories
-March 21, 2020 ["Michigan healthcare worker living in Windsor-Essex County reported as 2nd local COVID-19 case"](https://www.cbc.ca/news/canada/windsor/windsor-second-covid-19-case-reported-1.5505769)
+March 21, 2020 - ["Michigan healthcare worker living in Windsor-Essex County reported as 2nd local COVID-19 case"](https://www.cbc.ca/news/canada/windsor/windsor-second-covid-19-case-reported-1.5505769)
 
 March 26, 2020 - ["City of Windsor suspends transit operations starting March 29"](https://www.cbc.ca/news/canada/windsor/transit-windsor-suspended-starting-march-29-1.5511264)
 
