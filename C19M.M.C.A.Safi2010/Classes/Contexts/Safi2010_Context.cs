@@ -20,9 +20,14 @@
         private ILog Log { get; }
 
         // Constructor
-        public Safi2010_Context()
+        public Safi2010_Context(
+            FhirDecimal quarantineRateExposedIndividuals)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+            this.QuarantineRateExposedIndividuals = quarantineRateExposedIndividuals;
         }
+
+        public FhirDecimal QuarantineRateExposedIndividuals { get; }
     }
 }

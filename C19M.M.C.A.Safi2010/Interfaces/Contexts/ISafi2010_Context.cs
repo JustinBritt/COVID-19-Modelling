@@ -6,7 +6,11 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     public interface ISafi2010_Context
     {
+        FhirDecimal QuarantineRateExposedIndividuals { get; }
     }
 }
