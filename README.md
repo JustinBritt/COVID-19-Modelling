@@ -12,8 +12,8 @@ The goal of this project is to develop a model and user interface that can help 
 
 ### Timeline
 
-March 29 - [Suspension of Transit Windsor services](https://www.cbc.ca/news/canada/windsor/transit-windsor-suspended-starting-march-29-1.5511264)
-
+March 26, 2020 - ["City of Windsor suspends transit operations starting March 29"](https://www.cbc.ca/news/canada/windsor/transit-windsor-suspended-starting-march-29-1.5511264)
+April 6, 2020 - ["Fishing industry in Windsor-Essex shut down during peak season due to COVID-19"](https://www.cbc.ca/news/canada/windsor/fishing-impacts-covid-19-windsor-essex-county-1.5522574)
 ## Literature
 
 Paper                                                                                     | Virus / Disease                         | Sub-populations
