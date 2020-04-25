@@ -9,7 +9,7 @@ The goal of this project is to develop a model and user interface that can help 
 
 ### Timeline
 
-TODO
+March 29 - [Suspension of Transit Windsor services](https://www.cbc.ca/news/canada/windsor/transit-windsor-suspended-starting-march-29-1.5511264)
 
 ## Literature
 
