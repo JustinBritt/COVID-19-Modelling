@@ -66,6 +66,8 @@ April 2, 2020 - ["Windsor Regional Hospital to convert St. Clair College SportsP
 
 April 6, 2020 - ["Fishing industry in Windsor-Essex shut down during peak season due to COVID-19"](https://www.cbc.ca/news/canada/windsor/fishing-impacts-covid-19-windsor-essex-county-1.5522574)
 
+April 21, 2020 - ["Air Canada to temporarily suspend flights to U.S."](https://www.cbc.ca/news/business/air-canada-to-temporarily-suspend-flights-to-u-s-1.5539796)
+
 ## References
 
 [Alexander, M. E., Bowman, C., Moghadas, S. M., Summers, R., Gumel, A. B., & Sahai, B. M. (2004). A vaccination model for transmission dynamics of influenza. SIAM Journal on Applied Dynamical Systems, 3(4), 503-524.](https://epubs.siam.org/doi/abs/10.1137/030600370)
