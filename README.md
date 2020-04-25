@@ -32,7 +32,8 @@ Paper                                                                           
 
 # Mathematical Model
 
-TODO
+Parameter    | Description
+------------ | ------------- 
 
 ## Projects
 
