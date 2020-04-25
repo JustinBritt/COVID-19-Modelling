@@ -91,6 +91,8 @@
                 Safi2010_Context.NaturalDeathRate);
 
             // Π
+            this.Π = new C19M.M.C.A.Safi2010.Classes.Parameters.RecruitmentRateSusceptibleIndividuals.Π(
+                Safi2010_Context.RecruitmentRateSusceptibleIndividuals);
 
             // σ
 
