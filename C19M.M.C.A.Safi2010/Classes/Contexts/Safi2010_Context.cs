@@ -33,7 +33,8 @@
             FhirDecimal naturalDeathRate,
             FhirDecimal recruitmentRateSusceptibleIndividuals,
             FhirDecimal quarantineRateExposedIndividuals,
-            FhirDecimal hospitalizationRateInfectiousIndividuals)
+            FhirDecimal hospitalizationRateInfectiousIndividuals,
+            FhirDecimal infectionAcquiredImmunityLossRateRecoveredIndividuals)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -62,6 +63,8 @@
             this.QuarantineRateExposedIndividuals = quarantineRateExposedIndividuals;
 
             this.HospitalizationRateInfectiousIndividuals = hospitalizationRateInfectiousIndividuals;
+
+            this.InfectionAcquiredImmunityLossRateRecoveredIndividuals = infectionAcquiredImmunityLossRateRecoveredIndividuals;
         }
 
         /// <summary>
@@ -141,5 +144,11 @@
         /// Parameter: ϕ
         /// </summary>
         public FhirDecimal HospitalizationRateInfectiousIndividuals { get; }
+
+        /// <summary>
+        /// Gets the rate at which recovered individuals lose their infection-acquired immunity.
+        /// Parameter: ψ
+        /// </summary>
+        public FhirDecimal InfectionAcquiredImmunityLossRateRecoveredIndividuals { get; }
     }
 }
