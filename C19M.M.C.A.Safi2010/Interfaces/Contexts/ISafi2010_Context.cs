@@ -22,5 +22,11 @@
         /// Parameter: β
         /// </summary>
         FhirDecimal EffectiveContactRate { get; }
+
+        /// <summary>
+        /// Gets the natural recovery rate for infectious individuals.
+        /// Parameter: γ_1
+        /// </summary>
+        FhirDecimal NaturalRecoveryRateInfectiousIndividuals { get; }
     }
 }
