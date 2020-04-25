@@ -65,6 +65,8 @@ March 17, 2020 - ["Canada, U.S. working on mutual deal to restrict non-essential
 
 March 18, 2020 - ["Canada, U.S. border temporarily closing to non-essential traffic to slow COVID-19"](https://www.cbc.ca/news/politics/canada-us-border-deal-1.5501289)
 
+March 20, 2020 - ["CBC Windsor's March 20 COVID-19 update: Windsor declares state of emergency"](https://www.cbc.ca/news/canada/windsor/covid19-windsoressex-march19-1.5504099)
+
 March 21, 2020 - ["Michigan healthcare worker living in Windsor-Essex County reported as 2nd local COVID-19 case"](https://www.cbc.ca/news/canada/windsor/windsor-second-covid-19-case-reported-1.5505769)
 
 March 26, 2020 - ["City of Windsor suspends transit operations starting March 29"](https://www.cbc.ca/news/canada/windsor/transit-windsor-suspended-starting-march-29-1.5511264)
