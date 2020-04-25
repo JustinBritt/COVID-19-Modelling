@@ -83,6 +83,8 @@ April 5, 2020 - ["Detroit-Windsor border officers handing out kits and support a
 
 April 6, 2020 - ["Fishing industry in Windsor-Essex shut down during peak season due to COVID-19"](https://www.cbc.ca/news/canada/windsor/fishing-impacts-covid-19-windsor-essex-county-1.5522574)
 
+April 8, 2020 - ["COVID-19 won’t stop cross-border health care in Windsor"](https://www.cbc.ca/player/play/1721527875560)
+
 April 21, 2020 - ["Air Canada to temporarily suspend flights to U.S."](https://www.cbc.ca/news/business/air-canada-to-temporarily-suspend-flights-to-u-s-1.5539796)
 
 ## References
