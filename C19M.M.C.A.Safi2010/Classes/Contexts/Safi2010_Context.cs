@@ -28,7 +28,8 @@
             FhirDecimal diseaseInducedDeathRateInfectiousIndividuals,
             FhirDecimal diseaseInducedDeathRateHospitalizedIndividuals,
             FhirDecimal efficacyIsolationTreatmentHospitalizedIndividuals,
-            FhirDecimal developmentDiseaseSymptomsRateExposedIndividuals)
+            FhirDecimal developmentDiseaseSymptomsRateExposedIndividuals,
+            FhirDecimal acquireInfectionRateSusceptibleIndividuals)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -47,6 +48,8 @@
             this.EfficacyIsolationTreatmentHospitalizedIndividuals = efficacyIsolationTreatmentHospitalizedIndividuals;
 
             this.DevelopmentDiseaseSymptomsRateExposedIndividuals = developmentDiseaseSymptomsRateExposedIndividuals;
+
+            this.AcquireInfectionRateSusceptibleIndividuals = acquireInfectionRateSusceptibleIndividuals;
         }
 
         /// <summary>
@@ -96,5 +99,11 @@
         /// Parameter: κ
         /// </summary>
         public FhirDecimal DevelopmentDiseaseSymptomsRateExposedIndividuals { get; }
+
+        /// <summary>
+        /// Gets the rate at which susceptible individuals acquire infections.
+        /// Parameter: λ
+        /// </summary>
+        public FhirDecimal AcquireInfectionRateSusceptibleIndividuals { get; }
     }
 }
