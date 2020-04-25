@@ -6,6 +6,11 @@ Over the past few decades, there have been several outbreaks of zoonotic disease
 As shown in the Literature section, many researchers have already developed mathematical models that describe the spread of these diseases.
 The goal of this project is to develop a user interface that can help public health officials and researchers use these models to make decisions on how to control the spread of these diseases.
 
+
+### Timeline
+
+TODO
+
 ## Literature
 
 Paper                                                                                     | Virus / Disease                         | Sub-populations
@@ -24,13 +29,18 @@ Paper                                                                           
 [Khan and Zaman (2018)](https://onlinelibrary.wiley.com/doi/full/10.1002/oca.2437)             | Infectious disease                     | SEIR
 [Thäter *et al.* (2018)](https://www.aimsciences.org/article/doi/10.3934/mbe.2018022)          | Infectious disease                     | SEIR
 [Tang *et al.* (2020)](https://www.mdpi.com/2077-0383/9/2/462)                                 | SARS-CoV-2                             | SEIAS<sub>q</sub>E<sub>q</sub>HR
-### Projects
 
-#### Data Projects
+# Mathematical Model
+
+TODO
+
+## Projects
+
+### Data Projects
 
 Data are provided in the Data namespace (C19M.D.*). [Release 4 (R4) of the Health Level 7 Fast Healthcare Interoperability Resources (HL7 FHIR)](https://hl7.org/fhir/R4/index.html) is used.
 
-#### Models - Compartmental Models Projects
+### Models - Compartmental Models Projects
 
 In projects in the Models - Compartmental Models - Approximate Solution Methods namespace (C19M.M.C.A.*), approximate solutions for compartmental models are obtained using the [ordinary differential equation (ODE) solvers in MathNet.Numerics.](https://numerics.mathdotnet.com/api/MathNet.Numerics.OdeSolvers/)  Unless otherwise noted, these projects are programmed in C# and use the .NET Framework 4.8.
 
