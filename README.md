@@ -81,4 +81,6 @@ Paper                                                                           
 
 [Thäter, M., Chudej, K., & Pesch, H. J. (2018). Optimal vaccination strategies for an SEIR model of infectious diseases with logistic growth. Mathematical Biosciences & Engineering, 15(2), 485.](https://www.aimsciences.org/article/doi/10.3934/mbe.2018022) 
 
+[Wolfe, N. D., Dunavan, C. P., & Diamond, J. (2007). Origins of major human infectious diseases. Nature, 447(7142), 279-283.](https://www.nature.com/articles/nature05775)
+
 [Yan, X., & Zou, Y. (2008). Optimal and sub-optimal quarantine and isolation control in SARS epidemics. Mathematical and Computer Modelling, 47(1-2), 235-245.](https://www.sciencedirect.com/science/article/pii/S0895717707001628)
