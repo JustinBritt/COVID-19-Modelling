@@ -95,6 +95,8 @@
                 Safi2010_Context.RecruitmentRateSusceptibleIndividuals);
 
             // σ
+            this.σ = new C19M.M.C.A.Safi2010.Classes.Parameters.QuarantineRateExposedIndividuals.σ(
+                Safi2010_Context.QuarantineRateExposedIndividuals);
 
             // ϕ
 
