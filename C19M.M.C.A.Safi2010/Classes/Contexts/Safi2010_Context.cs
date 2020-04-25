@@ -30,7 +30,8 @@
             FhirDecimal efficacyIsolationTreatmentHospitalizedIndividuals,
             FhirDecimal developmentDiseaseSymptomsRateExposedIndividuals,
             FhirDecimal acquireInfectionRateSusceptibleIndividuals,
-            FhirDecimal naturalDeathRate)
+            FhirDecimal naturalDeathRate,
+            FhirDecimal recruitmentRateSusceptibleIndividuals)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -53,6 +54,8 @@
             this.AcquireInfectionRateSusceptibleIndividuals = acquireInfectionRateSusceptibleIndividuals;
 
             this.NaturalDeathRate = naturalDeathRate;
+
+            this.RecruitmentRateSusceptibleIndividuals = recruitmentRateSusceptibleIndividuals;
         }
 
         /// <summary>
@@ -114,5 +117,11 @@
         /// Parameter: μ
         /// </summary>
         public FhirDecimal NaturalDeathRate { get; }
+
+        /// <summary>
+        /// Gets the recruitment rate of susceptible individuals.
+        /// Parameter: Π
+        /// </summary>
+        public FhirDecimal RecruitmentRateSusceptibleIndividuals { get; }
     }
 }
