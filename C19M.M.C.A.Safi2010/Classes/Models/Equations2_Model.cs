@@ -73,6 +73,8 @@
                 Safi2010_Context.DiseaseInducedDeathRateInfectiousIndividuals);
 
             // δ_2
+            this.δ_2 = new C19M.M.C.A.Safi2010.Classes.Parameters.DiseaseInducedDeathRateHospitalizedIndividuals.δ(
+                Safi2010_Context.DiseaseInducedDeathRateHospitalizedIndividuals);
 
             // η
 
