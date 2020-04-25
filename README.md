@@ -52,7 +52,7 @@ Paper                                                                           
 [Safi *et al.* (2010)](http://www.aimsciences.org/article/doi/10.3934/dcdsb.2010.14.209) | C19M.D.Safi2010  | C19M.M.C.A.Safi2010        |     
 [Lee *et al.* (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7094115/)             | C19M.D.Lee2016   | C19M.M.C.A.Lee2016         |        
 
-## News Stories from Windsor and Detroit
+## News Stories
 March 21, 2020 ["Michigan healthcare worker living in Windsor-Essex County reported as 2nd local COVID-19 case"](https://www.cbc.ca/news/canada/windsor/windsor-second-covid-19-case-reported-1.5505769)
 
 March 26, 2020 - ["City of Windsor suspends transit operations starting March 29"](https://www.cbc.ca/news/canada/windsor/transit-windsor-suspended-starting-march-29-1.5511264)
