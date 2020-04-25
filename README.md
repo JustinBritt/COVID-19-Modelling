@@ -34,7 +34,7 @@ Paper                                                                           
 
 Variable   | Description
 ------------ | ------------- 
-            | 
+R(t)            | Recovered individuals
 
 
 Parameter    | Description
