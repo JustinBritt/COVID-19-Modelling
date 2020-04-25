@@ -7,7 +7,6 @@ Over the past few decades, there have been several major outbreaks of zoonotic d
 As shown in the Literature section, many researchers have already developed mathematical models that describe the spread of these diseases.
 The goal of this project is to develop a model and user interface that can help public health officials and researchers to make decisions on how to control the spread of these diseases.
 
-
 ### Timeline
 
 TODO
