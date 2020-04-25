@@ -15,7 +15,7 @@
         /// Gets the hospitalization rate for quarantined individuals.
         /// Parameter: α
         /// </summary>
-        FhirDecimal QuarantineRateExposedIndividuals { get; }
+        FhirDecimal HospitalizationRateQuarantinedIndividuals { get; }
 
         /// <summary>
         /// Gets the effective contact rate.

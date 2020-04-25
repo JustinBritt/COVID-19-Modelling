@@ -21,12 +21,12 @@
 
         // Constructor
         public Safi2010_Context(
-            FhirDecimal quarantineRateExposedIndividuals,
+            FhirDecimal hospitalizationRateQuarantinedIndividuals,
             FhirDecimal effectiveContactRate)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            this.QuarantineRateExposedIndividuals = quarantineRateExposedIndividuals;
+            this.HospitalizationRateQuarantinedIndividuals = hospitalizationRateQuarantinedIndividuals;
 
             this.EffectiveContactRate = effectiveContactRate;
         }
@@ -35,7 +35,7 @@
         /// Gets the hospitalization rate for quarantined individuals.
         /// Parameter: α
         /// </summary>
-        public FhirDecimal QuarantineRateExposedIndividuals { get; }
+        public FhirDecimal HospitalizationRateQuarantinedIndividuals { get; }
 
         /// <summary>
         /// Gets the effective contact rate.
