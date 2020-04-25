@@ -38,6 +38,7 @@
     using C19M.M.C.A.Safi2010.Interfaces.Variables.RecoveredIndividuals;
     using C19M.M.C.A.Safi2010.Interfaces.Variables.SusceptibleIndividuals;
     using C19M.M.C.A.Safi2010.Interfaces.Variables.TotalPopulationSize;
+    using System.Runtime.Remoting.Contexts;
 
     internal sealed class Equations2_Model : IEquations2_Model
     {
@@ -60,6 +61,8 @@
                 Safi2010_Context.EffectiveContactRate);
 
             // γ_1
+            this.γ_1 = new C19M.M.C.A.Safi2010.Classes.Parameters.NaturalRecoveryRateInfectiousIndividuals.γ(
+                Safi2010_Context.NaturalRecoveryRateInfectiousIndividuals);
 
             // γ_2
 
