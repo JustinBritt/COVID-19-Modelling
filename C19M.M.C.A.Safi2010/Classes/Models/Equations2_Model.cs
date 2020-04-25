@@ -65,6 +65,8 @@
                 Safi2010_Context.NaturalRecoveryRateInfectiousIndividuals);
 
             // γ_2
+            this.γ_2 = new C19M.M.C.A.Safi2010.Classes.Parameters.RecoveryRateHospitalizedIndividuals.γ(
+                Safi2010_Context.RecoveryRateHospitalizedIndividuals);
 
             // δ_1
 
