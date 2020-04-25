@@ -32,6 +32,11 @@ Paper                                                                           
 
 # Mathematical Model
 
+Variable   | Description
+------------ | ------------- 
+            | 
+
+
 Parameter    | Description
 ------------ | ------------- 
 μ            | Natural death rate
