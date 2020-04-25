@@ -29,6 +29,14 @@
     using C19M.M.C.A.Safi2010.Interfaces.Parameters.RecoveryRateHospitalizedIndividuals;
     using C19M.M.C.A.Safi2010.Interfaces.Parameters.RecruitmentRateSusceptibleIndividuals;
 
+    using C19M.M.C.A.Safi2010.Interfaces.Variables.ExposedIndividuals;
+    using C19M.M.C.A.Safi2010.Interfaces.Variables.HospitalizedIndividuals;
+    using C19M.M.C.A.Safi2010.Interfaces.Variables.InfectiousIndividuals;
+    using C19M.M.C.A.Safi2010.Interfaces.Variables.QuarantinedIndividuals;
+    using C19M.M.C.A.Safi2010.Interfaces.Variables.RecoveredIndividuals;
+    using C19M.M.C.A.Safi2010.Interfaces.Variables.SusceptibleIndividuals;
+    using C19M.M.C.A.Safi2010.Interfaces.Variables.TotalPopulationSize;
+
     internal sealed class Equations2_Model : IEquations2_Model
     {
         private ILog Log { get; }
