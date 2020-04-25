@@ -29,7 +29,8 @@
             FhirDecimal diseaseInducedDeathRateHospitalizedIndividuals,
             FhirDecimal efficacyIsolationTreatmentHospitalizedIndividuals,
             FhirDecimal developmentDiseaseSymptomsRateExposedIndividuals,
-            FhirDecimal acquireInfectionRateSusceptibleIndividuals)
+            FhirDecimal acquireInfectionRateSusceptibleIndividuals,
+            FhirDecimal naturalDeathRate)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -50,6 +51,8 @@
             this.DevelopmentDiseaseSymptomsRateExposedIndividuals = developmentDiseaseSymptomsRateExposedIndividuals;
 
             this.AcquireInfectionRateSusceptibleIndividuals = acquireInfectionRateSusceptibleIndividuals;
+
+            this.NaturalDeathRate = naturalDeathRate;
         }
 
         /// <summary>
@@ -105,5 +108,11 @@
         /// Parameter: λ
         /// </summary>
         public FhirDecimal AcquireInfectionRateSusceptibleIndividuals { get; }
+
+        /// <summary>
+        /// Gets the natural death rate.
+        /// Parameter: μ
+        /// </summary>
+        public FhirDecimal NaturalDeathRate { get; }
     }
 }
