@@ -77,6 +77,8 @@
                 Safi2010_Context.DiseaseInducedDeathRateHospitalizedIndividuals);
 
             // η
+            this.η = new C19M.M.C.A.Safi2010.Classes.Parameters.EfficacyIsolationTreatmentHospitalizedIndividuals.η(
+                Safi2010_Context.EfficacyIsolationTreatmentHospitalizedIndividuals);
 
             // κ
 
