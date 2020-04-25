@@ -56,6 +56,8 @@
                 Safi2010_Context.HospitalizationRateQuarantinedIndividuals);
 
             // β
+            this.β = new C19M.M.C.A.Safi2010.Classes.Parameters.EffectiveContactRate.β(
+                Safi2010_Context.EffectiveContactRate);
 
             // γ_1
 
