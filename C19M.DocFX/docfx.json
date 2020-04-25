@@ -3,10 +3,11 @@
     {
       "src": [
         {
+          "src": ".",
           "files": [
-            "*.csproj"
+            "C19M.M.C.A.Gumel2004.csproj"
           ],
-          "cwd": ".",
+          "cwd": "../C19M.M.C.A.Gumel2004/",
           "exclude": [
             "**/obj/**",
             "**/bin/**",
@@ -14,6 +15,7 @@
           ]
         }
       ],
+      "disableDefaultFilter": true,
       "dest": "obj/api"
     }
   ],
