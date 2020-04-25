@@ -99,6 +99,8 @@
                 Safi2010_Context.QuarantineRateExposedIndividuals);
 
             // ϕ
+            this.ϕ = new C19M.M.C.A.Safi2010.Classes.Parameters.HospitalizationRateInfectiousIndividuals.ϕ(
+                Safi2010_Context.HospitalizationRateInfectiousIndividuals);
 
             // ψ
 
