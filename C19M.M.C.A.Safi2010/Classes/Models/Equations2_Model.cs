@@ -52,6 +52,8 @@
             // Parameters
 
             // α
+            this.α = new C19M.M.C.A.Safi2010.Classes.Parameters.HospitalizationRateQuarantinedIndividuals.α(
+                Safi2010_Context.HospitalizationRateQuarantinedIndividuals);
 
             // β
 
