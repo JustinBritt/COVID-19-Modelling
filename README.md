@@ -10,11 +10,6 @@ Canada and the United States (US) are major trading partners. The border between
 
 The goal of this project is to develop a model and user interface that can help public health officials and researchers to make decisions on how to control the spread of these diseases.
 
-### Timeline
-
-March 26, 2020 - ["City of Windsor suspends transit operations starting March 29"](https://www.cbc.ca/news/canada/windsor/transit-windsor-suspended-starting-march-29-1.5511264)
-April 2, 2020 - ["Windsor Regional Hospital to convert St. Clair College SportsPlex into COVID-19 field hospital"](https://www.cbc.ca/news/canada/windsor/windsor-regional-hospital-st-clair-college-sportsplex-covid19-field-hospital-1.5519673)
-April 6, 2020 - ["Fishing industry in Windsor-Essex shut down during peak season due to COVID-19"](https://www.cbc.ca/news/canada/windsor/fishing-impacts-covid-19-windsor-essex-county-1.5522574)
 ## Literature
 
 Paper                                                                                     | Virus / Disease                         | Sub-populations
@@ -56,6 +51,12 @@ Paper                                                                           
 [Gumel *et al.* (2006)](https://www.aimspress.com/article/10.3934/mbe.2006.3.485)        | C19M.D.Gumel2006 | C19M.M.C.A.Gumel2006       |          
 [Safi *et al.* (2010)](http://www.aimsciences.org/article/doi/10.3934/dcdsb.2010.14.209) | C19M.D.Safi2010  | C19M.M.C.A.Safi2010        |     
 [Lee *et al.* (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7094115/)             | C19M.D.Lee2016   | C19M.M.C.A.Lee2016         |        
+
+## News Stories from Windsor and Detroit
+March 21, 2020 ["Michigan healthcare worker living in Windsor-Essex County reported as 2nd local COVID-19 case"](https://www.cbc.ca/news/canada/windsor/windsor-second-covid-19-case-reported-1.5505769)
+March 26, 2020 - ["City of Windsor suspends transit operations starting March 29"](https://www.cbc.ca/news/canada/windsor/transit-windsor-suspended-starting-march-29-1.5511264)
+April 2, 2020 - ["Windsor Regional Hospital to convert St. Clair College SportsPlex into COVID-19 field hospital"](https://www.cbc.ca/news/canada/windsor/windsor-regional-hospital-st-clair-college-sportsplex-covid19-field-hospital-1.5519673)
+April 6, 2020 - ["Fishing industry in Windsor-Essex shut down during peak season due to COVID-19"](https://www.cbc.ca/news/canada/windsor/fishing-impacts-covid-19-windsor-essex-county-1.5522574)
 
 ## References
 
