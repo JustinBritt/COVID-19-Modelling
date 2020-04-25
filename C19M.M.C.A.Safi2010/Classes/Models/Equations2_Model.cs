@@ -49,6 +49,20 @@
             // Parameters
 
             // Variables
+
+            // E(t)
+
+            // H(t)
+
+            // I(t)
+
+            // N(t)
+
+            // Q(t)
+
+            // R(t)
+
+            // S(t)
         }
 
         public C19M.M.C.A.Safi2010.Interfaces.Parameters.HospitalizationRateQuarantinedIndividuals.Iα α { get; }
