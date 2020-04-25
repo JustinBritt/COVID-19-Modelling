@@ -30,7 +30,7 @@ Paper                                                                           
 [Thäter *et al.* (2018)](https://www.aimsciences.org/article/doi/10.3934/mbe.2018022)          | Infectious disease                     | SEIR
 [Tang *et al.* (2020)](https://www.mdpi.com/2077-0383/9/2/462)                                 | SARS-CoV-2                             | SEIAS<sub>q</sub>E<sub>q</sub>HR
 
-# Mathematical Model
+## Mathematical Model
 
 Variable   | Description
 ------------ | ------------- 
