@@ -24,7 +24,8 @@
             FhirDecimal hospitalizationRateQuarantinedIndividuals,
             FhirDecimal effectiveContactRate,
             FhirDecimal naturalRecoveryRateInfectiousIndividuals,
-            FhirDecimal recoveryRateHospitalizedIndividuals)
+            FhirDecimal recoveryRateHospitalizedIndividuals,
+            FhirDecimal diseaseInducedDeathRateInfectiousIndividuals)
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -35,6 +36,8 @@
             this.NaturalRecoveryRateInfectiousIndividuals = naturalRecoveryRateInfectiousIndividuals;
 
             this.RecoveryRateHospitalizedIndividuals = recoveryRateHospitalizedIndividuals;
+
+            this.DiseaseInducedDeathRateInfectiousIndividuals = diseaseInducedDeathRateInfectiousIndividuals;
         }
 
         /// <summary>
@@ -60,5 +63,11 @@
         /// Parameter: γ_2
         /// </summary>
         public FhirDecimal RecoveryRateHospitalizedIndividuals { get; }
+
+        /// <summary>
+        /// Gets the disease-induced death rate for infectious individuals.
+        /// Parameter: δ_1
+        /// </summary>
+        public FhirDecimal DiseaseInducedDeathRateInfectiousIndividuals { get; }
     }
 }
