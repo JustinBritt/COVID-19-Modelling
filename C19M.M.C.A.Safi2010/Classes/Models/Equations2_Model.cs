@@ -87,6 +87,8 @@
             // λ
 
             // μ
+            this.μ = new C19M.M.C.A.Safi2010.Classes.Parameters.NaturalDeathRate.μ(
+                Safi2010_Context.NaturalDeathRate);
 
             // Π
 
