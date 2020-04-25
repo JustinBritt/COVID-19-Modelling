@@ -103,6 +103,8 @@
                 Safi2010_Context.HospitalizationRateInfectiousIndividuals);
 
             // ψ
+            this.ψ = new C19M.M.C.A.Safi2010.Classes.Parameters.InfectionAcquiredImmunityLossRateRecoveredIndividuals.ψ(
+                Safi2010_Context.InfectionAcquiredImmunityLossRateRecoveredIndividuals);
 
             // Variables
 
