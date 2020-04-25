@@ -13,6 +13,18 @@
             "**/bin/**",
             "_site/**"
           ]
+        },
+        {
+          "src": ".",
+          "files": [
+            "C19M.M.C.A.Gumel2006.csproj"
+          ],
+          "cwd": "../C19M.M.C.A.Gumel2006/",
+          "exclude": [
+            "**/obj/**",
+            "**/bin/**",
+            "_site/**"
+          ]
         }
       ],
       "disableDefaultFilter": true,
