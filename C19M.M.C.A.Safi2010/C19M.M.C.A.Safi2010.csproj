@@ -104,6 +104,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Contexts\Safi2010_Context.cs" />
     <Compile Include="Classes\Models\Equations2_Model.cs" />
     <Compile Include="Classes\Parameters\AcquireInfectionRateSusceptibleIndividuals\λ.cs" />
     <Compile Include="Classes\Parameters\DevelopmentDiseaseSymptomsRateExposedIndividuals\κ.cs" />
@@ -126,6 +127,7 @@
     <Compile Include="Classes\Variables\RecoveredIndividuals\R.cs" />
     <Compile Include="Classes\Variables\SusceptibleIndividuals\S.cs" />
     <Compile Include="Classes\Variables\TotalPopulationSize\N.cs" />
+    <Compile Include="Interfaces\Contexts\ISafi2010_Context.cs" />
     <Compile Include="Interfaces\Models\IEquations2_Model.cs" />
     <Compile Include="Interfaces\Parameters\AcquireInfectionRateSusceptibleIndividuals\Iλ.cs" />
     <Compile Include="Interfaces\Parameters\DevelopmentDiseaseSymptomsRateExposedIndividuals\Iκ.cs" />
@@ -151,9 +153,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\Contexts\" />
     <Folder Include="Classes\Exports\" />
-    <Folder Include="Interfaces\Contexts\" />
     <Folder Include="Interfaces\Exports\" />
   </ItemGroup>
   <ItemGroup>
