@@ -64,6 +64,8 @@ March 26, 2020 - ["City of Windsor suspends transit operations starting March 29
 
 March 28, 2020 - ["Canadian nurse working at Detroit hospital: 'We are fighting a war'"](https://www.cbc.ca/news/canada/windsor/amherstburg-nurse-windsor-border-detroit-covid-19-1.5513363)
 
+March 31, 2020 - ["Ontario-Michigan border dividing line for pandemic that health-care workers cross daily"](https://www.cbc.ca/news/canada/windsor/michigan-ontario-border-health-care-workers-1.5516165)
+
 April 2, 2020 - ["Windsor Regional Hospital to convert St. Clair College SportsPlex into COVID-19 field hospital"](https://www.cbc.ca/news/canada/windsor/windsor-regional-hospital-st-clair-college-sportsplex-covid19-field-hospital-1.5519673)
 
 April 5, 2020 - ["Detroit-Windsor border officers handing out kits and support as health-care workers travel back and forth"](https://www.cbc.ca/news/canada/windsor/covid-19-border-kits-healthcare-workers-1.5522636)
