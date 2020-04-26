@@ -110,6 +110,8 @@
             // Variables
 
             // E(t)
+            this.E = new C19M.M.C.A.Safi2010.Classes.Variables.ExposedIndividuals.E(
+                Safi2010_Context.InitialValueExposedIndividuals);
 
             // H(t)
 
