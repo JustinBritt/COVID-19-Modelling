@@ -122,6 +122,19 @@
                 Safi2010_Context.InitialValueInfectiousIndividuals);
 
             // N(t)
+            this.N = new C19M.M.C.A.Safi2010.Classes.Variables.TotalPopulationSize.N(
+                new FhirDecimal(
+                    Safi2010_Context.InitialValueExposedIndividuals.Value.Value // E(0)
+                    +
+                    Safi2010_Context.InitialValueHospitalizedIndividuals.Value.Value // H(0)
+                    +
+                    Safi2010_Context.InitialValueInfectiousIndividuals.Value.Value // I(0)
+                    +
+                    Safi2010_Context.InitialValueQuarantinedIndividuals.Value.Value // Q(0)
+                    +
+                    Safi2010_Context.InitialValueRecoveredIndividuals.Value.Value // R(0)
+                    +
+                    Safi2010_Context.InitialValueSusceptibleIndividuals.Value.Value)); // S(0)
 
             // Q(t)
             this.Q = new C19M.M.C.A.Safi2010.Classes.Variables.QuarantinedIndividuals.Q(
