@@ -132,6 +132,8 @@
                 Safi2010_Context.InitialValueRecoveredIndividuals);
 
             // S(t)
+            this.S = new C19M.M.C.A.Safi2010.Classes.Variables.SusceptibleIndividuals.S(
+                Safi2010_Context.InitialValueSusceptibleIndividuals);
         }
 
         public C19M.M.C.A.Safi2010.Interfaces.Parameters.HospitalizationRateQuarantinedIndividuals.Iα α { get; }
