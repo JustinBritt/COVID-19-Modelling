@@ -22,6 +22,7 @@
         // Constructor
         public Safi2010_Context(
             FhirDecimal initialValueExposedIndividuals,
+            FhirDecimal initialValueHospitalizedIndividuals,
             FhirDecimal hospitalizationRateQuarantinedIndividuals,
             FhirDecimal effectiveContactRate,
             FhirDecimal naturalRecoveryRateInfectiousIndividuals,
@@ -40,6 +41,8 @@
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             this.InitialValueExposedIndividuals = initialValueExposedIndividuals;
+
+            this.InitialValueHospitalizedIndividuals = initialValueHospitalizedIndividuals;
 
             this.HospitalizationRateQuarantinedIndividuals = hospitalizationRateQuarantinedIndividuals;
 
@@ -75,6 +78,12 @@
         /// Parameter: E(0)
         /// </summary>
         public FhirDecimal InitialValueExposedIndividuals { get; }
+
+        /// <summary>
+        /// Gets the initial value for hospitalized individuals.
+        /// Parameter: H(0)
+        /// </summary>
+        public FhirDecimal InitialValueHospitalizedIndividuals { get; }
 
         /// <summary>
         /// Gets the hospitalization rate for quarantined individuals.
