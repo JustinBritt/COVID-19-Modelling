@@ -118,6 +118,8 @@
                 Safi2010_Context.InitialValueHospitalizedIndividuals);
 
             // I(t)
+            this.I = new C19M.M.C.A.Safi2010.Classes.Variables.InfectiousIndividuals.I(
+                Safi2010_Context.InitialValueInfectiousIndividuals);
 
             // N(t)
 
