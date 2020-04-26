@@ -128,6 +128,8 @@
                 Safi2010_Context.InitialValueQuarantinedIndividuals);
 
             // R(t)
+            this.R = new C19M.M.C.A.Safi2010.Classes.Variables.RecoveredIndividuals.R(
+                Safi2010_Context.InitialValueRecoveredIndividuals);
 
             // S(t)
         }
