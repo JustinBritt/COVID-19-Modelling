@@ -19,17 +19,39 @@
         private ILog Log { get; }
 
         // Constructor
-        public λ(
-            FhirDecimal value)
+        public λ()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
-            this.Value = value;
         }
 
         /// <summary>
         /// Gets the rate at which susceptible individuals acquire infections.
         /// </summary>
-        public FhirDecimal Value { get; }
+        /// <param name="β"></param>
+        /// <param name="η"></param>
+        /// <param name="E"></param>
+        /// <param name="H"></param>
+        /// <param name="I"></param>
+        /// <param name="N"></param>
+        /// <param name="Q"></param>
+        /// <param name="R"></param>
+        /// <param name="S"></param>
+        /// <returns></returns>
+        public FhirDecimal GetValue(
+            C19M.M.C.A.Safi2010.Interfaces.Parameters.EffectiveContactRate.Iβ β,
+            C19M.M.C.A.Safi2010.Interfaces.Parameters.EfficacyIsolationTreatmentHospitalizedIndividuals.Iη η,
+            double E,
+            double H,
+            double I,
+            double N,
+            double Q,
+            double R,
+            double S)
+        {
+            return new FhirDecimal(
+                (decimal)(β.Value.Value.Value * ((decimal)I + η.Value.Value.Value * (decimal)H))
+                /
+                (decimal)(E + H + I + N + Q + R + S));
+        }
     }
 }
