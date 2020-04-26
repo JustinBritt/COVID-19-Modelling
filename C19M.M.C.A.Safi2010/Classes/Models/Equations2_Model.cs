@@ -124,6 +124,8 @@
             // N(t)
 
             // Q(t)
+            this.Q = new C19M.M.C.A.Safi2010.Classes.Variables.QuarantinedIndividuals.Q(
+                Safi2010_Context.InitialValueQuarantinedIndividuals);
 
             // R(t)
 
