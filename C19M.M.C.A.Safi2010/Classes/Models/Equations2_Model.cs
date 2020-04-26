@@ -114,6 +114,8 @@
                 Safi2010_Context.InitialValueExposedIndividuals);
 
             // H(t)
+            this.H = new C19M.M.C.A.Safi2010.Classes.Variables.HospitalizedIndividuals.H(
+                Safi2010_Context.InitialValueHospitalizedIndividuals);
 
             // I(t)
 
