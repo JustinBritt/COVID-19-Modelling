@@ -12,6 +12,12 @@
     public interface ISafi2010_Context
     {
         /// <summary>
+        /// Gets the initial value for exposed individuals.
+        /// Parameter: E(0)
+        /// </summary>
+        FhirDecimal InitialValueExposedIndividuals { get; }
+
+        /// <summary>
         /// Gets the hospitalization rate for quarantined individuals.
         /// Parameter: α
         /// </summary>
