@@ -23,6 +23,7 @@
         public Safi2010_Context(
             FhirDecimal initialValueExposedIndividuals,
             FhirDecimal initialValueHospitalizedIndividuals,
+            FhirDecimal initialValueInfectiousIndividuals,
             FhirDecimal hospitalizationRateQuarantinedIndividuals,
             FhirDecimal effectiveContactRate,
             FhirDecimal naturalRecoveryRateInfectiousIndividuals,
@@ -43,6 +44,8 @@
             this.InitialValueExposedIndividuals = initialValueExposedIndividuals;
 
             this.InitialValueHospitalizedIndividuals = initialValueHospitalizedIndividuals;
+
+            this.InitialValueInfectiousIndividuals = initialValueInfectiousIndividuals;
 
             this.HospitalizationRateQuarantinedIndividuals = hospitalizationRateQuarantinedIndividuals;
 
@@ -84,6 +87,12 @@
         /// Parameter: H(0)
         /// </summary>
         public FhirDecimal InitialValueHospitalizedIndividuals { get; }
+
+        /// <summary>
+        /// Gets the initial value for infectious individuals
+        /// Parameter: I(0)
+        /// </summary>
+        public FhirDecimal InitialValueInfectiousIndividuals { get; }
 
         /// <summary>
         /// Gets the hospitalization rate for quarantined individuals.
