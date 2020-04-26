@@ -30,6 +30,12 @@
         FhirDecimal InitialValueInfectiousIndividuals { get; }
 
         /// <summary>
+        /// Gets the initial value for quarantined individuals
+        /// Parameter: Q(0)
+        /// </summary>
+        FhirDecimal InitialValueQuarantinedIndividuals { get; }
+
+        /// <summary>
         /// Gets the hospitalization rate for quarantined individuals.
         /// Parameter: α
         /// </summary>

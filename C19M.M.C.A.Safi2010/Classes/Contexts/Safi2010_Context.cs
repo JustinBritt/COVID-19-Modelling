@@ -24,6 +24,7 @@
             FhirDecimal initialValueExposedIndividuals,
             FhirDecimal initialValueHospitalizedIndividuals,
             FhirDecimal initialValueInfectiousIndividuals,
+            FhirDecimal initialValueQuarantinedIndividuals,
             FhirDecimal hospitalizationRateQuarantinedIndividuals,
             FhirDecimal effectiveContactRate,
             FhirDecimal naturalRecoveryRateInfectiousIndividuals,
@@ -46,6 +47,8 @@
             this.InitialValueHospitalizedIndividuals = initialValueHospitalizedIndividuals;
 
             this.InitialValueInfectiousIndividuals = initialValueInfectiousIndividuals;
+
+            this.InitialValueQuarantinedIndividuals = initialValueQuarantinedIndividuals;
 
             this.HospitalizationRateQuarantinedIndividuals = hospitalizationRateQuarantinedIndividuals;
 
@@ -93,6 +96,12 @@
         /// Parameter: I(0)
         /// </summary>
         public FhirDecimal InitialValueInfectiousIndividuals { get; }
+
+        /// <summary>
+        /// Gets the initial value for quarantined individuals
+        /// Parameter: Q(0)
+        /// </summary>
+        public FhirDecimal InitialValueQuarantinedIndividuals { get; }
 
         /// <summary>
         /// Gets the hospitalization rate for quarantined individuals.
