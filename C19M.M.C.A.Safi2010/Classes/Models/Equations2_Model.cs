@@ -85,6 +85,7 @@
                 Safi2010_Context.DevelopmentDiseaseSymptomsRateExposedIndividuals);
 
             // λ
+            this.λ = new C19M.M.C.A.Safi2010.Classes.Parameters.AcquireInfectionRateSusceptibleIndividuals.λ();
 
             // μ
             this.μ = new C19M.M.C.A.Safi2010.Classes.Parameters.NaturalDeathRate.μ(
