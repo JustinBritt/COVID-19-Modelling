@@ -26,6 +26,7 @@
             FhirDecimal initialValueInfectiousIndividuals,
             FhirDecimal initialValueQuarantinedIndividuals,
             FhirDecimal initialValueRecoveredIndividuals,
+            FhirDecimal initialValueSusceptibleIndividuals,
             FhirDecimal hospitalizationRateQuarantinedIndividuals,
             FhirDecimal effectiveContactRate,
             FhirDecimal naturalRecoveryRateInfectiousIndividuals,
@@ -52,6 +53,8 @@
             this.InitialValueQuarantinedIndividuals = initialValueQuarantinedIndividuals;
 
             this.InitialValueRecoveredIndividuals = initialValueRecoveredIndividuals;
+
+            this.InitialValueSusceptibleIndividuals = initialValueSusceptibleIndividuals;
 
             this.HospitalizationRateQuarantinedIndividuals = hospitalizationRateQuarantinedIndividuals;
 
@@ -95,22 +98,28 @@
         public FhirDecimal InitialValueHospitalizedIndividuals { get; }
 
         /// <summary>
-        /// Gets the initial value for infectious individuals
+        /// Gets the initial value for infectious individuals.
         /// Parameter: I(0)
         /// </summary>
         public FhirDecimal InitialValueInfectiousIndividuals { get; }
 
         /// <summary>
-        /// Gets the initial value for quarantined individuals
+        /// Gets the initial value for quarantined individuals.
         /// Parameter: Q(0)
         /// </summary>
         public FhirDecimal InitialValueQuarantinedIndividuals { get; }
 
         /// <summary>
-        /// Gets the initial value for recovered individuals
+        /// Gets the initial value for recovered individuals.
         /// Parameter: R(0)
         /// </summary>
         public FhirDecimal InitialValueRecoveredIndividuals { get; }
+
+        /// <summary>
+        /// Gets the initial value for susceptible individuals.
+        /// Parameter: S(0)
+        /// </summary>
+        public FhirDecimal InitialValueSusceptibleIndividuals { get; }
 
         /// <summary>
         /// Gets the hospitalization rate for quarantined individuals.

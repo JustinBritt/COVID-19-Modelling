@@ -24,22 +24,28 @@
         FhirDecimal InitialValueHospitalizedIndividuals { get; }
 
         /// <summary>
-        /// Gets the initial value for infectious individuals
+        /// Gets the initial value for infectious individuals.
         /// Parameter: I(0)
         /// </summary>
         FhirDecimal InitialValueInfectiousIndividuals { get; }
 
         /// <summary>
-        /// Gets the initial value for quarantined individuals
+        /// Gets the initial value for quarantined individuals.
         /// Parameter: Q(0)
         /// </summary>
         FhirDecimal InitialValueQuarantinedIndividuals { get; }
 
         /// <summary>
-        /// Gets the initial value for recovered individuals
+        /// Gets the initial value for recovered individuals.
         /// Parameter: R(0)
         /// </summary>
         FhirDecimal InitialValueRecoveredIndividuals { get; }
+
+        /// <summary>
+        /// Gets the initial value for susceptible individuals.
+        /// Parameter: S(0)
+        /// </summary>
+        FhirDecimal InitialValueSusceptibleIndividuals { get; }
 
         /// <summary>
         /// Gets the hospitalization rate for quarantined individuals.
