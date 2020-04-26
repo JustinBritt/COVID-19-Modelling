@@ -172,7 +172,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Exports\" />
+    <Folder Include="Classes\Solutions\" />
     <Folder Include="Interfaces\Exports\" />
+    <Folder Include="Interfaces\Solutions\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
