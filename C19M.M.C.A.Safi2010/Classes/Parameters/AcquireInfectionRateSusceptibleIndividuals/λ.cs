@@ -27,31 +27,17 @@
         /// <summary>
         /// Gets the rate at which susceptible individuals acquire infections.
         /// </summary>
-        /// <param name="β"></param>
-        /// <param name="η"></param>
-        /// <param name="E"></param>
-        /// <param name="H"></param>
-        /// <param name="I"></param>
-        /// <param name="N"></param>
-        /// <param name="Q"></param>
-        /// <param name="R"></param>
-        /// <param name="S"></param>
-        /// <returns></returns>
         public FhirDecimal GetValue(
             C19M.M.C.A.Safi2010.Interfaces.Parameters.EffectiveContactRate.Iβ β,
             C19M.M.C.A.Safi2010.Interfaces.Parameters.EfficacyIsolationTreatmentHospitalizedIndividuals.Iη η,
-            double E,
             double H,
             double I,
-            double N,
-            double Q,
-            double R,
-            double S)
+            double N)
         {
             return new FhirDecimal(
                 (decimal)(β.Value.Value.Value * ((decimal)I + η.Value.Value.Value * (decimal)H))
                 /
-                (decimal)(E + H + I + N + Q + R + S));
+                (decimal)(N));
         }
     }
 }
