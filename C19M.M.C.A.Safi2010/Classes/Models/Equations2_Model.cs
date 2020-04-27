@@ -157,6 +157,8 @@
                 Safi2010_Context.InitialValueSusceptibleIndividuals);
         }
 
+        public It t { get; }
+
         public C19M.M.C.A.Safi2010.Interfaces.Parameters.HospitalizationRateQuarantinedIndividuals.Iα α { get; }
 
         public C19M.M.C.A.Safi2010.Interfaces.Parameters.EffectiveContactRate.Iβ β { get; }
