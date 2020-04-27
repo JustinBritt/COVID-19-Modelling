@@ -146,6 +146,7 @@
     <Compile Include="Classes\ResultElements\DayInfectiousIndividuals\I_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DayQuarantinedIndividuals\Q_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DayRecoveredIndividuals\R_ResultElement.cs" />
+    <Compile Include="Classes\ResultElements\DaySusceptibleIndividuals\S_ResultElement.cs" />
     <Compile Include="Classes\Solutions\Equations2_Solution.cs" />
     <Compile Include="Classes\Variables\ExposedIndividuals\E.cs" />
     <Compile Include="Classes\Variables\HospitalizedIndividuals\H.cs" />
@@ -176,6 +177,7 @@
     <Compile Include="Interfaces\ResultElements\DayInfectiousIndividuals\II_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DayQuarantinedIndividuals\IQ_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DayRecoveredIndividuals\IR_ResultElement.cs" />
+    <Compile Include="Interfaces\ResultElements\DaySusceptibleIndividuals\IS_ResultElement.cs" />
     <Compile Include="Interfaces\Solutions\IEquations2_Solution.cs" />
     <Compile Include="Interfaces\Variables\ExposedIndividuals\IE.cs" />
     <Compile Include="Interfaces\Variables\HospitalizedIndividuals\IH.cs" />
@@ -188,10 +190,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Exports\" />
-    <Folder Include="Classes\ResultElements\DaySusceptibleIndividuals\" />
     <Folder Include="Classes\Results\" />
     <Folder Include="Interfaces\Exports\" />
-    <Folder Include="Interfaces\ResultElements\DaySusceptibleIndividuals\" />
     <Folder Include="Interfaces\Results\" />
   </ItemGroup>
   <ItemGroup>
