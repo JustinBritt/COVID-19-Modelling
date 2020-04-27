@@ -97,6 +97,14 @@
             // R
 
             // S
+
+            // DayDiseaseInducedDeaths
+
+            // DayProbableCases
+
+            // DayCumulativeDiseaseInducedDeaths
+
+            // DayCumulativeProbableCases
         }
 
         // https://stackoverflow.com/a/55004295
