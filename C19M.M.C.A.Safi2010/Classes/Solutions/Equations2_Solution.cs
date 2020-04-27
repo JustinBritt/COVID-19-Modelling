@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Linq.Expressions;
     using System.Text;
     using System.Threading.Tasks;
 
@@ -13,6 +14,8 @@
     using Hl7.Fhir.Model;
 
     using C19M.M.C.A.Safi2010.Interfaces.Contexts;
+
+    using C19M.M.C.A.Safi2010.Interfaces.Indices;
 
     using C19M.M.C.A.Safi2010.Interfaces.Models;
 
@@ -39,197 +42,76 @@
                 MathNet.Numerics.OdeSolvers.RungeKutta.FourthOrder(
                     MathNet.Numerics.LinearAlgebra.Vector<double>.Build.Dense(new[] {
                         (double)Equations2_Model.E.InitialValue.Value.Value,
+                        (double)Equations2_Model.H.InitialValue.Value.Value,
                         (double)Equations2_Model.I.InitialValue.Value.Value,
-                        (double)Equations2_Model.J.InitialValue.Value.Value,
                         (double)Equations2_Model.Q.InitialValue.Value.Value,
                         (double)Equations2_Model.R.InitialValue.Value.Value,
                         (double)Equations2_Model.S.InitialValue.Value.Value}),
-                    Gumel2004_Model.t.NumberDaysAfterStartDate(Gumel2004_Model.t.StartDate).Value.Value,
-                    Gumel2004_Model.t.NumberDaysAfterStartDate(Gumel2004_Model.t.EndDate).Value.Value,
-                    Gumel2004_Model.t.NumberDaysAfterStartDate(Gumel2004_Model.t.EndDate).Value.Value - Gumel2004_Model.t.NumberDaysAfterStartDate(Gumel2004_Model.t.StartDate).Value.Value + 1,
+                    Equations2_Model.t.NumberDaysAfterStartDate(Equations2_Model.t.StartDate).Value.Value,
+                    Equations2_Model.t.NumberDaysAfterStartDate(Equations2_Model.t.EndDate).Value.Value,
+                    Equations2_Model.t.NumberDaysAfterStartDate(Equations2_Model.t.EndDate).Value.Value - Equations2_Model.t.NumberDaysAfterStartDate(Equations2_Model.t.StartDate).Value.Value + 1,
                     this.f(
-                        Gumel2004_Model.t,
-                        Gumel2004_Model.d_1,
-                        Gumel2004_Model.d_2,
-                        Gumel2004_Model.p,
-                        Gumel2004_Model.β,
-                        Gumel2004_Model.γ_1,
-                        Gumel2004_Model.γ_2,
-                        Gumel2004_Model.ε_E,
-                        Gumel2004_Model.ε_J,
-                        Gumel2004_Model.ε_Q,
-                        Gumel2004_Model.κ_1,
-                        Gumel2004_Model.κ_2,
-                        Gumel2004_Model.μ,
-                        Gumel2004_Model.Π,
-                        Gumel2004_Model.σ_1,
-                        Gumel2004_Model.σ_2,
-                        Gumel2004_Model.E,
-                        Gumel2004_Model.I,
-                        Gumel2004_Model.J,
-                        Gumel2004_Model.Q,
-                        Gumel2004_Model.R,
-                        Gumel2004_Model.S));
-
-            // E
-            this.E = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayAsymptomaticIndividuals.E_Calculation().Calculate(
-                Gumel2004_Model.t,
-                RungeKuttaResults);
-
-            // I
-            this.I = new C19M.M.C.A.Gumel2004.Classes.Calculations.DaySymptomaticIndividuals.I_Calculation().Calculate(
-                Gumel2004_Model.t,
-                RungeKuttaResults);
-
-            // J
-            this.J = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayIsolatedIndividuals.J_Calculation().Calculate(
-                Gumel2004_Model.t,
-                RungeKuttaResults);
-
-            // Q
-            this.Q = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayQuarantinedIndividuals.Q_Calculation().Calculate(
-                Gumel2004_Model.t,
-                RungeKuttaResults);
-
-            // R
-            this.R = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayRecoveredIndividuals.R_Calculation().Calculate(
-                Gumel2004_Model.t,
-                RungeKuttaResults);
-
-            // S
-            this.S = new C19M.M.C.A.Gumel2004.Classes.Calculations.DaySusceptibleIndividuals.S_Calculation().Calculate(
-                Gumel2004_Model.t,
-                RungeKuttaResults);
-
-            // DayDiseaseInducedDeaths
-            this.DayDiseaseInducedDeaths = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayDiseaseInducedDeaths.DayDiseaseInducedDeaths_Calculation().Calculate(
-                Gumel2004_Model.t,
-                Gumel2004_Model.d_1,
-                Gumel2004_Model.d_2,
-                this.I,
-                this.J);
-
-            // DayProbableCases
-            this.DayProbableCases = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayProbableCases.DayProbableCases_Calculation().Calculate(
-                Gumel2004_Model.t,
-                this.I,
-                this.J,
-                this.Q,
-                this.R);
-
-            // DayCumulativeDiseaseInducedDeaths
-            this.DayCumulativeDiseaseInducedDeaths = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayCumulativeDiseaseInducedDeaths.DayCumulativeDiseaseInducedDeaths_Calculation().Calculate(
-                Gumel2004_Model.t,
-                this.DayDiseaseInducedDeaths);
-
-            // DayCumulativeProbableCases
-            this.DayCumulativeProbableCases = new C19M.M.C.A.Gumel2004.Classes.Calculations.DayCumulativeProbableCases.DayCumulativeProbableCases_Calculation().Calculate(
-                Gumel2004_Model.t,
-                this.DayProbableCases);
+                        Equations2_Model.t,
+                        Equations2_Model.α,
+                        Equations2_Model.β,
+                        Equations2_Model.γ_1,
+                        Equations2_Model.γ_2,
+                        Equations2_Model.δ_1,
+                        Equations2_Model.δ_2,
+                        Equations2_Model.η,
+                        Equations2_Model.κ,
+                        Equations2_Model.λ,
+                        Equations2_Model.μ,
+                        Equations2_Model.Π,
+                        Equations2_Model.σ,
+                        Equations2_Model.ϕ,
+                        Equations2_Model.ψ,
+                        Equations2_Model.E,
+                        Equations2_Model.H,
+                        Equations2_Model.I,
+                        Equations2_Model.Q,
+                        Equations2_Model.R,
+                        Equations2_Model.S));
         }
 
-        // TODO: Finish
         // https://stackoverflow.com/a/55004295
         private Func<double, MathNet.Numerics.LinearAlgebra.Vector<double>, MathNet.Numerics.LinearAlgebra.Vector<double>> f(
             It t,
-            Interfaces.Parameters.DiseaseInducedDeathRateSymptomaticIndividuals.Id d_1,
-            Interfaces.Parameters.DiseaseInducedDeathRateIsolatedIndividuals.Id d_2,
-            Ip p,
-            Iβ β,
-            C19M.M.C.A.Gumel2004.Interfaces.Parameters.QuarantineRateAsymptomaticIndividuals.Iγ γ_1,
-            C19M.M.C.A.Gumel2004.Interfaces.Parameters.IsolationRateSymptomaticIndividuals.Iγ γ_2,
-            C19M.M.C.A.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorAsymptomaticIndividuals.Iε ε_E,
-            C19M.M.C.A.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorIsolatedIndividuals.Iε ε_J,
-            C19M.M.C.A.Gumel2004.Interfaces.Parameters.TransmissionCoefficientModificationFactorQuarantinedIndividuals.Iε ε_Q,
-            C19M.M.C.A.Gumel2004.Interfaces.Parameters.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals.Iκ κ_1,
-            C19M.M.C.A.Gumel2004.Interfaces.Parameters.DevelopmentClinicalSymptomsRateQuarantinedIndividuals.Iκ κ_2,
-            Iμ μ,
-            IΠ Π,
-            C19M.M.C.A.Gumel2004.Interfaces.Parameters.RecoveryRateSymptomaticIndividuals.Iσ σ_1,
-            C19M.M.C.A.Gumel2004.Interfaces.Parameters.RecoveryRateIsolatedIndividuals.Iσ σ_2,
-            C19M.M.C.A.Gumel2004.Interfaces.Variables.AsymptomaticIndividuals.IE E,
-            C19M.M.C.A.Gumel2004.Interfaces.Variables.SymptomaticIndividuals.II I,
-            C19M.M.C.A.Gumel2004.Interfaces.Variables.IsolatedIndividuals.IJ J,
-            C19M.M.C.A.Gumel2004.Interfaces.Variables.QuarantinedIndividuals.IQ Q,
-            C19M.M.C.A.Gumel2004.Interfaces.Variables.RecoveredIndividuals.IR R,
-            C19M.M.C.A.Gumel2004.Interfaces.Variables.SusceptibleIndividuals.IS S)
+            C19M.M.C.A.Safi2010.Interfaces.Parameters.HospitalizationRateQuarantinedIndividuals.Iα α,
+            C19M.M.C.A.Safi2010.Interfaces.Parameters.EffectiveContactRate.Iβ β,
+            C19M.M.C.A.Safi2010.Interfaces.Parameters.NaturalRecoveryRateInfectiousIndividuals.Iγ γ_1,
+            C19M.M.C.A.Safi2010.Interfaces.Parameters.RecoveryRateHospitalizedIndividuals.Iγ γ_2,
+            C19M.M.C.A.Safi2010.Interfaces.Parameters.DiseaseInducedDeathRateInfectiousIndividuals.Iδ δ_1,
+            C19M.M.C.A.Safi2010.Interfaces.Parameters.DiseaseInducedDeathRateHospitalizedIndividuals.Iδ δ_2,
+            C19M.M.C.A.Safi2010.Interfaces.Parameters.EfficacyIsolationTreatmentHospitalizedIndividuals.Iη η,
+            C19M.M.C.A.Safi2010.Interfaces.Parameters.DevelopmentDiseaseSymptomsRateExposedIndividuals.Iκ κ,
+            C19M.M.C.A.Safi2010.Interfaces.Parameters.AcquireInfectionRateSusceptibleIndividuals.Iλ λ,
+            C19M.M.C.A.Safi2010.Interfaces.Parameters.NaturalDeathRate.Iμ μ,
+            C19M.M.C.A.Safi2010.Interfaces.Parameters.RecruitmentRateSusceptibleIndividuals.IΠ Π,
+            C19M.M.C.A.Safi2010.Interfaces.Parameters.QuarantineRateExposedIndividuals.Iσ σ,
+            C19M.M.C.A.Safi2010.Interfaces.Parameters.HospitalizationRateInfectiousIndividuals.Iϕ ϕ,
+            C19M.M.C.A.Safi2010.Interfaces.Parameters.InfectionAcquiredImmunityLossRateRecoveredIndividuals.Iψ ψ,
+            C19M.M.C.A.Safi2010.Interfaces.Variables.ExposedIndividuals.IE E,
+            C19M.M.C.A.Safi2010.Interfaces.Variables.HospitalizedIndividuals.IH H,
+            C19M.M.C.A.Safi2010.Interfaces.Variables.InfectiousIndividuals.II I,
+            C19M.M.C.A.Safi2010.Interfaces.Variables.QuarantinedIndividuals.IQ Q,
+            C19M.M.C.A.Safi2010.Interfaces.Variables.RecoveredIndividuals.IR R,
+            C19M.M.C.A.Safi2010.Interfaces.Variables.SusceptibleIndividuals.IS S)
         {
             return (T, x) =>
             {
                 return MathNet.Numerics.LinearAlgebra.Vector<double>.Build.Dense(new[] {
                     (double)E.GetdEdt(
-                        new FhirDateTime(
-                            new DateTimeOffset(
-                                t.StartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date.AddDays(T))),
-                        p,
                         β,
-                        γ_1,
-                        γ_2,
-                        ε_E,
-                        ε_J,
-                        ε_Q,
-                        κ_1,
+                        η,
+                        κ,
+                        λ,
                         μ,
+                        σ,
                         E: x[0],
-                        I: x[1],
-                        J: x[2],
+                        H: x[1],
+                        I: x[2],
                         N: x.Sum(),
-                        Q: x[3],
-                        S: x[5]),
-                    (double)I.GetdIdt(
-                        new FhirDateTime(
-                            new DateTimeOffset(
-                                t.StartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date.AddDays(T))),
-                        d_1,
-                        γ_2,
-                        κ_1,
-                        μ,
-                        σ_1,
-                        E: x[0],
-                        I: x[1]),
-                    (double)J.GetdJdt(
-                        new FhirDateTime(
-                            new DateTimeOffset(
-                                t.StartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date.AddDays(T))),
-                        d_2,
-                        γ_2,
-                        κ_2,
-                        μ,
-                        σ_2,
-                        I: x[1],
-                        J: x[2],
-                        Q: x[3]),
-                    (double)Q.GetdQdt(
-                        new FhirDateTime(
-                            new DateTimeOffset(
-                                t.StartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date.AddDays(T))),
-                        γ_1,
-                        κ_2,
-                        μ,
-                        E: x[0],
-                        Q: x[3]),
-                    (double)R.GetdRdt(
-                        μ,
-                        σ_1,
-                        σ_2,
-                        I: x[1],
-                        J: x[2],
-                        R: x[4]),
-                    (double)S.GetdSdt(
-                        new FhirDateTime(
-                            new DateTimeOffset(
-                                t.StartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date.AddDays(T))),
-                        β,
-                        ε_E,
-                        ε_J,
-                        ε_Q,
-                        μ,
-                        Π,
-                        E: x[0],
-                        I: x[1],
-                        J: x[2],
-                        N: x.Sum(),
-                        Q: x[3],
                         S: x[5])
                 });
             };
