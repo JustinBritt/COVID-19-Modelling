@@ -14,6 +14,8 @@
 
     using C19M.M.C.A.Safi2010.Interfaces.Contexts;
 
+    using C19M.M.C.A.Safi2010.Interfaces.Indices;
+
     using C19M.M.C.A.Safi2010.Interfaces.Models;
 
     using C19M.M.C.A.Safi2010.Interfaces.Parameters.AcquireInfectionRateSusceptibleIndividuals;
