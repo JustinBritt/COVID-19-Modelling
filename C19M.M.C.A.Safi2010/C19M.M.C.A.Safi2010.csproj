@@ -196,7 +196,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Exports\" />
+    <Folder Include="Classes\Results\DayQuarantinedIndividuals\" />
     <Folder Include="Interfaces\Exports\" />
+    <Folder Include="Interfaces\Results\DayQuarantinedIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
