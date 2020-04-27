@@ -202,7 +202,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Exports\" />
+    <Folder Include="Classes\ResultElements\DayProbableCases\" />
     <Folder Include="Interfaces\Exports\" />
+    <Folder Include="Interfaces\ResultElements\DayProbableCases\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
