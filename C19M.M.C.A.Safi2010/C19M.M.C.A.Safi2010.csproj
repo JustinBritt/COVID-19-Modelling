@@ -151,6 +151,7 @@
     <Compile Include="Classes\ResultElements\DayQuarantinedIndividuals\Q_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DayRecoveredIndividuals\R_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DaySusceptibleIndividuals\S_ResultElement.cs" />
+    <Compile Include="Classes\Results\DayDiseaseInducedDeaths\DayDiseaseInducedDeaths.cs" />
     <Compile Include="Classes\Results\DayExposedIndividuals\E.cs" />
     <Compile Include="Classes\Results\DayHospitalizedIndividuals\H.cs" />
     <Compile Include="Classes\Results\DayInfectiousIndividuals\I.cs" />
@@ -193,6 +194,7 @@
     <Compile Include="Interfaces\ResultElements\DayQuarantinedIndividuals\IQ_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DayRecoveredIndividuals\IR_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DaySusceptibleIndividuals\IS_ResultElement.cs" />
+    <Compile Include="Interfaces\Results\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths.cs" />
     <Compile Include="Interfaces\Results\DayExposedIndividuals\IE.cs" />
     <Compile Include="Interfaces\Results\DayHospitalizedIndividuals\IH.cs" />
     <Compile Include="Interfaces\Results\DayInfectiousIndividuals\II.cs" />
@@ -212,9 +214,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Exports\" />
-    <Folder Include="Classes\Results\DayDiseaseInducedDeaths\" />
     <Folder Include="Interfaces\Exports\" />
-    <Folder Include="Interfaces\Results\DayDiseaseInducedDeaths\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
