@@ -12,6 +12,10 @@
     // Hl7
     using Hl7.Fhir.Model;
 
+    using C19M.M.C.A.Safi2010.Interfaces.Parameters.HospitalizationRateQuarantinedIndividuals;
+    using C19M.M.C.A.Safi2010.Interfaces.Parameters.NaturalDeathRate;
+    using C19M.M.C.A.Safi2010.Interfaces.Parameters.QuarantineRateExposedIndividuals;
+
     using C19M.M.C.A.Safi2010.Interfaces.Variables.QuarantinedIndividuals;
 
     internal sealed class Q : IQ
@@ -28,5 +32,24 @@
         }
 
         public FhirDecimal InitialValue { get; }
+
+        public decimal GetdQdt(
+            Iα α,
+            Iμ μ,
+            Iσ σ,
+            double E,
+            double Q)
+        {
+            return
+                σ.Value.Value.Value
+                * 
+                (decimal)E
+                -
+                (α.Value.Value.Value 
+                + 
+                μ.Value.Value.Value) 
+                * 
+                (decimal)Q;
+        }
     }
 }
