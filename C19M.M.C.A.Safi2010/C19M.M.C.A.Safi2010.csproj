@@ -190,9 +190,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Exports\" />
-    <Folder Include="Classes\Results\" />
+    <Folder Include="Classes\Results\DayExposedIndividuals\" />
     <Folder Include="Interfaces\Exports\" />
-    <Folder Include="Interfaces\Results\" />
+    <Folder Include="Interfaces\Results\DayExposedIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
