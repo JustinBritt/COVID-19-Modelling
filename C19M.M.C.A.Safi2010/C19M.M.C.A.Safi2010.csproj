@@ -194,7 +194,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Exports\" />
+    <Folder Include="Classes\Results\DayInfectiousIndividuals\" />
     <Folder Include="Interfaces\Exports\" />
+    <Folder Include="Interfaces\Results\DayInfectiousIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
