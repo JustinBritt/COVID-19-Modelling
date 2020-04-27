@@ -50,6 +50,8 @@
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
+            // Indices
+
             // Parameters
 
             // α
