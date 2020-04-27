@@ -178,10 +178,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Exports\" />
-    <Folder Include="Classes\ResultElements\" />
+    <Folder Include="Classes\ResultElements\DayExposedIndividuals\" />
     <Folder Include="Classes\Results\" />
     <Folder Include="Interfaces\Exports\" />
-    <Folder Include="Interfaces\ResultElements\" />
+    <Folder Include="Interfaces\ResultElements\DayExposedIndividuals\" />
     <Folder Include="Interfaces\Results\" />
   </ItemGroup>
   <ItemGroup>
