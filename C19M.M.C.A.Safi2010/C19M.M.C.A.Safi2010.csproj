@@ -188,8 +188,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Exports\" />
+    <Folder Include="Classes\ResultElements\DaySusceptibleIndividuals\" />
     <Folder Include="Classes\Results\" />
     <Folder Include="Interfaces\Exports\" />
+    <Folder Include="Interfaces\ResultElements\DaySusceptibleIndividuals\" />
     <Folder Include="Interfaces\Results\" />
   </ItemGroup>
   <ItemGroup>
