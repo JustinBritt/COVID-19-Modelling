@@ -12,6 +12,10 @@
     // Hl7
     using Hl7.Fhir.Model;
 
+    using C19M.M.C.A.Safi2010.Interfaces.Parameters.DevelopmentDiseaseSymptomsRateExposedIndividuals;
+    using C19M.M.C.A.Safi2010.Interfaces.Parameters.HospitalizationRateInfectiousIndividuals;
+    using C19M.M.C.A.Safi2010.Interfaces.Parameters.NaturalDeathRate;
+
     using C19M.M.C.A.Safi2010.Interfaces.Variables.InfectiousIndividuals;
 
     internal sealed class I : II
@@ -28,5 +32,20 @@
         }
 
         public FhirDecimal InitialValue { get; }
+
+        public decimal GetdIdt(
+            C19M.M.C.A.Safi2010.Interfaces.Parameters.NaturalRecoveryRateInfectiousIndividuals.Iγ γ_1,
+            C19M.M.C.A.Safi2010.Interfaces.Parameters.DiseaseInducedDeathRateInfectiousIndividuals.Iδ δ_1,
+            Iκ κ,
+            Iμ μ,
+            Iϕ ϕ,
+            double E,
+            double I)
+        {
+            return
+                κ.Value.Value.Value * (decimal)E
+                -
+                (γ_1.Value.Value.Value + ϕ.Value.Value.Value + μ.Value.Value.Value + δ_1.Value.Value.Value) * (decimal)I;
+        }
     }
 }
