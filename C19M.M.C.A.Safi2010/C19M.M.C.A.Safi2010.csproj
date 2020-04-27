@@ -208,7 +208,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Exports\" />
+    <Folder Include="Classes\ResultElements\DayCumulativeDiseaseInducedDeaths\" />
     <Folder Include="Interfaces\Exports\" />
+    <Folder Include="Interfaces\ResultElements\DayCumulativeDiseaseInducedDeaths\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
