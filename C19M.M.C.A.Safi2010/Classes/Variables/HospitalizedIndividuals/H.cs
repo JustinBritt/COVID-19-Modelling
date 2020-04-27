@@ -48,7 +48,7 @@
                 -
                 ϕ.Value.Value.Value * (decimal)I
                 -
-                (γ_2.Value.Value.Value + μ.Value.Value.Value + δ_2.Value.Value.Value) * (decimal)H
+                (γ_2.Value.Value.Value + μ.Value.Value.Value + δ_2.Value.Value.Value) * (decimal)H;
 
         }
     }
