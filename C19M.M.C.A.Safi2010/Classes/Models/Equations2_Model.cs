@@ -55,9 +55,9 @@
 
             // t
             this.t = new Classes.Indices.t(
-                context.EndDate,
-                context.NumberDaysAfterStartDate,
-                context.StartDate);
+                Safi2010_Context.EndDate,
+                Safi2010_Context.NumberDaysAfterStartDate,
+                Safi2010_Context.StartDate);
 
             // Parameters
 
