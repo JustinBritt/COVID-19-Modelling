@@ -20,6 +20,7 @@
     using C19M.M.C.A.Safi2010.Interfaces.Models;
 
     using C19M.M.C.A.Safi2010.Interfaces.Solutions;
+    using MathNet.Numerics.Distributions;
 
     internal sealed class Equations2_Solution : IEquations2_Solution
     {
@@ -113,7 +114,16 @@
                         H: x[1],
                         I: x[2],
                         N: x.Sum(),
-                        S: x[5])
+                        S: x[5]),
+                    (double)H.GetdHdt(
+                        α,
+                        γ_2,
+                        δ_2,
+                        μ,
+                        ϕ,
+                        H: x[1],
+                        I: x[2],
+                        Q: x[3])
                 });
             };
         }
