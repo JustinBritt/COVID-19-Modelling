@@ -12,6 +12,24 @@
     public interface ISafi2010_Context
     {
         /// <summary>
+        /// Gets the end date.
+        /// Index: t
+        /// </summary>
+        FhirDateTime EndDate { get; }
+
+        /// <summary>
+        /// Gets the number of days after the start date.
+        /// Index: t
+        /// </summary>
+        Func<FhirDateTime, PositiveInt> NumberDaysAfterStartDate { get; }
+
+        /// <summary>
+        /// Gets the start date.
+        /// Index: t
+        /// </summary>
+        FhirDateTime StartDate { get; }
+
+        /// <summary>
         /// Gets the initial value for exposed individuals.
         /// Parameter: E(0)
         /// </summary>
