@@ -142,6 +142,7 @@
     <Compile Include="Classes\Parameters\RecoveryRateHospitalizedIndividuals\γ.cs" />
     <Compile Include="Classes\Parameters\RecruitmentRateSusceptibleIndividuals\Π.cs" />
     <Compile Include="Classes\ResultElements\DayExposedIndividuals\E_ResultElement.cs" />
+    <Compile Include="Classes\ResultElements\DayHospitalizedIndividuals\H_ResultElement.cs" />
     <Compile Include="Classes\Solutions\Equations2_Solution.cs" />
     <Compile Include="Classes\Variables\ExposedIndividuals\E.cs" />
     <Compile Include="Classes\Variables\HospitalizedIndividuals\H.cs" />
@@ -168,6 +169,7 @@
     <Compile Include="Interfaces\Parameters\RecoveryRateHospitalizedIndividuals\Iγ.cs" />
     <Compile Include="Interfaces\Parameters\RecruitmentRateSusceptibleIndividuals\IΠ.cs" />
     <Compile Include="Interfaces\ResultElements\DayExposedIndividuals\IE_ResultElement.cs" />
+    <Compile Include="Interfaces\ResultElements\DayHospitalizedIndividuals\IH_ResultElement.cs" />
     <Compile Include="Interfaces\Solutions\IEquations2_Solution.cs" />
     <Compile Include="Interfaces\Variables\ExposedIndividuals\IE.cs" />
     <Compile Include="Interfaces\Variables\HospitalizedIndividuals\IH.cs" />
@@ -180,10 +182,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Exports\" />
-    <Folder Include="Classes\ResultElements\DayHospitalizedIndividuals\" />
     <Folder Include="Classes\Results\" />
     <Folder Include="Interfaces\Exports\" />
-    <Folder Include="Interfaces\ResultElements\DayHospitalizedIndividuals\" />
     <Folder Include="Interfaces\Results\" />
   </ItemGroup>
   <ItemGroup>
