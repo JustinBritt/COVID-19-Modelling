@@ -148,6 +148,7 @@
     <Compile Include="Classes\ResultElements\DayRecoveredIndividuals\R_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DaySusceptibleIndividuals\S_ResultElement.cs" />
     <Compile Include="Classes\Results\DayExposedIndividuals\E.cs" />
+    <Compile Include="Classes\Results\DayHospitalizedIndividuals\H.cs" />
     <Compile Include="Classes\Solutions\Equations2_Solution.cs" />
     <Compile Include="Classes\Variables\ExposedIndividuals\E.cs" />
     <Compile Include="Classes\Variables\HospitalizedIndividuals\H.cs" />
@@ -180,6 +181,7 @@
     <Compile Include="Interfaces\ResultElements\DayRecoveredIndividuals\IR_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DaySusceptibleIndividuals\IS_ResultElement.cs" />
     <Compile Include="Interfaces\Results\DayExposedIndividuals\IE.cs" />
+    <Compile Include="Interfaces\Results\DayHospitalizedIndividuals\IH.cs" />
     <Compile Include="Interfaces\Solutions\IEquations2_Solution.cs" />
     <Compile Include="Interfaces\Variables\ExposedIndividuals\IE.cs" />
     <Compile Include="Interfaces\Variables\HospitalizedIndividuals\IH.cs" />
@@ -192,9 +194,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Exports\" />
-    <Folder Include="Classes\Results\DayHospitalizedIndividuals\" />
     <Folder Include="Interfaces\Exports\" />
-    <Folder Include="Interfaces\Results\DayHospitalizedIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
