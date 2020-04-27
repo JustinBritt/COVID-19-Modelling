@@ -137,6 +137,7 @@
     <Compile Include="Classes\Parameters\QuarantineRateExposedIndividuals\σ.cs" />
     <Compile Include="Classes\Parameters\RecoveryRateHospitalizedIndividuals\γ.cs" />
     <Compile Include="Classes\Parameters\RecruitmentRateSusceptibleIndividuals\Π.cs" />
+    <Compile Include="Classes\Solutions\Equations2_Solution.cs" />
     <Compile Include="Classes\Variables\ExposedIndividuals\E.cs" />
     <Compile Include="Classes\Variables\HospitalizedIndividuals\H.cs" />
     <Compile Include="Classes\Variables\InfectiousIndividuals\I.cs" />
@@ -161,6 +162,7 @@
     <Compile Include="Interfaces\Parameters\QuarantineRateExposedIndividuals\Iσ.cs" />
     <Compile Include="Interfaces\Parameters\RecoveryRateHospitalizedIndividuals\Iγ.cs" />
     <Compile Include="Interfaces\Parameters\RecruitmentRateSusceptibleIndividuals\IΠ.cs" />
+    <Compile Include="Interfaces\Solutions\IEquations2_Solution.cs" />
     <Compile Include="Interfaces\Variables\ExposedIndividuals\IE.cs" />
     <Compile Include="Interfaces\Variables\HospitalizedIndividuals\IH.cs" />
     <Compile Include="Interfaces\Variables\InfectiousIndividuals\II.cs" />
@@ -172,9 +174,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Exports\" />
-    <Folder Include="Classes\Solutions\" />
     <Folder Include="Interfaces\Exports\" />
-    <Folder Include="Interfaces\Solutions\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
