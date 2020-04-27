@@ -141,6 +141,7 @@
     <Compile Include="Classes\Parameters\QuarantineRateExposedIndividuals\σ.cs" />
     <Compile Include="Classes\Parameters\RecoveryRateHospitalizedIndividuals\γ.cs" />
     <Compile Include="Classes\Parameters\RecruitmentRateSusceptibleIndividuals\Π.cs" />
+    <Compile Include="Classes\ResultElements\DayCumulativeDiseaseInducedDeaths\DayCumulativeDiseaseInducedDeaths_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DayCumulativeProbableCases\DayCumulativeProbableCases_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DayDiseaseInducedDeaths\DayDiseaseInducedDeaths_ResultElement.cs" />
     <Compile Include="Classes\ResultElements\DayExposedIndividuals\E_ResultElement.cs" />
@@ -181,6 +182,7 @@
     <Compile Include="Interfaces\Parameters\QuarantineRateExposedIndividuals\Iσ.cs" />
     <Compile Include="Interfaces\Parameters\RecoveryRateHospitalizedIndividuals\Iγ.cs" />
     <Compile Include="Interfaces\Parameters\RecruitmentRateSusceptibleIndividuals\IΠ.cs" />
+    <Compile Include="Interfaces\ResultElements\DayCumulativeDiseaseInducedDeaths\IDayCumulativeDiseaseInducedDeaths_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DayCumulativeProbableCases\IDayCumulativeProbableCases_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths_ResultElement.cs" />
     <Compile Include="Interfaces\ResultElements\DayExposedIndividuals\IE_ResultElement.cs" />
@@ -208,9 +210,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Exports\" />
-    <Folder Include="Classes\ResultElements\DayCumulativeDiseaseInducedDeaths\" />
     <Folder Include="Interfaces\Exports\" />
-    <Folder Include="Interfaces\ResultElements\DayCumulativeDiseaseInducedDeaths\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
