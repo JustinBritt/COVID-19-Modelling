@@ -12,6 +12,11 @@
     // Hl7
     using Hl7.Fhir.Model;
 
+    using C19M.M.C.A.Safi2010.Interfaces.Parameters.AcquireInfectionRateSusceptibleIndividuals;
+    using C19M.M.C.A.Safi2010.Interfaces.Parameters.EffectiveContactRate;
+    using C19M.M.C.A.Safi2010.Interfaces.Parameters.EfficacyIsolationTreatmentHospitalizedIndividuals;
+    using C19M.M.C.A.Safi2010.Interfaces.Parameters.InfectionAcquiredImmunityLossRateRecoveredIndividuals;
+
     using C19M.M.C.A.Safi2010.Interfaces.Variables.SusceptibleIndividuals;
 
     internal sealed class S : IS
@@ -28,5 +33,41 @@
         }
 
         public FhirDecimal InitialValue { get; }
+
+        public decimal GetdSdt(
+            Iβ β,
+            Iη η,
+            Iλ λ,
+            C19M.M.C.A.Safi2010.Interfaces.Parameters.NaturalDeathRate.Iμ μ,
+            C19M.M.C.A.Safi2010.Interfaces.Parameters.RecruitmentRateSusceptibleIndividuals.IΠ Π,
+            Iψ ψ,
+            double H,
+            double I,
+            double N,
+            double R,
+            double S)
+        {
+            return
+                Π.Value.Value.Value
+                +
+                ψ.Value.Value.Value
+                *
+                (decimal)R
+                -
+                λ.GetValue(
+                    β,
+                    η,
+                    H,
+                    I,
+                    N)
+                .Value
+                .Value
+                *
+                (decimal)S
+                -
+                μ.Value.Value.Value
+                *
+                (decimal)S;
+        }
     }
 }
