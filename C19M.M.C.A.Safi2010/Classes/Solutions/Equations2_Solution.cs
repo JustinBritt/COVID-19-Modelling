@@ -32,6 +32,18 @@
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         }
 
+        public C19M.M.C.A.Safi2010.Interfaces.Results.DayExposedIndividuals.IE E { get; private set; }
+
+        public C19M.M.C.A.Safi2010.Interfaces.Results.DayHospitalizedIndividuals.IH H { get; private set; }
+
+        public C19M.M.C.A.Safi2010.Interfaces.Results.DayInfectiousIndividuals.II I { get; private set; }
+
+        public C19M.M.C.A.Safi2010.Interfaces.Results.DayQuarantinedIndividuals.IQ Q { get; private set; }
+
+        public C19M.M.C.A.Safi2010.Interfaces.Results.DayRecoveredIndividuals.IR R { get; private set; }
+
+        public C19M.M.C.A.Safi2010.Interfaces.Results.DaySusceptibleIndividuals.IS S { get; private set; }
+
         // TODO: Finish
         public void Solve(
             ISafi2010_Context Safi2010_Context)
@@ -74,8 +86,6 @@
                         equations2_Model.R,
                         equations2_Model.S));
         }
-
-        public C19M.M.C.A.Safi2010.Interfaces.Results.DayExposedIndividuals.IE E { get; private set; }
 
         // https://stackoverflow.com/a/55004295
         private Func<double, MathNet.Numerics.LinearAlgebra.Vector<double>, MathNet.Numerics.LinearAlgebra.Vector<double>> f(
