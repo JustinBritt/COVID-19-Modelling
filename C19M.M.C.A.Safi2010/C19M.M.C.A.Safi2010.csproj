@@ -182,8 +182,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Exports\" />
+    <Folder Include="Classes\ResultElements\DayInfectiousIndividuals\" />
     <Folder Include="Classes\Results\" />
     <Folder Include="Interfaces\Exports\" />
+    <Folder Include="Interfaces\ResultElements\DayInfectiousIndividuals\" />
     <Folder Include="Interfaces\Results\" />
   </ItemGroup>
   <ItemGroup>
