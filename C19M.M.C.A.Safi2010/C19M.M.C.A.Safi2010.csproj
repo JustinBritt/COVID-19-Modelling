@@ -150,6 +150,7 @@
     <Compile Include="Classes\Results\DayExposedIndividuals\E.cs" />
     <Compile Include="Classes\Results\DayHospitalizedIndividuals\H.cs" />
     <Compile Include="Classes\Results\DayInfectiousIndividuals\I.cs" />
+    <Compile Include="Classes\Results\DayQuarantinedIndividuals\Q.cs" />
     <Compile Include="Classes\Solutions\Equations2_Solution.cs" />
     <Compile Include="Classes\Variables\ExposedIndividuals\E.cs" />
     <Compile Include="Classes\Variables\HospitalizedIndividuals\H.cs" />
@@ -184,6 +185,7 @@
     <Compile Include="Interfaces\Results\DayExposedIndividuals\IE.cs" />
     <Compile Include="Interfaces\Results\DayHospitalizedIndividuals\IH.cs" />
     <Compile Include="Interfaces\Results\DayInfectiousIndividuals\II.cs" />
+    <Compile Include="Interfaces\Results\DayQuarantinedIndividuals\IQ.cs" />
     <Compile Include="Interfaces\Solutions\IEquations2_Solution.cs" />
     <Compile Include="Interfaces\Variables\ExposedIndividuals\IE.cs" />
     <Compile Include="Interfaces\Variables\HospitalizedIndividuals\IH.cs" />
@@ -196,9 +198,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Exports\" />
-    <Folder Include="Classes\Results\DayQuarantinedIndividuals\" />
     <Folder Include="Interfaces\Exports\" />
-    <Folder Include="Interfaces\Results\DayQuarantinedIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
