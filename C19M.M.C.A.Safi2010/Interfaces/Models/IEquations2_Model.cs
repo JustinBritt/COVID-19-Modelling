@@ -6,6 +6,16 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    using C19M.M.C.A.Safi2010.Interfaces.Indices;
+
+    using C19M.M.C.A.Safi2010.Interfaces.Variables.ExposedIndividuals;
+    using C19M.M.C.A.Safi2010.Interfaces.Variables.HospitalizedIndividuals;
+    using C19M.M.C.A.Safi2010.Interfaces.Variables.InfectiousIndividuals;
+    using C19M.M.C.A.Safi2010.Interfaces.Variables.QuarantinedIndividuals;
+    using C19M.M.C.A.Safi2010.Interfaces.Variables.RecoveredIndividuals;
+    using C19M.M.C.A.Safi2010.Interfaces.Variables.SusceptibleIndividuals;
+    using C19M.M.C.A.Safi2010.Interfaces.Variables.TotalPopulationSize;
+
     internal interface IEquations2_Model
     {
         It t { get; }
