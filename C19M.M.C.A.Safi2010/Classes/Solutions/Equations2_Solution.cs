@@ -36,43 +36,43 @@
         public void Solve(
             ISafi2010_Context Safi2010_Context)
         {
-            IEquations2_Model Equations2_Model = new C19M.M.C.A.Safi2010.Classes.Models.Equations2_Model(
+            IEquations2_Model equations2_Model = new C19M.M.C.A.Safi2010.Classes.Models.Equations2_Model(
                 Safi2010_Context);
 
             MathNet.Numerics.LinearAlgebra.Vector<double>[] RungeKuttaResults =
                 MathNet.Numerics.OdeSolvers.RungeKutta.FourthOrder(
                     MathNet.Numerics.LinearAlgebra.Vector<double>.Build.Dense(new[] {
-                        (double)Equations2_Model.E.InitialValue.Value.Value,
-                        (double)Equations2_Model.H.InitialValue.Value.Value,
-                        (double)Equations2_Model.I.InitialValue.Value.Value,
-                        (double)Equations2_Model.Q.InitialValue.Value.Value,
-                        (double)Equations2_Model.R.InitialValue.Value.Value,
-                        (double)Equations2_Model.S.InitialValue.Value.Value}),
-                    Equations2_Model.t.NumberDaysAfterStartDate(Equations2_Model.t.StartDate).Value.Value,
-                    Equations2_Model.t.NumberDaysAfterStartDate(Equations2_Model.t.EndDate).Value.Value,
-                    Equations2_Model.t.NumberDaysAfterStartDate(Equations2_Model.t.EndDate).Value.Value - Equations2_Model.t.NumberDaysAfterStartDate(Equations2_Model.t.StartDate).Value.Value + 1,
+                        (double)equations2_Model.E.InitialValue.Value.Value,
+                        (double)equations2_Model.H.InitialValue.Value.Value,
+                        (double)equations2_Model.I.InitialValue.Value.Value,
+                        (double)equations2_Model.Q.InitialValue.Value.Value,
+                        (double)equations2_Model.R.InitialValue.Value.Value,
+                        (double)equations2_Model.S.InitialValue.Value.Value}),
+                    equations2_Model.t.NumberDaysAfterStartDate(equations2_Model.t.StartDate).Value.Value,
+                    equations2_Model.t.NumberDaysAfterStartDate(equations2_Model.t.EndDate).Value.Value,
+                    equations2_Model.t.NumberDaysAfterStartDate(equations2_Model.t.EndDate).Value.Value - equations2_Model.t.NumberDaysAfterStartDate(equations2_Model.t.StartDate).Value.Value + 1,
                     this.f(
-                        Equations2_Model.t,
-                        Equations2_Model.α,
-                        Equations2_Model.β,
-                        Equations2_Model.γ_1,
-                        Equations2_Model.γ_2,
-                        Equations2_Model.δ_1,
-                        Equations2_Model.δ_2,
-                        Equations2_Model.η,
-                        Equations2_Model.κ,
-                        Equations2_Model.λ,
-                        Equations2_Model.μ,
-                        Equations2_Model.Π,
-                        Equations2_Model.σ,
-                        Equations2_Model.ϕ,
-                        Equations2_Model.ψ,
-                        Equations2_Model.E,
-                        Equations2_Model.H,
-                        Equations2_Model.I,
-                        Equations2_Model.Q,
-                        Equations2_Model.R,
-                        Equations2_Model.S));
+                        equations2_Model.t,
+                        equations2_Model.α,
+                        equations2_Model.β,
+                        equations2_Model.γ_1,
+                        equations2_Model.γ_2,
+                        equations2_Model.δ_1,
+                        equations2_Model.δ_2,
+                        equations2_Model.η,
+                        equations2_Model.κ,
+                        equations2_Model.λ,
+                        equations2_Model.μ,
+                        equations2_Model.Π,
+                        equations2_Model.σ,
+                        equations2_Model.ϕ,
+                        equations2_Model.ψ,
+                        equations2_Model.E,
+                        equations2_Model.H,
+                        equations2_Model.I,
+                        equations2_Model.Q,
+                        equations2_Model.R,
+                        equations2_Model.S));
         }
 
         // https://stackoverflow.com/a/55004295
