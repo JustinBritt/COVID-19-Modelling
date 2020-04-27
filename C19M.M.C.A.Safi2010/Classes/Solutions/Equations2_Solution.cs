@@ -75,6 +75,8 @@
                         equations2_Model.S));
         }
 
+        public C19M.M.C.A.Safi2010.Interfaces.Results.DayExposedIndividuals.IE E { get; private set; }
+
         // https://stackoverflow.com/a/55004295
         private Func<double, MathNet.Numerics.LinearAlgebra.Vector<double>, MathNet.Numerics.LinearAlgebra.Vector<double>> f(
             It t,
