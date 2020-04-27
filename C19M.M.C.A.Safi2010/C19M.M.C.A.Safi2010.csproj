@@ -192,7 +192,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\Exports\" />
+    <Folder Include="Classes\Results\DayHospitalizedIndividuals\" />
     <Folder Include="Interfaces\Exports\" />
+    <Folder Include="Interfaces\Results\DayHospitalizedIndividuals\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
