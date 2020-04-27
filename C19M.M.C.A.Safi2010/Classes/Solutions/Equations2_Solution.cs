@@ -32,6 +32,14 @@
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         }
 
+        public C19M.M.C.A.Safi2010.Interfaces.Results.DayCumulativeDiseaseInducedDeaths.IDayCumulativeDiseaseInducedDeaths DayCumulativeDiseaseInducedDeaths { get; private set; }
+
+        public C19M.M.C.A.Safi2010.Interfaces.Results.DayCumulativeProbableCases.IDayCumulativeProbableCases DayCumulativeProbableCases { get; private set; }
+
+        public C19M.M.C.A.Safi2010.Interfaces.Results.DayDiseaseInducedDeaths.IDayDiseaseInducedDeaths DayDiseaseInducedDeaths { get; private set; }
+
+        public C19M.M.C.A.Safi2010.Interfaces.Results.DayProbableCases.IDayProbableCases DayProbableCases { get; private set; }
+
         public C19M.M.C.A.Safi2010.Interfaces.Results.DayExposedIndividuals.IE E { get; private set; }
 
         public C19M.M.C.A.Safi2010.Interfaces.Results.DayHospitalizedIndividuals.IH H { get; private set; }
