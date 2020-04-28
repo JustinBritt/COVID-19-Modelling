@@ -124,6 +124,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Calculations\DayProbableCases\DayProbableCases_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Contexts\Safi2010_Context.cs" />
     <Compile Include="Classes\Exports\Equations2_Export.cs" />
     <Compile Include="Classes\Indices\t.cs" />
@@ -170,6 +171,7 @@
     <Compile Include="Classes\Variables\RecoveredIndividuals\R.cs" />
     <Compile Include="Classes\Variables\SusceptibleIndividuals\S.cs" />
     <Compile Include="Classes\Variables\TotalPopulationSize\N.cs" />
+    <Compile Include="Interfaces\Calculations\DayProbableCases\IDayProbableCases_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Contexts\ISafi2010_Context.cs" />
     <Compile Include="Interfaces\Exports\IEquations2_Export.cs" />
     <Compile Include="Interfaces\Indices\It.cs" />
@@ -218,10 +220,7 @@
     <Compile Include="Interfaces\Variables\TotalPopulationSize\IN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\Calculations\DayProbableCases\" />
-    <Folder Include="Interfaces\Calculations\DayProbableCases\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="log4net.config" />
     <None Include="packages.config" />
