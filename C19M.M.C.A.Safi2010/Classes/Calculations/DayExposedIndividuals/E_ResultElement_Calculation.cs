@@ -14,6 +14,10 @@
 
     using C19M.M.C.A.Safi2010.Interfaces.Calculations.DayExposedIndividuals;
 
+    using C19M.M.C.A.Safi2010.Interfaces.Indices;
+
+    using C19M.M.C.A.Safi2010.Interfaces.ResultElements.DayExposedIndividuals;
+
     internal sealed class E_ResultElement_Calculation : IE_ResultElement_Calculation
     {
         private ILog Log { get; }
