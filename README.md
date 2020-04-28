@@ -37,6 +37,7 @@ Variable   | Description
 S(t)            | Susceptible individuals
 E(t)            | Exposed individuals
 I(t)            | Infected individuals
+Q(t)            | Quarantined individuals
 R(t)            | Recovered individuals
 
 Parameter    | Description
