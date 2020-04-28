@@ -16,6 +16,11 @@
 
     using C19M.M.C.A.Safi2010.Interfaces.ResultElements.DayProbableCases;
 
+    using C19M.M.C.A.Safi2010.Interfaces.Variables.HospitalizedIndividuals;
+    using C19M.M.C.A.Safi2010.Interfaces.Variables.InfectiousIndividuals;
+    using C19M.M.C.A.Safi2010.Interfaces.Variables.QuarantinedIndividuals;
+    using C19M.M.C.A.Safi2010.Interfaces.Variables.RecoveredIndividuals;
+
     internal sealed class DayProbableCases_ResultElement_Calculation : IDayProbableCases_ResultElement_Calculation
     {
         private ILog Log { get; }
