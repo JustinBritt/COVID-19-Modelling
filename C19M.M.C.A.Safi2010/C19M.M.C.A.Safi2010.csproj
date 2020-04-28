@@ -230,7 +230,10 @@
     <Compile Include="Interfaces\Variables\TotalPopulationSize\IN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Classes\Calculations\DayCumulativeDiseaseInducedDeaths\" />
+    <Folder Include="Interfaces\Calculations\DayCumulativeDiseaseInducedDeaths\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
     <None Include="packages.config" />
