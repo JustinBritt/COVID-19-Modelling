@@ -34,8 +34,10 @@ Paper                                                                           
 
 Variable   | Description
 ------------ | ------------- 
+S(t)            | Susceptible individuals
+E(t)            | Exposed individuals
+I(t)            | Infected individuals
 R(t)            | Recovered individuals
-
 
 Parameter    | Description
 ------------ | ------------- 
