@@ -90,6 +90,8 @@ April 8, 2020 - ["COVID-19 won’t stop cross-border health care in Windsor"](ht
 
 April 21, 2020 - ["Air Canada to temporarily suspend flights to U.S."](https://www.cbc.ca/news/business/air-canada-to-temporarily-suspend-flights-to-u-s-1.5539796)
 
+April 26, 2020 - ["COVID-19 likely spread by building ventilation, say Canadian researchers working on an HVAC fix"](https://www.thechronicleherald.ca/news/canada/covid-19-likely-spread-by-building-ventilation-say-canadian-researchers-working-on-an-hvac-fix-442278/)
+
 ## References
 
 [Alexander, M. E., Bowman, C., Moghadas, S. M., Summers, R., Gumel, A. B., & Sahai, B. M. (2004). A vaccination model for transmission dynamics of influenza. SIAM Journal on Applied Dynamical Systems, 3(4), 503-524.](https://epubs.siam.org/doi/abs/10.1137/030600370)
