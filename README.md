@@ -28,7 +28,7 @@ Paper                                                                           
 [Lee *et al.* (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7094115/)                     | MERS-CoV                                | SEIJR
 [Khan and Zaman (2018)](https://onlinelibrary.wiley.com/doi/full/10.1002/oca.2437)               | Infectious disease                      | SEIR
 [Thäter *et al.* (2018)](https://www.aimsciences.org/article/doi/10.3934/mbe.2018022)            | Infectious disease                      | SEIR
-[Chen *et al.* (2020)](https://idpjournal.biomedcentral.com/articles/10.1186/s40249-020-00640-3) | SARS-CoV-2                              | Bats (SEIR), Hosts (SEIR), Reservoir (W), People (SEIAR)
+[Chen *et al.* (2020)](https://idpjournal.biomedcentral.com/articles/10.1186/s40249-020-00640-3) | SARS-CoV-2                              | SEIR (Bats and Hosts), W (Reservoir), People (SEIAR)
 [Tang *et al.* (2020)](https://www.mdpi.com/2077-0383/9/2/462)                                   | SARS-CoV-2                              | SEIAS<sub>q</sub>E<sub>q</sub>HR
 
 ## Mathematical Model
