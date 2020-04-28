@@ -126,6 +126,7 @@
   <ItemGroup>
     <Compile Include="Classes\Calculations\DayCumulativeProbableCases\DayCumulativeProbableCases_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayCumulativeProbableCases\DayCumulativeProbableCases_ResultElement_Calculation.cs" />
+    <Compile Include="Classes\Calculations\DayDiseaseInducedDeaths\DayDiseaseInducedDeaths_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayDiseaseInducedDeaths\DayDiseaseInducedDeaths_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayProbableCases\DayProbableCases_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayProbableCases\DayProbableCases_ResultElement_Calculation.cs" />
@@ -177,6 +178,7 @@
     <Compile Include="Classes\Variables\TotalPopulationSize\N.cs" />
     <Compile Include="Interfaces\Calculations\DayCumulativeProbableCases\IDayCumulativeProbableCases_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayCumulativeProbableCases\IDayCumulativeProbableCases_ResultElement_Calculation.cs" />
+    <Compile Include="Interfaces\Calculations\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayProbableCases\IDayProbableCases_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayProbableCases\IDayProbableCases_ResultElement_Calculation.cs" />
