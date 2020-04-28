@@ -222,7 +222,10 @@
     <Compile Include="Interfaces\Variables\TotalPopulationSize\IN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Classes\Calculations\DayCumulativeProbableCases\" />
+    <Folder Include="Interfaces\Calculations\DayCumulativeProbableCases\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
     <None Include="packages.config" />
