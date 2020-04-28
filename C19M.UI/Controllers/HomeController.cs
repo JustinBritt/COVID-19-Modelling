@@ -30,5 +30,12 @@ namespace C19M.UI.Controllers
 
             return View();
         }
+
+        public ActionResult Chart()
+        {
+            ViewBag.Mesage = "";
+
+            return View();
+        }
     }
 }

@@ -1,0 +1,28 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        @{
+            var myChart = new Chart(600, 400)
+               .AddTitle("Employees")
+               .AddSeries(chartType: "column",
+                  xValue: new[] { "Peter", "Andrew", "Julie", "Mary", "Dave" },
+                  yValues: new[] { "2", "6", "4", "5", "3" });
+
+            if (myChart != null)
+            {
+                myChart.Write();
+            }
+        }
+    </div>
+</body>
+</html>
