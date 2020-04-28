@@ -219,8 +219,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\Calculations\" />
-    <Folder Include="Interfaces\Calculations\" />
+    <Folder Include="Classes\Calculations\DayProbableCases\" />
+    <Folder Include="Interfaces\Calculations\DayProbableCases\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
