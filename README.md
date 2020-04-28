@@ -13,22 +13,23 @@ Another goal is to develop a user interface that can help public health official
 
 ## Literature
 
-Paper                                                                                     | Virus / Disease                         | Sub-populations
+Paper                                                                                            | Virus / Disease                         | Sub-populations
 ------------ | ------------- | -------------
-[Hethcote (2000)](https://epubs.siam.org/doi/abs/10.1137/s0036144500371907)                    | Several                                | SIR, SEIR, MSEIR
-[Chowell *et al.* (2003)](https://www.sciencedirect.com/science/article/pii/S0022519303002285) | SARS-CoV                               | SEIJR
-[Alexander *et al.* (2004)](https://epubs.siam.org/doi/abs/10.1137/030600370)                  | Influenza                              | SVIRS
-[Gumel *et al.* (2004)](https://royalsocietypublishing.org/doi/10.1098/rspb.2004.2800)         | SARS-CoV                               | SEQIJR
-[Arino *et al.* (2006)](https://royalsocietypublishing.org/doi/full/10.1098/rsif.2006.0112)    | Influenza                              | SLIAR, SLIAS<sub>T</sub>L<sub>T</sub>I<sub>T</sub>A<sub>T</sub>R
-[Gumel *et al.* (2006)](https://www.aimspress.com/article/10.3934/mbe.2006.3.485)              | SARS-CoV                               | SVEIR
-[McLeod *et al.* (2006)](http://www.aimspress.com/article/10.3934/mbe.2006.3.527)              | SARS-CoV                               | SEQIJR
-[Ruan *et al.* (2006)](https://www.aimspress.com/article/10.3934/mbe.2006.3.205)               | SARS-CoV                               | SEIQR
-[Yan and Zou (2008)](https://www.sciencedirect.com/science/article/pii/S0895717707001628)      | SARS-CoV                               | SEQIJR
-[Safi *et al.* (2010)](http://www.aimsciences.org/article/doi/10.3934/dcdsb.2010.14.209)       | Communicable disease, such as SARS-CoV | SEIQHRS
-[Lee *et al.* (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7094115/)                   | MERS-CoV                               | SEIJR
-[Khan and Zaman (2018)](https://onlinelibrary.wiley.com/doi/full/10.1002/oca.2437)             | Infectious disease                     | SEIR
-[Thäter *et al.* (2018)](https://www.aimsciences.org/article/doi/10.3934/mbe.2018022)          | Infectious disease                     | SEIR
-[Tang *et al.* (2020)](https://www.mdpi.com/2077-0383/9/2/462)                                 | SARS-CoV-2                             | SEIAS<sub>q</sub>E<sub>q</sub>HR
+[Hethcote (2000)](https://epubs.siam.org/doi/abs/10.1137/s0036144500371907)                      | Several                                 | SIR, SEIR, MSEIR
+[Chowell *et al.* (2003)](https://www.sciencedirect.com/science/article/pii/S0022519303002285)   | SARS-CoV                                | SEIJR
+[Alexander *et al.* (2004)](https://epubs.siam.org/doi/abs/10.1137/030600370)                    | Influenza                               | SVIRS
+[Gumel *et al.* (2004)](https://royalsocietypublishing.org/doi/10.1098/rspb.2004.2800)           | SARS-CoV                                | SEQIJR
+[Arino *et al.* (2006)](https://royalsocietypublishing.org/doi/full/10.1098/rsif.2006.0112)      | Influenza                               | SLIAR, SLIAS<sub>T</sub>L<sub>T</sub>I<sub>T</sub>A<sub>T</sub>R
+[Gumel *et al.* (2006)](https://www.aimspress.com/article/10.3934/mbe.2006.3.485)                | SARS-CoV                                | SVEIR
+[McLeod *et al.* (2006)](http://www.aimspress.com/article/10.3934/mbe.2006.3.527)                | SARS-CoV                                | SEQIJR
+[Ruan *et al.* (2006)](https://www.aimspress.com/article/10.3934/mbe.2006.3.205)                 | SARS-CoV                                | SEIQR
+[Yan and Zou (2008)](https://www.sciencedirect.com/science/article/pii/S0895717707001628)        | SARS-CoV                                | SEQIJR
+[Safi *et al.* (2010)](http://www.aimsciences.org/article/doi/10.3934/dcdsb.2010.14.209)         | Communicable disease, such as SARS-CoV  | SEIQHRS
+[Lee *et al.* (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7094115/)                     | MERS-CoV                                | SEIJR
+[Khan and Zaman (2018)](https://onlinelibrary.wiley.com/doi/full/10.1002/oca.2437)               | Infectious disease                      | SEIR
+[Thäter *et al.* (2018)](https://www.aimsciences.org/article/doi/10.3934/mbe.2018022)            | Infectious disease                      | SEIR
+[Chen *et al.* (2020)](https://idpjournal.biomedcentral.com/articles/10.1186/s40249-020-00640-3) | SARS-CoV-2                              | Bats (SEIR), Hosts (SEIR), Reservoir (W), People (SEIAR)
+[Tang *et al.* (2020)](https://www.mdpi.com/2077-0383/9/2/462)                                   | SARS-CoV-2                              | SEIAS<sub>q</sub>E<sub>q</sub>HR
 
 ## Mathematical Model
 
@@ -97,6 +98,8 @@ April 26, 2020 - ["COVID-19 likely spread by building ventilation, say Canadian 
 [Alexander, M. E., Bowman, C., Moghadas, S. M., Summers, R., Gumel, A. B., & Sahai, B. M. (2004). A vaccination model for transmission dynamics of influenza. SIAM Journal on Applied Dynamical Systems, 3(4), 503-524.](https://epubs.siam.org/doi/abs/10.1137/030600370)
 
 [Arino, J., Brauer, F., van den Driessche, P., Watmough, J., & Wu, J. (2006). Simple models for containment of a pandemic. Journal of the Royal Society Interface, 3(8), 453-457.](https://royalsocietypublishing.org/doi/full/10.1098/rsif.2006.0112)
+
+[Chen, T. M., Rui, J., Wang, Q. P., Zhao, Z. Y., Cui, J. A., & Yin, L. (2020). A mathematical model for simulating the phase-based transmissibility of a novel coronavirus. Infectious diseases of poverty, 9(1), 1-8.](https://idpjournal.biomedcentral.com/articles/10.1186/s40249-020-00640-3)
 
 [Chowell, G., Fenimore, P. W., Castillo-Garsow, M. A., & Castillo-Chavez, C. (2003). SARS outbreaks in Ontario, Hong Kong and Singapore: the role of diagnosis and isolation as a control mechanism. Journal of theoretical biology, 224(1), 1-8.](https://www.sciencedirect.com/science/article/pii/S0022519303002285)
 
