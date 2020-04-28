@@ -16,10 +16,10 @@
 
     using C19M.M.C.A.Safi2010.Interfaces.ResultElements.DayProbableCases;
 
-    using C19M.M.C.A.Safi2010.Interfaces.Variables.HospitalizedIndividuals;
-    using C19M.M.C.A.Safi2010.Interfaces.Variables.InfectiousIndividuals;
-    using C19M.M.C.A.Safi2010.Interfaces.Variables.QuarantinedIndividuals;
-    using C19M.M.C.A.Safi2010.Interfaces.Variables.RecoveredIndividuals;
+    using C19M.M.C.A.Safi2010.Interfaces.Results.DayHospitalizedIndividuals;
+    using C19M.M.C.A.Safi2010.Interfaces.Results.DayInfectiousIndividuals;
+    using C19M.M.C.A.Safi2010.Interfaces.Results.DayQuarantinedIndividuals;
+    using C19M.M.C.A.Safi2010.Interfaces.Results.DayRecoveredIndividuals;
 
     internal sealed class DayProbableCases_ResultElement_Calculation : IDayProbableCases_ResultElement_Calculation
     {
@@ -29,6 +29,29 @@
         public DayProbableCases_ResultElement_Calculation()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        }
+
+        public IDayProbableCases_ResultElement Calculate(
+            FhirDateTime t_IndexElement,
+            IH H,
+            II I,
+            IQ Q,
+            IR R)
+        {
+            return new C19M.M.C.A.Safi2010.Classes.ResultElements.DayProbableCases.DayProbableCases_ResultElement(
+                t_IndexElement,
+                new FhirDecimal(
+                    H.GetElementAtAsdecimal(
+                        t_IndexElement)
+                    +
+                    I.GetElementAtAsdecimal(
+                        t_IndexElement)
+                    +
+                    Q.GetElementAtAsdecimal(
+                        t_IndexElement)
+                    +
+                    R.GetElementAtAsdecimal(
+                        t_IndexElement)));
         }
     }
 }
