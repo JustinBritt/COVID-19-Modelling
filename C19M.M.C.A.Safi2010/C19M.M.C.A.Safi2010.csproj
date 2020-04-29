@@ -246,7 +246,10 @@
     <Compile Include="Interfaces\Variables\TotalPopulationSize\IN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Classes\Calculations\DayQuarantinedIndividuals\" />
+    <Folder Include="Interfaces\Calculations\DayQuarantinedIndividuals\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config" />
     <None Include="packages.config" />
