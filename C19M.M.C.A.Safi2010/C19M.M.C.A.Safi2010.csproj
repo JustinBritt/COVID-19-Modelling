@@ -134,6 +134,7 @@
     <Compile Include="Classes\Calculations\DayExposedIndividuals\E_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayHospitalizedIndividuals\H_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayHospitalizedIndividuals\H_ResultElement_Calculation.cs" />
+    <Compile Include="Classes\Calculations\DayInfectiousIndividuals\I_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayProbableCases\DayProbableCases_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayProbableCases\DayProbableCases_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Contexts\Safi2010_Context.cs" />
@@ -192,6 +193,7 @@
     <Compile Include="Interfaces\Calculations\DayExposedIndividuals\IE_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayHospitalizedIndividuals\IH_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayHospitalizedIndividuals\IH_ResultElement_Calculation.cs" />
+    <Compile Include="Interfaces\Calculations\DayInfectiousIndividuals\II_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayProbableCases\IDayProbableCases_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayProbableCases\IDayProbableCases_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Contexts\ISafi2010_Context.cs" />
@@ -242,10 +244,7 @@
     <Compile Include="Interfaces\Variables\TotalPopulationSize\IN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\Calculations\DayInfectiousIndividuals\" />
-    <Folder Include="Interfaces\Calculations\DayInfectiousIndividuals\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="log4net.config" />
     <None Include="packages.config" />
