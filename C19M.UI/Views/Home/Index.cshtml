@@ -18,13 +18,15 @@
     <canvas id="canvas"></canvas>
 </div>
 <script>
+    var stringArray = @Html.Raw(Json.Encode(ViewData["Labels"]));
+
     var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
 
     var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: ["2010", "2011", "2012", "2013"],
+            labels: stringArray,
             datasets: [{
                 label: 'Dataset 1',
                 data: [150, 200, 250, 150],

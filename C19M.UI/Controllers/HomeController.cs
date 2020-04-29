@@ -18,6 +18,9 @@ namespace C19M.UI.Controllers
     {
         public ActionResult Index()
         {
+            // https://forums.asp.net/t/2125582.aspx?Pass+c+array+to+javascript+array+in+razor+file+
+            ViewData["Labels"] = new string[] { "2010", "2011", "2012", "2013" };
+
             return View();
         }
 
