@@ -95,18 +95,42 @@
                         equations2_Model.S));
 
             // E
+            this.E = new C19M.M.C.A.Safi2010.Classes.Calculations.DayExposedIndividuals.E_Calculation().Calculate(
+                equations2_Model.t,
+                RungeKuttaResults);
 
             // H
+            this.H = new C19M.M.C.A.Safi2010.Classes.Calculations.DayHospitalizedIndividuals.H_Calculation().Calculate(
+                equations2_Model.t,
+                RungeKuttaResults);
 
             // I
+            this.I = new C19M.M.C.A.Safi2010.Classes.Calculations.DayInfectiousIndividuals.I_Calculation().Calculate(
+                equations2_Model.t,
+                RungeKuttaResults);
 
             // Q
+            this.Q = new C19M.M.C.A.Safi2010.Classes.Calculations.DayQuarantinedIndividuals.Q_Calculation().Calculate(
+                equations2_Model.t,
+                RungeKuttaResults);
 
             // R
+            this.R = new C19M.M.C.A.Safi2010.Classes.Calculations.DayRecoveredIndividuals.R_Calculation().Calculate(
+                equations2_Model.t,
+                RungeKuttaResults);
 
             // S
+            this.S = new C19M.M.C.A.Safi2010.Classes.Calculations.DaySusceptibleIndividuals.S_Calculation().Calculate(
+                equations2_Model.t,
+                RungeKuttaResults);
 
             // DayDiseaseInducedDeaths
+            this.DayDiseaseInducedDeaths = new C19M.M.C.A.Safi2010.Classes.Calculations.DayDiseaseInducedDeaths.DayDiseaseInducedDeaths_Calculation().Calculate(
+                equations2_Model.t,
+                equations2_Model.δ_1,
+                equations2_Model.δ_2,
+                this.H,
+                this.I);
 
             // DayProbableCases
 
