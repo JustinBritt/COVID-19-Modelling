@@ -133,6 +133,12 @@
                 this.I);
 
             // DayProbableCases
+            this.DayProbableCases = new C19M.M.C.A.Safi2010.Classes.Calculations.DayProbableCases.DayProbableCases_Calculation().Calculate(
+                equations2_Model.t,
+                this.H,
+                this.I,
+                this.Q,
+                this.R);
 
             // DayCumulativeDiseaseInducedDeaths
 
