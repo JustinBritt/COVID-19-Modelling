@@ -78,7 +78,7 @@ namespace C19M.UI.Controllers
             ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> dayCumulativeDiseaseInducedDeaths = export.DayCumulativeDiseaseInducedDeaths;
 
             // https://stackoverflow.com/a/9345910
-            byte[] chart = new Chart(
+            byte[] chart = new System.Web.Helpers.Chart(
                 width: 1000,
                 height: 300,
                 theme: ChartTheme.Vanilla)
@@ -150,7 +150,7 @@ namespace C19M.UI.Controllers
             ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> dayCumulativeProbableCases = export.DayCumulativeProbableCases;
 
             // https://stackoverflow.com/a/9345910
-            byte[] chart = new Chart(
+            byte[] chart = new System.Web.Helpers.Chart(
                 width: 1000,
                 height: 300,
                 theme: ChartTheme.Vanilla)
@@ -210,7 +210,7 @@ namespace C19M.UI.Controllers
             ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> dayAsymptomaticIndividuals = export.DayAsymptomaticIndividuals;
 
             // https://stackoverflow.com/a/9345910
-            byte[] chart = new Chart(
+            byte[] chart = new System.Web.Helpers.Chart(
                 width: 1000,
                 height: 300,
                 theme: ChartTheme.Vanilla)
