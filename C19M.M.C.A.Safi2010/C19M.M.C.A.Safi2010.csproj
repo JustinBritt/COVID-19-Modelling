@@ -132,6 +132,7 @@
     <Compile Include="Classes\Calculations\DayDiseaseInducedDeaths\DayDiseaseInducedDeaths_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayExposedIndividuals\E_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayExposedIndividuals\E_ResultElement_Calculation.cs" />
+    <Compile Include="Classes\Calculations\DayHospitalizedIndividuals\H_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayHospitalizedIndividuals\H_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayProbableCases\DayProbableCases_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayProbableCases\DayProbableCases_ResultElement_Calculation.cs" />
@@ -189,6 +190,7 @@
     <Compile Include="Interfaces\Calculations\DayDiseaseInducedDeaths\IDayDiseaseInducedDeaths_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayExposedIndividuals\IE_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayExposedIndividuals\IE_ResultElement_Calculation.cs" />
+    <Compile Include="Interfaces\Calculations\DayHospitalizedIndividuals\IH_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayHospitalizedIndividuals\IH_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayProbableCases\IDayProbableCases_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayProbableCases\IDayProbableCases_ResultElement_Calculation.cs" />
