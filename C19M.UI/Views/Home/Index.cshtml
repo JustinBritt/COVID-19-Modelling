@@ -1,6 +1,42 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<head>
+    <title>Line Chart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <style>
+        canvas {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+    </style>
+</head>
+
+<!-- https://stackoverflow.com/questions/44782688/chart-js-web-page-doesnt-display-chart-no-error-in-console -->
+<div style="width:75%;">
+    <canvas id="canvas"></canvas>
+</div>
+<script>
+    var canvas = document.getElementById('canvas');
+    var ctx = canvas.getContext('2d');
+
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ["2010", "2011", "2012", "2013"],
+            datasets: [{
+                label: 'Dataset 1',
+                data: [150, 200, 250, 150],
+                color: "#878BB6",
+            }, {
+                label: 'Dataset 2',
+                data: [250, 100, 150, 10],
+                color: "#4ACAB4",
+            }]
+        }
+    });
+</script>
 
 <div class="jumbotron">
     <h1>ASP.NET</h1>
