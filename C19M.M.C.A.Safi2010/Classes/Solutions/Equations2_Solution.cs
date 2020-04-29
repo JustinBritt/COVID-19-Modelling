@@ -52,7 +52,6 @@
 
         public C19M.M.C.A.Safi2010.Interfaces.Results.DaySusceptibleIndividuals.IS S { get; private set; }
 
-        // TODO: Finish
         public void Solve(
             ISafi2010_Context Safi2010_Context)
         {
