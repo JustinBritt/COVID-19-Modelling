@@ -142,6 +142,7 @@
     <Compile Include="Classes\Calculations\DayQuarantinedIndividuals\Q_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayRecoveredIndividuals\R_Calculation.cs" />
     <Compile Include="Classes\Calculations\DayRecoveredIndividuals\R_ResultElement_Calculation.cs" />
+    <Compile Include="Classes\Calculations\DaySusceptibleIndividuals\S_Calculation.cs" />
     <Compile Include="Classes\Calculations\DaySusceptibleIndividuals\S_ResultElement_Calculation.cs" />
     <Compile Include="Classes\Contexts\Safi2010_Context.cs" />
     <Compile Include="Classes\Exports\Equations2_Export.cs" />
@@ -207,6 +208,7 @@
     <Compile Include="Interfaces\Calculations\DayQuarantinedIndividuals\IQ_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayRecoveredIndividuals\IR_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DayRecoveredIndividuals\IR_ResultElement_Calculation.cs" />
+    <Compile Include="Interfaces\Calculations\DaySusceptibleIndividuals\IS_Calculation.cs" />
     <Compile Include="Interfaces\Calculations\DaySusceptibleIndividuals\IS_ResultElement_Calculation.cs" />
     <Compile Include="Interfaces\Contexts\ISafi2010_Context.cs" />
     <Compile Include="Interfaces\Exports\IEquations2_Export.cs" />
