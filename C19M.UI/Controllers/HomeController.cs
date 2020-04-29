@@ -90,11 +90,16 @@ namespace C19M.UI.Controllers
             ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> dayCumulativeProbableCases = export.DayCumulativeProbableCases;
 
             // https://stackoverflow.com/a/9345910
-            byte[] chart = new Chart(width: 1000, height: 300, theme: ChartTheme.Vanilla)
+            byte[] chart = new Chart(
+                width: 1000,
+                height: 300,
+                theme: ChartTheme.Vanilla)
                 .AddSeries(
                 chartType: "line",
                 xValue: dayCumulativeProbableCases.Select(w => w.Item1.ToPartialDateTime().Value.ToUniversalTime().Date.Date).ToArray(),
                 yValues: dayCumulativeProbableCases.Select(w => w.Item2.Value.Value).ToArray())
+                .SetXAxis("Day", (double)HK.NumberDaysAfterStartDate.Invoke(HK.StartDate).Value.Value, (double)HK.NumberDaysAfterStartDate.Invoke(HK.EndDate).Value.Value)
+                .SetYAxis("Cumulative Probable Cases")
                 .ToWebImage()
                 .GetBytes("image/png");
 
