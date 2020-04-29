@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Linq;
 using System.Web;
+using System.Web.Helpers;
 using System.Web.Mvc;
+
+using Hl7.Fhir.Model;
 
 using C19M.M.C.A.Gumel2004.Interfaces.Contexts;
 
@@ -31,11 +35,73 @@ namespace C19M.UI.Controllers
             return View();
         }
 
-        public ActionResult Chart()
+        public ActionResult DisplayChart_Gumel2004_HongKong_DayCumulativeProbableCases()
         {
             ViewBag.Mesage = "";
 
-            return View();
+            C19M.D.Gumel2004.Interfaces.IHongKong HK = new C19M.D.Gumel2004.Classes.HongKong();
+
+            // Context
+            C19M.M.C.A.Gumel2004.Interfaces.Contexts.IGumel2004_Context context = new C19M.M.C.A.Gumel2004.Classes.Contexts.Gumel2004_Context(
+                HK.EndDate,
+                HK.NumberDaysAfterStartDate,
+                HK.StartDate,
+                HK.DiseaseInducedDeathRateSymptomaticIndividuals,
+                HK.DiseaseInducedDeathRateIsolatedIndividuals,
+                HK.InitialValueAsymptomaticIndividuals,
+                HK.InitialValueSymptomaticIndividuals,
+                HK.InitialValueIsolatedIndividuals,
+                HK.RecruitmentRateAsymptomaticIndividuals,
+                HK.InitialValueQuarantinedIndividuals,
+                HK.InitialValueRecoveredIndividuals,
+                null, // GTA.BasicReproductionNumber,
+                null, // GTA.ControlReproductionNumber,
+                HK.InitialValueSusceptibleIndividuals,
+                HK.BasicTransmissionCoefficient,
+                HK.QuarantineRateAsymptomaticIndividuals,
+                HK.IsolationRateSymptomaticIndividuals,
+                HK.TransmissionCoefficientModificationFactorAsymptomaticIndividuals,
+                HK.TransmissionCoefficientModificationFactorIsolatedIndividuals,
+                HK.TransmissionCoefficientModificationFactorQuarantinedIndividuals,
+                HK.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals,
+                HK.DevelopmentClinicalSymptomsRateQuarantinedIndividuals,
+                HK.NaturalDeathRate,
+                HK.NetInflowRateSusceptibleIndividuals,
+                HK.RecoveryRateSymptomaticIndividuals,
+                HK.RecoveryRateIsolatedIndividuals);
+
+            C19M.M.C.A.Gumel2004.Interfaces.Exports.IGumel2004_Export export = new C19M.M.C.A.Gumel2004.Classes.Exports.Gumel2004_Export(
+                context);
+
+            export.Solve();
+
+            ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> E = export.DayAsymptomaticIndividuals;
+
+            ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> I = export.DaySymptomaticIndividuals;
+
+            ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> J = export.DayIsolatedIndividuals;
+
+            ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Q = export.DayQuarantinedIndividuals;
+
+            ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> R = export.DayRecoveredIndividuals;
+
+            ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> S = export.DaySusceptibleIndividuals;
+
+            ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> dayCumulativeProbableCases = export.DayCumulativeProbableCases;
+
+            // https://stackoverflow.com/a/9345910
+            byte[] chart = new Chart(width: 1000, height: 300, theme: ChartTheme.Vanilla)
+                .AddSeries(
+                chartType: "line",
+                xValue: dayCumulativeProbableCases.Select(w => w.Item1.ToPartialDateTime().Value.ToUniversalTime().Date.Date).ToArray(),
+                yValues: dayCumulativeProbableCases.Select(w => w.Item2.Value.Value).ToArray())
+                .ToWebImage()
+                .GetBytes("image/png");
+
+            // Return byte array as png.
+            return File(
+                chart, 
+                "image/png");
         }
     }
 }
