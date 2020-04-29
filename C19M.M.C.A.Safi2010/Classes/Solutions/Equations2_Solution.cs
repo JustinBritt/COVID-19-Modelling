@@ -141,6 +141,9 @@
                 this.R);
 
             // DayCumulativeDiseaseInducedDeaths
+            this.DayCumulativeDiseaseInducedDeaths = new C19M.M.C.A.Safi2010.Classes.Calculations.DayCumulativeDiseaseInducedDeaths.DayCumulativeDiseaseInducedDeaths_Calculation().Calculate(
+                equations2_Model.t,
+                this.DayDiseaseInducedDeaths);
 
             // DayCumulativeProbableCases
         }
