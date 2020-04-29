@@ -86,8 +86,6 @@ namespace C19M.UI.Controllers
                 chartType: "line",
                 xValue: dayCumulativeDiseaseInducedDeaths.Select(w => w.Item1.ToPartialDateTime().Value.ToUniversalTime().Date.Date).ToArray(),
                 yValues: dayCumulativeDiseaseInducedDeaths.Select(w => w.Item2.Value.Value).ToArray())
-                .SetXAxis("Day", (double)HK.NumberDaysAfterStartDate.Invoke(HK.StartDate).Value.Value, (double)HK.NumberDaysAfterStartDate.Invoke(HK.EndDate).Value.Value)
-                .SetYAxis("Cumulative Disease Induced Deaths")
                 .ToWebImage()
                 .GetBytes("image/png");
 
@@ -160,8 +158,6 @@ namespace C19M.UI.Controllers
                 chartType: "line",
                 xValue: dayCumulativeProbableCases.Select(w => w.Item1.ToPartialDateTime().Value.ToUniversalTime().Date.Date).ToArray(),
                 yValues: dayCumulativeProbableCases.Select(w => w.Item2.Value.Value).ToArray())
-                .SetXAxis("Day", (double)HK.NumberDaysAfterStartDate.Invoke(HK.StartDate).Value.Value, (double)HK.NumberDaysAfterStartDate.Invoke(HK.EndDate).Value.Value)
-                .SetYAxis("Cumulative Probable Cases")
                 .ToWebImage()
                 .GetBytes("image/png");
 
