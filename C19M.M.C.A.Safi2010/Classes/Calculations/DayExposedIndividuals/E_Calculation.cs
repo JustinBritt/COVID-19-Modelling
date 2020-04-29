@@ -28,5 +28,18 @@
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         }
+
+        public IE Calculate(
+            It t,
+            MathNet.Numerics.LinearAlgebra.Vector<double>[] RungeKuttaResults)
+        {
+            return new C19M.M.C.A.Safi2010.Classes.Results.DayExposedIndividuals.E(
+                t.Value.Select(
+                    w => new C19M.M.C.A.Safi2010.Classes.Calculations.DayExposedIndividuals.E_ResultElement_Calculation().Calculate(
+                        w,
+                        t,
+                        RungeKuttaResults))
+                .ToImmutableList());
+        }
     }
 }
