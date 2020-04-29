@@ -20,7 +20,6 @@
     using C19M.M.C.A.Safi2010.Interfaces.Models;
 
     using C19M.M.C.A.Safi2010.Interfaces.Solutions;
-    using MathNet.Numerics.Distributions;
 
     internal sealed class Equations2_Solution : IEquations2_Solution
     {
