@@ -146,6 +146,9 @@
                 this.DayDiseaseInducedDeaths);
 
             // DayCumulativeProbableCases
+            this.DayCumulativeProbableCases = new C19M.M.C.A.Safi2010.Classes.Calculations.DayCumulativeProbableCases.DayCumulativeProbableCases_Calculation().Calculate(
+                equations2_Model.t,
+                this.DayProbableCases);
         }
 
         // https://stackoverflow.com/a/55004295
