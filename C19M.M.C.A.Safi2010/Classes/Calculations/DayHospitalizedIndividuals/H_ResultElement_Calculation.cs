@@ -14,6 +14,10 @@
 
     using C19M.M.C.A.Safi2010.Interfaces.Calculations.DayHospitalizedIndividuals;
 
+    using C19M.M.C.A.Safi2010.Interfaces.Indices;
+
+    using C19M.M.C.A.Safi2010.Interfaces.ResultElements.DayHospitalizedIndividuals;
+
     internal sealed class H_ResultElement_Calculation : IH_ResultElement_Calculation
     {
         private ILog Log { get; }
@@ -22,6 +26,17 @@
         public H_ResultElement_Calculation()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        }
+
+        public IH_ResultElement Calculate(
+            FhirDateTime t_IndexElement,
+            It t,
+            MathNet.Numerics.LinearAlgebra.Vector<double>[] RungeKuttaResults)
+        {
+            return new C19M.M.C.A.Safi2010.Classes.ResultElements.DayHospitalizedIndividuals.H_ResultElement(
+                t_IndexElement,
+                new FhirDecimal(
+                    (decimal)RungeKuttaResults[t.NumberDaysAfterStartDate.Invoke(t_IndexElement).Value.Value][1]));
         }
     }
 }
