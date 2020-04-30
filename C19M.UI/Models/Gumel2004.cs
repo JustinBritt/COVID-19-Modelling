@@ -169,6 +169,18 @@
 
             this.Beijing_DayCumulativeDiseaseInducedDeaths = Beijing_Export.DayCumulativeDiseaseInducedDeaths;
 
+            this.GreaterTorontoArea_DayAsymptomaticIndividuals = GreaterTorontoArea_Export.DayAsymptomaticIndividuals;
+
+            this.GreaterTorontoArea_DaySymptomaticIndividuals = GreaterTorontoArea_Export.DaySymptomaticIndividuals;
+
+            this.GreaterTorontoArea_DayIsolatedIndividuals = GreaterTorontoArea_Export.DayIsolatedIndividuals;
+
+            this.GreaterTorontoArea_DayQuarantinedIndividuals = GreaterTorontoArea_Export.DayQuarantinedIndividuals;
+
+            this.GreaterTorontoArea_DayRecoveredIndividuals = GreaterTorontoArea_Export.DayRecoveredIndividuals;
+
+            this.GreaterTorontoArea_DaySusceptibleIndividuals = GreaterTorontoArea_Export.DaySusceptibleIndividuals;
+
             this.GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths = GreaterTorontoArea_Export.DayCumulativeDiseaseInducedDeaths;
 
             this.HongKong_DayCumulativeDiseaseInducedDeaths = HongKong_Export.DayCumulativeDiseaseInducedDeaths;
