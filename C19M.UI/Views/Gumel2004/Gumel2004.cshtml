@@ -23,12 +23,7 @@
     <canvas id="canvas"></canvas>
 </div>
 <script>
-    function GenerateData(w1, w2) {
-
-        let days = w1;
-
-        let dayCumulativeDiseaseInducedDeaths = w2;
-
+    function GenerateData(days, values) {
         let data = [];
 
         let i = 0;
@@ -37,7 +32,7 @@
             data.push(
                 {
                     x: luxon.DateTime.fromFormat(days[i], 'LLL dd yyyy').valueOf(),
-                    y: dayCumulativeDiseaseInducedDeaths[i]
+                    y: values[i]
                 });
         }
 
