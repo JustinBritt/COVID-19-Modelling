@@ -155,6 +155,8 @@
 
             Singapore_Export.Solve();
 
+            this.Beijing_DayCumulativeDiseaseInducedDeaths = Beijing_Export.DayCumulativeDiseaseInducedDeaths;
+
             this.Beijing_DayAsymptomaticIndividuals = Beijing_Export.DayAsymptomaticIndividuals;
 
             this.Beijing_DaySymptomaticIndividuals = Beijing_Export.DaySymptomaticIndividuals;
@@ -167,7 +169,7 @@
 
             this.Beijing_DaySusceptibleIndividuals = Beijing_Export.DaySusceptibleIndividuals;
 
-            this.Beijing_DayCumulativeDiseaseInducedDeaths = Beijing_Export.DayCumulativeDiseaseInducedDeaths;
+            this.GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths = GreaterTorontoArea_Export.DayCumulativeDiseaseInducedDeaths;
 
             this.GreaterTorontoArea_DayAsymptomaticIndividuals = GreaterTorontoArea_Export.DayAsymptomaticIndividuals;
 
@@ -181,12 +183,12 @@
 
             this.GreaterTorontoArea_DaySusceptibleIndividuals = GreaterTorontoArea_Export.DaySusceptibleIndividuals;
 
-            this.GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths = GreaterTorontoArea_Export.DayCumulativeDiseaseInducedDeaths;
-
             this.HongKong_DayCumulativeDiseaseInducedDeaths = HongKong_Export.DayCumulativeDiseaseInducedDeaths;
 
             this.Singapore_DayCumulativeDiseaseInducedDeaths = Singapore_Export.DayCumulativeDiseaseInducedDeaths;
         }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Beijing_DayCumulativeDiseaseInducedDeaths { get; set; }
 
         public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Beijing_DayAsymptomaticIndividuals { get; set; }
 
@@ -200,7 +202,7 @@
 
         public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Beijing_DaySusceptibleIndividuals { get; set; }
 
-        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Beijing_DayCumulativeDiseaseInducedDeaths { get; set; }
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths { get; set; }
 
         public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> GreaterTorontoArea_DayAsymptomaticIndividuals { get; set; }
 
@@ -214,14 +216,14 @@
 
         public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> GreaterTorontoArea_DaySusceptibleIndividuals { get; set; }
 
-        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths { get; set; }
-
         public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> HongKong_DayCumulativeDiseaseInducedDeaths { get; set; }
 
         public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Singapore_DayCumulativeDiseaseInducedDeaths { get; set; }
 
         // TODO: Update
         public string[] Days => this.HongKong_DayCumulativeDiseaseInducedDeaths.Select(w => w.Item1.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date.ToString("MMM dd yyyy")).ToArray();
+
+        public decimal[] Beijing_DayCumulativeDiseaseInducedDeaths_Array => this.Beijing_DayCumulativeDiseaseInducedDeaths.Select(w => w.Item2.Value.Value).ToArray();
 
         public decimal[] Beijing_DayAsymptomaticIndividuals_Array => this.Beijing_DayAsymptomaticIndividuals.Select(w => w.Item2.Value.Value).ToArray();
 
@@ -235,7 +237,7 @@
 
         public decimal[] Beijing_DaySusceptibleIndividuals_Array => this.Beijing_DaySusceptibleIndividuals.Select(w => w.Item2.Value.Value).ToArray();
 
-        public decimal[] Beijing_DayCumulativeDiseaseInducedDeaths_Array => this.Beijing_DayCumulativeDiseaseInducedDeaths.Select(w => w.Item2.Value.Value).ToArray();
+        public decimal[] GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths_Array => this.GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths.Select(w => w.Item2.Value.Value).ToArray();
 
         public decimal[] GreaterTorontoArea_DayAsymptomaticIndividuals_Array => this.GreaterTorontoArea_DayAsymptomaticIndividuals.Select(w => w.Item2.Value.Value).ToArray();
 
@@ -248,8 +250,6 @@
         public decimal[] GreaterTorontoArea_DayRecoveredndividuals_Array => this.GreaterTorontoArea_DayRecoveredIndividuals.Select(w => w.Item2.Value.Value).ToArray();
 
         public decimal[] GreaterTorontoArea_DaySusceptibleIndividuals_Array => this.GreaterTorontoArea_DaySusceptibleIndividuals.Select(w => w.Item2.Value.Value).ToArray();
-
-        public decimal[] GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths_Array => this.GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths.Select(w => w.Item2.Value.Value).ToArray();
 
         public decimal[] HongKong_DayCumulativeDiseaseInducedDeaths_Array => this.HongKong_DayCumulativeDiseaseInducedDeaths.Select(w => w.Item2.Value.Value).ToArray();
 
