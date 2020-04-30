@@ -15,7 +15,7 @@
     </head>
 
 <!-- https://stackoverflow.com/questions/44782688/chart-js-web-page-doesnt-display-chart-no-error-in-console -->
-<div style="width:75%;">
+<div>
     <canvas id="canvas"></canvas>
 </div>
 <script>
@@ -29,9 +29,9 @@
         label: 's1',
         borderColor: 'blue',
         data: [
-            { x: moment('2017-01-06').format('MMMM DD, YYYY'), y: 100 },
-            { x: moment('2017-01-07').format('MMMM DD, YYYY'), y: 101 },
-            { x: moment('2019-01-07').format('MMMM DD, YYYY'), y: 105 },
+            { x: moment('2017-01-06'), y: 100 },
+            { x: moment('2017-01-07'), y: 101 },
+            { x: moment('2019-01-07'), y: 105 },
         ],
         tension: 0,
         showLine: true
@@ -41,8 +41,8 @@
         label: 's2',
         borderColor: 'red',
         data: [
-            { x: moment('2017-01-07').format('MMMM DD, YYYY'), y: 90 },
-            { x: moment('2019-01-08').format('MMMM DD, YYYY'), y: 105 },
+            { x: moment('2017-01-07'), y: 90 },
+            { x: moment('2019-01-08'), y: 105 },
         ],
         tension: 0,
         showLine: true
