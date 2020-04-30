@@ -159,6 +159,8 @@
 
             this.Beijing_DaySymptomaticIndividuals = Beijing_Export.DaySymptomaticIndividuals;
 
+            this.Beijing_DayIsolatedIndividuals = Beijing_Export.DayIsolatedIndividuals;
+
             this.Beijing_DayCumulativeDiseaseInducedDeaths = Beijing_Export.DayCumulativeDiseaseInducedDeaths;
 
             this.GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths = GreaterTorontoArea_Export.DayCumulativeDiseaseInducedDeaths;
@@ -171,6 +173,8 @@
         public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Beijing_DayAsymptomaticIndividuals { get; set; }
 
         public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Beijing_DaySymptomaticIndividuals { get; set; }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Beijing_DayIsolatedIndividuals { get; set; }
 
         public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Beijing_DayCumulativeDiseaseInducedDeaths { get; set; }
 
@@ -186,6 +190,8 @@
         public decimal[] Beijing_DayAsymptomaticIndividuals_Array => this.Beijing_DayAsymptomaticIndividuals.Select(w => w.Item2.Value.Value).ToArray();
 
         public decimal[] Beijing_DaySymptomaticIndividuals_Array => this.Beijing_DaySymptomaticIndividuals.Select(w => w.Item2.Value.Value).ToArray();
+
+        public decimal[] Beijing_DayIsolatedIndividuals_Array => this.Beijing_DayIsolatedIndividuals.Select(w => w.Item2.Value.Value).ToArray();
 
         public decimal[] Beijing_DayCumulativeDiseaseInducedDeaths_Array => this.Beijing_DayCumulativeDiseaseInducedDeaths.Select(w => w.Item2.Value.Value).ToArray();
 
