@@ -111,6 +111,18 @@
 
     const color = Chart.helpers.color;
 
+    var Beijing_DayCumulativeDiseaseInducedDeaths_Dataset = {
+        label: 'Beijing',
+        backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.orange,
+        data: GenerateData(Beijing_Days, Beijing_DayCumulativeDiseaseInducedDeaths),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
     var Beijing_DayAsymptomaticIndividuals_Dataset = {
         label: 'Asymptomatic Individuals',
         backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
@@ -183,11 +195,11 @@
         borderWidth: 2
     };
 
-    var Beijing_DayCumulativeDiseaseInducedDeaths_Dataset = {
-        label: 'Beijing',
-        backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
-        borderColor: window.chartColors.orange,
-        data: GenerateData(Beijing_Days, Beijing_DayCumulativeDiseaseInducedDeaths),
+    var GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths_Dataset = {
+        label: 'GreaterTorontoArea',
+        backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.green,
+        data: GenerateData(GreaterTorontoArea_Days, GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths),
         type: 'line',
         pointRadius: 0,
         fill: false,
@@ -267,18 +279,6 @@
         borderWidth: 2
     };
 
-    var GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths_Dataset = {
-        label: 'GreaterTorontoArea',
-        backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
-        borderColor: window.chartColors.green,
-        data: GenerateData(GreaterTorontoArea_Days, GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths),
-        type: 'line',
-        pointRadius: 0,
-        fill: false,
-        lineTension: 0,
-        borderWidth: 2
-    };
-
     var HK_DayCumulativeDiseaseInducedDeaths_Dataset = {
         label: 'Hong Kong',
         backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
@@ -301,6 +301,63 @@
         fill: false,
         lineTension: 0,
         borderWidth: 2
+    };
+
+    const dayCumulativeDiseaseInducedDeaths_Configuration = {
+        data: {
+            datasets: [
+                Beijing_DayCumulativeDiseaseInducedDeaths_Dataset,
+                GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths_Dataset,
+                HK_DayCumulativeDiseaseInducedDeaths_Dataset,
+                Singapore_DayCumulativeDiseaseInducedDeaths_Dataset]
+        },
+        options: {
+            animation: {
+                duration: 0
+            },
+            scales: {
+                x: {
+                    type: 'time',
+                    distribution: 'series',
+                    offset: true,
+                    ticks: {
+                        major: {
+                            enabled: true,
+                        },
+                        fontStyle: 'bold',
+                        source: 'data',
+                        autoSkip: true,
+                        autoSkipPadding: 75,
+                        maxRotation: 0,
+                        sampleSize: 200
+                    },
+                },
+                y: {
+                    type: 'linear',
+                    gridLines: {
+                        drawBorder: false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Cumulative Number of Disease-Induced Deaths'
+                    }
+                }
+            },
+            tooltips: {
+                intersect: false,
+                mode: 'index',
+                callbacks: {
+                    label: function (tooltipItem, myData) {
+                        let label = myData.datasets[tooltipItem.datasetIndex].label || '';
+                        if (label) {
+                            label += ': ';
+                        }
+                        label += parseFloat(tooltipItem.value).toFixed(2);
+                        return label;
+                    }
+                }
+            }
+        }
     };
 
     const Beijing_Configuration = {
@@ -419,63 +476,6 @@
             title: {
                 display: true,
                 text: 'GreaterTorontoArea'
-            },
-            tooltips: {
-                intersect: false,
-                mode: 'index',
-                callbacks: {
-                    label: function (tooltipItem, myData) {
-                        let label = myData.datasets[tooltipItem.datasetIndex].label || '';
-                        if (label) {
-                            label += ': ';
-                        }
-                        label += parseFloat(tooltipItem.value).toFixed(2);
-                        return label;
-                    }
-                }
-            }
-        }
-    };
-
-    const dayCumulativeDiseaseInducedDeaths_Configuration = {
-        data: {
-            datasets: [
-                Beijing_DayCumulativeDiseaseInducedDeaths_Dataset,
-                GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths_Dataset,
-                HK_DayCumulativeDiseaseInducedDeaths_Dataset,
-                Singapore_DayCumulativeDiseaseInducedDeaths_Dataset]
-        },
-        options: {
-            animation: {
-                duration: 0
-            },
-            scales: {
-                x: {
-                    type: 'time',
-                    distribution: 'series',
-                    offset: true,
-                    ticks: {
-                        major: {
-                            enabled: true,
-                        },
-                        fontStyle: 'bold',
-                        source: 'data',
-                        autoSkip: true,
-                        autoSkipPadding: 75,
-                        maxRotation: 0,
-                        sampleSize: 200
-                    },
-                },
-                y: {
-                    type: 'linear',
-                    gridLines: {
-                        drawBorder: false
-                    },
-                    scaleLabel: {
-                        display: true,
-                        labelString: 'Cumulative Number of Disease-Induced Deaths'
-                    }
-                }
             },
             tooltips: {
                 intersect: false,
