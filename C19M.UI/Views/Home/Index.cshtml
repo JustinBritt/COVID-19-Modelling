@@ -21,15 +21,24 @@
 </div>
 <script>
     function generateData() {
-        let date = luxon.DateTime.fromFormat('Jan 01 1990', 'LLL dd yyyy');
 
-        const data = [];
+        var w1 = @Html.Raw(Json.Encode(ViewData["w1"]));
 
-        for (; data.length < 600 && date < luxon.DateTime.local(); date = date.plus({days: 1}).startOf("day")) {
+        var w2 = @Html.Raw(Json.Encode(ViewData["w2"]));
+
+        let date1 = luxon.DateTime.fromFormat(w1[25], 'LLL dd yyyy');//luxon.DateTime.fromFormat('Jan 01 1990', 'LLL dd yyyy');
+
+        let date2 = luxon.DateTime.fromFormat(w1[150], 'LLL dd yyyy');//luxon.DateTime.fromFormat('May 01 1990', 'LLL dd yyyy');
+
+        var data = [];
+
+        var i = 0;
+
+        for (; i < w1.length; i++) {
             data.push(
                 {
-                    x: date.valueOf(),
-                    y: Math.random() * (50 - 30) + 30
+                    x: luxon.DateTime.fromFormat(w1[i], 'LLL dd yyyy').valueOf(),
+                    y: w2[i]
                 });
         }
 
@@ -73,7 +82,7 @@
                         autoSkip: true,
                         autoSkipPadding: 75,
                         maxRotation: 0,
-                        sampleSize: 100
+                        sampleSize: 200
                     },
                 },
                 y: {
