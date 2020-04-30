@@ -15,14 +15,8 @@
         // GET: Gumel2004
         public ActionResult Gumel2004()
         {
-            C19M.UI.Models.Gumel2004 gumel2004 = new Models.Gumel2004();
-
-            ViewData["days"] = gumel2004.HongKong_DayCumulativeDiseaseInducedDeaths.Select(w => w.Item1.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date.ToString("MMM dd yyyy")).ToArray();
-
-            ViewData["HongKong_DayCumulativeDiseaseInducedDeaths"] = gumel2004.HongKong_DayCumulativeDiseaseInducedDeaths.Select(w => w.Item2.Value.Value).ToArray();
-
             return View(
-                gumel2004);
+                new Models.Gumel2004());
         }
     }
 }
