@@ -638,6 +638,140 @@
         }
     };
 
+    const HongKong_Configuration = {
+        data: {
+            datasets: [
+                HongKong_DayAsymptomaticIndividuals_Dataset,
+                HongKong_DaySymptomaticIndividuals_Dataset,
+                HongKong_DayIsolatedIndividuals_Dataset,
+                HongKong_DayQuarantinedIndividuals_Dataset,
+                HongKong_DayRecoveredIndividuals_Dataset,
+                HongKong_DaySusceptibleIndividuals_Dataset]
+        },
+        options: {
+            animation: {
+                duration: 0
+            },
+            scales: {
+                x: {
+                    type: 'time',
+                    distribution: 'series',
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Day'
+                    },
+                    offset: true,
+                    ticks: {
+                        major: {
+                            enabled: true,
+                        },
+                        fontStyle: 'bold',
+                        source: 'data',
+                        autoSkip: true,
+                        autoSkipPadding: 75,
+                        maxRotation: 0,
+                        sampleSize: 200
+                    },
+                },
+                y: {
+                    type: 'logarithmic',
+                    gridLines: {
+                        drawBorder: false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Number of People'
+                    }
+                }
+            },
+            title: {
+                display: true,
+                text: 'HongKong'
+            },
+            tooltips: {
+                intersect: false,
+                mode: 'index',
+                callbacks: {
+                    label: function (tooltipItem, myData) {
+                        let label = myData.datasets[tooltipItem.datasetIndex].label || '';
+                        if (label) {
+                            label += ': ';
+                        }
+                        label += parseFloat(tooltipItem.value).toFixed(2);
+                        return label;
+                    }
+                }
+            }
+        }
+    };
+
+    const Singapore_Configuration = {
+        data: {
+            datasets: [
+                Singapore_DayAsymptomaticIndividuals_Dataset,
+                Singapore_DaySymptomaticIndividuals_Dataset,
+                Singapore_DayIsolatedIndividuals_Dataset,
+                Singapore_DayQuarantinedIndividuals_Dataset,
+                Singapore_DayRecoveredIndividuals_Dataset,
+                Singapore_DaySusceptibleIndividuals_Dataset]
+        },
+        options: {
+            animation: {
+                duration: 0
+            },
+            scales: {
+                x: {
+                    type: 'time',
+                    distribution: 'series',
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Day'
+                    },
+                    offset: true,
+                    ticks: {
+                        major: {
+                            enabled: true,
+                        },
+                        fontStyle: 'bold',
+                        source: 'data',
+                        autoSkip: true,
+                        autoSkipPadding: 75,
+                        maxRotation: 0,
+                        sampleSize: 200
+                    },
+                },
+                y: {
+                    type: 'logarithmic',
+                    gridLines: {
+                        drawBorder: false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Number of People'
+                    }
+                }
+            },
+            title: {
+                display: true,
+                text: 'Singapore'
+            },
+            tooltips: {
+                intersect: false,
+                mode: 'index',
+                callbacks: {
+                    label: function (tooltipItem, myData) {
+                        let label = myData.datasets[tooltipItem.datasetIndex].label || '';
+                        if (label) {
+                            label += ': ';
+                        }
+                        label += parseFloat(tooltipItem.value).toFixed(2);
+                        return label;
+                    }
+                }
+            }
+        }
+    };
+
     const Beijing_Chart = new Chart(
         Beijing_Context,
         Beijing_Configuration);
