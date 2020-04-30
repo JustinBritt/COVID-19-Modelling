@@ -279,11 +279,83 @@
         borderWidth: 2
     };
 
-    var HK_DayCumulativeDiseaseInducedDeaths_Dataset = {
+    var HongKong_DayCumulativeDiseaseInducedDeaths_Dataset = {
         label: 'Hong Kong',
         backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
         borderColor: window.chartColors.red,
         data: GenerateData(HongKong_Days, HongKong_DayCumulativeDiseaseInducedDeaths),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
+    var HongKong_DayAsymptomaticIndividuals_Dataset = {
+        label: 'Asymptomatic Individuals',
+        backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.red,
+        data: GenerateData(HongKong_Days, HongKong_DayAsymptomaticIndividuals),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
+    var HongKong_DaySymptomaticIndividuals_Dataset = {
+        label: 'Symptomatic Individuals',
+        backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.orange,
+        data: GenerateData(HongKong_Days, HongKong_DaySymptomaticIndividuals),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
+    var HongKong_DayIsolatedIndividuals_Dataset = {
+        label: 'Isolated Individuals',
+        backgroundColor: color(window.chartColors.yellow).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.yellow,
+        data: GenerateData(HongKong_Days, HongKong_DayIsolatedIndividuals),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
+    var HongKong_DayQuarantinedIndividuals_Dataset = {
+        label: 'Quarantined Individuals',
+        backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.green,
+        data: GenerateData(HongKong_Days, HongKong_DayQuarantinedIndividuals),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
+    var HongKong_DayRecoveredIndividuals_Dataset = {
+        label: 'Recovered Individuals',
+        backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.blue,
+        data: GenerateData(HongKong_Days, HongKong_DayRecoveredIndividuals),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
+    var HongKong_DaySusceptibleIndividuals_Dataset = {
+        label: 'Susceptible Individuals',
+        backgroundColor: color(window.chartColors.purple).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.purple,
+        data: GenerateData(HongKong_Days, HongKong_DaySusceptibleIndividuals),
         type: 'line',
         pointRadius: 0,
         fill: false,
@@ -303,12 +375,84 @@
         borderWidth: 2
     };
 
+    var Singapore_DayAsymptomaticIndividuals_Dataset = {
+        label: 'Asymptomatic Individuals',
+        backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.red,
+        data: GenerateData(Singapore_Days, Singapore_DayAsymptomaticIndividuals),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
+    var Singapore_DaySymptomaticIndividuals_Dataset = {
+        label: 'Symptomatic Individuals',
+        backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.orange,
+        data: GenerateData(Singapore_Days, Singapore_DaySymptomaticIndividuals),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
+    var Singapore_DayIsolatedIndividuals_Dataset = {
+        label: 'Isolated Individuals',
+        backgroundColor: color(window.chartColors.yellow).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.yellow,
+        data: GenerateData(Singapore_Days, Singapore_DayIsolatedIndividuals),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
+    var Singapore_DayQuarantinedIndividuals_Dataset = {
+        label: 'Quarantined Individuals',
+        backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.green,
+        data: GenerateData(Singapore_Days, Singapore_DayQuarantinedIndividuals),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
+    var Singapore_DayRecoveredIndividuals_Dataset = {
+        label: 'Recovered Individuals',
+        backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.blue,
+        data: GenerateData(Singapore_Days, Singapore_DayRecoveredIndividuals),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
+    var Singapore_DaySusceptibleIndividuals_Dataset = {
+        label: 'Susceptible Individuals',
+        backgroundColor: color(window.chartColors.purple).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.purple,
+        data: GenerateData(Singapore_Days, Singapore_DaySusceptibleIndividuals),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
     const dayCumulativeDiseaseInducedDeaths_Configuration = {
         data: {
             datasets: [
                 Beijing_DayCumulativeDiseaseInducedDeaths_Dataset,
                 GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths_Dataset,
-                HK_DayCumulativeDiseaseInducedDeaths_Dataset,
+                HongKong_DayCumulativeDiseaseInducedDeaths_Dataset,
                 Singapore_DayCumulativeDiseaseInducedDeaths_Dataset]
         },
         options: {
