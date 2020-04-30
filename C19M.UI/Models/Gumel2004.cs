@@ -147,9 +147,13 @@
             C19M.M.C.A.Gumel2004.Interfaces.Exports.IGumel2004_Export Singapore_Export = new C19M.M.C.A.Gumel2004.Classes.Exports.Gumel2004_Export(
                 Singapore_Context);
 
+            Beijing_Export.Solve();
+
             GreaterTorontoArea_Export.Solve();
 
             HongKong_Export.Solve();
+
+            Singapore_Export.Solve();
 
             this.GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths = GreaterTorontoArea_Export.DayCumulativeDiseaseInducedDeaths;
 
