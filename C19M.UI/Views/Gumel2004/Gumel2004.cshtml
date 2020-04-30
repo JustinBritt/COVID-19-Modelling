@@ -51,20 +51,38 @@
     var HK_w1 = @Html.Raw(Json.Encode(Model.Days));
     var HK_w2 = @Html.Raw(Json.Encode(Model.HongKong_DayCumulativeDiseaseInducedDeaths_Array));
 
+    var GTA_w1 = @Html.Raw(Json.Encode(Model.Days));
+    var GTA_w2 = @Html.Raw(Json.Encode(Model.GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths_Array));
+
     const color = Chart.helpers.color;
+
+    var HK_ds = {
+        label: 'Hong Kong',
+        backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.red,
+        data: GenerateData(HK_w1, HK_w2),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
+    var GTA_ds = {
+        label: 'GTA',
+        backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.green,
+        data: GenerateData(GTA_w1, GTA_w2),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
     const cfg = {
         data: {
-            datasets: [{
-                label: 'Hong Kong',
-                backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
-                borderColor: window.chartColors.red,
-                data: GenerateData(HK_w1, HK_w2),
-                type: 'line',
-                pointRadius: 0,
-                fill: false,
-                lineTension: 0,
-                borderWidth: 2
-            }]
+            datasets: [HK_ds, GTA_ds]
         },
         options: {
             animation: {
