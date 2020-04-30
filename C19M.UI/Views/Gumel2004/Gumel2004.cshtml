@@ -25,7 +25,7 @@
 
         var days = @Html.Raw(Json.Encode(ViewData["days"]));
 
-        var w2 = @Html.Raw(Json.Encode(ViewData["w2"]));
+        var HongKong_DayCumulativeDiseaseInducedDeaths = @Html.Raw(Json.Encode(ViewData["HongKong_DayCumulativeDiseaseInducedDeaths"]));
 
         var data = [];
 
@@ -35,7 +35,7 @@
             data.push(
                 {
                     x: luxon.DateTime.fromFormat(days[i], 'LLL dd yyyy').valueOf(),
-                    y: w2[i]
+                    y: HongKong_DayCumulativeDiseaseInducedDeaths[i]
                 });
         }
 
