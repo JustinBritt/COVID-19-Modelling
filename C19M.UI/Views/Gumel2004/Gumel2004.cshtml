@@ -44,6 +44,27 @@
         return data;
     }
 
+    function GreaterTorontoArea_GenerateData() {
+
+        var days = @Html.Raw(Json.Encode(Model.Days));
+
+        var HongKong_DayCumulativeDiseaseInducedDeaths = @Html.Raw(Json.Encode(Model.GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths_Array));
+
+        var data = [];
+
+        var i = 0;
+
+        for (; i < days.length; i++) {
+            data.push(
+                {
+                    x: luxon.DateTime.fromFormat(days[i], 'LLL dd yyyy').valueOf(),
+                    y: GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths[i]
+                });
+        }
+
+        return data;
+    }
+
     const ctx = document.getElementById('canvas').getContext('2d');
     ctx.canvas.width = 1000;
     ctx.canvas.height = 300;
