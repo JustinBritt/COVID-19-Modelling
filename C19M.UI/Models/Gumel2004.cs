@@ -185,7 +185,31 @@
 
             this.HongKong_DayCumulativeDiseaseInducedDeaths = HongKong_Export.DayCumulativeDiseaseInducedDeaths;
 
+            this.HongKong_DayAsymptomaticIndividuals = HongKong_Export.DayAsymptomaticIndividuals;
+
+            this.HongKong_DaySymptomaticIndividuals = HongKong_Export.DaySymptomaticIndividuals;
+
+            this.HongKong_DayIsolatedIndividuals = HongKong_Export.DayIsolatedIndividuals;
+
+            this.HongKong_DayQuarantinedIndividuals = HongKong_Export.DayQuarantinedIndividuals;
+
+            this.HongKong_DayRecoveredIndividuals = HongKong_Export.DayRecoveredIndividuals;
+
+            this.HongKong_DaySusceptibleIndividuals = HongKong_Export.DaySusceptibleIndividuals;
+
             this.Singapore_DayCumulativeDiseaseInducedDeaths = Singapore_Export.DayCumulativeDiseaseInducedDeaths;
+
+            this.Singapore_DayAsymptomaticIndividuals = Singapore_Export.DayAsymptomaticIndividuals;
+
+            this.Singapore_DaySymptomaticIndividuals = Singapore_Export.DaySymptomaticIndividuals;
+
+            this.Singapore_DayIsolatedIndividuals = Singapore_Export.DayIsolatedIndividuals;
+
+            this.Singapore_DayQuarantinedIndividuals = Singapore_Export.DayQuarantinedIndividuals;
+
+            this.Singapore_DayRecoveredIndividuals = Singapore_Export.DayRecoveredIndividuals;
+
+            this.Singapore_DaySusceptibleIndividuals = Singapore_Export.DaySusceptibleIndividuals;
         }
 
         public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Beijing_DayCumulativeDiseaseInducedDeaths { get; set; }
