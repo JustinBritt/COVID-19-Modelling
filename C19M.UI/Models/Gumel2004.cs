@@ -22,6 +22,34 @@
             C19M.D.Gumel2004.Interfaces.ISingapore Singapore = new C19M.D.Gumel2004.Classes.Singapore();
 
             // Contexts
+            C19M.M.C.A.Gumel2004.Interfaces.Contexts.IGumel2004_Context Beijing_Context = new C19M.M.C.A.Gumel2004.Classes.Contexts.Gumel2004_Context(
+                Beijing.EndDate,
+                Beijing.NumberDaysAfterStartDate,
+                Beijing.StartDate,
+                Beijing.DiseaseInducedDeathRateSymptomaticIndividuals,
+                Beijing.DiseaseInducedDeathRateIsolatedIndividuals,
+                Beijing.InitialValueAsymptomaticIndividuals,
+                Beijing.InitialValueSymptomaticIndividuals,
+                Beijing.InitialValueIsolatedIndividuals,
+                Beijing.RecruitmentRateAsymptomaticIndividuals,
+                Beijing.InitialValueQuarantinedIndividuals,
+                Beijing.InitialValueRecoveredIndividuals,
+                null, // GTA.BasicReproductionNumber,
+                null, // GTA.ControlReproductionNumber,
+                Beijing.InitialValueSusceptibleIndividuals,
+                Beijing.BasicTransmissionCoefficient,
+                Beijing.QuarantineRateAsymptomaticIndividuals,
+                Beijing.IsolationRateSymptomaticIndividuals,
+                Beijing.TransmissionCoefficientModificationFactorAsymptomaticIndividuals,
+                Beijing.TransmissionCoefficientModificationFactorIsolatedIndividuals,
+                Beijing.TransmissionCoefficientModificationFactorQuarantinedIndividuals,
+                Beijing.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals,
+                Beijing.DevelopmentClinicalSymptomsRateQuarantinedIndividuals,
+                Beijing.NaturalDeathRate,
+                Beijing.NetInflowRateSusceptibleIndividuals,
+                Beijing.RecoveryRateSymptomaticIndividuals,
+                Beijing.RecoveryRateIsolatedIndividuals);
+
             C19M.M.C.A.Gumel2004.Interfaces.Contexts.IGumel2004_Context GreaterTorontoArea_Context = new C19M.M.C.A.Gumel2004.Classes.Contexts.Gumel2004_Context(
                 GreaterTorontoArea.EndDate,
                 GreaterTorontoArea.NumberDaysAfterStartDate,
@@ -77,6 +105,34 @@
                 HongKong.NetInflowRateSusceptibleIndividuals,
                 HongKong.RecoveryRateSymptomaticIndividuals,
                 HongKong.RecoveryRateIsolatedIndividuals);
+
+            C19M.M.C.A.Gumel2004.Interfaces.Contexts.IGumel2004_Context Singapore_Context = new C19M.M.C.A.Gumel2004.Classes.Contexts.Gumel2004_Context(
+                Singapore.EndDate,
+                Singapore.NumberDaysAfterStartDate,
+                Singapore.StartDate,
+                Singapore.DiseaseInducedDeathRateSymptomaticIndividuals,
+                Singapore.DiseaseInducedDeathRateIsolatedIndividuals,
+                Singapore.InitialValueAsymptomaticIndividuals,
+                Singapore.InitialValueSymptomaticIndividuals,
+                Singapore.InitialValueIsolatedIndividuals,
+                Singapore.RecruitmentRateAsymptomaticIndividuals,
+                Singapore.InitialValueQuarantinedIndividuals,
+                Singapore.InitialValueRecoveredIndividuals,
+                null, // GTA.BasicReproductionNumber,
+                null, // GTA.ControlReproductionNumber,
+                Singapore.InitialValueSusceptibleIndividuals,
+                Singapore.BasicTransmissionCoefficient,
+                Singapore.QuarantineRateAsymptomaticIndividuals,
+                Singapore.IsolationRateSymptomaticIndividuals,
+                Singapore.TransmissionCoefficientModificationFactorAsymptomaticIndividuals,
+                Singapore.TransmissionCoefficientModificationFactorIsolatedIndividuals,
+                Singapore.TransmissionCoefficientModificationFactorQuarantinedIndividuals,
+                Singapore.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals,
+                Singapore.DevelopmentClinicalSymptomsRateQuarantinedIndividuals,
+                Singapore.NaturalDeathRate,
+                Singapore.NetInflowRateSusceptibleIndividuals,
+                Singapore.RecoveryRateSymptomaticIndividuals,
+                Singapore.RecoveryRateIsolatedIndividuals);
 
             C19M.M.C.A.Gumel2004.Interfaces.Exports.IGumel2004_Export GreaterTorontoArea_Export = new C19M.M.C.A.Gumel2004.Classes.Exports.Gumel2004_Export(
                 GreaterTorontoArea_Context);
