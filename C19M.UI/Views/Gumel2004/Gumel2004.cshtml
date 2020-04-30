@@ -25,44 +25,44 @@
 <script>
     function HongKong_GenerateData() {
 
-        var days = @Html.Raw(Json.Encode(Model.Days));
+        var HongKong_Days = @Html.Raw(Json.Encode(Model.Days));
 
         var HongKong_DayCumulativeDiseaseInducedDeaths = @Html.Raw(Json.Encode(Model.HongKong_DayCumulativeDiseaseInducedDeaths_Array));
 
-        var data = [];
+        var HongKong_Data = [];
 
-        var i = 0;
+        var HongKong_i = 0;
 
-        for (; i < days.length; i++) {
-            data.push(
+        for (; HongKong_i < HongKong_Days.length; HongKong_i++) {
+            HongKong_Data.push(
                 {
-                    x: luxon.DateTime.fromFormat(days[i], 'LLL dd yyyy').valueOf(),
-                    y: HongKong_DayCumulativeDiseaseInducedDeaths[i]
+                    x: luxon.DateTime.fromFormat(HongKong_Days[HongKong_i], 'LLL dd yyyy').valueOf(),
+                    y: HongKong_DayCumulativeDiseaseInducedDeaths[HongKong_i]
                 });
         }
 
-        return data;
+        return HongKong_Data;
     }
 
     function GreaterTorontoArea_GenerateData() {
 
-        var days = @Html.Raw(Json.Encode(Model.Days));
+        var GreaterTorontoArea_Days = @Html.Raw(Json.Encode(Model.Days));
 
-        var HongKong_DayCumulativeDiseaseInducedDeaths = @Html.Raw(Json.Encode(Model.GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths_Array));
+        var GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths = @Html.Raw(Json.Encode(Model.GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths_Array));
 
-        var data = [];
+        var GreaterTorontoArea_Data = [];
 
-        var i = 0;
+        var GreaterTorontoArea_i = 0;
 
-        for (; i < days.length; i++) {
-            data.push(
+        for (; GreaterTorontoArea_i < GreaterTorontoArea_Days.length; GreaterTorontoArea_i++) {
+            GreaterTorontoArea_Data.push(
                 {
-                    x: luxon.DateTime.fromFormat(days[i], 'LLL dd yyyy').valueOf(),
-                    y: GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths[i]
+                    x: luxon.DateTime.fromFormat(days[GreaterTorontoArea_i], 'LLL dd yyyy').valueOf(),
+                    y: GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths[GreaterTorontoArea_i]
                 });
         }
 
-        return data;
+        return GreaterTorontoArea_Data;
     }
 
     const ctx = document.getElementById('canvas').getContext('2d');
