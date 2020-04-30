@@ -34,10 +34,6 @@
             function generateData() {
                 const unit = document.getElementById('unit').value;
 
-                function unitLessThanDay() {
-                    return unit === 'second' || unit === 'minute' || unit === 'hour';
-                }
-
                 function randomNumber(min, max) {
                     return Math.random() * (max - min) + min;
                 }
@@ -54,7 +50,7 @@
                 let date = luxon.DateTime.fromFormat('Jan 01 1990', 'LLL dd yyyy');
                 const now = luxon.DateTime.local();
                 const data = [];
-                const lessThanDay = unitLessThanDay();
+
                 const plus = {};
                 plus[unit] = 1;
                 for (; data.length < 600 && date < now; date = date.plus(plus).startOf(unit)) {
