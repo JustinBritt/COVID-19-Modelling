@@ -57,7 +57,7 @@
 
     const color = Chart.helpers.color;
 
-    var Beijing_ds = {
+    var Beijing_DayCumulativeDiseaseInducedDeaths_Dataset = {
         label: 'Beijing',
         backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
         borderColor: window.chartColors.orange,
@@ -69,7 +69,7 @@
         borderWidth: 2
     };
 
-    var GTA_ds = {
+    var GTA_DayCumulativeDiseaseInducedDeaths_Dataset = {
         label: 'GTA',
         backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
         borderColor: window.chartColors.green,
@@ -81,7 +81,7 @@
         borderWidth: 2
     };
 
-    var HK_ds = {
+    var HK_DayCumulativeDiseaseInducedDeaths_Dataset = {
         label: 'Hong Kong',
         backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
         borderColor: window.chartColors.red,
@@ -93,7 +93,7 @@
         borderWidth: 2
     };
 
-    var Singapore_ds = {
+    var Singapore_DayCumulativeDiseaseInducedDeaths_Dataset = {
         label: 'Singapore',
         backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
         borderColor: window.chartColors.blue,
@@ -107,7 +107,11 @@
 
     const cfg = {
         data: {
-            datasets: [Beijing_ds, GTA_ds, HK_ds, Singapore_ds]
+            datasets: [
+                Beijing_DayCumulativeDiseaseInducedDeaths_Dataset,
+                GTA_DayCumulativeDiseaseInducedDeaths_Dataset,
+                HK_DayCumulativeDiseaseInducedDeaths_Dataset,
+                Singapore_DayCumulativeDiseaseInducedDeaths_Dataset]
         },
         options: {
             animation: {
