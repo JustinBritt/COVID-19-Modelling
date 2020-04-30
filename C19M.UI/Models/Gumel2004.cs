@@ -218,7 +218,31 @@
 
         public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> HongKong_DayCumulativeDiseaseInducedDeaths { get; set; }
 
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> HongKong_DayAsymptomaticIndividuals { get; set; }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> HongKong_DaySymptomaticIndividuals { get; set; }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> HongKong_DayIsolatedIndividuals { get; set; }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> HongKong_DayQuarantinedIndividuals { get; set; }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> HongKong_DayRecoveredIndividuals { get; set; }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> HongKong_DaySusceptibleIndividuals { get; set; }
+
         public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Singapore_DayCumulativeDiseaseInducedDeaths { get; set; }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Singapore_DayAsymptomaticIndividuals { get; set; }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Singapore_DaySymptomaticIndividuals { get; set; }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Singapore_DayIsolatedIndividuals { get; set; }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Singapore_DayQuarantinedIndividuals { get; set; }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Singapore_DayRecoveredIndividuals { get; set; }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Singapore_DaySusceptibleIndividuals { get; set; }
 
         // TODO: Update
         public string[] Days => this.HongKong_DayCumulativeDiseaseInducedDeaths.Select(w => w.Item1.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date.ToString("MMM dd yyyy")).ToArray();
