@@ -1,135 +1,124 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-    <head>
-        <title>Line Chart</title>
-        <script src="~/Scripts/Chart.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/luxon@1.15.0"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@0.2.0"></script>
-        <script src="~/Scripts/utils.js"></script>
-        <style>
-            canvas {
-                -moz-user-select: none;
-                -webkit-user-select: none;
-                -ms-user-select: none;
-            }
-        </style>
-    </head>
+<head>
+    <title>Line Chart</title>
+    <script src="~/Scripts/Chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@1.15.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@0.2.0"></script>
+    <script src="~/Scripts/utils.js"></script>
+    <style>
+        canvas {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+    </style>
+</head>
 
-  <div>
-      <canvas id="canvas"></canvas>
-  </div>
-        <select id="unit">
-            <option value="second">Second</option>
-            <option value="minute">Minute</option>
-            <option value="hour">Hour</option>
-            <option value="day" selected>Day</option>
-            <option value="month">Month</option>
-            <option value="year">Year</option>
-        </select>
-        <script>
+<div>
+    <canvas id="canvas"></canvas>
+</div>
+<script>
+    // Generate data between the stock market hours of 9:30am - 5pm.
+    // This method is slow and unoptimized, but in real life we'd be fetching it from the server.
+    function generateData() {
+        const unit = "day";//document.getElementById('unit').value;
 
-            // Generate data between the stock market hours of 9:30am - 5pm.
-            // This method is slow and unoptimized, but in real life we'd be fetching it from the server.
-            function generateData() {
-                const unit = document.getElementById('unit').value;
+        function randomNumber(min, max) {
+            return Math.random() * (max - min) + min;
+        }
 
-                function randomNumber(min, max) {
-                    return Math.random() * (max - min) + min;
-                }
+        function randomBar(date) {
+            return {
+                x: date.valueOf(),
+                y: randomNumber(30, 50)
+            };
+        }
 
-                function randomBar(date, lastClose) {
-                    const open = randomNumber(lastClose * 0.95, lastClose * 1.05).toFixed(2);
-                    const close = randomNumber(open * 0.95, open * 1.05).toFixed(2);
-                    return {
-                        x: date.valueOf(),
-                        y: close
-                    };
-                }
+        let date = luxon.DateTime.fromFormat('Jan 01 1990', 'LLL dd yyyy');
+        const now = luxon.DateTime.local();
+        const data = [];
 
-                let date = luxon.DateTime.fromFormat('Jan 01 1990', 'LLL dd yyyy');
-                const now = luxon.DateTime.local();
-                const data = [];
+        const plus = {};
+        plus[unit] = 1;
+        for (; data.length < 600 && date < now; date = date.plus(plus).startOf(unit)) {
+            data.push(randomBar(date));
+        }
 
-                const plus = {};
-                plus[unit] = 1;
-                for (; data.length < 600 && date < now; date = date.plus(plus).startOf(unit)) {
-                    data.push(randomBar(date, data.length > 0 ? data[data.length - 1].y : 30));
-                }
+        return data;
+    }
 
-                return data;
-            }
+    const ctx = document.getElementById('canvas').getContext('2d');
+    ctx.canvas.width = 1000;
+    ctx.canvas.height = 300;
 
-            const ctx = document.getElementById('canvas').getContext('2d');
-            ctx.canvas.width = 1000;
-            ctx.canvas.height = 300;
-
-            const color = Chart.helpers.color;
-            const cfg = {
-                data: {
-                    datasets: [{
-                        label: 'CHRT - Chart.js Corporation',
-                        backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
-                        borderColor: window.chartColors.red,
-                        data: generateData(),
-                        type: 'line',
-                        pointRadius: 0,
-                        fill: false,
-                        lineTension: 0,
-                        borderWidth: 2
-                    }]
-                },
-                options: {
-                    animation: {
-                        duration: 0
-                    },
-                    scales: {
-                        x: {
-                            type: 'time',
-                            distribution: 'series',
-                            offset: true,
-                            ticks: {
-                                major: {
-                                    enabled: true,
-                                },
-                                fontStyle: 'bold',
-                                source: 'data',
-                                autoSkip: true,
-                                autoSkipPadding: 75,
-                                maxRotation: 0,
-                                sampleSize: 100
-                            },
+    const color = Chart.helpers.color;
+    const cfg = {
+        data: {
+            datasets: [{
+                label: 'CHRT - Chart.js Corporation',
+                backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+                borderColor: window.chartColors.red,
+                data: generateData(),
+                type: 'line',
+                pointRadius: 0,
+                fill: false,
+                lineTension: 0,
+                borderWidth: 2
+            }]
+        },
+        options: {
+            animation: {
+                duration: 0
+            },
+            scales: {
+                x: {
+                    type: 'time',
+                    distribution: 'series',
+                    offset: true,
+                    ticks: {
+                        major: {
+                            enabled: true,
                         },
-                        y: {
-                            type: 'linear',
-                            gridLines: {
-                                drawBorder: false
-                            },
-                            scaleLabel: {
-                                display: true,
-                                labelString: 'Closing price ($)'
-                            }
-                        }
+                        fontStyle: 'bold',
+                        source: 'data',
+                        autoSkip: true,
+                        autoSkipPadding: 75,
+                        maxRotation: 0,
+                        sampleSize: 100
                     },
-                    tooltips: {
-                        intersect: false,
-                        mode: 'index',
-                        callbacks: {
-                            label: function (tooltipItem, myData) {
-                                let label = myData.datasets[tooltipItem.datasetIndex].label || '';
-                                if (label) {
-                                    label += ': ';
-                                }
-                                label += parseFloat(tooltipItem.value).toFixed(2);
-                                return label;
-                            }
-                        }
+                },
+                y: {
+                    type: 'linear',
+                    gridLines: {
+                        drawBorder: false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Closing price ($)'
                     }
                 }
-            };
+            },
+            tooltips: {
+                intersect: false,
+                mode: 'index',
+                callbacks: {
+                    label: function (tooltipItem, myData) {
+                        let label = myData.datasets[tooltipItem.datasetIndex].label || '';
+                        if (label) {
+                            label += ': ';
+                        }
+                        label += parseFloat(tooltipItem.value).toFixed(2);
+                        return label;
+                    }
+                }
+            }
+        }
+    };
 
-            const chart = new Chart(ctx, cfg);
-        </script>
+    const chart = new Chart(ctx, cfg);
+</script>
 
 <div class="jumbotron">
     <h1>ASP.NET</h1>
