@@ -53,6 +53,7 @@
     var Beijing_Days = @Html.Raw(Json.Encode(Model.Days));
     var Beijing_DayAsymptomaticIndividuals = @Html.Raw(Json.Encode(Model.Beijing_DayAsymptomaticIndividuals_Array));
     var Beijing_DaySymptomaticIndividuals = @Html.Raw(Json.Encode(Model.Beijing_DaySymptomaticIndividuals_Array));
+    var Beijing_DayIsolatedIndividuals = @Html.Raw(Json.Encode(Model.Beijing_DayIsolatedIndividuals_Array));
     var Beijing_DayCumulativeDiseaseInducedDeaths = @Html.Raw(Json.Encode(Model.Beijing_DayCumulativeDiseaseInducedDeaths_Array));
 
     var GreaterTorontoArea_Days = @Html.Raw(Json.Encode(Model.Days));
@@ -83,6 +84,18 @@
         backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
         borderColor: window.chartColors.green,
         data: GenerateData(Beijing_Days, Beijing_DaySymptomaticIndividuals),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
+    var Beijing_DayIsolatedIndividuals_Dataset = {
+        label: 'Isolated Individuals',
+        backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.green,
+        data: GenerateData(Beijing_Days, Beijing_DayIsolatedIndividuals),
         type: 'line',
         pointRadius: 0,
         fill: false,
@@ -142,7 +155,8 @@
         data: {
             datasets: [
                 Beijing_DayAsymptomaticIndividuals_Dataset,
-                Beijing_DaySymptomaticIndividuals_Dataset]
+                Beijing_DaySymptomaticIndividuals_Dataset,
+                Beijing_DayIsolatedIndividuals_Dataset]
         },
         options: {
             animation: {
