@@ -56,7 +56,7 @@
 
             ViewData["w2"] = dayCumulativeDiseaseInducedDeaths.Select(w => w.Item2.Value.Value).ToArray();
 
-            return PartialView();
+            return View();
         }
     }
 }
