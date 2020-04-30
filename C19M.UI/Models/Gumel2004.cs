@@ -179,6 +179,8 @@
         // TODO: Update
         public string[] Days => this.HongKong_DayCumulativeDiseaseInducedDeaths.Select(w => w.Item1.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date.ToString("MMM dd yyyy")).ToArray();
 
+        public decimal[] Beijing_DayAsymptomaticIndividuals_Array => this.Beijing_DayAsymptomaticIndividuals.Select(w => w.Item2.Value.Value).ToArray();
+
         public decimal[] Beijing_DayCumulativeDiseaseInducedDeaths_Array => this.Beijing_DayCumulativeDiseaseInducedDeaths.Select(w => w.Item2.Value.Value).ToArray();
 
         public decimal[] GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths_Array => this.GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths.Select(w => w.Item2.Value.Value).ToArray();
