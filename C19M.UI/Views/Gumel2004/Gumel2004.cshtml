@@ -42,9 +42,9 @@
         return data;
     }
 
-    const DayCumulativeDiseaseInducedDeaths_ctx = document.getElementById('DayCumulativeDiseaseInducedDeaths_Canvas').getContext('2d');
-    DayCumulativeDiseaseInducedDeaths_ctx.canvas.width = 1000;
-    DayCumulativeDiseaseInducedDeaths_ctx.canvas.height = 300;
+    const dayCumulativeDiseaseInducedDeaths_ctx = document.getElementById('DayCumulativeDiseaseInducedDeaths_Canvas').getContext('2d');
+    dayCumulativeDiseaseInducedDeaths_ctx.canvas.width = 1000;
+    dayCumulativeDiseaseInducedDeaths_ctx.canvas.height = 300;
 
     var Beijing_Days = @Html.Raw(Json.Encode(Model.Days));
     var Beijing_DayAsymptomaticIndividuals = @Html.Raw(Json.Encode(Model.Beijing_DayAsymptomaticIndividuals_Array));
@@ -109,7 +109,7 @@
         borderWidth: 2
     };
 
-    const cfg = {
+    const dayCumulativeDiseaseInducedDeaths_Configuration = {
         data: {
             datasets: [
                 Beijing_DayCumulativeDiseaseInducedDeaths_Dataset,
@@ -166,7 +166,7 @@
         }
     };
 
-    const chart = new Chart(
-        DayCumulativeDiseaseInducedDeaths_ctx,
-        cfg);
+    const dayCumulativeDiseaseInducedDeaths_chart = new Chart(
+        dayCumulativeDiseaseInducedDeaths_ctx,
+        dayCumulativeDiseaseInducedDeaths_Configuration);
 </script>
