@@ -52,6 +52,6 @@
             this.HongKong_DayCumulativeDiseaseInducedDeaths = export.DayCumulativeDiseaseInducedDeaths;
         }
 
-        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> HongKong_DayCumulativeDiseaseInducedDeaths { get; }
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> HongKong_DayCumulativeDiseaseInducedDeaths { get; set; }
     }
 }
