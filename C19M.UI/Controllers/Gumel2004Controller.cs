@@ -52,7 +52,7 @@
 
             ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> dayCumulativeDiseaseInducedDeaths = export.DayCumulativeDiseaseInducedDeaths;
 
-            ViewData["w1"] = dayCumulativeDiseaseInducedDeaths.Select(w => w.Item1.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date.ToString("MMM dd yyyy")).ToArray();
+            ViewData["days"] = dayCumulativeDiseaseInducedDeaths.Select(w => w.Item1.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date.ToString("MMM dd yyyy")).ToArray();
 
             ViewData["w2"] = dayCumulativeDiseaseInducedDeaths.Select(w => w.Item2.Value.Value).ToArray();
 

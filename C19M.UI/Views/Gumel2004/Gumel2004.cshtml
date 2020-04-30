@@ -23,7 +23,7 @@
 <script>
     function generateData() {
 
-        var w1 = @Html.Raw(Json.Encode(ViewData["w1"]));
+        var days = @Html.Raw(Json.Encode(ViewData["days"]));
 
         var w2 = @Html.Raw(Json.Encode(ViewData["w2"]));
 
@@ -31,10 +31,10 @@
 
         var i = 0;
 
-        for (; i < w1.length; i++) {
+        for (; i < days.length; i++) {
             data.push(
                 {
-                    x: luxon.DateTime.fromFormat(w1[i], 'LLL dd yyyy').valueOf(),
+                    x: luxon.DateTime.fromFormat(days[i], 'LLL dd yyyy').valueOf(),
                     y: w2[i]
                 });
         }
