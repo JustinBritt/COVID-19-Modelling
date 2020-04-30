@@ -23,7 +23,7 @@
     // Generate data between the stock market hours of 9:30am - 5pm.
     // This method is slow and unoptimized, but in real life we'd be fetching it from the server.
     function generateData() {
-        const unit = "day";//document.getElementById('unit').value;
+        const unit = "day";
 
         function randomNumber(min, max) {
             return Math.random() * (max - min) + min;
