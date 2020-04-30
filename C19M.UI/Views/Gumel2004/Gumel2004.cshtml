@@ -61,6 +61,18 @@
 
     const color = Chart.helpers.color;
 
+    var Beijing_DayAsymptomaticIndividuals_Dataset = {
+        label: 'Beijing',
+        backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.orange,
+        data: GenerateData(Beijing_Days, Beijing_DayAsymptomaticIndividuals),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
     var Beijing_DayCumulativeDiseaseInducedDeaths_Dataset = {
         label: 'Beijing',
         backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
