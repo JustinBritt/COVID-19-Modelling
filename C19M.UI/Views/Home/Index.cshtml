@@ -3,8 +3,10 @@
 }
     <head>
         <title>Line Chart</title>
-        <script src="~/Scripts/moment.js"></script>
         <script src="~/Scripts/Chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/luxon@1.15.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@0.2.0"></script>
+        <script src="~/Scripts/utils.js"></script>
         <style>
             canvas {
                 -moz-user-select: none;
@@ -14,59 +16,181 @@
         </style>
     </head>
 
-<!-- https://stackoverflow.com/questions/44782688/chart-js-web-page-doesnt-display-chart-no-error-in-console -->
-<div>
-    <canvas id="canvas"></canvas>
-</div>
-<script>
-    var stringArray = @Html.Raw(Json.Encode(ViewData["Labels"]));
-
-    var canvas = document.getElementById('canvas');
-    var ctx = canvas.getContext('2d');
-
-    // https://stackoverflow.com/questions/48143233/how-to-plot-multiple-time-series-in-chartjs-where-each-time-series-has-different
-    var s1 = {
-        label: 's1',
-        borderColor: 'blue',
-        data: [
-            { x: moment('2017-01-06'), y: 100 },
-            { x: moment('2017-01-07'), y: 101 },
-            { x: moment('2019-01-07'), y: 105 },
-        ],
-        tension: 0,
-        showLine: true
-    };
-
-    var s2 = {
-        label: 's2',
-        borderColor: 'red',
-        data: [
-            { x: moment('2017-01-07'), y: 90 },
-            { x: moment('2019-01-08'), y: 105 },
-        ],
-        tension: 0,
-        showLine: true
-    };
-
-    var chart = new Chart(ctx, {
-        type: 'scatter',
-        data: {
-            datasets: [s1, s2]
-        },
-        options: {
-            legend: false,
-            responsive: true,
-            tooltips: false,
-            scales: {
-                xAxes: [{
-                    type: 'time',
-                    distribution: 'series',
-                    display: true
-                }]
+  <div>
+      <canvas id="canvas"></canvas>
+  </div>
+        <select id="unit">
+            <option value="second">Second</option>
+            <option value="minute">Minute</option>
+            <option value="hour">Hour</option>
+            <option value="day" selected>Day</option>
+            <option value="month">Month</option>
+            <option value="year">Year</option>
+        </select>
+        <script>
+            function isFirstUnitOfPeriod(date, unit, period) {
+                let first = date.startOf(period);
+                while (first.weekday > 5) {
+                    first = first.plus({ day: 1 });
+                }
+                if (unit === 'second' || unit === 'minute' || unit === 'hour') {
+                    first = first.set({ hour: 9, minute: 30 });
+                }
+                return date === first;
             }
-        }
-    });
-</script>
+
+            // Generate data between the stock market hours of 9:30am - 5pm.
+            // This method is slow and unoptimized, but in real life we'd be fetching it from the server.
+            function generateData() {
+                const unit = document.getElementById('unit').value;
+
+                function unitLessThanDay() {
+                    return unit === 'second' || unit === 'minute' || unit === 'hour';
+                }
+
+                function beforeNineThirty(date) {
+                    return date.hour < 9 || (date.hour === 9 && date.minute < 30);
+                }
+
+
+                function after4pm(date) {
+                    return date.hour > 16 || (date.hour === 16 && date.minute > 0);
+                }
+
+                // Returns true if outside 9:30am-4pm on a weekday
+                function outsideMarketHours(date) {
+                    if (date.weekday > 5) {
+                        return true;
+                    }
+                    if (unitLessThanDay() && (beforeNineThirty(date) || after4pm(date))) {
+                        return true;
+                    }
+                    return false;
+                }
+
+                function randomNumber(min, max) {
+                    return Math.random() * (max - min) + min;
+                }
+
+                function randomBar(date, lastClose) {
+                    const open = randomNumber(lastClose * 0.95, lastClose * 1.05).toFixed(2);
+                    const close = randomNumber(open * 0.95, open * 1.05).toFixed(2);
+                    return {
+                        x: date.valueOf(),
+                        y: close
+                    };
+                }
+
+                let date = luxon.DateTime.fromFormat('Jan 01 1990', 'LLL dd yyyy');
+                const now = luxon.DateTime.local();
+                const data = [];
+                const lessThanDay = unitLessThanDay();
+                const plus = {};
+                plus[unit] = 1;
+                for (; data.length < 600 && date < now; date = date.plus(plus).startOf(unit)) {
+                    if (outsideMarketHours(date)) {
+                        if (!lessThanDay || !beforeNineThirty(date)) {
+                            date = date.plus({ day: date.weekday >= 5 ? 8 - date.weekday : 1 });
+                        }
+                        if (lessThanDay) {
+                            date = date.set({ hour: 9, minute: 30 });
+                        }
+                    }
+                    data.push(randomBar(date, data.length > 0 ? data[data.length - 1].y : 30));
+                }
+
+                return data;
+            }
+
+            const ctx = document.getElementById('canvas').getContext('2d');
+            ctx.canvas.width = 1000;
+            ctx.canvas.height = 300;
+
+            const color = Chart.helpers.color;
+            const cfg = {
+                data: {
+                    datasets: [{
+                        label: 'CHRT - Chart.js Corporation',
+                        backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+                        borderColor: window.chartColors.red,
+                        data: generateData(),
+                        type: 'line',
+                        pointRadius: 0,
+                        fill: false,
+                        lineTension: 0,
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    animation: {
+                        duration: 0
+                    },
+                    scales: {
+                        x: {
+                            type: 'time',
+                            distribution: 'series',
+                            offset: true,
+                            ticks: {
+                                major: {
+                                    enabled: true,
+                                },
+                                fontStyle: function (context) {
+                                    return context.tick.major ? 'bold' : undefined;
+                                },
+                                source: 'data',
+                                autoSkip: true,
+                                autoSkipPadding: 75,
+                                maxRotation: 0,
+                                sampleSize: 100
+                            },
+                            // Custom logic that chooses major ticks by first timestamp in time period
+                            // E.g. if March 1 & 2 are missing from dataset because they're weekends, we pick March 3 to be beginning of month
+                            afterBuildTicks: function (scale) {
+                                const units = ['second', 'minute', 'hour', 'day', 'month', 'year'];
+                                const unit = document.getElementById('unit').value;
+                                let majorUnit;
+                                if (units.indexOf(unit) !== units.length - 1) {
+                                    majorUnit = units[units.indexOf(unit) + 1];
+                                }
+
+                                // major ticks
+                                const ticks = scale.ticks;
+                                for (let i = 0; i < ticks.length; i++) {
+                                    ticks[i].major = !majorUnit || isFirstUnitOfPeriod(luxon.DateTime.fromMillis(ticks[i].value), unit, majorUnit);
+                                }
+                                scale.ticks = ticks;
+                            }
+                        },
+                        y: {
+                            type: 'linear',
+                            gridLines: {
+                                drawBorder: false
+                            },
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Closing price ($)'
+                            }
+                        }
+                    },
+                    tooltips: {
+                        intersect: false,
+                        mode: 'index',
+                        callbacks: {
+                            label: function (tooltipItem, myData) {
+                                let label = myData.datasets[tooltipItem.datasetIndex].label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                label += parseFloat(tooltipItem.value).toFixed(2);
+                                return label;
+                            }
+                        }
+                    }
+                }
+            };
+
+            const chart = new Chart(ctx, cfg);
+        </script>
 
 <div class="jumbotron">
     <h1>ASP.NET</h1>
