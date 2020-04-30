@@ -23,7 +23,7 @@
     <canvas id="canvas"></canvas>
 </div>
 <script>
-    function generateData() {
+    function HongKong_GenerateData() {
 
         var days = @Html.Raw(Json.Encode(Model.Days));
 
@@ -55,7 +55,7 @@
                 label: 'Hong Kong',
                 backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
                 borderColor: window.chartColors.red,
-                data: generateData(),
+                data: HongKong_GenerateData(),
                 type: 'line',
                 pointRadius: 0,
                 fill: false,
