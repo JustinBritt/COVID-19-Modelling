@@ -121,6 +121,60 @@
         borderWidth: 2
     };
 
+    const Beijing_Configuration = {
+        data: {
+            datasets: [
+                Beijing_DayAsymptomaticIndividuals_Dataset]
+        },
+        options: {
+            animation: {
+                duration: 0
+            },
+            scales: {
+                x: {
+                    type: 'time',
+                    distribution: 'series',
+                    offset: true,
+                    ticks: {
+                        major: {
+                            enabled: true,
+                        },
+                        fontStyle: 'bold',
+                        source: 'data',
+                        autoSkip: true,
+                        autoSkipPadding: 75,
+                        maxRotation: 0,
+                        sampleSize: 200
+                    },
+                },
+                y: {
+                    type: 'linear',
+                    gridLines: {
+                        drawBorder: false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Number of People'
+                    }
+                }
+            },
+            tooltips: {
+                intersect: false,
+                mode: 'index',
+                callbacks: {
+                    label: function (tooltipItem, myData) {
+                        let label = myData.datasets[tooltipItem.datasetIndex].label || '';
+                        if (label) {
+                            label += ': ';
+                        }
+                        label += parseFloat(tooltipItem.value).toFixed(2);
+                        return label;
+                    }
+                }
+            }
+        }
+    };
+
     const dayCumulativeDiseaseInducedDeaths_Configuration = {
         data: {
             datasets: [
