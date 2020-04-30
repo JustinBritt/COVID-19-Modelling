@@ -13,39 +13,41 @@
         // Constructor
         public Gumel2004()
         {
-            C19M.D.Gumel2004.Interfaces.IHongKong HK = new C19M.D.Gumel2004.Classes.HongKong();
+            C19M.D.Gumel2004.Interfaces.IGreaterTorontoArea GreaterTorontoArea = new C19M.D.Gumel2004.Classes.GreaterTorontoArea();
+
+            C19M.D.Gumel2004.Interfaces.IHongKong HongKong = new C19M.D.Gumel2004.Classes.HongKong();
 
             // Context
-            C19M.M.C.A.Gumel2004.Interfaces.Contexts.IGumel2004_Context context = new C19M.M.C.A.Gumel2004.Classes.Contexts.Gumel2004_Context(
-                HK.EndDate,
-                HK.NumberDaysAfterStartDate,
-                HK.StartDate,
-                HK.DiseaseInducedDeathRateSymptomaticIndividuals,
-                HK.DiseaseInducedDeathRateIsolatedIndividuals,
-                HK.InitialValueAsymptomaticIndividuals,
-                HK.InitialValueSymptomaticIndividuals,
-                HK.InitialValueIsolatedIndividuals,
-                HK.RecruitmentRateAsymptomaticIndividuals,
-                HK.InitialValueQuarantinedIndividuals,
-                HK.InitialValueRecoveredIndividuals,
+            C19M.M.C.A.Gumel2004.Interfaces.Contexts.IGumel2004_Context HongKong_Context = new C19M.M.C.A.Gumel2004.Classes.Contexts.Gumel2004_Context(
+                HongKong.EndDate,
+                HongKong.NumberDaysAfterStartDate,
+                HongKong.StartDate,
+                HongKong.DiseaseInducedDeathRateSymptomaticIndividuals,
+                HongKong.DiseaseInducedDeathRateIsolatedIndividuals,
+                HongKong.InitialValueAsymptomaticIndividuals,
+                HongKong.InitialValueSymptomaticIndividuals,
+                HongKong.InitialValueIsolatedIndividuals,
+                HongKong.RecruitmentRateAsymptomaticIndividuals,
+                HongKong.InitialValueQuarantinedIndividuals,
+                HongKong.InitialValueRecoveredIndividuals,
                 null, // GTA.BasicReproductionNumber,
                 null, // GTA.ControlReproductionNumber,
-                HK.InitialValueSusceptibleIndividuals,
-                HK.BasicTransmissionCoefficient,
-                HK.QuarantineRateAsymptomaticIndividuals,
-                HK.IsolationRateSymptomaticIndividuals,
-                HK.TransmissionCoefficientModificationFactorAsymptomaticIndividuals,
-                HK.TransmissionCoefficientModificationFactorIsolatedIndividuals,
-                HK.TransmissionCoefficientModificationFactorQuarantinedIndividuals,
-                HK.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals,
-                HK.DevelopmentClinicalSymptomsRateQuarantinedIndividuals,
-                HK.NaturalDeathRate,
-                HK.NetInflowRateSusceptibleIndividuals,
-                HK.RecoveryRateSymptomaticIndividuals,
-                HK.RecoveryRateIsolatedIndividuals);
+                HongKong.InitialValueSusceptibleIndividuals,
+                HongKong.BasicTransmissionCoefficient,
+                HongKong.QuarantineRateAsymptomaticIndividuals,
+                HongKong.IsolationRateSymptomaticIndividuals,
+                HongKong.TransmissionCoefficientModificationFactorAsymptomaticIndividuals,
+                HongKong.TransmissionCoefficientModificationFactorIsolatedIndividuals,
+                HongKong.TransmissionCoefficientModificationFactorQuarantinedIndividuals,
+                HongKong.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals,
+                HongKong.DevelopmentClinicalSymptomsRateQuarantinedIndividuals,
+                HongKong.NaturalDeathRate,
+                HongKong.NetInflowRateSusceptibleIndividuals,
+                HongKong.RecoveryRateSymptomaticIndividuals,
+                HongKong.RecoveryRateIsolatedIndividuals);
 
             C19M.M.C.A.Gumel2004.Interfaces.Exports.IGumel2004_Export export = new C19M.M.C.A.Gumel2004.Classes.Exports.Gumel2004_Export(
-                context);
+                HongKong_Context);
 
             export.Solve();
 
