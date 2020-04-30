@@ -277,6 +277,30 @@
 
         public decimal[] HongKong_DayCumulativeDiseaseInducedDeaths_Array => this.HongKong_DayCumulativeDiseaseInducedDeaths.Select(w => w.Item2.Value.Value).ToArray();
 
+        public decimal[] HongKong_DayAsymptomaticIndividuals_Array => this.HongKong_DayAsymptomaticIndividuals.Select(w => w.Item2.Value.Value).ToArray();
+
+        public decimal[] HongKong_DaySymptomaticIndividuals_Array => this.HongKong_DaySymptomaticIndividuals.Select(w => w.Item2.Value.Value).ToArray();
+
+        public decimal[] HongKong_DayIsolatedIndividuals_Array => this.HongKong_DayIsolatedIndividuals.Select(w => w.Item2.Value.Value).ToArray();
+
+        public decimal[] HongKong_DayQuarantinedIndividuals_Array => this.HongKong_DayQuarantinedIndividuals.Select(w => w.Item2.Value.Value).ToArray();
+
+        public decimal[] HongKong_DayRecoveredndividuals_Array => this.HongKong_DayRecoveredIndividuals.Select(w => w.Item2.Value.Value).ToArray();
+
+        public decimal[] HongKong_DaySusceptibleIndividuals_Array => this.HongKong_DaySusceptibleIndividuals.Select(w => w.Item2.Value.Value).ToArray();
+
         public decimal[] Singapore_DayCumulativeDiseaseInducedDeaths_Array => this.Singapore_DayCumulativeDiseaseInducedDeaths.Select(w => w.Item2.Value.Value).ToArray();
+
+        public decimal[] Singapore_DayAsymptomaticIndividuals_Array => this.Singapore_DayAsymptomaticIndividuals.Select(w => w.Item2.Value.Value).ToArray();
+
+        public decimal[] Singapore_DaySymptomaticIndividuals_Array => this.Singapore_DaySymptomaticIndividuals.Select(w => w.Item2.Value.Value).ToArray();
+
+        public decimal[] Singapore_DayIsolatedIndividuals_Array => this.Singapore_DayIsolatedIndividuals.Select(w => w.Item2.Value.Value).ToArray();
+
+        public decimal[] Singapore_DayQuarantinedIndividuals_Array => this.Singapore_DayQuarantinedIndividuals.Select(w => w.Item2.Value.Value).ToArray();
+
+        public decimal[] Singapore_DayRecoveredndividuals_Array => this.Singapore_DayRecoveredIndividuals.Select(w => w.Item2.Value.Value).ToArray();
+
+        public decimal[] Singapore_DaySusceptibleIndividuals_Array => this.Singapore_DaySusceptibleIndividuals.Select(w => w.Item2.Value.Value).ToArray();
     }
 }
