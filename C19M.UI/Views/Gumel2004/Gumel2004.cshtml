@@ -44,6 +44,7 @@
     ctx.canvas.height = 300;
 
     var Beijing_Days = @Html.Raw(Json.Encode(Model.Days));
+    var Beijing_DayAsymptomaticIndividuals = @Html.Raw(Json.Encode(Model.Beijing_DayAsymptomaticIndividuals_Array));
     var Beijing_DayCumulativeDiseaseInducedDeaths = @Html.Raw(Json.Encode(Model.Beijing_DayCumulativeDiseaseInducedDeaths_Array));
 
     var GreaterTorontoArea_Days = @Html.Raw(Json.Encode(Model.Days));
