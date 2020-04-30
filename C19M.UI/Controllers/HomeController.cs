@@ -271,5 +271,13 @@ namespace C19M.UI.Controllers
                 chart,
                 "image/png");
         }
+
+        // TODO: Finish
+        public JsonResult DisplayChart_Gumel2004_HongKong_DayCumulativeDiseaseInducedDeaths_Json()
+        {
+            return Json(
+                null,
+                JsonRequestBehavior.AllowGet);
+        }
     }
 }
