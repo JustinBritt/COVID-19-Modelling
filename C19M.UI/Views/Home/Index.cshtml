@@ -1,17 +1,18 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-<head>
-    <title>Line Chart</title>
-    <script src="~/Scripts/Chart.js"></script>
-    <style>
-        canvas {
-            -moz-user-select: none;
-            -webkit-user-select: none;
-            -ms-user-select: none;
-        }
-    </style>
-</head>
+    <head>
+        <title>Line Chart</title>
+        <script src="~/Scripts/Chart.js"></script>
+        <script src="~/Scripts/moment.js"></script>
+        <style>
+            canvas {
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+            }
+        </style>
+    </head>
 
 <!-- https://stackoverflow.com/questions/44782688/chart-js-web-page-doesnt-display-chart-no-error-in-console -->
 <div style="width:75%;">
@@ -23,19 +24,45 @@
     var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
 
-    var myChart = new Chart(ctx, {
-        type: 'line',
+    // https://stackoverflow.com/questions/48143233/how-to-plot-multiple-time-series-in-chartjs-where-each-time-series-has-different
+    var s1 = {
+        label: 's1',
+        borderColor: 'blue',
+        data: [
+            { x: moment('2017-01-06').format('MMMM DD, YYYY'), y: 100 },
+            { x: moment('2017-01-07').format('MMMM DD, YYYY'), y: 101 },
+            { x: moment('2019-01-07').format('MMMM DD, YYYY'), y: 105 },
+        ],
+        tension: 0,
+        showLine: true
+    };
+
+    var s2 = {
+        label: 's2',
+        borderColor: 'red',
+        data: [
+            { x: moment('2017-01-07').format('MMMM DD, YYYY'), y: 90 },
+            { x: moment('2019-01-08').format('MMMM DD, YYYY'), y: 105 },
+        ],
+        tension: 0,
+        showLine: true
+    };
+
+    var chart = new Chart(ctx, {
+        type: 'scatter',
         data: {
-            labels: stringArray,
-            datasets: [{
-                label: 'Dataset 1',
-                data: [150, 200, 250, 150],
-                color: "#878BB6",
-            }, {
-                label: 'Dataset 2',
-                data: [250, 100, 150, 10],
-                color: "#4ACAB4",
-            }]
+            datasets: [s1, s2]
+        },
+        options: {
+            legend: false,
+            responsive: true,
+            tooltips: false,
+            scales: {
+                xAxes: [{
+                    type: 'time',
+                    display: true
+                }]
+            }
         }
     });
 </script>
