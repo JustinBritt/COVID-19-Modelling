@@ -25,6 +25,9 @@
 <div>
     <canvas id="Beijing_Canvas"></canvas>
 </div>
+<div>
+    <canvas id="GreaterTorontoArea_Canvas"></canvas>
+</div>
 <script>
     function GenerateData(days, values) {
         let data = [];
@@ -46,6 +49,10 @@
     Beijing_Context.canvas.width = 1000;
     Beijing_Context.canvas.height = 300;
 
+    const GreaterTorontoArea_Context = document.getElementById('GreaterTorontoArea_Canvas').getContext('2d');
+    GreaterTorontoArea_Context.canvas.width = 1000;
+    GreaterTorontoArea_Context.canvas.height = 300;
+
     const dayCumulativeDiseaseInducedDeaths_Context = document.getElementById('DayCumulativeDiseaseInducedDeaths_Canvas').getContext('2d');
     dayCumulativeDiseaseInducedDeaths_Context.canvas.width = 1000;
     dayCumulativeDiseaseInducedDeaths_Context.canvas.height = 300;
@@ -60,6 +67,12 @@
     var Beijing_DayCumulativeDiseaseInducedDeaths = @Html.Raw(Json.Encode(Model.Beijing_DayCumulativeDiseaseInducedDeaths_Array));
 
     var GreaterTorontoArea_Days = @Html.Raw(Json.Encode(Model.Days));
+    var GreaterTorontoArea_DayAsymptomaticIndividuals = @Html.Raw(Json.Encode(Model.GreaterTorontoArea_DayAsymptomaticIndividuals_Array));
+    var GreaterTorontoArea_DaySymptomaticIndividuals = @Html.Raw(Json.Encode(Model.GreaterTorontoArea_DaySymptomaticIndividuals_Array));
+    var GreaterTorontoArea_DayIsolatedIndividuals = @Html.Raw(Json.Encode(Model.GreaterTorontoArea_DayIsolatedIndividuals_Array));
+    var GreaterTorontoArea_DayQuarantinedIndividuals = @Html.Raw(Json.Encode(Model.GreaterTorontoArea_DayQuarantinedIndividuals_Array));
+    var GreaterTorontoArea_DayRecoveredIndividuals = @Html.Raw(Json.Encode(Model.GreaterTorontoArea_DayRecoveredndividuals_Array));
+    var GreaterTorontoArea_DaySusceptibleIndividuals = @Html.Raw(Json.Encode(Model.GreaterTorontoArea_DaySusceptibleIndividuals_Array));
     var GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths = @Html.Raw(Json.Encode(Model.GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths_Array));
 
     var HongKong_Days = @Html.Raw(Json.Encode(Model.Days));
@@ -147,6 +160,78 @@
         backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
         borderColor: window.chartColors.orange,
         data: GenerateData(Beijing_Days, Beijing_DayCumulativeDiseaseInducedDeaths),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
+    var GreaterTorontoArea_DayAsymptomaticIndividuals_Dataset = {
+        label: 'Asymptomatic Individuals',
+        backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.red,
+        data: GenerateData(GreaterTorontoArea_Days, GreaterTorontoArea_DayAsymptomaticIndividuals),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
+    var GreaterTorontoArea_DaySymptomaticIndividuals_Dataset = {
+        label: 'Symptomatic Individuals',
+        backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.orange,
+        data: GenerateData(GreaterTorontoArea_Days, GreaterTorontoArea_DaySymptomaticIndividuals),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
+    var GreaterTorontoArea_DayIsolatedIndividuals_Dataset = {
+        label: 'Isolated Individuals',
+        backgroundColor: color(window.chartColors.yellow).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.yellow,
+        data: GenerateData(GreaterTorontoArea_Days, GreaterTorontoArea_DayIsolatedIndividuals),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
+    var GreaterTorontoArea_DayQuarantinedIndividuals_Dataset = {
+        label: 'Quarantined Individuals',
+        backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.green,
+        data: GenerateData(GreaterTorontoArea_Days, GreaterTorontoArea_DayQuarantinedIndividuals),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
+    var GreaterTorontoArea_DayRecoveredIndividuals_Dataset = {
+        label: 'Recovered Individuals',
+        backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.blue,
+        data: GenerateData(GreaterTorontoArea_Days, GreaterTorontoArea_DayRecoveredIndividuals),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
+    var GreaterTorontoArea_DaySusceptibleIndividuals_Dataset = {
+        label: 'Susceptible Individuals',
+        backgroundColor: color(window.chartColors.purple).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.purple,
+        data: GenerateData(GreaterTorontoArea_Days, GreaterTorontoArea_DaySusceptibleIndividuals),
         type: 'line',
         pointRadius: 0,
         fill: false,
@@ -257,6 +342,73 @@
         }
     };
 
+    const GreaterTorontoArea_Configuration = {
+        data: {
+            datasets: [
+                GreaterTorontoArea_DayAsymptomaticIndividuals_Dataset,
+                GreaterTorontoArea_DaySymptomaticIndividuals_Dataset,
+                GreaterTorontoArea_DayIsolatedIndividuals_Dataset,
+                GreaterTorontoArea_DayQuarantinedIndividuals_Dataset,
+                GreaterTorontoArea_DayRecoveredIndividuals_Dataset,
+                GreaterTorontoArea_DaySusceptibleIndividuals_Dataset]
+        },
+        options: {
+            animation: {
+                duration: 0
+            },
+            scales: {
+                x: {
+                    type: 'time',
+                    distribution: 'series',
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Day'
+                    },
+                    offset: true,
+                    ticks: {
+                        major: {
+                            enabled: true,
+                        },
+                        fontStyle: 'bold',
+                        source: 'data',
+                        autoSkip: true,
+                        autoSkipPadding: 75,
+                        maxRotation: 0,
+                        sampleSize: 200
+                    },
+                },
+                y: {
+                    type: 'logarithmic',
+                    gridLines: {
+                        drawBorder: false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Number of People'
+                    }
+                }
+            },
+            title: {
+                display: true,
+                text: 'GreaterTorontoArea'
+            },
+            tooltips: {
+                intersect: false,
+                mode: 'index',
+                callbacks: {
+                    label: function (tooltipItem, myData) {
+                        let label = myData.datasets[tooltipItem.datasetIndex].label || '';
+                        if (label) {
+                            label += ': ';
+                        }
+                        label += parseFloat(tooltipItem.value).toFixed(2);
+                        return label;
+                    }
+                }
+            }
+        }
+    };
+
     const dayCumulativeDiseaseInducedDeaths_Configuration = {
         data: {
             datasets: [
@@ -317,6 +469,10 @@
     const Beijing_Chart = new Chart(
         Beijing_Context,
         Beijing_Configuration);
+
+    const GreaterTorontoArea_Chart = new Chart(
+        GreaterTorontoArea_Context,
+        GreaterTorontoArea_Configuration);
 
     const dayCumulativeDiseaseInducedDeaths_chart = new Chart(
         dayCumulativeDiseaseInducedDeaths_Context,
