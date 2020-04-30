@@ -134,11 +134,18 @@
                 Singapore.RecoveryRateSymptomaticIndividuals,
                 Singapore.RecoveryRateIsolatedIndividuals);
 
+            // Exports
+            C19M.M.C.A.Gumel2004.Interfaces.Exports.IGumel2004_Export Beijing_Export = new C19M.M.C.A.Gumel2004.Classes.Exports.Gumel2004_Export(
+                Beijing_Context);
+
             C19M.M.C.A.Gumel2004.Interfaces.Exports.IGumel2004_Export GreaterTorontoArea_Export = new C19M.M.C.A.Gumel2004.Classes.Exports.Gumel2004_Export(
                 GreaterTorontoArea_Context);
 
             C19M.M.C.A.Gumel2004.Interfaces.Exports.IGumel2004_Export HongKong_Export = new C19M.M.C.A.Gumel2004.Classes.Exports.Gumel2004_Export(
                 HongKong_Context);
+
+            C19M.M.C.A.Gumel2004.Interfaces.Exports.IGumel2004_Export Singapore_Export = new C19M.M.C.A.Gumel2004.Classes.Exports.Gumel2004_Export(
+                Singapore_Context);
 
             GreaterTorontoArea_Export.Solve();
 
