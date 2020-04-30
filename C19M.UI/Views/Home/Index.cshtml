@@ -28,16 +28,6 @@
             <option value="year">Year</option>
         </select>
         <script>
-            function isFirstUnitOfPeriod(date, unit, period) {
-                let first = date.startOf(period);
-                while (first.weekday > 5) {
-                    first = first.plus({ day: 1 });
-                }
-                if (unit === 'second' || unit === 'minute' || unit === 'hour') {
-                    first = first.set({ hour: 9, minute: 30 });
-                }
-                return date === first;
-            }
 
             // Generate data between the stock market hours of 9:30am - 5pm.
             // This method is slow and unoptimized, but in real life we'd be fetching it from the server.
@@ -134,32 +124,13 @@
                                 major: {
                                     enabled: true,
                                 },
-                                fontStyle: function (context) {
-                                    return context.tick.major ? 'bold' : undefined;
-                                },
+                                fontStyle: 'bold',
                                 source: 'data',
                                 autoSkip: true,
                                 autoSkipPadding: 75,
                                 maxRotation: 0,
                                 sampleSize: 100
                             },
-                            // Custom logic that chooses major ticks by first timestamp in time period
-                            // E.g. if March 1 & 2 are missing from dataset because they're weekends, we pick March 3 to be beginning of month
-                            afterBuildTicks: function (scale) {
-                                const units = ['second', 'minute', 'hour', 'day', 'month', 'year'];
-                                const unit = document.getElementById('unit').value;
-                                let majorUnit;
-                                if (units.indexOf(unit) !== units.length - 1) {
-                                    majorUnit = units[units.indexOf(unit) + 1];
-                                }
-
-                                // major ticks
-                                const ticks = scale.ticks;
-                                for (let i = 0; i < ticks.length; i++) {
-                                    ticks[i].major = !majorUnit || isFirstUnitOfPeriod(luxon.DateTime.fromMillis(ticks[i].value), unit, majorUnit);
-                                }
-                                scale.ticks = ticks;
-                            }
                         },
                         y: {
                             type: 'linear',
