@@ -190,6 +190,18 @@
 
         public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Beijing_DayCumulativeDiseaseInducedDeaths { get; set; }
 
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> GreaterTorontoArea_DayAsymptomaticIndividuals { get; set; }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> GreaterTorontoArea_DaySymptomaticIndividuals { get; set; }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> GreaterTorontoArea_DayIsolatedIndividuals { get; set; }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> GreaterTorontoArea_DayQuarantinedIndividuals { get; set; }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> GreaterTorontoArea_DayRecoveredIndividuals { get; set; }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> GreaterTorontoArea_DaySusceptibleIndividuals { get; set; }
+
         public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths { get; set; }
 
         public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> HongKong_DayCumulativeDiseaseInducedDeaths { get; set; }
@@ -212,6 +224,18 @@
         public decimal[] Beijing_DaySusceptibleIndividuals_Array => this.Beijing_DaySusceptibleIndividuals.Select(w => w.Item2.Value.Value).ToArray();
 
         public decimal[] Beijing_DayCumulativeDiseaseInducedDeaths_Array => this.Beijing_DayCumulativeDiseaseInducedDeaths.Select(w => w.Item2.Value.Value).ToArray();
+
+        public decimal[] GreaterTorontoArea_DayAsymptomaticIndividuals_Array => this.GreaterTorontoArea_DayAsymptomaticIndividuals.Select(w => w.Item2.Value.Value).ToArray();
+
+        public decimal[] GreaterTorontoArea_DaySymptomaticIndividuals_Array => this.GreaterTorontoArea_DaySymptomaticIndividuals.Select(w => w.Item2.Value.Value).ToArray();
+
+        public decimal[] GreaterTorontoArea_DayIsolatedIndividuals_Array => this.GreaterTorontoArea_DayIsolatedIndividuals.Select(w => w.Item2.Value.Value).ToArray();
+
+        public decimal[] GreaterTorontoArea_DayQuarantinedIndividuals_Array => this.GreaterTorontoArea_DayQuarantinedIndividuals.Select(w => w.Item2.Value.Value).ToArray();
+
+        public decimal[] GreaterTorontoArea_DayRecoveredndividuals_Array => this.GreaterTorontoArea_DayRecoveredIndividuals.Select(w => w.Item2.Value.Value).ToArray();
+
+        public decimal[] GreaterTorontoArea_DaySusceptibleIndividuals_Array => this.GreaterTorontoArea_DaySusceptibleIndividuals.Select(w => w.Item2.Value.Value).ToArray();
 
         public decimal[] GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths_Array => this.GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths.Select(w => w.Item2.Value.Value).ToArray();
 
