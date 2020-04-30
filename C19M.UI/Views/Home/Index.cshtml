@@ -26,10 +26,6 @@
 
         var w2 = @Html.Raw(Json.Encode(ViewData["w2"]));
 
-        let date1 = luxon.DateTime.fromFormat(w1[25], 'LLL dd yyyy');//luxon.DateTime.fromFormat('Jan 01 1990', 'LLL dd yyyy');
-
-        let date2 = luxon.DateTime.fromFormat(w1[150], 'LLL dd yyyy');//luxon.DateTime.fromFormat('May 01 1990', 'LLL dd yyyy');
-
         var data = [];
 
         var i = 0;
