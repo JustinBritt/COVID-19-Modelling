@@ -7,5 +7,9 @@
 
     public class Gumel2004
     {
+        // Constructor
+        public Gumel2004()
+        {
+        }
     }
 }
