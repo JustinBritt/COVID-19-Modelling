@@ -1,4 +1,6 @@
-﻿@{
+﻿@model C19M.UI.Models.Gumel2004
+
+@{
     ViewBag.Title = "Gumel2004";
 }
 
@@ -25,7 +27,7 @@
 
         var days = @Html.Raw(Json.Encode(ViewData["days"]));
 
-        var HongKong_DayCumulativeDiseaseInducedDeaths = @Html.Raw(Json.Encode(ViewData["HongKong_DayCumulativeDiseaseInducedDeaths"]));
+        var HongKong_DayCumulativeDiseaseInducedDeaths = @Html.Raw(Json.Encode(Model.HongKong_DayCumulativeDiseaseInducedDeaths_Array));
 
         var data = [];
 

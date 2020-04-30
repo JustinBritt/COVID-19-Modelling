@@ -4,6 +4,7 @@
     using System.Collections.Generic;
     using System.Collections.Immutable;
     using System.Linq;
+    using System.Runtime.Remoting.Messaging;
     using System.Web;
     using System.Web.Mvc;
 
@@ -20,7 +21,8 @@
 
             ViewData["HongKong_DayCumulativeDiseaseInducedDeaths"] = gumel2004.HongKong_DayCumulativeDiseaseInducedDeaths.Select(w => w.Item2.Value.Value).ToArray();
 
-            return View();
+            return View(
+                gumel2004);
         }
     }
 }
