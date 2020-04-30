@@ -161,6 +161,12 @@
 
             this.Beijing_DayIsolatedIndividuals = Beijing_Export.DayIsolatedIndividuals;
 
+            this.Beijing_DayQuarantinedIndividuals = Beijing_Export.DayQuarantinedIndividuals;
+
+            this.Beijing_DayRecoveredIndividuals = Beijing_Export.DayRecoveredIndividuals;
+
+            this.Beijing_DaySusceptibleIndividuals = Beijing_Export.DaySusceptibleIndividuals;
+
             this.Beijing_DayCumulativeDiseaseInducedDeaths = Beijing_Export.DayCumulativeDiseaseInducedDeaths;
 
             this.GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths = GreaterTorontoArea_Export.DayCumulativeDiseaseInducedDeaths;
@@ -175,6 +181,12 @@
         public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Beijing_DaySymptomaticIndividuals { get; set; }
 
         public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Beijing_DayIsolatedIndividuals { get; set; }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Beijing_DayQuarantinedIndividuals { get; set; }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Beijing_DayRecoveredIndividuals { get; set; }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Beijing_DaySusceptibleIndividuals { get; set; }
 
         public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Beijing_DayCumulativeDiseaseInducedDeaths { get; set; }
 
@@ -192,6 +204,12 @@
         public decimal[] Beijing_DaySymptomaticIndividuals_Array => this.Beijing_DaySymptomaticIndividuals.Select(w => w.Item2.Value.Value).ToArray();
 
         public decimal[] Beijing_DayIsolatedIndividuals_Array => this.Beijing_DayIsolatedIndividuals.Select(w => w.Item2.Value.Value).ToArray();
+
+        public decimal[] Beijing_DayQuarantinedIndividuals_Array => this.Beijing_DayQuarantinedIndividuals.Select(w => w.Item2.Value.Value).ToArray();
+
+        public decimal[] Beijing_DayRecoveredndividuals_Array => this.Beijing_DayRecoveredIndividuals.Select(w => w.Item2.Value.Value).ToArray();
+
+        public decimal[] Beijing_DaySusceptibleIndividuals_Array => this.Beijing_DaySusceptibleIndividuals.Select(w => w.Item2.Value.Value).ToArray();
 
         public decimal[] Beijing_DayCumulativeDiseaseInducedDeaths_Array => this.Beijing_DayCumulativeDiseaseInducedDeaths.Select(w => w.Item2.Value.Value).ToArray();
 
