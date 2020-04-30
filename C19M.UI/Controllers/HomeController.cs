@@ -11,6 +11,7 @@ using Hl7.Fhir.Model;
 using C19M.M.C.A.Gumel2004.Interfaces.Contexts;
 
 using C19M.M.C.A.Gumel2004.Interfaces.Exports;
+using C19M.UI.Models;
 
 namespace C19M.UI.Controllers
 {
@@ -275,8 +276,58 @@ namespace C19M.UI.Controllers
         // TODO: Finish
         public JsonResult DisplayChart_Gumel2004_HongKong_DayCumulativeDiseaseInducedDeaths_Json()
         {
+            List<GraphData_Model> values = new List<GraphData_Model>();
+
+            C19M.D.Gumel2004.Interfaces.IHongKong HK = new C19M.D.Gumel2004.Classes.HongKong();
+
+            // Context
+            C19M.M.C.A.Gumel2004.Interfaces.Contexts.IGumel2004_Context context = new C19M.M.C.A.Gumel2004.Classes.Contexts.Gumel2004_Context(
+                HK.EndDate,
+                HK.NumberDaysAfterStartDate,
+                HK.StartDate,
+                HK.DiseaseInducedDeathRateSymptomaticIndividuals,
+                HK.DiseaseInducedDeathRateIsolatedIndividuals,
+                HK.InitialValueAsymptomaticIndividuals,
+                HK.InitialValueSymptomaticIndividuals,
+                HK.InitialValueIsolatedIndividuals,
+                HK.RecruitmentRateAsymptomaticIndividuals,
+                HK.InitialValueQuarantinedIndividuals,
+                HK.InitialValueRecoveredIndividuals,
+                null, // GTA.BasicReproductionNumber,
+                null, // GTA.ControlReproductionNumber,
+                HK.InitialValueSusceptibleIndividuals,
+                HK.BasicTransmissionCoefficient,
+                HK.QuarantineRateAsymptomaticIndividuals,
+                HK.IsolationRateSymptomaticIndividuals,
+                HK.TransmissionCoefficientModificationFactorAsymptomaticIndividuals,
+                HK.TransmissionCoefficientModificationFactorIsolatedIndividuals,
+                HK.TransmissionCoefficientModificationFactorQuarantinedIndividuals,
+                HK.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals,
+                HK.DevelopmentClinicalSymptomsRateQuarantinedIndividuals,
+                HK.NaturalDeathRate,
+                HK.NetInflowRateSusceptibleIndividuals,
+                HK.RecoveryRateSymptomaticIndividuals,
+                HK.RecoveryRateIsolatedIndividuals);
+
+            C19M.M.C.A.Gumel2004.Interfaces.Exports.IGumel2004_Export export = new C19M.M.C.A.Gumel2004.Classes.Exports.Gumel2004_Export(
+                context);
+
+            export.Solve();
+
+            ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> dayCumulativeDiseaseInducedDeaths = export.DayCumulativeDiseaseInducedDeaths;
+
+            foreach (var item in dayCumulativeDiseaseInducedDeaths)
+            {
+                GraphData_Model gdm = new GraphData_Model();
+                gdm.x = item.Item1.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date.ToString("MMM dd yyyy");
+                gdm.y = item.Item2.Value.Value;
+
+                values.Add(
+                    gdm);
+            }
+
             return Json(
-                null,
+                values,
                 JsonRequestBehavior.AllowGet);
         }
     }
