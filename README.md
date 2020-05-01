@@ -31,20 +31,6 @@ Paper                                                                           
 [Chen *et al.* (2020)](https://idpjournal.biomedcentral.com/articles/10.1186/s40249-020-00640-3) | SARS-CoV-2                              | SEIR (Bats and Hosts), W (Reservoir), People (SEIAR)
 [Tang *et al.* (2020)](https://www.mdpi.com/2077-0383/9/2/462)                                   | SARS-CoV-2                              | SEIAS<sub>q</sub>E<sub>q</sub>HR
 
-## Mathematical Model
-
-Variable   | Description
------------- | ------------- 
-S(t)            | Susceptible individuals
-E(t)            | Exposed individuals
-I(t)            | Infected individuals
-Q(t)            | Quarantined individuals
-R(t)            | Recovered individuals
-
-Parameter    | Description
------------- | ------------- 
-μ            | Natural death rate
-
 ## Projects
 
 ### Data Projects
