@@ -52,8 +52,36 @@
                 Beijing_Context);
 
             Beijing_Export.Solve();
+
+            this.Beijing_DayCumulativeDiseaseInducedDeaths = Beijing_Export.DayCumulativeDiseaseInducedDeaths;
+
+            this.Beijing_DayAsymptomaticIndividuals = Beijing_Export.DayAsymptomaticIndividuals;
+
+            this.Beijing_DaySymptomaticIndividuals = Beijing_Export.DaySymptomaticIndividuals;
+
+            this.Beijing_DayIsolatedIndividuals = Beijing_Export.DayIsolatedIndividuals;
+
+            this.Beijing_DayQuarantinedIndividuals = Beijing_Export.DayQuarantinedIndividuals;
+
+            this.Beijing_DayRecoveredIndividuals = Beijing_Export.DayRecoveredIndividuals;
+
+            this.Beijing_DaySusceptibleIndividuals = Beijing_Export.DaySusceptibleIndividuals;
         }
 
         private C19M.D.Gumel2004.Interfaces.IBeijing Data => new C19M.D.Gumel2004.Classes.Beijing();
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Beijing_DayCumulativeDiseaseInducedDeaths { get; set; }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Beijing_DayAsymptomaticIndividuals { get; set; }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Beijing_DaySymptomaticIndividuals { get; set; }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Beijing_DayIsolatedIndividuals { get; set; }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Beijing_DayQuarantinedIndividuals { get; set; }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Beijing_DayRecoveredIndividuals { get; set; }
+
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Beijing_DaySusceptibleIndividuals { get; set; }
     }
 }

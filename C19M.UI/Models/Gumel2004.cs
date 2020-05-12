@@ -14,8 +14,6 @@
         // Constructor
         public Gumel2004()
         {
-            C19M.D.Gumel2004.Interfaces.IBeijing Beijing = new C19M.D.Gumel2004.Classes.Beijing();
-
             C19M.D.Gumel2004.Interfaces.IGreaterTorontoArea GreaterTorontoArea = new C19M.D.Gumel2004.Classes.GreaterTorontoArea();
 
             C19M.D.Gumel2004.Interfaces.IHongKong HongKong = new C19M.D.Gumel2004.Classes.HongKong();
@@ -23,34 +21,6 @@
             C19M.D.Gumel2004.Interfaces.ISingapore Singapore = new C19M.D.Gumel2004.Classes.Singapore();
 
             // Contexts
-            C19M.M.C.A.Gumel2004.Interfaces.Contexts.IGumel2004_Context Beijing_Context = new C19M.M.C.A.Gumel2004.Classes.Contexts.Gumel2004_Context(
-                Beijing.EndDate,
-                Beijing.NumberDaysAfterStartDate,
-                Beijing.StartDate,
-                Beijing.DiseaseInducedDeathRateSymptomaticIndividuals,
-                Beijing.DiseaseInducedDeathRateIsolatedIndividuals,
-                Beijing.InitialValueAsymptomaticIndividuals,
-                Beijing.InitialValueSymptomaticIndividuals,
-                Beijing.InitialValueIsolatedIndividuals,
-                Beijing.RecruitmentRateAsymptomaticIndividuals,
-                Beijing.InitialValueQuarantinedIndividuals,
-                Beijing.InitialValueRecoveredIndividuals,
-                null, // GTA.BasicReproductionNumber,
-                null, // GTA.ControlReproductionNumber,
-                Beijing.InitialValueSusceptibleIndividuals,
-                Beijing.BasicTransmissionCoefficient,
-                Beijing.QuarantineRateAsymptomaticIndividuals,
-                Beijing.IsolationRateSymptomaticIndividuals,
-                Beijing.TransmissionCoefficientModificationFactorAsymptomaticIndividuals,
-                Beijing.TransmissionCoefficientModificationFactorIsolatedIndividuals,
-                Beijing.TransmissionCoefficientModificationFactorQuarantinedIndividuals,
-                Beijing.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals,
-                Beijing.DevelopmentClinicalSymptomsRateQuarantinedIndividuals,
-                Beijing.NaturalDeathRate,
-                Beijing.NetInflowRateSusceptibleIndividuals,
-                Beijing.RecoveryRateSymptomaticIndividuals,
-                Beijing.RecoveryRateIsolatedIndividuals);
-
             C19M.M.C.A.Gumel2004.Interfaces.Contexts.IGumel2004_Context GreaterTorontoArea_Context = new C19M.M.C.A.Gumel2004.Classes.Contexts.Gumel2004_Context(
                 GreaterTorontoArea.EndDate,
                 GreaterTorontoArea.NumberDaysAfterStartDate,
@@ -136,9 +106,6 @@
                 Singapore.RecoveryRateIsolatedIndividuals);
 
             // Exports
-            C19M.M.C.A.Gumel2004.Interfaces.Exports.IGumel2004_Export Beijing_Export = new C19M.M.C.A.Gumel2004.Classes.Exports.Gumel2004_Export(
-                Beijing_Context);
-
             C19M.M.C.A.Gumel2004.Interfaces.Exports.IGumel2004_Export GreaterTorontoArea_Export = new C19M.M.C.A.Gumel2004.Classes.Exports.Gumel2004_Export(
                 GreaterTorontoArea_Context);
 
@@ -148,27 +115,11 @@
             C19M.M.C.A.Gumel2004.Interfaces.Exports.IGumel2004_Export Singapore_Export = new C19M.M.C.A.Gumel2004.Classes.Exports.Gumel2004_Export(
                 Singapore_Context);
 
-            Beijing_Export.Solve();
-
             GreaterTorontoArea_Export.Solve();
 
             HongKong_Export.Solve();
 
             Singapore_Export.Solve();
-
-            this.Beijing_DayCumulativeDiseaseInducedDeaths = Beijing_Export.DayCumulativeDiseaseInducedDeaths;
-
-            this.Beijing_DayAsymptomaticIndividuals = Beijing_Export.DayAsymptomaticIndividuals;
-
-            this.Beijing_DaySymptomaticIndividuals = Beijing_Export.DaySymptomaticIndividuals;
-
-            this.Beijing_DayIsolatedIndividuals = Beijing_Export.DayIsolatedIndividuals;
-
-            this.Beijing_DayQuarantinedIndividuals = Beijing_Export.DayQuarantinedIndividuals;
-
-            this.Beijing_DayRecoveredIndividuals = Beijing_Export.DayRecoveredIndividuals;
-
-            this.Beijing_DaySusceptibleIndividuals = Beijing_Export.DaySusceptibleIndividuals;
 
             this.GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths = GreaterTorontoArea_Export.DayCumulativeDiseaseInducedDeaths;
 
