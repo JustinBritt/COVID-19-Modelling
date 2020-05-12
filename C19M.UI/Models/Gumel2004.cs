@@ -82,6 +82,8 @@
             this.Singapore_DaySusceptibleIndividuals = Singapore_Import.DaySusceptibleIndividuals;
         }
 
+        public C19M.UI.Imports.Gumel2004.Beijing Beijing_Import { get; set; }
+
         public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Beijing_DayCumulativeDiseaseInducedDeaths { get; set; }
 
         public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Beijing_DayAsymptomaticIndividuals { get; set; }
