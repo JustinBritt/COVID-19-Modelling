@@ -14,8 +14,6 @@
         // Constructor
         public Gumel2004()
         {
-            
-
             C19M.D.Gumel2004.Interfaces.IHongKong HongKong = new C19M.D.Gumel2004.Classes.HongKong();
 
             C19M.D.Gumel2004.Interfaces.ISingapore Singapore = new C19M.D.Gumel2004.Classes.Singapore();
