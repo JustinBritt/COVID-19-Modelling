@@ -15,7 +15,7 @@
     using C19M.M.C.A.Gumel2004.Interfaces.Exports;
     using C19M.UI.Models;
 
-    public class HomeController : Controller
+    public sealed class HomeController : Controller
     {
         public ActionResult Index()
         {

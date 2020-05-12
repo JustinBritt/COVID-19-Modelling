@@ -10,7 +10,7 @@
 
     using Hl7.Fhir.Model;
 
-    public class Gumel2004Controller : Controller
+    public sealed class Gumel2004Controller : Controller
     {
         // GET: Gumel2004
         public ActionResult Gumel2004()
