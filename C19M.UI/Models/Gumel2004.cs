@@ -9,6 +9,8 @@
     // Hl7
     using Hl7.Fhir.Model;
 
+    using C19M.UI.Imports.Gumel2004;
+
     public class Gumel2004
     {
         // Constructor
