@@ -24,5 +24,23 @@
             return PartialView(
                 new C19M.UI.Models.Gumel2004.Beijing());
         }
+
+        public ActionResult GreaterTorontoArea()
+        {
+            return PartialView(
+                new C19M.UI.Models.Gumel2004.GreaterTorontoArea());
+        }
+
+        public ActionResult HongKong()
+        {
+            return PartialView(
+                new C19M.UI.Models.Gumel2004.HongKong());
+        }
+
+        public ActionResult Singapore()
+        {
+            return PartialView(
+                new C19M.UI.Models.Gumel2004.Singapore());
+        }
     }
 }
