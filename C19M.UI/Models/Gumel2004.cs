@@ -86,8 +86,6 @@
 
             Singapore_Export.Solve();
 
-            
-
             this.HongKong_DayCumulativeDiseaseInducedDeaths = HongKong_Export.DayCumulativeDiseaseInducedDeaths;
 
             this.HongKong_DayAsymptomaticIndividuals = HongKong_Export.DayAsymptomaticIndividuals;
