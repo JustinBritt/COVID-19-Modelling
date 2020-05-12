@@ -16,8 +16,13 @@
         // GET: Gumel2004
         public ActionResult Gumel2004()
         {
+            return View();
+        }
+
+        public ActionResult Beijing()
+        {
             return View(
-                new Models.Gumel2004());
+                new C19M.UI.Models.Gumel2004.Beijing());
         }
     }
 }
