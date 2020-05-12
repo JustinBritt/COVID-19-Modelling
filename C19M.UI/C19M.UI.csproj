@@ -207,6 +207,7 @@
     <Compile Include="Models\Gumel2004\Beijing.cs" />
     <Compile Include="Models\Gumel2004\GreaterTorontoArea.cs" />
     <Compile Include="Models\Gumel2004\HongKong.cs" />
+    <Compile Include="Models\Gumel2004\Singapore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
