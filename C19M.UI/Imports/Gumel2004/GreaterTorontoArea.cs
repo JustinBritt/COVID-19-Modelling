@@ -6,6 +6,9 @@
     using System.Linq;
     using System.Web;
 
+    // Hl7
+    using Hl7.Fhir.Model;
+
     public sealed class GreaterTorontoArea
     {
         // Constructor
