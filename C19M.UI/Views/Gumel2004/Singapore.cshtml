@@ -20,9 +20,6 @@
 </head>
 
 <div>
-    <canvas id="DayCumulativeDiseaseInducedDeaths_Canvas"></canvas>
-</div>
-<div>
     <canvas id="Singapore_Canvas"></canvas>
 </div>
 <script>
@@ -41,10 +38,6 @@
 
         return data;
     }
-
-    const dayCumulativeDiseaseInducedDeaths_Context = document.getElementById('DayCumulativeDiseaseInducedDeaths_Canvas').getContext('2d');
-    dayCumulativeDiseaseInducedDeaths_Context.canvas.width = 1000;
-    dayCumulativeDiseaseInducedDeaths_Context.canvas.height = 300;
 
     const Singapore_Context = document.getElementById('Singapore_Canvas').getContext('2d');
     Singapore_Context.canvas.width = 1000;
@@ -146,63 +139,6 @@
         borderWidth: 2
     };
 
-    const dayCumulativeDiseaseInducedDeaths_Configuration = {
-        data: {
-            datasets: [
-                Beijing_DayCumulativeDiseaseInducedDeaths_Dataset,
-                GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths_Dataset,
-                HongKong_DayCumulativeDiseaseInducedDeaths_Dataset,
-                Singapore_DayCumulativeDiseaseInducedDeaths_Dataset]
-        },
-        options: {
-            animation: {
-                duration: 0
-            },
-            scales: {
-                x: {
-                    type: 'time',
-                    distribution: 'series',
-                    offset: true,
-                    ticks: {
-                        major: {
-                            enabled: true,
-                        },
-                        fontStyle: 'bold',
-                        source: 'data',
-                        autoSkip: true,
-                        autoSkipPadding: 75,
-                        maxRotation: 0,
-                        sampleSize: 200
-                    },
-                },
-                y: {
-                    type: 'linear',
-                    gridLines: {
-                        drawBorder: false
-                    },
-                    scaleLabel: {
-                        display: true,
-                        labelString: 'Cumulative Number of Disease-Induced Deaths'
-                    }
-                }
-            },
-            tooltips: {
-                intersect: false,
-                mode: 'index',
-                callbacks: {
-                    label: function (tooltipItem, myData) {
-                        let label = myData.datasets[tooltipItem.datasetIndex].label || '';
-                        if (label) {
-                            label += ': ';
-                        }
-                        label += parseFloat(tooltipItem.value).toFixed(2);
-                        return label;
-                    }
-                }
-            }
-        }
-    };
-
     const Singapore_Configuration = {
         data: {
             datasets: [
@@ -269,10 +205,6 @@
             }
         }
     };
-
-    const dayCumulativeDiseaseInducedDeaths_chart = new Chart(
-        dayCumulativeDiseaseInducedDeaths_Context,
-        dayCumulativeDiseaseInducedDeaths_Configuration);
 
     const Singapore_Chart = new Chart(
         Singapore_Context,
