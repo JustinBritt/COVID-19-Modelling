@@ -17,5 +17,7 @@
         public Beijing()
         {
         }
+
+        private C19M.D.Gumel2004.Interfaces.IBeijing Data => new C19M.D.Gumel2004.Classes.Beijing();
     }
 }
