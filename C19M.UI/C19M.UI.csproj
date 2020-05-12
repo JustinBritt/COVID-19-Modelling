@@ -204,6 +204,7 @@
     <Compile Include="Imports\Gumel2004\HongKong.cs" />
     <Compile Include="Imports\Gumel2004\Singapore.cs" />
     <Compile Include="Models\Gumel2004.cs" />
+    <Compile Include="Models\Gumel2004\Beijing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -250,7 +251,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\Gumel2004\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
