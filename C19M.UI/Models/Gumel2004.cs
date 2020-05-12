@@ -11,7 +11,7 @@
 
     using C19M.UI.Imports.Gumel2004;
 
-    public class Gumel2004
+    public sealed class Gumel2004
     {
         // Constructor
         public Gumel2004()
