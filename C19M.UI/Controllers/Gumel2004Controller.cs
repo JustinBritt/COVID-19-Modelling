@@ -16,7 +16,7 @@
         // GET: Gumel2004
         public ActionResult Gumel2004()
         {
-            return View();
+            return PartialView();
         }
 
         public ActionResult Beijing()
