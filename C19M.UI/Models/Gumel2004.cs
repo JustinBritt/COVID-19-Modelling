@@ -14,49 +14,14 @@
         // Constructor
         public Gumel2004()
         {
-            C19M.D.Gumel2004.Interfaces.ISingapore Singapore = new C19M.D.Gumel2004.Classes.Singapore();
-
-            // Contexts
-            C19M.M.C.A.Gumel2004.Interfaces.Contexts.IGumel2004_Context Singapore_Context = new C19M.M.C.A.Gumel2004.Classes.Contexts.Gumel2004_Context(
-                Singapore.EndDate,
-                Singapore.NumberDaysAfterStartDate,
-                Singapore.StartDate,
-                Singapore.DiseaseInducedDeathRateSymptomaticIndividuals,
-                Singapore.DiseaseInducedDeathRateIsolatedIndividuals,
-                Singapore.InitialValueAsymptomaticIndividuals,
-                Singapore.InitialValueSymptomaticIndividuals,
-                Singapore.InitialValueIsolatedIndividuals,
-                Singapore.RecruitmentRateAsymptomaticIndividuals,
-                Singapore.InitialValueQuarantinedIndividuals,
-                Singapore.InitialValueRecoveredIndividuals,
-                null, // GTA.BasicReproductionNumber,
-                null, // GTA.ControlReproductionNumber,
-                Singapore.InitialValueSusceptibleIndividuals,
-                Singapore.BasicTransmissionCoefficient,
-                Singapore.QuarantineRateAsymptomaticIndividuals,
-                Singapore.IsolationRateSymptomaticIndividuals,
-                Singapore.TransmissionCoefficientModificationFactorAsymptomaticIndividuals,
-                Singapore.TransmissionCoefficientModificationFactorIsolatedIndividuals,
-                Singapore.TransmissionCoefficientModificationFactorQuarantinedIndividuals,
-                Singapore.DevelopmentClinicalSymptomsRateAsymptomaticIndividuals,
-                Singapore.DevelopmentClinicalSymptomsRateQuarantinedIndividuals,
-                Singapore.NaturalDeathRate,
-                Singapore.NetInflowRateSusceptibleIndividuals,
-                Singapore.RecoveryRateSymptomaticIndividuals,
-                Singapore.RecoveryRateIsolatedIndividuals);
-
-            // Exports
-            C19M.M.C.A.Gumel2004.Interfaces.Exports.IGumel2004_Export Singapore_Export = new C19M.M.C.A.Gumel2004.Classes.Exports.Gumel2004_Export(
-                Singapore_Context);
-
-            Singapore_Export.Solve();
-
             // Imports
             C19M.UI.Imports.Gumel2004.Beijing Beijing_Import = new C19M.UI.Imports.Gumel2004.Beijing();
 
             C19M.UI.Imports.Gumel2004.GreaterTorontoArea GreaterTorontoArea_Import = new C19M.UI.Imports.Gumel2004.GreaterTorontoArea();
 
             C19M.UI.Imports.Gumel2004.HongKong HongKong_Import = new C19M.UI.Imports.Gumel2004.HongKong();
+
+            C19M.UI.Imports.Gumel2004.Singapore Singapore_Import = new C19M.UI.Imports.Gumel2004.Singapore();
 
             this.GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths = GreaterTorontoArea_Import.DayCumulativeDiseaseInducedDeaths;
 
@@ -86,7 +51,6 @@
 
             this.Beijing_DaySusceptibleIndividuals = Beijing_Import.DaySusceptibleIndividuals;
 
-            //
             this.HongKong_DayCumulativeDiseaseInducedDeaths = HongKong_Import.DayCumulativeDiseaseInducedDeaths;
 
             this.HongKong_DayAsymptomaticIndividuals = HongKong_Import.DayAsymptomaticIndividuals;
@@ -101,19 +65,19 @@
 
             this.HongKong_DaySusceptibleIndividuals = HongKong_Import.DaySusceptibleIndividuals;
 
-            this.Singapore_DayCumulativeDiseaseInducedDeaths = Singapore_Export.DayCumulativeDiseaseInducedDeaths;
+            this.Singapore_DayCumulativeDiseaseInducedDeaths = Singapore_Import.DayCumulativeDiseaseInducedDeaths;
 
-            this.Singapore_DayAsymptomaticIndividuals = Singapore_Export.DayAsymptomaticIndividuals;
+            this.Singapore_DayAsymptomaticIndividuals = Singapore_Import.DayAsymptomaticIndividuals;
 
-            this.Singapore_DaySymptomaticIndividuals = Singapore_Export.DaySymptomaticIndividuals;
+            this.Singapore_DaySymptomaticIndividuals = Singapore_Import.DaySymptomaticIndividuals;
 
-            this.Singapore_DayIsolatedIndividuals = Singapore_Export.DayIsolatedIndividuals;
+            this.Singapore_DayIsolatedIndividuals = Singapore_Import.DayIsolatedIndividuals;
 
-            this.Singapore_DayQuarantinedIndividuals = Singapore_Export.DayQuarantinedIndividuals;
+            this.Singapore_DayQuarantinedIndividuals = Singapore_Import.DayQuarantinedIndividuals;
 
-            this.Singapore_DayRecoveredIndividuals = Singapore_Export.DayRecoveredIndividuals;
+            this.Singapore_DayRecoveredIndividuals = Singapore_Import.DayRecoveredIndividuals;
 
-            this.Singapore_DaySusceptibleIndividuals = Singapore_Export.DaySusceptibleIndividuals;
+            this.Singapore_DaySusceptibleIndividuals = Singapore_Import.DaySusceptibleIndividuals;
         }
 
         public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> Beijing_DayCumulativeDiseaseInducedDeaths { get; set; }
