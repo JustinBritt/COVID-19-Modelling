@@ -21,7 +21,7 @@
 
         public ActionResult Beijing()
         {
-            return View(
+            return PartialView(
                 new C19M.UI.Models.Gumel2004.Beijing());
         }
     }
