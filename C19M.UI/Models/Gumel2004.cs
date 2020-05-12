@@ -86,6 +86,40 @@
 
             Singapore_Export.Solve();
 
+            // Imports
+            C19M.UI.Imports.Gumel2004.Beijing Beijing_Import = new C19M.UI.Imports.Gumel2004.Beijing();
+
+            C19M.UI.Imports.Gumel2004.GreaterTorontoArea GreaterTorontoArea_Import = new C19M.UI.Imports.Gumel2004.GreaterTorontoArea();
+
+            this.GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths = GreaterTorontoArea_Import.DayCumulativeDiseaseInducedDeaths;
+
+            this.GreaterTorontoArea_DayAsymptomaticIndividuals = GreaterTorontoArea_Import.DayAsymptomaticIndividuals;
+
+            this.GreaterTorontoArea_DaySymptomaticIndividuals = GreaterTorontoArea_Import.DaySymptomaticIndividuals;
+
+            this.GreaterTorontoArea_DayIsolatedIndividuals = GreaterTorontoArea_Import.DayIsolatedIndividuals;
+
+            this.GreaterTorontoArea_DayQuarantinedIndividuals = GreaterTorontoArea_Import.DayQuarantinedIndividuals;
+
+            this.GreaterTorontoArea_DayRecoveredIndividuals = GreaterTorontoArea_Import.DayRecoveredIndividuals;
+
+            this.GreaterTorontoArea_DaySusceptibleIndividuals = GreaterTorontoArea_Import.DaySusceptibleIndividuals;
+
+            this.Beijing_DayCumulativeDiseaseInducedDeaths = Beijing_Import.DayCumulativeDiseaseInducedDeaths;
+
+            this.Beijing_DayAsymptomaticIndividuals = Beijing_Import.DayAsymptomaticIndividuals;
+
+            this.Beijing_DaySymptomaticIndividuals = Beijing_Import.DaySymptomaticIndividuals;
+
+            this.Beijing_DayIsolatedIndividuals = Beijing_Import.DayIsolatedIndividuals;
+
+            this.Beijing_DayQuarantinedIndividuals = Beijing_Import.DayQuarantinedIndividuals;
+
+            this.Beijing_DayRecoveredIndividuals = Beijing_Import.DayRecoveredIndividuals;
+
+            this.Beijing_DaySusceptibleIndividuals = Beijing_Import.DaySusceptibleIndividuals;
+
+            //
             this.HongKong_DayCumulativeDiseaseInducedDeaths = HongKong_Export.DayCumulativeDiseaseInducedDeaths;
 
             this.HongKong_DayAsymptomaticIndividuals = HongKong_Export.DayAsymptomaticIndividuals;

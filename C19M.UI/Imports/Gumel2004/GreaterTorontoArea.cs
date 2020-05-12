@@ -44,40 +44,40 @@
                 GreaterTorontoArea.RecoveryRateSymptomaticIndividuals,
                 GreaterTorontoArea.RecoveryRateIsolatedIndividuals);
 
-            C19M.M.C.A.Gumel2004.Interfaces.Exports.IGumel2004_Export GreaterTorontoArea_Export = new C19M.M.C.A.Gumel2004.Classes.Exports.Gumel2004_Export(
+            C19M.M.C.A.Gumel2004.Interfaces.Exports.IGumel2004_Export export = new C19M.M.C.A.Gumel2004.Classes.Exports.Gumel2004_Export(
                 GreaterTorontoArea_Context);
 
-            GreaterTorontoArea_Export.Solve();
+            export.Solve();
 
-            this.GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths = GreaterTorontoArea_Export.DayCumulativeDiseaseInducedDeaths;
+            this.DayCumulativeDiseaseInducedDeaths = export.DayCumulativeDiseaseInducedDeaths;
 
-            this.GreaterTorontoArea_DayAsymptomaticIndividuals = GreaterTorontoArea_Export.DayAsymptomaticIndividuals;
+            this.DayAsymptomaticIndividuals = export.DayAsymptomaticIndividuals;
 
-            this.GreaterTorontoArea_DaySymptomaticIndividuals = GreaterTorontoArea_Export.DaySymptomaticIndividuals;
+            this.DaySymptomaticIndividuals = export.DaySymptomaticIndividuals;
 
-            this.GreaterTorontoArea_DayIsolatedIndividuals = GreaterTorontoArea_Export.DayIsolatedIndividuals;
+            this.DayIsolatedIndividuals = export.DayIsolatedIndividuals;
 
-            this.GreaterTorontoArea_DayQuarantinedIndividuals = GreaterTorontoArea_Export.DayQuarantinedIndividuals;
+            this.DayQuarantinedIndividuals = export.DayQuarantinedIndividuals;
 
-            this.GreaterTorontoArea_DayRecoveredIndividuals = GreaterTorontoArea_Export.DayRecoveredIndividuals;
+            this.DayRecoveredIndividuals = export.DayRecoveredIndividuals;
 
-            this.GreaterTorontoArea_DaySusceptibleIndividuals = GreaterTorontoArea_Export.DaySusceptibleIndividuals;
+            this.DaySusceptibleIndividuals = export.DaySusceptibleIndividuals;
         }
 
         private C19M.D.Gumel2004.Interfaces.IGreaterTorontoArea Data => new C19M.D.Gumel2004.Classes.GreaterTorontoArea();
 
-        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths { get; set; }
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> DayCumulativeDiseaseInducedDeaths { get; set; }
 
-        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> GreaterTorontoArea_DayAsymptomaticIndividuals { get; set; }
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> DayAsymptomaticIndividuals { get; set; }
 
-        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> GreaterTorontoArea_DaySymptomaticIndividuals { get; set; }
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> DaySymptomaticIndividuals { get; set; }
 
-        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> GreaterTorontoArea_DayIsolatedIndividuals { get; set; }
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> DayIsolatedIndividuals { get; set; }
 
-        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> GreaterTorontoArea_DayQuarantinedIndividuals { get; set; }
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> DayQuarantinedIndividuals { get; set; }
 
-        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> GreaterTorontoArea_DayRecoveredIndividuals { get; set; }
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> DayRecoveredIndividuals { get; set; }
 
-        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> GreaterTorontoArea_DaySusceptibleIndividuals { get; set; }
+        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> DaySusceptibleIndividuals { get; set; }
     }
 }
