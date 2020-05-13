@@ -5,10 +5,10 @@
     using System.Linq;
     using System.Web;
  
-    public sealed class Figure6_DiseaseTransmission
+    public sealed class Figure6
     {
         // Constructor
-        public Figure6_DiseaseTransmission()
+        public Figure6()
         {
             // Imports
             this.Import = new C19M.UI.Imports.Gumel2006.Figure6_DiseaseTransmission();
