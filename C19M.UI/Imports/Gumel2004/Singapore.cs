@@ -68,18 +68,18 @@
 
         private C19M.D.Gumel2004.Interfaces.ISingapore Data => new C19M.D.Gumel2004.Classes.Singapore();
 
-        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> DayCumulativeDiseaseInducedDeaths { get; set; }
+        public ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayCumulativeDiseaseInducedDeaths { get; set; }
 
-        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> DayAsymptomaticIndividuals { get; set; }
+        public ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayAsymptomaticIndividuals { get; set; }
 
-        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> DaySymptomaticIndividuals { get; set; }
+        public ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DaySymptomaticIndividuals { get; set; }
 
-        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> DayIsolatedIndividuals { get; set; }
+        public ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayIsolatedIndividuals { get; set; }
 
-        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> DayQuarantinedIndividuals { get; set; }
+        public ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayQuarantinedIndividuals { get; set; }
 
-        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> DayRecoveredIndividuals { get; set; }
+        public ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayRecoveredIndividuals { get; set; }
 
-        public ImmutableList<System.Tuple<FhirDateTime, FhirDecimal>> DaySusceptibleIndividuals { get; set; }
+        public ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DaySusceptibleIndividuals { get; set; }
     }
 }
