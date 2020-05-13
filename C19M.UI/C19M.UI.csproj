@@ -209,6 +209,7 @@
     <Compile Include="Models\Gumel2004\GreaterTorontoArea.cs" />
     <Compile Include="Models\Gumel2004\HongKong.cs" />
     <Compile Include="Models\Gumel2004\Singapore.cs" />
+    <Compile Include="Models\Gumel2006\Figure6_DiseaseTransmission.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -262,7 +263,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\Gumel2006\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
