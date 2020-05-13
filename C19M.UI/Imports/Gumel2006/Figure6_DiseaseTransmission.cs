@@ -15,6 +15,7 @@
         // Constructor
         public Figure6_DiseaseTransmission()
         {
+            C19M.D.Gumel2006.Interfaces.IFigure6 Figure6 = new C19M.D.Gumel2006.Classes.Figure6();
         }
     }
 }
