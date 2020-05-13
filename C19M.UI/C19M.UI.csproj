@@ -282,9 +282,17 @@
       <Project>{1f404342-2ac9-4f8b-b5c6-3a19575ef776}</Project>
       <Name>C19M.D.Gumel2004</Name>
     </ProjectReference>
+    <ProjectReference Include="..\C19M.D.Gumel2006\C19M.D.Gumel2006.csproj">
+      <Project>{c6016813-2554-4bc4-97f5-a468b9d7b107}</Project>
+      <Name>C19M.D.Gumel2006</Name>
+    </ProjectReference>
     <ProjectReference Include="..\C19M.M.C.A.Gumel2004\C19M.M.C.A.Gumel2004.csproj">
       <Project>{4138762d-a11a-4f0b-a51b-17bfb983ae87}</Project>
       <Name>C19M.M.C.A.Gumel2004</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\C19M.M.C.A.Gumel2006\C19M.M.C.A.Gumel2006.csproj">
+      <Project>{9ce35b69-42af-44c7-b755-c554b939b9ee}</Project>
+      <Name>C19M.M.C.A.Gumel2006</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
