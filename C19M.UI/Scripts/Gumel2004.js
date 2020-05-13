@@ -24,6 +24,7 @@ function GenerateChartGumel(
     dayQuarantinedIndividuals,
     dayRecoveredIndividuals,
     daySusceptibleIndividuals,
+    configuration_options_scales_x_scaleLabel_labelString,
     configuration_options_title_text) {
 
     const context = document.getElementById(canvas).getContext('2d');
@@ -136,7 +137,7 @@ function GenerateChartGumel(
                     distribution: 'series',
                     scaleLabel: {
                         display: true,
-                        labelString: 'Day'
+                        labelString: configuration_options_scales_x_scaleLabel_labelString
                     },
                     offset: true,
                     ticks: {
