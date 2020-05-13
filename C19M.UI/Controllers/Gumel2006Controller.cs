@@ -14,5 +14,17 @@
         {
             return View();
         }
+
+        // GET: Gumel2006
+        public ActionResult Gumel2006()
+        {
+            return PartialView();
+        }
+
+        public ActionResult Figure6()
+        {
+            return PartialView(
+                new C19M.UI.Models.Gumel2006.Figure6());
+        }
     }
 }
