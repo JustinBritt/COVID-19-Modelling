@@ -23,7 +23,8 @@ function GenerateChartGumel(
     dayIsolatedIndividuals,
     dayQuarantinedIndividuals,
     dayRecoveredIndividuals,
-    daySusceptibleIndividuals) {
+    daySusceptibleIndividuals,
+    configuration_options_title_text) {
 
     const context = document.getElementById(canvas).getContext('2d');
     context.canvas.width = 1000;
@@ -163,7 +164,7 @@ function GenerateChartGumel(
             },
             title: {
                 display: true,
-                text: 'Beijing'
+                text: configuration_options_title_text
             },
             tooltips: {
                 intersect: false,
