@@ -9,6 +9,10 @@
         1000,
         @Html.Raw(Json.Encode(Model.Days)),
         @Html.Raw(Json.Encode(Model.DayLatentIndividuals)),
+        @Html.Raw(Json.Encode(Model.DayInfectedIndividuals)),
+        @Html.Raw(Json.Encode(Model.DayTreatedIndividuals)),
+        @Html.Raw(Json.Encode(Model.DaySusceptibleIndividuals)),
+        @Html.Raw(Json.Encode(Model.DayVaccinatedIndividuals)),
         'Day',
         'Number of Individuals',
         'Beijing'

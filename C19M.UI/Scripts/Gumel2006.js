@@ -20,6 +20,10 @@ function GenerateChart_Gumel2006(
     context_canvas_width,
     days,
     dayLatentIndividuals,
+    dayInfectedIndividuals,
+    dayTreatedIndividuals,
+    daySusceptibleIndividuals,
+    dayVaccinatedIndividuals,
     configuration_options_scales_x_scaleLabel_labelString,
     configuration_options_scales_y_scaleLabel_labelString,
     configuration_options_title_text) {
@@ -42,10 +46,62 @@ function GenerateChart_Gumel2006(
         borderWidth: 2
     };
 
+    let dayInfectedIndividuals_Dataset = {
+        label: 'Infected Individuals',
+        backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.red,
+        data: GenerateData_Gumel2006(days, dayInfectedIndividuals),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
+    let dayTreatedIndividuals_Dataset = {
+        label: 'Treated Individuals',
+        backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.blue,
+        data: GenerateData_Gumel2006(days, dayTreatedIndividuals),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
+    let daySusceptibleIndividuals_Dataset = {
+        label: 'Susceptible Individuals',
+        backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.blue,
+        data: GenerateData_Gumel2006(days, daySusceptibleIndividuals),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
+    let dayVaccinatedIndividuals_Dataset = {
+        label: 'Vaccinated Individuals',
+        backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.blue,
+        data: GenerateData_Gumel2006(days, dayVaccinatedIndividuals),
+        type: 'line',
+        pointRadius: 0,
+        fill: false,
+        lineTension: 0,
+        borderWidth: 2
+    };
+
     const configuration = {
         data: {
             datasets: [
-                dayLatentIndividuals_Dataset]
+                dayLatentIndividuals_Dataset,
+                dayInfectedIndividuals_Dataset,
+                dayTreatedIndividuals_Dataset,
+                daySusceptibleIndividuals_Dataset,
+                dayVaccinatedIndividuals_Dataset]
         },
         options: {
             animation: {
@@ -73,7 +129,7 @@ function GenerateChart_Gumel2006(
                     },
                 },
                 y: {
-                    type: 'logarithmic',
+                    type: 'linear',
                     gridLines: {
                         drawBorder: false
                     },
