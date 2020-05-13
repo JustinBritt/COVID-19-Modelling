@@ -2,21 +2,5 @@
     ViewBag.Title = "Gumel2004";
 }
 
-<head>
-    <title>Line Chart</title>
-    <script src="~/Scripts/Chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/luxon@1.15.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@0.2.0"></script>
-    <script src="~/Scripts/utils.js"></script>
-    <style>
-        canvas {
-            -moz-user-select: none;
-            -webkit-user-select: none;
-            -ms-user-select: none;
-        }
-    </style>
-</head>
-<body>
-    @Html.Action("Beijing")
-    @Html.Action("GreaterTorontoArea")
-</body>
+@Html.Action("Beijing")
+@Html.Action("GreaterTorontoArea")
