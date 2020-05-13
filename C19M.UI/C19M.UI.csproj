@@ -257,12 +257,12 @@
     <Content Include="Views\Gumel2004\HongKong.cshtml" />
     <Content Include="Views\Gumel2004\Singapore.cshtml" />
     <Content Include="Views\Gumel2004\DayCumulativeDiseaseInducedDeaths.cshtml" />
+    <Content Include="Views\Gumel2006\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Imports\Gumel2006\" />
     <Folder Include="Models\Gumel2006\" />
-    <Folder Include="Views\Gumel2006\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
