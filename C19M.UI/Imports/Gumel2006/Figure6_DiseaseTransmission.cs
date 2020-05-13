@@ -8,6 +8,8 @@
     // Hl7
     using Hl7.Fhir.Model;
 
+    using C19M.D.Gumel2006.Interfaces;
+
     public sealed class Figure6_DiseaseTransmission
     {
         // Constructor
