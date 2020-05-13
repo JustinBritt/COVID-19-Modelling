@@ -5,6 +5,8 @@
 <script>
     GenerateChartGumel(
         'GreaterTorontoArea_Canvas',
+        300,
+        1000,
         @Html.Raw(Json.Encode(Model.Days)),
         @Html.Raw(Json.Encode(Model.DayCumulativeDiseaseInducedDeaths_Array)),
         @Html.Raw(Json.Encode(Model.DayAsymptomaticIndividuals_Array)),

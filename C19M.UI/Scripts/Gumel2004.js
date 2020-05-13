@@ -16,6 +16,8 @@
 
 function GenerateChartGumel(
     canvas,
+    context_canvas_height,
+    context_canvas_width,
     days,
     dayCumulativeDiseaseInducedDeaths,
     dayAsymptomaticIndividuals,
@@ -29,8 +31,8 @@ function GenerateChartGumel(
     configuration_options_title_text) {
 
     const context = document.getElementById(canvas).getContext('2d');
-    context.canvas.width = 1000;
-    context.canvas.height = 300;
+    context.canvas.width = context_canvas_width;
+    context.canvas.height = context_canvas_height;
 
     const color = Chart.helpers.color;
 
