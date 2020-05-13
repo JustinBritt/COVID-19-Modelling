@@ -104,7 +104,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Figure2.cs" />
     <Compile Include="Classes\Table1.cs" />
+    <Compile Include="Interfaces\IFigure2.cs" />
     <Compile Include="Interfaces\ITable1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
