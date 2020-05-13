@@ -1,212 +1,22 @@
 ﻿@model C19M.UI.Models.Gumel2004.Singapore
-
-@{
-    ViewBag.Title = "Singapore";
-}
-
-<head>
-    <title>Line Chart</title>
-    <script src="~/Scripts/Chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/luxon@1.15.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@0.2.0"></script>
-    <script src="~/Scripts/utils.js"></script>
-    <style>
-        canvas {
-            -moz-user-select: none;
-            -webkit-user-select: none;
-            -ms-user-select: none;
-        }
-    </style>
-</head>
-
 <div>
     <canvas id="Singapore_Canvas"></canvas>
 </div>
 <script>
-    function GenerateData(days, values) {
-        let data = [];
-
-        let i = 0;
-
-        for (; i < days.length; i++) {
-            data.push(
-                {
-                    x: luxon.DateTime.fromFormat(days[i], 'LLL dd yyyy').valueOf(),
-                    y: values[i]
-                });
-        }
-
-        return data;
-    }
-
-    const Singapore_Context = document.getElementById('Singapore_Canvas').getContext('2d');
-    Singapore_Context.canvas.width = 1000;
-    Singapore_Context.canvas.height = 300;
-
-    var Singapore_Days = @Html.Raw(Json.Encode(Model.Days));
-    var Singapore_DayCumulativeDiseaseInducedDeaths = @Html.Raw(Json.Encode(Model.DayCumulativeDiseaseInducedDeaths_Array));
-    var DayCumulativeDiseaseInducedDeaths = @Html.Raw(Json.Encode(Model.DayCumulativeDiseaseInducedDeaths_Array));
-    var DayAsymptomaticIndividuals = @Html.Raw(Json.Encode(Model.DayAsymptomaticIndividuals_Array));
-    var DaySymptomaticIndividuals = @Html.Raw(Json.Encode(Model.DaySymptomaticIndividuals_Array));
-    var DayIsolatedIndividuals = @Html.Raw(Json.Encode(Model.DayIsolatedIndividuals_Array));
-    var DayQuarantinedIndividuals = @Html.Raw(Json.Encode(Model.DayQuarantinedIndividuals_Array));
-    var DayRecoveredIndividuals = @Html.Raw(Json.Encode(Model.DayRecoveredndividuals_Array));
-    var DaySusceptibleIndividuals = @Html.Raw(Json.Encode(Model.DaySusceptibleIndividuals_Array));
-
-    const color = Chart.helpers.color;
-
-    var Singapore_DayCumulativeDiseaseInducedDeaths_Dataset = {
-        label: 'Singapore',
-        backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
-        borderColor: window.chartColors.blue,
-        data: GenerateData(Singapore_Days, Singapore_DayCumulativeDiseaseInducedDeaths),
-        type: 'line',
-        pointRadius: 0,
-        fill: false,
-        lineTension: 0,
-        borderWidth: 2
-    };
-
-    var Singapore_DayAsymptomaticIndividuals_Dataset = {
-        label: 'Asymptomatic Individuals',
-        backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
-        borderColor: window.chartColors.red,
-        data: GenerateData(Singapore_Days, Singapore_DayAsymptomaticIndividuals),
-        type: 'line',
-        pointRadius: 0,
-        fill: false,
-        lineTension: 0,
-        borderWidth: 2
-    };
-
-    var Singapore_DaySymptomaticIndividuals_Dataset = {
-        label: 'Symptomatic Individuals',
-        backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
-        borderColor: window.chartColors.orange,
-        data: GenerateData(Singapore_Days, Singapore_DaySymptomaticIndividuals),
-        type: 'line',
-        pointRadius: 0,
-        fill: false,
-        lineTension: 0,
-        borderWidth: 2
-    };
-
-    var Singapore_DayIsolatedIndividuals_Dataset = {
-        label: 'Isolated Individuals',
-        backgroundColor: color(window.chartColors.yellow).alpha(0.5).rgbString(),
-        borderColor: window.chartColors.yellow,
-        data: GenerateData(Singapore_Days, Singapore_DayIsolatedIndividuals),
-        type: 'line',
-        pointRadius: 0,
-        fill: false,
-        lineTension: 0,
-        borderWidth: 2
-    };
-
-    var Singapore_DayQuarantinedIndividuals_Dataset = {
-        label: 'Quarantined Individuals',
-        backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
-        borderColor: window.chartColors.green,
-        data: GenerateData(Singapore_Days, Singapore_DayQuarantinedIndividuals),
-        type: 'line',
-        pointRadius: 0,
-        fill: false,
-        lineTension: 0,
-        borderWidth: 2
-    };
-
-    var Singapore_DayRecoveredIndividuals_Dataset = {
-        label: 'Recovered Individuals',
-        backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
-        borderColor: window.chartColors.blue,
-        data: GenerateData(Singapore_Days, Singapore_DayRecoveredIndividuals),
-        type: 'line',
-        pointRadius: 0,
-        fill: false,
-        lineTension: 0,
-        borderWidth: 2
-    };
-
-    var Singapore_DaySusceptibleIndividuals_Dataset = {
-        label: 'Susceptible Individuals',
-        backgroundColor: color(window.chartColors.purple).alpha(0.5).rgbString(),
-        borderColor: window.chartColors.purple,
-        data: GenerateData(Singapore_Days, Singapore_DaySusceptibleIndividuals),
-        type: 'line',
-        pointRadius: 0,
-        fill: false,
-        lineTension: 0,
-        borderWidth: 2
-    };
-
-    const Singapore_Configuration = {
-        data: {
-            datasets: [
-                Singapore_DayAsymptomaticIndividuals_Dataset,
-                Singapore_DaySymptomaticIndividuals_Dataset,
-                Singapore_DayIsolatedIndividuals_Dataset,
-                Singapore_DayQuarantinedIndividuals_Dataset,
-                Singapore_DayRecoveredIndividuals_Dataset,
-                Singapore_DaySusceptibleIndividuals_Dataset]
-        },
-        options: {
-            animation: {
-                duration: 0
-            },
-            scales: {
-                x: {
-                    type: 'time',
-                    distribution: 'series',
-                    scaleLabel: {
-                        display: true,
-                        labelString: 'Day'
-                    },
-                    offset: true,
-                    ticks: {
-                        major: {
-                            enabled: true,
-                        },
-                        fontStyle: 'bold',
-                        source: 'data',
-                        autoSkip: true,
-                        autoSkipPadding: 75,
-                        maxRotation: 0,
-                        sampleSize: 200
-                    },
-                },
-                y: {
-                    type: 'logarithmic',
-                    gridLines: {
-                        drawBorder: false
-                    },
-                    scaleLabel: {
-                        display: true,
-                        labelString: 'Number of People'
-                    }
-                }
-            },
-            title: {
-                display: true,
-                text: 'Singapore'
-            },
-            tooltips: {
-                intersect: false,
-                mode: 'index',
-                callbacks: {
-                    label: function (tooltipItem, myData) {
-                        let label = myData.datasets[tooltipItem.datasetIndex].label || '';
-                        if (label) {
-                            label += ': ';
-                        }
-                        label += parseFloat(tooltipItem.value).toFixed(2);
-                        return label;
-                    }
-                }
-            }
-        }
-    };
-
-    const Singapore_Chart = new Chart(
-        Singapore_Context,
-        Singapore_Configuration);
+    GenerateChartGumel(
+        'Singapore_Canvas',
+        300,
+        1000,
+        @Html.Raw(Json.Encode(Model.Days)),
+        @Html.Raw(Json.Encode(Model.DayCumulativeDiseaseInducedDeaths_Array)),
+        @Html.Raw(Json.Encode(Model.DayAsymptomaticIndividuals_Array)),
+        @Html.Raw(Json.Encode(Model.DaySymptomaticIndividuals_Array)),
+        @Html.Raw(Json.Encode(Model.DayIsolatedIndividuals_Array)),
+        @Html.Raw(Json.Encode(Model.DayQuarantinedIndividuals_Array)),
+        @Html.Raw(Json.Encode(Model.DayRecoveredIndividuals_Array)),
+        @Html.Raw(Json.Encode(Model.DaySusceptibleIndividuals_Array)),
+        'Day',
+        'Number of Individuals',
+        'Singapore'
+    );
 </script>
