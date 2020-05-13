@@ -34,7 +34,7 @@
 
         public decimal[] DayQuarantinedIndividuals_Array => this.Import.DayQuarantinedIndividuals.Select(w => w.Item2.Value.Value).ToArray();
 
-        public decimal[] DayRecoveredndividuals_Array => this.Import.DayRecoveredIndividuals.Select(w => w.Item2.Value.Value).ToArray();
+        public decimal[] DayRecoveredIndividuals_Array => this.Import.DayRecoveredIndividuals.Select(w => w.Item2.Value.Value).ToArray();
 
         public decimal[] DaySusceptibleIndividuals_Array => this.Import.DaySusceptibleIndividuals.Select(w => w.Item2.Value.Value).ToArray();
     }
