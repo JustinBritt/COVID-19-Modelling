@@ -2,3 +2,15 @@
 <div>
     <canvas id="Figure6_Canvas"></canvas>
 </div>
+<script>
+    GenerateChart_Gumel2006(
+        'Beijing_Canvas',
+        300,
+        1000,
+        @Html.Raw(Json.Encode(Model.Days)),
+        @Html.Raw(Json.Encode(Model.DayLatentIndividuals)),
+        'Day',
+        'Number of Individuals',
+        'Beijing'
+    );
+</script>
