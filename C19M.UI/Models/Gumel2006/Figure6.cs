@@ -16,6 +16,9 @@
 
         public C19M.UI.Imports.Gumel2006.Figure6_DiseaseTransmission Import { get; set; }
 
+        // TODO: Update
+        public string[] Days => this.Import.DayCumulativeDiseaseInducedDeaths.Select(w => w.Item1.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date.ToString("MMM dd yyyy")).ToArray();
+
         public decimal[] DayCumulativeDiseaseInducedDeaths => this.Import.DayCumulativeDiseaseInducedDeaths.Select(w => w.Item2.Value.Value).ToArray();
 
         public decimal[] DayCumulativeProbableCases => this.Import.DayCumulativeProbableCases.Select(w => w.Item2.Value.Value).ToArray();
