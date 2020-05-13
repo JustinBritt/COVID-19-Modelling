@@ -106,9 +106,11 @@
   <ItemGroup>
     <Compile Include="Classes\Figure2.cs" />
     <Compile Include="Classes\Figure3.cs" />
+    <Compile Include="Classes\Figure4.cs" />
     <Compile Include="Classes\Table1.cs" />
     <Compile Include="Interfaces\IFigure2.cs" />
     <Compile Include="Interfaces\IFigure3.cs" />
+    <Compile Include="Interfaces\IFigure4.cs" />
     <Compile Include="Interfaces\ITable1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
