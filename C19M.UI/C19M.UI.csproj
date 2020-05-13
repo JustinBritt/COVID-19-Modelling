@@ -261,6 +261,7 @@
     <Content Include="Views\Gumel2004\Singapore.cshtml" />
     <Content Include="Views\Gumel2004\DayCumulativeDiseaseInducedDeaths.cshtml" />
     <Content Include="Views\Gumel2006\Index.cshtml" />
+    <Content Include="Views\Gumel2006\Figure6.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
