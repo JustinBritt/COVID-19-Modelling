@@ -21,7 +21,7 @@
             // Use StartDate, EndDate,and NumberDaysAfterStartDate from Gumel et al. (2004)
             FhirDateTime startDate = new FhirDateTime(new DateTimeOffset(new DateTime(2003, 2, 23)));
 
-            FhirDateTime endDate = new FhirDateTime(new DateTimeOffset(new DateTime(2003, 9, 1)));
+            FhirDateTime endDate = new FhirDateTime(new DateTimeOffset(new DateTime(2003, 2, 23).AddDays(1200)));
 
             Func<FhirDateTime, PositiveInt> numberDaysAfterStartDate =
             (x) =>
