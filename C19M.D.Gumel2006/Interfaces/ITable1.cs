@@ -9,7 +9,7 @@
     // Hl7
     using Hl7.Fhir.Model;
 
-    public interface IGreaterTorontoArea
+    public interface ITable1
     {
         /// <summary>
         /// Gets the disease-induced mortality rate.

@@ -16,7 +16,7 @@
         [TestMethod]
         public void TestMethod1()
         {
-            C19M.D.Gumel2006.Interfaces.IGreaterTorontoArea GreaterTorontoArea = new C19M.D.Gumel2006.Classes.GreaterTorontoArea();
+            C19M.D.Gumel2006.Interfaces.ITable1 GreaterTorontoArea = new C19M.D.Gumel2006.Classes.Table1();
 
             // Use StartDate, EndDate,and NumberDaysAfterStartDate from Gumel et al. (2004)
             FhirDateTime startDate = new FhirDateTime(new DateTimeOffset(new DateTime(2003, 2, 23)));

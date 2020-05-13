@@ -104,8 +104,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\GreaterTorontoArea.cs" />
-    <Compile Include="Interfaces\IGreaterTorontoArea.cs" />
+    <Compile Include="Classes\Table1.cs" />
+    <Compile Include="Interfaces\ITable1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

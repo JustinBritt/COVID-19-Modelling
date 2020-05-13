@@ -17,12 +17,12 @@
     /// <summary>
     /// Represents data from the Greater Toronto Area (GTA).
     /// </summary>
-    public sealed class GreaterTorontoArea : IGreaterTorontoArea
+    public sealed class Table1 : ITable1
     {
         private ILog Log { get; }
 
         // Constructor
-        public GreaterTorontoArea()
+        public Table1()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         }
