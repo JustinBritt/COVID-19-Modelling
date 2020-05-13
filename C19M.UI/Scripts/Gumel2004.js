@@ -31,7 +31,7 @@ function GenerateChartGumel(
 
     const color = Chart.helpers.color;
 
-    var Beijing_DayCumulativeDiseaseInducedDeaths_Dataset = {
+    let Beijing_DayCumulativeDiseaseInducedDeaths_Dataset = {
         label: 'Beijing',
         backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
         borderColor: window.chartColors.orange,
@@ -43,7 +43,7 @@ function GenerateChartGumel(
         borderWidth: 2
     };
 
-    var Beijing_DayAsymptomaticIndividuals_Dataset = {
+    let Beijing_DayAsymptomaticIndividuals_Dataset = {
         label: 'Asymptomatic Individuals',
         backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
         borderColor: window.chartColors.red,
@@ -55,7 +55,7 @@ function GenerateChartGumel(
         borderWidth: 2
     };
 
-    var Beijing_DaySymptomaticIndividuals_Dataset = {
+    let Beijing_DaySymptomaticIndividuals_Dataset = {
         label: 'Symptomatic Individuals',
         backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
         borderColor: window.chartColors.orange,
@@ -67,7 +67,7 @@ function GenerateChartGumel(
         borderWidth: 2
     };
 
-    var Beijing_DayIsolatedIndividuals_Dataset = {
+    let Beijing_DayIsolatedIndividuals_Dataset = {
         label: 'Isolated Individuals',
         backgroundColor: color(window.chartColors.yellow).alpha(0.5).rgbString(),
         borderColor: window.chartColors.yellow,
@@ -79,7 +79,7 @@ function GenerateChartGumel(
         borderWidth: 2
     };
 
-    var Beijing_DayQuarantinedIndividuals_Dataset = {
+    let Beijing_DayQuarantinedIndividuals_Dataset = {
         label: 'Quarantined Individuals',
         backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
         borderColor: window.chartColors.green,
@@ -91,7 +91,7 @@ function GenerateChartGumel(
         borderWidth: 2
     };
 
-    var Beijing_DayRecoveredIndividuals_Dataset = {
+    let Beijing_DayRecoveredIndividuals_Dataset = {
         label: 'Recovered Individuals',
         backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
         borderColor: window.chartColors.blue,
@@ -103,7 +103,7 @@ function GenerateChartGumel(
         borderWidth: 2
     };
 
-    var Beijing_DaySusceptibleIndividuals_Dataset = {
+    let Beijing_DaySusceptibleIndividuals_Dataset = {
         label: 'Susceptible Individuals',
         backgroundColor: color(window.chartColors.purple).alpha(0.5).rgbString(),
         borderColor: window.chartColors.purple,
