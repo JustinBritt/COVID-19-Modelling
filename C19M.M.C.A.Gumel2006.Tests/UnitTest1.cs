@@ -16,7 +16,7 @@
         [TestMethod]
         public void TestMethod1()
         {
-            C19M.D.Gumel2006.Interfaces.ITable1 GreaterTorontoArea = new C19M.D.Gumel2006.Classes.Table1();
+            C19M.D.Gumel2006.Interfaces.ITable1 Table1 = new C19M.D.Gumel2006.Classes.Table1();
 
             // Use StartDate, EndDate,and NumberDaysAfterStartDate from Gumel et al. (2004)
             FhirDateTime startDate = new FhirDateTime(new DateTimeOffset(new DateTime(2003, 2, 23)));
@@ -41,19 +41,19 @@
                 endDate,
                 numberDaysAfterStartDate,
                 startDate,
-                GreaterTorontoArea.DiseaseInducedMortalityRate,
+                Table1.DiseaseInducedMortalityRate,
                 new Hl7.Fhir.Model.FhirDecimal(0), // TODO: Change
                 new Hl7.Fhir.Model.FhirDecimal(10), // TODO: Change
                 new Hl7.Fhir.Model.FhirDecimal(0), // TODO: Change
                 new Hl7.Fhir.Model.FhirDecimal(4000000), // TODO: Change
                 new Hl7.Fhir.Model.FhirDecimal(0), // TODO: Change
-                GreaterTorontoArea.DevelopmentClinicalSymptomsRate,
-                GreaterTorontoArea.EffectiveContactRate,
-                GreaterTorontoArea.RecoveryRate,
-                GreaterTorontoArea.NaturalMortalityRate,
-                GreaterTorontoArea.VaccinationCoverageRate,
-                GreaterTorontoArea.RecruitmentRateSusceptibleHumans,
-                GreaterTorontoArea.VaccineEfficacy);
+                Table1.DevelopmentClinicalSymptomsRate,
+                Table1.EffectiveContactRate,
+                Table1.RecoveryRate,
+                Table1.NaturalMortalityRate,
+                Table1.VaccinationCoverageRate,
+                Table1.RecruitmentRateSusceptibleHumans,
+                Table1.VaccineEfficacy);
 
             // Export
             C19M.M.C.A.Gumel2006.Interfaces.Exports.IDiseaseTransmission_Export export = new C19M.M.C.A.Gumel2006.Classes.Exports.DiseaseTransmission_Export(
