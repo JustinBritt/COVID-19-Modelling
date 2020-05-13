@@ -22,6 +22,7 @@
     function Test(
         canvas,
         days,
+        dayCumulativeDiseaseInducedDeaths,
         dayAsymptomaticIndividuals,
         daySymptomaticIndividuals,
         dayIsolatedIndividuals,
@@ -35,17 +36,17 @@
 
         const color = Chart.helpers.color;
 
-        //var Beijing_DayCumulativeDiseaseInducedDeaths_Dataset = {
-        //    label: 'Beijing',
-        //    backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
-        //    borderColor: window.chartColors.orange,
-        //    data: GenerateData(days, dayCumulativeDiseaseInducedDeaths),
-        //    type: 'line',
-        //    pointRadius: 0,
-        //    fill: false,
-        //    lineTension: 0,
-        //    borderWidth: 2
-        //};
+        var Beijing_DayCumulativeDiseaseInducedDeaths_Dataset = {
+            label: 'Beijing',
+            backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
+            borderColor: window.chartColors.orange,
+            data: GenerateData(days, dayCumulativeDiseaseInducedDeaths),
+            type: 'line',
+            pointRadius: 0,
+            fill: false,
+            lineTension: 0,
+            borderWidth: 2
+        };
 
         var Beijing_DayAsymptomaticIndividuals_Dataset = {
             label: 'Asymptomatic Individuals',
@@ -194,6 +195,7 @@
         Test(
             'Beijing_Canvas',
             @Html.Raw(Json.Encode(Model.Days)),
+            @Html.Raw(Json.Encode(Model.DayCumulativeDiseaseInducedDeaths_Array)),
             @Html.Raw(Json.Encode(Model.DayAsymptomaticIndividuals_Array)),
             @Html.Raw(Json.Encode(Model.DaySymptomaticIndividuals_Array)),
             @Html.Raw(Json.Encode(Model.DayIsolatedIndividuals_Array)),
