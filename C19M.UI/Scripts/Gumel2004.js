@@ -25,6 +25,7 @@ function GenerateChartGumel(
     dayRecoveredIndividuals,
     daySusceptibleIndividuals,
     configuration_options_scales_x_scaleLabel_labelString,
+    configuration_options_scales_y_scaleLabel_labelString,
     configuration_options_title_text) {
 
     const context = document.getElementById(canvas).getContext('2d');
@@ -159,7 +160,7 @@ function GenerateChartGumel(
                     },
                     scaleLabel: {
                         display: true,
-                        labelString: 'Number of People'
+                        labelString: configuration_options_scales_y_scaleLabel_labelString
                     }
                 }
             },
