@@ -1,17 +1,17 @@
 ﻿@model C19M.UI.Models.Gumel2004.Beijing
-    <div>
-        <canvas id="Beijing_Canvas"></canvas>
-    </div>
-    <script>
-        GenerateChartGumel(
-            'Beijing_Canvas',
-            @Html.Raw(Json.Encode(Model.Days)),
-            @Html.Raw(Json.Encode(Model.DayCumulativeDiseaseInducedDeaths_Array)),
-            @Html.Raw(Json.Encode(Model.DayAsymptomaticIndividuals_Array)),
-            @Html.Raw(Json.Encode(Model.DaySymptomaticIndividuals_Array)),
-            @Html.Raw(Json.Encode(Model.DayIsolatedIndividuals_Array)),
-            @Html.Raw(Json.Encode(Model.DayQuarantinedIndividuals_Array)),
-            @Html.Raw(Json.Encode(Model.DayRecoveredndividuals_Array)),
-            @Html.Raw(Json.Encode(Model.DaySusceptibleIndividuals_Array))
-        );
-    </script>
+<div>
+    <canvas id="Beijing_Canvas"></canvas>
+</div>
+<script>
+    GenerateChartGumel(
+        'Beijing_Canvas',
+        @Html.Raw(Json.Encode(Model.Days)),
+        @Html.Raw(Json.Encode(Model.DayCumulativeDiseaseInducedDeaths_Array)),
+        @Html.Raw(Json.Encode(Model.DayAsymptomaticIndividuals_Array)),
+        @Html.Raw(Json.Encode(Model.DaySymptomaticIndividuals_Array)),
+        @Html.Raw(Json.Encode(Model.DayIsolatedIndividuals_Array)),
+        @Html.Raw(Json.Encode(Model.DayQuarantinedIndividuals_Array)),
+        @Html.Raw(Json.Encode(Model.DayRecoveredndividuals_Array)),
+        @Html.Raw(Json.Encode(Model.DaySusceptibleIndividuals_Array))
+    );
+</script>
