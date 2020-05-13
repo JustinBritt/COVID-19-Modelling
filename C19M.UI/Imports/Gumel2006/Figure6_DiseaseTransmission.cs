@@ -61,17 +61,23 @@
 
             export.Solve();
 
-            var I = export.DayInfectedIndividuals;
+            this.DayCumulativeDiseaseInducedDeaths = export.DayCumulativeDiseaseInducedDeaths;
 
-            var S = export.DaySusceptibleIndividuals;
+            this.DayCumulativeProbableCases = export.DayCumulativeProbableCases;
 
-            var dayCumulativeDiseaseInducedDeaths = export.DayCumulativeDiseaseInducedDeaths;
+            this.DayDiseaseInducedDeaths = export.DayDiseaseInducedDeaths;
 
-            foreach (var item in I)
-            {
-                System.Diagnostics.Debug.WriteLine(
-                    item.Item2.Value.Value);
-            }
+            this.DayProbableCases = export.DayProbableCases;
+
+            this.DayLatentIndividuals = export.DayLatentIndividuals;
+
+            this.DayInfectedIndividuals = export.DayInfectedIndividuals;
+
+            this.DayTreatedIndividuals = export.DayTreatedIndividuals;
+
+            this.DaySusceptibleIndividuals = export.DaySusceptibleIndividuals;
+
+            this.DayVaccinatedIndividuals = export.DayVaccinatedIndividuals;
         }
 
         public ImmutableList<Tuple<FhirDateTime, FhirDecimal>> DayCumulativeDiseaseInducedDeaths { get; private set; }
