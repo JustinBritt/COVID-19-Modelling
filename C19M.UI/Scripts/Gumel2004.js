@@ -25,9 +25,9 @@ function GenerateChartGumel(
     dayRecoveredIndividuals,
     daySusceptibleIndividuals) {
 
-    const Beijing_Context = document.getElementById(canvas).getContext('2d');
-    Beijing_Context.canvas.width = 1000;
-    Beijing_Context.canvas.height = 300;
+    const context = document.getElementById(canvas).getContext('2d');
+    context.canvas.width = 1000;
+    context.canvas.height = 300;
 
     const color = Chart.helpers.color;
 
@@ -115,7 +115,7 @@ function GenerateChartGumel(
         borderWidth: 2
     };
 
-    const Beijing_Configuration = {
+    const configuration = {
         data: {
             datasets: [
                 Beijing_DayAsymptomaticIndividuals_Dataset,
@@ -182,7 +182,7 @@ function GenerateChartGumel(
         }
     };
 
-    const Beijing_Chart = new Chart(
-        Beijing_Context,
-        Beijing_Configuration);
+    const chart = new Chart(
+        context,
+        configuration);
 }
