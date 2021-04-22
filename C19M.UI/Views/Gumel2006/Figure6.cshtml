@@ -1,0 +1,20 @@
+﻿@model C19M.UI.Models.Gumel2006.Figure6Model
+<div>
+    <canvas id="Figure6_Canvas"></canvas>
+</div>
+<script>
+    GenerateChart_Gumel2006(
+        'Figure6_Canvas',
+        300,
+        1000,
+        @Html.Raw(Json.Serialize(Model.Days)),
+        @Html.Raw(Json.Serialize(Model.DayLatentIndividuals)),
+        @Html.Raw(Json.Serialize(Model.DayInfectedIndividuals)),
+        @Html.Raw(Json.Serialize(Model.DayTreatedIndividuals)),
+        @Html.Raw(Json.Serialize(Model.DaySusceptibleIndividuals)),
+        @Html.Raw(Json.Serialize(Model.DayVaccinatedIndividuals)),
+        'Day',
+        'Number of Individuals',
+        'Beijing'
+    );
+</script>
