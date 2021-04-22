@@ -11,4 +11,9 @@
     <ProjectReference Include="..\C19M.D.Gumel2004\C19M.D.Gumel2004.csproj" />
     <ProjectReference Include="..\C19M.D.Gumel2006\C19M.D.Gumel2006.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Gumel2004\" />
+    <Folder Include="Views\Gumel2006\" />
+  </ItemGroup>
 </Project>
