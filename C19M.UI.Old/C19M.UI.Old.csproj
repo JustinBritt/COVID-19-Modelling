@@ -195,9 +195,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Folder Include="Views\Shared\" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\C19M.D.Gumel2004\C19M.D.Gumel2004.csproj">
       <Project>{1f404342-2ac9-4f8b-b5c6-3a19575ef776}</Project>
