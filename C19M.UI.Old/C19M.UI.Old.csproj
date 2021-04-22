@@ -195,9 +195,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Scripts\Chart.js" />
-    <Content Include="Scripts\Chart.min.js" />
-    <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Gumel2004\Gumel2004.cshtml" />
@@ -210,7 +207,9 @@
     <Content Include="Views\Gumel2006\Figure6.cshtml" />
     <Content Include="Views\Gumel2006\Gumel2006.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Scripts\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\C19M.D.Gumel2004\C19M.D.Gumel2004.csproj">
       <Project>{1f404342-2ac9-4f8b-b5c6-3a19575ef776}</Project>
