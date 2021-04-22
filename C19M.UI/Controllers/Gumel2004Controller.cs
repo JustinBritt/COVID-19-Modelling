@@ -7,6 +7,8 @@
 
     using Microsoft.AspNetCore.Mvc;
 
+    using Hl7.Fhir.Model;
+
     public sealed class Gumel2004Controller : Controller
     {
         public IActionResult Index()
