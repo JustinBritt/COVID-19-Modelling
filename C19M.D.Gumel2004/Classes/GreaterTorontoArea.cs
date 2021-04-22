@@ -53,9 +53,9 @@
         public Func<FhirDateTime, PositiveInt> NumberDaysAfterStartDate =>
             (x) =>
             {
-                if (x.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date >= this.StartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date)
+                if (x.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date >= this.StartDate.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date)
                 {
-                    return new PositiveInt((int)Math.Abs(Math.Round((x.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date - this.StartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date).TotalDays)));
+                    return new PositiveInt((int)Math.Abs(Math.Round((x.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date - this.StartDate.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date).TotalDays)));
                 }
                 else
                 {
@@ -134,7 +134,7 @@
         public Func<FhirDateTime, FhirDecimal> QuarantineRateAsymptomaticIndividuals =>
             (x) =>
             {
-                if (x.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date <= this.IsolationQuarantineStartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date)
+                if (x.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date <= this.IsolationQuarantineStartDate.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date)
                 {
                     return new FhirDecimal(0m);
                 }
@@ -152,7 +152,7 @@
         public Func<FhirDateTime, FhirDecimal> IsolationRateSymptomaticIndividuals =>
             (x) =>
             {
-                if (x.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date <= this.IsolationQuarantineStartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date)
+                if (x.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date <= this.IsolationQuarantineStartDate.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date)
                 {
                     return new FhirDecimal(0m);
                 }
@@ -175,7 +175,7 @@
         public Func<FhirDateTime, FhirDecimal> TransmissionCoefficientModificationFactorIsolatedIndividuals => 
             (x) =>
             {
-                if (x.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date <= this.PerfectIsolationStartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date)
+                if (x.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date <= this.PerfectIsolationStartDate.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date)
                 {
                     return new FhirDecimal(0.36m);
                 }
