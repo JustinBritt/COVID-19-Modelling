@@ -11,4 +11,8 @@
     <Folder Include="Models\Gumel2004\" />
     <Folder Include="Models\Gumel2006\" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\C19M.D.Gumel2004\C19M.D.Gumel2004.csproj" />
+  </ItemGroup>
 </Project>
