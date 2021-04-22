@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Extensions\" />
     <Folder Include="Views\Gumel2006\" />
   </ItemGroup>
 </Project>
