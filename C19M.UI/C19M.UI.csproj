@@ -12,6 +12,8 @@
   <ItemGroup>
     <ProjectReference Include="..\C19M.D.Gumel2004\C19M.D.Gumel2004.csproj" />
     <ProjectReference Include="..\C19M.D.Gumel2006\C19M.D.Gumel2006.csproj" />
+    <ProjectReference Include="..\C19M.M.C.A.Gumel2004\C19M.M.C.A.Gumel2004.csproj" />
+    <ProjectReference Include="..\C19M.M.C.A.Gumel2006\C19M.M.C.A.Gumel2006.csproj" />
   </ItemGroup>
 
   <ItemGroup>
