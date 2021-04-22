@@ -1,0 +1,107 @@
+﻿@{
+    ViewBag.Title = "DayCumulativeDiseaseInducedDeaths";
+}
+
+<head>
+    <title>Line Chart</title>
+    <script src="~/wwwroot/Chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@1.15.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@0.2.0"></script>
+    <script src="~/Scripts/utils.js"></script>
+    <style>
+        canvas {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+    </style>
+</head>
+
+<div>
+    <canvas id="DayCumulativeDiseaseInducedDeaths_Canvas"></canvas>
+</div>
+
+<script>
+    function GenerateData(days, values) {
+        let data = [];
+
+        let i = 0;
+
+        for (; i < days.length; i++) {
+            data.push(
+                {
+                    x: luxon.DateTime.fromFormat(days[i], 'LLL dd yyyy').valueOf(),
+                    y: values[i]
+                });
+        }
+
+        return data;
+    }
+
+    const dayCumulativeDiseaseInducedDeaths_Context = document.getElementById('DayCumulativeDiseaseInducedDeaths_Canvas').getContext('2d');
+    dayCumulativeDiseaseInducedDeaths_Context.canvas.width = 1000;
+    dayCumulativeDiseaseInducedDeaths_Context.canvas.height = 300;
+
+    const color = Chart.helpers.color;
+
+    const dayCumulativeDiseaseInducedDeaths_Configuration = {
+        data: {
+            datasets: [
+                Beijing_DayCumulativeDiseaseInducedDeaths_Dataset,
+                GreaterTorontoArea_DayCumulativeDiseaseInducedDeaths_Dataset,
+                HongKong_DayCumulativeDiseaseInducedDeaths_Dataset,
+                Singapore_DayCumulativeDiseaseInducedDeaths_Dataset]
+        },
+        options: {
+            animation: {
+                duration: 0
+            },
+            scales: {
+                x: {
+                    type: 'time',
+                    distribution: 'series',
+                    offset: true,
+                    ticks: {
+                        major: {
+                            enabled: true,
+                        },
+                        fontStyle: 'bold',
+                        source: 'data',
+                        autoSkip: true,
+                        autoSkipPadding: 75,
+                        maxRotation: 0,
+                        sampleSize: 200
+                    },
+                },
+                y: {
+                    type: 'linear',
+                    gridLines: {
+                        drawBorder: false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Cumulative Number of Disease-Induced Deaths'
+                    }
+                }
+            },
+            tooltips: {
+                intersect: false,
+                mode: 'index',
+                callbacks: {
+                    label: function (tooltipItem, myData) {
+                        let label = myData.datasets[tooltipItem.datasetIndex].label || '';
+                        if (label) {
+                            label += ': ';
+                        }
+                        label += parseFloat(tooltipItem.value).toFixed(2);
+                        return label;
+                    }
+                }
+            }
+        }
+    };
+
+    const dayCumulativeDiseaseInducedDeaths_chart = new Chart(
+        dayCumulativeDiseaseInducedDeaths_Context,
+        dayCumulativeDiseaseInducedDeaths_Configuration);
+</script>
