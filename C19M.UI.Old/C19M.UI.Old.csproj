@@ -198,7 +198,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Gumel2004\Gumel2004.cshtml" />
-    <Content Include="Views\Gumel2004\Singapore.cshtml" />
     <Content Include="Views\Gumel2004\DayCumulativeDiseaseInducedDeaths.cshtml" />
     <Content Include="Views\Gumel2006\Index.cshtml" />
     <Content Include="Views\Gumel2006\Figure6.cshtml" />
