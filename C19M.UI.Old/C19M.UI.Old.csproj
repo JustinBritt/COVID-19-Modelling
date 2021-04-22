@@ -195,7 +195,6 @@
     <Compile Include="Controllers\Gumel2004Controller.cs" />
     <Compile Include="Controllers\Gumel2006Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Imports\Gumel2004\Singapore.cs" />
     <Compile Include="Imports\Gumel2006\Figure6_DiseaseTransmission.cs" />
     <Compile Include="Models\Gumel2004\Beijing.cs" />
     <Compile Include="Models\Gumel2004\GreaterTorontoArea.cs" />
@@ -221,7 +220,9 @@
     <Content Include="Views\Gumel2006\Figure6.cshtml" />
     <Content Include="Views\Gumel2006\Gumel2006.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Imports\Gumel2004\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\C19M.D.Gumel2004\C19M.D.Gumel2004.csproj">
       <Project>{1f404342-2ac9-4f8b-b5c6-3a19575ef776}</Project>
