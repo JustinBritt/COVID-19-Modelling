@@ -1,0 +1,22 @@
+﻿@model C19M.UI.Models.Gumel2004.SingaporeModel
+<div>
+    <canvas id="Singapore_Canvas"></canvas>
+</div>
+<script>
+    GenerateChartGumel(
+        'Singapore_Canvas',
+        300,
+        1000,
+        @Html.Raw(Json.Serialize(Model.Days)),
+        @Html.Raw(Json.Serialize(Model.DayCumulativeDiseaseInducedDeaths_Array)),
+        @Html.Raw(Json.Serialize(Model.DayAsymptomaticIndividuals_Array)),
+        @Html.Raw(Json.Serialize(Model.DaySymptomaticIndividuals_Array)),
+        @Html.Raw(Json.Serialize(Model.DayIsolatedIndividuals_Array)),
+        @Html.Raw(Json.Serialize(Model.DayQuarantinedIndividuals_Array)),
+        @Html.Raw(Json.Serialize(Model.DayRecoveredIndividuals_Array)),
+        @Html.Raw(Json.Serialize(Model.DaySusceptibleIndividuals_Array)),
+        'Day',
+        'Number of Individuals',
+        'Singapore'
+    );
+</script>
