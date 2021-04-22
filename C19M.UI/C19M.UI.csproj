@@ -8,7 +8,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Imports\Gumel2006\" />
     <Folder Include="Models\Gumel2004\" />
     <Folder Include="Models\Gumel2006\" />
   </ItemGroup>
