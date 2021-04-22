@@ -8,7 +8,6 @@
     using System.Web;
     using System.Web.Mvc;
 
-    // Hl7
     using Hl7.Fhir.Model;
 
     public sealed class Gumel2004Controller : Controller
