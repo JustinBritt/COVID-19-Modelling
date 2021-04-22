@@ -196,7 +196,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Gumel2006\Index.cshtml" />
     <Content Include="Views\Gumel2006\Figure6.cshtml" />
     <Content Include="Views\Gumel2006\Gumel2006.cshtml" />
   </ItemGroup>
