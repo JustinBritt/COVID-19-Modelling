@@ -215,7 +215,7 @@
                     (double)E.GetdEdt(
                         new FhirDateTime(
                             new DateTimeOffset(
-                                t.StartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date.AddDays(T))),
+                                t.StartDate.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date.AddDays(T))),
                         p,
                         β,
                         γ_1,
@@ -234,7 +234,7 @@
                     (double)I.GetdIdt(
                         new FhirDateTime(
                             new DateTimeOffset(
-                                t.StartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date.AddDays(T))),
+                                t.StartDate.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date.AddDays(T))),
                         d_1,
                         γ_2,
                         κ_1,
@@ -245,7 +245,7 @@
                     (double)J.GetdJdt(
                         new FhirDateTime(
                             new DateTimeOffset(
-                                t.StartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date.AddDays(T))),
+                                t.StartDate.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date.AddDays(T))),
                         d_2,
                         γ_2,
                         κ_2,
@@ -257,7 +257,7 @@
                     (double)Q.GetdQdt(
                         new FhirDateTime(
                             new DateTimeOffset(
-                                t.StartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date.AddDays(T))),
+                                t.StartDate.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date.AddDays(T))),
                         γ_1,
                         κ_2,
                         μ,
@@ -273,7 +273,7 @@
                     (double)S.GetdSdt(
                         new FhirDateTime(
                             new DateTimeOffset(
-                                t.StartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date.AddDays(T))),
+                                t.StartDate.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date.AddDays(T))),
                         β,
                         ε_E,
                         ε_J,

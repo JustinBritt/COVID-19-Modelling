@@ -39,7 +39,7 @@
                 t_IndexElement,
                 new FhirDecimal(
                     t.Value
-                    .Where(w => w.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date >= t.StartDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date && w.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date <= t_IndexElement.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date)
+                    .Where(w => w.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date >= t.StartDate.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date && w.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date <= t_IndexElement.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date)
                     .Select(w => dayProbableCases.GetElementAtAsdecimal(w))
                     .Max()));
         }
