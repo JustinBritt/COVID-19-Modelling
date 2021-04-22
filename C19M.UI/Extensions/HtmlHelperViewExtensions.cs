@@ -74,7 +74,7 @@
                 else if (task.IsCompleted)
                 {
                     newHttpContext.Response.Body.Position = 0;
-                    using (var reader = new StreamReader(newHttpContext.Response.Body))
+                    using (var reader = new StreamReader(newHttpContext.Response.Body, leaveOpen: true))
                         content = reader.ReadToEnd();
                 }
             });
