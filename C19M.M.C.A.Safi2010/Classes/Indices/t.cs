@@ -35,7 +35,7 @@
 
             ImmutableList<FhirDateTime>.Builder builder = ImmutableList.CreateBuilder<FhirDateTime>();
 
-            for (DateTime i = startDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date; i <= endDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date; i = i.AddDays(1))
+            for (DateTime i = startDate.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date; i <= endDate.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date; i = i.AddDays(1))
             {
                 builder.Add(
                     new FhirDateTime(

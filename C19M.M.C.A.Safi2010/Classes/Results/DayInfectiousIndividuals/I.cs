@@ -36,7 +36,7 @@
             FhirDateTime t_IndexElement)
         {
             return this.Value
-                .Where(x => x.t_IndexElement.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date == t_IndexElement.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date)
+                .Where(x => x.t_IndexElement.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date == t_IndexElement.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date)
                 .Select(x => x.Value.Value.Value)
                 .SingleOrDefault();
         }
