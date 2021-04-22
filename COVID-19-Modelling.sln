@@ -34,6 +34,8 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "C19M.M.C.SD.Gumel2004", "C1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C19M.DocFX", "C19M.DocFX\C19M.DocFX.csproj", "{3BFB9019-3171-4FF5-8B38-96C111B05F23}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C19M.UI", "C19M.UI\C19M.UI.csproj", "{0DEB44D1-587D-4050-9CE4-703AAB3A7C6F}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		C19M.M.C.SD.Gumel2004\C19M.M.C.SD.Gumel2004.projitems*{2a22d5a0-c483-4a72-9e19-3ae9392fca03}*SharedItemsImports = 13
@@ -91,6 +93,10 @@ Global
 		{3BFB9019-3171-4FF5-8B38-96C111B05F23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BFB9019-3171-4FF5-8B38-96C111B05F23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BFB9019-3171-4FF5-8B38-96C111B05F23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DEB44D1-587D-4050-9CE4-703AAB3A7C6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DEB44D1-587D-4050-9CE4-703AAB3A7C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DEB44D1-587D-4050-9CE4-703AAB3A7C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DEB44D1-587D-4050-9CE4-703AAB3A7C6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
