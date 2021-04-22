@@ -5,6 +5,7 @@
 
   <ItemGroup>
     <PackageReference Include="Chart.js" Version="2.9.3" />
+    <PackageReference Include="Modernizr" Version="2.8.3" />
     <PackageReference Include="Moment.js" Version="2.29.1" />
   </ItemGroup>
 
