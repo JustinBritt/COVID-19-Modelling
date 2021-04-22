@@ -11,9 +11,34 @@
 
     public sealed class Gumel2004Controller : Controller
     {
-        public IActionResult Index()
+        // GET: Gumel2004
+        public IActionResult Gumel2004()
         {
-            return View();
+            return PartialView();
+        }
+
+        public IActionResult Beijing()
+        {
+            return PartialView(
+                new C19M.UI.Models.Gumel2004.BeijingModel());
+        }
+
+        public IActionResult GreaterTorontoArea()
+        {
+            return PartialView(
+                new C19M.UI.Models.Gumel2004.GreaterTorontoAreaModel());
+        }
+
+        public IActionResult HongKong()
+        {
+            return PartialView(
+                new C19M.UI.Models.Gumel2004.HongKongModel());
+        }
+
+        public IActionResult Singapore()
+        {
+            return PartialView(
+                new C19M.UI.Models.Gumel2004.SingaporeModel());
         }
     }
 }
