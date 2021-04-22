@@ -6,4 +6,9 @@
   <ItemGroup>
     <PackageReference Include="Moment.js" Version="2.29.1" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\Gumel2004\" />
+    <Folder Include="Models\Gumel2006\" />
+  </ItemGroup>
 </Project>
