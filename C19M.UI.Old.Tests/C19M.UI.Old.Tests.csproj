@@ -100,9 +100,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\C19M.UI\C19M.UI.csproj">
+    <ProjectReference Include="..\C19M.UI\C19M.UI,Old.csproj">
       <Project>{2A31E757-80DE-40BE-AD13-696461B0080A}</Project>
-      <Name>C19M.UI</Name>
+      <Name>C19M.UI,Old</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
