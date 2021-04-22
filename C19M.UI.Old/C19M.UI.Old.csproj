@@ -195,7 +195,6 @@
     <Compile Include="Controllers\Gumel2004Controller.cs" />
     <Compile Include="Controllers\Gumel2006Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Imports\Gumel2004\GreaterTorontoArea.cs" />
     <Compile Include="Imports\Gumel2004\HongKong.cs" />
     <Compile Include="Imports\Gumel2004\Singapore.cs" />
     <Compile Include="Imports\Gumel2006\Figure6_DiseaseTransmission.cs" />
