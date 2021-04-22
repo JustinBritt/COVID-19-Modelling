@@ -25,9 +25,9 @@
             Func<FhirDateTime, PositiveInt> numberDaysAfterStartDate =
             (x) =>
             {
-                if (x.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date >= startDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date)
+                if (x.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date >= startDate.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date)
                 {
-                    return new PositiveInt((int)Math.Abs(Math.Round((x.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date - startDate.ToPartialDateTime().Value.ToUniversalTime().DateTime.Date).TotalDays)));
+                    return new PositiveInt((int)Math.Abs(Math.Round((x.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date - startDate.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date).TotalDays)));
                 }
                 else
                 {
