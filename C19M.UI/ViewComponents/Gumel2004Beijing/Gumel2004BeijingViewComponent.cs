@@ -14,7 +14,8 @@
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            return View();
+            return View(
+                new C19M.UI.Models.Gumel2004.BeijingModel());
         }
     }
 }
