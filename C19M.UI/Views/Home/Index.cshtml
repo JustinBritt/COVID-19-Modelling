@@ -2,7 +2,7 @@
     ViewData["Title"] = "Home Page";
 }
 
-<script src="~/lib/moment/dist/moment.js"></script>
+@*<script src="~/lib/moment/dist/moment.js"></script>
 <script src="~/lib/chart.js/dist/Chart.js"></script>
 <script src="~/lib/luxon/dist/luxon.js"></script>
 <script src="~/lib/chartjs-adapter-luxon/dist/chartjs-adapter-luxon.js"></script>
@@ -10,4 +10,6 @@
 <script src="~/js/Gumel2006.js"></script>
 <script src="~/js/utils.js"></script>
 
-@Html.Action("Gumel2004", "Gumel2004")
+@Html.Action("Gumel2004", "Gumel2004")*@
+
+@await Component.InvokeAsync("Gumel2004")
