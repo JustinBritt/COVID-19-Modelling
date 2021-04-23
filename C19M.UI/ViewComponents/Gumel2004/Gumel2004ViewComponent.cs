@@ -1,4 +1,4 @@
-﻿namespace ViewComponentSample.ViewComponents
+﻿namespace ViewComponentSample.ViewComponents.Gumel2004
 {
     using Microsoft.AspNetCore.Mvc;
 
