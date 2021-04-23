@@ -1,4 +1,4 @@
-﻿namespace ViewComponentSample.ViewComponents.Gumel2004
+﻿namespace ViewComponentSample.ViewComponents.Gumel2004Beijing
 {
     using Microsoft.AspNetCore.Mvc;
 
@@ -6,18 +6,15 @@
     using System.Linq;
     using System.Threading.Tasks;
 
-    public class BeijingViewComponent : ViewComponent
+    public class Gumel2004BeijingViewComponent : ViewComponent
     {
-        public BeijingViewComponent()
+        public Gumel2004BeijingViewComponent()
         {
         }
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            string MyView = "Beijing2004";
-
-            return View(
-                MyView);
+            return View();
         }
     }
 }
