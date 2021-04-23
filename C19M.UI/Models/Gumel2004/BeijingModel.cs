@@ -21,7 +21,7 @@
         public C19M.UI.Imports.Gumel2004.Beijing Import { get; set; }
 
         // TODO: Update
-        public string[] Days => this.Import.DayCumulativeDiseaseInducedDeaths.Select(w => w.Item1.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date.ToString("MMM dd yyyy")).ToArray();
+        public string[] Days => this.Import.DayCumulativeDiseaseInducedDeaths.Select(w => w.Item1.ToDateTimeOffset(TimeSpan.Zero).UtcDateTime.Date.ToString("MMM dd yyyy").Replace(".", string.Empty)).ToArray();
 
         public decimal[] DayCumulativeDiseaseInducedDeaths_Array => this.Import.DayCumulativeDiseaseInducedDeaths.Select(w => w.Item2.Value.Value).ToArray();
 
