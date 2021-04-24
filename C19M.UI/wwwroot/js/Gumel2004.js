@@ -10,7 +10,7 @@
     {
         data.push(
             {
-                x: luxon.DateTime.fromISO(days[i]).DateTime,
+                x: luxon.DateTime.fromISO(days[i]),
                 y: values[i]
             });
     }
@@ -27,7 +27,7 @@ function GenerateLabels(
     for (; i < days.length; i++) {
         data.push(
             {
-                x: luxon.DateTime.fromISO(days[i]).DateTime
+                x: luxon.DateTime.fromISO(days[i])
             });
     }
 
