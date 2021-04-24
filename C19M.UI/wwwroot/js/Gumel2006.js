@@ -1,6 +1,7 @@
 ﻿function GenerateDataGumel2006(
     days,
-    values) {
+    values)
+{
     let data = [];
 
     let i = 0;
@@ -28,7 +29,8 @@ function GenerateChartGumel2006(
     dayVaccinatedIndividuals,
     configuration_options_scales_x_scaleLabel_labelString,
     configuration_options_scales_y_scaleLabel_labelString,
-    configuration_options_title_text) {
+    configuration_options_title_text)
+{
 
     const context = document.getElementById(canvas).getContext('2d');
     context.canvas.width = context_canvas_width;
@@ -36,7 +38,8 @@ function GenerateChartGumel2006(
 
     const color = Chart.helpers.color;
 
-    let dayLatentIndividualsDataset = {
+    let dayLatentIndividualsDataset =
+    {
         label: 'Latent Individuals',
         backgroundColor: color(window.chartColors.purple).alpha(0.5).rgbString(),
         borderColor: window.chartColors.purple,
@@ -50,7 +53,8 @@ function GenerateChartGumel2006(
         borderWidth: 2
     };
 
-    let dayInfectedIndividualsDataset = {
+    let dayInfectedIndividualsDataset =
+    {
         label: 'Infected Individuals',
         backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
         borderColor: window.chartColors.red,
@@ -64,7 +68,8 @@ function GenerateChartGumel2006(
         borderWidth: 2
     };
 
-    let dayTreatedIndividualsDataset = {
+    let dayTreatedIndividualsDataset =
+    {
         label: 'Treated Individuals',
         backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
         borderColor: window.chartColors.blue,
@@ -78,7 +83,8 @@ function GenerateChartGumel2006(
         borderWidth: 2
     };
 
-    let daySusceptibleIndividualsDataset = {
+    let daySusceptibleIndividualsDataset =
+    {
         label: 'Susceptible Individuals',
         backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
         borderColor: window.chartColors.blue,
@@ -92,7 +98,8 @@ function GenerateChartGumel2006(
         borderWidth: 2
     };
 
-    let dayVaccinatedIndividualsDataset = {
+    let dayVaccinatedIndividualsDataset =
+    {
         label: 'Vaccinated Individuals',
         backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
         borderColor: window.chartColors.blue,
@@ -106,8 +113,10 @@ function GenerateChartGumel2006(
         borderWidth: 2
     };
 
-    const configuration = {
-        data: {
+    const configuration =
+    {
+        data:
+        {
             datasets: [
                 dayLatentIndividualsDataset,
                 dayInfectedIndividualsDataset,
@@ -115,18 +124,24 @@ function GenerateChartGumel2006(
                 daySusceptibleIndividualsDataset,
                 dayVaccinatedIndividualsDataset]
         },
-        options: {
-            scales: {
-                x: {
+        options:
+        {
+            scales:
+            {
+                x:
+                {
                     type: 'time',
                     distribution: 'series',
-                    scaleLabel: {
+                    scaleLabel:
+                    {
                         display: true,
                         labelString: configuration_options_scales_x_scaleLabel_labelString
                     },
                     offset: true,
-                    ticks: {
-                        major: {
+                    ticks:
+                    {
+                        major:
+                        {
                             enabled: true,
                         },
                         fontStyle: 'bold',
@@ -137,32 +152,42 @@ function GenerateChartGumel2006(
                         sampleSize: 200
                     },
                 },
-                y: {
+                y:
+                {
                     type: 'linear',
-                    gridLines: {
+                    gridLines:
+                    {
                         drawBorder: false
                     },
-                    scaleLabel: {
+                    scaleLabel:
+                    {
                         display: true,
                         labelString: configuration_options_scales_y_scaleLabel_labelString
                     }
                 }
             },
-            title: {
+            title:
+            {
                 display: true,
                 text: configuration_options_title_text
             },
-            plugins: {
-                tooltip: {
-                    callbacks: {
-                        label: function (context) {
+            plugins:
+            {
+                tooltip:
+                {
+                    callbacks:
+                    {
+                        label: function (context)
+                        {
                             var label = context.dataset.label || '';
 
-                            if (label) {
+                            if (label)
+                            {
                                 label += ': ';
                             }
 
-                            if (context.parsed.y !== null) {
+                            if (context.parsed.y !== null)
+                            {
                                 label += parseFloat(context.parsed.y).toFixed(2);
                             }
 
