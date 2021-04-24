@@ -168,9 +168,6 @@ function GenerateChartGumel(
                 daySusceptibleIndividuals_Dataset]
         },
         options: {
-            animation: {
-                duration: 0
-            },
             scales: {
                 x: {
                     max: moment(days[days.length - 1]).valueOf(),
