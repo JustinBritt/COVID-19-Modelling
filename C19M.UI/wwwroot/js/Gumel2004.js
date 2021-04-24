@@ -10,7 +10,7 @@
     {
         data.push(
             {
-                x: luxon.DateTime.fromISO(days[i]),
+                x: moment(days[i]),
                 y: values[i]
             });
     }
@@ -27,7 +27,7 @@ function GenerateLabels(
     for (; i < days.length; i++) {
         data.push(
             {
-                x: luxon.DateTime.fromISO(days[i])
+                x: moment(days[i])
             });
     }
 
@@ -175,6 +175,8 @@ function GenerateChartGumel(
                 x: {
                     type: 'time',
                     time: {
+                        max: moment(days[days.length - 1]).valueOf(),
+                        min: moment(days[0]).valueOf(),
                         unit: 'day',
                         unitStepSize: 1,
                         displayFormats: {
@@ -192,7 +194,7 @@ function GenerateChartGumel(
                             enabled: true,
                         },
                         fontStyle: 'bold',
-                        source: 'labels',
+                        source: 'auto',
                         autoSkip: true,
                         autoSkipPadding: 75,
                         maxRotation: 0,
