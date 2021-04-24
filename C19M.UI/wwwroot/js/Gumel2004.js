@@ -10,7 +10,7 @@
     {
         data.push(
             {
-                x: luxon.DateTime.fromISO(days[i]).valueOf(),
+                x: luxon.DateTime.fromISO(days[i]).DateTime,
                 y: values[i]
             });
     }
@@ -27,7 +27,7 @@ function GenerateLabels(
     for (; i < days.length; i++) {
         data.push(
             {
-                x: luxon.DateTime.fromISO(days[i]).valueOf()
+                x: luxon.DateTime.fromISO(days[i]).DateTime
             });
     }
 
@@ -173,10 +173,14 @@ function GenerateChartGumel(
             },
             scales: {
                 x: {
-                    type: 'linear',
-                    //time: {
-                    //    unit: 'month'
-                    //},
+                    type: 'time',
+                    time: {
+                        unit: 'day',
+                        unitStepSize: 1,
+                        displayFormats: {
+                            'day': 'MMM DD'
+                        }
+                    },
                     distribution: 'series',
                     scaleLabel: {
                         display: true,
