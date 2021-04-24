@@ -1,4 +1,6 @@
-﻿function GenerateDataGumel2006(days, values) {
+﻿function GenerateDataGumel2006(
+    days,
+    values) {
     let data = [];
 
     let i = 0;
