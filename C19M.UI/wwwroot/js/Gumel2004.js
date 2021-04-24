@@ -6,7 +6,7 @@
     for (; i < days.length; i++) {
         data.push(
             {
-                x: luxon.DateTime.fromFormat(days[i], 'LLL dd yyyy').valueOf(),
+                x: luxon.DateTime.fromISO(days[i]).valueOf(),
                 y: values[i]
             });
     }
