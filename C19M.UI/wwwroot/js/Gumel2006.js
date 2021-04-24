@@ -116,9 +116,6 @@ function GenerateChartGumel2006(
                 dayVaccinatedIndividualsDataset]
         },
         options: {
-            animation: {
-                duration: 0
-            },
             scales: {
                 x: {
                     type: 'time',
