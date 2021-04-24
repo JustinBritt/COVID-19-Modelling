@@ -1,4 +1,4 @@
-﻿function GenerateData_Gumel2006(days, values) {
+﻿function GenerateDataGumel2006(days, values) {
     let data = [];
 
     let i = 0;
@@ -14,7 +14,7 @@
     return data;
 }
 
-function GenerateChart_Gumel2006(
+function GenerateChartGumel2006(
     canvas,
     context_canvas_height,
     context_canvas_width,
@@ -38,7 +38,7 @@ function GenerateChart_Gumel2006(
         label: 'Latent Individuals',
         backgroundColor: color(window.chartColors.purple).alpha(0.5).rgbString(),
         borderColor: window.chartColors.purple,
-        data: GenerateData_Gumel2006(days, dayLatentIndividuals),
+        data: GenerateDataGumel2006(days, dayLatentIndividuals),
         type: 'line',
         pointRadius: 0,
         fill: false,
@@ -50,7 +50,7 @@ function GenerateChart_Gumel2006(
         label: 'Infected Individuals',
         backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
         borderColor: window.chartColors.red,
-        data: GenerateData_Gumel2006(days, dayInfectedIndividuals),
+        data: GenerateDataGumel2006(days, dayInfectedIndividuals),
         type: 'line',
         pointRadius: 0,
         fill: false,
@@ -62,7 +62,7 @@ function GenerateChart_Gumel2006(
         label: 'Treated Individuals',
         backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
         borderColor: window.chartColors.blue,
-        data: GenerateData_Gumel2006(days, dayTreatedIndividuals),
+        data: GenerateDataGumel2006(days, dayTreatedIndividuals),
         type: 'line',
         pointRadius: 0,
         fill: false,
@@ -74,7 +74,7 @@ function GenerateChart_Gumel2006(
         label: 'Susceptible Individuals',
         backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
         borderColor: window.chartColors.blue,
-        data: GenerateData_Gumel2006(days, daySusceptibleIndividuals),
+        data: GenerateDataGumel2006(days, daySusceptibleIndividuals),
         type: 'line',
         pointRadius: 0,
         fill: false,
@@ -86,7 +86,7 @@ function GenerateChart_Gumel2006(
         label: 'Vaccinated Individuals',
         backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
         borderColor: window.chartColors.blue,
-        data: GenerateData_Gumel2006(days, dayVaccinatedIndividuals),
+        data: GenerateDataGumel2006(days, dayVaccinatedIndividuals),
         type: 'line',
         pointRadius: 0,
         fill: false,
