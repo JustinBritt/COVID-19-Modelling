@@ -8,7 +8,7 @@
     for (; i < days.length; i++) {
         data.push(
             {
-                x: luxon.DateTime.fromFormat(days[i], 'LLL dd yyyy').valueOf(),
+                x: moment(days[i]),
                 y: values[i]
             });
     }
