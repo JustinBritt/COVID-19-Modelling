@@ -208,17 +208,21 @@ function GenerateChartGumel(
                 display: true,
                 text: configuration_options_title_text
             },
-            tooltips: {
-                intersect: false,
-                mode: 'index',
-                callbacks: {
-                    label: function (tooltipItem, myData) {
-                        let label = myData.datasets[tooltipItem.datasetIndex].label || '';
-                        if (label) {
-                            label += ': ';
+            plugins:
+            {
+                tooltip: {
+                    enabled: true,
+                    intersect: false,
+                    mode: 'index',
+                    callbacks: {
+                        label: function (tooltipItem, myData) {
+                            let label = myData.datasets[tooltipItem.datasetIndex].label || '';
+                            if (label) {
+                                label += ': ';
+                            }
+                            label += parseFloat(tooltipItem.value).toFixed(2);
+                            return label;
                         }
-                        label += parseFloat(tooltipItem.value).toFixed(2);
-                        return label;
                     }
                 }
             }
