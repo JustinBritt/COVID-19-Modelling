@@ -36,7 +36,7 @@ function GenerateChartGumel2006(
 
     const color = Chart.helpers.color;
 
-    let dayLatentIndividuals_Dataset = {
+    let dayLatentIndividualsDataset = {
         label: 'Latent Individuals',
         backgroundColor: color(window.chartColors.purple).alpha(0.5).rgbString(),
         borderColor: window.chartColors.purple,
@@ -48,7 +48,7 @@ function GenerateChartGumel2006(
         borderWidth: 2
     };
 
-    let dayInfectedIndividuals_Dataset = {
+    let dayInfectedIndividualsDataset = {
         label: 'Infected Individuals',
         backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
         borderColor: window.chartColors.red,
@@ -60,7 +60,7 @@ function GenerateChartGumel2006(
         borderWidth: 2
     };
 
-    let dayTreatedIndividuals_Dataset = {
+    let dayTreatedIndividualsDataset = {
         label: 'Treated Individuals',
         backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
         borderColor: window.chartColors.blue,
@@ -72,7 +72,7 @@ function GenerateChartGumel2006(
         borderWidth: 2
     };
 
-    let daySusceptibleIndividuals_Dataset = {
+    let daySusceptibleIndividualsDataset = {
         label: 'Susceptible Individuals',
         backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
         borderColor: window.chartColors.blue,
@@ -84,7 +84,7 @@ function GenerateChartGumel2006(
         borderWidth: 2
     };
 
-    let dayVaccinatedIndividuals_Dataset = {
+    let dayVaccinatedIndividualsDataset = {
         label: 'Vaccinated Individuals',
         backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
         borderColor: window.chartColors.blue,
@@ -99,11 +99,11 @@ function GenerateChartGumel2006(
     const configuration = {
         data: {
             datasets: [
-                dayLatentIndividuals_Dataset,
-                dayInfectedIndividuals_Dataset,
-                dayTreatedIndividuals_Dataset,
-                daySusceptibleIndividuals_Dataset,
-                dayVaccinatedIndividuals_Dataset]
+                dayLatentIndividualsDataset,
+                dayInfectedIndividualsDataset,
+                dayTreatedIndividualsDataset,
+                daySusceptibleIndividualsDataset,
+                dayVaccinatedIndividualsDataset]
         },
         options: {
             animation: {
