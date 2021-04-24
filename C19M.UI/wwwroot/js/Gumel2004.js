@@ -173,7 +173,10 @@ function GenerateChartGumel(
             },
             scales: {
                 x: {
-                    type: 'time',
+                    type: 'linear',
+                    //time: {
+                    //    unit: 'month'
+                    //},
                     distribution: 'series',
                     scaleLabel: {
                         display: true,
