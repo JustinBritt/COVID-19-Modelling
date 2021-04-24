@@ -18,6 +18,22 @@
     return data;
 }
 
+function GenerateLabels(
+    days) {
+    let data = [];
+
+    let i = 0;
+
+    for (; i < days.length; i++) {
+        data.push(
+            {
+                x: luxon.DateTime.fromISO(days[i]).valueOf()
+            });
+    }
+
+    return data;
+}
+
 function GenerateChartGumel(
     canvas,
     context_canvas_height,
@@ -141,6 +157,8 @@ function GenerateChartGumel(
     const configuration = {
         type: 'line',
         data: {
+            labels: GenerateLabels(
+                days),
             datasets: [
                 dayAsymptomaticIndividuals_Dataset,
                 daySymptomaticIndividuals_Dataset,
