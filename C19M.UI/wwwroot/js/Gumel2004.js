@@ -175,15 +175,7 @@ function GenerateChartGumel(
                 x: {
                     max: moment(days[days.length - 1]).valueOf(),
                     min: moment(days[0]).valueOf(),
-                    type: 'time',
-                    time: {
-                        unit: 'day',
-                        unitStepSize: 1,
-                        displayFormats: {
-                            'day': 'MMM DD'
-                        }
-                    },
-                    distribution: 'series',
+                    type: 'timeseries',
                     title: {
                         display: true,
                         text: configuration_options_scales_x_scaleLabel_labelString
