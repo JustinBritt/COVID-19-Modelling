@@ -1,9 +1,13 @@
-﻿function GenerateData(days, values) {
+﻿function GenerateData(
+    days,
+    values)
+{
     let data = [];
 
     let i = 0;
 
-    for (; i < days.length; i++) {
+    for (; i < days.length; i++)
+    {
         data.push(
             {
                 x: luxon.DateTime.fromISO(days[i]).valueOf(),
