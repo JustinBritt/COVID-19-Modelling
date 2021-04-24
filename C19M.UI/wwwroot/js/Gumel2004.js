@@ -56,7 +56,7 @@ function GenerateChartGumel(
 
     const color = Chart.helpers.color;
 
-    let dayCumulativeDiseaseInducedDeaths_Dataset = {
+    let dayCumulativeDiseaseInducedDeathsDataset = {
         label: 'Beijing',
         backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
         borderColor: window.chartColors.orange,
@@ -70,7 +70,7 @@ function GenerateChartGumel(
         borderWidth: 2
     };
 
-    let dayAsymptomaticIndividuals_Dataset = {
+    let dayAsymptomaticIndividualsDataset = {
         label: 'Asymptomatic Individuals',
         backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
         borderColor: window.chartColors.red,
@@ -84,7 +84,7 @@ function GenerateChartGumel(
         borderWidth: 2
     };
 
-    let daySymptomaticIndividuals_Dataset = {
+    let daySymptomaticIndividualsDataset = {
         label: 'Symptomatic Individuals',
         backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
         borderColor: window.chartColors.orange,
@@ -98,7 +98,7 @@ function GenerateChartGumel(
         borderWidth: 2
     };
 
-    let dayIsolatedIndividuals_Dataset = {
+    let dayIsolatedIndividualsDataset = {
         label: 'Isolated Individuals',
         backgroundColor: color(window.chartColors.yellow).alpha(0.5).rgbString(),
         borderColor: window.chartColors.yellow,
@@ -112,7 +112,7 @@ function GenerateChartGumel(
         borderWidth: 2
     };
 
-    let dayQuarantinedIndividuals_Dataset = {
+    let dayQuarantinedIndividualsDataset = {
         label: 'Quarantined Individuals',
         backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
         borderColor: window.chartColors.green,
@@ -126,7 +126,7 @@ function GenerateChartGumel(
         borderWidth: 2
     };
 
-    let dayRecoveredIndividuals_Dataset = {
+    let dayRecoveredIndividualsDataset = {
         label: 'Recovered Individuals',
         backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
         borderColor: window.chartColors.blue,
@@ -140,7 +140,7 @@ function GenerateChartGumel(
         borderWidth: 2
     };
 
-    let daySusceptibleIndividuals_Dataset = {
+    let daySusceptibleIndividualsDataset = {
         label: 'Susceptible Individuals',
         backgroundColor: color(window.chartColors.purple).alpha(0.5).rgbString(),
         borderColor: window.chartColors.purple,
@@ -160,12 +160,12 @@ function GenerateChartGumel(
             labels: GenerateLabels(
                 days),
             datasets: [
-                dayAsymptomaticIndividuals_Dataset,
-                daySymptomaticIndividuals_Dataset,
-                dayIsolatedIndividuals_Dataset,
-                dayQuarantinedIndividuals_Dataset,
-                dayRecoveredIndividuals_Dataset,
-                daySusceptibleIndividuals_Dataset]
+                dayAsymptomaticIndividualsDataset,
+                daySymptomaticIndividualsDataset,
+                dayIsolatedIndividualsDataset,
+                dayQuarantinedIndividualsDataset,
+                dayRecoveredIndividualsDataset,
+                daySusceptibleIndividualsDataset]
         },
         options: {
             scales: {
