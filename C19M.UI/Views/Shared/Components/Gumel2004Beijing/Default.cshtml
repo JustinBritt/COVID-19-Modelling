@@ -1,10 +1,10 @@
 ﻿@model C19M.UI.Models.Gumel2004.BeijingModel
 <div>
-    <canvas id="Beijing_Canvas"></canvas>
+    <canvas id="BeijingCanvas"></canvas>
 </div>
 <script>
     GenerateChartGumel(
-        'Beijing_Canvas',
+        'BeijingCanvas',
         300,
         1000,
         @Html.Raw(Json.Serialize(Model.Days)),
