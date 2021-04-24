@@ -121,6 +121,7 @@ function GenerateChartGumel(
     };
 
     const configuration = {
+        type: 'line',
         data: {
             datasets: [
                 dayAsymptomaticIndividuals_Dataset,
