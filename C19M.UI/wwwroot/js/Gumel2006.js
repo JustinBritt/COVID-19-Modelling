@@ -132,10 +132,10 @@ function GenerateChartGumel2006(
                 {
                     type: 'time',
                     distribution: 'series',
-                    scaleLabel:
+                    title:
                     {
                         display: true,
-                        labelString: configuration_options_scales_x_scaleLabel_labelString
+                        text: configuration_options_scales_x_scaleLabel_labelString
                     },
                     offset: true,
                     ticks:
@@ -159,10 +159,10 @@ function GenerateChartGumel2006(
                     {
                         drawBorder: false
                     },
-                    scaleLabel:
+                    title:
                     {
                         display: true,
-                        labelString: configuration_options_scales_y_scaleLabel_labelString
+                        text: configuration_options_scales_y_scaleLabel_labelString
                     }
                 }
             },
