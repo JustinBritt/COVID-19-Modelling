@@ -192,7 +192,7 @@ function GenerateChartGumel(
                             enabled: true,
                         },
                         fontStyle: 'bold',
-                        source: 'data',
+                        source: 'labels',
                         autoSkip: true,
                         autoSkipPadding: 75,
                         maxRotation: 0,
