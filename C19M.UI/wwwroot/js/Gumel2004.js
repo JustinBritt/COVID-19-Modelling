@@ -173,10 +173,10 @@ function GenerateChartGumel(
             },
             scales: {
                 x: {
+                    max: moment(days[days.length - 1]).valueOf(),
+                    min: moment(days[0]).valueOf(),
                     type: 'time',
                     time: {
-                        max: moment(days[days.length - 1]).valueOf(),
-                        min: moment(days[0]).valueOf(),
                         unit: 'day',
                         unitStepSize: 1,
                         displayFormats: {
