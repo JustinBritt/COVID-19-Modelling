@@ -152,17 +152,22 @@ function GenerateChartGumel2006(
                 display: true,
                 text: configuration_options_title_text
             },
-            tooltips: {
-                intersect: false,
-                mode: 'index',
-                callbacks: {
-                    label: function (tooltipItem, myData) {
-                        let label = myData.datasets[tooltipItem.datasetIndex].label || '';
-                        if (label) {
-                            label += ': ';
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        label: function (context) {
+                            var label = context.dataset.label || '';
+
+                            if (label) {
+                                label += ': ';
+                            }
+
+                            if (context.parsed.y !== null) {
+                                label += parseFloat(context.parsed.y).toFixed(2);
+                            }
+
+                            return label;
                         }
-                        label += parseFloat(tooltipItem.value).toFixed(2);
-                        return label;
                     }
                 }
             }
