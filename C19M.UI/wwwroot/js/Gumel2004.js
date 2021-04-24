@@ -1,4 +1,4 @@
-﻿function GenerateData(
+﻿function GenerateDataGumel2004(
     days,
     values)
 {
@@ -18,7 +18,7 @@
     return data;
 }
 
-function GenerateLabels(
+function GenerateLabelsGumel2004(
     days) {
     let data = [];
 
@@ -60,7 +60,7 @@ function GenerateChartGumel(
         label: 'Beijing',
         backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
         borderColor: window.chartColors.orange,
-        data: GenerateData(
+        data: GenerateDataGumel2004(
             days,
             dayCumulativeDiseaseInducedDeaths),
         type: 'line',
@@ -74,7 +74,7 @@ function GenerateChartGumel(
         label: 'Asymptomatic Individuals',
         backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
         borderColor: window.chartColors.red,
-        data: GenerateData(
+        data: GenerateDataGumel2004(
             days,
             dayAsymptomaticIndividuals),
         type: 'line',
@@ -88,7 +88,7 @@ function GenerateChartGumel(
         label: 'Symptomatic Individuals',
         backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
         borderColor: window.chartColors.orange,
-        data: GenerateData(
+        data: GenerateDataGumel2004(
             days,
             daySymptomaticIndividuals),
         type: 'line',
@@ -102,7 +102,7 @@ function GenerateChartGumel(
         label: 'Isolated Individuals',
         backgroundColor: color(window.chartColors.yellow).alpha(0.5).rgbString(),
         borderColor: window.chartColors.yellow,
-        data: GenerateData(
+        data: GenerateDataGumel2004(
             days,
             dayIsolatedIndividuals),
         type: 'line',
@@ -116,7 +116,7 @@ function GenerateChartGumel(
         label: 'Quarantined Individuals',
         backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
         borderColor: window.chartColors.green,
-        data: GenerateData(
+        data: GenerateDataGumel2004(
             days,
             dayQuarantinedIndividuals),
         type: 'line',
@@ -130,7 +130,7 @@ function GenerateChartGumel(
         label: 'Recovered Individuals',
         backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
         borderColor: window.chartColors.blue,
-        data: GenerateData(
+        data: GenerateDataGumel2004(
             days,
             dayRecoveredIndividuals),
         type: 'line',
@@ -144,7 +144,7 @@ function GenerateChartGumel(
         label: 'Susceptible Individuals',
         backgroundColor: color(window.chartColors.purple).alpha(0.5).rgbString(),
         borderColor: window.chartColors.purple,
-        data: GenerateData(
+        data: GenerateDataGumel2004(
             days,
             daySusceptibleIndividuals),
         type: 'line',
@@ -157,7 +157,7 @@ function GenerateChartGumel(
     const configuration = {
         type: 'line',
         data: {
-            labels: GenerateLabels(
+            labels: GenerateLabelsGumel2004(
                 days),
             datasets: [
                 dayAsymptomaticIndividualsDataset,
