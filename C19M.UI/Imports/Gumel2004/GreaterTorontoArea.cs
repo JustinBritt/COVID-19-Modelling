@@ -10,7 +10,6 @@
 
     public sealed class GreaterTorontoArea
     {
-        // Constructor
         public GreaterTorontoArea()
         {
             C19M.D.Gumel2004.Interfaces.IGreaterTorontoArea GreaterTorontoArea = new C19M.D.Gumel2004.Classes.GreaterTorontoArea();

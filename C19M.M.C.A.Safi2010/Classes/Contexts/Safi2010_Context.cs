@@ -17,7 +17,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public Safi2010_Context(
             FhirDateTime endDate,
             Func<FhirDateTime, PositiveInt> numberDaysAfterStartDate,

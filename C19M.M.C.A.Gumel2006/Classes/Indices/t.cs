@@ -17,7 +17,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public t(
             FhirDateTime endDate,
             Func<FhirDateTime, PositiveInt> numberDaysAfterStartDate,

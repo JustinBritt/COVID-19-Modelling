@@ -16,7 +16,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public Gumel2004_Context(
             FhirDateTime endDate,
             Func<FhirDateTime, PositiveInt> numberDaysAfterStartDate,

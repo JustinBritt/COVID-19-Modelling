@@ -64,7 +64,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public Gumel2004_Model(
             IGumel2004_Context context)
         {

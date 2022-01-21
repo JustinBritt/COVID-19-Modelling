@@ -12,7 +12,6 @@
 
     public sealed class Singapore
     {
-        // Constructor
         public Singapore()
         {
             C19M.D.Gumel2004.Interfaces.ISingapore Singapore = new C19M.D.Gumel2004.Classes.Singapore();

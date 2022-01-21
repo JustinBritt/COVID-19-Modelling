@@ -32,7 +32,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public Gumel2004_Export(
             IGumel2004_Context Gumel2004_Context)
         {

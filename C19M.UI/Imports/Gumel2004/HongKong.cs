@@ -10,7 +10,6 @@
 
     public sealed class HongKong
     {
-        // Constructor
         public HongKong()
         {
             C19M.D.Gumel2004.Interfaces.IHongKong HongKong = new C19M.D.Gumel2004.Classes.HongKong();

@@ -9,7 +9,6 @@
 
     public sealed class GreaterTorontoAreaModel
     {
-        // Constructor
         public GreaterTorontoAreaModel()
         {
             // Imports

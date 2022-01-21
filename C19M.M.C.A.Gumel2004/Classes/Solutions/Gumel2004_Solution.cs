@@ -57,7 +57,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public Gumel2004_Solution()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);

@@ -7,7 +7,6 @@
 
     public sealed class Figure6Model
     {
-        // Constructor
         public Figure6Model()
         {
             // Imports

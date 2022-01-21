@@ -11,7 +11,6 @@
 
     public sealed class HongKongModel
     {
-        // Constructor
         public HongKongModel()
         {
             // Imports

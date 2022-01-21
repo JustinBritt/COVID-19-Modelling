@@ -11,7 +11,6 @@
 
     public sealed class SingaporeModel
     {
-        // Constructor
         public SingaporeModel()
         {
             // Imports

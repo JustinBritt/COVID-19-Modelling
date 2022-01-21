@@ -12,7 +12,6 @@
 
     public sealed class Beijing
     {
-        // Constructor
         public Beijing()
         {
             C19M.D.Gumel2004.Interfaces.IBeijing Beijing = new C19M.D.Gumel2004.Classes.Beijing();

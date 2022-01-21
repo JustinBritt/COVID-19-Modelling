@@ -11,7 +11,6 @@
 
     public sealed class BeijingModel
     {
-        // Constructor
         public BeijingModel()
         {
             // Imports
