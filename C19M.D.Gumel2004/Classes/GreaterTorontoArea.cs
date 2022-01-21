@@ -19,7 +19,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public GreaterTorontoArea()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);

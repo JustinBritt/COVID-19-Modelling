@@ -19,7 +19,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public Beijing()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);

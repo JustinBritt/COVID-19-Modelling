@@ -19,7 +19,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public Table1()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
