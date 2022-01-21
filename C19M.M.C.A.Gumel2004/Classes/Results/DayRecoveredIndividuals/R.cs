@@ -19,7 +19,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public R(
             ImmutableList<IR_ResultElement> value)
         {

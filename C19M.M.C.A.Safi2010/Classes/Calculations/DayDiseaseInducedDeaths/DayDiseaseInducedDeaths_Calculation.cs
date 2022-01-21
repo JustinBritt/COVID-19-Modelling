@@ -23,7 +23,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public DayDiseaseInducedDeaths_Calculation()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);

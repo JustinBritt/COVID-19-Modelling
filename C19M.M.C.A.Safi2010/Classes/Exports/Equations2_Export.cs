@@ -17,7 +17,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public Equations2_Export()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);

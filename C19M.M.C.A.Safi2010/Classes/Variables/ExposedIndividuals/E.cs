@@ -23,7 +23,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public E(
             FhirDecimal initialValue)
         {

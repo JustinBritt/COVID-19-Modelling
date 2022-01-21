@@ -46,7 +46,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public DiseaseTransmission_Model(
             IGumel2006_Context context)
         {

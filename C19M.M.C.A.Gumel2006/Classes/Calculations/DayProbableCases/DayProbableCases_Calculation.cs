@@ -24,7 +24,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public DayProbableCases_Calculation()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);

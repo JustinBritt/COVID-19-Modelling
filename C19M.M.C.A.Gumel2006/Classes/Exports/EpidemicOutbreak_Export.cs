@@ -27,7 +27,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public EpidemicOutbreak_Export(
             IGumel2006_Context Gumel2006_Context)
         {

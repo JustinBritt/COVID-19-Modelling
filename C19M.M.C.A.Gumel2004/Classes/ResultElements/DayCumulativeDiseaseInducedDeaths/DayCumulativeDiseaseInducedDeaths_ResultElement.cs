@@ -16,7 +16,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public DayCumulativeDiseaseInducedDeaths_ResultElement(
             FhirDateTime t_IndexElement,
             FhirDecimal value)

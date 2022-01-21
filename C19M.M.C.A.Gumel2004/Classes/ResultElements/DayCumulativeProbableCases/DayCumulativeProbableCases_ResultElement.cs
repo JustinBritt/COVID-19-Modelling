@@ -16,7 +16,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public DayCumulativeProbableCases_ResultElement(
             FhirDateTime t_IndexElement,
             FhirDecimal value)
