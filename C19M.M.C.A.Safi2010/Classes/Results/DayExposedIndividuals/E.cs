@@ -19,7 +19,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public E(
             ImmutableList<IE_ResultElement> value)
         {

@@ -19,7 +19,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public Q(
             ImmutableList<IQ_ResultElement> value)
         {

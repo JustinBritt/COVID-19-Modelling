@@ -18,7 +18,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public EpidemicOutbreak_Solution()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);

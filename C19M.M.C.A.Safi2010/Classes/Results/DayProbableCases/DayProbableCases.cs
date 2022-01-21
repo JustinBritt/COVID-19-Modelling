@@ -19,7 +19,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public DayProbableCases(
             ImmutableList<IDayProbableCases_ResultElement> value)
         {

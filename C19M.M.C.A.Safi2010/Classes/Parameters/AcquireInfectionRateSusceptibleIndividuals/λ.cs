@@ -16,7 +16,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public λ()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);

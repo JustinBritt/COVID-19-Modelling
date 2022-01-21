@@ -19,7 +19,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public DayDiseaseInducedDeaths(
             ImmutableList<IDayDiseaseInducedDeaths_ResultElement> value)
         {

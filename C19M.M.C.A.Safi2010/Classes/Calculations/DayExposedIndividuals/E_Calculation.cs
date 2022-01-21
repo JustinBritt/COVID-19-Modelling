@@ -21,7 +21,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public E_Calculation()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);

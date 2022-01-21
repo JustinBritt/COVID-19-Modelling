@@ -23,7 +23,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public Equations2_Solution()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);

@@ -16,7 +16,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public N(
             FhirDecimal μ,
             FhirDecimal Π)

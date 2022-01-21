@@ -16,7 +16,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public ε(
             FhirDecimal diseaseInducedMortalityRate,
             FhirDecimal recoveryRate,
@@ -30,7 +29,6 @@
                 (diseaseInducedMortalityRate.Value.Value + recoveryRate.Value.Value + naturalMortalityRate.Value.Value));
         }
 
-        // Constructor
         public ε(
             FhirDecimal value)
         {

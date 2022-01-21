@@ -43,7 +43,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public Equations2_Model(
             ISafi2010_Context Safi2010_Context)
         {

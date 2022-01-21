@@ -26,7 +26,6 @@
     {
         private ILog Log { get; }
 
-        // Constructor
         public DiseaseTransmission_Solution()
         {
             this.Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
